@@ -1,0 +1,691 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "resources/database/init_data_pg.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 4,
+      "nonEmptyLines": 3,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 0
+      }
+    },
+    {
+      "path": "resources/database/schema_pg.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 724,
+      "nonEmptyLines": 677,
+      "definitions": [
+        {
+          "name": "t_user",
+          "kind": "table",
+          "fields": [
+            "id",
+            "username",
+            "password",
+            "role",
+            "avatar",
+            "create_time",
+            "update_time",
+            "deleted"
+          ],
+          "startLine": 11,
+          "endLine": 21
+        },
+        {
+          "name": "t_conversation",
+          "kind": "table",
+          "fields": [
+            "id",
+            "conversation_id",
+            "user_id",
+            "title",
+            "last_time",
+            "create_time",
+            "update_time",
+            "deleted"
+          ],
+          "startLine": 32,
+          "endLine": 42
+        },
+        {
+          "name": "t_conversation_summary",
+          "kind": "table",
+          "fields": [
+            "id",
+            "conversation_id",
+            "user_id",
+            "last_message_id",
+            "content",
+            "create_time",
+            "update_time",
+            "deleted"
+          ],
+          "startLine": 54,
+          "endLine": 63
+        },
+        {
+          "name": "t_message",
+          "kind": "table",
+          "fields": [
+            "id",
+            "conversation_id",
+            "user_id",
+            "role",
+            "content",
+            "thinking_content",
+            "thinking_duration",
+            "create_time",
+            "update_time",
+            "deleted"
+          ],
+          "startLine": 67,
+          "endLine": 78
+        },
+        {
+          "name": "t_message_feedback",
+          "kind": "table",
+          "fields": [
+            "id",
+            "message_id",
+            "conversation_id",
+            "user_id",
+            "vote",
+            "reason",
+            "comment",
+            "create_time",
+            "update_time",
+            "deleted"
+          ],
+          "startLine": 83,
+          "endLine": 95
+        },
+        {
+          "name": "t_sample_question",
+          "kind": "table",
+          "fields": [
+            "id",
+            "title",
+            "description",
+            "question",
+            "create_time",
+            "update_time",
+            "deleted"
+          ],
+          "startLine": 100,
+          "endLine": 108
+        },
+        {
+          "name": "t_knowledge_base",
+          "kind": "table",
+          "fields": [
+            "id",
+            "name",
+            "embedding_model",
+            "collection_name",
+            "created_by",
+            "updated_by",
+            "create_time",
+            "update_time",
+            "deleted"
+          ],
+          "startLine": 116,
+          "endLine": 127
+        },
+        {
+          "name": "t_knowledge_document",
+          "kind": "table",
+          "fields": [
+            "id",
+            "kb_id",
+            "doc_name",
+            "enabled",
+            "chunk_count",
+            "file_url",
+            "file_type",
+            "file_size",
+            "process_mode",
+            "status",
+            "source_type",
+            "source_location",
+            "schedule_enabled",
+            "schedule_cron",
+            "chunk_strategy",
+            "chunk_config",
+            "pipeline_id",
+            "created_by",
+            "updated_by",
+            "create_time",
+            "update_time",
+            "deleted"
+          ],
+          "startLine": 131,
+          "endLine": 154
+        },
+        {
+          "name": "t_knowledge_chunk",
+          "kind": "table",
+          "fields": [
+            "id",
+            "kb_id",
+            "doc_id",
+            "chunk_index",
+            "content",
+            "content_hash",
+            "char_count",
+            "token_count",
+            "enabled",
+            "created_by",
+            "updated_by",
+            "create_time",
+            "update_time",
+            "deleted"
+          ],
+          "startLine": 158,
+          "endLine": 173
+        },
+        {
+          "name": "t_knowledge_document_chunk_log",
+          "kind": "table",
+          "fields": [
+            "id",
+            "doc_id",
+            "status",
+            "process_mode",
+            "chunk_strategy",
+            "pipeline_id",
+            "extract_duration",
+            "chunk_duration",
+            "embed_duration",
+            "persist_duration",
+            "total_duration",
+            "chunk_count",
+            "error_message",
+            "start_time",
+            "end_time",
+            "create_time",
+            "update_time"
+          ],
+          "startLine": 177,
+          "endLine": 195
+        },
+        {
+          "name": "t_knowledge_document_schedule",
+          "kind": "table",
+          "fields": [
+            "id",
+            "doc_id",
+            "kb_id",
+            "cron_expr",
+            "enabled",
+            "next_run_time",
+            "last_run_time",
+            "last_success_time",
+            "last_status",
+            "last_error",
+            "last_etag",
+            "last_modified",
+            "last_content_hash",
+            "lock_owner",
+            "lock_until",
+            "create_time",
+            "update_time"
+          ],
+          "startLine": 199,
+          "endLine": 218
+        },
+        {
+          "name": "t_knowledge_document_schedule_exec",
+          "kind": "table",
+          "fields": [
+            "id",
+            "schedule_id",
+            "doc_id",
+            "kb_id",
+            "status",
+            "message",
+            "start_time",
+            "end_time",
+            "file_name",
+            "file_size",
+            "content_hash",
+            "etag",
+            "last_modified",
+            "create_time",
+            "update_time"
+          ],
+          "startLine": 223,
+          "endLine": 239
+        },
+        {
+          "name": "t_intent_node",
+          "kind": "table",
+          "fields": [
+            "id",
+            "kb_id",
+            "intent_code",
+            "name",
+            "level",
+            "parent_code",
+            "description",
+            "examples",
+            "collection_name",
+            "top_k",
+            "mcp_tool_id",
+            "kind",
+            "prompt_snippet",
+            "prompt_template",
+            "param_prompt_template",
+            "sort_order",
+            "enabled",
+            "create_by",
+            "update_by",
+            "create_time",
+            "update_time",
+            "deleted"
+          ],
+          "startLine": 248,
+          "endLine": 271
+        },
+        {
+          "name": "t_query_term_mapping",
+          "kind": "table",
+          "fields": [
+            "id",
+            "domain",
+            "source_term",
+            "target_term",
+            "match_type",
+            "priority",
+            "enabled",
+            "remark",
+            "create_by",
+            "update_by",
+            "create_time",
+            "update_time",
+            "deleted"
+          ],
+          "startLine": 274,
+          "endLine": 288
+        },
+        {
+          "name": "t_rag_trace_run",
+          "kind": "table",
+          "fields": [
+            "id",
+            "trace_id",
+            "trace_name",
+            "entry_method",
+            "conversation_id",
+            "task_id",
+            "user_id",
+            "status",
+            "error_message",
+            "start_time",
+            "end_time",
+            "duration_ms",
+            "extra_data",
+            "create_time",
+            "update_time",
+            "deleted"
+          ],
+          "startLine": 293,
+          "endLine": 311
+        },
+        {
+          "name": "t_rag_trace_node",
+          "kind": "table",
+          "fields": [
+            "id",
+            "trace_id",
+            "node_id",
+            "parent_node_id",
+            "depth",
+            "node_type",
+            "node_name",
+            "class_name",
+            "method_name",
+            "status",
+            "error_message",
+            "start_time",
+            "end_time",
+            "duration_ms",
+            "extra_data",
+            "create_time",
+            "update_time",
+            "deleted"
+          ],
+          "startLine": 316,
+          "endLine": 336
+        },
+        {
+          "name": "t_ingestion_pipeline",
+          "kind": "table",
+          "fields": [
+            "id",
+            "name",
+            "description",
+            "created_by",
+            "updated_by",
+            "create_time",
+            "update_time",
+            "deleted"
+          ],
+          "startLine": 343,
+          "endLine": 353
+        },
+        {
+          "name": "t_ingestion_pipeline_node",
+          "kind": "table",
+          "fields": [
+            "id",
+            "pipeline_id",
+            "node_id",
+            "node_type",
+            "next_node_id",
+            "settings_json",
+            "condition_json",
+            "created_by",
+            "updated_by",
+            "create_time",
+            "update_time",
+            "deleted"
+          ],
+          "startLine": 356,
+          "endLine": 370
+        },
+        {
+          "name": "t_ingestion_task",
+          "kind": "table",
+          "fields": [
+            "id",
+            "pipeline_id",
+            "source_type",
+            "source_location",
+            "source_file_name",
+            "status",
+            "chunk_count",
+            "error_message",
+            "logs_json",
+            "metadata_json",
+            "started_at",
+            "completed_at",
+            "created_by",
+            "updated_by",
+            "create_time",
+            "update_time",
+            "deleted"
+          ],
+          "startLine": 374,
+          "endLine": 392
+        },
+        {
+          "name": "t_ingestion_task_node",
+          "kind": "table",
+          "fields": [
+            "id",
+            "task_id",
+            "pipeline_id",
+            "node_id",
+            "node_type",
+            "node_order",
+            "status",
+            "duration_ms",
+            "message",
+            "error_message",
+            "output_json",
+            "create_time",
+            "update_time",
+            "deleted"
+          ],
+          "startLine": 397,
+          "endLine": 412
+        },
+        {
+          "name": "t_knowledge_vector",
+          "kind": "table",
+          "fields": [
+            "id",
+            "content",
+            "metadata",
+            "embedding"
+          ],
+          "startLine": 422,
+          "endLine": 427
+        },
+        {
+          "name": "idx_user_time",
+          "kind": "index",
+          "fields": [],
+          "startLine": 43,
+          "endLine": 43
+        },
+        {
+          "name": "idx_conv_user",
+          "kind": "index",
+          "fields": [],
+          "startLine": 64,
+          "endLine": 64
+        },
+        {
+          "name": "idx_conversation_user_time",
+          "kind": "index",
+          "fields": [],
+          "startLine": 79,
+          "endLine": 79
+        },
+        {
+          "name": "idx_conversation_summary",
+          "kind": "index",
+          "fields": [],
+          "startLine": 80,
+          "endLine": 80
+        },
+        {
+          "name": "idx_conversation_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 96,
+          "endLine": 96
+        },
+        {
+          "name": "idx_user_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 97,
+          "endLine": 97
+        },
+        {
+          "name": "idx_sample_question_deleted",
+          "kind": "index",
+          "fields": [],
+          "startLine": 109,
+          "endLine": 109
+        },
+        {
+          "name": "idx_kb_name",
+          "kind": "index",
+          "fields": [],
+          "startLine": 128,
+          "endLine": 128
+        },
+        {
+          "name": "idx_kb_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 155,
+          "endLine": 155
+        },
+        {
+          "name": "idx_doc_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 174,
+          "endLine": 174
+        },
+        {
+          "name": "idx_doc_id_log",
+          "kind": "index",
+          "fields": [],
+          "startLine": 196,
+          "endLine": 196
+        },
+        {
+          "name": "idx_next_run",
+          "kind": "index",
+          "fields": [],
+          "startLine": 219,
+          "endLine": 219
+        },
+        {
+          "name": "idx_lock_until",
+          "kind": "index",
+          "fields": [],
+          "startLine": 220,
+          "endLine": 220
+        },
+        {
+          "name": "idx_schedule_time",
+          "kind": "index",
+          "fields": [],
+          "startLine": 240,
+          "endLine": 240
+        },
+        {
+          "name": "idx_doc_id_exec",
+          "kind": "index",
+          "fields": [],
+          "startLine": 241,
+          "endLine": 241
+        },
+        {
+          "name": "idx_domain",
+          "kind": "index",
+          "fields": [],
+          "startLine": 289,
+          "endLine": 289
+        },
+        {
+          "name": "idx_source",
+          "kind": "index",
+          "fields": [],
+          "startLine": 290,
+          "endLine": 290
+        },
+        {
+          "name": "idx_task_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 312,
+          "endLine": 312
+        },
+        {
+          "name": "idx_user_id_trace",
+          "kind": "index",
+          "fields": [],
+          "startLine": 313,
+          "endLine": 313
+        },
+        {
+          "name": "idx_ingestion_pipeline_node_pipeline",
+          "kind": "index",
+          "fields": [],
+          "startLine": 371,
+          "endLine": 371
+        },
+        {
+          "name": "idx_ingestion_task_pipeline",
+          "kind": "index",
+          "fields": [],
+          "startLine": 393,
+          "endLine": 393
+        },
+        {
+          "name": "idx_ingestion_task_status",
+          "kind": "index",
+          "fields": [],
+          "startLine": 394,
+          "endLine": 394
+        },
+        {
+          "name": "idx_ingestion_task_node_task",
+          "kind": "index",
+          "fields": [],
+          "startLine": 413,
+          "endLine": 413
+        },
+        {
+          "name": "idx_ingestion_task_node_pipeline",
+          "kind": "index",
+          "fields": [],
+          "startLine": 414,
+          "endLine": 414
+        },
+        {
+          "name": "idx_ingestion_task_node_status",
+          "kind": "index",
+          "fields": [],
+          "startLine": 415,
+          "endLine": 415
+        },
+        {
+          "name": "idx_kv_metadata",
+          "kind": "index",
+          "fields": [],
+          "startLine": 429,
+          "endLine": 429
+        },
+        {
+          "name": "idx_kv_embedding",
+          "kind": "index",
+          "fields": [],
+          "startLine": 430,
+          "endLine": 430
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 48
+      }
+    },
+    {
+      "path": "resources/database/upgrade_v1.0_to_v1.1.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 0
+      }
+    },
+    {
+      "path": "resources/database/upgrade_v1.1_to_v1.2.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 0
+      }
+    }
+  ]
+}

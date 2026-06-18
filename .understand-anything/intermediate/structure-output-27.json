@@ -1,0 +1,1112 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptScene.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 44,
+      "nonEmptyLines": 38,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptTemplateUtils.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 88,
+      "nonEmptyLines": 79,
+      "functions": [
+        {
+          "name": "cleanupPrompt",
+          "startLine": 32,
+          "endLine": 37,
+          "params": [
+            "prompt"
+          ]
+        },
+        {
+          "name": "fillSlots",
+          "startLine": 39,
+          "endLine": 52,
+          "params": [
+            "template",
+            "slots"
+          ]
+        },
+        {
+          "name": "parseSections",
+          "startLine": 57,
+          "endLine": 76,
+          "params": [
+            "content"
+          ]
+        },
+        {
+          "name": "trimSection",
+          "startLine": 81,
+          "endLine": 87,
+          "params": [
+            "section"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PromptTemplateUtils",
+          "startLine": 27,
+          "endLine": 88,
+          "methods": [
+            "cleanupPrompt",
+            "fillSlots",
+            "parseSections",
+            "trimSection"
+          ],
+          "properties": [
+            "MULTI_BLANK_LINES",
+            "SECTION_HEADER"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "cleanupPrompt",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "fillSlots",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "parseSections",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "PromptTemplateUtils",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "cleanupPrompt",
+          "callee": "MULTI_BLANK_LINES.matcher(prompt).replaceAll(\"\\n\\n\").trim",
+          "lineNumber": 36
+        },
+        {
+          "caller": "cleanupPrompt",
+          "callee": "MULTI_BLANK_LINES.matcher(prompt).replaceAll",
+          "lineNumber": 36
+        },
+        {
+          "caller": "cleanupPrompt",
+          "callee": "MULTI_BLANK_LINES.matcher",
+          "lineNumber": 36
+        },
+        {
+          "caller": "fillSlots",
+          "callee": "slots.isEmpty",
+          "lineNumber": 43
+        },
+        {
+          "caller": "fillSlots",
+          "callee": "slots.entrySet",
+          "lineNumber": 47
+        },
+        {
+          "caller": "fillSlots",
+          "callee": "StrUtil.emptyIfNull",
+          "lineNumber": 48
+        },
+        {
+          "caller": "fillSlots",
+          "callee": "entry.getValue",
+          "lineNumber": 48
+        },
+        {
+          "caller": "fillSlots",
+          "callee": "result.replace",
+          "lineNumber": 49
+        },
+        {
+          "caller": "fillSlots",
+          "callee": "entry.getKey",
+          "lineNumber": 49
+        },
+        {
+          "caller": "parseSections",
+          "callee": "new LinkedHashMap<>",
+          "lineNumber": 58
+        },
+        {
+          "caller": "parseSections",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 59
+        },
+        {
+          "caller": "parseSections",
+          "callee": "SECTION_HEADER.matcher",
+          "lineNumber": 62
+        },
+        {
+          "caller": "parseSections",
+          "callee": "matcher.find",
+          "lineNumber": 65
+        },
+        {
+          "caller": "parseSections",
+          "callee": "sections.put",
+          "lineNumber": 67
+        },
+        {
+          "caller": "parseSections",
+          "callee": "trimSection",
+          "lineNumber": 67
+        },
+        {
+          "caller": "parseSections",
+          "callee": "content.substring",
+          "lineNumber": 67
+        },
+        {
+          "caller": "parseSections",
+          "callee": "matcher.start",
+          "lineNumber": 67
+        },
+        {
+          "caller": "parseSections",
+          "callee": "matcher.group",
+          "lineNumber": 69
+        },
+        {
+          "caller": "parseSections",
+          "callee": "matcher.end",
+          "lineNumber": 70
+        },
+        {
+          "caller": "parseSections",
+          "callee": "sections.put",
+          "lineNumber": 73
+        },
+        {
+          "caller": "parseSections",
+          "callee": "trimSection",
+          "lineNumber": 73
+        },
+        {
+          "caller": "parseSections",
+          "callee": "content.substring",
+          "lineNumber": 73
+        },
+        {
+          "caller": "trimSection",
+          "callee": "section.startsWith",
+          "lineNumber": 83
+        },
+        {
+          "caller": "trimSection",
+          "callee": "section.substring",
+          "lineNumber": 84
+        },
+        {
+          "caller": "trimSection",
+          "callee": "section.stripTrailing",
+          "lineNumber": 86
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryTermMappingUtil.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 68,
+      "nonEmptyLines": 59,
+      "functions": [
+        {
+          "name": "applyMapping",
+          "startLine": 27,
+          "endLine": 67,
+          "params": [
+            "text",
+            "sourceTerm",
+            "targetTerm"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "QueryTermMappingUtil",
+          "startLine": 20,
+          "endLine": 68,
+          "methods": [
+            "applyMapping"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "applyMapping",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "QueryTermMappingUtil",
+          "line": 20,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "applyMapping",
+          "callee": "text.isEmpty",
+          "lineNumber": 28
+        },
+        {
+          "caller": "applyMapping",
+          "callee": "sourceTerm.isEmpty",
+          "lineNumber": 28
+        },
+        {
+          "caller": "applyMapping",
+          "callee": "new StringBuilder",
+          "lineNumber": 32
+        },
+        {
+          "caller": "applyMapping",
+          "callee": "text.length",
+          "lineNumber": 34
+        },
+        {
+          "caller": "applyMapping",
+          "callee": "sourceTerm.length",
+          "lineNumber": 35
+        },
+        {
+          "caller": "applyMapping",
+          "callee": "targetTerm.length",
+          "lineNumber": 36
+        },
+        {
+          "caller": "applyMapping",
+          "callee": "text.indexOf",
+          "lineNumber": 39
+        },
+        {
+          "caller": "applyMapping",
+          "callee": "sb.append",
+          "lineNumber": 42
+        },
+        {
+          "caller": "applyMapping",
+          "callee": "sb.append",
+          "lineNumber": 47
+        },
+        {
+          "caller": "applyMapping",
+          "callee": "text.startsWith",
+          "lineNumber": 53
+        },
+        {
+          "caller": "applyMapping",
+          "callee": "sb.append",
+          "lineNumber": 57
+        },
+        {
+          "caller": "applyMapping",
+          "callee": "sb.append",
+          "lineNumber": 61
+        },
+        {
+          "caller": "applyMapping",
+          "callee": "sb.toString",
+          "lineNumber": 66
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/RagentApplication.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 37,
+      "functions": [
+        {
+          "name": "main",
+          "startLine": 38,
+          "endLine": 40,
+          "params": [
+            "args"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RagentApplication",
+          "startLine": 28,
+          "endLine": 41,
+          "methods": [
+            "main"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "main",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "RagentApplication",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "main",
+          "callee": "SpringApplication.run",
+          "lineNumber": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/resources/application.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 195,
+      "nonEmptyLines": 170,
+      "sections": [
+        {
+          "heading": "server",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "spring",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "rocketmq",
+          "level": 1,
+          "line": 35
+        },
+        {
+          "heading": "milvus",
+          "level": 1,
+          "line": 41
+        },
+        {
+          "heading": "rag",
+          "level": 1,
+          "line": 44
+        },
+        {
+          "heading": "ai",
+          "level": 1,
+          "line": 104
+        },
+        {
+          "heading": "rustfs",
+          "level": 1,
+          "line": 180
+        },
+        {
+          "heading": "sa-token",
+          "level": 1,
+          "line": 185
+        },
+        {
+          "heading": "app",
+          "level": 1,
+          "line": 194
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "bootstrap/src/main/resources/lua/queue_claim_atomic.lua",
+      "language": "lua",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 18,
+      "metrics": {}
+    },
+    {
+      "path": "bootstrap/src/main/resources/META-INF/additional-spring-configuration-metadata.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 8,
+      "nonEmptyLines": 8,
+      "sections": [
+        {
+          "heading": "properties",
+          "level": 1,
+          "line": 2
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/answer-chat-kb.st",
+      "language": "st",
+      "fileCategory": "code",
+      "totalLines": 342,
+      "nonEmptyLines": 265,
+      "metrics": {}
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/answer-chat-mcp-kb-mixed.st",
+      "language": "st",
+      "fileCategory": "code",
+      "totalLines": 212,
+      "nonEmptyLines": 162,
+      "metrics": {}
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/answer-chat-mcp.st",
+      "language": "st",
+      "fileCategory": "code",
+      "totalLines": 175,
+      "nonEmptyLines": 132,
+      "metrics": {}
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/answer-chat-system.st",
+      "language": "st",
+      "fileCategory": "code",
+      "totalLines": 75,
+      "nonEmptyLines": 54,
+      "metrics": {}
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/context-format.st",
+      "language": "st",
+      "fileCategory": "code",
+      "totalLines": 60,
+      "nonEmptyLines": 48,
+      "metrics": {}
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/conversation-summary.st",
+      "language": "st",
+      "fileCategory": "code",
+      "totalLines": 89,
+      "nonEmptyLines": 70,
+      "metrics": {}
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/conversation-title.st",
+      "language": "st",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 28,
+      "metrics": {}
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/guidance-ambiguity-check.st",
+      "language": "st",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 11,
+      "metrics": {}
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/guidance-prompt.st",
+      "language": "st",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 3,
+      "metrics": {}
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/intent-classifier.st",
+      "language": "st",
+      "fileCategory": "code",
+      "totalLines": 92,
+      "nonEmptyLines": 71,
+      "metrics": {}
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/mcp-parameter-extract-user.st",
+      "language": "st",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "metrics": {}
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/mcp-parameter-extract.st",
+      "language": "st",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 42,
+      "metrics": {}
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/pdf-format-guard.st",
+      "language": "st",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 22,
+      "metrics": {}
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/user-question-rewrite.st",
+      "language": "st",
+      "fileCategory": "code",
+      "totalLines": 104,
+      "nonEmptyLines": 87,
+      "metrics": {}
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/core/vector/PgVectorStoreServiceTest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 80,
+      "nonEmptyLines": 67,
+      "functions": [
+        {
+          "name": "testChineseCharacterInsertion",
+          "startLine": 34,
+          "endLine": 79,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PgVectorStoreServiceTest",
+          "startLine": 28,
+          "endLine": 80,
+          "methods": [
+            "testChineseCharacterInsertion"
+          ],
+          "properties": [
+            "jdbcTemplate"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "testChineseCharacterInsertion",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "PgVectorStoreServiceTest",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "new StringBuilder",
+          "lineNumber": 50
+        },
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "sb.append",
+          "lineNumber": 52
+        },
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "sb.append",
+          "lineNumber": 53
+        },
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "sb.append(\"]\").toString",
+          "lineNumber": 55
+        },
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "sb.append",
+          "lineNumber": 55
+        },
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "jdbcTemplate.update",
+          "lineNumber": 61
+        },
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "jdbcTemplate.queryForList",
+          "lineNumber": 65
+        },
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "System.out.println",
+          "lineNumber": 67
+        },
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "System.out.println",
+          "lineNumber": 69
+        },
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "row.get",
+          "lineNumber": 69
+        },
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "System.out.println",
+          "lineNumber": 70
+        },
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "row.get",
+          "lineNumber": 70
+        },
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "System.out.println",
+          "lineNumber": 71
+        },
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "((String) row.get(\"content\")).length",
+          "lineNumber": 71
+        },
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "row.get",
+          "lineNumber": 71
+        },
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "System.out.println",
+          "lineNumber": 72
+        },
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "System.out.println",
+          "lineNumber": 73
+        },
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "content.equals",
+          "lineNumber": 73
+        },
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "row.get",
+          "lineNumber": 73
+        },
+        {
+          "caller": "testChineseCharacterInsertion",
+          "callee": "jdbcTemplate.update",
+          "lineNumber": 78
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/RagentCoreApplicationTests.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 25,
+      "functions": [
+        {
+          "name": "contextLoads",
+          "startLine": 26,
+          "endLine": 28,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "RagentCoreApplicationTests",
+          "startLine": 23,
+          "endLine": 30,
+          "methods": [
+            "contextLoads"
+          ],
+          "properties": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/vector/MilvusCollectionTests.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 120,
+      "nonEmptyLines": 104,
+      "functions": [
+        {
+          "name": "createCollection",
+          "startLine": 46,
+          "endLine": 119,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "MilvusCollectionTests",
+          "startLine": 36,
+          "endLine": 120,
+          "methods": [
+            "createCollection"
+          ],
+          "properties": [
+            "milvusClient",
+            "COLLECTION_NAME",
+            "EMBEDDING_DIM"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createCollection",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "MilvusCollectionTests",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createCollection",
+          "callee": "Boolean.TRUE.equals",
+          "lineNumber": 48
+        },
+        {
+          "caller": "createCollection",
+          "callee": "milvusClient.hasCollection",
+          "lineNumber": 48
+        },
+        {
+          "caller": "createCollection",
+          "callee": "HasCollectionReq.builder().collectionName(COLLECTION_NAME).build",
+          "lineNumber": 49
+        },
+        {
+          "caller": "createCollection",
+          "callee": "HasCollectionReq.builder().collectionName",
+          "lineNumber": 49
+        },
+        {
+          "caller": "createCollection",
+          "callee": "HasCollectionReq.builder",
+          "lineNumber": 49
+        },
+        {
+          "caller": "createCollection",
+          "callee": "log.info",
+          "lineNumber": 52
+        },
+        {
+          "caller": "createCollection",
+          "callee": "new ArrayList<>",
+          "lineNumber": 56
+        },
+        {
+          "caller": "createCollection",
+          "callee": "fieldSchemaList.add",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"doc_id\")\r\n                        .dataType(DataType.VarChar)\r\n                        .maxLength(36)\r\n                        .isPrimaryKey(true)\r\n                        .autoID(false).build",
+          "lineNumber": 59
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"doc_id\")\r\n                        .dataType(DataType.VarChar)\r\n                        .maxLength(36)\r\n                        .isPrimaryKey(true).autoID",
+          "lineNumber": 59
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"doc_id\")\r\n                        .dataType(DataType.VarChar)\r\n                        .maxLength(36).isPrimaryKey",
+          "lineNumber": 59
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"doc_id\")\r\n                        .dataType(DataType.VarChar).maxLength",
+          "lineNumber": 59
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"doc_id\").dataType",
+          "lineNumber": 59
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder().name",
+          "lineNumber": 59
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder",
+          "lineNumber": 59
+        },
+        {
+          "caller": "createCollection",
+          "callee": "fieldSchemaList.add",
+          "lineNumber": 68
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"content\")\r\n                        .dataType(DataType.VarChar)\r\n                        .maxLength(65535).build",
+          "lineNumber": 69
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"content\")\r\n                        .dataType(DataType.VarChar).maxLength",
+          "lineNumber": 69
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"content\").dataType",
+          "lineNumber": 69
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder().name",
+          "lineNumber": 69
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder",
+          "lineNumber": 69
+        },
+        {
+          "caller": "createCollection",
+          "callee": "fieldSchemaList.add",
+          "lineNumber": 76
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"metadata\")\r\n                        .dataType(DataType.JSON).build",
+          "lineNumber": 77
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"metadata\").dataType",
+          "lineNumber": 77
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder().name",
+          "lineNumber": 77
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder",
+          "lineNumber": 77
+        },
+        {
+          "caller": "createCollection",
+          "callee": "fieldSchemaList.add",
+          "lineNumber": 83
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"embedding\")\r\n                        .dataType(DataType.FloatVector)\r\n                        .dimension(EMBEDDING_DIM).build",
+          "lineNumber": 84
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"embedding\")\r\n                        .dataType(DataType.FloatVector).dimension",
+          "lineNumber": 84
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"embedding\").dataType",
+          "lineNumber": 84
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder().name",
+          "lineNumber": 84
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.FieldSchema.builder",
+          "lineNumber": 84
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.CollectionSchema\r\n                .builder()\r\n                .fieldSchemaList(fieldSchemaList).build",
+          "lineNumber": 91
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.CollectionSchema\r\n                .builder().fieldSchemaList",
+          "lineNumber": 91
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.CollectionSchema.builder",
+          "lineNumber": 91
+        },
+        {
+          "caller": "createCollection",
+          "callee": "IndexParam.builder()\r\n                .fieldName(\"embedding\")\r\n                .indexType(IndexParam.IndexType.HNSW)\r\n                .metricType(IndexParam.MetricType.COSINE)\r\n                .indexName(\"embedding\")\r\n                .extraParams(Map.of(\r\n                        \"M\", \"48\",\r\n                        \"efConstruction\", \"200\",\r\n                        \"mmap.enabled\", \"false\"\r\n                )).build",
+          "lineNumber": 96
+        },
+        {
+          "caller": "createCollection",
+          "callee": "IndexParam.builder()\r\n                .fieldName(\"embedding\")\r\n                .indexType(IndexParam.IndexType.HNSW)\r\n                .metricType(IndexParam.MetricType.COSINE)\r\n                .indexName(\"embedding\").extraParams",
+          "lineNumber": 96
+        },
+        {
+          "caller": "createCollection",
+          "callee": "IndexParam.builder()\r\n                .fieldName(\"embedding\")\r\n                .indexType(IndexParam.IndexType.HNSW)\r\n                .metricType(IndexParam.MetricType.COSINE).indexName",
+          "lineNumber": 96
+        },
+        {
+          "caller": "createCollection",
+          "callee": "IndexParam.builder()\r\n                .fieldName(\"embedding\")\r\n                .indexType(IndexParam.IndexType.HNSW).metricType",
+          "lineNumber": 96
+        },
+        {
+          "caller": "createCollection",
+          "callee": "IndexParam.builder()\r\n                .fieldName(\"embedding\").indexType",
+          "lineNumber": 96
+        },
+        {
+          "caller": "createCollection",
+          "callee": "IndexParam.builder().fieldName",
+          "lineNumber": 96
+        },
+        {
+          "caller": "createCollection",
+          "callee": "IndexParam.builder",
+          "lineNumber": 96
+        },
+        {
+          "caller": "createCollection",
+          "callee": "Map.of",
+          "lineNumber": 101
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.builder()\r\n                .collectionName(COLLECTION_NAME)\r\n                .collectionSchema(collectionSchema)\r\n                .primaryFieldName(\"doc_id\")\r\n                .vectorFieldName(\"embedding\")\r\n                .consistencyLevel(ConsistencyLevel.BOUNDED)\r\n                .indexParams(List.of(hnswIndex))\r\n                .description(\"Ragent 知识库向量集合\").build",
+          "lineNumber": 108
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.builder()\r\n                .collectionName(COLLECTION_NAME)\r\n                .collectionSchema(collectionSchema)\r\n                .primaryFieldName(\"doc_id\")\r\n                .vectorFieldName(\"embedding\")\r\n                .consistencyLevel(ConsistencyLevel.BOUNDED)\r\n                .indexParams(List.of(hnswIndex)).description",
+          "lineNumber": 108
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.builder()\r\n                .collectionName(COLLECTION_NAME)\r\n                .collectionSchema(collectionSchema)\r\n                .primaryFieldName(\"doc_id\")\r\n                .vectorFieldName(\"embedding\")\r\n                .consistencyLevel(ConsistencyLevel.BOUNDED).indexParams",
+          "lineNumber": 108
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.builder()\r\n                .collectionName(COLLECTION_NAME)\r\n                .collectionSchema(collectionSchema)\r\n                .primaryFieldName(\"doc_id\")\r\n                .vectorFieldName(\"embedding\").consistencyLevel",
+          "lineNumber": 108
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.builder()\r\n                .collectionName(COLLECTION_NAME)\r\n                .collectionSchema(collectionSchema)\r\n                .primaryFieldName(\"doc_id\").vectorFieldName",
+          "lineNumber": 108
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.builder()\r\n                .collectionName(COLLECTION_NAME)\r\n                .collectionSchema(collectionSchema).primaryFieldName",
+          "lineNumber": 108
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.builder()\r\n                .collectionName(COLLECTION_NAME).collectionSchema",
+          "lineNumber": 108
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.builder().collectionName",
+          "lineNumber": 108
+        },
+        {
+          "caller": "createCollection",
+          "callee": "CreateCollectionReq.builder",
+          "lineNumber": 108
+        },
+        {
+          "caller": "createCollection",
+          "callee": "List.of",
+          "lineNumber": 114
+        },
+        {
+          "caller": "createCollection",
+          "callee": "milvusClient.createCollection",
+          "lineNumber": 118
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/test/resources/mockito-extensions/org.mockito.plugins.MockMaker",
+      "language": "mockmaker",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {}
+    }
+  ]
+}

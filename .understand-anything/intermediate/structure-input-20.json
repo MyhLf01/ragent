@@ -1,0 +1,28 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "docs/multi-channel-retrieval.md",
+      "language": "markdown",
+      "sizeLines": 378,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/quick-start.md",
+      "language": "markdown",
+      "sizeLines": 348,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/refactoring-summary.md",
+      "language": "markdown",
+      "sizeLines": 226,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "docs/multi-channel-retrieval.md": [],
+    "docs/quick-start.md": [],
+    "docs/refactoring-summary.md": []
+  }
+}

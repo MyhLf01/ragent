@@ -1,0 +1,139 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/IngestionPipelineController.java",
+      "language": "java",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineCreateRequest.java",
+      "language": "java",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineNodeRequest.java",
+      "language": "java",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineUpdateRequest.java",
+      "language": "java",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionPipelineNodeVO.java",
+      "language": "java",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionPipelineVO.java",
+      "language": "java",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineDO.java",
+      "language": "java",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineNodeDO.java",
+      "language": "java",
+      "sizeLines": 109,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionPipelineMapper.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionPipelineNodeMapper.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/PipelineDefinition.java",
+      "language": "java",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IngestionPipelineService.java",
+      "language": "java",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/impl/IngestionPipelineServiceImpl.java",
+      "language": "java",
+      "sizeLines": 248,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/handler/JsonbTypeHandler.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/IngestionPipelineController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionPipelineVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IngestionPipelineService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineCreateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineNodeRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineUpdateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionPipelineNodeVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionPipelineVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineNodeDO.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/handler/JsonbTypeHandler.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionPipelineMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionPipelineNodeMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineNodeDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/PipelineDefinition.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IngestionPipelineService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionPipelineVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/PipelineDefinition.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/impl/IngestionPipelineServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineNodeRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionPipelineNodeVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionPipelineVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineNodeDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionPipelineMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionPipelineNodeMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionNodeType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/NodeConfig.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/PipelineDefinition.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IngestionPipelineService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/handler/JsonbTypeHandler.java": []
+  }
+}

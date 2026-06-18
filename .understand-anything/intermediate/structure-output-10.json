@@ -1,0 +1,2740 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 23,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/config/SaTokenStpInterfaceImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 80,
+      "nonEmptyLines": 70,
+      "functions": [
+        {
+          "name": "getPermissionList",
+          "startLine": 50,
+          "endLine": 53,
+          "params": [
+            "loginId",
+            "loginType"
+          ]
+        },
+        {
+          "name": "getRoleList",
+          "startLine": 62,
+          "endLine": 79,
+          "params": [
+            "loginId",
+            "loginType"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SaTokenStpInterfaceImpl",
+          "startLine": 34,
+          "endLine": 80,
+          "methods": [
+            "getPermissionList",
+            "getRoleList"
+          ],
+          "properties": [
+            "userMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getPermissionList",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "getRoleList",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "SaTokenStpInterfaceImpl",
+          "line": 34,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getPermissionList",
+          "callee": "Collections.emptyList",
+          "lineNumber": 52
+        },
+        {
+          "caller": "getRoleList",
+          "callee": "Collections.emptyList",
+          "lineNumber": 65
+        },
+        {
+          "caller": "getRoleList",
+          "callee": "loginId.toString",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getRoleList",
+          "callee": "StrUtil.isNumeric",
+          "lineNumber": 69
+        },
+        {
+          "caller": "getRoleList",
+          "callee": "Collections.emptyList",
+          "lineNumber": 70
+        },
+        {
+          "caller": "getRoleList",
+          "callee": "userMapper.selectById",
+          "lineNumber": 73
+        },
+        {
+          "caller": "getRoleList",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 74
+        },
+        {
+          "caller": "getRoleList",
+          "callee": "user.getRole",
+          "lineNumber": 74
+        },
+        {
+          "caller": "getRoleList",
+          "callee": "Collections.emptyList",
+          "lineNumber": 75
+        },
+        {
+          "caller": "getRoleList",
+          "callee": "List.of",
+          "lineNumber": 78
+        },
+        {
+          "caller": "getRoleList",
+          "callee": "user.getRole",
+          "lineNumber": 78
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/config/UserContextInterceptor.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 90,
+      "nonEmptyLines": 81,
+      "functions": [
+        {
+          "name": "preHandle",
+          "startLine": 61,
+          "endLine": 84,
+          "params": [
+            "request",
+            "response",
+            "handler"
+          ]
+        },
+        {
+          "name": "afterCompletion",
+          "startLine": 86,
+          "endLine": 89,
+          "params": [
+            "request",
+            "response",
+            "handler",
+            "ex"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "UserContextInterceptor",
+          "startLine": 53,
+          "endLine": 90,
+          "methods": [
+            "preHandle",
+            "afterCompletion"
+          ],
+          "properties": [
+            "DEFAULT_AVATAR_URL",
+            "userMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "preHandle",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "afterCompletion",
+          "line": 86,
+          "isDefault": false
+        },
+        {
+          "name": "UserContextInterceptor",
+          "line": 53,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "preHandle",
+          "callee": "request.getDispatcherType",
+          "lineNumber": 64
+        },
+        {
+          "caller": "preHandle",
+          "callee": "\"OPTIONS\".equalsIgnoreCase",
+          "lineNumber": 68
+        },
+        {
+          "caller": "preHandle",
+          "callee": "request.getMethod",
+          "lineNumber": 68
+        },
+        {
+          "caller": "preHandle",
+          "callee": "StpUtil.getLoginIdAsString",
+          "lineNumber": 72
+        },
+        {
+          "caller": "preHandle",
+          "callee": "userMapper.selectById",
+          "lineNumber": 73
+        },
+        {
+          "caller": "preHandle",
+          "callee": "UserContext.set",
+          "lineNumber": 75
+        },
+        {
+          "caller": "preHandle",
+          "callee": "LoginUser.builder()\r\n                        .userId(user.getId().toString())\r\n                        .username(user.getUsername())\r\n                        .role(user.getRole())\r\n                        .avatar(StrUtil.isBlank(user.getAvatar()) ? DEFAULT_AVATAR_URL : user.getAvatar()).build",
+          "lineNumber": 76
+        },
+        {
+          "caller": "preHandle",
+          "callee": "LoginUser.builder()\r\n                        .userId(user.getId().toString())\r\n                        .username(user.getUsername())\r\n                        .role(user.getRole()).avatar",
+          "lineNumber": 76
+        },
+        {
+          "caller": "preHandle",
+          "callee": "LoginUser.builder()\r\n                        .userId(user.getId().toString())\r\n                        .username(user.getUsername()).role",
+          "lineNumber": 76
+        },
+        {
+          "caller": "preHandle",
+          "callee": "LoginUser.builder()\r\n                        .userId(user.getId().toString()).username",
+          "lineNumber": 76
+        },
+        {
+          "caller": "preHandle",
+          "callee": "LoginUser.builder().userId",
+          "lineNumber": 76
+        },
+        {
+          "caller": "preHandle",
+          "callee": "LoginUser.builder",
+          "lineNumber": 76
+        },
+        {
+          "caller": "preHandle",
+          "callee": "user.getId().toString",
+          "lineNumber": 77
+        },
+        {
+          "caller": "preHandle",
+          "callee": "user.getId",
+          "lineNumber": 77
+        },
+        {
+          "caller": "preHandle",
+          "callee": "user.getUsername",
+          "lineNumber": 78
+        },
+        {
+          "caller": "preHandle",
+          "callee": "user.getRole",
+          "lineNumber": 79
+        },
+        {
+          "caller": "preHandle",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 80
+        },
+        {
+          "caller": "preHandle",
+          "callee": "user.getAvatar",
+          "lineNumber": 80
+        },
+        {
+          "caller": "preHandle",
+          "callee": "user.getAvatar",
+          "lineNumber": 80
+        },
+        {
+          "caller": "afterCompletion",
+          "callee": "UserContext.clear",
+          "lineNumber": 88
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/AuthController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 50,
+      "functions": [
+        {
+          "name": "login",
+          "startLine": 43,
+          "endLine": 46,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "logout",
+          "startLine": 51,
+          "endLine": 55,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AuthController",
+          "startLine": 34,
+          "endLine": 56,
+          "methods": [
+            "login",
+            "logout"
+          ],
+          "properties": [
+            "authService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "login",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "logout",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "AuthController",
+          "line": 34,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "login",
+          "callee": "Results.success",
+          "lineNumber": 45
+        },
+        {
+          "caller": "login",
+          "callee": "authService.login",
+          "lineNumber": 45
+        },
+        {
+          "caller": "logout",
+          "callee": "authService.logout",
+          "lineNumber": 53
+        },
+        {
+          "caller": "logout",
+          "callee": "Results.success",
+          "lineNumber": 54
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/UserController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 112,
+      "nonEmptyLines": 102,
+      "functions": [
+        {
+          "name": "currentUser",
+          "startLine": 55,
+          "endLine": 64,
+          "params": []
+        },
+        {
+          "name": "pageQuery",
+          "startLine": 69,
+          "endLine": 73,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "create",
+          "startLine": 78,
+          "endLine": 82,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 87,
+          "endLine": 92,
+          "params": [
+            "id",
+            "requestParam"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 97,
+          "endLine": 102,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "changePassword",
+          "startLine": 107,
+          "endLine": 111,
+          "params": [
+            "requestParam"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "UserController",
+          "startLine": 46,
+          "endLine": 112,
+          "methods": [
+            "currentUser",
+            "pageQuery",
+            "create",
+            "update",
+            "delete",
+            "changePassword"
+          ],
+          "properties": [
+            "userService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "currentUser",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "pageQuery",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "create",
+          "line": 78,
+          "isDefault": false
+        },
+        {
+          "name": "update",
+          "line": 87,
+          "isDefault": false
+        },
+        {
+          "name": "delete",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "changePassword",
+          "line": 107,
+          "isDefault": false
+        },
+        {
+          "name": "UserController",
+          "line": 46,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "currentUser",
+          "callee": "UserContext.requireUser",
+          "lineNumber": 57
+        },
+        {
+          "caller": "currentUser",
+          "callee": "Results.success",
+          "lineNumber": 58
+        },
+        {
+          "caller": "currentUser",
+          "callee": "new CurrentUserVO",
+          "lineNumber": 58
+        },
+        {
+          "caller": "currentUser",
+          "callee": "user.getUserId",
+          "lineNumber": 59
+        },
+        {
+          "caller": "currentUser",
+          "callee": "user.getUsername",
+          "lineNumber": 60
+        },
+        {
+          "caller": "currentUser",
+          "callee": "user.getRole",
+          "lineNumber": 61
+        },
+        {
+          "caller": "currentUser",
+          "callee": "user.getAvatar",
+          "lineNumber": 62
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "StpUtil.checkRole",
+          "lineNumber": 71
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Results.success",
+          "lineNumber": 72
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "userService.pageQuery",
+          "lineNumber": 72
+        },
+        {
+          "caller": "create",
+          "callee": "StpUtil.checkRole",
+          "lineNumber": 80
+        },
+        {
+          "caller": "create",
+          "callee": "Results.success",
+          "lineNumber": 81
+        },
+        {
+          "caller": "create",
+          "callee": "userService.create",
+          "lineNumber": 81
+        },
+        {
+          "caller": "update",
+          "callee": "StpUtil.checkRole",
+          "lineNumber": 89
+        },
+        {
+          "caller": "update",
+          "callee": "userService.update",
+          "lineNumber": 90
+        },
+        {
+          "caller": "update",
+          "callee": "Results.success",
+          "lineNumber": 91
+        },
+        {
+          "caller": "delete",
+          "callee": "StpUtil.checkRole",
+          "lineNumber": 99
+        },
+        {
+          "caller": "delete",
+          "callee": "userService.delete",
+          "lineNumber": 100
+        },
+        {
+          "caller": "delete",
+          "callee": "Results.success",
+          "lineNumber": 101
+        },
+        {
+          "caller": "changePassword",
+          "callee": "userService.changePassword",
+          "lineNumber": 109
+        },
+        {
+          "caller": "changePassword",
+          "callee": "Results.success",
+          "lineNumber": 110
+        }
+      ],
+      "metrics": {
+        "importCount": 11,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/ChangePasswordRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 32,
+      "classes": [
+        {
+          "name": "ChangePasswordRequest",
+          "startLine": 25,
+          "endLine": 37,
+          "methods": [],
+          "properties": [
+            "currentPassword",
+            "newPassword"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChangePasswordRequest",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/LoginRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 23,
+      "classes": [
+        {
+          "name": "LoginRequest",
+          "startLine": 22,
+          "endLine": 28,
+          "methods": [],
+          "properties": [
+            "username",
+            "password"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "LoginRequest",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 47,
+      "nonEmptyLines": 40,
+      "classes": [
+        {
+          "name": "UserCreateRequest",
+          "startLine": 25,
+          "endLine": 47,
+          "methods": [],
+          "properties": [
+            "username",
+            "password",
+            "role",
+            "avatar"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "UserCreateRequest",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserPageRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 29,
+      "classes": [
+        {
+          "name": "UserPageRequest",
+          "startLine": 26,
+          "endLine": 33,
+          "methods": [],
+          "properties": [
+            "keyword"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "UserPageRequest",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserUpdateRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 47,
+      "nonEmptyLines": 40,
+      "classes": [
+        {
+          "name": "UserUpdateRequest",
+          "startLine": 25,
+          "endLine": 47,
+          "methods": [],
+          "properties": [
+            "username",
+            "password",
+            "role",
+            "avatar"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "UserUpdateRequest",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/CurrentUserVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 29,
+      "classes": [
+        {
+          "name": "CurrentUserVO",
+          "startLine": 24,
+          "endLine": 36,
+          "methods": [],
+          "properties": [
+            "userId",
+            "username",
+            "role",
+            "avatar"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CurrentUserVO",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/LoginVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 29,
+      "classes": [
+        {
+          "name": "LoginVO",
+          "startLine": 24,
+          "endLine": 36,
+          "methods": [],
+          "properties": [
+            "userId",
+            "role",
+            "token",
+            "avatar"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "LoginVO",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/UserVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 42,
+      "nonEmptyLines": 37,
+      "classes": [
+        {
+          "name": "UserVO",
+          "startLine": 30,
+          "endLine": 42,
+          "methods": [],
+          "properties": [
+            "id",
+            "username",
+            "role",
+            "avatar",
+            "createTime",
+            "updateTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "UserVO",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/entity/UserDO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 65,
+      "nonEmptyLines": 53,
+      "classes": [
+        {
+          "name": "UserDO",
+          "startLine": 33,
+          "endLine": 65,
+          "methods": [],
+          "properties": [
+            "id",
+            "username",
+            "password",
+            "avatar",
+            "role",
+            "createTime",
+            "updateTime",
+            "deleted"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "UserDO",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/mapper/UserMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "UserMapper",
+          "startLine": 23,
+          "endLine": 24,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "UserMapper",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/enums/UserRole.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 52,
+      "nonEmptyLines": 45,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/AuthService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 23,
+      "classes": [
+        {
+          "name": "AuthService",
+          "startLine": 23,
+          "endLine": 28,
+          "methods": [
+            "login",
+            "logout"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AuthService",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/UserService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 45,
+      "classes": [
+        {
+          "name": "UserService",
+          "startLine": 27,
+          "endLine": 53,
+          "methods": [
+            "pageQuery",
+            "create",
+            "update",
+            "delete",
+            "changePassword"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "UserService",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/impl/AuthServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 82,
+      "nonEmptyLines": 73,
+      "functions": [
+        {
+          "name": "login",
+          "startLine": 40,
+          "endLine": 58,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "logout",
+          "startLine": 60,
+          "endLine": 63,
+          "params": []
+        },
+        {
+          "name": "findByUsername",
+          "startLine": 65,
+          "endLine": 74,
+          "params": [
+            "username"
+          ]
+        },
+        {
+          "name": "passwordMatches",
+          "startLine": 76,
+          "endLine": 81,
+          "params": [
+            "input",
+            "stored"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AuthServiceImpl",
+          "startLine": 32,
+          "endLine": 82,
+          "methods": [
+            "login",
+            "logout",
+            "findByUsername",
+            "passwordMatches"
+          ],
+          "properties": [
+            "DEFAULT_AVATAR_URL",
+            "userMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "login",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "logout",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "AuthServiceImpl",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "login",
+          "callee": "requestParam.getUsername",
+          "lineNumber": 42
+        },
+        {
+          "caller": "login",
+          "callee": "requestParam.getPassword",
+          "lineNumber": 43
+        },
+        {
+          "caller": "login",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 44
+        },
+        {
+          "caller": "login",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 44
+        },
+        {
+          "caller": "login",
+          "callee": "new ClientException",
+          "lineNumber": 45
+        },
+        {
+          "caller": "login",
+          "callee": "findByUsername",
+          "lineNumber": 47
+        },
+        {
+          "caller": "login",
+          "callee": "passwordMatches",
+          "lineNumber": 48
+        },
+        {
+          "caller": "login",
+          "callee": "user.getPassword",
+          "lineNumber": 48
+        },
+        {
+          "caller": "login",
+          "callee": "new ClientException",
+          "lineNumber": 49
+        },
+        {
+          "caller": "login",
+          "callee": "user.getId",
+          "lineNumber": 51
+        },
+        {
+          "caller": "login",
+          "callee": "new ClientException",
+          "lineNumber": 52
+        },
+        {
+          "caller": "login",
+          "callee": "user.getId().toString",
+          "lineNumber": 54
+        },
+        {
+          "caller": "login",
+          "callee": "user.getId",
+          "lineNumber": 54
+        },
+        {
+          "caller": "login",
+          "callee": "StpUtil.login",
+          "lineNumber": 55
+        },
+        {
+          "caller": "login",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 56
+        },
+        {
+          "caller": "login",
+          "callee": "user.getAvatar",
+          "lineNumber": 56
+        },
+        {
+          "caller": "login",
+          "callee": "user.getAvatar",
+          "lineNumber": 56
+        },
+        {
+          "caller": "login",
+          "callee": "new LoginVO",
+          "lineNumber": 57
+        },
+        {
+          "caller": "login",
+          "callee": "user.getRole",
+          "lineNumber": 57
+        },
+        {
+          "caller": "login",
+          "callee": "StpUtil.getTokenValue",
+          "lineNumber": 57
+        },
+        {
+          "caller": "logout",
+          "callee": "StpUtil.logout",
+          "lineNumber": 62
+        },
+        {
+          "caller": "findByUsername",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 66
+        },
+        {
+          "caller": "findByUsername",
+          "callee": "userMapper.selectOne",
+          "lineNumber": 69
+        },
+        {
+          "caller": "findByUsername",
+          "callee": "Wrappers.lambdaQuery(UserDO.class)\r\n                        .eq(UserDO::getUsername, username).eq",
+          "lineNumber": 70
+        },
+        {
+          "caller": "findByUsername",
+          "callee": "Wrappers.lambdaQuery(UserDO.class).eq",
+          "lineNumber": 70
+        },
+        {
+          "caller": "findByUsername",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 70
+        },
+        {
+          "caller": "passwordMatches",
+          "callee": "stored.equals",
+          "lineNumber": 80
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 3,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/impl/UserServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 213,
+      "nonEmptyLines": 189,
+      "functions": [
+        {
+          "name": "pageQuery",
+          "startLine": 48,
+          "endLine": 63,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "create",
+          "startLine": 65,
+          "endLine": 88,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 90,
+          "endLine": 123,
+          "params": [
+            "id",
+            "requestParam"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 125,
+          "endLine": 130,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "changePassword",
+          "startLine": 132,
+          "endLine": 152,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "loadById",
+          "startLine": 154,
+          "endLine": 162,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "ensureNotDefaultAdmin",
+          "startLine": 164,
+          "endLine": 168,
+          "params": [
+            "record"
+          ]
+        },
+        {
+          "name": "ensureUsernameAvailable",
+          "startLine": 170,
+          "endLine": 180,
+          "params": [
+            "username",
+            "excludeId"
+          ]
+        },
+        {
+          "name": "normalizeRole",
+          "startLine": 182,
+          "endLine": 194,
+          "params": [
+            "role"
+          ]
+        },
+        {
+          "name": "passwordMatches",
+          "startLine": 196,
+          "endLine": 201,
+          "params": [
+            "input",
+            "stored"
+          ]
+        },
+        {
+          "name": "toVO",
+          "startLine": 203,
+          "endLine": 212,
+          "params": [
+            "record"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "UserServiceImpl",
+          "startLine": 40,
+          "endLine": 213,
+          "methods": [
+            "pageQuery",
+            "create",
+            "update",
+            "delete",
+            "changePassword",
+            "loadById",
+            "ensureNotDefaultAdmin",
+            "ensureUsernameAvailable",
+            "normalizeRole",
+            "passwordMatches",
+            "toVO"
+          ],
+          "properties": [
+            "DEFAULT_ADMIN_USERNAME",
+            "userMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "pageQuery",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "create",
+          "line": 65,
+          "isDefault": false
+        },
+        {
+          "name": "update",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "delete",
+          "line": 125,
+          "isDefault": false
+        },
+        {
+          "name": "changePassword",
+          "line": 132,
+          "isDefault": false
+        },
+        {
+          "name": "UserServiceImpl",
+          "line": 40,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "pageQuery",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 50
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "requestParam.getKeyword",
+          "lineNumber": 50
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "new Page<>",
+          "lineNumber": 51
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "requestParam.getCurrent",
+          "lineNumber": 51
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "requestParam.getSize",
+          "lineNumber": 51
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "userMapper.selectPage",
+          "lineNumber": 52
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.lambdaQuery(UserDO.class)\r\n                        .eq(UserDO::getDeleted, 0)\r\n                        .and(StrUtil.isNotBlank(keyword), wrapper -> wrapper\r\n                                .like(UserDO::getUsername, keyword)\r\n                                .or()\r\n                                .like(UserDO::getRole, keyword)).orderByDesc",
+          "lineNumber": 54
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.lambdaQuery(UserDO.class)\r\n                        .eq(UserDO::getDeleted, 0).and",
+          "lineNumber": 54
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.lambdaQuery(UserDO.class).eq",
+          "lineNumber": 54
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 54
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "StrUtil.isNotBlank",
+          "lineNumber": 56
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "wrapper\r\n                                .like(UserDO::getUsername, keyword)\r\n                                .or().like",
+          "lineNumber": 56
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "wrapper\r\n                                .like(UserDO::getUsername, keyword).or",
+          "lineNumber": 56
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "wrapper.like",
+          "lineNumber": 56
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "result.convert",
+          "lineNumber": 62
+        },
+        {
+          "caller": "create",
+          "callee": "Assert.notNull",
+          "lineNumber": 67
+        },
+        {
+          "caller": "create",
+          "callee": "new ClientException",
+          "lineNumber": 67
+        },
+        {
+          "caller": "create",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 68
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getUsername",
+          "lineNumber": 68
+        },
+        {
+          "caller": "create",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 69
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getPassword",
+          "lineNumber": 69
+        },
+        {
+          "caller": "create",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 70
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getRole",
+          "lineNumber": 70
+        },
+        {
+          "caller": "create",
+          "callee": "Assert.notBlank",
+          "lineNumber": 71
+        },
+        {
+          "caller": "create",
+          "callee": "new ClientException",
+          "lineNumber": 71
+        },
+        {
+          "caller": "create",
+          "callee": "Assert.notBlank",
+          "lineNumber": 72
+        },
+        {
+          "caller": "create",
+          "callee": "new ClientException",
+          "lineNumber": 72
+        },
+        {
+          "caller": "create",
+          "callee": "DEFAULT_ADMIN_USERNAME.equalsIgnoreCase",
+          "lineNumber": 74
+        },
+        {
+          "caller": "create",
+          "callee": "new ClientException",
+          "lineNumber": 75
+        },
+        {
+          "caller": "create",
+          "callee": "normalizeRole",
+          "lineNumber": 77
+        },
+        {
+          "caller": "create",
+          "callee": "ensureUsernameAvailable",
+          "lineNumber": 78
+        },
+        {
+          "caller": "create",
+          "callee": "UserDO.builder()\r\n                .username(username)\r\n                .password(password)\r\n                .role(role)\r\n                .avatar(StrUtil.trimToNull(requestParam.getAvatar())).build",
+          "lineNumber": 80
+        },
+        {
+          "caller": "create",
+          "callee": "UserDO.builder()\r\n                .username(username)\r\n                .password(password)\r\n                .role(role).avatar",
+          "lineNumber": 80
+        },
+        {
+          "caller": "create",
+          "callee": "UserDO.builder()\r\n                .username(username)\r\n                .password(password).role",
+          "lineNumber": 80
+        },
+        {
+          "caller": "create",
+          "callee": "UserDO.builder()\r\n                .username(username).password",
+          "lineNumber": 80
+        },
+        {
+          "caller": "create",
+          "callee": "UserDO.builder().username",
+          "lineNumber": 80
+        },
+        {
+          "caller": "create",
+          "callee": "UserDO.builder",
+          "lineNumber": 80
+        },
+        {
+          "caller": "create",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 84
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getAvatar",
+          "lineNumber": 84
+        },
+        {
+          "caller": "create",
+          "callee": "userMapper.insert",
+          "lineNumber": 86
+        },
+        {
+          "caller": "create",
+          "callee": "String.valueOf",
+          "lineNumber": 87
+        },
+        {
+          "caller": "create",
+          "callee": "record.getId",
+          "lineNumber": 87
+        },
+        {
+          "caller": "update",
+          "callee": "Assert.notNull",
+          "lineNumber": 92
+        },
+        {
+          "caller": "update",
+          "callee": "new ClientException",
+          "lineNumber": 92
+        },
+        {
+          "caller": "update",
+          "callee": "loadById",
+          "lineNumber": 93
+        },
+        {
+          "caller": "update",
+          "callee": "ensureNotDefaultAdmin",
+          "lineNumber": 94
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getUsername",
+          "lineNumber": 96
+        },
+        {
+          "caller": "update",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 97
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getUsername",
+          "lineNumber": 97
+        },
+        {
+          "caller": "update",
+          "callee": "Assert.notBlank",
+          "lineNumber": 98
+        },
+        {
+          "caller": "update",
+          "callee": "new ClientException",
+          "lineNumber": 98
+        },
+        {
+          "caller": "update",
+          "callee": "username.equals",
+          "lineNumber": 99
+        },
+        {
+          "caller": "update",
+          "callee": "record.getUsername",
+          "lineNumber": 99
+        },
+        {
+          "caller": "update",
+          "callee": "DEFAULT_ADMIN_USERNAME.equalsIgnoreCase",
+          "lineNumber": 100
+        },
+        {
+          "caller": "update",
+          "callee": "new ClientException",
+          "lineNumber": 101
+        },
+        {
+          "caller": "update",
+          "callee": "ensureUsernameAvailable",
+          "lineNumber": 103
+        },
+        {
+          "caller": "update",
+          "callee": "record.getId",
+          "lineNumber": 103
+        },
+        {
+          "caller": "update",
+          "callee": "record.setUsername",
+          "lineNumber": 105
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getRole",
+          "lineNumber": 108
+        },
+        {
+          "caller": "update",
+          "callee": "record.setRole",
+          "lineNumber": 109
+        },
+        {
+          "caller": "update",
+          "callee": "normalizeRole",
+          "lineNumber": 109
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getRole",
+          "lineNumber": 109
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getAvatar",
+          "lineNumber": 112
+        },
+        {
+          "caller": "update",
+          "callee": "record.setAvatar",
+          "lineNumber": 113
+        },
+        {
+          "caller": "update",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 113
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getAvatar",
+          "lineNumber": 113
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getPassword",
+          "lineNumber": 116
+        },
+        {
+          "caller": "update",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 117
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getPassword",
+          "lineNumber": 117
+        },
+        {
+          "caller": "update",
+          "callee": "Assert.notBlank",
+          "lineNumber": 118
+        },
+        {
+          "caller": "update",
+          "callee": "new ClientException",
+          "lineNumber": 118
+        },
+        {
+          "caller": "update",
+          "callee": "record.setPassword",
+          "lineNumber": 119
+        },
+        {
+          "caller": "update",
+          "callee": "userMapper.updateById",
+          "lineNumber": 122
+        },
+        {
+          "caller": "delete",
+          "callee": "loadById",
+          "lineNumber": 127
+        },
+        {
+          "caller": "delete",
+          "callee": "ensureNotDefaultAdmin",
+          "lineNumber": 128
+        },
+        {
+          "caller": "delete",
+          "callee": "userMapper.deleteById",
+          "lineNumber": 129
+        },
+        {
+          "caller": "delete",
+          "callee": "record.getId",
+          "lineNumber": 129
+        },
+        {
+          "caller": "changePassword",
+          "callee": "Assert.notNull",
+          "lineNumber": 134
+        },
+        {
+          "caller": "changePassword",
+          "callee": "new ClientException",
+          "lineNumber": 134
+        },
+        {
+          "caller": "changePassword",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 135
+        },
+        {
+          "caller": "changePassword",
+          "callee": "requestParam.getCurrentPassword",
+          "lineNumber": 135
+        },
+        {
+          "caller": "changePassword",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 136
+        },
+        {
+          "caller": "changePassword",
+          "callee": "requestParam.getNewPassword",
+          "lineNumber": 136
+        },
+        {
+          "caller": "changePassword",
+          "callee": "Assert.notBlank",
+          "lineNumber": 137
+        },
+        {
+          "caller": "changePassword",
+          "callee": "new ClientException",
+          "lineNumber": 137
+        },
+        {
+          "caller": "changePassword",
+          "callee": "Assert.notBlank",
+          "lineNumber": 138
+        },
+        {
+          "caller": "changePassword",
+          "callee": "new ClientException",
+          "lineNumber": 138
+        },
+        {
+          "caller": "changePassword",
+          "callee": "UserContext.requireUser",
+          "lineNumber": 140
+        },
+        {
+          "caller": "changePassword",
+          "callee": "userMapper.selectOne",
+          "lineNumber": 141
+        },
+        {
+          "caller": "changePassword",
+          "callee": "Wrappers.lambdaQuery(UserDO.class)\r\n                        .eq(UserDO::getId, loginUser.getUserId()).eq",
+          "lineNumber": 142
+        },
+        {
+          "caller": "changePassword",
+          "callee": "Wrappers.lambdaQuery(UserDO.class).eq",
+          "lineNumber": 142
+        },
+        {
+          "caller": "changePassword",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 142
+        },
+        {
+          "caller": "changePassword",
+          "callee": "loginUser.getUserId",
+          "lineNumber": 143
+        },
+        {
+          "caller": "changePassword",
+          "callee": "Assert.notNull",
+          "lineNumber": 146
+        },
+        {
+          "caller": "changePassword",
+          "callee": "new ClientException",
+          "lineNumber": 146
+        },
+        {
+          "caller": "changePassword",
+          "callee": "passwordMatches",
+          "lineNumber": 147
+        },
+        {
+          "caller": "changePassword",
+          "callee": "record.getPassword",
+          "lineNumber": 147
+        },
+        {
+          "caller": "changePassword",
+          "callee": "new ClientException",
+          "lineNumber": 148
+        },
+        {
+          "caller": "changePassword",
+          "callee": "record.setPassword",
+          "lineNumber": 150
+        },
+        {
+          "caller": "changePassword",
+          "callee": "userMapper.updateById",
+          "lineNumber": 151
+        },
+        {
+          "caller": "loadById",
+          "callee": "userMapper.selectOne",
+          "lineNumber": 155
+        },
+        {
+          "caller": "loadById",
+          "callee": "Wrappers.lambdaQuery(UserDO.class)\r\n                        .eq(UserDO::getId, id).eq",
+          "lineNumber": 156
+        },
+        {
+          "caller": "loadById",
+          "callee": "Wrappers.lambdaQuery(UserDO.class).eq",
+          "lineNumber": 156
+        },
+        {
+          "caller": "loadById",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 156
+        },
+        {
+          "caller": "loadById",
+          "callee": "Assert.notNull",
+          "lineNumber": 160
+        },
+        {
+          "caller": "loadById",
+          "callee": "new ClientException",
+          "lineNumber": 160
+        },
+        {
+          "caller": "ensureNotDefaultAdmin",
+          "callee": "DEFAULT_ADMIN_USERNAME.equalsIgnoreCase",
+          "lineNumber": 165
+        },
+        {
+          "caller": "ensureNotDefaultAdmin",
+          "callee": "record.getUsername",
+          "lineNumber": 165
+        },
+        {
+          "caller": "ensureNotDefaultAdmin",
+          "callee": "new ClientException",
+          "lineNumber": 166
+        },
+        {
+          "caller": "ensureUsernameAvailable",
+          "callee": "userMapper.selectOne",
+          "lineNumber": 171
+        },
+        {
+          "caller": "ensureUsernameAvailable",
+          "callee": "Wrappers.lambdaQuery(UserDO.class)\r\n                        .eq(UserDO::getUsername, username)\r\n                        .eq(UserDO::getDeleted, 0).ne",
+          "lineNumber": 172
+        },
+        {
+          "caller": "ensureUsernameAvailable",
+          "callee": "Wrappers.lambdaQuery(UserDO.class)\r\n                        .eq(UserDO::getUsername, username).eq",
+          "lineNumber": 172
+        },
+        {
+          "caller": "ensureUsernameAvailable",
+          "callee": "Wrappers.lambdaQuery(UserDO.class).eq",
+          "lineNumber": 172
+        },
+        {
+          "caller": "ensureUsernameAvailable",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 172
+        },
+        {
+          "caller": "ensureUsernameAvailable",
+          "callee": "new ClientException",
+          "lineNumber": 178
+        },
+        {
+          "caller": "normalizeRole",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 183
+        },
+        {
+          "caller": "normalizeRole",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 184
+        },
+        {
+          "caller": "normalizeRole",
+          "callee": "UserRole.USER.getCode",
+          "lineNumber": 185
+        },
+        {
+          "caller": "normalizeRole",
+          "callee": "UserRole.ADMIN.getCode().equalsIgnoreCase",
+          "lineNumber": 187
+        },
+        {
+          "caller": "normalizeRole",
+          "callee": "UserRole.ADMIN.getCode",
+          "lineNumber": 187
+        },
+        {
+          "caller": "normalizeRole",
+          "callee": "UserRole.ADMIN.getCode",
+          "lineNumber": 188
+        },
+        {
+          "caller": "normalizeRole",
+          "callee": "UserRole.USER.getCode().equalsIgnoreCase",
+          "lineNumber": 190
+        },
+        {
+          "caller": "normalizeRole",
+          "callee": "UserRole.USER.getCode",
+          "lineNumber": 190
+        },
+        {
+          "caller": "normalizeRole",
+          "callee": "UserRole.USER.getCode",
+          "lineNumber": 191
+        },
+        {
+          "caller": "normalizeRole",
+          "callee": "new ClientException",
+          "lineNumber": 193
+        },
+        {
+          "caller": "passwordMatches",
+          "callee": "stored.equals",
+          "lineNumber": 200
+        },
+        {
+          "caller": "toVO",
+          "callee": "UserVO.builder()\r\n                .id(String.valueOf(record.getId()))\r\n                .username(record.getUsername())\r\n                .role(record.getRole())\r\n                .avatar(record.getAvatar())\r\n                .createTime(record.getCreateTime())\r\n                .updateTime(record.getUpdateTime()).build",
+          "lineNumber": 204
+        },
+        {
+          "caller": "toVO",
+          "callee": "UserVO.builder()\r\n                .id(String.valueOf(record.getId()))\r\n                .username(record.getUsername())\r\n                .role(record.getRole())\r\n                .avatar(record.getAvatar())\r\n                .createTime(record.getCreateTime()).updateTime",
+          "lineNumber": 204
+        },
+        {
+          "caller": "toVO",
+          "callee": "UserVO.builder()\r\n                .id(String.valueOf(record.getId()))\r\n                .username(record.getUsername())\r\n                .role(record.getRole())\r\n                .avatar(record.getAvatar()).createTime",
+          "lineNumber": 204
+        },
+        {
+          "caller": "toVO",
+          "callee": "UserVO.builder()\r\n                .id(String.valueOf(record.getId()))\r\n                .username(record.getUsername())\r\n                .role(record.getRole()).avatar",
+          "lineNumber": 204
+        },
+        {
+          "caller": "toVO",
+          "callee": "UserVO.builder()\r\n                .id(String.valueOf(record.getId()))\r\n                .username(record.getUsername()).role",
+          "lineNumber": 204
+        },
+        {
+          "caller": "toVO",
+          "callee": "UserVO.builder()\r\n                .id(String.valueOf(record.getId())).username",
+          "lineNumber": 204
+        },
+        {
+          "caller": "toVO",
+          "callee": "UserVO.builder().id",
+          "lineNumber": 204
+        },
+        {
+          "caller": "toVO",
+          "callee": "UserVO.builder",
+          "lineNumber": 204
+        },
+        {
+          "caller": "toVO",
+          "callee": "String.valueOf",
+          "lineNumber": 205
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getId",
+          "lineNumber": 205
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getUsername",
+          "lineNumber": 206
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getRole",
+          "lineNumber": 207
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getAvatar",
+          "lineNumber": 208
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getCreateTime",
+          "lineNumber": 209
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getUpdateTime",
+          "lineNumber": 210
+        }
+      ],
+      "metrics": {
+        "importCount": 12,
+        "exportCount": 6,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/LoginUser.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 46,
+      "classes": [
+        {
+          "name": "LoginUser",
+          "startLine": 28,
+          "endLine": 53,
+          "methods": [],
+          "properties": [
+            "userId",
+            "username",
+            "role",
+            "avatar"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "LoginUser",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 100,
+      "nonEmptyLines": 87,
+      "functions": [
+        {
+          "name": "set",
+          "startLine": 33,
+          "endLine": 35,
+          "params": [
+            "user"
+          ]
+        },
+        {
+          "name": "get",
+          "startLine": 40,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "requireUser",
+          "startLine": 47,
+          "endLine": 53,
+          "params": []
+        },
+        {
+          "name": "getUserId",
+          "startLine": 58,
+          "endLine": 61,
+          "params": []
+        },
+        {
+          "name": "getUsername",
+          "startLine": 66,
+          "endLine": 69,
+          "params": []
+        },
+        {
+          "name": "getRole",
+          "startLine": 74,
+          "endLine": 77,
+          "params": []
+        },
+        {
+          "name": "getAvatar",
+          "startLine": 82,
+          "endLine": 85,
+          "params": []
+        },
+        {
+          "name": "clear",
+          "startLine": 90,
+          "endLine": 92,
+          "params": []
+        },
+        {
+          "name": "hasUser",
+          "startLine": 97,
+          "endLine": 99,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "UserContext",
+          "startLine": 26,
+          "endLine": 100,
+          "methods": [
+            "set",
+            "get",
+            "requireUser",
+            "getUserId",
+            "getUsername",
+            "getRole",
+            "getAvatar",
+            "clear",
+            "hasUser"
+          ],
+          "properties": [
+            "CONTEXT"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "set",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "get",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "requireUser",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "getUserId",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "getUsername",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "getRole",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "getAvatar",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "clear",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "hasUser",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "UserContext",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "set",
+          "callee": "CONTEXT.set",
+          "lineNumber": 34
+        },
+        {
+          "caller": "get",
+          "callee": "CONTEXT.get",
+          "lineNumber": 41
+        },
+        {
+          "caller": "requireUser",
+          "callee": "CONTEXT.get",
+          "lineNumber": 48
+        },
+        {
+          "caller": "requireUser",
+          "callee": "new ClientException",
+          "lineNumber": 50
+        },
+        {
+          "caller": "getUserId",
+          "callee": "CONTEXT.get",
+          "lineNumber": 59
+        },
+        {
+          "caller": "getUserId",
+          "callee": "user.getUserId",
+          "lineNumber": 60
+        },
+        {
+          "caller": "getUsername",
+          "callee": "CONTEXT.get",
+          "lineNumber": 67
+        },
+        {
+          "caller": "getUsername",
+          "callee": "user.getUsername",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getRole",
+          "callee": "CONTEXT.get",
+          "lineNumber": 75
+        },
+        {
+          "caller": "getRole",
+          "callee": "user.getRole",
+          "lineNumber": 76
+        },
+        {
+          "caller": "getAvatar",
+          "callee": "CONTEXT.get",
+          "lineNumber": 83
+        },
+        {
+          "caller": "getAvatar",
+          "callee": "user.getAvatar",
+          "lineNumber": 84
+        },
+        {
+          "caller": "clear",
+          "callee": "CONTEXT.remove",
+          "lineNumber": 91
+        },
+        {
+          "caller": "hasUser",
+          "callee": "CONTEXT.get",
+          "lineNumber": 98
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 10,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 52,
+      "nonEmptyLines": 44,
+      "functions": [
+        {
+          "name": "ClientException",
+          "startLine": 29,
+          "endLine": 31,
+          "params": [
+            "errorCode"
+          ]
+        },
+        {
+          "name": "ClientException",
+          "startLine": 33,
+          "endLine": 35,
+          "params": [
+            "message"
+          ]
+        },
+        {
+          "name": "ClientException",
+          "startLine": 37,
+          "endLine": 39,
+          "params": [
+            "message",
+            "errorCode"
+          ]
+        },
+        {
+          "name": "ClientException",
+          "startLine": 41,
+          "endLine": 43,
+          "params": [
+            "message",
+            "throwable",
+            "errorCode"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 45,
+          "endLine": 51,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ClientException",
+          "startLine": 27,
+          "endLine": 52,
+          "methods": [
+            "ClientException",
+            "ClientException",
+            "ClientException",
+            "ClientException",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ClientException",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "ClientException",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "ClientException",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "ClientException",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "ClientException",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentSubmitAspect.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 118,
+      "nonEmptyLines": 107,
+      "functions": [
+        {
+          "name": "idempotentSubmit",
+          "startLine": 54,
+          "endLine": 72,
+          "params": [
+            "joinPoint"
+          ]
+        },
+        {
+          "name": "getIdempotentSubmitAnnotation",
+          "startLine": 77,
+          "endLine": 81,
+          "params": [
+            "joinPoint"
+          ]
+        },
+        {
+          "name": "getServletPath",
+          "startLine": 86,
+          "endLine": 89,
+          "params": []
+        },
+        {
+          "name": "getCurrentUserId",
+          "startLine": 94,
+          "endLine": 96,
+          "params": []
+        },
+        {
+          "name": "calcArgsMD5",
+          "startLine": 101,
+          "endLine": 103,
+          "params": [
+            "joinPoint"
+          ]
+        },
+        {
+          "name": "buildLockKey",
+          "startLine": 105,
+          "endLine": 117,
+          "params": [
+            "joinPoint",
+            "idempotentSubmit"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "IdempotentSubmitAspect",
+          "startLine": 43,
+          "endLine": 118,
+          "methods": [
+            "idempotentSubmit",
+            "getIdempotentSubmitAnnotation",
+            "getServletPath",
+            "getCurrentUserId",
+            "calcArgsMD5",
+            "buildLockKey"
+          ],
+          "properties": [
+            "redissonClient",
+            "gson"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "idempotentSubmit",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "getIdempotentSubmitAnnotation",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "IdempotentSubmitAspect",
+          "line": 43,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "idempotentSubmit",
+          "callee": "getIdempotentSubmitAnnotation",
+          "lineNumber": 56
+        },
+        {
+          "caller": "idempotentSubmit",
+          "callee": "buildLockKey",
+          "lineNumber": 58
+        },
+        {
+          "caller": "idempotentSubmit",
+          "callee": "redissonClient.getLock",
+          "lineNumber": 59
+        },
+        {
+          "caller": "idempotentSubmit",
+          "callee": "lock.tryLock",
+          "lineNumber": 61
+        },
+        {
+          "caller": "idempotentSubmit",
+          "callee": "new ClientException",
+          "lineNumber": 62
+        },
+        {
+          "caller": "idempotentSubmit",
+          "callee": "idempotentSubmit.message",
+          "lineNumber": 62
+        },
+        {
+          "caller": "idempotentSubmit",
+          "callee": "joinPoint.proceed",
+          "lineNumber": 67
+        },
+        {
+          "caller": "idempotentSubmit",
+          "callee": "lock.unlock",
+          "lineNumber": 69
+        },
+        {
+          "caller": "getIdempotentSubmitAnnotation",
+          "callee": "joinPoint.getSignature",
+          "lineNumber": 78
+        },
+        {
+          "caller": "getIdempotentSubmitAnnotation",
+          "callee": "joinPoint.getTarget().getClass().getDeclaredMethod",
+          "lineNumber": 79
+        },
+        {
+          "caller": "getIdempotentSubmitAnnotation",
+          "callee": "joinPoint.getTarget().getClass",
+          "lineNumber": 79
+        },
+        {
+          "caller": "getIdempotentSubmitAnnotation",
+          "callee": "joinPoint.getTarget",
+          "lineNumber": 79
+        },
+        {
+          "caller": "getIdempotentSubmitAnnotation",
+          "callee": "methodSignature.getName",
+          "lineNumber": 79
+        },
+        {
+          "caller": "getIdempotentSubmitAnnotation",
+          "callee": "methodSignature.getMethod().getParameterTypes",
+          "lineNumber": 79
+        },
+        {
+          "caller": "getIdempotentSubmitAnnotation",
+          "callee": "methodSignature.getMethod",
+          "lineNumber": 79
+        },
+        {
+          "caller": "getIdempotentSubmitAnnotation",
+          "callee": "targetMethod.getAnnotation",
+          "lineNumber": 80
+        },
+        {
+          "caller": "getServletPath",
+          "callee": "RequestContextHolder.getRequestAttributes",
+          "lineNumber": 87
+        },
+        {
+          "caller": "getServletPath",
+          "callee": "Objects.requireNonNull(sra).getRequest().getServletPath",
+          "lineNumber": 88
+        },
+        {
+          "caller": "getServletPath",
+          "callee": "Objects.requireNonNull(sra).getRequest",
+          "lineNumber": 88
+        },
+        {
+          "caller": "getServletPath",
+          "callee": "Objects.requireNonNull",
+          "lineNumber": 88
+        },
+        {
+          "caller": "getCurrentUserId",
+          "callee": "UserContext.getUserId",
+          "lineNumber": 95
+        },
+        {
+          "caller": "calcArgsMD5",
+          "callee": "DigestUtil.md5Hex",
+          "lineNumber": 102
+        },
+        {
+          "caller": "calcArgsMD5",
+          "callee": "gson.toJson(joinPoint.getArgs()).getBytes",
+          "lineNumber": 102
+        },
+        {
+          "caller": "calcArgsMD5",
+          "callee": "gson.toJson",
+          "lineNumber": 102
+        },
+        {
+          "caller": "calcArgsMD5",
+          "callee": "joinPoint.getArgs",
+          "lineNumber": 102
+        },
+        {
+          "caller": "buildLockKey",
+          "callee": "StrUtil.isNotBlank",
+          "lineNumber": 106
+        },
+        {
+          "caller": "buildLockKey",
+          "callee": "idempotentSubmit.key",
+          "lineNumber": 106
+        },
+        {
+          "caller": "buildLockKey",
+          "callee": "joinPoint.getSignature",
+          "lineNumber": 107
+        },
+        {
+          "caller": "buildLockKey",
+          "callee": "SpELUtil.parseKey",
+          "lineNumber": 108
+        },
+        {
+          "caller": "buildLockKey",
+          "callee": "idempotentSubmit.key",
+          "lineNumber": 108
+        },
+        {
+          "caller": "buildLockKey",
+          "callee": "signature.getMethod",
+          "lineNumber": 108
+        },
+        {
+          "caller": "buildLockKey",
+          "callee": "joinPoint.getArgs",
+          "lineNumber": 108
+        },
+        {
+          "caller": "buildLockKey",
+          "callee": "String.format",
+          "lineNumber": 109
+        },
+        {
+          "caller": "buildLockKey",
+          "callee": "String.format",
+          "lineNumber": 111
+        },
+        {
+          "caller": "buildLockKey",
+          "callee": "getServletPath",
+          "lineNumber": 113
+        },
+        {
+          "caller": "buildLockKey",
+          "callee": "getCurrentUserId",
+          "lineNumber": 114
+        },
+        {
+          "caller": "buildLockKey",
+          "callee": "calcArgsMD5",
+          "lineNumber": 115
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 3,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    }
+  ]
+}

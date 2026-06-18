@@ -1,0 +1,3135 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "files": [
+    {
+      "path": ".claude/settings.local.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": ".mvn/wrapper/maven-wrapper.properties",
+      "language": "properties",
+      "fileCategory": "config"
+    },
+    {
+      "path": "bootstrap/pom.xml",
+      "language": "xml",
+      "fileCategory": "config"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/DashboardController.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewGroupVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewKpiVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardPerformanceVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendPointVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendSeriesVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendsVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/service/DashboardService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/service/impl/DashboardServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkEmbeddingService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingMode.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingOptions.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategy.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategyFactory.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/FixedSizeOptions.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/strategy/FixedSizeTextChunker.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/strategy/StructureAwareTextChunker.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/TextBoundaryOptions.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/DocumentParser.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/DocumentParserSelector.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/MarkdownDocumentParser.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/ParseResult.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/ParserType.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/TextCleanupUtil.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/TikaDocumentParser.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/IngestionPipelineController.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/IngestionTaskController.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineNodeRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineUpdateRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionTaskCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionPipelineNodeVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionPipelineVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionTaskNodeVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionTaskVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineNodeDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionTaskDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionTaskNodeDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionPipelineMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionPipelineNodeMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionTaskMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionTaskNodeMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/DocumentSource.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/IngestionContext.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/NodeLog.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/StructuredDocument.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/ChunkEnrichType.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/EnhanceType.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionNodeType.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionStatus.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/SourceType.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/NodeConfig.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/PipelineDefinition.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/IngestionResult.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/NodeResult.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/settings/ChunkerSettings.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/settings/EnhancerSettings.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/settings/EnricherSettings.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/settings/IndexerSettings.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/settings/ParserSettings.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/engine/ConditionEvaluator.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/engine/IngestionEngine.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/engine/NodeOutputExtractor.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/node/ChunkerNode.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/node/EnhancerNode.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/node/EnricherNode.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/node/FetcherNode.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/node/IndexerNode.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/node/IngestionNode.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/node/ParserNode.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/prompt/EnhancerPromptManager.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/prompt/EnricherPromptManager.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/impl/IngestionPipelineServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/impl/IngestionTaskServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/impl/IntentTreeServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IngestionPipelineService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IngestionTaskService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IntentTreeService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/strategy/fetcher/DocumentFetcher.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/strategy/fetcher/FeishuFetcher.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/strategy/fetcher/FetchResult.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/strategy/fetcher/HttpUrlFetcher.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/strategy/fetcher/LocalFileFetcher.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/strategy/fetcher/S3Fetcher.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/HttpClientHelper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/JsonResponseParser.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/MimeTypeDetector.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/PromptTemplateRenderer.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/config/KnowledgeScheduleProperties.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/config/RagSemaphoreProperties.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/config/SemaphoreInitializer.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/KnowledgeBaseController.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/KnowledgeChunkController.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/KnowledgeDocumentController.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBasePageRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseUpdateRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkBatchRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkPageRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkUpdateRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentPageRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentUpdateRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentUploadRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/ChunkStrategyVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeBaseVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeChunkVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentChunkLogVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentSearchVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeBaseDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeChunkDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentChunkLogDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleExecDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/handler/JsonbTypeHandler.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeBaseMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeChunkMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentChunkLogMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleExecMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/DocumentStatus.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/ProcessMode.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/ScheduleRunStatus.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/SourceType.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/filter/UploadRateLimitFilter.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/handler/RemoteFileFetcher.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/mq/event/KnowledgeDocumentChunkEvent.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/mq/KnowledgeDocumentChunkConsumer.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/mq/KnowledgeDocumentChunkTransactionChecker.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/CronScheduleHelper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/DocumentStatusHelper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/KnowledgeDocumentScheduleJob.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleLockLease.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleLockManager.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleRefreshProcessor.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleStateContext.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleStateManager.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeBaseServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeChunkServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeDocumentScheduleServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeDocumentServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeBaseService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeChunkService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeDocumentScheduleService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeDocumentService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/aop/ChatQueueLimiter.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/aop/ChatRateLimit.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/aop/ChatRateLimitAspect.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/aop/RagTraceAspect.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/DemoModeInterceptor.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/DemoModeProperties.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/GuidanceProperties.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/HttpClientConfig.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/MemoryProperties.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/MilvusConfig.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGConfigProperties.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGRateLimitProperties.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RagTraceProperties.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RestFSS3Config.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/SearchChannelProperties.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/ThreadPoolExecutorConfig.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/Utf8ResponseFilter.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/validation/MemoryConfigValidator.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/validation/ValidMemoryConfig.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/WebConfig.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/constant/RAGConstant.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/ConversationController.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/IntentTreeController.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/MessageFeedbackController.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/QueryTermMappingController.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/RAGChatController.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/RAGSettingsController.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/RagTraceController.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/ConversationCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/ConversationUpdateRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/DocumentSourceRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeBatchRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeUpdateRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/MessageFeedbackRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingPageRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingUpdateRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/RagTraceRunPageRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionPageRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionUpdateRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/SampleQuestionController.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/ConversationMessageVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/ConversationVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/IntentNodeTreeVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/QueryTermMappingVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceDetailVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceNodeVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceRunVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/SampleQuestionVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/SystemSettingsVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/guidance/AmbiguityLLMChecker.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/guidance/GuidanceDecision.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/guidance/IntentGuidanceService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/DefaultIntentClassifier.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentClassifier.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNode.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNodeRegistry.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentResolver.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentTreeCacheManager.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentTreeFactory.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScoreFilters.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/DefaultMcpToolRegistry.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/LLMMcpParameterExtractor.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpClientAutoConfiguration.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpClientProperties.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpClientToolExecutor.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpParameterExtractor.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpToolExecutor.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpToolRegistry.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/ConversationMemoryService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/ConversationMemoryStore.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/ConversationMemorySummaryService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/DefaultConversationMemoryService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/JdbcConversationMemoryStore.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/JdbcConversationMemorySummaryService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/ContextFormatter.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/DefaultContextFormatter.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptBuildPlan.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptContext.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptPlan.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptScene.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptTemplateLoader.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptTemplateUtils.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/RAGPromptService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/AbstractParallelRetriever.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/IntentDirectedSearchChannel.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannel.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannelResult.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannelType.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchContext.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/strategy/CollectionParallelRetriever.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/strategy/IntentParallelRetriever.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/VectorGlobalSearchChannel.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/MilvusRetrieverService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/MultiChannelRetrievalEngine.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/PgRetrieverService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/postprocessor/DeduplicationPostProcessor.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/postprocessor/RerankPostProcessor.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/postprocessor/SearchResultPostProcessor.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrievalEngine.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrieveRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrieverService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/MultiQuestionRewriteService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryRewriteService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryTermMappingCacheManager.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryTermMappingService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryTermMappingUtil.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/RewriteResult.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/MilvusVectorStoreAdmin.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/MilvusVectorStoreService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/PgVectorStoreAdmin.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/PgVectorStoreService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceId.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceSpec.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorStoreAdmin.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorStoreService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationMessageDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationSummaryDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/IntentNodeDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/MessageFeedbackDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/QueryTermMappingDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceNodeDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceRunDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/SampleQuestionDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMessageMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationSummaryMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/IntentNodeMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/MessageFeedbackMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/QueryTermMappingMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceNodeMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceRunMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/SampleQuestionMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/CompletionPayload.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/IntentCandidate.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/IntentGroup.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/KbResult.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/MessageDelta.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/MetaPayload.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/RetrievalContext.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/StoredFileDTO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/SubQuestionIntent.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/ConversationMessageOrder.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentKind.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentLevel.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/SSEEventType.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/mq/event/MessageFeedbackEvent.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/mq/MessageFeedbackConsumer.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationCreateBO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationMessageBO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationSummaryBO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationGroupService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationMessageService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/FileStorageService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/handler/StreamCallbackFactory.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/handler/StreamChatEventHandler.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/handler/StreamChatHandlerParams.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/handler/StreamTaskManager.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/ConversationGroupServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/ConversationMessageServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/ConversationServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/MessageFeedbackServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/QueryTermMappingAdminServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/RAGChatServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/RagTraceQueryServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/RagTraceRecordServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/S3FileStorageService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/SampleQuestionServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/MessageFeedbackService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/pipeline/StreamChatContext.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/pipeline/StreamChatPipeline.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/QueryTermMappingAdminService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RAGChatService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceQueryService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceRecordService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/SampleQuestionService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/util/FileTypeDetector.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/RagentApplication.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/config/SaTokenConfig.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/config/SaTokenStpInterfaceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/config/UserContextInterceptor.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/AuthController.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/ChangePasswordRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/LoginRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserPageRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserUpdateRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/UserController.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/CurrentUserVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/LoginVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/UserVO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/entity/UserDO.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/mapper/UserMapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/enums/UserRole.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/AuthService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/impl/AuthServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/impl/UserServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/UserService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/application.yaml",
+      "language": "yaml",
+      "fileCategory": "config"
+    },
+    {
+      "path": "bootstrap/src/main/resources/lua/queue_claim_atomic.lua",
+      "language": "lua",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/META-INF/additional-spring-configuration-metadata.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/answer-chat-kb.st",
+      "language": "st",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/answer-chat-mcp-kb-mixed.st",
+      "language": "st",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/answer-chat-mcp.st",
+      "language": "st",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/answer-chat-system.st",
+      "language": "st",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/context-format.st",
+      "language": "st",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/conversation-summary.st",
+      "language": "st",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/conversation-title.st",
+      "language": "st",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/guidance-ambiguity-check.st",
+      "language": "st",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/guidance-prompt.st",
+      "language": "st",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/intent-classifier.st",
+      "language": "st",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/mcp-parameter-extract-user.st",
+      "language": "st",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/mcp-parameter-extract.st",
+      "language": "st",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/pdf-format-guard.st",
+      "language": "st",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/user-question-rewrite.st",
+      "language": "st",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/index/InvoiceIndexDocumentTests.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleRefreshProcessorTest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/core/vector/PgVectorStoreServiceTest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/embedding/SiliconFlowEmbeddingServiceTests.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/Intent/IntentTreeServiceTests.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/Intent/SimpleIntentClassifierTests.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/Intent/VectorIntentClassifier.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/Intent/VectorTreeIntentClassifierTests.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/rewrite/MultiQuestionRewriteServiceTests.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/rewrite/QueryRewriteTests.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/RagentCoreApplicationTests.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/service/ConversationMessageServiceTests.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/vector/MilvusCollectionTests.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/resources/mockito-extensions/org.mockito.plugins.MockMaker",
+      "language": "mockmaker",
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/examples/pdf-ingestion-example.md",
+      "language": "markdown",
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/examples/pdf-pipeline-request.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "docs/multi-channel-retrieval.md",
+      "language": "markdown",
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/quick-start.md",
+      "language": "markdown",
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/refactoring-summary.md",
+      "language": "markdown",
+      "fileCategory": "docs"
+    },
+    {
+      "path": "framework/pom.xml",
+      "language": "xml",
+      "fileCategory": "config"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/cache/RedisKeySerializer.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/config/DataBaseConfiguration.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/config/RocketMQAutoConfiguration.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/config/WebAutoConfiguration.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/ApplicationContextHolder.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/LoginUser.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/database/MyMetaObjectHandler.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/distributedid/CustomIdentifierGenerator.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/distributedid/SnowflakeIdInitializer.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/IErrorCode.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/AbstractException.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/kb/VectorCollectionAlreadyExistsException.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/RemoteException.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ServiceException.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentConsume.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentConsumeAspect.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentConsumeStatusEnum.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentSubmit.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentSubmitAspect.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/SpELUtil.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/MessageWrapper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/DelegatingTransactionListener.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/MessageQueueProducer.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/RocketMQProducerAdapter.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/TransactionChecker.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceContext.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceRoot.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/GlobalExceptionHandler.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/SseEmitterSender.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/resources/lua/snowflake_init.lua",
+      "language": "lua",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/.env",
+      "language": "config",
+      "fileCategory": "config"
+    },
+    {
+      "path": "frontend/.prettierignore",
+      "language": "unknown",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/alert-dialog.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/badge.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/button.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/card.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/form.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/input.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/label.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/progress.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/select.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/separator.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/sheet.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/table.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/tabs.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/textarea.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/components.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "frontend/index.html",
+      "language": "html",
+      "fileCategory": "markup"
+    },
+    {
+      "path": "frontend/package.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "frontend/postcss.config.cjs",
+      "language": "javascript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/App.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/admin/CreateKnowledgeBaseDialog.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/admin/SimpleLineChart.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/chat/ChatInput.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/chat/FeedbackButtons.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/chat/MarkdownRenderer.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/chat/MessageItem.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/chat/MessageList.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/chat/ThinkingIndicator.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/chat/WelcomeScreen.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/Avatar.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/ErrorBoundary.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/Loading.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/Toast.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/layout/Header.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/layout/MainLayout.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/layout/Sidebar.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/session/SessionItem.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/session/SessionList.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/alert-dialog.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/badge.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/button.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/card.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/checkbox.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/dialog.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/dropdown-menu.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/form.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/input.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/label.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/select.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/separator.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/table.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/textarea.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/tooltip.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/hooks/useAuth.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/hooks/useChat.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/hooks/useStreamResponse.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/utils.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/main.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/AdminLayout.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/dashboard/DashboardPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/ingestion/IngestionPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/intent-tree/IntentEditPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/intent-tree/IntentListPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/intent-tree/IntentTreePage.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/knowledge/KnowledgeChunksPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/knowledge/KnowledgeDocumentsPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/knowledge/KnowledgeListPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/query-term-mapping/QueryTermMappingPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/sample-questions/SampleQuestionPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/settings/SystemSettingsPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/components/FilterBar.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/components/PageHeader.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/components/RunsTable.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/components/StatCard.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/RagTraceDetailPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/RagTracePage.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/traceUtils.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/users/UserListPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/ChatPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/LoginPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/NotFoundPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/router.tsx",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/api.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/authService.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/chatService.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/dashboardService.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/ingestionService.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/intentTreeService.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/knowledgeService.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/queryTermMappingService.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/ragTraceService.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/sampleQuestionService.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/sessionService.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/settingsService.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/userService.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/stores/authStore.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/stores/chatStore.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/stores/themeStore.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/styles/globals.css",
+      "language": "css",
+      "fileCategory": "markup"
+    },
+    {
+      "path": "frontend/src/types/index.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/utils/error.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/utils/helpers.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/utils/storage.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/vite-env.d.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/tailwind.config.cjs",
+      "language": "javascript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/TESTING.md",
+      "language": "markdown",
+      "fileCategory": "docs"
+    },
+    {
+      "path": "frontend/tsconfig.app.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "frontend/tsconfig.app.tsbuildinfo",
+      "language": "tsbuildinfo",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/tsconfig.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "frontend/tsconfig.node.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "frontend/tsconfig.node.tsbuildinfo",
+      "language": "tsbuildinfo",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/vite.config.d.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/vite.config.js",
+      "language": "javascript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/vite.config.ts",
+      "language": "typescript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/pom.xml",
+      "language": "xml",
+      "fileCategory": "config"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/AbstractOpenAIStyleChatClient.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/BaiLianChatClient.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/ChatClient.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/OllamaChatClient.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/OpenAIStyleSseParser.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/ProbeStreamBridge.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/RoutingLLMService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/SiliconFlowChatClient.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamAsyncExecutor.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamCallback.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamCancellationHandle.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamCancellationHandles.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/AbstractOpenAIStyleEmbeddingClient.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingClient.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/OllamaEmbeddingClient.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/RoutingEmbeddingService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/SiliconFlowEmbeddingClient.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpMediaTypes.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpResponseHelper.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientErrorType.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientException.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelUrlResolver.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelCaller.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelHealthStore.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelRoutingExecutor.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelSelector.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/BaiLianRerankClient.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/NoopRerankClient.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/RerankClient.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/RerankService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/RoutingRerankService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/token/HeuristicTokenCounterService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/token/TokenCounterService.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/util/LLMResponseCleaner.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "lombok.config",
+      "language": "config",
+      "fileCategory": "code"
+    },
+    {
+      "path": "mcp-server/pom.xml",
+      "language": "xml",
+      "fileCategory": "config"
+    },
+    {
+      "path": "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/config/McpServerConfig.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/executor/SalesMcpExecutor.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/executor/TicketMcpExecutor.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/executor/WeatherMcpExecutor.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/McpServerApplication.java",
+      "language": "java",
+      "fileCategory": "code"
+    },
+    {
+      "path": "mcp-server/src/main/resources/application.yml",
+      "language": "yaml",
+      "fileCategory": "config"
+    },
+    {
+      "path": "mvnw",
+      "language": "unknown",
+      "fileCategory": "code"
+    },
+    {
+      "path": "mvnw.cmd",
+      "language": "batch",
+      "fileCategory": "script"
+    },
+    {
+      "path": "pom.xml",
+      "language": "xml",
+      "fileCategory": "config"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/database/backups/init_data.sql",
+      "language": "sql",
+      "fileCategory": "data"
+    },
+    {
+      "path": "resources/database/backups/schema_table.sql",
+      "language": "sql",
+      "fileCategory": "data"
+    },
+    {
+      "path": "resources/database/init_data_pg.sql",
+      "language": "sql",
+      "fileCategory": "data"
+    },
+    {
+      "path": "resources/database/schema_pg.sql",
+      "language": "sql",
+      "fileCategory": "data"
+    },
+    {
+      "path": "resources/database/upgrade_v1.0_to_v1.1.sql",
+      "language": "sql",
+      "fileCategory": "data"
+    },
+    {
+      "path": "resources/database/upgrade_v1.1_to_v1.2.sql",
+      "language": "sql",
+      "fileCategory": "data"
+    },
+    {
+      "path": "resources/docker/lightweight/milvus-stack-2.5.8.compose.yaml",
+      "language": "yaml",
+      "fileCategory": "config"
+    },
+    {
+      "path": "resources/docker/lightweight/milvus-stack-2.6.6.compose.yaml",
+      "language": "yaml",
+      "fileCategory": "config"
+    },
+    {
+      "path": "resources/docker/lightweight/README.md",
+      "language": "markdown",
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/docker/milvus-stack-2.6.6.compose.yaml",
+      "language": "yaml",
+      "fileCategory": "config"
+    },
+    {
+      "path": "resources/docker/rocketmq-stack-5.2.0.compose.yaml",
+      "language": "yaml",
+      "fileCategory": "config"
+    },
+    {
+      "path": "resources/docker/rocketmq-stack-amd-5.2.0.compose.yaml",
+      "language": "yaml",
+      "fileCategory": "config"
+    },
+    {
+      "path": "resources/docs/knowledge/biz/biz-ins/互联网保险系统数据安全规范.md",
+      "language": "markdown",
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/docs/knowledge/biz/biz-oa/OA系统数据安全规范文档.md",
+      "language": "markdown",
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/docs/knowledge/group/group-finance/开票信息.md",
+      "language": "markdown",
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/docs/knowledge/group/hr/公司规章制度.md",
+      "language": "markdown",
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/docs/knowledge/group/hr/人事制度.md",
+      "language": "markdown",
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/docs/knowledge/group/hr/薪资与福利政策.md",
+      "language": "markdown",
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/docs/knowledge/group/hr/员工培训.md",
+      "language": "markdown",
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/docs/knowledge/group/hr/招聘信息.md",
+      "language": "markdown",
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/docs/knowledge/group/it/IT支持.md",
+      "language": "markdown",
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/format/copyright.txt",
+      "language": "txt",
+      "fileCategory": "docs"
+    },
+    {
+      "path": "scripts/sse_queue_test.sh",
+      "language": "shell",
+      "fileCategory": "script"
+    }
+  ]
+}

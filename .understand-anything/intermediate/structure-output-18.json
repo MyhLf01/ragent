@@ -1,0 +1,984 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 8,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/MessageFeedbackController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 43,
+      "functions": [
+        {
+          "name": "submitFeedback",
+          "startLine": 42,
+          "endLine": 47,
+          "params": [
+            "messageId",
+            "request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MessageFeedbackController",
+          "startLine": 33,
+          "endLine": 48,
+          "methods": [
+            "submitFeedback"
+          ],
+          "properties": [
+            "feedbackService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "submitFeedback",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "MessageFeedbackController",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "submitFeedback",
+          "callee": "feedbackService.submitFeedbackAsync",
+          "lineNumber": 45
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "Results.success",
+          "lineNumber": 46
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/MessageFeedbackRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 42,
+      "nonEmptyLines": 36,
+      "classes": [
+        {
+          "name": "MessageFeedbackRequest",
+          "startLine": 25,
+          "endLine": 42,
+          "methods": [],
+          "properties": [
+            "vote",
+            "reason",
+            "comment"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "MessageFeedbackRequest",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/MessageFeedbackDO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 97,
+      "nonEmptyLines": 83,
+      "classes": [
+        {
+          "name": "MessageFeedbackDO",
+          "startLine": 37,
+          "endLine": 97,
+          "methods": [],
+          "properties": [
+            "id",
+            "messageId",
+            "conversationId",
+            "userId",
+            "vote",
+            "reason",
+            "comment",
+            "createTime",
+            "updateTime",
+            "deleted"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "MessageFeedbackDO",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/MessageFeedbackMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "MessageFeedbackMapper",
+          "startLine": 23,
+          "endLine": 24,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "MessageFeedbackMapper",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/mq/MessageFeedbackConsumer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 51,
+      "nonEmptyLines": 45,
+      "functions": [
+        {
+          "name": "onMessage",
+          "startLine": 43,
+          "endLine": 50,
+          "params": [
+            "message"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MessageFeedbackConsumer",
+          "startLine": 32,
+          "endLine": 51,
+          "methods": [
+            "onMessage"
+          ],
+          "properties": [
+            "feedbackService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "onMessage",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "MessageFeedbackConsumer",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "onMessage",
+          "callee": "message.getBody",
+          "lineNumber": 45
+        },
+        {
+          "caller": "onMessage",
+          "callee": "log.info",
+          "lineNumber": 47
+        },
+        {
+          "caller": "onMessage",
+          "callee": "event.getMessageId",
+          "lineNumber": 48
+        },
+        {
+          "caller": "onMessage",
+          "callee": "event.getUserId",
+          "lineNumber": 48
+        },
+        {
+          "caller": "onMessage",
+          "callee": "event.getVote",
+          "lineNumber": 48
+        },
+        {
+          "caller": "onMessage",
+          "callee": "message.getKeys",
+          "lineNumber": 48
+        },
+        {
+          "caller": "onMessage",
+          "callee": "feedbackService.submitFeedbackByEvent",
+          "lineNumber": 49
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/mq/event/MessageFeedbackEvent.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 58,
+      "classes": [
+        {
+          "name": "MessageFeedbackEvent",
+          "startLine": 31,
+          "endLine": 69,
+          "methods": [],
+          "properties": [
+            "serialVersionUID",
+            "messageId",
+            "userId",
+            "vote",
+            "reason",
+            "comment",
+            "submitTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "MessageFeedbackEvent",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/MessageFeedbackService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 51,
+      "classes": [
+        {
+          "name": "MessageFeedbackService",
+          "startLine": 26,
+          "endLine": 59,
+          "methods": [
+            "submitFeedback",
+            "submitFeedbackAsync",
+            "submitFeedbackByEvent",
+            "getUserVotes"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "MessageFeedbackService",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/MessageFeedbackServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 179,
+      "nonEmptyLines": 162,
+      "functions": [
+        {
+          "name": "submitFeedbackAsync",
+          "startLine": 55,
+          "endLine": 74,
+          "params": [
+            "messageId",
+            "request"
+          ]
+        },
+        {
+          "name": "submitFeedback",
+          "startLine": 76,
+          "endLine": 90,
+          "params": [
+            "messageId",
+            "request"
+          ]
+        },
+        {
+          "name": "getUserVotes",
+          "startLine": 92,
+          "endLine": 112,
+          "params": [
+            "userId",
+            "messageIds"
+          ]
+        },
+        {
+          "name": "loadAssistantMessage",
+          "startLine": 114,
+          "endLine": 124,
+          "params": [
+            "messageId",
+            "userId"
+          ]
+        },
+        {
+          "name": "doUpsertFeedback",
+          "startLine": 126,
+          "endLine": 158,
+          "params": [
+            "messageId",
+            "userId",
+            "conversationId",
+            "vote",
+            "reason",
+            "comment",
+            "submitTime"
+          ]
+        },
+        {
+          "name": "submitFeedbackByEvent",
+          "startLine": 160,
+          "endLine": 178,
+          "params": [
+            "event"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MessageFeedbackServiceImpl",
+          "startLine": 44,
+          "endLine": 179,
+          "methods": [
+            "submitFeedbackAsync",
+            "submitFeedback",
+            "getUserVotes",
+            "loadAssistantMessage",
+            "doUpsertFeedback",
+            "submitFeedbackByEvent"
+          ],
+          "properties": [
+            "feedbackMapper",
+            "conversationMessageMapper",
+            "messageQueueProducer",
+            "feedbackTopic"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "submitFeedbackAsync",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "submitFeedback",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "getUserVotes",
+          "line": 92,
+          "isDefault": false
+        },
+        {
+          "name": "submitFeedbackByEvent",
+          "line": 160,
+          "isDefault": false
+        },
+        {
+          "name": "MessageFeedbackServiceImpl",
+          "line": 44,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "UserContext.getUserId",
+          "lineNumber": 57
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "Assert.notBlank",
+          "lineNumber": 58
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "new ClientException",
+          "lineNumber": 58
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "Assert.notBlank",
+          "lineNumber": 59
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "new ClientException",
+          "lineNumber": 59
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "Assert.notNull",
+          "lineNumber": 60
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "new ClientException",
+          "lineNumber": 60
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "request.getVote",
+          "lineNumber": 61
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "Assert.notNull",
+          "lineNumber": 62
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "new ClientException",
+          "lineNumber": 62
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "Assert.isTrue",
+          "lineNumber": 63
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "new ClientException",
+          "lineNumber": 63
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "MessageFeedbackEvent.builder()\r\n                .messageId(messageId)\r\n                .userId(userId)\r\n                .vote(vote)\r\n                .reason(request.getReason())\r\n                .comment(request.getComment())\r\n                .submitTime(System.currentTimeMillis()).build",
+          "lineNumber": 65
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "MessageFeedbackEvent.builder()\r\n                .messageId(messageId)\r\n                .userId(userId)\r\n                .vote(vote)\r\n                .reason(request.getReason())\r\n                .comment(request.getComment()).submitTime",
+          "lineNumber": 65
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "MessageFeedbackEvent.builder()\r\n                .messageId(messageId)\r\n                .userId(userId)\r\n                .vote(vote)\r\n                .reason(request.getReason()).comment",
+          "lineNumber": 65
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "MessageFeedbackEvent.builder()\r\n                .messageId(messageId)\r\n                .userId(userId)\r\n                .vote(vote).reason",
+          "lineNumber": 65
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "MessageFeedbackEvent.builder()\r\n                .messageId(messageId)\r\n                .userId(userId).vote",
+          "lineNumber": 65
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "MessageFeedbackEvent.builder()\r\n                .messageId(messageId).userId",
+          "lineNumber": 65
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "MessageFeedbackEvent.builder().messageId",
+          "lineNumber": 65
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "MessageFeedbackEvent.builder",
+          "lineNumber": 65
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "request.getReason",
+          "lineNumber": 69
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "request.getComment",
+          "lineNumber": 70
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 71
+        },
+        {
+          "caller": "submitFeedbackAsync",
+          "callee": "messageQueueProducer.send",
+          "lineNumber": 73
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "UserContext.getUserId",
+          "lineNumber": 78
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "Assert.notBlank",
+          "lineNumber": 79
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "new ClientException",
+          "lineNumber": 79
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "Assert.notBlank",
+          "lineNumber": 80
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "new ClientException",
+          "lineNumber": 80
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "Assert.notNull",
+          "lineNumber": 81
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "new ClientException",
+          "lineNumber": 81
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "request.getVote",
+          "lineNumber": 83
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "Assert.notNull",
+          "lineNumber": 84
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "new ClientException",
+          "lineNumber": 84
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "Assert.isTrue",
+          "lineNumber": 85
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "new ClientException",
+          "lineNumber": 85
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "loadAssistantMessage",
+          "lineNumber": 87
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "doUpsertFeedback",
+          "lineNumber": 88
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "message.getConversationId",
+          "lineNumber": 88
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "request.getReason",
+          "lineNumber": 89
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "request.getComment",
+          "lineNumber": 89
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 89
+        },
+        {
+          "caller": "getUserVotes",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 94
+        },
+        {
+          "caller": "getUserVotes",
+          "callee": "CollUtil.isEmpty",
+          "lineNumber": 94
+        },
+        {
+          "caller": "getUserVotes",
+          "callee": "Collections.emptyMap",
+          "lineNumber": 95
+        },
+        {
+          "caller": "getUserVotes",
+          "callee": "feedbackMapper.selectList",
+          "lineNumber": 97
+        },
+        {
+          "caller": "getUserVotes",
+          "callee": "Wrappers.lambdaQuery(MessageFeedbackDO.class)\r\n                        .eq(MessageFeedbackDO::getUserId, userId)\r\n                        .eq(MessageFeedbackDO::getDeleted, 0).in",
+          "lineNumber": 98
+        },
+        {
+          "caller": "getUserVotes",
+          "callee": "Wrappers.lambdaQuery(MessageFeedbackDO.class)\r\n                        .eq(MessageFeedbackDO::getUserId, userId).eq",
+          "lineNumber": 98
+        },
+        {
+          "caller": "getUserVotes",
+          "callee": "Wrappers.lambdaQuery(MessageFeedbackDO.class).eq",
+          "lineNumber": 98
+        },
+        {
+          "caller": "getUserVotes",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 98
+        },
+        {
+          "caller": "getUserVotes",
+          "callee": "CollUtil.isEmpty",
+          "lineNumber": 103
+        },
+        {
+          "caller": "getUserVotes",
+          "callee": "Collections.emptyMap",
+          "lineNumber": 104
+        },
+        {
+          "caller": "getUserVotes",
+          "callee": "records.stream().collect",
+          "lineNumber": 106
+        },
+        {
+          "caller": "getUserVotes",
+          "callee": "records.stream",
+          "lineNumber": 106
+        },
+        {
+          "caller": "getUserVotes",
+          "callee": "Collectors.toMap",
+          "lineNumber": 107
+        },
+        {
+          "caller": "loadAssistantMessage",
+          "callee": "conversationMessageMapper.selectOne",
+          "lineNumber": 115
+        },
+        {
+          "caller": "loadAssistantMessage",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getId, messageId)\r\n                        .eq(ConversationMessageDO::getUserId, userId).eq",
+          "lineNumber": 116
+        },
+        {
+          "caller": "loadAssistantMessage",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getId, messageId).eq",
+          "lineNumber": 116
+        },
+        {
+          "caller": "loadAssistantMessage",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class).eq",
+          "lineNumber": 116
+        },
+        {
+          "caller": "loadAssistantMessage",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 116
+        },
+        {
+          "caller": "loadAssistantMessage",
+          "callee": "Assert.notNull",
+          "lineNumber": 121
+        },
+        {
+          "caller": "loadAssistantMessage",
+          "callee": "new ClientException",
+          "lineNumber": 121
+        },
+        {
+          "caller": "loadAssistantMessage",
+          "callee": "Assert.isTrue",
+          "lineNumber": 122
+        },
+        {
+          "caller": "loadAssistantMessage",
+          "callee": "\"assistant\".equalsIgnoreCase",
+          "lineNumber": 122
+        },
+        {
+          "caller": "loadAssistantMessage",
+          "callee": "message.getRole",
+          "lineNumber": 122
+        },
+        {
+          "caller": "loadAssistantMessage",
+          "callee": "new ClientException",
+          "lineNumber": 122
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "feedbackMapper.selectOne",
+          "lineNumber": 128
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "Wrappers.lambdaQuery(MessageFeedbackDO.class)\r\n                        .eq(MessageFeedbackDO::getMessageId, messageId)\r\n                        .eq(MessageFeedbackDO::getUserId, userId).eq",
+          "lineNumber": 129
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "Wrappers.lambdaQuery(MessageFeedbackDO.class)\r\n                        .eq(MessageFeedbackDO::getMessageId, messageId).eq",
+          "lineNumber": 129
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "Wrappers.lambdaQuery(MessageFeedbackDO.class).eq",
+          "lineNumber": 129
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 129
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "MessageFeedbackDO.builder()\r\n                    .messageId(messageId)\r\n                    .conversationId(conversationId)\r\n                    .userId(userId)\r\n                    .vote(vote)\r\n                    .reason(reason)\r\n                    .comment(comment).build",
+          "lineNumber": 136
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "MessageFeedbackDO.builder()\r\n                    .messageId(messageId)\r\n                    .conversationId(conversationId)\r\n                    .userId(userId)\r\n                    .vote(vote)\r\n                    .reason(reason).comment",
+          "lineNumber": 136
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "MessageFeedbackDO.builder()\r\n                    .messageId(messageId)\r\n                    .conversationId(conversationId)\r\n                    .userId(userId)\r\n                    .vote(vote).reason",
+          "lineNumber": 136
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "MessageFeedbackDO.builder()\r\n                    .messageId(messageId)\r\n                    .conversationId(conversationId)\r\n                    .userId(userId).vote",
+          "lineNumber": 136
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "MessageFeedbackDO.builder()\r\n                    .messageId(messageId)\r\n                    .conversationId(conversationId).userId",
+          "lineNumber": 136
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "MessageFeedbackDO.builder()\r\n                    .messageId(messageId).conversationId",
+          "lineNumber": 136
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "MessageFeedbackDO.builder().messageId",
+          "lineNumber": 136
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "MessageFeedbackDO.builder",
+          "lineNumber": 136
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "feedbackMapper.insert",
+          "lineNumber": 144
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "feedbackMapper.update",
+          "lineNumber": 147
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "MessageFeedbackDO.builder()\r\n                            .vote(vote)\r\n                            .reason(reason)\r\n                            .comment(comment).build",
+          "lineNumber": 148
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "MessageFeedbackDO.builder()\r\n                            .vote(vote)\r\n                            .reason(reason).comment",
+          "lineNumber": 148
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "MessageFeedbackDO.builder()\r\n                            .vote(vote).reason",
+          "lineNumber": 148
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "MessageFeedbackDO.builder().vote",
+          "lineNumber": 148
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "MessageFeedbackDO.builder",
+          "lineNumber": 148
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "Wrappers.lambdaUpdate(MessageFeedbackDO.class)\r\n                            .eq(MessageFeedbackDO::getId, existing.getId()).lt",
+          "lineNumber": 153
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "Wrappers.lambdaUpdate(MessageFeedbackDO.class).eq",
+          "lineNumber": 153
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "Wrappers.lambdaUpdate",
+          "lineNumber": 153
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "existing.getId",
+          "lineNumber": 154
+        },
+        {
+          "caller": "doUpsertFeedback",
+          "callee": "new Date",
+          "lineNumber": 155
+        },
+        {
+          "caller": "submitFeedbackByEvent",
+          "callee": "event.getMessageId",
+          "lineNumber": 162
+        },
+        {
+          "caller": "submitFeedbackByEvent",
+          "callee": "event.getUserId",
+          "lineNumber": 163
+        },
+        {
+          "caller": "submitFeedbackByEvent",
+          "callee": "Assert.notBlank",
+          "lineNumber": 164
+        },
+        {
+          "caller": "submitFeedbackByEvent",
+          "callee": "new ClientException",
+          "lineNumber": 164
+        },
+        {
+          "caller": "submitFeedbackByEvent",
+          "callee": "Assert.notBlank",
+          "lineNumber": 165
+        },
+        {
+          "caller": "submitFeedbackByEvent",
+          "callee": "new ClientException",
+          "lineNumber": 165
+        },
+        {
+          "caller": "submitFeedbackByEvent",
+          "callee": "Assert.notNull",
+          "lineNumber": 166
+        },
+        {
+          "caller": "submitFeedbackByEvent",
+          "callee": "event.getVote",
+          "lineNumber": 166
+        },
+        {
+          "caller": "submitFeedbackByEvent",
+          "callee": "new ClientException",
+          "lineNumber": 166
+        },
+        {
+          "caller": "submitFeedbackByEvent",
+          "callee": "loadAssistantMessage",
+          "lineNumber": 168
+        },
+        {
+          "caller": "submitFeedbackByEvent",
+          "callee": "doUpsertFeedback",
+          "lineNumber": 169
+        },
+        {
+          "caller": "submitFeedbackByEvent",
+          "callee": "message.getConversationId",
+          "lineNumber": 172
+        },
+        {
+          "caller": "submitFeedbackByEvent",
+          "callee": "event.getVote",
+          "lineNumber": 173
+        },
+        {
+          "caller": "submitFeedbackByEvent",
+          "callee": "event.getReason",
+          "lineNumber": 174
+        },
+        {
+          "caller": "submitFeedbackByEvent",
+          "callee": "event.getComment",
+          "lineNumber": 175
+        },
+        {
+          "caller": "submitFeedbackByEvent",
+          "callee": "event.getSubmitTime",
+          "lineNumber": 176
+        }
+      ],
+      "metrics": {
+        "importCount": 10,
+        "exportCount": 5,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    }
+  ]
+}

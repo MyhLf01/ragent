@@ -1,0 +1,28 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "resources/docker/lightweight/README.md",
+      "language": "markdown",
+      "sizeLines": 37,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/docker/lightweight/milvus-stack-2.5.8.compose.yaml",
+      "language": "yaml",
+      "sizeLines": 89,
+      "fileCategory": "config"
+    },
+    {
+      "path": "resources/docker/lightweight/milvus-stack-2.6.6.compose.yaml",
+      "language": "yaml",
+      "sizeLines": 89,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    "resources/docker/lightweight/README.md": [],
+    "resources/docker/lightweight/milvus-stack-2.5.8.compose.yaml": [],
+    "resources/docker/lightweight/milvus-stack-2.6.6.compose.yaml": []
+  }
+}

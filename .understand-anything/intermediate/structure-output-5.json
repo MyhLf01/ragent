@@ -1,0 +1,5428 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 32,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/handler/StreamChatHandlerParams.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 59,
+      "classes": [
+        {
+          "name": "StreamChatHandlerParams",
+          "startLine": 31,
+          "endLine": 69,
+          "methods": [],
+          "properties": [
+            "emitter",
+            "conversationId",
+            "taskId",
+            "modelProperties",
+            "memoryService",
+            "conversationGroupService",
+            "taskManager"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "StreamChatHandlerParams",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 152,
+      "nonEmptyLines": 124,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/RemoteException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 41,
+      "functions": [
+        {
+          "name": "RemoteException",
+          "startLine": 29,
+          "endLine": 31,
+          "params": [
+            "message"
+          ]
+        },
+        {
+          "name": "RemoteException",
+          "startLine": 33,
+          "endLine": 35,
+          "params": [
+            "message",
+            "errorCode"
+          ]
+        },
+        {
+          "name": "RemoteException",
+          "startLine": 37,
+          "endLine": 39,
+          "params": [
+            "message",
+            "throwable",
+            "errorCode"
+          ]
+        },
+        {
+          "name": "toString",
+          "startLine": 41,
+          "endLine": 47,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "RemoteException",
+          "startLine": 27,
+          "endLine": 48,
+          "methods": [
+            "RemoteException",
+            "RemoteException",
+            "RemoteException",
+            "toString"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RemoteException",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "RemoteException",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "RemoteException",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "toString",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "RemoteException",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 36,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/AbstractOpenAIStyleChatClient.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 285,
+      "nonEmptyLines": 256,
+      "functions": [
+        {
+          "name": "AbstractOpenAIStyleChatClient",
+          "startLine": 59,
+          "endLine": 65,
+          "params": [
+            "syncHttpClient",
+            "streamingHttpClient",
+            "modelStreamExecutor"
+          ]
+        },
+        {
+          "name": "isReasoningEnabledForStream",
+          "startLine": 72,
+          "endLine": 74,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "customizeRequestBody",
+          "startLine": 80,
+          "endLine": 84,
+          "params": [
+            "body",
+            "request"
+          ]
+        },
+        {
+          "name": "requiresApiKey",
+          "startLine": 89,
+          "endLine": 91,
+          "params": []
+        },
+        {
+          "name": "doChat",
+          "startLine": 95,
+          "endLine": 125,
+          "params": [
+            "request",
+            "target"
+          ]
+        },
+        {
+          "name": "doStreamChat",
+          "startLine": 129,
+          "endLine": 149,
+          "params": [
+            "request",
+            "callback",
+            "target"
+          ]
+        },
+        {
+          "name": "doStream",
+          "startLine": 151,
+          "endLine": 206,
+          "params": [
+            "call",
+            "callback",
+            "cancelled",
+            "reasoningEnabled"
+          ]
+        },
+        {
+          "name": "buildRequestBody",
+          "startLine": 210,
+          "endLine": 234,
+          "params": [
+            "request",
+            "target",
+            "stream"
+          ]
+        },
+        {
+          "name": "buildMessages",
+          "startLine": 236,
+          "endLine": 248,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "toOpenAiRole",
+          "startLine": 250,
+          "endLine": 256,
+          "params": [
+            "role"
+          ]
+        },
+        {
+          "name": "newAuthorizedRequest",
+          "startLine": 258,
+          "endLine": 265,
+          "params": [
+            "provider",
+            "target"
+          ]
+        },
+        {
+          "name": "extractChatContent",
+          "startLine": 267,
+          "endLine": 284,
+          "params": [
+            "respJson"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AbstractOpenAIStyleChatClient",
+          "startLine": 51,
+          "endLine": 285,
+          "methods": [
+            "AbstractOpenAIStyleChatClient",
+            "isReasoningEnabledForStream",
+            "customizeRequestBody",
+            "requiresApiKey",
+            "doChat",
+            "doStreamChat",
+            "doStream",
+            "buildRequestBody",
+            "buildMessages",
+            "toOpenAiRole",
+            "newAuthorizedRequest",
+            "extractChatContent"
+          ],
+          "properties": [
+            "syncHttpClient",
+            "streamingHttpClient",
+            "modelStreamExecutor",
+            "gson"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AbstractOpenAIStyleChatClient",
+          "line": 51,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "isReasoningEnabledForStream",
+          "callee": "Boolean.TRUE.equals",
+          "lineNumber": 73
+        },
+        {
+          "caller": "isReasoningEnabledForStream",
+          "callee": "request.getThinking",
+          "lineNumber": 73
+        },
+        {
+          "caller": "customizeRequestBody",
+          "callee": "Boolean.TRUE.equals",
+          "lineNumber": 81
+        },
+        {
+          "caller": "customizeRequestBody",
+          "callee": "request.getThinking",
+          "lineNumber": 81
+        },
+        {
+          "caller": "customizeRequestBody",
+          "callee": "body.addProperty",
+          "lineNumber": 82
+        },
+        {
+          "caller": "doChat",
+          "callee": "HttpResponseHelper.requireProvider",
+          "lineNumber": 96
+        },
+        {
+          "caller": "doChat",
+          "callee": "provider",
+          "lineNumber": 96
+        },
+        {
+          "caller": "doChat",
+          "callee": "requiresApiKey",
+          "lineNumber": 97
+        },
+        {
+          "caller": "doChat",
+          "callee": "HttpResponseHelper.requireApiKey",
+          "lineNumber": 98
+        },
+        {
+          "caller": "doChat",
+          "callee": "provider",
+          "lineNumber": 98
+        },
+        {
+          "caller": "doChat",
+          "callee": "buildRequestBody",
+          "lineNumber": 101
+        },
+        {
+          "caller": "doChat",
+          "callee": "newAuthorizedRequest(provider, target)\r\n                .post(RequestBody.create(reqBody.toString(), HttpMediaTypes.JSON)).build",
+          "lineNumber": 102
+        },
+        {
+          "caller": "doChat",
+          "callee": "newAuthorizedRequest(provider, target).post",
+          "lineNumber": 102
+        },
+        {
+          "caller": "doChat",
+          "callee": "newAuthorizedRequest",
+          "lineNumber": 102
+        },
+        {
+          "caller": "doChat",
+          "callee": "RequestBody.create",
+          "lineNumber": 103
+        },
+        {
+          "caller": "doChat",
+          "callee": "reqBody.toString",
+          "lineNumber": 103
+        },
+        {
+          "caller": "doChat",
+          "callee": "syncHttpClient.newCall(requestHttp).execute",
+          "lineNumber": 107
+        },
+        {
+          "caller": "doChat",
+          "callee": "syncHttpClient.newCall",
+          "lineNumber": 107
+        },
+        {
+          "caller": "doChat",
+          "callee": "response.isSuccessful",
+          "lineNumber": 108
+        },
+        {
+          "caller": "doChat",
+          "callee": "HttpResponseHelper.readBody",
+          "lineNumber": 109
+        },
+        {
+          "caller": "doChat",
+          "callee": "response.body",
+          "lineNumber": 109
+        },
+        {
+          "caller": "doChat",
+          "callee": "log.warn",
+          "lineNumber": 110
+        },
+        {
+          "caller": "doChat",
+          "callee": "provider",
+          "lineNumber": 110
+        },
+        {
+          "caller": "doChat",
+          "callee": "response.code",
+          "lineNumber": 110
+        },
+        {
+          "caller": "doChat",
+          "callee": "new ModelClientException",
+          "lineNumber": 111
+        },
+        {
+          "caller": "doChat",
+          "callee": "provider",
+          "lineNumber": 112
+        },
+        {
+          "caller": "doChat",
+          "callee": "response.code",
+          "lineNumber": 112
+        },
+        {
+          "caller": "doChat",
+          "callee": "ModelClientErrorType.fromHttpStatus",
+          "lineNumber": 113
+        },
+        {
+          "caller": "doChat",
+          "callee": "response.code",
+          "lineNumber": 113
+        },
+        {
+          "caller": "doChat",
+          "callee": "response.code",
+          "lineNumber": 114
+        },
+        {
+          "caller": "doChat",
+          "callee": "HttpResponseHelper.parseJson",
+          "lineNumber": 117
+        },
+        {
+          "caller": "doChat",
+          "callee": "response.body",
+          "lineNumber": 117
+        },
+        {
+          "caller": "doChat",
+          "callee": "provider",
+          "lineNumber": 117
+        },
+        {
+          "caller": "doChat",
+          "callee": "new ModelClientException",
+          "lineNumber": 119
+        },
+        {
+          "caller": "doChat",
+          "callee": "provider",
+          "lineNumber": 120
+        },
+        {
+          "caller": "doChat",
+          "callee": "e.getMessage",
+          "lineNumber": 120
+        },
+        {
+          "caller": "doChat",
+          "callee": "extractChatContent",
+          "lineNumber": 124
+        },
+        {
+          "caller": "doStreamChat",
+          "callee": "HttpResponseHelper.requireProvider",
+          "lineNumber": 130
+        },
+        {
+          "caller": "doStreamChat",
+          "callee": "provider",
+          "lineNumber": 130
+        },
+        {
+          "caller": "doStreamChat",
+          "callee": "requiresApiKey",
+          "lineNumber": 131
+        },
+        {
+          "caller": "doStreamChat",
+          "callee": "HttpResponseHelper.requireApiKey",
+          "lineNumber": 132
+        },
+        {
+          "caller": "doStreamChat",
+          "callee": "provider",
+          "lineNumber": 132
+        },
+        {
+          "caller": "doStreamChat",
+          "callee": "buildRequestBody",
+          "lineNumber": 135
+        },
+        {
+          "caller": "doStreamChat",
+          "callee": "newAuthorizedRequest(provider, target)\r\n                .post(RequestBody.create(reqBody.toString(), HttpMediaTypes.JSON))\r\n                .addHeader(\"Accept\", \"text/event-stream\").build",
+          "lineNumber": 136
+        },
+        {
+          "caller": "doStreamChat",
+          "callee": "newAuthorizedRequest(provider, target)\r\n                .post(RequestBody.create(reqBody.toString(), HttpMediaTypes.JSON)).addHeader",
+          "lineNumber": 136
+        },
+        {
+          "caller": "doStreamChat",
+          "callee": "newAuthorizedRequest(provider, target).post",
+          "lineNumber": 136
+        },
+        {
+          "caller": "doStreamChat",
+          "callee": "newAuthorizedRequest",
+          "lineNumber": 136
+        },
+        {
+          "caller": "doStreamChat",
+          "callee": "RequestBody.create",
+          "lineNumber": 137
+        },
+        {
+          "caller": "doStreamChat",
+          "callee": "reqBody.toString",
+          "lineNumber": 137
+        },
+        {
+          "caller": "doStreamChat",
+          "callee": "streamingHttpClient.newCall",
+          "lineNumber": 141
+        },
+        {
+          "caller": "doStreamChat",
+          "callee": "isReasoningEnabledForStream",
+          "lineNumber": 142
+        },
+        {
+          "caller": "doStreamChat",
+          "callee": "StreamAsyncExecutor.submit",
+          "lineNumber": 143
+        },
+        {
+          "caller": "doStreamChat",
+          "callee": "doStream",
+          "lineNumber": 147
+        },
+        {
+          "caller": "doStream",
+          "callee": "call.execute",
+          "lineNumber": 152
+        },
+        {
+          "caller": "doStream",
+          "callee": "response.isSuccessful",
+          "lineNumber": 153
+        },
+        {
+          "caller": "doStream",
+          "callee": "HttpResponseHelper.readBody",
+          "lineNumber": 154
+        },
+        {
+          "caller": "doStream",
+          "callee": "response.body",
+          "lineNumber": 154
+        },
+        {
+          "caller": "doStream",
+          "callee": "new ModelClientException",
+          "lineNumber": 155
+        },
+        {
+          "caller": "doStream",
+          "callee": "provider",
+          "lineNumber": 156
+        },
+        {
+          "caller": "doStream",
+          "callee": "response.code",
+          "lineNumber": 156
+        },
+        {
+          "caller": "doStream",
+          "callee": "ModelClientErrorType.fromHttpStatus",
+          "lineNumber": 157
+        },
+        {
+          "caller": "doStream",
+          "callee": "response.code",
+          "lineNumber": 157
+        },
+        {
+          "caller": "doStream",
+          "callee": "response.code",
+          "lineNumber": 158
+        },
+        {
+          "caller": "doStream",
+          "callee": "response.body",
+          "lineNumber": 161
+        },
+        {
+          "caller": "doStream",
+          "callee": "new ModelClientException",
+          "lineNumber": 163
+        },
+        {
+          "caller": "doStream",
+          "callee": "provider",
+          "lineNumber": 163
+        },
+        {
+          "caller": "doStream",
+          "callee": "body.source",
+          "lineNumber": 165
+        },
+        {
+          "caller": "doStream",
+          "callee": "cancelled.get",
+          "lineNumber": 167
+        },
+        {
+          "caller": "doStream",
+          "callee": "source.readUtf8Line",
+          "lineNumber": 168
+        },
+        {
+          "caller": "doStream",
+          "callee": "line.isBlank",
+          "lineNumber": 172
+        },
+        {
+          "caller": "doStream",
+          "callee": "OpenAIStyleSseParser.parseLine",
+          "lineNumber": 176
+        },
+        {
+          "caller": "doStream",
+          "callee": "event.hasReasoning",
+          "lineNumber": 177
+        },
+        {
+          "caller": "doStream",
+          "callee": "callback.onThinking",
+          "lineNumber": 178
+        },
+        {
+          "caller": "doStream",
+          "callee": "event.reasoning",
+          "lineNumber": 178
+        },
+        {
+          "caller": "doStream",
+          "callee": "event.hasContent",
+          "lineNumber": 180
+        },
+        {
+          "caller": "doStream",
+          "callee": "callback.onContent",
+          "lineNumber": 181
+        },
+        {
+          "caller": "doStream",
+          "callee": "event.content",
+          "lineNumber": 181
+        },
+        {
+          "caller": "doStream",
+          "callee": "event.completed",
+          "lineNumber": 183
+        },
+        {
+          "caller": "doStream",
+          "callee": "callback.onComplete",
+          "lineNumber": 184
+        },
+        {
+          "caller": "doStream",
+          "callee": "log.warn",
+          "lineNumber": 189
+        },
+        {
+          "caller": "doStream",
+          "callee": "provider",
+          "lineNumber": 189
+        },
+        {
+          "caller": "doStream",
+          "callee": "cancelled.get",
+          "lineNumber": 192
+        },
+        {
+          "caller": "doStream",
+          "callee": "log.info",
+          "lineNumber": 193
+        },
+        {
+          "caller": "doStream",
+          "callee": "provider",
+          "lineNumber": 193
+        },
+        {
+          "caller": "doStream",
+          "callee": "new ModelClientException",
+          "lineNumber": 197
+        },
+        {
+          "caller": "doStream",
+          "callee": "provider",
+          "lineNumber": 197
+        },
+        {
+          "caller": "doStream",
+          "callee": "cancelled.get",
+          "lineNumber": 200
+        },
+        {
+          "caller": "doStream",
+          "callee": "callback.onError",
+          "lineNumber": 201
+        },
+        {
+          "caller": "doStream",
+          "callee": "log.info",
+          "lineNumber": 203
+        },
+        {
+          "caller": "doStream",
+          "callee": "provider",
+          "lineNumber": 203
+        },
+        {
+          "caller": "doStream",
+          "callee": "e.getMessage",
+          "lineNumber": 203
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "new JsonObject",
+          "lineNumber": 211
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "body.addProperty",
+          "lineNumber": 212
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "HttpResponseHelper.requireModel",
+          "lineNumber": 212
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "provider",
+          "lineNumber": 212
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "body.addProperty",
+          "lineNumber": 214
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "body.add",
+          "lineNumber": 217
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "buildMessages",
+          "lineNumber": 217
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "request.getTemperature",
+          "lineNumber": 219
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "body.addProperty",
+          "lineNumber": 220
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "request.getTemperature",
+          "lineNumber": 220
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "request.getTopP",
+          "lineNumber": 222
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "body.addProperty",
+          "lineNumber": 223
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "request.getTopP",
+          "lineNumber": 223
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "request.getTopK",
+          "lineNumber": 225
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "body.addProperty",
+          "lineNumber": 226
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "request.getTopK",
+          "lineNumber": 226
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "request.getMaxTokens",
+          "lineNumber": 228
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "body.addProperty",
+          "lineNumber": 229
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "request.getMaxTokens",
+          "lineNumber": 229
+        },
+        {
+          "caller": "buildRequestBody",
+          "callee": "customizeRequestBody",
+          "lineNumber": 232
+        },
+        {
+          "caller": "buildMessages",
+          "callee": "new JsonArray",
+          "lineNumber": 237
+        },
+        {
+          "caller": "buildMessages",
+          "callee": "request.getMessages",
+          "lineNumber": 238
+        },
+        {
+          "caller": "buildMessages",
+          "callee": "CollUtil.isNotEmpty",
+          "lineNumber": 239
+        },
+        {
+          "caller": "buildMessages",
+          "callee": "new JsonObject",
+          "lineNumber": 241
+        },
+        {
+          "caller": "buildMessages",
+          "callee": "msg.addProperty",
+          "lineNumber": 242
+        },
+        {
+          "caller": "buildMessages",
+          "callee": "toOpenAiRole",
+          "lineNumber": 242
+        },
+        {
+          "caller": "buildMessages",
+          "callee": "m.getRole",
+          "lineNumber": 242
+        },
+        {
+          "caller": "buildMessages",
+          "callee": "msg.addProperty",
+          "lineNumber": 243
+        },
+        {
+          "caller": "buildMessages",
+          "callee": "m.getContent",
+          "lineNumber": 243
+        },
+        {
+          "caller": "buildMessages",
+          "callee": "arr.add",
+          "lineNumber": 244
+        },
+        {
+          "caller": "newAuthorizedRequest",
+          "callee": "new Request.Builder().url",
+          "lineNumber": 259
+        },
+        {
+          "caller": "newAuthorizedRequest",
+          "callee": "new Request.Builder",
+          "lineNumber": 259
+        },
+        {
+          "caller": "newAuthorizedRequest",
+          "callee": "ModelUrlResolver.resolveUrl",
+          "lineNumber": 260
+        },
+        {
+          "caller": "newAuthorizedRequest",
+          "callee": "target.candidate",
+          "lineNumber": 260
+        },
+        {
+          "caller": "newAuthorizedRequest",
+          "callee": "requiresApiKey",
+          "lineNumber": 261
+        },
+        {
+          "caller": "newAuthorizedRequest",
+          "callee": "builder.addHeader",
+          "lineNumber": 262
+        },
+        {
+          "caller": "newAuthorizedRequest",
+          "callee": "provider.getApiKey",
+          "lineNumber": 262
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "respJson.has",
+          "lineNumber": 268
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "new ModelClientException",
+          "lineNumber": 269
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "provider",
+          "lineNumber": 269
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "respJson.getAsJsonArray",
+          "lineNumber": 271
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "choices.isEmpty",
+          "lineNumber": 272
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "new ModelClientException",
+          "lineNumber": 273
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "provider",
+          "lineNumber": 273
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "choices.get(0).getAsJsonObject",
+          "lineNumber": 275
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "choices.get",
+          "lineNumber": 275
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "choice0.has",
+          "lineNumber": 276
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "new ModelClientException",
+          "lineNumber": 277
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "provider",
+          "lineNumber": 277
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "choice0.getAsJsonObject",
+          "lineNumber": 279
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "message.has",
+          "lineNumber": 280
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "message.get(\"content\").isJsonNull",
+          "lineNumber": 280
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "message.get",
+          "lineNumber": 280
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "new ModelClientException",
+          "lineNumber": 281
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "provider",
+          "lineNumber": 281
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "message.get(\"content\").getAsString",
+          "lineNumber": 283
+        },
+        {
+          "caller": "extractChatContent",
+          "callee": "message.get",
+          "lineNumber": 283
+        }
+      ],
+      "metrics": {
+        "importCount": 10,
+        "exportCount": 1,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/BaiLianChatClient.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 48,
+      "functions": [
+        {
+          "name": "BaiLianChatClient",
+          "startLine": 34,
+          "endLine": 38,
+          "params": [
+            "syncHttpClient",
+            "streamingHttpClient",
+            "modelStreamExecutor"
+          ]
+        },
+        {
+          "name": "provider",
+          "startLine": 40,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "chat",
+          "startLine": 45,
+          "endLine": 49,
+          "params": [
+            "request",
+            "target"
+          ]
+        },
+        {
+          "name": "streamChat",
+          "startLine": 51,
+          "endLine": 55,
+          "params": [
+            "request",
+            "callback",
+            "target"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BaiLianChatClient",
+          "startLine": 30,
+          "endLine": 56,
+          "methods": [
+            "BaiLianChatClient",
+            "provider",
+            "chat",
+            "streamChat"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "BaiLianChatClient",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "provider",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "chat",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "streamChat",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "BaiLianChatClient",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "provider",
+          "callee": "ModelProvider.BAI_LIAN.getId",
+          "lineNumber": 42
+        },
+        {
+          "caller": "chat",
+          "callee": "doChat",
+          "lineNumber": 48
+        },
+        {
+          "caller": "streamChat",
+          "callee": "doStreamChat",
+          "lineNumber": 54
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/ChatClient.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 51,
+      "classes": [
+        {
+          "name": "ChatClient",
+          "startLine": 28,
+          "endLine": 57,
+          "methods": [
+            "provider",
+            "chat",
+            "streamChat"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChatClient",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/OllamaChatClient.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 61,
+      "nonEmptyLines": 52,
+      "functions": [
+        {
+          "name": "OllamaChatClient",
+          "startLine": 34,
+          "endLine": 38,
+          "params": [
+            "syncHttpClient",
+            "streamingHttpClient",
+            "modelStreamExecutor"
+          ]
+        },
+        {
+          "name": "provider",
+          "startLine": 40,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "requiresApiKey",
+          "startLine": 45,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "chat",
+          "startLine": 50,
+          "endLine": 54,
+          "params": [
+            "request",
+            "target"
+          ]
+        },
+        {
+          "name": "streamChat",
+          "startLine": 56,
+          "endLine": 60,
+          "params": [
+            "request",
+            "callback",
+            "target"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "OllamaChatClient",
+          "startLine": 30,
+          "endLine": 61,
+          "methods": [
+            "OllamaChatClient",
+            "provider",
+            "requiresApiKey",
+            "chat",
+            "streamChat"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "OllamaChatClient",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "provider",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "chat",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "streamChat",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "OllamaChatClient",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "provider",
+          "callee": "ModelProvider.OLLAMA.getId",
+          "lineNumber": 42
+        },
+        {
+          "caller": "chat",
+          "callee": "doChat",
+          "lineNumber": 53
+        },
+        {
+          "caller": "streamChat",
+          "callee": "doStreamChat",
+          "lineNumber": 59
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/RoutingLLMService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 226,
+      "nonEmptyLines": 202,
+      "functions": [
+        {
+          "name": "RoutingLLMService",
+          "startLine": 62,
+          "endLine": 72,
+          "params": [
+            "selector",
+            "healthStore",
+            "executor",
+            "clients"
+          ]
+        },
+        {
+          "name": "chat",
+          "startLine": 74,
+          "endLine": 83,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "chat",
+          "startLine": 85,
+          "endLine": 96,
+          "params": [
+            "request",
+            "modelId"
+          ]
+        },
+        {
+          "name": "streamChat",
+          "startLine": 98,
+          "endLine": 154,
+          "params": [
+            "request",
+            "callback"
+          ]
+        },
+        {
+          "name": "resolveClient",
+          "startLine": 156,
+          "endLine": 163,
+          "params": [
+            "target",
+            "label"
+          ]
+        },
+        {
+          "name": "awaitFirstPacket",
+          "startLine": 165,
+          "endLine": 177,
+          "params": [
+            "bridge",
+            "handle",
+            "callback"
+          ]
+        },
+        {
+          "name": "buildLastErrorAndLog",
+          "startLine": 179,
+          "endLine": 208,
+          "params": [
+            "result",
+            "target",
+            "label"
+          ]
+        },
+        {
+          "name": "notifyAllFailed",
+          "startLine": 210,
+          "endLine": 218,
+          "params": [
+            "callback",
+            "lastError"
+          ]
+        },
+        {
+          "name": "resolveTarget",
+          "startLine": 220,
+          "endLine": 225,
+          "params": [
+            "modelId",
+            "deepThinking"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RoutingLLMService",
+          "startLine": 44,
+          "endLine": 226,
+          "methods": [
+            "RoutingLLMService",
+            "chat",
+            "chat",
+            "streamChat",
+            "resolveClient",
+            "awaitFirstPacket",
+            "buildLastErrorAndLog",
+            "notifyAllFailed",
+            "resolveTarget"
+          ],
+          "properties": [
+            "FIRST_PACKET_TIMEOUT_SECONDS",
+            "STREAM_INTERRUPTED_MESSAGE",
+            "STREAM_NO_PROVIDER_MESSAGE",
+            "STREAM_START_FAILED_MESSAGE",
+            "STREAM_TIMEOUT_MESSAGE",
+            "STREAM_NO_CONTENT_MESSAGE",
+            "STREAM_ALL_FAILED_MESSAGE",
+            "selector",
+            "healthStore",
+            "executor",
+            "clientsByProvider"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RoutingLLMService",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "chat",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "chat",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "streamChat",
+          "line": 98,
+          "isDefault": false
+        },
+        {
+          "name": "RoutingLLMService",
+          "line": 44,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "RoutingLLMService",
+          "callee": "clients.stream().collect",
+          "lineNumber": 70
+        },
+        {
+          "caller": "RoutingLLMService",
+          "callee": "clients.stream",
+          "lineNumber": 70
+        },
+        {
+          "caller": "RoutingLLMService",
+          "callee": "Collectors.toMap",
+          "lineNumber": 71
+        },
+        {
+          "caller": "RoutingLLMService",
+          "callee": "Function.identity",
+          "lineNumber": 71
+        },
+        {
+          "caller": "chat",
+          "callee": "executor.executeWithFallback",
+          "lineNumber": 77
+        },
+        {
+          "caller": "chat",
+          "callee": "selector.selectChatCandidates",
+          "lineNumber": 79
+        },
+        {
+          "caller": "chat",
+          "callee": "Boolean.TRUE.equals",
+          "lineNumber": 79
+        },
+        {
+          "caller": "chat",
+          "callee": "request.getThinking",
+          "lineNumber": 79
+        },
+        {
+          "caller": "chat",
+          "callee": "clientsByProvider.get",
+          "lineNumber": 80
+        },
+        {
+          "caller": "chat",
+          "callee": "target.candidate().getProvider",
+          "lineNumber": 80
+        },
+        {
+          "caller": "chat",
+          "callee": "target.candidate",
+          "lineNumber": 80
+        },
+        {
+          "caller": "chat",
+          "callee": "client.chat",
+          "lineNumber": 81
+        },
+        {
+          "caller": "chat",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 87
+        },
+        {
+          "caller": "chat",
+          "callee": "chat",
+          "lineNumber": 88
+        },
+        {
+          "caller": "chat",
+          "callee": "executor.executeWithFallback",
+          "lineNumber": 90
+        },
+        {
+          "caller": "chat",
+          "callee": "List.of",
+          "lineNumber": 92
+        },
+        {
+          "caller": "chat",
+          "callee": "resolveTarget",
+          "lineNumber": 92
+        },
+        {
+          "caller": "chat",
+          "callee": "Boolean.TRUE.equals",
+          "lineNumber": 92
+        },
+        {
+          "caller": "chat",
+          "callee": "request.getThinking",
+          "lineNumber": 92
+        },
+        {
+          "caller": "chat",
+          "callee": "clientsByProvider.get",
+          "lineNumber": 93
+        },
+        {
+          "caller": "chat",
+          "callee": "target.candidate().getProvider",
+          "lineNumber": 93
+        },
+        {
+          "caller": "chat",
+          "callee": "target.candidate",
+          "lineNumber": 93
+        },
+        {
+          "caller": "chat",
+          "callee": "client.chat",
+          "lineNumber": 94
+        },
+        {
+          "caller": "streamChat",
+          "callee": "selector.selectChatCandidates",
+          "lineNumber": 101
+        },
+        {
+          "caller": "streamChat",
+          "callee": "Boolean.TRUE.equals",
+          "lineNumber": 101
+        },
+        {
+          "caller": "streamChat",
+          "callee": "request.getThinking",
+          "lineNumber": 101
+        },
+        {
+          "caller": "streamChat",
+          "callee": "CollUtil.isEmpty",
+          "lineNumber": 102
+        },
+        {
+          "caller": "streamChat",
+          "callee": "new RemoteException",
+          "lineNumber": 103
+        },
+        {
+          "caller": "streamChat",
+          "callee": "ModelCapability.CHAT.getDisplayName",
+          "lineNumber": 106
+        },
+        {
+          "caller": "streamChat",
+          "callee": "resolveClient",
+          "lineNumber": 110
+        },
+        {
+          "caller": "streamChat",
+          "callee": "healthStore.allowCall",
+          "lineNumber": 114
+        },
+        {
+          "caller": "streamChat",
+          "callee": "target.id",
+          "lineNumber": 114
+        },
+        {
+          "caller": "streamChat",
+          "callee": "new ProbeStreamBridge",
+          "lineNumber": 118
+        },
+        {
+          "caller": "streamChat",
+          "callee": "client.streamChat",
+          "lineNumber": 122
+        },
+        {
+          "caller": "streamChat",
+          "callee": "healthStore.markFailure",
+          "lineNumber": 124
+        },
+        {
+          "caller": "streamChat",
+          "callee": "target.id",
+          "lineNumber": 124
+        },
+        {
+          "caller": "streamChat",
+          "callee": "log.warn",
+          "lineNumber": 126
+        },
+        {
+          "caller": "streamChat",
+          "callee": "target.id",
+          "lineNumber": 127
+        },
+        {
+          "caller": "streamChat",
+          "callee": "target.candidate().getProvider",
+          "lineNumber": 127
+        },
+        {
+          "caller": "streamChat",
+          "callee": "target.candidate",
+          "lineNumber": 127
+        },
+        {
+          "caller": "streamChat",
+          "callee": "healthStore.markFailure",
+          "lineNumber": 131
+        },
+        {
+          "caller": "streamChat",
+          "callee": "target.id",
+          "lineNumber": 131
+        },
+        {
+          "caller": "streamChat",
+          "callee": "new RemoteException",
+          "lineNumber": 132
+        },
+        {
+          "caller": "streamChat",
+          "callee": "log.warn",
+          "lineNumber": 133
+        },
+        {
+          "caller": "streamChat",
+          "callee": "target.id",
+          "lineNumber": 134
+        },
+        {
+          "caller": "streamChat",
+          "callee": "target.candidate().getProvider",
+          "lineNumber": 134
+        },
+        {
+          "caller": "streamChat",
+          "callee": "target.candidate",
+          "lineNumber": 134
+        },
+        {
+          "caller": "streamChat",
+          "callee": "awaitFirstPacket",
+          "lineNumber": 138
+        },
+        {
+          "caller": "streamChat",
+          "callee": "result.isSuccess",
+          "lineNumber": 140
+        },
+        {
+          "caller": "streamChat",
+          "callee": "healthStore.markSuccess",
+          "lineNumber": 141
+        },
+        {
+          "caller": "streamChat",
+          "callee": "target.id",
+          "lineNumber": 141
+        },
+        {
+          "caller": "streamChat",
+          "callee": "healthStore.markFailure",
+          "lineNumber": 146
+        },
+        {
+          "caller": "streamChat",
+          "callee": "target.id",
+          "lineNumber": 146
+        },
+        {
+          "caller": "streamChat",
+          "callee": "handle.cancel",
+          "lineNumber": 147
+        },
+        {
+          "caller": "streamChat",
+          "callee": "buildLastErrorAndLog",
+          "lineNumber": 149
+        },
+        {
+          "caller": "streamChat",
+          "callee": "notifyAllFailed",
+          "lineNumber": 153
+        },
+        {
+          "caller": "resolveClient",
+          "callee": "clientsByProvider.get",
+          "lineNumber": 157
+        },
+        {
+          "caller": "resolveClient",
+          "callee": "target.candidate().getProvider",
+          "lineNumber": 157
+        },
+        {
+          "caller": "resolveClient",
+          "callee": "target.candidate",
+          "lineNumber": 157
+        },
+        {
+          "caller": "resolveClient",
+          "callee": "log.warn",
+          "lineNumber": 159
+        },
+        {
+          "caller": "resolveClient",
+          "callee": "target.candidate().getProvider",
+          "lineNumber": 160
+        },
+        {
+          "caller": "resolveClient",
+          "callee": "target.candidate",
+          "lineNumber": 160
+        },
+        {
+          "caller": "resolveClient",
+          "callee": "target.id",
+          "lineNumber": 160
+        },
+        {
+          "caller": "awaitFirstPacket",
+          "callee": "bridge.awaitFirstPacket",
+          "lineNumber": 169
+        },
+        {
+          "caller": "awaitFirstPacket",
+          "callee": "Thread.currentThread().interrupt",
+          "lineNumber": 171
+        },
+        {
+          "caller": "awaitFirstPacket",
+          "callee": "Thread.currentThread",
+          "lineNumber": 171
+        },
+        {
+          "caller": "awaitFirstPacket",
+          "callee": "handle.cancel",
+          "lineNumber": 172
+        },
+        {
+          "caller": "awaitFirstPacket",
+          "callee": "new RemoteException",
+          "lineNumber": 173
+        },
+        {
+          "caller": "awaitFirstPacket",
+          "callee": "callback.onError",
+          "lineNumber": 174
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "result.getType",
+          "lineNumber": 180
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "result.getError",
+          "lineNumber": 182
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "result.getError",
+          "lineNumber": 183
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "new RemoteException",
+          "lineNumber": 184
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "log.warn",
+          "lineNumber": 185
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "target.id",
+          "lineNumber": 186
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "target.candidate().getProvider",
+          "lineNumber": 186
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "target.candidate",
+          "lineNumber": 186
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "new RemoteException",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "log.warn",
+          "lineNumber": 191
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "target.id",
+          "lineNumber": 192
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "target.candidate().getProvider",
+          "lineNumber": 192
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "target.candidate",
+          "lineNumber": 192
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "new RemoteException",
+          "lineNumber": 196
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "log.warn",
+          "lineNumber": 197
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "target.id",
+          "lineNumber": 198
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "target.candidate().getProvider",
+          "lineNumber": 198
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "target.candidate",
+          "lineNumber": 198
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "new RemoteException",
+          "lineNumber": 202
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "log.warn",
+          "lineNumber": 203
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "target.id",
+          "lineNumber": 204
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "target.candidate().getProvider",
+          "lineNumber": 204
+        },
+        {
+          "caller": "buildLastErrorAndLog",
+          "callee": "target.candidate",
+          "lineNumber": 204
+        },
+        {
+          "caller": "notifyAllFailed",
+          "callee": "new RemoteException",
+          "lineNumber": 211
+        },
+        {
+          "caller": "notifyAllFailed",
+          "callee": "callback.onError",
+          "lineNumber": 216
+        },
+        {
+          "caller": "resolveTarget",
+          "callee": "selector.selectChatCandidates(deepThinking).stream()\r\n                .filter(target -> modelId.equals(target.id()))\r\n                .findFirst().orElseThrow",
+          "lineNumber": 221
+        },
+        {
+          "caller": "resolveTarget",
+          "callee": "selector.selectChatCandidates(deepThinking).stream()\r\n                .filter(target -> modelId.equals(target.id())).findFirst",
+          "lineNumber": 221
+        },
+        {
+          "caller": "resolveTarget",
+          "callee": "selector.selectChatCandidates(deepThinking).stream().filter",
+          "lineNumber": 221
+        },
+        {
+          "caller": "resolveTarget",
+          "callee": "selector.selectChatCandidates(deepThinking).stream",
+          "lineNumber": 221
+        },
+        {
+          "caller": "resolveTarget",
+          "callee": "selector.selectChatCandidates",
+          "lineNumber": 221
+        },
+        {
+          "caller": "resolveTarget",
+          "callee": "modelId.equals",
+          "lineNumber": 222
+        },
+        {
+          "caller": "resolveTarget",
+          "callee": "target.id",
+          "lineNumber": 222
+        },
+        {
+          "caller": "resolveTarget",
+          "callee": "new RemoteException",
+          "lineNumber": 224
+        }
+      ],
+      "metrics": {
+        "importCount": 9,
+        "exportCount": 5,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/SiliconFlowChatClient.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 48,
+      "functions": [
+        {
+          "name": "SiliconFlowChatClient",
+          "startLine": 34,
+          "endLine": 38,
+          "params": [
+            "syncHttpClient",
+            "streamingHttpClient",
+            "modelStreamExecutor"
+          ]
+        },
+        {
+          "name": "provider",
+          "startLine": 40,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "chat",
+          "startLine": 45,
+          "endLine": 49,
+          "params": [
+            "request",
+            "target"
+          ]
+        },
+        {
+          "name": "streamChat",
+          "startLine": 51,
+          "endLine": 55,
+          "params": [
+            "request",
+            "callback",
+            "target"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SiliconFlowChatClient",
+          "startLine": 30,
+          "endLine": 56,
+          "methods": [
+            "SiliconFlowChatClient",
+            "provider",
+            "chat",
+            "streamChat"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SiliconFlowChatClient",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "provider",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "chat",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "streamChat",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "SiliconFlowChatClient",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "provider",
+          "callee": "ModelProvider.SILICON_FLOW.getId",
+          "lineNumber": 42
+        },
+        {
+          "caller": "chat",
+          "callee": "doChat",
+          "lineNumber": 48
+        },
+        {
+          "caller": "streamChat",
+          "callee": "doStreamChat",
+          "lineNumber": 54
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamAsyncExecutor.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 54,
+      "nonEmptyLines": 48,
+      "functions": [
+        {
+          "name": "submit",
+          "startLine": 40,
+          "endLine": 53,
+          "params": [
+            "executor",
+            "call",
+            "callback",
+            "streamTask"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "StreamAsyncExecutor",
+          "startLine": 35,
+          "endLine": 54,
+          "methods": [
+            "submit"
+          ],
+          "properties": [
+            "STREAM_BUSY_MESSAGE"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "StreamAsyncExecutor",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "submit",
+          "callee": "new AtomicBoolean",
+          "lineNumber": 44
+        },
+        {
+          "caller": "submit",
+          "callee": "CompletableFuture.runAsync",
+          "lineNumber": 46
+        },
+        {
+          "caller": "submit",
+          "callee": "streamTask.accept",
+          "lineNumber": 46
+        },
+        {
+          "caller": "submit",
+          "callee": "call.cancel",
+          "lineNumber": 48
+        },
+        {
+          "caller": "submit",
+          "callee": "callback.onError",
+          "lineNumber": 49
+        },
+        {
+          "caller": "submit",
+          "callee": "new ModelClientException",
+          "lineNumber": 49
+        },
+        {
+          "caller": "submit",
+          "callee": "StreamCancellationHandles.noop",
+          "lineNumber": 50
+        },
+        {
+          "caller": "submit",
+          "callee": "StreamCancellationHandles.fromOkHttp",
+          "lineNumber": 52
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 193,
+      "nonEmptyLines": 162,
+      "classes": [
+        {
+          "name": "AIModelProperties",
+          "startLine": 33,
+          "endLine": 193,
+          "methods": [],
+          "properties": [
+            "providers",
+            "chat",
+            "embedding",
+            "rerank",
+            "selection",
+            "stream"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AIModelProperties",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/AbstractOpenAIStyleEmbeddingClient.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 193,
+      "nonEmptyLines": 169,
+      "functions": [
+        {
+          "name": "AbstractOpenAIStyleEmbeddingClient",
+          "startLine": 52,
+          "endLine": 54,
+          "params": [
+            "httpClient"
+          ]
+        },
+        {
+          "name": "requiresApiKey",
+          "startLine": 61,
+          "endLine": 63,
+          "params": []
+        },
+        {
+          "name": "customizeRequestBody",
+          "startLine": 69,
+          "endLine": 71,
+          "params": [
+            "body",
+            "target"
+          ]
+        },
+        {
+          "name": "maxBatchSize",
+          "startLine": 76,
+          "endLine": 78,
+          "params": []
+        },
+        {
+          "name": "embed",
+          "startLine": 82,
+          "endLine": 86,
+          "params": [
+            "text",
+            "target"
+          ]
+        },
+        {
+          "name": "embedBatch",
+          "startLine": 88,
+          "endLine": 108,
+          "params": [
+            "texts",
+            "target"
+          ]
+        },
+        {
+          "name": "doEmbed",
+          "startLine": 115,
+          "endLine": 192,
+          "params": [
+            "texts",
+            "target"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AbstractOpenAIStyleEmbeddingClient",
+          "startLine": 47,
+          "endLine": 193,
+          "methods": [
+            "AbstractOpenAIStyleEmbeddingClient",
+            "requiresApiKey",
+            "customizeRequestBody",
+            "maxBatchSize",
+            "embed",
+            "embedBatch",
+            "doEmbed"
+          ],
+          "properties": [
+            "httpClient"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "embed",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "embedBatch",
+          "line": 88,
+          "isDefault": false
+        },
+        {
+          "name": "AbstractOpenAIStyleEmbeddingClient",
+          "line": 47,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "customizeRequestBody",
+          "callee": "body.addProperty",
+          "lineNumber": 70
+        },
+        {
+          "caller": "embed",
+          "callee": "doEmbed",
+          "lineNumber": 84
+        },
+        {
+          "caller": "embed",
+          "callee": "List.of",
+          "lineNumber": 84
+        },
+        {
+          "caller": "embed",
+          "callee": "result.get",
+          "lineNumber": 85
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "CollUtil.isEmpty",
+          "lineNumber": 90
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "Collections.emptyList",
+          "lineNumber": 91
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "maxBatchSize",
+          "lineNumber": 93
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "texts.size",
+          "lineNumber": 94
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "doEmbed",
+          "lineNumber": 95
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "new ArrayList<>",
+          "lineNumber": 98
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "Collections.nCopies",
+          "lineNumber": 98
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "texts.size",
+          "lineNumber": 98
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "texts.size",
+          "lineNumber": 99
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "Math.min",
+          "lineNumber": 100
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "texts.subList",
+          "lineNumber": 101
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "doEmbed",
+          "lineNumber": 102
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "part.size",
+          "lineNumber": 103
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "results.set",
+          "lineNumber": 104
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "part.get",
+          "lineNumber": 104
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "HttpResponseHelper.requireProvider",
+          "lineNumber": 116
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "provider",
+          "lineNumber": 116
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "requiresApiKey",
+          "lineNumber": 117
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "HttpResponseHelper.requireApiKey",
+          "lineNumber": 118
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "provider",
+          "lineNumber": 118
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "ModelUrlResolver.resolveUrl",
+          "lineNumber": 121
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "target.candidate",
+          "lineNumber": 121
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "new JsonObject",
+          "lineNumber": 123
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "body.addProperty",
+          "lineNumber": 124
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "HttpResponseHelper.requireModel",
+          "lineNumber": 124
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "provider",
+          "lineNumber": 124
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "new JsonArray",
+          "lineNumber": 125
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "inputArray.add",
+          "lineNumber": 127
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "body.add",
+          "lineNumber": 129
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "body.addProperty",
+          "lineNumber": 130
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "target.candidate().getDimension",
+          "lineNumber": 130
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "target.candidate",
+          "lineNumber": 130
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "customizeRequestBody",
+          "lineNumber": 131
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "new Request.Builder()\r\n                .url(url).post",
+          "lineNumber": 133
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "new Request.Builder().url",
+          "lineNumber": 133
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "new Request.Builder",
+          "lineNumber": 133
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "RequestBody.create",
+          "lineNumber": 135
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "body.toString",
+          "lineNumber": 135
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "requiresApiKey",
+          "lineNumber": 136
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "requestBuilder.addHeader",
+          "lineNumber": 137
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "provider.getApiKey",
+          "lineNumber": 137
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "requestBuilder.build",
+          "lineNumber": 139
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "httpClient.newCall(request).execute",
+          "lineNumber": 142
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "httpClient.newCall",
+          "lineNumber": 142
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "response.isSuccessful",
+          "lineNumber": 143
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "HttpResponseHelper.readBody",
+          "lineNumber": 144
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "response.body",
+          "lineNumber": 144
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "log.warn",
+          "lineNumber": 145
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "provider",
+          "lineNumber": 145
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "response.code",
+          "lineNumber": 145
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "new ModelClientException",
+          "lineNumber": 146
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "provider",
+          "lineNumber": 147
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "response.code",
+          "lineNumber": 147
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "ModelClientErrorType.fromHttpStatus",
+          "lineNumber": 148
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "response.code",
+          "lineNumber": 148
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "response.code",
+          "lineNumber": 149
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "HttpResponseHelper.parseJson",
+          "lineNumber": 152
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "response.body",
+          "lineNumber": 152
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "provider",
+          "lineNumber": 152
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "new ModelClientException",
+          "lineNumber": 154
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "provider",
+          "lineNumber": 155
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "e.getMessage",
+          "lineNumber": 155
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "json.has",
+          "lineNumber": 159
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "json.getAsJsonObject",
+          "lineNumber": 160
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "err.has",
+          "lineNumber": 161
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "err.get(\"code\").getAsString",
+          "lineNumber": 161
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "err.get",
+          "lineNumber": 161
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "err.has",
+          "lineNumber": 162
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "err.get(\"message\").getAsString",
+          "lineNumber": 162
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "err.get",
+          "lineNumber": 162
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "new ModelClientException",
+          "lineNumber": 163
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "provider",
+          "lineNumber": 164
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "json.getAsJsonArray",
+          "lineNumber": 168
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "data.isEmpty",
+          "lineNumber": 169
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "new ModelClientException",
+          "lineNumber": 170
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "provider",
+          "lineNumber": 171
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "new ArrayList<>",
+          "lineNumber": 175
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "data.size",
+          "lineNumber": 175
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "el.getAsJsonObject",
+          "lineNumber": 177
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "obj.getAsJsonArray",
+          "lineNumber": 178
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "emb.isEmpty",
+          "lineNumber": 179
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "new ModelClientException",
+          "lineNumber": 180
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "provider",
+          "lineNumber": 181
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "new ArrayList<>",
+          "lineNumber": 184
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "emb.size",
+          "lineNumber": 184
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "vector.add",
+          "lineNumber": 186
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "v.getAsFloat",
+          "lineNumber": 186
+        },
+        {
+          "caller": "doEmbed",
+          "callee": "results.add",
+          "lineNumber": 188
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 3,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingClient.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 54,
+      "nonEmptyLines": 47,
+      "classes": [
+        {
+          "name": "EmbeddingClient",
+          "startLine": 28,
+          "endLine": 54,
+          "methods": [
+            "provider",
+            "embed",
+            "embedBatch"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "EmbeddingClient",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/OllamaEmbeddingClient.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 47,
+      "nonEmptyLines": 40,
+      "functions": [
+        {
+          "name": "OllamaEmbeddingClient",
+          "startLine": 29,
+          "endLine": 31,
+          "params": [
+            "syncHttpClient"
+          ]
+        },
+        {
+          "name": "provider",
+          "startLine": 33,
+          "endLine": 36,
+          "params": []
+        },
+        {
+          "name": "requiresApiKey",
+          "startLine": 38,
+          "endLine": 41,
+          "params": []
+        },
+        {
+          "name": "customizeRequestBody",
+          "startLine": 43,
+          "endLine": 46,
+          "params": [
+            "body",
+            "target"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "OllamaEmbeddingClient",
+          "startLine": 26,
+          "endLine": 47,
+          "methods": [
+            "OllamaEmbeddingClient",
+            "provider",
+            "requiresApiKey",
+            "customizeRequestBody"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "OllamaEmbeddingClient",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "provider",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "OllamaEmbeddingClient",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "provider",
+          "callee": "ModelProvider.OLLAMA.getId",
+          "lineNumber": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 3,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/RoutingEmbeddingService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 111,
+      "nonEmptyLines": 99,
+      "functions": [
+        {
+          "name": "RoutingEmbeddingService",
+          "startLine": 48,
+          "endLine": 56,
+          "params": [
+            "selector",
+            "executor",
+            "clients"
+          ]
+        },
+        {
+          "name": "embed",
+          "startLine": 58,
+          "endLine": 66,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "embed",
+          "startLine": 68,
+          "endLine": 76,
+          "params": [
+            "text",
+            "modelId"
+          ]
+        },
+        {
+          "name": "embedBatch",
+          "startLine": 78,
+          "endLine": 86,
+          "params": [
+            "texts"
+          ]
+        },
+        {
+          "name": "embedBatch",
+          "startLine": 88,
+          "endLine": 96,
+          "params": [
+            "texts",
+            "modelId"
+          ]
+        },
+        {
+          "name": "resolveClient",
+          "startLine": 98,
+          "endLine": 100,
+          "params": [
+            "target"
+          ]
+        },
+        {
+          "name": "resolveTarget",
+          "startLine": 102,
+          "endLine": 110,
+          "params": [
+            "modelId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RoutingEmbeddingService",
+          "startLine": 40,
+          "endLine": 111,
+          "methods": [
+            "RoutingEmbeddingService",
+            "embed",
+            "embed",
+            "embedBatch",
+            "embedBatch",
+            "resolveClient",
+            "resolveTarget"
+          ],
+          "properties": [
+            "selector",
+            "executor",
+            "clientsByProvider"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RoutingEmbeddingService",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "embed",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "embed",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "embedBatch",
+          "line": 78,
+          "isDefault": false
+        },
+        {
+          "name": "embedBatch",
+          "line": 88,
+          "isDefault": false
+        },
+        {
+          "name": "RoutingEmbeddingService",
+          "line": 40,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "RoutingEmbeddingService",
+          "callee": "clients.stream().collect",
+          "lineNumber": 54
+        },
+        {
+          "caller": "RoutingEmbeddingService",
+          "callee": "clients.stream",
+          "lineNumber": 54
+        },
+        {
+          "caller": "RoutingEmbeddingService",
+          "callee": "Collectors.toMap",
+          "lineNumber": 55
+        },
+        {
+          "caller": "RoutingEmbeddingService",
+          "callee": "Function.identity",
+          "lineNumber": 55
+        },
+        {
+          "caller": "embed",
+          "callee": "executor.executeWithFallback",
+          "lineNumber": 60
+        },
+        {
+          "caller": "embed",
+          "callee": "selector.selectEmbeddingCandidates",
+          "lineNumber": 62
+        },
+        {
+          "caller": "embed",
+          "callee": "client.embed",
+          "lineNumber": 64
+        },
+        {
+          "caller": "embed",
+          "callee": "executor.executeWithFallback",
+          "lineNumber": 70
+        },
+        {
+          "caller": "embed",
+          "callee": "List.of",
+          "lineNumber": 72
+        },
+        {
+          "caller": "embed",
+          "callee": "resolveTarget",
+          "lineNumber": 72
+        },
+        {
+          "caller": "embed",
+          "callee": "client.embed",
+          "lineNumber": 74
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "executor.executeWithFallback",
+          "lineNumber": 80
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "selector.selectEmbeddingCandidates",
+          "lineNumber": 82
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "client.embedBatch",
+          "lineNumber": 84
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "executor.executeWithFallback",
+          "lineNumber": 90
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "List.of",
+          "lineNumber": 92
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "resolveTarget",
+          "lineNumber": 92
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "client.embedBatch",
+          "lineNumber": 94
+        },
+        {
+          "caller": "resolveClient",
+          "callee": "clientsByProvider.get",
+          "lineNumber": 99
+        },
+        {
+          "caller": "resolveClient",
+          "callee": "target.candidate().getProvider",
+          "lineNumber": 99
+        },
+        {
+          "caller": "resolveClient",
+          "callee": "target.candidate",
+          "lineNumber": 99
+        },
+        {
+          "caller": "resolveTarget",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 103
+        },
+        {
+          "caller": "resolveTarget",
+          "callee": "new RemoteException",
+          "lineNumber": 104
+        },
+        {
+          "caller": "resolveTarget",
+          "callee": "selector.selectEmbeddingCandidates().stream()\r\n                .filter(target -> modelId.equals(target.id()))\r\n                .findFirst().orElseThrow",
+          "lineNumber": 106
+        },
+        {
+          "caller": "resolveTarget",
+          "callee": "selector.selectEmbeddingCandidates().stream()\r\n                .filter(target -> modelId.equals(target.id())).findFirst",
+          "lineNumber": 106
+        },
+        {
+          "caller": "resolveTarget",
+          "callee": "selector.selectEmbeddingCandidates().stream().filter",
+          "lineNumber": 106
+        },
+        {
+          "caller": "resolveTarget",
+          "callee": "selector.selectEmbeddingCandidates().stream",
+          "lineNumber": 106
+        },
+        {
+          "caller": "resolveTarget",
+          "callee": "selector.selectEmbeddingCandidates",
+          "lineNumber": 106
+        },
+        {
+          "caller": "resolveTarget",
+          "callee": "modelId.equals",
+          "lineNumber": 107
+        },
+        {
+          "caller": "resolveTarget",
+          "callee": "target.id",
+          "lineNumber": 107
+        },
+        {
+          "caller": "resolveTarget",
+          "callee": "new RemoteException",
+          "lineNumber": 109
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 6,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/SiliconFlowEmbeddingClient.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 40,
+      "nonEmptyLines": 34,
+      "functions": [
+        {
+          "name": "SiliconFlowEmbeddingClient",
+          "startLine": 27,
+          "endLine": 29,
+          "params": [
+            "syncHttpClient"
+          ]
+        },
+        {
+          "name": "provider",
+          "startLine": 31,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "maxBatchSize",
+          "startLine": 36,
+          "endLine": 39,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SiliconFlowEmbeddingClient",
+          "startLine": 24,
+          "endLine": 40,
+          "methods": [
+            "SiliconFlowEmbeddingClient",
+            "provider",
+            "maxBatchSize"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SiliconFlowEmbeddingClient",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "provider",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "SiliconFlowEmbeddingClient",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "provider",
+          "callee": "ModelProvider.SILICON_FLOW.getId",
+          "lineNumber": 33
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 46,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 47,
+      "callGraph": [
+        {
+          "caller": "matches",
+          "callee": "provider.equalsIgnoreCase",
+          "lineNumber": 54
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpMediaTypes.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 32,
+      "classes": [
+        {
+          "name": "HttpMediaTypes",
+          "startLine": 28,
+          "endLine": 36,
+          "methods": [],
+          "properties": [
+            "JSON"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "JSON",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "HttpMediaTypes",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpResponseHelper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 92,
+      "nonEmptyLines": 82,
+      "functions": [
+        {
+          "name": "readBody",
+          "startLine": 42,
+          "endLine": 47,
+          "params": [
+            "body"
+          ]
+        },
+        {
+          "name": "parseJson",
+          "startLine": 56,
+          "endLine": 62,
+          "params": [
+            "body",
+            "label"
+          ]
+        },
+        {
+          "name": "requireProvider",
+          "startLine": 67,
+          "endLine": 72,
+          "params": [
+            "target",
+            "label"
+          ]
+        },
+        {
+          "name": "requireApiKey",
+          "startLine": 77,
+          "endLine": 81,
+          "params": [
+            "provider",
+            "label"
+          ]
+        },
+        {
+          "name": "requireModel",
+          "startLine": 86,
+          "endLine": 91,
+          "params": [
+            "target",
+            "label"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "HttpResponseHelper",
+          "startLine": 34,
+          "endLine": 92,
+          "methods": [
+            "readBody",
+            "parseJson",
+            "requireProvider",
+            "requireApiKey",
+            "requireModel"
+          ],
+          "properties": [
+            "GSON"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "readBody",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "parseJson",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "requireProvider",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "requireApiKey",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "requireModel",
+          "line": 86,
+          "isDefault": false
+        },
+        {
+          "name": "HttpResponseHelper",
+          "line": 34,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readBody",
+          "callee": "new String",
+          "lineNumber": 46
+        },
+        {
+          "caller": "readBody",
+          "callee": "body.bytes",
+          "lineNumber": 46
+        },
+        {
+          "caller": "parseJson",
+          "callee": "new ModelClientException",
+          "lineNumber": 58
+        },
+        {
+          "caller": "parseJson",
+          "callee": "body.string",
+          "lineNumber": 60
+        },
+        {
+          "caller": "parseJson",
+          "callee": "GSON.fromJson",
+          "lineNumber": 61
+        },
+        {
+          "caller": "requireProvider",
+          "callee": "target.provider",
+          "lineNumber": 68
+        },
+        {
+          "caller": "requireProvider",
+          "callee": "new IllegalStateException",
+          "lineNumber": 69
+        },
+        {
+          "caller": "requireProvider",
+          "callee": "target.provider",
+          "lineNumber": 71
+        },
+        {
+          "caller": "requireApiKey",
+          "callee": "provider.getApiKey",
+          "lineNumber": 78
+        },
+        {
+          "caller": "requireApiKey",
+          "callee": "provider.getApiKey().isBlank",
+          "lineNumber": 78
+        },
+        {
+          "caller": "requireApiKey",
+          "callee": "provider.getApiKey",
+          "lineNumber": 78
+        },
+        {
+          "caller": "requireApiKey",
+          "callee": "new IllegalStateException",
+          "lineNumber": 79
+        },
+        {
+          "caller": "requireModel",
+          "callee": "target.candidate",
+          "lineNumber": 87
+        },
+        {
+          "caller": "requireModel",
+          "callee": "target.candidate().getModel",
+          "lineNumber": 87
+        },
+        {
+          "caller": "requireModel",
+          "callee": "target.candidate",
+          "lineNumber": 87
+        },
+        {
+          "caller": "requireModel",
+          "callee": "new IllegalStateException",
+          "lineNumber": 88
+        },
+        {
+          "caller": "requireModel",
+          "callee": "target.candidate().getModel",
+          "lineNumber": 90
+        },
+        {
+          "caller": "requireModel",
+          "callee": "target.candidate",
+          "lineNumber": 90
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientErrorType.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 81,
+      "nonEmptyLines": 71,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 65,
+      "nonEmptyLines": 58,
+      "functions": [
+        {
+          "name": "ModelClientException",
+          "startLine": 47,
+          "endLine": 51,
+          "params": [
+            "message",
+            "errorType",
+            "statusCode",
+            "cause"
+          ]
+        },
+        {
+          "name": "ModelClientException",
+          "startLine": 60,
+          "endLine": 64,
+          "params": [
+            "message",
+            "errorType",
+            "statusCode"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ModelClientException",
+          "startLine": 26,
+          "endLine": 65,
+          "methods": [
+            "ModelClientException",
+            "ModelClientException"
+          ],
+          "properties": [
+            "errorType",
+            "statusCode"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ModelClientException",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "ModelClientException",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "ModelClientException",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelUrlResolver.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 81,
+      "nonEmptyLines": 73,
+      "functions": [
+        {
+          "name": "resolveUrl",
+          "startLine": 43,
+          "endLine": 62,
+          "params": [
+            "provider",
+            "candidate",
+            "capability"
+          ]
+        },
+        {
+          "name": "joinUrl",
+          "startLine": 72,
+          "endLine": 80,
+          "params": [
+            "baseUrl",
+            "path"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ModelUrlResolver",
+          "startLine": 30,
+          "endLine": 81,
+          "methods": [
+            "resolveUrl",
+            "joinUrl"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "resolveUrl",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "ModelUrlResolver",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "resolveUrl",
+          "callee": "candidate.getUrl",
+          "lineNumber": 47
+        },
+        {
+          "caller": "resolveUrl",
+          "callee": "candidate.getUrl().isBlank",
+          "lineNumber": 47
+        },
+        {
+          "caller": "resolveUrl",
+          "callee": "candidate.getUrl",
+          "lineNumber": 47
+        },
+        {
+          "caller": "resolveUrl",
+          "callee": "candidate.getUrl",
+          "lineNumber": 48
+        },
+        {
+          "caller": "resolveUrl",
+          "callee": "provider.getUrl",
+          "lineNumber": 50
+        },
+        {
+          "caller": "resolveUrl",
+          "callee": "provider.getUrl().isBlank",
+          "lineNumber": 50
+        },
+        {
+          "caller": "resolveUrl",
+          "callee": "provider.getUrl",
+          "lineNumber": 50
+        },
+        {
+          "caller": "resolveUrl",
+          "callee": "new IllegalStateException",
+          "lineNumber": 51
+        },
+        {
+          "caller": "resolveUrl",
+          "callee": "provider.getEndpoints",
+          "lineNumber": 54
+        },
+        {
+          "caller": "resolveUrl",
+          "callee": "capability.name().toLowerCase",
+          "lineNumber": 55
+        },
+        {
+          "caller": "resolveUrl",
+          "callee": "capability.name",
+          "lineNumber": 55
+        },
+        {
+          "caller": "resolveUrl",
+          "callee": "endpoints.get",
+          "lineNumber": 56
+        },
+        {
+          "caller": "resolveUrl",
+          "callee": "path.isBlank",
+          "lineNumber": 57
+        },
+        {
+          "caller": "resolveUrl",
+          "callee": "new IllegalStateException",
+          "lineNumber": 58
+        },
+        {
+          "caller": "resolveUrl",
+          "callee": "joinUrl",
+          "lineNumber": 61
+        },
+        {
+          "caller": "resolveUrl",
+          "callee": "provider.getUrl",
+          "lineNumber": 61
+        },
+        {
+          "caller": "joinUrl",
+          "callee": "baseUrl.endsWith",
+          "lineNumber": 73
+        },
+        {
+          "caller": "joinUrl",
+          "callee": "path.startsWith",
+          "lineNumber": 73
+        },
+        {
+          "caller": "joinUrl",
+          "callee": "path.substring",
+          "lineNumber": 74
+        },
+        {
+          "caller": "joinUrl",
+          "callee": "baseUrl.endsWith",
+          "lineNumber": 76
+        },
+        {
+          "caller": "joinUrl",
+          "callee": "path.startsWith",
+          "lineNumber": 76
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelHealthStore.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 146,
+      "nonEmptyLines": 133,
+      "functions": [
+        {
+          "name": "isUnavailable",
+          "startLine": 40,
+          "endLine": 49,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "allowCall",
+          "startLine": 51,
+          "endLine": 83,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "markSuccess",
+          "startLine": 85,
+          "endLine": 99,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "markFailure",
+          "startLine": 101,
+          "endLine": 125,
+          "params": [
+            "id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ModelHealthStore",
+          "startLine": 32,
+          "endLine": 146,
+          "methods": [
+            "isUnavailable",
+            "allowCall",
+            "markSuccess",
+            "markFailure"
+          ],
+          "properties": [
+            "properties",
+            "healthById"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "isUnavailable",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "allowCall",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "markSuccess",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "markFailure",
+          "line": 101,
+          "isDefault": false
+        },
+        {
+          "name": "ModelHealthStore",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "isUnavailable",
+          "callee": "healthById.get",
+          "lineNumber": 41
+        },
+        {
+          "caller": "isUnavailable",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 45
+        },
+        {
+          "caller": "allowCall",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 56
+        },
+        {
+          "caller": "allowCall",
+          "callee": "new AtomicBoolean",
+          "lineNumber": 57
+        },
+        {
+          "caller": "allowCall",
+          "callee": "healthById.compute",
+          "lineNumber": 58
+        },
+        {
+          "caller": "allowCall",
+          "callee": "new ModelHealth",
+          "lineNumber": 60
+        },
+        {
+          "caller": "allowCall",
+          "callee": "allowed.set",
+          "lineNumber": 68
+        },
+        {
+          "caller": "allowCall",
+          "callee": "allowed.set",
+          "lineNumber": 76
+        },
+        {
+          "caller": "allowCall",
+          "callee": "allowed.set",
+          "lineNumber": 79
+        },
+        {
+          "caller": "allowCall",
+          "callee": "allowed.get",
+          "lineNumber": 82
+        },
+        {
+          "caller": "markSuccess",
+          "callee": "healthById.compute",
+          "lineNumber": 89
+        },
+        {
+          "caller": "markSuccess",
+          "callee": "new ModelHealth",
+          "lineNumber": 91
+        },
+        {
+          "caller": "markFailure",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 105
+        },
+        {
+          "caller": "markFailure",
+          "callee": "healthById.compute",
+          "lineNumber": 106
+        },
+        {
+          "caller": "markFailure",
+          "callee": "new ModelHealth",
+          "lineNumber": 108
+        },
+        {
+          "caller": "markFailure",
+          "callee": "properties.getSelection().getOpenDurationMs",
+          "lineNumber": 112
+        },
+        {
+          "caller": "markFailure",
+          "callee": "properties.getSelection",
+          "lineNumber": 112
+        },
+        {
+          "caller": "markFailure",
+          "callee": "properties.getSelection().getFailureThreshold",
+          "lineNumber": 118
+        },
+        {
+          "caller": "markFailure",
+          "callee": "properties.getSelection",
+          "lineNumber": 118
+        },
+        {
+          "caller": "markFailure",
+          "callee": "properties.getSelection().getOpenDurationMs",
+          "lineNumber": 120
+        },
+        {
+          "caller": "markFailure",
+          "callee": "properties.getSelection",
+          "lineNumber": 120
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelRoutingExecutor.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 79,
+      "nonEmptyLines": 70,
+      "functions": [
+        {
+          "name": "executeWithFallback",
+          "startLine": 41,
+          "endLine": 78,
+          "params": [
+            "capability",
+            "targets",
+            "clientResolver",
+            "caller"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ModelRoutingExecutor",
+          "startLine": 34,
+          "endLine": 79,
+          "methods": [
+            "executeWithFallback"
+          ],
+          "properties": [
+            "healthStore"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "executeWithFallback",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "ModelRoutingExecutor",
+          "line": 34,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "executeWithFallback",
+          "callee": "capability.getDisplayName",
+          "lineNumber": 46
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "targets.isEmpty",
+          "lineNumber": 47
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "new RemoteException",
+          "lineNumber": 48
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "clientResolver.apply",
+          "lineNumber": 53
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "log.warn",
+          "lineNumber": 55
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "target.candidate().getProvider",
+          "lineNumber": 55
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "target.candidate",
+          "lineNumber": 55
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "target.id",
+          "lineNumber": 55
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "healthStore.allowCall",
+          "lineNumber": 58
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "target.id",
+          "lineNumber": 58
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "caller.call",
+          "lineNumber": 63
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "healthStore.markSuccess",
+          "lineNumber": 64
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "target.id",
+          "lineNumber": 64
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "healthStore.markFailure",
+          "lineNumber": 68
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "target.id",
+          "lineNumber": 68
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "log.warn",
+          "lineNumber": 69
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "target.id",
+          "lineNumber": 69
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "target.candidate().getProvider",
+          "lineNumber": 69
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "target.candidate",
+          "lineNumber": 69
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "new RemoteException",
+          "lineNumber": 73
+        },
+        {
+          "caller": "executeWithFallback",
+          "callee": "last.getMessage",
+          "lineNumber": 74
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelSelector.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 149,
+      "nonEmptyLines": 125,
+      "functions": [
+        {
+          "name": "selectChatCandidates",
+          "startLine": 45,
+          "endLine": 53,
+          "params": [
+            "deepThinking"
+          ]
+        },
+        {
+          "name": "selectEmbeddingCandidates",
+          "startLine": 55,
+          "endLine": 57,
+          "params": []
+        },
+        {
+          "name": "selectRerankCandidates",
+          "startLine": 59,
+          "endLine": 61,
+          "params": []
+        },
+        {
+          "name": "resolveFirstChoiceModel",
+          "startLine": 63,
+          "endLine": 71,
+          "params": [
+            "group",
+            "deepThinking"
+          ]
+        },
+        {
+          "name": "selectCandidates",
+          "startLine": 73,
+          "endLine": 78,
+          "params": [
+            "group"
+          ]
+        },
+        {
+          "name": "selectCandidates",
+          "startLine": 80,
+          "endLine": 89,
+          "params": [
+            "group",
+            "firstChoiceModelId",
+            "deepThinking"
+          ]
+        },
+        {
+          "name": "filterAndSortCandidates",
+          "startLine": 94,
+          "endLine": 114,
+          "params": [
+            "candidates",
+            "firstChoiceModelId",
+            "deepThinking"
+          ]
+        },
+        {
+          "name": "buildAvailableTargets",
+          "startLine": 116,
+          "endLine": 123,
+          "params": [
+            "candidates"
+          ]
+        },
+        {
+          "name": "buildModelTarget",
+          "startLine": 125,
+          "endLine": 139,
+          "params": [
+            "candidate",
+            "providers"
+          ]
+        },
+        {
+          "name": "resolveId",
+          "startLine": 141,
+          "endLine": 148,
+          "params": [
+            "candidate"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ModelSelector",
+          "startLine": 37,
+          "endLine": 149,
+          "methods": [
+            "selectChatCandidates",
+            "selectEmbeddingCandidates",
+            "selectRerankCandidates",
+            "resolveFirstChoiceModel",
+            "selectCandidates",
+            "selectCandidates",
+            "filterAndSortCandidates",
+            "buildAvailableTargets",
+            "buildModelTarget",
+            "resolveId"
+          ],
+          "properties": [
+            "properties",
+            "healthStore"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "selectChatCandidates",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "selectEmbeddingCandidates",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "selectRerankCandidates",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "ModelSelector",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "selectChatCandidates",
+          "callee": "properties.getChat",
+          "lineNumber": 46
+        },
+        {
+          "caller": "selectChatCandidates",
+          "callee": "List.of",
+          "lineNumber": 48
+        },
+        {
+          "caller": "selectChatCandidates",
+          "callee": "resolveFirstChoiceModel",
+          "lineNumber": 51
+        },
+        {
+          "caller": "selectChatCandidates",
+          "callee": "selectCandidates",
+          "lineNumber": 52
+        },
+        {
+          "caller": "selectEmbeddingCandidates",
+          "callee": "selectCandidates",
+          "lineNumber": 56
+        },
+        {
+          "caller": "selectEmbeddingCandidates",
+          "callee": "properties.getEmbedding",
+          "lineNumber": 56
+        },
+        {
+          "caller": "selectRerankCandidates",
+          "callee": "selectCandidates",
+          "lineNumber": 60
+        },
+        {
+          "caller": "selectRerankCandidates",
+          "callee": "properties.getRerank",
+          "lineNumber": 60
+        },
+        {
+          "caller": "resolveFirstChoiceModel",
+          "callee": "group.getDeepThinkingModel",
+          "lineNumber": 65
+        },
+        {
+          "caller": "resolveFirstChoiceModel",
+          "callee": "StrUtil.isNotBlank",
+          "lineNumber": 66
+        },
+        {
+          "caller": "resolveFirstChoiceModel",
+          "callee": "group.getDefaultModel",
+          "lineNumber": 70
+        },
+        {
+          "caller": "selectCandidates",
+          "callee": "List.of",
+          "lineNumber": 75
+        },
+        {
+          "caller": "selectCandidates",
+          "callee": "selectCandidates",
+          "lineNumber": 77
+        },
+        {
+          "caller": "selectCandidates",
+          "callee": "group.getDefaultModel",
+          "lineNumber": 77
+        },
+        {
+          "caller": "selectCandidates",
+          "callee": "group.getCandidates",
+          "lineNumber": 81
+        },
+        {
+          "caller": "selectCandidates",
+          "callee": "List.of",
+          "lineNumber": 82
+        },
+        {
+          "caller": "selectCandidates",
+          "callee": "filterAndSortCandidates",
+          "lineNumber": 86
+        },
+        {
+          "caller": "selectCandidates",
+          "callee": "group.getCandidates",
+          "lineNumber": 86
+        },
+        {
+          "caller": "selectCandidates",
+          "callee": "buildAvailableTargets",
+          "lineNumber": 88
+        },
+        {
+          "caller": "filterAndSortCandidates",
+          "callee": "candidates.stream()\r\n                .filter(c -> c != null && !Boolean.FALSE.equals(c.getEnabled()))\r\n                .filter(c -> !deepThinking || Boolean.TRUE.equals(c.getSupportsThinking()))\r\n                .sorted(Comparator\r\n                        .comparing((AIModelProperties.ModelCandidate c) ->\r\n                                !Objects.equals(resolveId(c), firstChoiceModelId))\r\n                        .thenComparing(AIModelProperties.ModelCandidate::getPriority,\r\n                                Comparator.nullsLast(Integer::compareTo))\r\n                        .thenComparing(AIModelProperties.ModelCandidate::getId,\r\n                                Comparator.nullsLast(String::compareTo))).collect",
+          "lineNumber": 97
+        },
+        {
+          "caller": "filterAndSortCandidates",
+          "callee": "candidates.stream()\r\n                .filter(c -> c != null && !Boolean.FALSE.equals(c.getEnabled()))\r\n                .filter(c -> !deepThinking || Boolean.TRUE.equals(c.getSupportsThinking())).sorted",
+          "lineNumber": 97
+        },
+        {
+          "caller": "filterAndSortCandidates",
+          "callee": "candidates.stream()\r\n                .filter(c -> c != null && !Boolean.FALSE.equals(c.getEnabled())).filter",
+          "lineNumber": 97
+        },
+        {
+          "caller": "filterAndSortCandidates",
+          "callee": "candidates.stream().filter",
+          "lineNumber": 97
+        },
+        {
+          "caller": "filterAndSortCandidates",
+          "callee": "candidates.stream",
+          "lineNumber": 97
+        },
+        {
+          "caller": "filterAndSortCandidates",
+          "callee": "Boolean.FALSE.equals",
+          "lineNumber": 98
+        },
+        {
+          "caller": "filterAndSortCandidates",
+          "callee": "c.getEnabled",
+          "lineNumber": 98
+        },
+        {
+          "caller": "filterAndSortCandidates",
+          "callee": "Boolean.TRUE.equals",
+          "lineNumber": 99
+        },
+        {
+          "caller": "filterAndSortCandidates",
+          "callee": "c.getSupportsThinking",
+          "lineNumber": 99
+        },
+        {
+          "caller": "filterAndSortCandidates",
+          "callee": "Comparator\r\n                        .comparing((AIModelProperties.ModelCandidate c) ->\r\n                                !Objects.equals(resolveId(c), firstChoiceModelId))\r\n                        .thenComparing(AIModelProperties.ModelCandidate::getPriority,\r\n                                Comparator.nullsLast(Integer::compareTo)).thenComparing",
+          "lineNumber": 100
+        },
+        {
+          "caller": "filterAndSortCandidates",
+          "callee": "Comparator\r\n                        .comparing((AIModelProperties.ModelCandidate c) ->\r\n                                !Objects.equals(resolveId(c), firstChoiceModelId)).thenComparing",
+          "lineNumber": 100
+        },
+        {
+          "caller": "filterAndSortCandidates",
+          "callee": "Comparator.comparing",
+          "lineNumber": 100
+        },
+        {
+          "caller": "filterAndSortCandidates",
+          "callee": "Objects.equals",
+          "lineNumber": 102
+        },
+        {
+          "caller": "filterAndSortCandidates",
+          "callee": "resolveId",
+          "lineNumber": 102
+        },
+        {
+          "caller": "filterAndSortCandidates",
+          "callee": "Comparator.nullsLast",
+          "lineNumber": 104
+        },
+        {
+          "caller": "filterAndSortCandidates",
+          "callee": "Comparator.nullsLast",
+          "lineNumber": 106
+        },
+        {
+          "caller": "filterAndSortCandidates",
+          "callee": "Collectors.toList",
+          "lineNumber": 107
+        },
+        {
+          "caller": "filterAndSortCandidates",
+          "callee": "enabled.isEmpty",
+          "lineNumber": 109
+        },
+        {
+          "caller": "filterAndSortCandidates",
+          "callee": "log.warn",
+          "lineNumber": 110
+        },
+        {
+          "caller": "buildAvailableTargets",
+          "callee": "properties.getProviders",
+          "lineNumber": 117
+        },
+        {
+          "caller": "buildAvailableTargets",
+          "callee": "candidates.stream()\r\n                .map(candidate -> buildModelTarget(candidate, providers))\r\n                .filter(Objects::nonNull).collect",
+          "lineNumber": 119
+        },
+        {
+          "caller": "buildAvailableTargets",
+          "callee": "candidates.stream()\r\n                .map(candidate -> buildModelTarget(candidate, providers)).filter",
+          "lineNumber": 119
+        },
+        {
+          "caller": "buildAvailableTargets",
+          "callee": "candidates.stream().map",
+          "lineNumber": 119
+        },
+        {
+          "caller": "buildAvailableTargets",
+          "callee": "candidates.stream",
+          "lineNumber": 119
+        },
+        {
+          "caller": "buildAvailableTargets",
+          "callee": "buildModelTarget",
+          "lineNumber": 120
+        },
+        {
+          "caller": "buildAvailableTargets",
+          "callee": "Collectors.toList",
+          "lineNumber": 122
+        },
+        {
+          "caller": "buildModelTarget",
+          "callee": "resolveId",
+          "lineNumber": 126
+        },
+        {
+          "caller": "buildModelTarget",
+          "callee": "healthStore.isUnavailable",
+          "lineNumber": 128
+        },
+        {
+          "caller": "buildModelTarget",
+          "callee": "providers.get",
+          "lineNumber": 132
+        },
+        {
+          "caller": "buildModelTarget",
+          "callee": "candidate.getProvider",
+          "lineNumber": 132
+        },
+        {
+          "caller": "buildModelTarget",
+          "callee": "ModelProvider.NOOP.matches",
+          "lineNumber": 133
+        },
+        {
+          "caller": "buildModelTarget",
+          "callee": "candidate.getProvider",
+          "lineNumber": 133
+        },
+        {
+          "caller": "buildModelTarget",
+          "callee": "log.warn",
+          "lineNumber": 134
+        },
+        {
+          "caller": "buildModelTarget",
+          "callee": "candidate.getProvider",
+          "lineNumber": 134
+        },
+        {
+          "caller": "buildModelTarget",
+          "callee": "new ModelTarget",
+          "lineNumber": 138
+        },
+        {
+          "caller": "resolveId",
+          "callee": "StrUtil.isNotBlank",
+          "lineNumber": 142
+        },
+        {
+          "caller": "resolveId",
+          "callee": "candidate.getId",
+          "lineNumber": 142
+        },
+        {
+          "caller": "resolveId",
+          "callee": "candidate.getId",
+          "lineNumber": 143
+        },
+        {
+          "caller": "resolveId",
+          "callee": "String.format",
+          "lineNumber": 145
+        },
+        {
+          "caller": "resolveId",
+          "callee": "Objects.toString",
+          "lineNumber": 146
+        },
+        {
+          "caller": "resolveId",
+          "callee": "candidate.getProvider",
+          "lineNumber": 146
+        },
+        {
+          "caller": "resolveId",
+          "callee": "Objects.toString",
+          "lineNumber": 147
+        },
+        {
+          "caller": "resolveId",
+          "callee": "candidate.getModel",
+          "lineNumber": 147
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 4,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 33,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/BaiLianRerankClient.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 196,
+      "nonEmptyLines": 164,
+      "functions": [
+        {
+          "name": "provider",
+          "startLine": 57,
+          "endLine": 60,
+          "params": []
+        },
+        {
+          "name": "rerank",
+          "startLine": 62,
+          "endLine": 81,
+          "params": [
+            "query",
+            "candidates",
+            "topN",
+            "target"
+          ]
+        },
+        {
+          "name": "doRerank",
+          "startLine": 83,
+          "endLine": 184,
+          "params": [
+            "query",
+            "candidates",
+            "topN",
+            "target"
+          ]
+        },
+        {
+          "name": "requireOutput",
+          "startLine": 186,
+          "endLine": 195,
+          "params": [
+            "respJson"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BaiLianRerankClient",
+          "startLine": 49,
+          "endLine": 196,
+          "methods": [
+            "provider",
+            "rerank",
+            "doRerank",
+            "requireOutput"
+          ],
+          "properties": [
+            "httpClient"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "provider",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "rerank",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "BaiLianRerankClient",
+          "line": 49,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "provider",
+          "callee": "ModelProvider.BAI_LIAN.getId",
+          "lineNumber": 59
+        },
+        {
+          "caller": "rerank",
+          "callee": "candidates.isEmpty",
+          "lineNumber": 64
+        },
+        {
+          "caller": "rerank",
+          "callee": "List.of",
+          "lineNumber": 65
+        },
+        {
+          "caller": "rerank",
+          "callee": "new ArrayList<>",
+          "lineNumber": 68
+        },
+        {
+          "caller": "rerank",
+          "callee": "candidates.size",
+          "lineNumber": 68
+        },
+        {
+          "caller": "rerank",
+          "callee": "new HashSet<>",
+          "lineNumber": 69
+        },
+        {
+          "caller": "rerank",
+          "callee": "seen.add",
+          "lineNumber": 71
+        },
+        {
+          "caller": "rerank",
+          "callee": "rc.getId",
+          "lineNumber": 71
+        },
+        {
+          "caller": "rerank",
+          "callee": "dedup.add",
+          "lineNumber": 72
+        },
+        {
+          "caller": "rerank",
+          "callee": "dedup.size",
+          "lineNumber": 76
+        },
+        {
+          "caller": "rerank",
+          "callee": "doRerank",
+          "lineNumber": 80
+        },
+        {
+          "caller": "doRerank",
+          "callee": "HttpResponseHelper.requireProvider",
+          "lineNumber": 84
+        },
+        {
+          "caller": "doRerank",
+          "callee": "provider",
+          "lineNumber": 84
+        },
+        {
+          "caller": "doRerank",
+          "callee": "candidates.isEmpty",
+          "lineNumber": 86
+        },
+        {
+          "caller": "doRerank",
+          "callee": "List.of",
+          "lineNumber": 87
+        },
+        {
+          "caller": "doRerank",
+          "callee": "new JsonObject",
+          "lineNumber": 90
+        },
+        {
+          "caller": "doRerank",
+          "callee": "reqBody.addProperty",
+          "lineNumber": 91
+        },
+        {
+          "caller": "doRerank",
+          "callee": "HttpResponseHelper.requireModel",
+          "lineNumber": 91
+        },
+        {
+          "caller": "doRerank",
+          "callee": "provider",
+          "lineNumber": 91
+        },
+        {
+          "caller": "doRerank",
+          "callee": "new JsonObject",
+          "lineNumber": 93
+        },
+        {
+          "caller": "doRerank",
+          "callee": "input.addProperty",
+          "lineNumber": 94
+        },
+        {
+          "caller": "doRerank",
+          "callee": "new JsonArray",
+          "lineNumber": 96
+        },
+        {
+          "caller": "doRerank",
+          "callee": "documentsArray.add",
+          "lineNumber": 98
+        },
+        {
+          "caller": "doRerank",
+          "callee": "each.getText",
+          "lineNumber": 98
+        },
+        {
+          "caller": "doRerank",
+          "callee": "each.getText",
+          "lineNumber": 98
+        },
+        {
+          "caller": "doRerank",
+          "callee": "input.add",
+          "lineNumber": 100
+        },
+        {
+          "caller": "doRerank",
+          "callee": "new JsonObject",
+          "lineNumber": 102
+        },
+        {
+          "caller": "doRerank",
+          "callee": "parameters.addProperty",
+          "lineNumber": 103
+        },
+        {
+          "caller": "doRerank",
+          "callee": "parameters.addProperty",
+          "lineNumber": 104
+        },
+        {
+          "caller": "doRerank",
+          "callee": "reqBody.add",
+          "lineNumber": 106
+        },
+        {
+          "caller": "doRerank",
+          "callee": "reqBody.add",
+          "lineNumber": 107
+        },
+        {
+          "caller": "doRerank",
+          "callee": "new Request.Builder()\r\n                .url(ModelUrlResolver.resolveUrl(provider, target.candidate(), ModelCapability.RERANK))\r\n                .post(RequestBody.create(reqBody.toString(), HttpMediaTypes.JSON))\r\n                .addHeader(\"Authorization\", \"Bearer \" + provider.getApiKey()).build",
+          "lineNumber": 109
+        },
+        {
+          "caller": "doRerank",
+          "callee": "new Request.Builder()\r\n                .url(ModelUrlResolver.resolveUrl(provider, target.candidate(), ModelCapability.RERANK))\r\n                .post(RequestBody.create(reqBody.toString(), HttpMediaTypes.JSON)).addHeader",
+          "lineNumber": 109
+        },
+        {
+          "caller": "doRerank",
+          "callee": "new Request.Builder()\r\n                .url(ModelUrlResolver.resolveUrl(provider, target.candidate(), ModelCapability.RERANK)).post",
+          "lineNumber": 109
+        },
+        {
+          "caller": "doRerank",
+          "callee": "new Request.Builder().url",
+          "lineNumber": 109
+        },
+        {
+          "caller": "doRerank",
+          "callee": "new Request.Builder",
+          "lineNumber": 109
+        },
+        {
+          "caller": "doRerank",
+          "callee": "ModelUrlResolver.resolveUrl",
+          "lineNumber": 110
+        },
+        {
+          "caller": "doRerank",
+          "callee": "target.candidate",
+          "lineNumber": 110
+        },
+        {
+          "caller": "doRerank",
+          "callee": "RequestBody.create",
+          "lineNumber": 111
+        },
+        {
+          "caller": "doRerank",
+          "callee": "reqBody.toString",
+          "lineNumber": 111
+        },
+        {
+          "caller": "doRerank",
+          "callee": "provider.getApiKey",
+          "lineNumber": 112
+        },
+        {
+          "caller": "doRerank",
+          "callee": "httpClient.newCall(request).execute",
+          "lineNumber": 116
+        },
+        {
+          "caller": "doRerank",
+          "callee": "httpClient.newCall",
+          "lineNumber": 116
+        },
+        {
+          "caller": "doRerank",
+          "callee": "response.isSuccessful",
+          "lineNumber": 117
+        },
+        {
+          "caller": "doRerank",
+          "callee": "HttpResponseHelper.readBody",
+          "lineNumber": 118
+        },
+        {
+          "caller": "doRerank",
+          "callee": "response.body",
+          "lineNumber": 118
+        },
+        {
+          "caller": "doRerank",
+          "callee": "log.warn",
+          "lineNumber": 119
+        },
+        {
+          "caller": "doRerank",
+          "callee": "provider",
+          "lineNumber": 119
+        },
+        {
+          "caller": "doRerank",
+          "callee": "response.code",
+          "lineNumber": 119
+        },
+        {
+          "caller": "doRerank",
+          "callee": "new ModelClientException",
+          "lineNumber": 120
+        },
+        {
+          "caller": "doRerank",
+          "callee": "provider",
+          "lineNumber": 121
+        },
+        {
+          "caller": "doRerank",
+          "callee": "response.code",
+          "lineNumber": 121
+        },
+        {
+          "caller": "doRerank",
+          "callee": "ModelClientErrorType.fromHttpStatus",
+          "lineNumber": 122
+        },
+        {
+          "caller": "doRerank",
+          "callee": "response.code",
+          "lineNumber": 122
+        },
+        {
+          "caller": "doRerank",
+          "callee": "response.code",
+          "lineNumber": 123
+        },
+        {
+          "caller": "doRerank",
+          "callee": "HttpResponseHelper.parseJson",
+          "lineNumber": 126
+        },
+        {
+          "caller": "doRerank",
+          "callee": "response.body",
+          "lineNumber": 126
+        },
+        {
+          "caller": "doRerank",
+          "callee": "provider",
+          "lineNumber": 126
+        },
+        {
+          "caller": "doRerank",
+          "callee": "new ModelClientException",
+          "lineNumber": 128
+        },
+        {
+          "caller": "doRerank",
+          "callee": "provider",
+          "lineNumber": 128
+        },
+        {
+          "caller": "doRerank",
+          "callee": "e.getMessage",
+          "lineNumber": 128
+        },
+        {
+          "caller": "doRerank",
+          "callee": "requireOutput",
+          "lineNumber": 131
+        },
+        {
+          "caller": "doRerank",
+          "callee": "output.getAsJsonArray",
+          "lineNumber": 133
+        },
+        {
+          "caller": "doRerank",
+          "callee": "CollUtil.isEmpty",
+          "lineNumber": 134
+        },
+        {
+          "caller": "doRerank",
+          "callee": "new ModelClientException",
+          "lineNumber": 135
+        },
+        {
+          "caller": "doRerank",
+          "callee": "provider",
+          "lineNumber": 135
+        },
+        {
+          "caller": "doRerank",
+          "callee": "new ArrayList<>",
+          "lineNumber": 138
+        },
+        {
+          "caller": "doRerank",
+          "callee": "new HashSet<>",
+          "lineNumber": 139
+        },
+        {
+          "caller": "doRerank",
+          "callee": "elem.isJsonObject",
+          "lineNumber": 142
+        },
+        {
+          "caller": "doRerank",
+          "callee": "elem.getAsJsonObject",
+          "lineNumber": 145
+        },
+        {
+          "caller": "doRerank",
+          "callee": "item.has",
+          "lineNumber": 147
+        },
+        {
+          "caller": "doRerank",
+          "callee": "item.get(\"index\").getAsInt",
+          "lineNumber": 150
+        },
+        {
+          "caller": "doRerank",
+          "callee": "item.get",
+          "lineNumber": 150
+        },
+        {
+          "caller": "doRerank",
+          "callee": "candidates.size",
+          "lineNumber": 152
+        },
+        {
+          "caller": "doRerank",
+          "callee": "candidates.get",
+          "lineNumber": 156
+        },
+        {
+          "caller": "doRerank",
+          "callee": "item.has",
+          "lineNumber": 159
+        },
+        {
+          "caller": "doRerank",
+          "callee": "item.get(\"relevance_score\").isJsonNull",
+          "lineNumber": 159
+        },
+        {
+          "caller": "doRerank",
+          "callee": "item.get",
+          "lineNumber": 159
+        },
+        {
+          "caller": "doRerank",
+          "callee": "item.get(\"relevance_score\").getAsFloat",
+          "lineNumber": 160
+        },
+        {
+          "caller": "doRerank",
+          "callee": "item.get",
+          "lineNumber": 160
+        },
+        {
+          "caller": "doRerank",
+          "callee": "new RetrievedChunk",
+          "lineNumber": 163
+        },
+        {
+          "caller": "doRerank",
+          "callee": "src.getId",
+          "lineNumber": 163
+        },
+        {
+          "caller": "doRerank",
+          "callee": "src.getText",
+          "lineNumber": 163
+        },
+        {
+          "caller": "doRerank",
+          "callee": "reranked.add",
+          "lineNumber": 164
+        },
+        {
+          "caller": "doRerank",
+          "callee": "addedIds.add",
+          "lineNumber": 165
+        },
+        {
+          "caller": "doRerank",
+          "callee": "src.getId",
+          "lineNumber": 165
+        },
+        {
+          "caller": "doRerank",
+          "callee": "reranked.size",
+          "lineNumber": 167
+        },
+        {
+          "caller": "doRerank",
+          "callee": "reranked.size",
+          "lineNumber": 172
+        },
+        {
+          "caller": "doRerank",
+          "callee": "addedIds.add",
+          "lineNumber": 174
+        },
+        {
+          "caller": "doRerank",
+          "callee": "c.getId",
+          "lineNumber": 174
+        },
+        {
+          "caller": "doRerank",
+          "callee": "reranked.add",
+          "lineNumber": 175
+        },
+        {
+          "caller": "doRerank",
+          "callee": "reranked.size",
+          "lineNumber": 177
+        },
+        {
+          "caller": "requireOutput",
+          "callee": "respJson.has",
+          "lineNumber": 187
+        },
+        {
+          "caller": "requireOutput",
+          "callee": "new ModelClientException",
+          "lineNumber": 188
+        },
+        {
+          "caller": "requireOutput",
+          "callee": "provider",
+          "lineNumber": 188
+        },
+        {
+          "caller": "requireOutput",
+          "callee": "respJson.getAsJsonObject",
+          "lineNumber": 190
+        },
+        {
+          "caller": "requireOutput",
+          "callee": "output.has",
+          "lineNumber": 191
+        },
+        {
+          "caller": "requireOutput",
+          "callee": "new ModelClientException",
+          "lineNumber": 192
+        },
+        {
+          "caller": "requireOutput",
+          "callee": "provider",
+          "lineNumber": 192
+        }
+      ],
+      "metrics": {
+        "importCount": 10,
+        "exportCount": 3,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/NoopRerankClient.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 42,
+      "functions": [
+        {
+          "name": "provider",
+          "startLine": 31,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "rerank",
+          "startLine": 36,
+          "endLine": 47,
+          "params": [
+            "query",
+            "candidates",
+            "topN",
+            "target"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NoopRerankClient",
+          "startLine": 28,
+          "endLine": 48,
+          "methods": [
+            "provider",
+            "rerank"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "provider",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "rerank",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "NoopRerankClient",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "provider",
+          "callee": "ModelProvider.NOOP.getId",
+          "lineNumber": 33
+        },
+        {
+          "caller": "rerank",
+          "callee": "candidates.isEmpty",
+          "lineNumber": 38
+        },
+        {
+          "caller": "rerank",
+          "callee": "List.of",
+          "lineNumber": 39
+        },
+        {
+          "caller": "rerank",
+          "callee": "candidates.size",
+          "lineNumber": 41
+        },
+        {
+          "caller": "rerank",
+          "callee": "candidates.stream()\r\n                .limit(topN).collect",
+          "lineNumber": 44
+        },
+        {
+          "caller": "rerank",
+          "callee": "candidates.stream().limit",
+          "lineNumber": 44
+        },
+        {
+          "caller": "rerank",
+          "callee": "candidates.stream",
+          "lineNumber": 44
+        },
+        {
+          "caller": "rerank",
+          "callee": "Collectors.toList",
+          "lineNumber": 46
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/RerankClient.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 42,
+      "classes": [
+        {
+          "name": "RerankClient",
+          "startLine": 29,
+          "endLine": 48,
+          "methods": [
+            "provider",
+            "rerank"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RerankClient",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/RoutingRerankService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 62,
+      "nonEmptyLines": 55,
+      "functions": [
+        {
+          "name": "RoutingRerankService",
+          "startLine": 46,
+          "endLine": 51,
+          "params": [
+            "selector",
+            "executor",
+            "clients"
+          ]
+        },
+        {
+          "name": "rerank",
+          "startLine": 53,
+          "endLine": 61,
+          "params": [
+            "query",
+            "candidates",
+            "topN"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RoutingRerankService",
+          "startLine": 38,
+          "endLine": 62,
+          "methods": [
+            "RoutingRerankService",
+            "rerank"
+          ],
+          "properties": [
+            "selector",
+            "executor",
+            "clientsByProvider"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RoutingRerankService",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "rerank",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "RoutingRerankService",
+          "line": 38,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "RoutingRerankService",
+          "callee": "clients.stream().collect",
+          "lineNumber": 49
+        },
+        {
+          "caller": "RoutingRerankService",
+          "callee": "clients.stream",
+          "lineNumber": 49
+        },
+        {
+          "caller": "RoutingRerankService",
+          "callee": "Collectors.toMap",
+          "lineNumber": 50
+        },
+        {
+          "caller": "RoutingRerankService",
+          "callee": "Function.identity",
+          "lineNumber": 50
+        },
+        {
+          "caller": "rerank",
+          "callee": "executor.executeWithFallback",
+          "lineNumber": 55
+        },
+        {
+          "caller": "rerank",
+          "callee": "selector.selectRerankCandidates",
+          "lineNumber": 57
+        },
+        {
+          "caller": "rerank",
+          "callee": "clientsByProvider.get",
+          "lineNumber": 58
+        },
+        {
+          "caller": "rerank",
+          "callee": "target.candidate().getProvider",
+          "lineNumber": 58
+        },
+        {
+          "caller": "rerank",
+          "callee": "target.candidate",
+          "lineNumber": 58
+        },
+        {
+          "caller": "rerank",
+          "callee": "client.rerank",
+          "lineNumber": 59
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    }
+  ]
+}

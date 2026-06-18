@@ -1,0 +1,234 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMapper.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMessageMapper.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationSummaryMapper.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/ConversationMessageOrder.java",
+      "language": "java",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationGroupService.java",
+      "language": "java",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationMessageService.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationService.java",
+      "language": "java",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationCreateBO.java",
+      "language": "java",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationMessageBO.java",
+      "language": "java",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationSummaryBO.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/ConversationGroupServiceImpl.java",
+      "language": "java",
+      "sizeLines": 137,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/ConversationMessageServiceImpl.java",
+      "language": "java",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/ConversationServiceImpl.java",
+      "language": "java",
+      "sizeLines": 213,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/index/InvoiceIndexDocumentTests.java",
+      "language": "java",
+      "sizeLines": 350,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/Intent/SimpleIntentClassifierTests.java",
+      "language": "java",
+      "sizeLines": 330,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/rewrite/QueryRewriteTests.java",
+      "language": "java",
+      "sizeLines": 118,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/service/ConversationMessageServiceTests.java",
+      "language": "java",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "language": "java",
+      "sizeLines": 158,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "language": "java",
+      "sizeLines": 124,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java",
+      "language": "java",
+      "sizeLines": 137,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/util/LLMResponseCleaner.java",
+      "language": "java",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMessageMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationMessageDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationSummaryMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationSummaryDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/ConversationMessageOrder.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationGroupService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationMessageDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationSummaryDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationMessageService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/ConversationMessageVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/ConversationMessageOrder.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationMessageBO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationSummaryBO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/ConversationUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/ConversationVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationCreateBO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationCreateBO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationMessageBO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationSummaryBO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/ConversationGroupServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationMessageDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationSummaryDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMessageMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationSummaryMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationGroupService.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/ConversationMessageServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/ConversationMessageVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationMessageDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationSummaryDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMessageMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationSummaryMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/ConversationMessageOrder.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationMessageBO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationSummaryBO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationMessageService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/MessageFeedbackService.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/ConversationServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/MemoryProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/ConversationUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/ConversationVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptTemplateLoader.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationMessageDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationSummaryDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMessageMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationSummaryMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationCreateBO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java"
+    ],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/index/InvoiceIndexDocumentTests.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrieverService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingService.java"
+    ],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/Intent/SimpleIntentClassifierTests.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java"
+    ],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/rewrite/QueryRewriteTests.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryRewriteService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java"
+    ],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/service/ConversationMessageServiceTests.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/ConversationMessageVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/ConversationMessageOrder.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationMessageService.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/util/LLMResponseCleaner.java": []
+  }
+}

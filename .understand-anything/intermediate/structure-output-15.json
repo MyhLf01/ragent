@@ -1,0 +1,2718 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 11,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/KnowledgeChunkController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 111,
+      "nonEmptyLines": 101,
+      "functions": [
+        {
+          "name": "pageQuery",
+          "startLine": 54,
+          "endLine": 58,
+          "params": [
+            "docId",
+            "requestParam"
+          ]
+        },
+        {
+          "name": "create",
+          "startLine": 63,
+          "endLine": 67,
+          "params": [
+            "docId",
+            "request"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 72,
+          "endLine": 78,
+          "params": [
+            "docId",
+            "chunkId",
+            "request"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 83,
+          "endLine": 88,
+          "params": [
+            "docId",
+            "chunkId"
+          ]
+        },
+        {
+          "name": "enable",
+          "startLine": 93,
+          "endLine": 99,
+          "params": [
+            "docId",
+            "chunkId",
+            "enabled"
+          ]
+        },
+        {
+          "name": "batchEnable",
+          "startLine": 104,
+          "endLine": 110,
+          "params": [
+            "docId",
+            "enabled",
+            "request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "KnowledgeChunkController",
+          "startLine": 44,
+          "endLine": 111,
+          "methods": [
+            "pageQuery",
+            "create",
+            "update",
+            "delete",
+            "enable",
+            "batchEnable"
+          ],
+          "properties": [
+            "knowledgeChunkService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "pageQuery",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "create",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "update",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "delete",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "enable",
+          "line": 93,
+          "isDefault": false
+        },
+        {
+          "name": "batchEnable",
+          "line": 104,
+          "isDefault": false
+        },
+        {
+          "name": "KnowledgeChunkController",
+          "line": 44,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "pageQuery",
+          "callee": "Results.success",
+          "lineNumber": 57
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "knowledgeChunkService.pageQuery",
+          "lineNumber": 57
+        },
+        {
+          "caller": "create",
+          "callee": "Results.success",
+          "lineNumber": 66
+        },
+        {
+          "caller": "create",
+          "callee": "knowledgeChunkService.create",
+          "lineNumber": 66
+        },
+        {
+          "caller": "update",
+          "callee": "knowledgeChunkService.update",
+          "lineNumber": 76
+        },
+        {
+          "caller": "update",
+          "callee": "Results.success",
+          "lineNumber": 77
+        },
+        {
+          "caller": "delete",
+          "callee": "knowledgeChunkService.delete",
+          "lineNumber": 86
+        },
+        {
+          "caller": "delete",
+          "callee": "Results.success",
+          "lineNumber": 87
+        },
+        {
+          "caller": "enable",
+          "callee": "knowledgeChunkService.enableChunk",
+          "lineNumber": 97
+        },
+        {
+          "caller": "enable",
+          "callee": "Results.success",
+          "lineNumber": 98
+        },
+        {
+          "caller": "batchEnable",
+          "callee": "knowledgeChunkService.batchToggleEnabled",
+          "lineNumber": 108
+        },
+        {
+          "caller": "batchEnable",
+          "callee": "Results.success",
+          "lineNumber": 109
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkBatchRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 29,
+      "classes": [
+        {
+          "name": "KnowledgeChunkBatchRequest",
+          "startLine": 27,
+          "endLine": 34,
+          "methods": [],
+          "properties": [
+            "chunkIds"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeChunkBatchRequest",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 42,
+      "nonEmptyLines": 36,
+      "classes": [
+        {
+          "name": "KnowledgeChunkCreateRequest",
+          "startLine": 25,
+          "endLine": 42,
+          "methods": [],
+          "properties": [
+            "content",
+            "index",
+            "chunkId"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeChunkCreateRequest",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkPageRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 23,
+      "classes": [
+        {
+          "name": "KnowledgeChunkPageRequest",
+          "startLine": 23,
+          "endLine": 27,
+          "methods": [],
+          "properties": [
+            "enabled"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeChunkPageRequest",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkUpdateRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 28,
+      "classes": [
+        {
+          "name": "KnowledgeChunkUpdateRequest",
+          "startLine": 25,
+          "endLine": 32,
+          "methods": [],
+          "properties": [
+            "content"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeChunkUpdateRequest",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeChunkVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 84,
+      "nonEmptyLines": 69,
+      "classes": [
+        {
+          "name": "KnowledgeChunkVO",
+          "startLine": 27,
+          "endLine": 84,
+          "methods": [],
+          "properties": [
+            "id",
+            "kbId",
+            "docId",
+            "chunkIndex",
+            "content",
+            "contentHash",
+            "charCount",
+            "tokenCount",
+            "enabled",
+            "createTime",
+            "updateTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeChunkVO",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeChunkDO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 116,
+      "nonEmptyLines": 98,
+      "classes": [
+        {
+          "name": "KnowledgeChunkDO",
+          "startLine": 36,
+          "endLine": 116,
+          "methods": [],
+          "properties": [
+            "id",
+            "kbId",
+            "docId",
+            "chunkIndex",
+            "content",
+            "contentHash",
+            "charCount",
+            "tokenCount",
+            "enabled",
+            "createdBy",
+            "updatedBy",
+            "createTime",
+            "updateTime",
+            "deleted"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeChunkDO",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeChunkMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "KnowledgeChunkMapper",
+          "startLine": 23,
+          "endLine": 24,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeChunkMapper",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeChunkService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 127,
+      "nonEmptyLines": 112,
+      "classes": [
+        {
+          "name": "KnowledgeChunkService",
+          "startLine": 32,
+          "endLine": 127,
+          "methods": [
+            "pageQuery",
+            "create",
+            "batchCreate",
+            "batchCreate",
+            "update",
+            "delete",
+            "enableChunk",
+            "batchToggleEnabled",
+            "updateEnabledByDocId",
+            "listByDocId",
+            "deleteByDocId"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeChunkService",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeChunkServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 551,
+      "nonEmptyLines": 475,
+      "functions": [
+        {
+          "name": "pageQuery",
+          "startLine": 77,
+          "endLine": 90,
+          "params": [
+            "docId",
+            "requestParam"
+          ]
+        },
+        {
+          "name": "create",
+          "startLine": 92,
+          "endLine": 149,
+          "params": [
+            "docId",
+            "requestParam"
+          ]
+        },
+        {
+          "name": "batchCreate",
+          "startLine": 151,
+          "endLine": 155,
+          "params": [
+            "docId",
+            "requestParams"
+          ]
+        },
+        {
+          "name": "batchCreate",
+          "startLine": 157,
+          "endLine": 236,
+          "params": [
+            "docId",
+            "requestParams",
+            "writeVector"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 238,
+          "endLine": 282,
+          "params": [
+            "docId",
+            "chunkId",
+            "requestParam"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 284,
+          "endLine": 310,
+          "params": [
+            "docId",
+            "chunkId"
+          ]
+        },
+        {
+          "name": "enableChunk",
+          "startLine": 312,
+          "endLine": 346,
+          "params": [
+            "docId",
+            "chunkId",
+            "enabled"
+          ]
+        },
+        {
+          "name": "batchToggleEnabled",
+          "startLine": 348,
+          "endLine": 428,
+          "params": [
+            "docId",
+            "requestParam",
+            "enabled"
+          ]
+        },
+        {
+          "name": "updateEnabledByDocId",
+          "startLine": 430,
+          "endLine": 441,
+          "params": [
+            "docId",
+            "kbId",
+            "enabled"
+          ]
+        },
+        {
+          "name": "listByDocId",
+          "startLine": 443,
+          "endLine": 457,
+          "params": [
+            "docId"
+          ]
+        },
+        {
+          "name": "deleteByDocId",
+          "startLine": 459,
+          "endLine": 466,
+          "params": [
+            "docId"
+          ]
+        },
+        {
+          "name": "validateDocumentEnabledForChunkEnable",
+          "startLine": 473,
+          "endLine": 480,
+          "params": [
+            "documentDO",
+            "enableChunk"
+          ]
+        },
+        {
+          "name": "syncChunkToVector",
+          "startLine": 485,
+          "endLine": 498,
+          "params": [
+            "collectionName",
+            "docId",
+            "chunkDO",
+            "embeddingModel"
+          ]
+        },
+        {
+          "name": "deleteChunkFromVector",
+          "startLine": 503,
+          "endLine": 506,
+          "params": [
+            "collectionName",
+            "chunkId"
+          ]
+        },
+        {
+          "name": "toArray",
+          "startLine": 511,
+          "endLine": 517,
+          "params": [
+            "list"
+          ]
+        },
+        {
+          "name": "attachEmbeddings",
+          "startLine": 519,
+          "endLine": 531,
+          "params": [
+            "chunks",
+            "embeddingModel"
+          ]
+        },
+        {
+          "name": "embedContent",
+          "startLine": 533,
+          "endLine": 537,
+          "params": [
+            "content",
+            "embeddingModel"
+          ]
+        },
+        {
+          "name": "embedBatch",
+          "startLine": 539,
+          "endLine": 543,
+          "params": [
+            "texts",
+            "embeddingModel"
+          ]
+        },
+        {
+          "name": "resolveTokenCount",
+          "startLine": 545,
+          "endLine": 550,
+          "params": [
+            "content"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "KnowledgeChunkServiceImpl",
+          "startLine": 64,
+          "endLine": 551,
+          "methods": [
+            "pageQuery",
+            "create",
+            "batchCreate",
+            "batchCreate",
+            "update",
+            "delete",
+            "enableChunk",
+            "batchToggleEnabled",
+            "updateEnabledByDocId",
+            "listByDocId",
+            "deleteByDocId",
+            "validateDocumentEnabledForChunkEnable",
+            "syncChunkToVector",
+            "deleteChunkFromVector",
+            "toArray",
+            "attachEmbeddings",
+            "embedContent",
+            "embedBatch",
+            "resolveTokenCount"
+          ],
+          "properties": [
+            "chunkMapper",
+            "documentMapper",
+            "knowledgeBaseMapper",
+            "embeddingService",
+            "tokenCounterService",
+            "vectorStoreService",
+            "transactionOperations"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "pageQuery",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "create",
+          "line": 92,
+          "isDefault": false
+        },
+        {
+          "name": "batchCreate",
+          "line": 151,
+          "isDefault": false
+        },
+        {
+          "name": "batchCreate",
+          "line": 157,
+          "isDefault": false
+        },
+        {
+          "name": "update",
+          "line": 238,
+          "isDefault": false
+        },
+        {
+          "name": "delete",
+          "line": 284,
+          "isDefault": false
+        },
+        {
+          "name": "enableChunk",
+          "line": 312,
+          "isDefault": false
+        },
+        {
+          "name": "batchToggleEnabled",
+          "line": 348,
+          "isDefault": false
+        },
+        {
+          "name": "updateEnabledByDocId",
+          "line": 430,
+          "isDefault": false
+        },
+        {
+          "name": "listByDocId",
+          "line": 443,
+          "isDefault": false
+        },
+        {
+          "name": "deleteByDocId",
+          "line": 459,
+          "isDefault": false
+        },
+        {
+          "name": "KnowledgeChunkServiceImpl",
+          "line": 64,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "pageQuery",
+          "callee": "documentMapper.selectById",
+          "lineNumber": 79
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Assert.notNull",
+          "lineNumber": 80
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "new ClientException",
+          "lineNumber": 80
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "new LambdaQueryWrapper<KnowledgeChunkDO>()\r\n                .eq(KnowledgeChunkDO::getDocId, docId)\r\n                .eq(requestParam.getEnabled() != null, KnowledgeChunkDO::getEnabled, requestParam.getEnabled()).orderByAsc",
+          "lineNumber": 82
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "new LambdaQueryWrapper<KnowledgeChunkDO>()\r\n                .eq(KnowledgeChunkDO::getDocId, docId).eq",
+          "lineNumber": 82
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "new LambdaQueryWrapper<KnowledgeChunkDO>().eq",
+          "lineNumber": 82
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "new LambdaQueryWrapper<KnowledgeChunkDO>",
+          "lineNumber": 82
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "requestParam.getEnabled",
+          "lineNumber": 84
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "requestParam.getEnabled",
+          "lineNumber": 84
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "new Page<>",
+          "lineNumber": 87
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "requestParam.getCurrent",
+          "lineNumber": 87
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "requestParam.getSize",
+          "lineNumber": 87
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "chunkMapper.selectPage",
+          "lineNumber": 88
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "result.convert",
+          "lineNumber": 89
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "BeanUtil.toBean",
+          "lineNumber": 89
+        },
+        {
+          "caller": "create",
+          "callee": "documentMapper.selectById",
+          "lineNumber": 95
+        },
+        {
+          "caller": "create",
+          "callee": "Assert.notNull",
+          "lineNumber": 96
+        },
+        {
+          "caller": "create",
+          "callee": "new ClientException",
+          "lineNumber": 96
+        },
+        {
+          "caller": "create",
+          "callee": "DocumentStatus.RUNNING.getCode().equals",
+          "lineNumber": 97
+        },
+        {
+          "caller": "create",
+          "callee": "DocumentStatus.RUNNING.getCode",
+          "lineNumber": 97
+        },
+        {
+          "caller": "create",
+          "callee": "documentDO.getStatus",
+          "lineNumber": 97
+        },
+        {
+          "caller": "create",
+          "callee": "new ClientException",
+          "lineNumber": 98
+        },
+        {
+          "caller": "create",
+          "callee": "Integer.valueOf(1).equals",
+          "lineNumber": 100
+        },
+        {
+          "caller": "create",
+          "callee": "Integer.valueOf",
+          "lineNumber": 100
+        },
+        {
+          "caller": "create",
+          "callee": "documentDO.getEnabled",
+          "lineNumber": 100
+        },
+        {
+          "caller": "create",
+          "callee": "new ClientException",
+          "lineNumber": 101
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getContent",
+          "lineNumber": 104
+        },
+        {
+          "caller": "create",
+          "callee": "Assert.notBlank",
+          "lineNumber": 105
+        },
+        {
+          "caller": "create",
+          "callee": "new ClientException",
+          "lineNumber": 105
+        },
+        {
+          "caller": "create",
+          "callee": "chunkMapper.selectOne",
+          "lineNumber": 107
+        },
+        {
+          "caller": "create",
+          "callee": "Wrappers.lambdaQuery(KnowledgeChunkDO.class)\r\n                        .eq(KnowledgeChunkDO::getDocId, docId)\r\n                        .orderByDesc(KnowledgeChunkDO::getChunkIndex).last",
+          "lineNumber": 108
+        },
+        {
+          "caller": "create",
+          "callee": "Wrappers.lambdaQuery(KnowledgeChunkDO.class)\r\n                        .eq(KnowledgeChunkDO::getDocId, docId).orderByDesc",
+          "lineNumber": 108
+        },
+        {
+          "caller": "create",
+          "callee": "Wrappers.lambdaQuery(KnowledgeChunkDO.class).eq",
+          "lineNumber": 108
+        },
+        {
+          "caller": "create",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 108
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getIndex",
+          "lineNumber": 113
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getIndex",
+          "lineNumber": 114
+        },
+        {
+          "caller": "create",
+          "callee": "latest.getChunkIndex",
+          "lineNumber": 115
+        },
+        {
+          "caller": "create",
+          "callee": "SecureUtil.sha256",
+          "lineNumber": 117
+        },
+        {
+          "caller": "create",
+          "callee": "content.length",
+          "lineNumber": 118
+        },
+        {
+          "caller": "create",
+          "callee": "knowledgeBaseMapper.selectById",
+          "lineNumber": 119
+        },
+        {
+          "caller": "create",
+          "callee": "documentDO.getKbId",
+          "lineNumber": 119
+        },
+        {
+          "caller": "create",
+          "callee": "kbDO.getEmbeddingModel",
+          "lineNumber": 120
+        },
+        {
+          "caller": "create",
+          "callee": "kbDO.getCollectionName",
+          "lineNumber": 121
+        },
+        {
+          "caller": "create",
+          "callee": "resolveTokenCount",
+          "lineNumber": 122
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeChunkDO.builder()\r\n                .id(requestParam.getChunkId())\r\n                .kbId(documentDO.getKbId())\r\n                .docId(docId)\r\n                .chunkIndex(chunkIndex)\r\n                .content(content)\r\n                .contentHash(contentHash)\r\n                .charCount(charCount)\r\n                .tokenCount(tokenCount)\r\n                .enabled(1)\r\n                .createdBy(UserContext.getUsername())\r\n                .updatedBy(UserContext.getUsername()).build",
+          "lineNumber": 124
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeChunkDO.builder()\r\n                .id(requestParam.getChunkId())\r\n                .kbId(documentDO.getKbId())\r\n                .docId(docId)\r\n                .chunkIndex(chunkIndex)\r\n                .content(content)\r\n                .contentHash(contentHash)\r\n                .charCount(charCount)\r\n                .tokenCount(tokenCount)\r\n                .enabled(1)\r\n                .createdBy(UserContext.getUsername()).updatedBy",
+          "lineNumber": 124
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeChunkDO.builder()\r\n                .id(requestParam.getChunkId())\r\n                .kbId(documentDO.getKbId())\r\n                .docId(docId)\r\n                .chunkIndex(chunkIndex)\r\n                .content(content)\r\n                .contentHash(contentHash)\r\n                .charCount(charCount)\r\n                .tokenCount(tokenCount)\r\n                .enabled(1).createdBy",
+          "lineNumber": 124
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeChunkDO.builder()\r\n                .id(requestParam.getChunkId())\r\n                .kbId(documentDO.getKbId())\r\n                .docId(docId)\r\n                .chunkIndex(chunkIndex)\r\n                .content(content)\r\n                .contentHash(contentHash)\r\n                .charCount(charCount)\r\n                .tokenCount(tokenCount).enabled",
+          "lineNumber": 124
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeChunkDO.builder()\r\n                .id(requestParam.getChunkId())\r\n                .kbId(documentDO.getKbId())\r\n                .docId(docId)\r\n                .chunkIndex(chunkIndex)\r\n                .content(content)\r\n                .contentHash(contentHash)\r\n                .charCount(charCount).tokenCount",
+          "lineNumber": 124
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeChunkDO.builder()\r\n                .id(requestParam.getChunkId())\r\n                .kbId(documentDO.getKbId())\r\n                .docId(docId)\r\n                .chunkIndex(chunkIndex)\r\n                .content(content)\r\n                .contentHash(contentHash).charCount",
+          "lineNumber": 124
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeChunkDO.builder()\r\n                .id(requestParam.getChunkId())\r\n                .kbId(documentDO.getKbId())\r\n                .docId(docId)\r\n                .chunkIndex(chunkIndex)\r\n                .content(content).contentHash",
+          "lineNumber": 124
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeChunkDO.builder()\r\n                .id(requestParam.getChunkId())\r\n                .kbId(documentDO.getKbId())\r\n                .docId(docId)\r\n                .chunkIndex(chunkIndex).content",
+          "lineNumber": 124
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeChunkDO.builder()\r\n                .id(requestParam.getChunkId())\r\n                .kbId(documentDO.getKbId())\r\n                .docId(docId).chunkIndex",
+          "lineNumber": 124
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeChunkDO.builder()\r\n                .id(requestParam.getChunkId())\r\n                .kbId(documentDO.getKbId()).docId",
+          "lineNumber": 124
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeChunkDO.builder()\r\n                .id(requestParam.getChunkId()).kbId",
+          "lineNumber": 124
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeChunkDO.builder().id",
+          "lineNumber": 124
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeChunkDO.builder",
+          "lineNumber": 124
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getChunkId",
+          "lineNumber": 125
+        },
+        {
+          "caller": "create",
+          "callee": "documentDO.getKbId",
+          "lineNumber": 126
+        },
+        {
+          "caller": "create",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 134
+        },
+        {
+          "caller": "create",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 135
+        },
+        {
+          "caller": "create",
+          "callee": "chunkMapper.insert",
+          "lineNumber": 138
+        },
+        {
+          "caller": "create",
+          "callee": "log.info",
+          "lineNumber": 139
+        },
+        {
+          "caller": "create",
+          "callee": "documentDO.getKbId",
+          "lineNumber": 139
+        },
+        {
+          "caller": "create",
+          "callee": "chunkDO.getId",
+          "lineNumber": 139
+        },
+        {
+          "caller": "create",
+          "callee": "documentMapper.update",
+          "lineNumber": 141
+        },
+        {
+          "caller": "create",
+          "callee": "Wrappers.lambdaUpdate(KnowledgeDocumentDO.class)\r\n                .eq(KnowledgeDocumentDO::getId, docId).setSql",
+          "lineNumber": 141
+        },
+        {
+          "caller": "create",
+          "callee": "Wrappers.lambdaUpdate(KnowledgeDocumentDO.class).eq",
+          "lineNumber": 141
+        },
+        {
+          "caller": "create",
+          "callee": "Wrappers.lambdaUpdate",
+          "lineNumber": 141
+        },
+        {
+          "caller": "create",
+          "callee": "syncChunkToVector",
+          "lineNumber": 146
+        },
+        {
+          "caller": "create",
+          "callee": "BeanUtil.toBean",
+          "lineNumber": 148
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "batchCreate",
+          "lineNumber": 154
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "CollUtil.isEmpty",
+          "lineNumber": 160
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "documentMapper.selectById",
+          "lineNumber": 164
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "Assert.notNull",
+          "lineNumber": 165
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "new ClientException",
+          "lineNumber": 165
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "requestParams.stream().anyMatch",
+          "lineNumber": 167
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "requestParams.stream",
+          "lineNumber": 167
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "request.getIndex",
+          "lineNumber": 167
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "chunkMapper.selectOne",
+          "lineNumber": 170
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "new LambdaQueryWrapper<KnowledgeChunkDO>()\r\n                            .eq(KnowledgeChunkDO::getDocId, docId)\r\n                            .orderByDesc(KnowledgeChunkDO::getChunkIndex).last",
+          "lineNumber": 171
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "new LambdaQueryWrapper<KnowledgeChunkDO>()\r\n                            .eq(KnowledgeChunkDO::getDocId, docId).orderByDesc",
+          "lineNumber": 171
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "new LambdaQueryWrapper<KnowledgeChunkDO>().eq",
+          "lineNumber": 171
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "new LambdaQueryWrapper<KnowledgeChunkDO>",
+          "lineNumber": 171
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "latest.getChunkIndex",
+          "lineNumber": 176
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "latest.getChunkIndex",
+          "lineNumber": 176
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "documentDO.getKbId",
+          "lineNumber": 179
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 180
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "knowledgeBaseMapper.selectById",
+          "lineNumber": 181
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "kbDO.getEmbeddingModel",
+          "lineNumber": 182
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "kbDO.getCollectionName",
+          "lineNumber": 183
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "new ArrayList<>",
+          "lineNumber": 184
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "requestParams.size",
+          "lineNumber": 184
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "request.getContent",
+          "lineNumber": 187
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "Assert.notBlank",
+          "lineNumber": 188
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "new ClientException",
+          "lineNumber": 188
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "request.getIndex",
+          "lineNumber": 190
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "request.getChunkId",
+          "lineNumber": 195
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 196
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "IdUtil.getSnowflakeNextIdStr",
+          "lineNumber": 197
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "KnowledgeChunkDO.builder()\r\n                    .id(chunkId)\r\n                    .kbId(kbId)\r\n                    .docId(docId)\r\n                    .chunkIndex(chunkIndex)\r\n                    .content(content)\r\n                    .contentHash(SecureUtil.sha256(content))\r\n                    .charCount(content.length())\r\n                    .tokenCount(resolveTokenCount(content))\r\n                    .enabled(1)\r\n                    .createdBy(username)\r\n                    .updatedBy(username).build",
+          "lineNumber": 200
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "KnowledgeChunkDO.builder()\r\n                    .id(chunkId)\r\n                    .kbId(kbId)\r\n                    .docId(docId)\r\n                    .chunkIndex(chunkIndex)\r\n                    .content(content)\r\n                    .contentHash(SecureUtil.sha256(content))\r\n                    .charCount(content.length())\r\n                    .tokenCount(resolveTokenCount(content))\r\n                    .enabled(1)\r\n                    .createdBy(username).updatedBy",
+          "lineNumber": 200
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "KnowledgeChunkDO.builder()\r\n                    .id(chunkId)\r\n                    .kbId(kbId)\r\n                    .docId(docId)\r\n                    .chunkIndex(chunkIndex)\r\n                    .content(content)\r\n                    .contentHash(SecureUtil.sha256(content))\r\n                    .charCount(content.length())\r\n                    .tokenCount(resolveTokenCount(content))\r\n                    .enabled(1).createdBy",
+          "lineNumber": 200
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "KnowledgeChunkDO.builder()\r\n                    .id(chunkId)\r\n                    .kbId(kbId)\r\n                    .docId(docId)\r\n                    .chunkIndex(chunkIndex)\r\n                    .content(content)\r\n                    .contentHash(SecureUtil.sha256(content))\r\n                    .charCount(content.length())\r\n                    .tokenCount(resolveTokenCount(content)).enabled",
+          "lineNumber": 200
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "KnowledgeChunkDO.builder()\r\n                    .id(chunkId)\r\n                    .kbId(kbId)\r\n                    .docId(docId)\r\n                    .chunkIndex(chunkIndex)\r\n                    .content(content)\r\n                    .contentHash(SecureUtil.sha256(content))\r\n                    .charCount(content.length()).tokenCount",
+          "lineNumber": 200
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "KnowledgeChunkDO.builder()\r\n                    .id(chunkId)\r\n                    .kbId(kbId)\r\n                    .docId(docId)\r\n                    .chunkIndex(chunkIndex)\r\n                    .content(content)\r\n                    .contentHash(SecureUtil.sha256(content)).charCount",
+          "lineNumber": 200
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "KnowledgeChunkDO.builder()\r\n                    .id(chunkId)\r\n                    .kbId(kbId)\r\n                    .docId(docId)\r\n                    .chunkIndex(chunkIndex)\r\n                    .content(content).contentHash",
+          "lineNumber": 200
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "KnowledgeChunkDO.builder()\r\n                    .id(chunkId)\r\n                    .kbId(kbId)\r\n                    .docId(docId)\r\n                    .chunkIndex(chunkIndex).content",
+          "lineNumber": 200
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "KnowledgeChunkDO.builder()\r\n                    .id(chunkId)\r\n                    .kbId(kbId)\r\n                    .docId(docId).chunkIndex",
+          "lineNumber": 200
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "KnowledgeChunkDO.builder()\r\n                    .id(chunkId)\r\n                    .kbId(kbId).docId",
+          "lineNumber": 200
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "KnowledgeChunkDO.builder()\r\n                    .id(chunkId).kbId",
+          "lineNumber": 200
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "KnowledgeChunkDO.builder().id",
+          "lineNumber": 200
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "KnowledgeChunkDO.builder",
+          "lineNumber": 200
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "SecureUtil.sha256",
+          "lineNumber": 206
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "content.length",
+          "lineNumber": 207
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "resolveTokenCount",
+          "lineNumber": 208
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "chunkDOList.add",
+          "lineNumber": 213
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "chunkMapper.insert",
+          "lineNumber": 217
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "documentMapper.update",
+          "lineNumber": 219
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "Wrappers.lambdaUpdate(KnowledgeDocumentDO.class)\r\n                .eq(KnowledgeDocumentDO::getId, docId).setSql",
+          "lineNumber": 219
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "Wrappers.lambdaUpdate(KnowledgeDocumentDO.class).eq",
+          "lineNumber": 219
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "Wrappers.lambdaUpdate",
+          "lineNumber": 219
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "chunkDOList.size",
+          "lineNumber": 221
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "chunkDOList.stream()\r\n                    .map(each -> VectorChunk.builder()\r\n                            .chunkId(String.valueOf(each.getId()))\r\n                            .content(each.getContent())\r\n                            .index(each.getChunkIndex())\r\n                            .build()).toList",
+          "lineNumber": 224
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "chunkDOList.stream().map",
+          "lineNumber": 224
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "chunkDOList.stream",
+          "lineNumber": 224
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "VectorChunk.builder()\r\n                            .chunkId(String.valueOf(each.getId()))\r\n                            .content(each.getContent())\r\n                            .index(each.getChunkIndex()).build",
+          "lineNumber": 225
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "VectorChunk.builder()\r\n                            .chunkId(String.valueOf(each.getId()))\r\n                            .content(each.getContent()).index",
+          "lineNumber": 225
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "VectorChunk.builder()\r\n                            .chunkId(String.valueOf(each.getId())).content",
+          "lineNumber": 225
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "VectorChunk.builder().chunkId",
+          "lineNumber": 225
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "VectorChunk.builder",
+          "lineNumber": 225
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "String.valueOf",
+          "lineNumber": 226
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "each.getId",
+          "lineNumber": 226
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "each.getContent",
+          "lineNumber": 227
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "each.getChunkIndex",
+          "lineNumber": 228
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "CollUtil.isNotEmpty",
+          "lineNumber": 231
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "attachEmbeddings",
+          "lineNumber": 232
+        },
+        {
+          "caller": "batchCreate",
+          "callee": "vectorStoreService.indexDocumentChunks",
+          "lineNumber": 233
+        },
+        {
+          "caller": "update",
+          "callee": "documentMapper.selectById",
+          "lineNumber": 241
+        },
+        {
+          "caller": "update",
+          "callee": "Assert.notNull",
+          "lineNumber": 242
+        },
+        {
+          "caller": "update",
+          "callee": "new ClientException",
+          "lineNumber": 242
+        },
+        {
+          "caller": "update",
+          "callee": "DocumentStatus.RUNNING.getCode().equals",
+          "lineNumber": 243
+        },
+        {
+          "caller": "update",
+          "callee": "DocumentStatus.RUNNING.getCode",
+          "lineNumber": 243
+        },
+        {
+          "caller": "update",
+          "callee": "documentDO.getStatus",
+          "lineNumber": 243
+        },
+        {
+          "caller": "update",
+          "callee": "new ClientException",
+          "lineNumber": 244
+        },
+        {
+          "caller": "update",
+          "callee": "chunkMapper.selectById",
+          "lineNumber": 247
+        },
+        {
+          "caller": "update",
+          "callee": "Assert.notNull",
+          "lineNumber": 248
+        },
+        {
+          "caller": "update",
+          "callee": "new ClientException",
+          "lineNumber": 248
+        },
+        {
+          "caller": "update",
+          "callee": "Assert.isTrue",
+          "lineNumber": 249
+        },
+        {
+          "caller": "update",
+          "callee": "chunkDO.getDocId().equals",
+          "lineNumber": 249
+        },
+        {
+          "caller": "update",
+          "callee": "chunkDO.getDocId",
+          "lineNumber": 249
+        },
+        {
+          "caller": "update",
+          "callee": "new ClientException",
+          "lineNumber": 249
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getContent",
+          "lineNumber": 251
+        },
+        {
+          "caller": "update",
+          "callee": "Assert.notBlank",
+          "lineNumber": 252
+        },
+        {
+          "caller": "update",
+          "callee": "new ClientException",
+          "lineNumber": 252
+        },
+        {
+          "caller": "update",
+          "callee": "newContent.equals",
+          "lineNumber": 254
+        },
+        {
+          "caller": "update",
+          "callee": "chunkDO.getContent",
+          "lineNumber": 254
+        },
+        {
+          "caller": "update",
+          "callee": "chunkDO.setContent",
+          "lineNumber": 258
+        },
+        {
+          "caller": "update",
+          "callee": "chunkDO.setContentHash",
+          "lineNumber": 259
+        },
+        {
+          "caller": "update",
+          "callee": "SecureUtil.sha256",
+          "lineNumber": 259
+        },
+        {
+          "caller": "update",
+          "callee": "chunkDO.setCharCount",
+          "lineNumber": 260
+        },
+        {
+          "caller": "update",
+          "callee": "newContent.length",
+          "lineNumber": 260
+        },
+        {
+          "caller": "update",
+          "callee": "knowledgeBaseMapper.selectById",
+          "lineNumber": 261
+        },
+        {
+          "caller": "update",
+          "callee": "documentDO.getKbId",
+          "lineNumber": 261
+        },
+        {
+          "caller": "update",
+          "callee": "kbDO.getEmbeddingModel",
+          "lineNumber": 262
+        },
+        {
+          "caller": "update",
+          "callee": "kbDO.getCollectionName",
+          "lineNumber": 263
+        },
+        {
+          "caller": "update",
+          "callee": "chunkDO.setTokenCount",
+          "lineNumber": 264
+        },
+        {
+          "caller": "update",
+          "callee": "resolveTokenCount",
+          "lineNumber": 264
+        },
+        {
+          "caller": "update",
+          "callee": "chunkDO.setUpdatedBy",
+          "lineNumber": 265
+        },
+        {
+          "caller": "update",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 265
+        },
+        {
+          "caller": "update",
+          "callee": "chunkMapper.updateById",
+          "lineNumber": 267
+        },
+        {
+          "caller": "update",
+          "callee": "log.info",
+          "lineNumber": 269
+        },
+        {
+          "caller": "update",
+          "callee": "documentDO.getKbId",
+          "lineNumber": 269
+        },
+        {
+          "caller": "update",
+          "callee": "vectorStoreService.updateChunk",
+          "lineNumber": 272
+        },
+        {
+          "caller": "update",
+          "callee": "VectorChunk.builder()\r\n                        .chunkId(chunkId)\r\n                        .content(newContent)\r\n                        .index(chunkDO.getChunkIndex())\r\n                        .embedding(toArray(embedContent(newContent, embeddingModel))).build",
+          "lineNumber": 275
+        },
+        {
+          "caller": "update",
+          "callee": "VectorChunk.builder()\r\n                        .chunkId(chunkId)\r\n                        .content(newContent)\r\n                        .index(chunkDO.getChunkIndex()).embedding",
+          "lineNumber": 275
+        },
+        {
+          "caller": "update",
+          "callee": "VectorChunk.builder()\r\n                        .chunkId(chunkId)\r\n                        .content(newContent).index",
+          "lineNumber": 275
+        },
+        {
+          "caller": "update",
+          "callee": "VectorChunk.builder()\r\n                        .chunkId(chunkId).content",
+          "lineNumber": 275
+        },
+        {
+          "caller": "update",
+          "callee": "VectorChunk.builder().chunkId",
+          "lineNumber": 275
+        },
+        {
+          "caller": "update",
+          "callee": "VectorChunk.builder",
+          "lineNumber": 275
+        },
+        {
+          "caller": "update",
+          "callee": "chunkDO.getChunkIndex",
+          "lineNumber": 278
+        },
+        {
+          "caller": "update",
+          "callee": "toArray",
+          "lineNumber": 279
+        },
+        {
+          "caller": "update",
+          "callee": "embedContent",
+          "lineNumber": 279
+        },
+        {
+          "caller": "delete",
+          "callee": "documentMapper.selectById",
+          "lineNumber": 287
+        },
+        {
+          "caller": "delete",
+          "callee": "Assert.notNull",
+          "lineNumber": 288
+        },
+        {
+          "caller": "delete",
+          "callee": "new ClientException",
+          "lineNumber": 288
+        },
+        {
+          "caller": "delete",
+          "callee": "DocumentStatus.RUNNING.getCode().equals",
+          "lineNumber": 289
+        },
+        {
+          "caller": "delete",
+          "callee": "DocumentStatus.RUNNING.getCode",
+          "lineNumber": 289
+        },
+        {
+          "caller": "delete",
+          "callee": "documentDO.getStatus",
+          "lineNumber": 289
+        },
+        {
+          "caller": "delete",
+          "callee": "new ClientException",
+          "lineNumber": 290
+        },
+        {
+          "caller": "delete",
+          "callee": "chunkMapper.selectById",
+          "lineNumber": 293
+        },
+        {
+          "caller": "delete",
+          "callee": "Assert.notNull",
+          "lineNumber": 294
+        },
+        {
+          "caller": "delete",
+          "callee": "new ClientException",
+          "lineNumber": 294
+        },
+        {
+          "caller": "delete",
+          "callee": "Assert.isTrue",
+          "lineNumber": 295
+        },
+        {
+          "caller": "delete",
+          "callee": "chunkDO.getDocId().equals",
+          "lineNumber": 295
+        },
+        {
+          "caller": "delete",
+          "callee": "chunkDO.getDocId",
+          "lineNumber": 295
+        },
+        {
+          "caller": "delete",
+          "callee": "new ClientException",
+          "lineNumber": 295
+        },
+        {
+          "caller": "delete",
+          "callee": "knowledgeBaseMapper.selectById",
+          "lineNumber": 297
+        },
+        {
+          "caller": "delete",
+          "callee": "documentDO.getKbId",
+          "lineNumber": 297
+        },
+        {
+          "caller": "delete",
+          "callee": "Assert.notNull",
+          "lineNumber": 298
+        },
+        {
+          "caller": "delete",
+          "callee": "new ServiceException",
+          "lineNumber": 298
+        },
+        {
+          "caller": "delete",
+          "callee": "kbDO.getCollectionName",
+          "lineNumber": 299
+        },
+        {
+          "caller": "delete",
+          "callee": "chunkMapper.deleteById",
+          "lineNumber": 301
+        },
+        {
+          "caller": "delete",
+          "callee": "documentMapper.update",
+          "lineNumber": 303
+        },
+        {
+          "caller": "delete",
+          "callee": "Wrappers.lambdaUpdate(KnowledgeDocumentDO.class)\r\n                .eq(KnowledgeDocumentDO::getId, docId).setSql",
+          "lineNumber": 303
+        },
+        {
+          "caller": "delete",
+          "callee": "Wrappers.lambdaUpdate(KnowledgeDocumentDO.class).eq",
+          "lineNumber": 303
+        },
+        {
+          "caller": "delete",
+          "callee": "Wrappers.lambdaUpdate",
+          "lineNumber": 303
+        },
+        {
+          "caller": "delete",
+          "callee": "log.info",
+          "lineNumber": 307
+        },
+        {
+          "caller": "delete",
+          "callee": "documentDO.getKbId",
+          "lineNumber": 307
+        },
+        {
+          "caller": "delete",
+          "callee": "deleteChunkFromVector",
+          "lineNumber": 309
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "documentMapper.selectById",
+          "lineNumber": 315
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "Assert.notNull",
+          "lineNumber": 316
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "new ClientException",
+          "lineNumber": 316
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "DocumentStatus.RUNNING.getCode().equals",
+          "lineNumber": 317
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "DocumentStatus.RUNNING.getCode",
+          "lineNumber": 317
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "documentDO.getStatus",
+          "lineNumber": 317
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "new ClientException",
+          "lineNumber": 318
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "validateDocumentEnabledForChunkEnable",
+          "lineNumber": 320
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "chunkMapper.selectById",
+          "lineNumber": 322
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "Assert.notNull",
+          "lineNumber": 323
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "new ClientException",
+          "lineNumber": 323
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "Assert.isTrue",
+          "lineNumber": 324
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "chunkDO.getDocId().equals",
+          "lineNumber": 324
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "chunkDO.getDocId",
+          "lineNumber": 324
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "new ClientException",
+          "lineNumber": 324
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "chunkDO.getEnabled().equals",
+          "lineNumber": 328
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "chunkDO.getEnabled",
+          "lineNumber": 328
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "chunkDO.setEnabled",
+          "lineNumber": 332
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "chunkDO.setUpdatedBy",
+          "lineNumber": 333
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 333
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "chunkMapper.updateById",
+          "lineNumber": 334
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "knowledgeBaseMapper.selectById",
+          "lineNumber": 336
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "documentDO.getKbId",
+          "lineNumber": 336
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "kbDO.getCollectionName",
+          "lineNumber": 337
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "log.info",
+          "lineNumber": 338
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "documentDO.getKbId",
+          "lineNumber": 338
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "kbDO.getEmbeddingModel",
+          "lineNumber": 341
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "syncChunkToVector",
+          "lineNumber": 342
+        },
+        {
+          "caller": "enableChunk",
+          "callee": "deleteChunkFromVector",
+          "lineNumber": 344
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "CollUtil.isEmpty",
+          "lineNumber": 350
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "requestParam.getChunkIds",
+          "lineNumber": 350
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "new ClientException",
+          "lineNumber": 351
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "requestParam.getChunkIds",
+          "lineNumber": 353
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "requestedIds.size",
+          "lineNumber": 354
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "new ClientException",
+          "lineNumber": 355
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "documentMapper.selectById",
+          "lineNumber": 358
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "Assert.notNull",
+          "lineNumber": 359
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "new ClientException",
+          "lineNumber": 359
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "DocumentStatus.RUNNING.getCode().equals",
+          "lineNumber": 360
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "DocumentStatus.RUNNING.getCode",
+          "lineNumber": 360
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "documentDO.getStatus",
+          "lineNumber": 360
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "new ClientException",
+          "lineNumber": 361
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "validateDocumentEnabledForChunkEnable",
+          "lineNumber": 363
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "chunkMapper.selectByIds",
+          "lineNumber": 365
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "found.size",
+          "lineNumber": 366
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "requestedIds.size",
+          "lineNumber": 366
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "new ClientException",
+          "lineNumber": 367
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "requestedIds.size",
+          "lineNumber": 367
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "found.size",
+          "lineNumber": 367
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "found.forEach",
+          "lineNumber": 369
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "c.getDocId().equals",
+          "lineNumber": 370
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "c.getDocId",
+          "lineNumber": 370
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "new ClientException",
+          "lineNumber": 371
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "c.getId",
+          "lineNumber": 371
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "found.stream().map(KnowledgeChunkDO::getId).collect",
+          "lineNumber": 374
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "found.stream().map",
+          "lineNumber": 374
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "found.stream",
+          "lineNumber": 374
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "Collectors.toList",
+          "lineNumber": 374
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "CollUtil.isEmpty",
+          "lineNumber": 376
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "chunkMapper.selectList",
+          "lineNumber": 381
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "new LambdaQueryWrapper<KnowledgeChunkDO>()\r\n                        .in(KnowledgeChunkDO::getId, targetIds).ne",
+          "lineNumber": 382
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "new LambdaQueryWrapper<KnowledgeChunkDO>().in",
+          "lineNumber": 382
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "new LambdaQueryWrapper<KnowledgeChunkDO>",
+          "lineNumber": 382
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "needUpdateChunks.stream().map(KnowledgeChunkDO::getId).collect",
+          "lineNumber": 386
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "needUpdateChunks.stream().map",
+          "lineNumber": 386
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "needUpdateChunks.stream",
+          "lineNumber": 386
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "Collectors.toList",
+          "lineNumber": 386
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "CollUtil.isEmpty",
+          "lineNumber": 388
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "new ClientException",
+          "lineNumber": 389
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "knowledgeBaseMapper.selectById",
+          "lineNumber": 392
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "documentDO.getKbId",
+          "lineNumber": 392
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "kbDO.getCollectionName",
+          "lineNumber": 393
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "needUpdateChunks.stream()\r\n                    .map(c -> VectorChunk.builder()\r\n                            .chunkId(c.getId())\r\n                            .content(c.getContent())\r\n                            .index(c.getChunkIndex())\r\n                            .build()).collect",
+          "lineNumber": 396
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "needUpdateChunks.stream().map",
+          "lineNumber": 396
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "needUpdateChunks.stream",
+          "lineNumber": 396
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "VectorChunk.builder()\r\n                            .chunkId(c.getId())\r\n                            .content(c.getContent())\r\n                            .index(c.getChunkIndex()).build",
+          "lineNumber": 397
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "VectorChunk.builder()\r\n                            .chunkId(c.getId())\r\n                            .content(c.getContent()).index",
+          "lineNumber": 397
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "VectorChunk.builder()\r\n                            .chunkId(c.getId()).content",
+          "lineNumber": 397
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "VectorChunk.builder().chunkId",
+          "lineNumber": 397
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "VectorChunk.builder",
+          "lineNumber": 397
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "c.getId",
+          "lineNumber": 398
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "c.getContent",
+          "lineNumber": 399
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "c.getChunkIndex",
+          "lineNumber": 400
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "Collectors.toList",
+          "lineNumber": 402
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "attachEmbeddings",
+          "lineNumber": 403
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "kbDO.getEmbeddingModel",
+          "lineNumber": 403
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "transactionOperations.executeWithoutResult",
+          "lineNumber": 405
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "chunkMapper.update",
+          "lineNumber": 406
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "Wrappers.lambdaUpdate(KnowledgeChunkDO.class)\r\n                                .in(KnowledgeChunkDO::getId, needUpdateIds)\r\n                                .set(KnowledgeChunkDO::getEnabled, 1).set",
+          "lineNumber": 407
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "Wrappers.lambdaUpdate(KnowledgeChunkDO.class)\r\n                                .in(KnowledgeChunkDO::getId, needUpdateIds).set",
+          "lineNumber": 407
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "Wrappers.lambdaUpdate(KnowledgeChunkDO.class).in",
+          "lineNumber": 407
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "Wrappers.lambdaUpdate",
+          "lineNumber": 407
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 410
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "vectorStoreService.indexDocumentChunks",
+          "lineNumber": 412
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "transactionOperations.executeWithoutResult",
+          "lineNumber": 415
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "chunkMapper.update",
+          "lineNumber": 416
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "Wrappers.lambdaUpdate(KnowledgeChunkDO.class)\r\n                                .in(KnowledgeChunkDO::getId, needUpdateIds)\r\n                                .set(KnowledgeChunkDO::getEnabled, 0).set",
+          "lineNumber": 417
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "Wrappers.lambdaUpdate(KnowledgeChunkDO.class)\r\n                                .in(KnowledgeChunkDO::getId, needUpdateIds).set",
+          "lineNumber": 417
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "Wrappers.lambdaUpdate(KnowledgeChunkDO.class).in",
+          "lineNumber": 417
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "Wrappers.lambdaUpdate",
+          "lineNumber": 417
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 420
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "vectorStoreService.deleteChunksByIds",
+          "lineNumber": 422
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "log.info",
+          "lineNumber": 426
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "documentDO.getKbId",
+          "lineNumber": 427
+        },
+        {
+          "caller": "batchToggleEnabled",
+          "callee": "needUpdateIds.size",
+          "lineNumber": 427
+        },
+        {
+          "caller": "updateEnabledByDocId",
+          "callee": "chunkMapper.update",
+          "lineNumber": 434
+        },
+        {
+          "caller": "updateEnabledByDocId",
+          "callee": "Wrappers.lambdaUpdate(KnowledgeChunkDO.class)\r\n                        .eq(KnowledgeChunkDO::getDocId, docId)\r\n                        .set(KnowledgeChunkDO::getEnabled, enabledValue).set",
+          "lineNumber": 435
+        },
+        {
+          "caller": "updateEnabledByDocId",
+          "callee": "Wrappers.lambdaUpdate(KnowledgeChunkDO.class)\r\n                        .eq(KnowledgeChunkDO::getDocId, docId).set",
+          "lineNumber": 435
+        },
+        {
+          "caller": "updateEnabledByDocId",
+          "callee": "Wrappers.lambdaUpdate(KnowledgeChunkDO.class).eq",
+          "lineNumber": 435
+        },
+        {
+          "caller": "updateEnabledByDocId",
+          "callee": "Wrappers.lambdaUpdate",
+          "lineNumber": 435
+        },
+        {
+          "caller": "updateEnabledByDocId",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 438
+        },
+        {
+          "caller": "updateEnabledByDocId",
+          "callee": "log.info",
+          "lineNumber": 440
+        },
+        {
+          "caller": "listByDocId",
+          "callee": "documentMapper.selectById",
+          "lineNumber": 445
+        },
+        {
+          "caller": "listByDocId",
+          "callee": "Assert.notNull",
+          "lineNumber": 446
+        },
+        {
+          "caller": "listByDocId",
+          "callee": "new ClientException",
+          "lineNumber": 446
+        },
+        {
+          "caller": "listByDocId",
+          "callee": "chunkMapper.selectList",
+          "lineNumber": 448
+        },
+        {
+          "caller": "listByDocId",
+          "callee": "Wrappers.lambdaQuery(KnowledgeChunkDO.class)\r\n                        .eq(KnowledgeChunkDO::getDocId, docId).orderByAsc",
+          "lineNumber": 449
+        },
+        {
+          "caller": "listByDocId",
+          "callee": "Wrappers.lambdaQuery(KnowledgeChunkDO.class).eq",
+          "lineNumber": 449
+        },
+        {
+          "caller": "listByDocId",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 449
+        },
+        {
+          "caller": "listByDocId",
+          "callee": "chunkDOList.stream()\r\n                .map(each -> BeanUtil.toBean(each, KnowledgeChunkVO.class)).collect",
+          "lineNumber": 454
+        },
+        {
+          "caller": "listByDocId",
+          "callee": "chunkDOList.stream().map",
+          "lineNumber": 454
+        },
+        {
+          "caller": "listByDocId",
+          "callee": "chunkDOList.stream",
+          "lineNumber": 454
+        },
+        {
+          "caller": "listByDocId",
+          "callee": "BeanUtil.toBean",
+          "lineNumber": 455
+        },
+        {
+          "caller": "listByDocId",
+          "callee": "Collectors.toList",
+          "lineNumber": 456
+        },
+        {
+          "caller": "deleteByDocId",
+          "callee": "chunkMapper.delete",
+          "lineNumber": 465
+        },
+        {
+          "caller": "deleteByDocId",
+          "callee": "new LambdaQueryWrapper<KnowledgeChunkDO>().eq",
+          "lineNumber": 465
+        },
+        {
+          "caller": "deleteByDocId",
+          "callee": "new LambdaQueryWrapper<KnowledgeChunkDO>",
+          "lineNumber": 465
+        },
+        {
+          "caller": "validateDocumentEnabledForChunkEnable",
+          "callee": "Integer.valueOf(1).equals",
+          "lineNumber": 477
+        },
+        {
+          "caller": "validateDocumentEnabledForChunkEnable",
+          "callee": "Integer.valueOf",
+          "lineNumber": 477
+        },
+        {
+          "caller": "validateDocumentEnabledForChunkEnable",
+          "callee": "documentDO.getEnabled",
+          "lineNumber": 477
+        },
+        {
+          "caller": "validateDocumentEnabledForChunkEnable",
+          "callee": "new ClientException",
+          "lineNumber": 478
+        },
+        {
+          "caller": "syncChunkToVector",
+          "callee": "embedContent",
+          "lineNumber": 486
+        },
+        {
+          "caller": "syncChunkToVector",
+          "callee": "chunkDO.getContent",
+          "lineNumber": 486
+        },
+        {
+          "caller": "syncChunkToVector",
+          "callee": "toArray",
+          "lineNumber": 487
+        },
+        {
+          "caller": "syncChunkToVector",
+          "callee": "VectorChunk.builder()\r\n                .index(chunkDO.getChunkIndex())\r\n                .content(chunkDO.getContent())\r\n                .chunkId(String.valueOf(chunkDO.getId()))\r\n                .embedding(vector).build",
+          "lineNumber": 489
+        },
+        {
+          "caller": "syncChunkToVector",
+          "callee": "VectorChunk.builder()\r\n                .index(chunkDO.getChunkIndex())\r\n                .content(chunkDO.getContent())\r\n                .chunkId(String.valueOf(chunkDO.getId())).embedding",
+          "lineNumber": 489
+        },
+        {
+          "caller": "syncChunkToVector",
+          "callee": "VectorChunk.builder()\r\n                .index(chunkDO.getChunkIndex())\r\n                .content(chunkDO.getContent()).chunkId",
+          "lineNumber": 489
+        },
+        {
+          "caller": "syncChunkToVector",
+          "callee": "VectorChunk.builder()\r\n                .index(chunkDO.getChunkIndex()).content",
+          "lineNumber": 489
+        },
+        {
+          "caller": "syncChunkToVector",
+          "callee": "VectorChunk.builder().index",
+          "lineNumber": 489
+        },
+        {
+          "caller": "syncChunkToVector",
+          "callee": "VectorChunk.builder",
+          "lineNumber": 489
+        },
+        {
+          "caller": "syncChunkToVector",
+          "callee": "chunkDO.getChunkIndex",
+          "lineNumber": 490
+        },
+        {
+          "caller": "syncChunkToVector",
+          "callee": "chunkDO.getContent",
+          "lineNumber": 491
+        },
+        {
+          "caller": "syncChunkToVector",
+          "callee": "String.valueOf",
+          "lineNumber": 492
+        },
+        {
+          "caller": "syncChunkToVector",
+          "callee": "chunkDO.getId",
+          "lineNumber": 492
+        },
+        {
+          "caller": "syncChunkToVector",
+          "callee": "vectorStoreService.indexDocumentChunks",
+          "lineNumber": 495
+        },
+        {
+          "caller": "syncChunkToVector",
+          "callee": "List.of",
+          "lineNumber": 495
+        },
+        {
+          "caller": "syncChunkToVector",
+          "callee": "log.debug",
+          "lineNumber": 497
+        },
+        {
+          "caller": "syncChunkToVector",
+          "callee": "chunkDO.getId",
+          "lineNumber": 497
+        },
+        {
+          "caller": "deleteChunkFromVector",
+          "callee": "vectorStoreService.deleteChunkById",
+          "lineNumber": 504
+        },
+        {
+          "caller": "deleteChunkFromVector",
+          "callee": "log.debug",
+          "lineNumber": 505
+        },
+        {
+          "caller": "toArray",
+          "callee": "list.size",
+          "lineNumber": 512
+        },
+        {
+          "caller": "toArray",
+          "callee": "list.size",
+          "lineNumber": 513
+        },
+        {
+          "caller": "toArray",
+          "callee": "list.get",
+          "lineNumber": 514
+        },
+        {
+          "caller": "attachEmbeddings",
+          "callee": "CollUtil.isEmpty",
+          "lineNumber": 520
+        },
+        {
+          "caller": "attachEmbeddings",
+          "callee": "chunks.stream().map(VectorChunk::getContent).toList",
+          "lineNumber": 523
+        },
+        {
+          "caller": "attachEmbeddings",
+          "callee": "chunks.stream().map",
+          "lineNumber": 523
+        },
+        {
+          "caller": "attachEmbeddings",
+          "callee": "chunks.stream",
+          "lineNumber": 523
+        },
+        {
+          "caller": "attachEmbeddings",
+          "callee": "embedBatch",
+          "lineNumber": 524
+        },
+        {
+          "caller": "attachEmbeddings",
+          "callee": "vectors.size",
+          "lineNumber": 525
+        },
+        {
+          "caller": "attachEmbeddings",
+          "callee": "chunks.size",
+          "lineNumber": 525
+        },
+        {
+          "caller": "attachEmbeddings",
+          "callee": "new ServiceException",
+          "lineNumber": 526
+        },
+        {
+          "caller": "attachEmbeddings",
+          "callee": "chunks.size",
+          "lineNumber": 528
+        },
+        {
+          "caller": "attachEmbeddings",
+          "callee": "chunks.get(i).setEmbedding",
+          "lineNumber": 529
+        },
+        {
+          "caller": "attachEmbeddings",
+          "callee": "chunks.get",
+          "lineNumber": 529
+        },
+        {
+          "caller": "attachEmbeddings",
+          "callee": "toArray",
+          "lineNumber": 529
+        },
+        {
+          "caller": "attachEmbeddings",
+          "callee": "vectors.get",
+          "lineNumber": 529
+        },
+        {
+          "caller": "embedContent",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 534
+        },
+        {
+          "caller": "embedContent",
+          "callee": "embeddingService.embed",
+          "lineNumber": 535
+        },
+        {
+          "caller": "embedContent",
+          "callee": "embeddingService.embed",
+          "lineNumber": 536
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 540
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "embeddingService.embedBatch",
+          "lineNumber": 541
+        },
+        {
+          "caller": "embedBatch",
+          "callee": "embeddingService.embedBatch",
+          "lineNumber": 542
+        },
+        {
+          "caller": "resolveTokenCount",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 546
+        },
+        {
+          "caller": "resolveTokenCount",
+          "callee": "tokenCounterService.countTokens",
+          "lineNumber": 549
+        }
+      ],
+      "metrics": {
+        "importCount": 20,
+        "exportCount": 12,
+        "functionCount": 19,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/token/TokenCounterService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 29,
+      "classes": [
+        {
+          "name": "TokenCounterService",
+          "startLine": 23,
+          "endLine": 32,
+          "methods": [
+            "countTokens"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "TokenCounterService",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    }
+  ]
+}

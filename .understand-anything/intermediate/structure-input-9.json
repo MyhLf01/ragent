@@ -1,0 +1,328 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/mq/KnowledgeDocumentChunkTransactionChecker.java",
+      "language": "java",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/mq/event/KnowledgeDocumentChunkEvent.java",
+      "language": "java",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/CronScheduleHelper.java",
+      "language": "java",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/DocumentStatusHelper.java",
+      "language": "java",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/KnowledgeDocumentScheduleJob.java",
+      "language": "java",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleLockManager.java",
+      "language": "java",
+      "sizeLines": 228,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleRefreshProcessor.java",
+      "language": "java",
+      "sizeLines": 396,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleStateManager.java",
+      "language": "java",
+      "sizeLines": 234,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeDocumentScheduleService.java",
+      "language": "java",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeDocumentService.java",
+      "language": "java",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeDocumentScheduleServiceImpl.java",
+      "language": "java",
+      "sizeLines": 132,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeDocumentServiceImpl.java",
+      "language": "java",
+      "sizeLines": 806,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/VectorGlobalSearchChannel.java",
+      "language": "java",
+      "sizeLines": 189,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/StoredFileDTO.java",
+      "language": "java",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/FileStorageService.java",
+      "language": "java",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/S3FileStorageService.java",
+      "language": "java",
+      "sizeLines": 271,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/util/FileTypeDetector.java",
+      "language": "java",
+      "sizeLines": 109,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleRefreshProcessorTest.java",
+      "language": "java",
+      "sizeLines": 324,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/config/RocketMQAutoConfiguration.java",
+      "language": "java",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/MessageWrapper.java",
+      "language": "java",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/DelegatingTransactionListener.java",
+      "language": "java",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/MessageQueueProducer.java",
+      "language": "java",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/RocketMQProducerAdapter.java",
+      "language": "java",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/TransactionChecker.java",
+      "language": "java",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/mq/KnowledgeDocumentChunkTransactionChecker.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/DocumentStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/mq/event/KnowledgeDocumentChunkEvent.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/MessageWrapper.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/DelegatingTransactionListener.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/TransactionChecker.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/mq/event/KnowledgeDocumentChunkEvent.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/CronScheduleHelper.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/DocumentStatusHelper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/DocumentStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/StoredFileDTO.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/KnowledgeDocumentScheduleJob.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/config/KnowledgeScheduleProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleMapper.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleLockManager.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/config/KnowledgeScheduleProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleMapper.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleRefreshProcessor.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeBaseDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleExecDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeBaseMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleExecMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/DocumentStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/ScheduleRunStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/SourceType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/handler/RemoteFileFetcher.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeDocumentServiceImpl.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/StoredFileDTO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/FileStorageService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/LoginUser.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleStateManager.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleExecDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleExecMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/ScheduleRunStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/handler/RemoteFileFetcher.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/StoredFileDTO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeDocumentScheduleService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeDocumentService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentUploadRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentChunkLogVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentSearchVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentVO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeDocumentScheduleServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleExecDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleExecMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/SourceType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/CronScheduleHelper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeDocumentScheduleService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeDocumentServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkEmbeddingService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingMode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingOptions.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategy.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategyFactory.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/DocumentParserSelector.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/ParserType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionPipelineMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/IngestionContext.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/PipelineDefinition.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/engine/IngestionEngine.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IngestionPipelineService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/config/KnowledgeScheduleProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentUploadRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeChunkVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentChunkLogVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentSearchVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeBaseDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentChunkLogDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeBaseMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentChunkLogMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/DocumentStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/ProcessMode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/SourceType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/handler/RemoteFileFetcher.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/mq/event/KnowledgeDocumentChunkEvent.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/CronScheduleHelper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeChunkService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeDocumentScheduleService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeDocumentService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceId.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorStoreService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/StoredFileDTO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/FileStorageService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/MessageQueueProducer.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/VectorGlobalSearchChannel.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeBaseDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeBaseMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/SearchChannelProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/strategy/CollectionParallelRetriever.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrieverService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/StoredFileDTO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/FileStorageService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/StoredFileDTO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/S3FileStorageService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/StoredFileDTO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/FileStorageService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/util/FileTypeDetector.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/util/FileTypeDetector.java": [],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleRefreshProcessorTest.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeBaseDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleExecDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeBaseMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleExecMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/DocumentStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/SourceType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/handler/RemoteFileFetcher.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeDocumentServiceImpl.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/StoredFileDTO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/FileStorageService.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/config/RocketMQAutoConfiguration.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/DelegatingTransactionListener.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/MessageQueueProducer.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/RocketMQProducerAdapter.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/MessageWrapper.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/DelegatingTransactionListener.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/MessageWrapper.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/MessageQueueProducer.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/RocketMQProducerAdapter.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/MessageWrapper.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/TransactionChecker.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/MessageWrapper.java"
+    ]
+  }
+}

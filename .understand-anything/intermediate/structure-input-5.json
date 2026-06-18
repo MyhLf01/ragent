@@ -1,0 +1,343 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/handler/StreamChatHandlerParams.java",
+      "language": "java",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java",
+      "language": "java",
+      "sizeLines": 152,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/RemoteException.java",
+      "language": "java",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java",
+      "language": "java",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/AbstractOpenAIStyleChatClient.java",
+      "language": "java",
+      "sizeLines": 285,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/BaiLianChatClient.java",
+      "language": "java",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/ChatClient.java",
+      "language": "java",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/OllamaChatClient.java",
+      "language": "java",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/RoutingLLMService.java",
+      "language": "java",
+      "sizeLines": 226,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/SiliconFlowChatClient.java",
+      "language": "java",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamAsyncExecutor.java",
+      "language": "java",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java",
+      "language": "java",
+      "sizeLines": 193,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/AbstractOpenAIStyleEmbeddingClient.java",
+      "language": "java",
+      "sizeLines": 193,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingClient.java",
+      "language": "java",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/OllamaEmbeddingClient.java",
+      "language": "java",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/RoutingEmbeddingService.java",
+      "language": "java",
+      "sizeLines": 111,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/SiliconFlowEmbeddingClient.java",
+      "language": "java",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java",
+      "language": "java",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpMediaTypes.java",
+      "language": "java",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpResponseHelper.java",
+      "language": "java",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientErrorType.java",
+      "language": "java",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientException.java",
+      "language": "java",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelUrlResolver.java",
+      "language": "java",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelHealthStore.java",
+      "language": "java",
+      "sizeLines": 146,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelRoutingExecutor.java",
+      "language": "java",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelSelector.java",
+      "language": "java",
+      "sizeLines": 149,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java",
+      "language": "java",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/BaiLianRerankClient.java",
+      "language": "java",
+      "sizeLines": 196,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/NoopRerankClient.java",
+      "language": "java",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/RerankClient.java",
+      "language": "java",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/RoutingRerankService.java",
+      "language": "java",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/handler/StreamChatHandlerParams.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/ConversationMemoryService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationGroupService.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/RemoteException.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/IErrorCode.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/AbstractOpenAIStyleChatClient.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpMediaTypes.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpResponseHelper.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientErrorType.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientException.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelUrlResolver.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/BaiLianChatClient.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/ChatClient.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/OllamaChatClient.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/RoutingLLMService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/RemoteException.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelHealthStore.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelRoutingExecutor.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelSelector.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/SiliconFlowChatClient.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamAsyncExecutor.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientErrorType.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientException.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/AbstractOpenAIStyleEmbeddingClient.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpMediaTypes.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpResponseHelper.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientErrorType.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientException.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelUrlResolver.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingClient.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/OllamaEmbeddingClient.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/RoutingEmbeddingService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/RemoteException.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelRoutingExecutor.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelSelector.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/SiliconFlowEmbeddingClient.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpMediaTypes.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpResponseHelper.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientErrorType.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientException.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelUrlResolver.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelHealthStore.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelRoutingExecutor.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/RemoteException.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelSelector.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/BaiLianRerankClient.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpMediaTypes.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpResponseHelper.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientErrorType.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientException.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelUrlResolver.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/NoopRerankClient.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/RerankClient.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/RoutingRerankService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelRoutingExecutor.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelSelector.java"
+    ]
+  }
+}

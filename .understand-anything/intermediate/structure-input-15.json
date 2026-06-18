@@ -1,0 +1,122 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/KnowledgeChunkController.java",
+      "language": "java",
+      "sizeLines": 111,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkBatchRequest.java",
+      "language": "java",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkCreateRequest.java",
+      "language": "java",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkPageRequest.java",
+      "language": "java",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkUpdateRequest.java",
+      "language": "java",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeChunkVO.java",
+      "language": "java",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeChunkDO.java",
+      "language": "java",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeChunkMapper.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeChunkService.java",
+      "language": "java",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeChunkServiceImpl.java",
+      "language": "java",
+      "sizeLines": 551,
+      "fileCategory": "code"
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/token/TokenCounterService.java",
+      "language": "java",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/KnowledgeChunkController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkBatchRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeChunkVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeChunkService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkBatchRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkCreateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkPageRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkUpdateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeChunkVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeChunkDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeChunkMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeChunkDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeChunkService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkBatchRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeChunkVO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeChunkServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkBatchRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeChunkVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeBaseDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeChunkDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeBaseMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeChunkMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/DocumentStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeChunkService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorStoreService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ServiceException.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingService.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/token/TokenCounterService.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/token/TokenCounterService.java": []
+  }
+}

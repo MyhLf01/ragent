@@ -1,0 +1,114 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/QueryTermMappingController.java",
+      "language": "java",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingCreateRequest.java",
+      "language": "java",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingPageRequest.java",
+      "language": "java",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingUpdateRequest.java",
+      "language": "java",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/QueryTermMappingVO.java",
+      "language": "java",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryTermMappingCacheManager.java",
+      "language": "java",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryTermMappingService.java",
+      "language": "java",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/QueryTermMappingDO.java",
+      "language": "java",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/QueryTermMappingMapper.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/QueryTermMappingAdminService.java",
+      "language": "java",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/QueryTermMappingAdminServiceImpl.java",
+      "language": "java",
+      "sizeLines": 146,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/QueryTermMappingController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/QueryTermMappingVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/QueryTermMappingAdminService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingCreateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingPageRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingUpdateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/QueryTermMappingVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryTermMappingCacheManager.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/QueryTermMappingDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryTermMappingService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/QueryTermMappingDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/QueryTermMappingMapper.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/QueryTermMappingDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/QueryTermMappingMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/QueryTermMappingDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/QueryTermMappingAdminService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/QueryTermMappingVO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/QueryTermMappingAdminServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/QueryTermMappingVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryTermMappingCacheManager.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/QueryTermMappingDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/QueryTermMappingMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/QueryTermMappingAdminService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ]
+  }
+}

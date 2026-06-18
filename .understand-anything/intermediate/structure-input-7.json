@@ -1,0 +1,284 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/DashboardController.java",
+      "language": "java",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewGroupVO.java",
+      "language": "java",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewKpiVO.java",
+      "language": "java",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewVO.java",
+      "language": "java",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardPerformanceVO.java",
+      "language": "java",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendPointVO.java",
+      "language": "java",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendSeriesVO.java",
+      "language": "java",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendsVO.java",
+      "language": "java",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/service/DashboardService.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/service/impl/DashboardServiceImpl.java",
+      "language": "java",
+      "sizeLines": 776,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/aop/ChatRateLimitAspect.java",
+      "language": "java",
+      "sizeLines": 159,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/aop/RagTraceAspect.java",
+      "language": "java",
+      "sizeLines": 206,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RagTraceProperties.java",
+      "language": "java",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/RagTraceController.java",
+      "language": "java",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/RagTraceRunPageRequest.java",
+      "language": "java",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceDetailVO.java",
+      "language": "java",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceNodeVO.java",
+      "language": "java",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceRunVO.java",
+      "language": "java",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceNodeDO.java",
+      "language": "java",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceRunDO.java",
+      "language": "java",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceNodeMapper.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceRunMapper.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceQueryService.java",
+      "language": "java",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceRecordService.java",
+      "language": "java",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/RagTraceQueryServiceImpl.java",
+      "language": "java",
+      "sizeLines": 172,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/RagTraceRecordServiceImpl.java",
+      "language": "java",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceContext.java",
+      "language": "java",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceRoot.java",
+      "language": "java",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/DashboardController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardPerformanceVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendsVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/service/DashboardService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewGroupVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewKpiVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardPerformanceVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendPointVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendSeriesVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendsVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/service/DashboardService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardPerformanceVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendsVO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/service/impl/DashboardServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewGroupVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewKpiVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardPerformanceVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendPointVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendSeriesVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendsVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/service/DashboardService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationMessageDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceRunDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMessageMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceRunMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/entity/UserDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/mapper/UserMapper.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/aop/ChatRateLimitAspect.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RagTraceProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceRunDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceRecordService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceContext.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/aop/RagTraceAspect.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RagTraceProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceNodeDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceRunDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceRecordService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceRoot.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RagTraceProperties.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/RagTraceController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/RagTraceRunPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceDetailVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceNodeVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceRunVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceQueryService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/RagTraceRunPageRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceDetailVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceNodeVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceRunVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceNodeDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceRunDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceNodeMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceNodeDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceRunMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceRunDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceQueryService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/RagTraceRunPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceDetailVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceNodeVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceRunVO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceRecordService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceNodeDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceRunDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/RagTraceQueryServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/RagTraceRunPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceDetailVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceNodeVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceRunVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceNodeDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceRunDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceNodeMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceRunMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceQueryService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/entity/UserDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/mapper/UserMapper.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/RagTraceRecordServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceNodeDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceRunDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceNodeMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceRunMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceRecordService.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceContext.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceRoot.java": []
+  }
+}

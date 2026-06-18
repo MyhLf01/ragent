@@ -1,0 +1,6789 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "frontend/src/pages/admin/knowledge/KnowledgeDocumentsPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1607,
+      "nonEmptyLines": 1526,
+      "functions": [
+        {
+          "name": "parseChunkConfig",
+          "startLine": 58,
+          "endLine": 69,
+          "params": [
+            "raw"
+          ]
+        },
+        {
+          "name": "statusDotClass",
+          "startLine": 71,
+          "endLine": 79,
+          "params": [
+            "status"
+          ]
+        },
+        {
+          "name": "formatDate",
+          "startLine": 81,
+          "endLine": 86,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "formatSize",
+          "startLine": 88,
+          "endLine": 94,
+          "params": [
+            "size"
+          ]
+        },
+        {
+          "name": "formatSourceLabel",
+          "startLine": 96,
+          "endLine": 101,
+          "params": [
+            "sourceType"
+          ]
+        },
+        {
+          "name": "formatChunkStrategy",
+          "startLine": 103,
+          "endLine": 108,
+          "params": [
+            "strategy"
+          ]
+        },
+        {
+          "name": "KnowledgeDocumentsPage",
+          "startLine": 110,
+          "endLine": 957,
+          "params": []
+        },
+        {
+          "name": "UploadDialog",
+          "startLine": 1047,
+          "endLine": 1607,
+          "params": [
+            "{ open, onOpenChange, onSubmit }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeDocumentsPage",
+          "line": 110,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "parseChunkConfig",
+          "callee": "JSON.parse",
+          "lineNumber": 61
+        },
+        {
+          "caller": "statusDotClass",
+          "callee": "status.toLowerCase",
+          "lineNumber": 73
+        },
+        {
+          "caller": "formatDate",
+          "callee": "Number.isNaN",
+          "lineNumber": 84
+        },
+        {
+          "caller": "formatDate",
+          "callee": "date.getTime",
+          "lineNumber": 84
+        },
+        {
+          "caller": "formatDate",
+          "callee": "date.toLocaleString",
+          "lineNumber": 85
+        },
+        {
+          "caller": "formatSize",
+          "callee": "(size / 1024).toFixed",
+          "lineNumber": 91
+        },
+        {
+          "caller": "formatSize",
+          "callee": "(size / 1024 / 1024).toFixed",
+          "lineNumber": 92
+        },
+        {
+          "caller": "formatSize",
+          "callee": "(size / 1024 / 1024 / 1024).toFixed",
+          "lineNumber": 93
+        },
+        {
+          "caller": "formatSourceLabel",
+          "callee": "sourceType?.toLowerCase",
+          "lineNumber": 97
+        },
+        {
+          "caller": "formatChunkStrategy",
+          "callee": "strategy?.toLowerCase",
+          "lineNumber": 104
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useParams",
+          "lineNumber": 111
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useNavigate",
+          "lineNumber": 112
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 113
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 114
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 115
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 116
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 117
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 118
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 119
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 120
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 121
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 122
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 123
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 124
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 125
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 126
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 127
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 128
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 129
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 130
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 131
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 132
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 133
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 134
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 135
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 136
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 137
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 138
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useState",
+          "lineNumber": 139
+        },
+        {
+          "caller": "loadKnowledgeBase",
+          "callee": "getKnowledgeBase",
+          "lineNumber": 146
+        },
+        {
+          "caller": "loadKnowledgeBase",
+          "callee": "setKb",
+          "lineNumber": 147
+        },
+        {
+          "caller": "loadKnowledgeBase",
+          "callee": "toast.error",
+          "lineNumber": 149
+        },
+        {
+          "caller": "loadKnowledgeBase",
+          "callee": "getErrorMessage",
+          "lineNumber": 149
+        },
+        {
+          "caller": "loadKnowledgeBase",
+          "callee": "console.error",
+          "lineNumber": 150
+        },
+        {
+          "caller": "loadDocuments",
+          "callee": "setLoading",
+          "lineNumber": 156
+        },
+        {
+          "caller": "loadDocuments",
+          "callee": "getDocumentsPage",
+          "lineNumber": 158
+        },
+        {
+          "caller": "loadDocuments",
+          "callee": "setPageData",
+          "lineNumber": 164
+        },
+        {
+          "caller": "loadDocuments",
+          "callee": "toast.error",
+          "lineNumber": 166
+        },
+        {
+          "caller": "loadDocuments",
+          "callee": "getErrorMessage",
+          "lineNumber": 166
+        },
+        {
+          "caller": "loadDocuments",
+          "callee": "console.error",
+          "lineNumber": 167
+        },
+        {
+          "caller": "loadDocuments",
+          "callee": "setLoading",
+          "lineNumber": 169
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useEffect",
+          "lineNumber": 173
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "loadKnowledgeBase",
+          "lineNumber": 174
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useEffect",
+          "lineNumber": 177
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "loadDocuments",
+          "lineNumber": 178
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "useEffect",
+          "lineNumber": 181
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailName",
+          "lineNumber": 183
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "(detailTarget.processMode || \"chunk\").toLowerCase",
+          "lineNumber": 184
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailProcessMode",
+          "lineNumber": 185
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailChunkStrategy",
+          "lineNumber": 186
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "(detailTarget.chunkStrategy || \"structure_aware\").toLowerCase",
+          "lineNumber": 186
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailPipelineId",
+          "lineNumber": 187
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "String",
+          "lineNumber": 187
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailSourceLocation",
+          "lineNumber": 188
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailScheduleEnabled",
+          "lineNumber": 189
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "Boolean",
+          "lineNumber": 189
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailScheduleCron",
+          "lineNumber": 190
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "parseChunkConfig",
+          "lineNumber": 193
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "Object.entries",
+          "lineNumber": 195
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "String",
+          "lineNumber": 196
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailConfigValues",
+          "lineNumber": 198
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "String",
+          "lineNumber": 202
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailNoChunk",
+          "lineNumber": 203
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailOriginalChunkSize",
+          "lineNumber": 204
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailNoChunk",
+          "lineNumber": 206
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailOriginalChunkSize",
+          "lineNumber": 207
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "getChunkStrategies().then(setDetailStrategies).catch",
+          "lineNumber": 211
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "getChunkStrategies().then",
+          "lineNumber": 211
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "getChunkStrategies",
+          "lineNumber": 211
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "getIngestionPipelines(1, 100).then(r => setDetailPipelines(r.records || [])).catch",
+          "lineNumber": 212
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "getIngestionPipelines(1, 100).then",
+          "lineNumber": 212
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "getIngestionPipelines",
+          "lineNumber": 212
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailPipelines",
+          "lineNumber": 212
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailName",
+          "lineNumber": 214
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailProcessMode",
+          "lineNumber": 215
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailChunkStrategy",
+          "lineNumber": 216
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailPipelineId",
+          "lineNumber": 217
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailConfigValues",
+          "lineNumber": 218
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailStrategies",
+          "lineNumber": 219
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailPipelines",
+          "lineNumber": 220
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailSourceLocation",
+          "lineNumber": 221
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailScheduleEnabled",
+          "lineNumber": 222
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailScheduleCron",
+          "lineNumber": 223
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailNoChunk",
+          "lineNumber": 224
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailOriginalChunkSize",
+          "lineNumber": 225
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "setCurrent",
+          "lineNumber": 230
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "setKeyword",
+          "lineNumber": 231
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "searchInput.trim",
+          "lineNumber": 231
+        },
+        {
+          "caller": "handleRefresh",
+          "callee": "setCurrent",
+          "lineNumber": 235
+        },
+        {
+          "caller": "handleRefresh",
+          "callee": "loadDocuments",
+          "lineNumber": 236
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "deleteDocument",
+          "lineNumber": 242
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "String",
+          "lineNumber": 242
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "toast.success",
+          "lineNumber": 243
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setDeleteTarget",
+          "lineNumber": 244
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setCurrent",
+          "lineNumber": 245
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "loadDocuments",
+          "lineNumber": 246
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "toast.error",
+          "lineNumber": 248
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "getErrorMessage",
+          "lineNumber": 248
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "console.error",
+          "lineNumber": 249
+        },
+        {
+          "caller": "handleChunk",
+          "callee": "startDocumentChunk",
+          "lineNumber": 256
+        },
+        {
+          "caller": "handleChunk",
+          "callee": "String",
+          "lineNumber": 256
+        },
+        {
+          "caller": "handleChunk",
+          "callee": "toast.success",
+          "lineNumber": 257
+        },
+        {
+          "caller": "handleChunk",
+          "callee": "setChunkTarget",
+          "lineNumber": 258
+        },
+        {
+          "caller": "handleChunk",
+          "callee": "loadDocuments",
+          "lineNumber": 259
+        },
+        {
+          "caller": "handleChunk",
+          "callee": "toast.error",
+          "lineNumber": 261
+        },
+        {
+          "caller": "handleChunk",
+          "callee": "getErrorMessage",
+          "lineNumber": 261
+        },
+        {
+          "caller": "handleChunk",
+          "callee": "console.error",
+          "lineNumber": 262
+        },
+        {
+          "caller": "handleToggleEnabled",
+          "callee": "Boolean",
+          "lineNumber": 267
+        },
+        {
+          "caller": "handleToggleEnabled",
+          "callee": "enableDocument",
+          "lineNumber": 269
+        },
+        {
+          "caller": "handleToggleEnabled",
+          "callee": "String",
+          "lineNumber": 269
+        },
+        {
+          "caller": "handleToggleEnabled",
+          "callee": "toast.success",
+          "lineNumber": 270
+        },
+        {
+          "caller": "handleToggleEnabled",
+          "callee": "loadDocuments",
+          "lineNumber": 271
+        },
+        {
+          "caller": "handleToggleEnabled",
+          "callee": "toast.error",
+          "lineNumber": 273
+        },
+        {
+          "caller": "handleToggleEnabled",
+          "callee": "getErrorMessage",
+          "lineNumber": 273
+        },
+        {
+          "caller": "handleToggleEnabled",
+          "callee": "console.error",
+          "lineNumber": 274
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "detailName.trim",
+          "lineNumber": 280
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "toast.error",
+          "lineNumber": 282
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "setDetailSaving",
+          "lineNumber": 285
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "detailStrategies.find",
+          "lineNumber": 294
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "Object.keys",
+          "lineNumber": 297
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "Number",
+          "lineNumber": 298
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "JSON.stringify",
+          "lineNumber": 300
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "detailTarget.sourceType?.toLowerCase",
+          "lineNumber": 306
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "detailSourceLocation.trim",
+          "lineNumber": 307
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "detailSourceLocation.trim",
+          "lineNumber": 308
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "detailScheduleCron.trim",
+          "lineNumber": 311
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "detailScheduleCron.trim",
+          "lineNumber": 312
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "updateDocument",
+          "lineNumber": 315
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "String",
+          "lineNumber": 315
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "toast.success",
+          "lineNumber": 316
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "loadDocuments",
+          "lineNumber": 317
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "setDetailTarget",
+          "lineNumber": 318
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "toast.error",
+          "lineNumber": 320
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "getErrorMessage",
+          "lineNumber": 320
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "console.error",
+          "lineNumber": 321
+        },
+        {
+          "caller": "handleDetailSave",
+          "callee": "setDetailSaving",
+          "lineNumber": 323
+        },
+        {
+          "caller": "loadChunkLogs",
+          "callee": "setLogLoading",
+          "lineNumber": 328
+        },
+        {
+          "caller": "loadChunkLogs",
+          "callee": "getChunkLogsPage",
+          "lineNumber": 330
+        },
+        {
+          "caller": "loadChunkLogs",
+          "callee": "setLogData",
+          "lineNumber": 331
+        },
+        {
+          "caller": "loadChunkLogs",
+          "callee": "toast.error",
+          "lineNumber": 333
+        },
+        {
+          "caller": "loadChunkLogs",
+          "callee": "getErrorMessage",
+          "lineNumber": 333
+        },
+        {
+          "caller": "loadChunkLogs",
+          "callee": "console.error",
+          "lineNumber": 334
+        },
+        {
+          "caller": "loadChunkLogs",
+          "callee": "setLogLoading",
+          "lineNumber": 336
+        },
+        {
+          "caller": "handleOpenChunkLogs",
+          "callee": "setLogTarget",
+          "lineNumber": 341
+        },
+        {
+          "caller": "handleOpenChunkLogs",
+          "callee": "loadChunkLogs",
+          "lineNumber": 342
+        },
+        {
+          "caller": "handleOpenChunkLogs",
+          "callee": "String",
+          "lineNumber": 342
+        },
+        {
+          "caller": "formatDuration",
+          "callee": "(ms / 1000).toFixed",
+          "lineNumber": 348
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "detailTarget?.sourceType?.toLowerCase",
+          "lineNumber": 358
+        },
+        {
+          "caller": "handleDetailStrategyChange",
+          "callee": "setDetailChunkStrategy",
+          "lineNumber": 364
+        },
+        {
+          "caller": "handleDetailStrategyChange",
+          "callee": "detailStrategies.find",
+          "lineNumber": 365
+        },
+        {
+          "caller": "handleDetailStrategyChange",
+          "callee": "Object.entries",
+          "lineNumber": 368
+        },
+        {
+          "caller": "handleDetailStrategyChange",
+          "callee": "String",
+          "lineNumber": 369
+        },
+        {
+          "caller": "handleDetailStrategyChange",
+          "callee": "setDetailConfigValues",
+          "lineNumber": 371
+        },
+        {
+          "caller": "handleDetailStrategyChange",
+          "callee": "setDetailNoChunk",
+          "lineNumber": 372
+        },
+        {
+          "caller": "handleDetailStrategyChange",
+          "callee": "setDetailOriginalChunkSize",
+          "lineNumber": 373
+        },
+        {
+          "caller": "handleDetailStrategyChange",
+          "callee": "String",
+          "lineNumber": 375
+        },
+        {
+          "caller": "handleDetailNoChunkToggle",
+          "callee": "setDetailConfigValues",
+          "lineNumber": 385
+        },
+        {
+          "caller": "handleDetailNoChunkToggle",
+          "callee": "setDetailNoChunk",
+          "lineNumber": 386
+        },
+        {
+          "caller": "handleDetailNoChunkToggle",
+          "callee": "setDetailOriginalChunkSize",
+          "lineNumber": 390
+        },
+        {
+          "caller": "handleDetailNoChunkToggle",
+          "callee": "setDetailConfigValues",
+          "lineNumber": 391
+        },
+        {
+          "caller": "handleDetailNoChunkToggle",
+          "callee": "String",
+          "lineNumber": 391
+        },
+        {
+          "caller": "handleDetailNoChunkToggle",
+          "callee": "setDetailNoChunk",
+          "lineNumber": 392
+        },
+        {
+          "caller": "handleDetailChunkSizeChange",
+          "callee": "setDetailConfigValues",
+          "lineNumber": 398
+        },
+        {
+          "caller": "handleDetailChunkSizeChange",
+          "callee": "String",
+          "lineNumber": 399
+        },
+        {
+          "caller": "handleDetailChunkSizeChange",
+          "callee": "setDetailNoChunk",
+          "lineNumber": 400
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "navigate",
+          "lineNumber": 414
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setUploadOpen",
+          "lineNumber": 417
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setSearchInput",
+          "lineNumber": 434
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setCurrent",
+          "lineNumber": 444
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setStatusFilter",
+          "lineNumber": 445
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "STATUS_OPTIONS.map",
+          "lineNumber": 453
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "documents.map",
+          "lineNumber": 489
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "navigate",
+          "lineNumber": 498
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "formatSourceLabel",
+          "lineNumber": 506
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "cn",
+          "lineNumber": 516
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "statusDotClass",
+          "lineNumber": 516
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "(() => {\r\n                        const enabled = Boolean(doc.enabled);\r\n                        return (\r\n                          <button\r\n                            type=\"button\"\r\n                            role=\"switch\"\r\n                            aria-checked={enabled}\r\n                            aria-label={enabled ? \"已启用，点击禁用\" : \"已禁用，点击启用\"}\r\n                            onClick={() => handleToggleEnabled(doc)}\r\n                            className={cn(\r\n                              \"relative inline-flex h-5 w-9 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background\",\r\n                              enabled ? \"bg-blue-600\" : \"bg-slate-200\"\r\n                            )}\r\n                          >\r\n                            <span\r\n                              className={cn(\r\n                                \"inline-block h-4 w-4 transform rounded-full bg-background shadow transition-transform\",\r\n                                enabled ? \"translate-x-4\" : \"translate-x-1\"\r\n                              )}\r\n                            />\r\n                          </button>\r\n                        );\r\n                      })",
+          "lineNumber": 521
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "Boolean",
+          "lineNumber": 522
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "handleToggleEnabled",
+          "lineNumber": 529
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "cn",
+          "lineNumber": 530
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "cn",
+          "lineNumber": 536
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "formatSize",
+          "lineNumber": 547
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "formatDate",
+          "lineNumber": 548
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "getDocument",
+          "lineNumber": 556
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "String",
+          "lineNumber": 556
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailTarget",
+          "lineNumber": 557
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "toast.error",
+          "lineNumber": 559
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "getErrorMessage",
+          "lineNumber": 559
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setChunkTarget",
+          "lineNumber": 569
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "handleOpenChunkLogs",
+          "lineNumber": 577
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDeleteTarget",
+          "lineNumber": 586
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setCurrent",
+          "lineNumber": 603
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "Math.max",
+          "lineNumber": 603
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setCurrent",
+          "lineNumber": 612
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "Math.min",
+          "lineNumber": 612
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "uploadDocument",
+          "lineNumber": 628
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "toast.success",
+          "lineNumber": 629
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setUploadOpen",
+          "lineNumber": 630
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setCurrent",
+          "lineNumber": 631
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "loadDocuments",
+          "lineNumber": 632
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "Boolean",
+          "lineNumber": 636
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDeleteTarget",
+          "lineNumber": 636
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "Boolean",
+          "lineNumber": 653
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setChunkTarget",
+          "lineNumber": 653
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "Boolean",
+          "lineNumber": 678
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailTarget",
+          "lineNumber": 678
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "e.preventDefault",
+          "lineNumber": 679
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "e.preventDefault",
+          "lineNumber": 679
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 679
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "(document.activeElement as HTMLElement)?.blur",
+          "lineNumber": 679
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "formatSourceLabel",
+          "lineNumber": 689
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailName",
+          "lineNumber": 695
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailSourceLocation",
+          "lineNumber": 704
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailScheduleEnabled",
+          "lineNumber": 716
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "Boolean",
+          "lineNumber": 716
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailScheduleCron",
+          "lineNumber": 724
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "detailPipelines.map",
+          "lineNumber": 756
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "String",
+          "lineNumber": 757
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "detailStrategies.map",
+          "lineNumber": 771
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "handleDetailChunkSizeChange",
+          "lineNumber": 783
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailConfigValues",
+          "lineNumber": 789
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "cn",
+          "lineNumber": 799
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "cn",
+          "lineNumber": 805
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailConfigValues",
+          "lineNumber": 820
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailConfigValues",
+          "lineNumber": 825
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailConfigValues",
+          "lineNumber": 830
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailConfigValues",
+          "lineNumber": 835
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setDetailTarget",
+          "lineNumber": 844
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "detailName.trim",
+          "lineNumber": 849
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "Boolean",
+          "lineNumber": 857
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setLogTarget",
+          "lineNumber": 857
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "e.preventDefault",
+          "lineNumber": 858
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "e.preventDefault",
+          "lineNumber": 858
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 858
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "(document.activeElement as HTMLElement)?.blur",
+          "lineNumber": 858
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "logData.records.slice(0, 1).map",
+          "lineNumber": 869
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "logData.records.slice",
+          "lineNumber": 869
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "log.processMode?.toLowerCase",
+          "lineNumber": 870
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "cn",
+          "lineNumber": 877
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "formatLogStatus",
+          "lineNumber": 883
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "formatChunkStrategy",
+          "lineNumber": 887
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "cn",
+          "lineNumber": 895
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "formatDuration",
+          "lineNumber": 899
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "formatDuration",
+          "lineNumber": 904
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "formatDuration",
+          "lineNumber": 909
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "formatDuration",
+          "lineNumber": 914
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "formatDuration",
+          "lineNumber": 918
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "formatDuration",
+          "lineNumber": 922
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "formatDate",
+          "lineNumber": 929
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "formatDate",
+          "lineNumber": 931
+        },
+        {
+          "caller": "KnowledgeDocumentsPage",
+          "callee": "setLogTarget",
+          "lineNumber": 949
+        },
+        {
+          "caller": "isBlank",
+          "callee": "value.trim",
+          "lineNumber": 982
+        },
+        {
+          "caller": "requireNumber",
+          "callee": "isBlank",
+          "lineNumber": 984
+        },
+        {
+          "caller": "requireNumber",
+          "callee": "ctx.addIssue",
+          "lineNumber": 985
+        },
+        {
+          "caller": "requireNumber",
+          "callee": "Number.isNaN",
+          "lineNumber": 992
+        },
+        {
+          "caller": "requireNumber",
+          "callee": "Number",
+          "lineNumber": 992
+        },
+        {
+          "caller": "requireNumber",
+          "callee": "ctx.addIssue",
+          "lineNumber": 993
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "useState",
+          "lineNumber": 1048
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "useState",
+          "lineNumber": 1049
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "useRef",
+          "lineNumber": 1050
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "useState",
+          "lineNumber": 1051
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "useState",
+          "lineNumber": 1052
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "useState",
+          "lineNumber": 1053
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "useState",
+          "lineNumber": 1054
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "useState",
+          "lineNumber": 1055
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "useState",
+          "lineNumber": 1056
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "useState",
+          "lineNumber": 1057
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "useForm",
+          "lineNumber": 1059
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "zodResolver",
+          "lineNumber": 1060
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "form.watch",
+          "lineNumber": 1078
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "form.watch",
+          "lineNumber": 1079
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "form.watch",
+          "lineNumber": 1080
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "form.watch",
+          "lineNumber": 1081
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "form.watch",
+          "lineNumber": 1082
+        },
+        {
+          "caller": "loadPipelines",
+          "callee": "setLoadingPipelines",
+          "lineNumber": 1089
+        },
+        {
+          "caller": "loadPipelines",
+          "callee": "getIngestionPipelines",
+          "lineNumber": 1091
+        },
+        {
+          "caller": "loadPipelines",
+          "callee": "setPipelines",
+          "lineNumber": 1092
+        },
+        {
+          "caller": "loadPipelines",
+          "callee": "console.error",
+          "lineNumber": 1094
+        },
+        {
+          "caller": "loadPipelines",
+          "callee": "toast.error",
+          "lineNumber": 1095
+        },
+        {
+          "caller": "loadPipelines",
+          "callee": "setLoadingPipelines",
+          "lineNumber": 1097
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "useEffect",
+          "lineNumber": 1101
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "setFile",
+          "lineNumber": 1103
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "form.reset",
+          "lineNumber": 1104
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "setNoChunk",
+          "lineNumber": 1119
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "setOriginalChunkSize",
+          "lineNumber": 1120
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "loadPipelines",
+          "lineNumber": 1121
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "getChunkStrategies().then(setChunkStrategies).catch",
+          "lineNumber": 1122
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "getChunkStrategies().then",
+          "lineNumber": 1122
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "getChunkStrategies",
+          "lineNumber": 1122
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "getSystemSettings()\r\n        .then((settings) => setMaxFileSize(settings.upload.maxFileSize))\r\n        .catch",
+          "lineNumber": 1123
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "getSystemSettings()\r\n        .then",
+          "lineNumber": 1123
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "getSystemSettings",
+          "lineNumber": 1123
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "setMaxFileSize",
+          "lineNumber": 1124
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "useEffect",
+          "lineNumber": 1129
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "setFile",
+          "lineNumber": 1131
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "useEffect",
+          "lineNumber": 1136
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "chunkStrategies.find",
+          "lineNumber": 1137
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "form.setValue",
+          "lineNumber": 1141
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "form.setValue",
+          "lineNumber": 1142
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "form.setValue",
+          "lineNumber": 1143
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "form.setValue",
+          "lineNumber": 1144
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "form.setValue",
+          "lineNumber": 1145
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "form.setValue",
+          "lineNumber": 1146
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "Object.keys",
+          "lineNumber": 1148
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "formAccessors[key]",
+          "lineNumber": 1150
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "String",
+          "lineNumber": 1150
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "setOriginalChunkSize",
+          "lineNumber": 1154
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "String",
+          "lineNumber": 1154
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "useEffect",
+          "lineNumber": 1159
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "String",
+          "lineNumber": 1160
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "setNoChunk",
+          "lineNumber": 1161
+        },
+        {
+          "caller": "handleNoChunkToggle",
+          "callee": "form.setValue",
+          "lineNumber": 1169
+        },
+        {
+          "caller": "handleNoChunkToggle",
+          "callee": "setNoChunk",
+          "lineNumber": 1170
+        },
+        {
+          "caller": "handleNoChunkToggle",
+          "callee": "setOriginalChunkSize",
+          "lineNumber": 1173
+        },
+        {
+          "caller": "handleNoChunkToggle",
+          "callee": "form.setValue",
+          "lineNumber": 1174
+        },
+        {
+          "caller": "handleNoChunkToggle",
+          "callee": "String",
+          "lineNumber": 1174
+        },
+        {
+          "caller": "handleNoChunkToggle",
+          "callee": "setNoChunk",
+          "lineNumber": 1175
+        },
+        {
+          "caller": "parseNumber",
+          "callee": "value.trim",
+          "lineNumber": 1180
+        },
+        {
+          "caller": "parseNumber",
+          "callee": "Number",
+          "lineNumber": 1181
+        },
+        {
+          "caller": "parseNumber",
+          "callee": "Number.isFinite",
+          "lineNumber": 1182
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "toast.error",
+          "lineNumber": 1187
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "Math.floor",
+          "lineNumber": 1191
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "toast.error",
+          "lineNumber": 1192
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "chunkStrategies.find",
+          "lineNumber": 1199
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "Object.keys",
+          "lineNumber": 1210
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "parseNumber",
+          "lineNumber": 1211
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "JSON.stringify",
+          "lineNumber": 1216
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setSaving",
+          "lineNumber": 1220
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "values.sourceLocation.trim",
+          "lineNumber": 1225
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "values.scheduleCron.trim",
+          "lineNumber": 1229
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "onSubmit",
+          "lineNumber": 1236
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "toast.error",
+          "lineNumber": 1238
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "getErrorMessage",
+          "lineNumber": 1238
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "console.error",
+          "lineNumber": 1239
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setSaving",
+          "lineNumber": 1241
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "e.preventDefault",
+          "lineNumber": 1249
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "e.preventDefault",
+          "lineNumber": 1250
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 1250
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "(document.activeElement as HTMLElement)?.blur",
+          "lineNumber": 1250
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "form.handleSubmit",
+          "lineNumber": 1257
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "SOURCE_OPTIONS.map",
+          "lineNumber": 1271
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "cn",
+          "lineNumber": 1306
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "fileInputRef.current?.click",
+          "lineNumber": 1311
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "e.preventDefault",
+          "lineNumber": 1312
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "setIsDragging",
+          "lineNumber": 1312
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "e.currentTarget.contains",
+          "lineNumber": 1313
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "setIsDragging",
+          "lineNumber": 1313
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "e.preventDefault",
+          "lineNumber": 1315
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "setIsDragging",
+          "lineNumber": 1316
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "setFile",
+          "lineNumber": 1318
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "setFile",
+          "lineNumber": 1325
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "formatSize",
+          "lineNumber": 1331
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "e.stopPropagation",
+          "lineNumber": 1337
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "setFile",
+          "lineNumber": 1337
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "field.onChange",
+          "lineNumber": 1367
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "Boolean",
+          "lineNumber": 1367
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "PROCESS_MODE_OPTIONS.map",
+          "lineNumber": 1405
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "pipelines.map",
+          "lineNumber": 1432
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "chunkStrategies.map",
+          "lineNumber": 1466
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "cn",
+          "lineNumber": 1516
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "cn",
+          "lineNumber": 1522
+        },
+        {
+          "caller": "UploadDialog",
+          "callee": "onOpenChange",
+          "lineNumber": 1595
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 8,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/pages/admin/knowledge/KnowledgeListPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 466,
+      "nonEmptyLines": 434,
+      "functions": [
+        {
+          "name": "KnowledgeListPage",
+          "startLine": 39,
+          "endLine": 466,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeListPage",
+          "line": 39,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "useNavigate",
+          "lineNumber": 40
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "useSearchParams",
+          "lineNumber": 41
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "searchParams.get",
+          "lineNumber": 42
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "useState",
+          "lineNumber": 43
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "useState",
+          "lineNumber": 44
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "useState",
+          "lineNumber": 45
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "useState",
+          "lineNumber": 46
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "useState",
+          "lineNumber": 47
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "useState",
+          "lineNumber": 48
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "useState",
+          "lineNumber": 49
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "useState",
+          "lineNumber": 50
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "useState",
+          "lineNumber": 54
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "useState",
+          "lineNumber": 55
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "useState",
+          "lineNumber": 61
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "useRef",
+          "lineNumber": 62
+        },
+        {
+          "caller": "loadKnowledgeBases",
+          "callee": "setLoading",
+          "lineNumber": 68
+        },
+        {
+          "caller": "loadKnowledgeBases",
+          "callee": "getKnowledgeBasesPage",
+          "lineNumber": 69
+        },
+        {
+          "caller": "loadKnowledgeBases",
+          "callee": "setPageData",
+          "lineNumber": 70
+        },
+        {
+          "caller": "loadKnowledgeBases",
+          "callee": "toast.error",
+          "lineNumber": 72
+        },
+        {
+          "caller": "loadKnowledgeBases",
+          "callee": "getErrorMessage",
+          "lineNumber": 72
+        },
+        {
+          "caller": "loadKnowledgeBases",
+          "callee": "console.error",
+          "lineNumber": 73
+        },
+        {
+          "caller": "loadKnowledgeBases",
+          "callee": "setLoading",
+          "lineNumber": 75
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "useCallback",
+          "lineNumber": 79
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "name.trim",
+          "lineNumber": 81
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "setStatsLoading",
+          "lineNumber": 82
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "getKnowledgeBasesPage",
+          "lineNumber": 84
+        },
+        {
+          "caller": "addRecords",
+          "callee": "records.forEach",
+          "lineNumber": 91
+        },
+        {
+          "caller": "addRecords",
+          "callee": "creatorNames.add",
+          "lineNumber": 98
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "addRecords",
+          "lineNumber": 103
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "Math.max",
+          "lineNumber": 107
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "Math.ceil",
+          "lineNumber": 107
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "getKnowledgeBasesPage",
+          "lineNumber": 110
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "addRecords",
+          "lineNumber": 112
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "setStats",
+          "lineNumber": 116
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "console.error",
+          "lineNumber": 124
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "setStats",
+          "lineNumber": 125
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "setStatsLoading",
+          "lineNumber": 133
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "useEffect",
+          "lineNumber": 138
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "loadKnowledgeBases",
+          "lineNumber": 139
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "useEffect",
+          "lineNumber": 142
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "loadStats",
+          "lineNumber": 143
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "useEffect",
+          "lineNumber": 146
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "nameFromQuery.trim",
+          "lineNumber": 147
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "setSearchName",
+          "lineNumber": 149
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "setKeyword",
+          "lineNumber": 150
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "setPageNo",
+          "lineNumber": 151
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "useEffect",
+          "lineNumber": 155
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "setRenameValue",
+          "lineNumber": 157
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "setPageNo",
+          "lineNumber": 162
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "setKeyword",
+          "lineNumber": 163
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "searchName.trim",
+          "lineNumber": 163
+        },
+        {
+          "caller": "handleRefresh",
+          "callee": "setPageNo",
+          "lineNumber": 167
+        },
+        {
+          "caller": "handleRefresh",
+          "callee": "loadKnowledgeBases",
+          "lineNumber": 168
+        },
+        {
+          "caller": "handleRefresh",
+          "callee": "loadStats",
+          "lineNumber": 169
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "deleteKnowledgeBase",
+          "lineNumber": 176
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "toast.success",
+          "lineNumber": 177
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setDeleteTarget",
+          "lineNumber": 178
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setPageNo",
+          "lineNumber": 179
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "loadKnowledgeBases",
+          "lineNumber": 180
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "loadStats",
+          "lineNumber": 181
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "toast.error",
+          "lineNumber": 183
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "getErrorMessage",
+          "lineNumber": 183
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "console.error",
+          "lineNumber": 184
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setDeleteTarget",
+          "lineNumber": 186
+        },
+        {
+          "caller": "formatDate",
+          "callee": "new Date(dateStr).toLocaleString",
+          "lineNumber": 192
+        },
+        {
+          "caller": "formatStatValue",
+          "callee": "value.toLocaleString",
+          "lineNumber": 197
+        },
+        {
+          "caller": "renderEmbeddingModel",
+          "callee": "model.split",
+          "lineNumber": 202
+        },
+        {
+          "caller": "renderEmbeddingModel",
+          "callee": "parts.slice(0, -1).join",
+          "lineNumber": 206
+        },
+        {
+          "caller": "renderEmbeddingModel",
+          "callee": "parts.slice",
+          "lineNumber": 206
+        },
+        {
+          "caller": "getCollectionBadgeClass",
+          "callee": "(name || \"\").toLowerCase",
+          "lineNumber": 217
+        },
+        {
+          "caller": "getCollectionBadgeClass",
+          "callee": "value.includes",
+          "lineNumber": 218
+        },
+        {
+          "caller": "getCollectionBadgeClass",
+          "callee": "value.includes",
+          "lineNumber": 221
+        },
+        {
+          "caller": "handleRename",
+          "callee": "renameValue.trim",
+          "lineNumber": 229
+        },
+        {
+          "caller": "handleRename",
+          "callee": "toast.error",
+          "lineNumber": 231
+        },
+        {
+          "caller": "handleRename",
+          "callee": "setRenameDialog",
+          "lineNumber": 235
+        },
+        {
+          "caller": "handleRename",
+          "callee": "renameKnowledgeBase",
+          "lineNumber": 239
+        },
+        {
+          "caller": "handleRename",
+          "callee": "toast.success",
+          "lineNumber": 240
+        },
+        {
+          "caller": "handleRename",
+          "callee": "setRenameDialog",
+          "lineNumber": 241
+        },
+        {
+          "caller": "handleRename",
+          "callee": "loadKnowledgeBases",
+          "lineNumber": 242
+        },
+        {
+          "caller": "handleRename",
+          "callee": "toast.error",
+          "lineNumber": 244
+        },
+        {
+          "caller": "handleRename",
+          "callee": "getErrorMessage",
+          "lineNumber": 244
+        },
+        {
+          "caller": "handleRename",
+          "callee": "console.error",
+          "lineNumber": 245
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "setSearchName",
+          "lineNumber": 259
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "setCreateDialogOpen",
+          "lineNumber": 270
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "[\r\n          { label: \"知识库\", value: stats.totalCount, icon: Database, scope: \"全部\" },\r\n          { label: \"文档数\", value: stats.documentCount, icon: FileBarChart, scope: \"全部\" },\r\n          { label: \"含文档知识库\", value: stats.activeCount, icon: FolderOpen, scope: \"全部\" },\r\n          { label: \"创建用户数\", value: stats.creatorCount, icon: Layers, scope: \"全部\" }\r\n        ].map",
+          "lineNumber": 278
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "formatStatValue",
+          "lineNumber": 293
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "knowledgeBases.map",
+          "lineNumber": 325
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "navigate",
+          "lineNumber": 331
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "renderEmbeddingModel",
+          "lineNumber": 337
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "cn",
+          "lineNumber": 343
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "getCollectionBadgeClass",
+          "lineNumber": 343
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "formatDate",
+          "lineNumber": 354
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "formatDate",
+          "lineNumber": 357
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "setRenameDialog",
+          "lineNumber": 365
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "setDeleteTarget",
+          "lineNumber": 375
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "setDeleteTarget",
+          "lineNumber": 391
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "setRenameDialog",
+          "lineNumber": 408
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "e.preventDefault",
+          "lineNumber": 409
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "e.preventDefault",
+          "lineNumber": 409
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 409
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "(document.activeElement as HTMLElement)?.blur",
+          "lineNumber": 409
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "setRenameValue",
+          "lineNumber": 416
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "setRenameDialog",
+          "lineNumber": 419
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "setPageNo",
+          "lineNumber": 434
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "Math.max",
+          "lineNumber": 434
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "setPageNo",
+          "lineNumber": 445
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "Math.min",
+          "lineNumber": 445
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "setPageNo",
+          "lineNumber": 459
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "loadKnowledgeBases",
+          "lineNumber": 460
+        },
+        {
+          "caller": "KnowledgeListPage",
+          "callee": "loadStats",
+          "lineNumber": 461
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/pages/admin/query-term-mapping/QueryTermMappingPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 439,
+      "nonEmptyLines": 414,
+      "functions": [
+        {
+          "name": "matchTypeLabel",
+          "startLine": 53,
+          "endLine": 55,
+          "params": [
+            "type"
+          ]
+        },
+        {
+          "name": "QueryTermMappingPage",
+          "startLine": 66,
+          "endLine": 439,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "QueryTermMappingPage",
+          "line": 66,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "matchTypeLabel",
+          "callee": "MATCH_TYPE_OPTIONS.find",
+          "lineNumber": 54
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "useState",
+          "lineNumber": 67
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "useState",
+          "lineNumber": 68
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "useState",
+          "lineNumber": 69
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "useState",
+          "lineNumber": 70
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "useState",
+          "lineNumber": 71
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "useState",
+          "lineNumber": 72
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "useState",
+          "lineNumber": 73
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "useState",
+          "lineNumber": 78
+        },
+        {
+          "caller": "loadData",
+          "callee": "setLoading",
+          "lineNumber": 82
+        },
+        {
+          "caller": "loadData",
+          "callee": "getQueryTermMappingsPage",
+          "lineNumber": 83
+        },
+        {
+          "caller": "loadData",
+          "callee": "setPageData",
+          "lineNumber": 84
+        },
+        {
+          "caller": "loadData",
+          "callee": "toast.error",
+          "lineNumber": 86
+        },
+        {
+          "caller": "loadData",
+          "callee": "getErrorMessage",
+          "lineNumber": 86
+        },
+        {
+          "caller": "loadData",
+          "callee": "console.error",
+          "lineNumber": 87
+        },
+        {
+          "caller": "loadData",
+          "callee": "setLoading",
+          "lineNumber": 89
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "useEffect",
+          "lineNumber": 93
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "loadData",
+          "lineNumber": 94
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "useEffect",
+          "lineNumber": 97
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "setForm",
+          "lineNumber": 99
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "setForm",
+          "lineNumber": 103
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "setForm",
+          "lineNumber": 113
+        },
+        {
+          "caller": "formatDate",
+          "callee": "new Date(dateStr).toLocaleString",
+          "lineNumber": 118
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "setPageNo",
+          "lineNumber": 122
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "setKeyword",
+          "lineNumber": 123
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "searchKeyword.trim",
+          "lineNumber": 123
+        },
+        {
+          "caller": "handleRefresh",
+          "callee": "setPageNo",
+          "lineNumber": 127
+        },
+        {
+          "caller": "handleRefresh",
+          "callee": "loadData",
+          "lineNumber": 128
+        },
+        {
+          "caller": "openCreateDialog",
+          "callee": "setDialogState",
+          "lineNumber": 132
+        },
+        {
+          "caller": "openEditDialog",
+          "callee": "setDialogState",
+          "lineNumber": 136
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.sourceTerm.trim",
+          "lineNumber": 141
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.targetTerm.trim",
+          "lineNumber": 142
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.remark.trim",
+          "lineNumber": 146
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "toast.error",
+          "lineNumber": 150
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "toast.error",
+          "lineNumber": 154
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "createQueryTermMapping",
+          "lineNumber": 160
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "toast.success",
+          "lineNumber": 161
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setPageNo",
+          "lineNumber": 162
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "loadData",
+          "lineNumber": 163
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "updateQueryTermMapping",
+          "lineNumber": 165
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "toast.success",
+          "lineNumber": 166
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "loadData",
+          "lineNumber": 167
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setDialogState",
+          "lineNumber": 169
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "toast.error",
+          "lineNumber": 171
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "getErrorMessage",
+          "lineNumber": 171
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "console.error",
+          "lineNumber": 172
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "deleteQueryTermMapping",
+          "lineNumber": 180
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "toast.success",
+          "lineNumber": 181
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setDeleteTarget",
+          "lineNumber": 182
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setPageNo",
+          "lineNumber": 183
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "loadData",
+          "lineNumber": 184
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "toast.error",
+          "lineNumber": 186
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "getErrorMessage",
+          "lineNumber": 186
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "console.error",
+          "lineNumber": 187
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setDeleteTarget",
+          "lineNumber": 189
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "setSearchKeyword",
+          "lineNumber": 205
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "handleSearch",
+          "lineNumber": 206
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "records.map",
+          "lineNumber": 248
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "matchTypeLabel",
+          "lineNumber": 257
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "formatDate",
+          "lineNumber": 269
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "formatDate",
+          "lineNumber": 272
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "openEditDialog",
+          "lineNumber": 276
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "setDeleteTarget",
+          "lineNumber": 284
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "setPageNo",
+          "lineNumber": 306
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "Math.max",
+          "lineNumber": 306
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "setPageNo",
+          "lineNumber": 317
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "Math.min",
+          "lineNumber": 317
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "setDeleteTarget",
+          "lineNumber": 326
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "setDialogState",
+          "lineNumber": 346
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "setForm",
+          "lineNumber": 359
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "setForm",
+          "lineNumber": 367
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "String",
+          "lineNumber": 375
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "setForm",
+          "lineNumber": 376
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "Number",
+          "lineNumber": 376
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "MATCH_TYPE_OPTIONS.map",
+          "lineNumber": 382
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "String",
+          "lineNumber": 383
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "setForm",
+          "lineNumber": 395
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "Number",
+          "lineNumber": 395
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "setForm",
+          "lineNumber": 405
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "setForm",
+          "lineNumber": 421
+        },
+        {
+          "caller": "QueryTermMappingPage",
+          "callee": "setDialogState",
+          "lineNumber": 429
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/pages/admin/sample-questions/SampleQuestionPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 346,
+      "nonEmptyLines": 323,
+      "functions": [
+        {
+          "name": "SampleQuestionPage",
+          "startLine": 45,
+          "endLine": 346,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SampleQuestionPage",
+          "line": 45,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "useState",
+          "lineNumber": 46
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "useState",
+          "lineNumber": 47
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "useState",
+          "lineNumber": 48
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "useState",
+          "lineNumber": 49
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "useState",
+          "lineNumber": 50
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "useState",
+          "lineNumber": 51
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "useState",
+          "lineNumber": 52
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "useState",
+          "lineNumber": 57
+        },
+        {
+          "caller": "loadQuestions",
+          "callee": "setLoading",
+          "lineNumber": 61
+        },
+        {
+          "caller": "loadQuestions",
+          "callee": "getSampleQuestionsPage",
+          "lineNumber": 62
+        },
+        {
+          "caller": "loadQuestions",
+          "callee": "setPageData",
+          "lineNumber": 63
+        },
+        {
+          "caller": "loadQuestions",
+          "callee": "toast.error",
+          "lineNumber": 65
+        },
+        {
+          "caller": "loadQuestions",
+          "callee": "getErrorMessage",
+          "lineNumber": 65
+        },
+        {
+          "caller": "loadQuestions",
+          "callee": "console.error",
+          "lineNumber": 66
+        },
+        {
+          "caller": "loadQuestions",
+          "callee": "setLoading",
+          "lineNumber": 68
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "useEffect",
+          "lineNumber": 72
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "loadQuestions",
+          "lineNumber": 73
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "useEffect",
+          "lineNumber": 76
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "setForm",
+          "lineNumber": 78
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "setForm",
+          "lineNumber": 82
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "setForm",
+          "lineNumber": 89
+        },
+        {
+          "caller": "formatDate",
+          "callee": "new Date(dateStr).toLocaleString",
+          "lineNumber": 94
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "setPageNo",
+          "lineNumber": 98
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "setKeyword",
+          "lineNumber": 99
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "searchKeyword.trim",
+          "lineNumber": 99
+        },
+        {
+          "caller": "handleRefresh",
+          "callee": "setPageNo",
+          "lineNumber": 103
+        },
+        {
+          "caller": "handleRefresh",
+          "callee": "loadQuestions",
+          "lineNumber": 104
+        },
+        {
+          "caller": "openCreateDialog",
+          "callee": "setDialogState",
+          "lineNumber": 108
+        },
+        {
+          "caller": "openEditDialog",
+          "callee": "setDialogState",
+          "lineNumber": 112
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.title.trim",
+          "lineNumber": 117
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.description.trim",
+          "lineNumber": 118
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.question.trim",
+          "lineNumber": 119
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "toast.error",
+          "lineNumber": 123
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "createSampleQuestion",
+          "lineNumber": 129
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "toast.success",
+          "lineNumber": 130
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setPageNo",
+          "lineNumber": 131
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "loadQuestions",
+          "lineNumber": 132
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "updateSampleQuestion",
+          "lineNumber": 134
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "toast.success",
+          "lineNumber": 135
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "loadQuestions",
+          "lineNumber": 136
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setDialogState",
+          "lineNumber": 138
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "toast.error",
+          "lineNumber": 140
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "getErrorMessage",
+          "lineNumber": 140
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "console.error",
+          "lineNumber": 141
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "deleteSampleQuestion",
+          "lineNumber": 149
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "toast.success",
+          "lineNumber": 150
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setDeleteTarget",
+          "lineNumber": 151
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setPageNo",
+          "lineNumber": 152
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "loadQuestions",
+          "lineNumber": 153
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "toast.error",
+          "lineNumber": 155
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "getErrorMessage",
+          "lineNumber": 155
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "console.error",
+          "lineNumber": 156
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setDeleteTarget",
+          "lineNumber": 158
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "setSearchKeyword",
+          "lineNumber": 174
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "records.map",
+          "lineNumber": 212
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "formatDate",
+          "lineNumber": 224
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "openEditDialog",
+          "lineNumber": 228
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "setDeleteTarget",
+          "lineNumber": 236
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "setPageNo",
+          "lineNumber": 258
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "Math.max",
+          "lineNumber": 258
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "setPageNo",
+          "lineNumber": 269
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "Math.min",
+          "lineNumber": 269
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "setDeleteTarget",
+          "lineNumber": 278
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "setDialogState",
+          "lineNumber": 298
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "setForm",
+          "lineNumber": 311
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "setForm",
+          "lineNumber": 319
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "setForm",
+          "lineNumber": 327
+        },
+        {
+          "caller": "SampleQuestionPage",
+          "callee": "setDialogState",
+          "lineNumber": 336
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/pages/admin/settings/SystemSettingsPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 294,
+      "nonEmptyLines": 274,
+      "functions": [
+        {
+          "name": "BoolBadge",
+          "startLine": 19,
+          "endLine": 21,
+          "params": [
+            "{ value }"
+          ]
+        },
+        {
+          "name": "InfoItem",
+          "startLine": 23,
+          "endLine": 30,
+          "params": [
+            "{ label, value }"
+          ]
+        },
+        {
+          "name": "SystemSettingsPage",
+          "startLine": 32,
+          "endLine": 294,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SystemSettingsPage",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SystemSettingsPage",
+          "callee": "useState",
+          "lineNumber": 33
+        },
+        {
+          "caller": "SystemSettingsPage",
+          "callee": "useState",
+          "lineNumber": 34
+        },
+        {
+          "caller": "loadSettings",
+          "callee": "setLoading",
+          "lineNumber": 38
+        },
+        {
+          "caller": "loadSettings",
+          "callee": "getSystemSettings",
+          "lineNumber": 39
+        },
+        {
+          "caller": "loadSettings",
+          "callee": "setSettings",
+          "lineNumber": 40
+        },
+        {
+          "caller": "loadSettings",
+          "callee": "toast.error",
+          "lineNumber": 42
+        },
+        {
+          "caller": "loadSettings",
+          "callee": "getErrorMessage",
+          "lineNumber": 42
+        },
+        {
+          "caller": "loadSettings",
+          "callee": "console.error",
+          "lineNumber": 43
+        },
+        {
+          "caller": "loadSettings",
+          "callee": "setLoading",
+          "lineNumber": 45
+        },
+        {
+          "caller": "SystemSettingsPage",
+          "callee": "useEffect",
+          "lineNumber": 49
+        },
+        {
+          "caller": "SystemSettingsPage",
+          "callee": "loadSettings",
+          "lineNumber": 50
+        },
+        {
+          "caller": "SystemSettingsPage",
+          "callee": "Object.entries",
+          "lineNumber": 70
+        },
+        {
+          "caller": "SystemSettingsPage",
+          "callee": "providers.map",
+          "lineNumber": 150
+        },
+        {
+          "caller": "SystemSettingsPage",
+          "callee": "Object.entries(provider.endpoints).map",
+          "lineNumber": 157
+        },
+        {
+          "caller": "SystemSettingsPage",
+          "callee": "Object.entries",
+          "lineNumber": 157
+        },
+        {
+          "caller": "SystemSettingsPage",
+          "callee": "ai.chat.candidates.map",
+          "lineNumber": 213
+        },
+        {
+          "caller": "SystemSettingsPage",
+          "callee": "ai.embedding.candidates.map",
+          "lineNumber": 247
+        },
+        {
+          "caller": "SystemSettingsPage",
+          "callee": "ai.rerank.candidates.map",
+          "lineNumber": 280
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/components/FilterBar.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 76,
+      "nonEmptyLines": 73,
+      "functions": [
+        {
+          "name": "FilterBar",
+          "startLine": 16,
+          "endLine": 76,
+          "params": [
+            "{ filters, onFiltersChange, onSearch, onRefresh, onReset }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FilterBar",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "FilterBar",
+          "callee": "onFiltersChange",
+          "lineNumber": 24
+        },
+        {
+          "caller": "FilterBar",
+          "callee": "onFiltersChange",
+          "lineNumber": 30
+        },
+        {
+          "caller": "FilterBar",
+          "callee": "onFiltersChange",
+          "lineNumber": 36
+        },
+        {
+          "caller": "FilterBar",
+          "callee": "onFiltersChange",
+          "lineNumber": 43
+        },
+        {
+          "caller": "FilterBar",
+          "callee": "STATUS_OPTIONS.map",
+          "lineNumber": 50
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/components/PageHeader.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 52,
+      "nonEmptyLines": 48,
+      "functions": [
+        {
+          "name": "PageHeader",
+          "startLine": 21,
+          "endLine": 52,
+          "params": [
+            "{ tag, title, description, kpis = [], actions, meta }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PageHeader",
+          "line": 21,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PageHeader",
+          "callee": "kpis.map",
+          "lineNumber": 35
+        },
+        {
+          "caller": "PageHeader",
+          "callee": "kpi.key.toLowerCase",
+          "lineNumber": 38
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/components/RunsTable.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 145,
+      "nonEmptyLines": 143,
+      "functions": [
+        {
+          "name": "RunsTable",
+          "startLine": 25,
+          "endLine": 145,
+          "params": [
+            "{\r\n  runs,\r\n  loading,\r\n  current,\r\n  pages,\r\n  total,\r\n  onOpenRun,\r\n  onPrevPage,\r\n  onNextPage\r\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RunsTable",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "RunsTable",
+          "callee": "runs.map",
+          "lineNumber": 62
+        },
+        {
+          "caller": "RunsTable",
+          "callee": "formatDuration",
+          "lineNumber": 93
+        },
+        {
+          "caller": "RunsTable",
+          "callee": "statusBadgeVariant",
+          "lineNumber": 96
+        },
+        {
+          "caller": "RunsTable",
+          "callee": "statusLabel",
+          "lineNumber": 97
+        },
+        {
+          "caller": "RunsTable",
+          "callee": "formatDateTime",
+          "lineNumber": 100
+        },
+        {
+          "caller": "RunsTable",
+          "callee": "onOpenRun",
+          "lineNumber": 106
+        },
+        {
+          "caller": "RunsTable",
+          "callee": "total.toLocaleString",
+          "lineNumber": 121
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/components/StatCard.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 24,
+      "functions": [
+        {
+          "name": "StatCard",
+          "startLine": 15,
+          "endLine": 28,
+          "params": [
+            "{ title, value, unit, icon, tone }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "StatCard",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "StatCard",
+          "callee": "cn",
+          "lineNumber": 18
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/RagTraceDetailPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 529,
+      "nonEmptyLines": 487,
+      "functions": [
+        {
+          "name": "decodeTraceId",
+          "startLine": 39,
+          "endLine": 46,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "copyToClipboard",
+          "startLine": 48,
+          "endLine": 54,
+          "params": [
+            "text",
+            "label"
+          ]
+        },
+        {
+          "name": "getStatusColors",
+          "startLine": 67,
+          "endLine": 70,
+          "params": [
+            "status"
+          ]
+        },
+        {
+          "name": "MetricItem",
+          "startLine": 74,
+          "endLine": 100,
+          "params": [
+            "{\r\n                      icon: Icon,\r\n                      label,\r\n                      value,\r\n                      variant = \"default\"\r\n                    }"
+          ]
+        },
+        {
+          "name": "TimeScale",
+          "startLine": 102,
+          "endLine": 120,
+          "params": [
+            "{ totalMs }"
+          ]
+        },
+        {
+          "name": "WaterfallRow",
+          "startLine": 122,
+          "endLine": 207,
+          "params": [
+            "{\r\n                        node,\r\n                        nodeDisplayName,\r\n                        nodeStatus,\r\n                        isTopSlowest\r\n                      }"
+          ]
+        },
+        {
+          "name": "RagTraceDetailPage",
+          "startLine": 211,
+          "endLine": 529,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RagTraceDetailPage",
+          "line": 211,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "decodeTraceId",
+          "callee": "decodeURIComponent",
+          "lineNumber": 42
+        },
+        {
+          "caller": "copyToClipboard",
+          "callee": "navigator.clipboard.writeText(text).then(() => {\r\n    toast.success(`${label} 已复制`);\r\n  }).catch",
+          "lineNumber": 49
+        },
+        {
+          "caller": "copyToClipboard",
+          "callee": "navigator.clipboard.writeText(text).then",
+          "lineNumber": 49
+        },
+        {
+          "caller": "copyToClipboard",
+          "callee": "navigator.clipboard.writeText",
+          "lineNumber": 49
+        },
+        {
+          "caller": "copyToClipboard",
+          "callee": "toast.success",
+          "lineNumber": 50
+        },
+        {
+          "caller": "copyToClipboard",
+          "callee": "toast.error",
+          "lineNumber": 52
+        },
+        {
+          "caller": "getStatusColors",
+          "callee": "normalizeStatus",
+          "lineNumber": 68
+        },
+        {
+          "caller": "MetricItem",
+          "callee": "cn",
+          "lineNumber": 95
+        },
+        {
+          "caller": "MetricItem",
+          "callee": "cn",
+          "lineNumber": 96
+        },
+        {
+          "caller": "TimeScale",
+          "callee": "ticks.map",
+          "lineNumber": 106
+        },
+        {
+          "caller": "TimeScale",
+          "callee": "formatDuration",
+          "lineNumber": 114
+        },
+        {
+          "caller": "WaterfallRow",
+          "callee": "getStatusColors",
+          "lineNumber": 139
+        },
+        {
+          "caller": "WaterfallRow",
+          "callee": "cn",
+          "lineNumber": 142
+        },
+        {
+          "caller": "WaterfallRow",
+          "callee": "Math.min",
+          "lineNumber": 149
+        },
+        {
+          "caller": "WaterfallRow",
+          "callee": "cn",
+          "lineNumber": 151
+        },
+        {
+          "caller": "WaterfallRow",
+          "callee": "[25, 50, 75].map",
+          "lineNumber": 174
+        },
+        {
+          "caller": "WaterfallRow",
+          "callee": "cn",
+          "lineNumber": 182
+        },
+        {
+          "caller": "WaterfallRow",
+          "callee": "Math.max",
+          "lineNumber": 189
+        },
+        {
+          "caller": "WaterfallRow",
+          "callee": "formatDuration",
+          "lineNumber": 192
+        },
+        {
+          "caller": "WaterfallRow",
+          "callee": "formatDuration",
+          "lineNumber": 199
+        },
+        {
+          "caller": "WaterfallRow",
+          "callee": "formatDuration",
+          "lineNumber": 202
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "useParams",
+          "lineNumber": 212
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "decodeTraceId",
+          "lineNumber": 213
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "useRef",
+          "lineNumber": 214
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "useState",
+          "lineNumber": 215
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "useState",
+          "lineNumber": 216
+        },
+        {
+          "caller": "loadDetail",
+          "callee": "setDetailLoading",
+          "lineNumber": 221
+        },
+        {
+          "caller": "loadDetail",
+          "callee": "getRagTraceDetail",
+          "lineNumber": 223
+        },
+        {
+          "caller": "loadDetail",
+          "callee": "setDetail",
+          "lineNumber": 225
+        },
+        {
+          "caller": "loadDetail",
+          "callee": "toast.error",
+          "lineNumber": 228
+        },
+        {
+          "caller": "loadDetail",
+          "callee": "getErrorMessage",
+          "lineNumber": 228
+        },
+        {
+          "caller": "loadDetail",
+          "callee": "console.error",
+          "lineNumber": 229
+        },
+        {
+          "caller": "loadDetail",
+          "callee": "setDetail",
+          "lineNumber": 230
+        },
+        {
+          "caller": "loadDetail",
+          "callee": "setDetailLoading",
+          "lineNumber": 233
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "useEffect",
+          "lineNumber": 237
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "setDetail",
+          "lineNumber": 240
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "setDetailLoading",
+          "lineNumber": 241
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "loadDetail",
+          "lineNumber": 244
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "useMemo",
+          "lineNumber": 249
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "nodes.map",
+          "lineNumber": 253
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "toTimestamp",
+          "lineNumber": 254
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "toTimestamp",
+          "lineNumber": 255
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "resolveNodeDuration",
+          "lineNumber": 256
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "Math.max",
+          "lineNumber": 257
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "Number",
+          "lineNumber": 257
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "normalized.filter",
+          "lineNumber": 263
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "withTime.reduce",
+          "lineNumber": 265
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "Math.min",
+          "lineNumber": 265
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "Date.now",
+          "lineNumber": 266
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "withTime.reduce",
+          "lineNumber": 268
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "Math.max",
+          "lineNumber": 268
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "Number",
+          "lineNumber": 270
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "Math.max",
+          "lineNumber": 271
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "normalized\r\n        .sort((a, b) => a.startTs - b.startTs || a.depthValue - b.depthValue)\r\n        .map",
+          "lineNumber": 273
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "normalized\r\n        .sort",
+          "lineNumber": 273
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "Math.max",
+          "lineNumber": 276
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "clamp",
+          "lineNumber": 277
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "clamp",
+          "lineNumber": 278
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "Math.max",
+          "lineNumber": 279
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "useMemo",
+          "lineNumber": 289
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "nodes.filter",
+          "lineNumber": 292
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "normalizeStatus",
+          "lineNumber": 292
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "nodes.filter",
+          "lineNumber": 293
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "normalizeStatus",
+          "lineNumber": 293
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "nodes.filter",
+          "lineNumber": 294
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "normalizeStatus",
+          "lineNumber": 294
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "nodes.map",
+          "lineNumber": 296
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "resolveNodeDuration",
+          "lineNumber": 296
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "Math.round",
+          "lineNumber": 297
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "durations.reduce",
+          "lineNumber": 297
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "[...nodes].sort",
+          "lineNumber": 299
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "resolveNodeDuration",
+          "lineNumber": 299
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "resolveNodeDuration",
+          "lineNumber": 299
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "statusBadgeVariant",
+          "lineNumber": 367
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "statusLabel",
+          "lineNumber": 368
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "loadDetail",
+          "lineNumber": 390
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "cn",
+          "lineNumber": 393
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "copyToClipboard",
+          "lineNumber": 403
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "traceId.slice",
+          "lineNumber": 407
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "traceId.slice",
+          "lineNumber": 407
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "formatDateTime",
+          "lineNumber": 411
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "formatDuration",
+          "lineNumber": 437
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "formatDuration",
+          "lineNumber": 468
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "formatDuration",
+          "lineNumber": 480
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "timeline.nodes.map",
+          "lineNumber": 507
+        },
+        {
+          "caller": "RagTraceDetailPage",
+          "callee": "normalizeStatus",
+          "lineNumber": 509
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 7,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/RagTracePage.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 201,
+      "nonEmptyLines": 187,
+      "functions": [
+        {
+          "name": "formatDurationMetric",
+          "startLine": 23,
+          "endLine": 32,
+          "params": [
+            "durationMs"
+          ]
+        },
+        {
+          "name": "RagTracePage",
+          "startLine": 34,
+          "endLine": 201,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RagTracePage",
+          "line": 34,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "formatDurationMetric",
+          "callee": "Number.isFinite",
+          "lineNumber": 24
+        },
+        {
+          "caller": "formatDurationMetric",
+          "callee": "Math.round",
+          "lineNumber": 26
+        },
+        {
+          "caller": "formatDurationMetric",
+          "callee": "(duration / 1000).toFixed",
+          "lineNumber": 29
+        },
+        {
+          "caller": "formatDurationMetric",
+          "callee": "(duration / 1000).toFixed",
+          "lineNumber": 31
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "useNavigate",
+          "lineNumber": 35
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "useRef",
+          "lineNumber": 36
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "useState",
+          "lineNumber": 37
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "useState",
+          "lineNumber": 38
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "useState",
+          "lineNumber": 39
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "useState",
+          "lineNumber": 40
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "useState",
+          "lineNumber": 41
+        },
+        {
+          "caller": "loadRuns",
+          "callee": "setLoading",
+          "lineNumber": 47
+        },
+        {
+          "caller": "loadRuns",
+          "callee": "getRagTraceRuns",
+          "lineNumber": 49
+        },
+        {
+          "caller": "loadRuns",
+          "callee": "nextTraceId.trim",
+          "lineNumber": 52
+        },
+        {
+          "caller": "loadRuns",
+          "callee": "setPageData",
+          "lineNumber": 55
+        },
+        {
+          "caller": "loadRuns",
+          "callee": "toast.error",
+          "lineNumber": 58
+        },
+        {
+          "caller": "loadRuns",
+          "callee": "getErrorMessage",
+          "lineNumber": 58
+        },
+        {
+          "caller": "loadRuns",
+          "callee": "console.error",
+          "lineNumber": 59
+        },
+        {
+          "caller": "loadRuns",
+          "callee": "setLoading",
+          "lineNumber": 62
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "useEffect",
+          "lineNumber": 66
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "loadRuns",
+          "lineNumber": 67
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "setPageNo",
+          "lineNumber": 71
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "setQueryTraceId",
+          "lineNumber": 72
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "traceIdFilter.trim",
+          "lineNumber": 72
+        },
+        {
+          "caller": "handleRefresh",
+          "callee": "loadRuns",
+          "lineNumber": 76
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "useMemo",
+          "lineNumber": 79
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "runs\r\n      .map((item) => Number(item.durationMs ?? 0))\r\n      .filter",
+          "lineNumber": 80
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "runs\r\n      .map",
+          "lineNumber": 80
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "Number",
+          "lineNumber": 81
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "Number.isFinite",
+          "lineNumber": 82
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "runs.filter",
+          "lineNumber": 83
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "normalizeStatus",
+          "lineNumber": 83
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "runs.filter",
+          "lineNumber": 84
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "normalizeStatus",
+          "lineNumber": 84
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "runs.filter",
+          "lineNumber": 85
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "normalizeStatus",
+          "lineNumber": 85
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "Math.round",
+          "lineNumber": 87
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "durations.reduce",
+          "lineNumber": 87
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "Math.round",
+          "lineNumber": 89
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "percentile",
+          "lineNumber": 89
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "Math.round",
+          "lineNumber": 90
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "formatDurationMetric",
+          "lineNumber": 105
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "formatDurationMetric",
+          "lineNumber": 106
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "setTraceIdFilter",
+          "lineNumber": 160
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "statCards.map",
+          "lineNumber": 176
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "navigate",
+          "lineNumber": 194
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "encodeURIComponent",
+          "lineNumber": 194
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "setPageNo",
+          "lineNumber": 195
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "Math.max",
+          "lineNumber": 195
+        },
+        {
+          "caller": "RagTracePage",
+          "callee": "setPageNo",
+          "lineNumber": 196
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/traceUtils.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 101,
+      "nonEmptyLines": 85,
+      "functions": [
+        {
+          "name": "normalizeStatus",
+          "startLine": 38,
+          "endLine": 38,
+          "params": [
+            "status"
+          ]
+        },
+        {
+          "name": "statusLabel",
+          "startLine": 40,
+          "endLine": 48,
+          "params": [
+            "status"
+          ]
+        },
+        {
+          "name": "statusBadgeVariant",
+          "startLine": 50,
+          "endLine": 56,
+          "params": [
+            "status"
+          ]
+        },
+        {
+          "name": "toTimestamp",
+          "startLine": 58,
+          "endLine": 66,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "formatDateTime",
+          "startLine": 68,
+          "endLine": 72,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "formatDuration",
+          "startLine": 74,
+          "endLine": 81,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "percentile",
+          "startLine": 83,
+          "endLine": 88,
+          "params": [
+            "values",
+            "ratio"
+          ]
+        },
+        {
+          "name": "clamp",
+          "startLine": 90,
+          "endLine": 92,
+          "params": [
+            "value",
+            "min",
+            "max"
+          ]
+        },
+        {
+          "name": "resolveNodeDuration",
+          "startLine": 94,
+          "endLine": 101,
+          "params": [
+            "node"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PAGE_SIZE",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "DEFAULT_FILTERS",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "STATUS_OPTIONS",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "normalizeStatus",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "statusLabel",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "statusBadgeVariant",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "toTimestamp",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "formatDateTime",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "formatDuration",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "percentile",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "clamp",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "resolveNodeDuration",
+          "line": 94,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "normalizeStatus",
+          "callee": "(status || \"\").trim().toLowerCase",
+          "lineNumber": 38
+        },
+        {
+          "caller": "normalizeStatus",
+          "callee": "(status || \"\").trim",
+          "lineNumber": 38
+        },
+        {
+          "caller": "statusLabel",
+          "callee": "normalizeStatus",
+          "lineNumber": 41
+        },
+        {
+          "caller": "statusLabel",
+          "callee": "normalized.toUpperCase",
+          "lineNumber": 47
+        },
+        {
+          "caller": "statusBadgeVariant",
+          "callee": "normalizeStatus",
+          "lineNumber": 51
+        },
+        {
+          "caller": "toTimestamp",
+          "callee": "Number.isFinite",
+          "lineNumber": 60
+        },
+        {
+          "caller": "toTimestamp",
+          "callee": "new Date(value).getTime",
+          "lineNumber": 61
+        },
+        {
+          "caller": "toTimestamp",
+          "callee": "Number.isNaN",
+          "lineNumber": 62
+        },
+        {
+          "caller": "toTimestamp",
+          "callee": "Number",
+          "lineNumber": 63
+        },
+        {
+          "caller": "toTimestamp",
+          "callee": "Number.isFinite",
+          "lineNumber": 64
+        },
+        {
+          "caller": "formatDateTime",
+          "callee": "toTimestamp",
+          "lineNumber": 69
+        },
+        {
+          "caller": "formatDateTime",
+          "callee": "new Date(timestamp).toLocaleString",
+          "lineNumber": 71
+        },
+        {
+          "caller": "formatDuration",
+          "callee": "Number.isNaN",
+          "lineNumber": 75
+        },
+        {
+          "caller": "formatDuration",
+          "callee": "Math.round",
+          "lineNumber": 76
+        },
+        {
+          "caller": "formatDuration",
+          "callee": "(value / 1000).toFixed",
+          "lineNumber": 77
+        },
+        {
+          "caller": "formatDuration",
+          "callee": "Math.floor",
+          "lineNumber": 78
+        },
+        {
+          "caller": "formatDuration",
+          "callee": "((value % 60_000) / 1000).toFixed",
+          "lineNumber": 79
+        },
+        {
+          "caller": "percentile",
+          "callee": "[...values].sort",
+          "lineNumber": 85
+        },
+        {
+          "caller": "percentile",
+          "callee": "Math.max",
+          "lineNumber": 86
+        },
+        {
+          "caller": "percentile",
+          "callee": "Math.min",
+          "lineNumber": 86
+        },
+        {
+          "caller": "percentile",
+          "callee": "Math.ceil",
+          "lineNumber": 86
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.min",
+          "lineNumber": 91
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.max",
+          "lineNumber": 91
+        },
+        {
+          "caller": "resolveNodeDuration",
+          "callee": "Number",
+          "lineNumber": 95
+        },
+        {
+          "caller": "resolveNodeDuration",
+          "callee": "Number.isFinite",
+          "lineNumber": 96
+        },
+        {
+          "caller": "resolveNodeDuration",
+          "callee": "toTimestamp",
+          "lineNumber": 97
+        },
+        {
+          "caller": "resolveNodeDuration",
+          "callee": "toTimestamp",
+          "lineNumber": 98
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 9,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/pages/admin/users/UserListPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 374,
+      "nonEmptyLines": 352,
+      "functions": [
+        {
+          "name": "buildEmptyForm",
+          "startLine": 25,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "UserListPage",
+          "startLine": 32,
+          "endLine": 374,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "UserListPage",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "UserListPage",
+          "callee": "useState",
+          "lineNumber": 33
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "useState",
+          "lineNumber": 34
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "useState",
+          "lineNumber": 35
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "useState",
+          "lineNumber": 36
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "useState",
+          "lineNumber": 37
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "useState",
+          "lineNumber": 38
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "useState",
+          "lineNumber": 39
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "useState",
+          "lineNumber": 44
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "buildEmptyForm",
+          "lineNumber": 44
+        },
+        {
+          "caller": "loadUsers",
+          "callee": "setLoading",
+          "lineNumber": 50
+        },
+        {
+          "caller": "loadUsers",
+          "callee": "getUsersPage",
+          "lineNumber": 51
+        },
+        {
+          "caller": "loadUsers",
+          "callee": "setPageData",
+          "lineNumber": 52
+        },
+        {
+          "caller": "loadUsers",
+          "callee": "toast.error",
+          "lineNumber": 54
+        },
+        {
+          "caller": "loadUsers",
+          "callee": "getErrorMessage",
+          "lineNumber": 54
+        },
+        {
+          "caller": "loadUsers",
+          "callee": "console.error",
+          "lineNumber": 55
+        },
+        {
+          "caller": "loadUsers",
+          "callee": "setLoading",
+          "lineNumber": 57
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "useEffect",
+          "lineNumber": 61
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "loadUsers",
+          "lineNumber": 62
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "setPageNo",
+          "lineNumber": 66
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "setKeyword",
+          "lineNumber": 67
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "searchInput.trim",
+          "lineNumber": 67
+        },
+        {
+          "caller": "handleRefresh",
+          "callee": "setPageNo",
+          "lineNumber": 71
+        },
+        {
+          "caller": "handleRefresh",
+          "callee": "loadUsers",
+          "lineNumber": 72
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "deleteUser",
+          "lineNumber": 78
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "toast.success",
+          "lineNumber": 79
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setDeleteTarget",
+          "lineNumber": 80
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setPageNo",
+          "lineNumber": 81
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "loadUsers",
+          "lineNumber": 82
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "toast.error",
+          "lineNumber": 84
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "getErrorMessage",
+          "lineNumber": 84
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "console.error",
+          "lineNumber": 85
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setDeleteTarget",
+          "lineNumber": 87
+        },
+        {
+          "caller": "openCreateDialog",
+          "callee": "setForm",
+          "lineNumber": 92
+        },
+        {
+          "caller": "openCreateDialog",
+          "callee": "buildEmptyForm",
+          "lineNumber": 92
+        },
+        {
+          "caller": "openCreateDialog",
+          "callee": "setDialogState",
+          "lineNumber": 93
+        },
+        {
+          "caller": "openEditDialog",
+          "callee": "setForm",
+          "lineNumber": 97
+        },
+        {
+          "caller": "openEditDialog",
+          "callee": "setDialogState",
+          "lineNumber": 103
+        },
+        {
+          "caller": "handleSave",
+          "callee": "form.username.trim",
+          "lineNumber": 107
+        },
+        {
+          "caller": "handleSave",
+          "callee": "form.password.trim",
+          "lineNumber": 108
+        },
+        {
+          "caller": "handleSave",
+          "callee": "toast.error",
+          "lineNumber": 110
+        },
+        {
+          "caller": "handleSave",
+          "callee": "toast.error",
+          "lineNumber": 117
+        },
+        {
+          "caller": "handleSave",
+          "callee": "form.avatar?.trim",
+          "lineNumber": 124
+        },
+        {
+          "caller": "handleSave",
+          "callee": "createUser",
+          "lineNumber": 126
+        },
+        {
+          "caller": "handleSave",
+          "callee": "toast.success",
+          "lineNumber": 127
+        },
+        {
+          "caller": "handleSave",
+          "callee": "setPageNo",
+          "lineNumber": 128
+        },
+        {
+          "caller": "handleSave",
+          "callee": "loadUsers",
+          "lineNumber": 129
+        },
+        {
+          "caller": "handleSave",
+          "callee": "form.avatar?.trim",
+          "lineNumber": 134
+        },
+        {
+          "caller": "handleSave",
+          "callee": "updateUser",
+          "lineNumber": 137
+        },
+        {
+          "caller": "handleSave",
+          "callee": "toast.success",
+          "lineNumber": 138
+        },
+        {
+          "caller": "handleSave",
+          "callee": "loadUsers",
+          "lineNumber": 139
+        },
+        {
+          "caller": "handleSave",
+          "callee": "setDialogState",
+          "lineNumber": 141
+        },
+        {
+          "caller": "handleSave",
+          "callee": "toast.error",
+          "lineNumber": 143
+        },
+        {
+          "caller": "handleSave",
+          "callee": "getErrorMessage",
+          "lineNumber": 143
+        },
+        {
+          "caller": "handleSave",
+          "callee": "console.error",
+          "lineNumber": 144
+        },
+        {
+          "caller": "formatDate",
+          "callee": "new Date(dateStr).toLocaleString",
+          "lineNumber": 150
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "setSearchInput",
+          "lineNumber": 165
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "users.map",
+          "lineNumber": 201
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "isProtectedAdmin",
+          "lineNumber": 202
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "user.avatar?.trim",
+          "lineNumber": 210
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "formatDate",
+          "lineNumber": 224
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "formatDate",
+          "lineNumber": 225
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "openEditDialog",
+          "lineNumber": 232
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "setDeleteTarget",
+          "lineNumber": 242
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "setDeleteTarget",
+          "lineNumber": 258
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "setDialogState",
+          "lineNumber": 275
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "setForm",
+          "lineNumber": 288
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "setForm",
+          "lineNumber": 297
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "setForm",
+          "lineNumber": 303
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "roleOptions.map",
+          "lineNumber": 308
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "setForm",
+          "lineNumber": 320
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "setDialogState",
+          "lineNumber": 326
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "setPageNo",
+          "lineNumber": 353
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "Math.max",
+          "lineNumber": 353
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "setPageNo",
+          "lineNumber": 364
+        },
+        {
+          "caller": "UserListPage",
+          "callee": "Math.min",
+          "lineNumber": 364
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/pages/ChatPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 102,
+      "nonEmptyLines": 96,
+      "functions": [
+        {
+          "name": "ChatPage",
+          "startLine": 9,
+          "endLine": 102,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChatPage",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ChatPage",
+          "callee": "useNavigate",
+          "lineNumber": 10
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "useParams",
+          "lineNumber": 11
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "useChatStore",
+          "lineNumber": 22
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "React.useState",
+          "lineNumber": 24
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "React.useMemo",
+          "lineNumber": 25
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "sessions.some",
+          "lineNumber": 27
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "React.useEffect",
+          "lineNumber": 30
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "fetchSessions()\r\n      .catch(() => null)\r\n      .finally",
+          "lineNumber": 32
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "fetchSessions()\r\n      .catch",
+          "lineNumber": 32
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "fetchSessions",
+          "lineNumber": 32
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "setSessionsReady",
+          "lineNumber": 36
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "React.useEffect",
+          "lineNumber": 44
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "createSession().catch",
+          "lineNumber": 47
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "createSession",
+          "lineNumber": 47
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "navigate",
+          "lineNumber": 48
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "selectSession(sessionId).catch",
+          "lineNumber": 51
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "selectSession",
+          "lineNumber": 51
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "createSession().catch",
+          "lineNumber": 63
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "createSession",
+          "lineNumber": 63
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "React.useEffect",
+          "lineNumber": 75
+        },
+        {
+          "caller": "ChatPage",
+          "callee": "navigate",
+          "lineNumber": 77
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/pages/LoginPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 101,
+      "nonEmptyLines": 97,
+      "functions": [
+        {
+          "name": "LoginPage",
+          "startLine": 10,
+          "endLine": 101,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LoginPage",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "LoginPage",
+          "callee": "useNavigate",
+          "lineNumber": 11
+        },
+        {
+          "caller": "LoginPage",
+          "callee": "useAuthStore",
+          "lineNumber": 12
+        },
+        {
+          "caller": "LoginPage",
+          "callee": "React.useState",
+          "lineNumber": 13
+        },
+        {
+          "caller": "LoginPage",
+          "callee": "React.useState",
+          "lineNumber": 14
+        },
+        {
+          "caller": "LoginPage",
+          "callee": "React.useState",
+          "lineNumber": 15
+        },
+        {
+          "caller": "LoginPage",
+          "callee": "React.useState",
+          "lineNumber": 16
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "event.preventDefault",
+          "lineNumber": 19
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 20
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.username.trim",
+          "lineNumber": 21
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.password.trim",
+          "lineNumber": 21
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 22
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "login",
+          "lineNumber": 26
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.username.trim",
+          "lineNumber": 26
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.password.trim",
+          "lineNumber": 26
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "navigate",
+          "lineNumber": 30
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 32
+        },
+        {
+          "caller": "LoginPage",
+          "callee": "setForm",
+          "lineNumber": 56
+        },
+        {
+          "caller": "LoginPage",
+          "callee": "setForm",
+          "lineNumber": 72
+        },
+        {
+          "caller": "LoginPage",
+          "callee": "setShowPassword",
+          "lineNumber": 78
+        },
+        {
+          "caller": "LoginPage",
+          "callee": "setRemember",
+          "lineNumber": 88
+        },
+        {
+          "caller": "LoginPage",
+          "callee": "Boolean",
+          "lineNumber": 88
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/pages/NotFoundPage.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 15,
+      "functions": [
+        {
+          "name": "NotFoundPage",
+          "startLine": 5,
+          "endLine": 17,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NotFoundPage",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/router.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 162,
+      "nonEmptyLines": 153,
+      "functions": [
+        {
+          "name": "RequireAuth",
+          "startLine": 23,
+          "endLine": 29,
+          "params": [
+            "{ children }"
+          ]
+        },
+        {
+          "name": "RequireAdmin",
+          "startLine": 31,
+          "endLine": 44,
+          "params": [
+            "{ children }"
+          ]
+        },
+        {
+          "name": "RedirectIfAuth",
+          "startLine": 46,
+          "endLine": 52,
+          "params": [
+            "{ children }"
+          ]
+        },
+        {
+          "name": "HomeRedirect",
+          "startLine": 54,
+          "endLine": 57,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "router",
+          "line": 59,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "RequireAuth",
+          "callee": "useAuthStore",
+          "lineNumber": 24
+        },
+        {
+          "caller": "RequireAdmin",
+          "callee": "useAuthStore",
+          "lineNumber": 32
+        },
+        {
+          "caller": "RequireAdmin",
+          "callee": "useAuthStore",
+          "lineNumber": 33
+        },
+        {
+          "caller": "RedirectIfAuth",
+          "callee": "useAuthStore",
+          "lineNumber": 47
+        },
+        {
+          "caller": "HomeRedirect",
+          "callee": "useAuthStore",
+          "lineNumber": 55
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/services/api.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 65,
+      "nonEmptyLines": 59,
+      "functions": [
+        {
+          "name": "setAuthToken",
+          "startLine": 13,
+          "endLine": 19,
+          "params": [
+            "token"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "api",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "setAuthToken",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/services/authService.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "login",
+          "startLine": 7,
+          "endLine": 9,
+          "params": [
+            "username",
+            "password"
+          ]
+        },
+        {
+          "name": "logout",
+          "startLine": 11,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "getCurrentUser",
+          "startLine": 15,
+          "endLine": 17,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "login",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "logout",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "getCurrentUser",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "login",
+          "callee": "api.post",
+          "lineNumber": 8
+        },
+        {
+          "caller": "logout",
+          "callee": "api.post",
+          "lineNumber": 12
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "api.get",
+          "lineNumber": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/services/chatService.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "stopTask",
+          "startLine": 3,
+          "endLine": 5,
+          "params": [
+            "taskId"
+          ]
+        },
+        {
+          "name": "submitFeedback",
+          "startLine": 7,
+          "endLine": 11,
+          "params": [
+            "messageId",
+            "vote"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "stopTask",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "submitFeedback",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "stopTask",
+          "callee": "api.post",
+          "lineNumber": 4
+        },
+        {
+          "caller": "stopTask",
+          "callee": "encodeURIComponent",
+          "lineNumber": 4
+        },
+        {
+          "caller": "submitFeedback",
+          "callee": "api.post",
+          "lineNumber": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/services/dashboardService.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 70,
+      "nonEmptyLines": 61,
+      "functions": [
+        {
+          "name": "getDashboardOverview",
+          "startLine": 50,
+          "endLine": 54,
+          "params": [
+            "window"
+          ]
+        },
+        {
+          "name": "getDashboardPerformance",
+          "startLine": 56,
+          "endLine": 60,
+          "params": [
+            "window"
+          ]
+        },
+        {
+          "name": "getDashboardTrends",
+          "startLine": 62,
+          "endLine": 70,
+          "params": [
+            "metric",
+            "window",
+            "granularity"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getDashboardOverview",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "getDashboardPerformance",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "getDashboardTrends",
+          "line": 62,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getDashboardOverview",
+          "callee": "api.get",
+          "lineNumber": 51
+        },
+        {
+          "caller": "getDashboardPerformance",
+          "callee": "api.get",
+          "lineNumber": 57
+        },
+        {
+          "caller": "getDashboardTrends",
+          "callee": "api.get",
+          "lineNumber": 67
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/services/ingestionService.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 153,
+      "nonEmptyLines": 135,
+      "functions": [
+        {
+          "name": "getIngestionPipelines",
+          "startLine": 103,
+          "endLine": 110,
+          "params": [
+            "pageNo",
+            "pageSize",
+            "keyword"
+          ]
+        },
+        {
+          "name": "getIngestionPipeline",
+          "startLine": 112,
+          "endLine": 114,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "createIngestionPipeline",
+          "startLine": 116,
+          "endLine": 118,
+          "params": [
+            "payload"
+          ]
+        },
+        {
+          "name": "updateIngestionPipeline",
+          "startLine": 120,
+          "endLine": 122,
+          "params": [
+            "id",
+            "payload"
+          ]
+        },
+        {
+          "name": "deleteIngestionPipeline",
+          "startLine": 124,
+          "endLine": 126,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "getIngestionTasks",
+          "startLine": 128,
+          "endLine": 132,
+          "params": [
+            "pageNo",
+            "pageSize",
+            "status"
+          ]
+        },
+        {
+          "name": "getIngestionTask",
+          "startLine": 134,
+          "endLine": 136,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "getIngestionTaskNodes",
+          "startLine": 138,
+          "endLine": 140,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "createIngestionTask",
+          "startLine": 142,
+          "endLine": 144,
+          "params": [
+            "payload"
+          ]
+        },
+        {
+          "name": "uploadIngestionTask",
+          "startLine": 146,
+          "endLine": 153,
+          "params": [
+            "pipelineId",
+            "file"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getIngestionPipelines",
+          "line": 103,
+          "isDefault": false
+        },
+        {
+          "name": "getIngestionPipeline",
+          "line": 112,
+          "isDefault": false
+        },
+        {
+          "name": "createIngestionPipeline",
+          "line": 116,
+          "isDefault": false
+        },
+        {
+          "name": "updateIngestionPipeline",
+          "line": 120,
+          "isDefault": false
+        },
+        {
+          "name": "deleteIngestionPipeline",
+          "line": 124,
+          "isDefault": false
+        },
+        {
+          "name": "getIngestionTasks",
+          "line": 128,
+          "isDefault": false
+        },
+        {
+          "name": "getIngestionTask",
+          "line": 134,
+          "isDefault": false
+        },
+        {
+          "name": "getIngestionTaskNodes",
+          "line": 138,
+          "isDefault": false
+        },
+        {
+          "name": "createIngestionTask",
+          "line": 142,
+          "isDefault": false
+        },
+        {
+          "name": "uploadIngestionTask",
+          "line": 146,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getIngestionPipelines",
+          "callee": "api.get",
+          "lineNumber": 104
+        },
+        {
+          "caller": "getIngestionPipeline",
+          "callee": "api.get",
+          "lineNumber": 113
+        },
+        {
+          "caller": "createIngestionPipeline",
+          "callee": "api.post",
+          "lineNumber": 117
+        },
+        {
+          "caller": "updateIngestionPipeline",
+          "callee": "api.put",
+          "lineNumber": 121
+        },
+        {
+          "caller": "deleteIngestionPipeline",
+          "callee": "api.delete",
+          "lineNumber": 125
+        },
+        {
+          "caller": "getIngestionTasks",
+          "callee": "api.get",
+          "lineNumber": 129
+        },
+        {
+          "caller": "getIngestionTask",
+          "callee": "api.get",
+          "lineNumber": 135
+        },
+        {
+          "caller": "getIngestionTaskNodes",
+          "callee": "api.get",
+          "lineNumber": 139
+        },
+        {
+          "caller": "createIngestionTask",
+          "callee": "api.post",
+          "lineNumber": 143
+        },
+        {
+          "caller": "uploadIngestionTask",
+          "callee": "formData.append",
+          "lineNumber": 148
+        },
+        {
+          "caller": "uploadIngestionTask",
+          "callee": "api.post",
+          "lineNumber": 149
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 10,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/services/intentTreeService.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 84,
+      "nonEmptyLines": 74,
+      "functions": [
+        {
+          "name": "getIntentTree",
+          "startLine": 58,
+          "endLine": 60,
+          "params": []
+        },
+        {
+          "name": "createIntentNode",
+          "startLine": 62,
+          "endLine": 64,
+          "params": [
+            "payload"
+          ]
+        },
+        {
+          "name": "updateIntentNode",
+          "startLine": 66,
+          "endLine": 68,
+          "params": [
+            "id",
+            "payload"
+          ]
+        },
+        {
+          "name": "deleteIntentNode",
+          "startLine": 70,
+          "endLine": 72,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "batchEnableIntentNodes",
+          "startLine": 74,
+          "endLine": 76,
+          "params": [
+            "ids"
+          ]
+        },
+        {
+          "name": "batchDisableIntentNodes",
+          "startLine": 78,
+          "endLine": 80,
+          "params": [
+            "ids"
+          ]
+        },
+        {
+          "name": "batchDeleteIntentNodes",
+          "startLine": 82,
+          "endLine": 84,
+          "params": [
+            "ids"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getIntentTree",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "createIntentNode",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "updateIntentNode",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "deleteIntentNode",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "batchEnableIntentNodes",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "batchDisableIntentNodes",
+          "line": 78,
+          "isDefault": false
+        },
+        {
+          "name": "batchDeleteIntentNodes",
+          "line": 82,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getIntentTree",
+          "callee": "api.get",
+          "lineNumber": 59
+        },
+        {
+          "caller": "createIntentNode",
+          "callee": "api.post",
+          "lineNumber": 63
+        },
+        {
+          "caller": "updateIntentNode",
+          "callee": "api.put",
+          "lineNumber": 67
+        },
+        {
+          "caller": "deleteIntentNode",
+          "callee": "api.delete",
+          "lineNumber": 71
+        },
+        {
+          "caller": "batchEnableIntentNodes",
+          "callee": "api.post",
+          "lineNumber": 75
+        },
+        {
+          "caller": "batchDisableIntentNodes",
+          "callee": "api.post",
+          "lineNumber": 79
+        },
+        {
+          "caller": "batchDeleteIntentNodes",
+          "callee": "api.post",
+          "lineNumber": 83
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 7,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/services/knowledgeService.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 346,
+      "nonEmptyLines": 310,
+      "functions": [
+        {
+          "name": "getChunkStrategies",
+          "startLine": 125,
+          "endLine": 127,
+          "params": []
+        },
+        {
+          "name": "getKnowledgeBases",
+          "startLine": 129,
+          "endLine": 134,
+          "params": [
+            "current",
+            "size",
+            "name"
+          ]
+        },
+        {
+          "name": "getKnowledgeBasesPage",
+          "startLine": 136,
+          "endLine": 144,
+          "params": [
+            "current",
+            "size",
+            "name"
+          ]
+        },
+        {
+          "name": "getKnowledgeBase",
+          "startLine": 146,
+          "endLine": 148,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "createKnowledgeBase",
+          "startLine": 150,
+          "endLine": 152,
+          "params": [
+            "data"
+          ]
+        },
+        {
+          "name": "updateKnowledgeBase",
+          "startLine": 154,
+          "endLine": 156,
+          "params": [
+            "id",
+            "data"
+          ]
+        },
+        {
+          "name": "renameKnowledgeBase",
+          "startLine": 158,
+          "endLine": 160,
+          "params": [
+            "id",
+            "name"
+          ]
+        },
+        {
+          "name": "deleteKnowledgeBase",
+          "startLine": 162,
+          "endLine": 164,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "getDocumentsPage",
+          "startLine": 167,
+          "endLine": 179,
+          "params": [
+            "kbId",
+            "params"
+          ]
+        },
+        {
+          "name": "searchKnowledgeDocuments",
+          "startLine": 181,
+          "endLine": 191,
+          "params": [
+            "keyword",
+            "limit"
+          ]
+        },
+        {
+          "name": "getDocuments",
+          "startLine": 193,
+          "endLine": 199,
+          "params": [
+            "kbId",
+            "params"
+          ]
+        },
+        {
+          "name": "uploadDocument",
+          "startLine": 201,
+          "endLine": 236,
+          "params": [
+            "kbId",
+            "payload"
+          ]
+        },
+        {
+          "name": "getDocument",
+          "startLine": 238,
+          "endLine": 240,
+          "params": [
+            "docId"
+          ]
+        },
+        {
+          "name": "updateDocument",
+          "startLine": 242,
+          "endLine": 253,
+          "params": [
+            "docId",
+            "data"
+          ]
+        },
+        {
+          "name": "startDocumentChunk",
+          "startLine": 255,
+          "endLine": 257,
+          "params": [
+            "docId"
+          ]
+        },
+        {
+          "name": "enableDocument",
+          "startLine": 259,
+          "endLine": 263,
+          "params": [
+            "docId",
+            "enabled"
+          ]
+        },
+        {
+          "name": "deleteDocument",
+          "startLine": 265,
+          "endLine": 267,
+          "params": [
+            "docId"
+          ]
+        },
+        {
+          "name": "getChunksPage",
+          "startLine": 270,
+          "endLine": 284,
+          "params": [
+            "docId",
+            "params"
+          ]
+        },
+        {
+          "name": "getChunks",
+          "startLine": 286,
+          "endLine": 292,
+          "params": [
+            "docId",
+            "params"
+          ]
+        },
+        {
+          "name": "createChunk",
+          "startLine": 294,
+          "endLine": 299,
+          "params": [
+            "docId",
+            "payload"
+          ]
+        },
+        {
+          "name": "updateChunk",
+          "startLine": 301,
+          "endLine": 307,
+          "params": [
+            "docId",
+            "chunkId",
+            "payload"
+          ]
+        },
+        {
+          "name": "deleteChunk",
+          "startLine": 309,
+          "endLine": 311,
+          "params": [
+            "docId",
+            "chunkId"
+          ]
+        },
+        {
+          "name": "toggleChunk",
+          "startLine": 313,
+          "endLine": 317,
+          "params": [
+            "docId",
+            "chunkId",
+            "enabled"
+          ]
+        },
+        {
+          "name": "batchToggleChunks",
+          "startLine": 319,
+          "endLine": 329,
+          "params": [
+            "docId",
+            "enabled",
+            "chunkIds"
+          ]
+        },
+        {
+          "name": "getChunkLogsPage",
+          "startLine": 332,
+          "endLine": 346,
+          "params": [
+            "docId",
+            "current",
+            "size"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getChunkStrategies",
+          "line": 125,
+          "isDefault": false
+        },
+        {
+          "name": "getKnowledgeBases",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "getKnowledgeBasesPage",
+          "line": 136,
+          "isDefault": false
+        },
+        {
+          "name": "getKnowledgeBase",
+          "line": 146,
+          "isDefault": false
+        },
+        {
+          "name": "createKnowledgeBase",
+          "line": 150,
+          "isDefault": false
+        },
+        {
+          "name": "updateKnowledgeBase",
+          "line": 154,
+          "isDefault": false
+        },
+        {
+          "name": "renameKnowledgeBase",
+          "line": 158,
+          "isDefault": false
+        },
+        {
+          "name": "deleteKnowledgeBase",
+          "line": 162,
+          "isDefault": false
+        },
+        {
+          "name": "getDocumentsPage",
+          "line": 167,
+          "isDefault": false
+        },
+        {
+          "name": "searchKnowledgeDocuments",
+          "line": 181,
+          "isDefault": false
+        },
+        {
+          "name": "getDocuments",
+          "line": 193,
+          "isDefault": false
+        },
+        {
+          "name": "uploadDocument",
+          "line": 201,
+          "isDefault": false
+        },
+        {
+          "name": "getDocument",
+          "line": 238,
+          "isDefault": false
+        },
+        {
+          "name": "updateDocument",
+          "line": 242,
+          "isDefault": false
+        },
+        {
+          "name": "startDocumentChunk",
+          "line": 255,
+          "isDefault": false
+        },
+        {
+          "name": "enableDocument",
+          "line": 259,
+          "isDefault": false
+        },
+        {
+          "name": "deleteDocument",
+          "line": 265,
+          "isDefault": false
+        },
+        {
+          "name": "getChunksPage",
+          "line": 270,
+          "isDefault": false
+        },
+        {
+          "name": "getChunks",
+          "line": 286,
+          "isDefault": false
+        },
+        {
+          "name": "createChunk",
+          "line": 294,
+          "isDefault": false
+        },
+        {
+          "name": "updateChunk",
+          "line": 301,
+          "isDefault": false
+        },
+        {
+          "name": "deleteChunk",
+          "line": 309,
+          "isDefault": false
+        },
+        {
+          "name": "toggleChunk",
+          "line": 313,
+          "isDefault": false
+        },
+        {
+          "name": "batchToggleChunks",
+          "line": 319,
+          "isDefault": false
+        },
+        {
+          "name": "getChunkLogsPage",
+          "line": 332,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getChunkStrategies",
+          "callee": "api.get",
+          "lineNumber": 126
+        },
+        {
+          "caller": "getKnowledgeBases",
+          "callee": "await api.get",
+          "lineNumber": 130
+        },
+        {
+          "caller": "getKnowledgeBasesPage",
+          "callee": "api.get",
+          "lineNumber": 141
+        },
+        {
+          "caller": "getKnowledgeBase",
+          "callee": "api.get",
+          "lineNumber": 147
+        },
+        {
+          "caller": "createKnowledgeBase",
+          "callee": "api.post",
+          "lineNumber": 151
+        },
+        {
+          "caller": "updateKnowledgeBase",
+          "callee": "api.put",
+          "lineNumber": 155
+        },
+        {
+          "caller": "renameKnowledgeBase",
+          "callee": "api.put",
+          "lineNumber": 159
+        },
+        {
+          "caller": "deleteKnowledgeBase",
+          "callee": "api.delete",
+          "lineNumber": 163
+        },
+        {
+          "caller": "getDocumentsPage",
+          "callee": "api.get",
+          "lineNumber": 171
+        },
+        {
+          "caller": "searchKnowledgeDocuments",
+          "callee": "api.get",
+          "lineNumber": 185
+        },
+        {
+          "caller": "getDocuments",
+          "callee": "getDocumentsPage",
+          "lineNumber": 197
+        },
+        {
+          "caller": "uploadDocument",
+          "callee": "formData.append",
+          "lineNumber": 206
+        },
+        {
+          "caller": "uploadDocument",
+          "callee": "formData.append",
+          "lineNumber": 208
+        },
+        {
+          "caller": "uploadDocument",
+          "callee": "formData.append",
+          "lineNumber": 211
+        },
+        {
+          "caller": "uploadDocument",
+          "callee": "formData.append",
+          "lineNumber": 214
+        },
+        {
+          "caller": "uploadDocument",
+          "callee": "String",
+          "lineNumber": 214
+        },
+        {
+          "caller": "uploadDocument",
+          "callee": "formData.append",
+          "lineNumber": 217
+        },
+        {
+          "caller": "uploadDocument",
+          "callee": "formData.append",
+          "lineNumber": 220
+        },
+        {
+          "caller": "uploadDocument",
+          "callee": "formData.append",
+          "lineNumber": 223
+        },
+        {
+          "caller": "uploadDocument",
+          "callee": "formData.append",
+          "lineNumber": 226
+        },
+        {
+          "caller": "uploadDocument",
+          "callee": "formData.append",
+          "lineNumber": 229
+        },
+        {
+          "caller": "uploadDocument",
+          "callee": "api.post",
+          "lineNumber": 231
+        },
+        {
+          "caller": "getDocument",
+          "callee": "api.get",
+          "lineNumber": 239
+        },
+        {
+          "caller": "updateDocument",
+          "callee": "api.put",
+          "lineNumber": 252
+        },
+        {
+          "caller": "startDocumentChunk",
+          "callee": "api.post",
+          "lineNumber": 256
+        },
+        {
+          "caller": "enableDocument",
+          "callee": "api.patch",
+          "lineNumber": 260
+        },
+        {
+          "caller": "deleteDocument",
+          "callee": "api.delete",
+          "lineNumber": 266
+        },
+        {
+          "caller": "getChunksPage",
+          "callee": "api.get",
+          "lineNumber": 274
+        },
+        {
+          "caller": "getChunks",
+          "callee": "getChunksPage",
+          "lineNumber": 290
+        },
+        {
+          "caller": "createChunk",
+          "callee": "api.post",
+          "lineNumber": 298
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "api.put",
+          "lineNumber": 306
+        },
+        {
+          "caller": "deleteChunk",
+          "callee": "api.delete",
+          "lineNumber": 310
+        },
+        {
+          "caller": "toggleChunk",
+          "callee": "api.patch",
+          "lineNumber": 314
+        },
+        {
+          "caller": "batchToggleChunks",
+          "callee": "api.patch",
+          "lineNumber": 324
+        },
+        {
+          "caller": "getChunkLogsPage",
+          "callee": "api.get",
+          "lineNumber": 337
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 25,
+        "functionCount": 25,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/services/queryTermMappingService.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 52,
+      "nonEmptyLines": 45,
+      "functions": [
+        {
+          "name": "getQueryTermMappingsPage",
+          "startLine": 32,
+          "endLine": 40,
+          "params": [
+            "current",
+            "size",
+            "keyword"
+          ]
+        },
+        {
+          "name": "createQueryTermMapping",
+          "startLine": 42,
+          "endLine": 44,
+          "params": [
+            "payload"
+          ]
+        },
+        {
+          "name": "updateQueryTermMapping",
+          "startLine": 46,
+          "endLine": 48,
+          "params": [
+            "id",
+            "payload"
+          ]
+        },
+        {
+          "name": "deleteQueryTermMapping",
+          "startLine": 50,
+          "endLine": 52,
+          "params": [
+            "id"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getQueryTermMappingsPage",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "createQueryTermMapping",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "updateQueryTermMapping",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "deleteQueryTermMapping",
+          "line": 50,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getQueryTermMappingsPage",
+          "callee": "api.get",
+          "lineNumber": 37
+        },
+        {
+          "caller": "createQueryTermMapping",
+          "callee": "api.post",
+          "lineNumber": 43
+        },
+        {
+          "caller": "updateQueryTermMapping",
+          "callee": "api.put",
+          "lineNumber": 47
+        },
+        {
+          "caller": "deleteQueryTermMapping",
+          "callee": "api.delete",
+          "lineNumber": 51
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    }
+  ]
+}

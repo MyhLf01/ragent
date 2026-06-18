@@ -1,0 +1,292 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/KnowledgeBaseController.java",
+      "language": "java",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseCreateRequest.java",
+      "language": "java",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBasePageRequest.java",
+      "language": "java",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseUpdateRequest.java",
+      "language": "java",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/ChunkStrategyVO.java",
+      "language": "java",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeBaseVO.java",
+      "language": "java",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeBaseService.java",
+      "language": "java",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeBaseServiceImpl.java",
+      "language": "java",
+      "sizeLines": 254,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/DemoModeInterceptor.java",
+      "language": "java",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGConfigProperties.java",
+      "language": "java",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java",
+      "language": "java",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGRateLimitProperties.java",
+      "language": "java",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/RAGChatController.java",
+      "language": "java",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/RAGSettingsController.java",
+      "language": "java",
+      "sizeLines": 173,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/SystemSettingsVO.java",
+      "language": "java",
+      "sizeLines": 320,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/MilvusVectorStoreAdmin.java",
+      "language": "java",
+      "sizeLines": 129,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/MilvusVectorStoreService.java",
+      "language": "java",
+      "sizeLines": 210,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/PgVectorStoreAdmin.java",
+      "language": "java",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceSpec.java",
+      "language": "java",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorStoreAdmin.java",
+      "language": "java",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RAGChatService.java",
+      "language": "java",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/config/SaTokenConfig.java",
+      "language": "java",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/config/WebAutoConfiguration.java",
+      "language": "java",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "language": "java",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/IErrorCode.java",
+      "language": "java",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/AbstractException.java",
+      "language": "java",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/kb/VectorCollectionAlreadyExistsException.java",
+      "language": "java",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentSubmit.java",
+      "language": "java",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/GlobalExceptionHandler.java",
+      "language": "java",
+      "sizeLines": 138,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java",
+      "language": "java",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/KnowledgeBaseController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingMode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBasePageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/ChunkStrategyVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeBaseVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeBaseService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseCreateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBasePageRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseUpdateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/ChunkStrategyVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeBaseVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeBaseService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBasePageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeBaseVO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeBaseServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBasePageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeBaseVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeBaseDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeBaseMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeBaseService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceId.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceSpec.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorStoreAdmin.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ServiceException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/DemoModeInterceptor.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/MessageDelta.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGConfigProperties.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGRateLimitProperties.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/RAGChatController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RAGChatService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentSubmit.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/RAGSettingsController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/MemoryProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGConfigProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGRateLimitProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/SystemSettingsVO.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/SystemSettingsVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/MilvusVectorStoreAdmin.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/kb/VectorCollectionAlreadyExistsException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/MilvusVectorStoreService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/PgVectorStoreAdmin.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceSpec.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorStoreAdmin.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RAGChatService.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/config/SaTokenConfig.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/DemoModeInterceptor.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/config/WebAutoConfiguration.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/GlobalExceptionHandler.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/IErrorCode.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/AbstractException.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/IErrorCode.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/kb/VectorCollectionAlreadyExistsException.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ServiceException.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentSubmit.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/GlobalExceptionHandler.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/AbstractException.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/AbstractException.java"
+    ]
+  }
+}

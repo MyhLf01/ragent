@@ -1,0 +1,233 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/config/SaTokenStpInterfaceImpl.java",
+      "language": "java",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/config/UserContextInterceptor.java",
+      "language": "java",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/AuthController.java",
+      "language": "java",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/UserController.java",
+      "language": "java",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/ChangePasswordRequest.java",
+      "language": "java",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/LoginRequest.java",
+      "language": "java",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserCreateRequest.java",
+      "language": "java",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserPageRequest.java",
+      "language": "java",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserUpdateRequest.java",
+      "language": "java",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/CurrentUserVO.java",
+      "language": "java",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/LoginVO.java",
+      "language": "java",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/UserVO.java",
+      "language": "java",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/entity/UserDO.java",
+      "language": "java",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/mapper/UserMapper.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/enums/UserRole.java",
+      "language": "java",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/AuthService.java",
+      "language": "java",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/UserService.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/impl/AuthServiceImpl.java",
+      "language": "java",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/impl/UserServiceImpl.java",
+      "language": "java",
+      "sizeLines": 213,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/LoginUser.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "language": "java",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java",
+      "language": "java",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentSubmitAspect.java",
+      "language": "java",
+      "sizeLines": 118,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/config/SaTokenStpInterfaceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/entity/UserDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/mapper/UserMapper.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/config/UserContextInterceptor.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/entity/UserDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/mapper/UserMapper.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/LoginUser.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/AuthController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/LoginRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/LoginVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/AuthService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/UserController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/ChangePasswordRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/CurrentUserVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/UserVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/UserService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/LoginUser.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/ChangePasswordRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/LoginRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserCreateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserPageRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserUpdateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/CurrentUserVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/LoginVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/UserVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/entity/UserDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/mapper/UserMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/entity/UserDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/enums/UserRole.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/AuthService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/LoginRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/LoginVO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/UserService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/ChangePasswordRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/UserVO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/impl/AuthServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/LoginRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/LoginVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/entity/UserDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/mapper/UserMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/AuthService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/impl/UserServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/ChangePasswordRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/UserVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/entity/UserDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/mapper/UserMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/enums/UserRole.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/UserService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/LoginUser.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/LoginUser.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/IErrorCode.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentSubmitAspect.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ]
+  }
+}

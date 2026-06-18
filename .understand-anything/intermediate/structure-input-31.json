@@ -1,0 +1,184 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "frontend/src/pages/admin/knowledge/KnowledgeDocumentsPage.tsx",
+      "language": "typescript",
+      "sizeLines": 1607,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/knowledge/KnowledgeListPage.tsx",
+      "language": "typescript",
+      "sizeLines": 466,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/query-term-mapping/QueryTermMappingPage.tsx",
+      "language": "typescript",
+      "sizeLines": 439,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/sample-questions/SampleQuestionPage.tsx",
+      "language": "typescript",
+      "sizeLines": 346,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/settings/SystemSettingsPage.tsx",
+      "language": "typescript",
+      "sizeLines": 294,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/components/FilterBar.tsx",
+      "language": "typescript",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/components/PageHeader.tsx",
+      "language": "typescript",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/components/RunsTable.tsx",
+      "language": "typescript",
+      "sizeLines": 145,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/components/StatCard.tsx",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/RagTraceDetailPage.tsx",
+      "language": "typescript",
+      "sizeLines": 529,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/RagTracePage.tsx",
+      "language": "typescript",
+      "sizeLines": 201,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/traces/traceUtils.ts",
+      "language": "typescript",
+      "sizeLines": 101,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/admin/users/UserListPage.tsx",
+      "language": "typescript",
+      "sizeLines": 374,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/ChatPage.tsx",
+      "language": "typescript",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/LoginPage.tsx",
+      "language": "typescript",
+      "sizeLines": 101,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/pages/NotFoundPage.tsx",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/router.tsx",
+      "language": "typescript",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/api.ts",
+      "language": "typescript",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/authService.ts",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/chatService.ts",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/dashboardService.ts",
+      "language": "typescript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/ingestionService.ts",
+      "language": "typescript",
+      "sizeLines": 153,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/intentTreeService.ts",
+      "language": "typescript",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/knowledgeService.ts",
+      "language": "typescript",
+      "sizeLines": 346,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/services/queryTermMappingService.ts",
+      "language": "typescript",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "frontend/src/pages/admin/knowledge/KnowledgeDocumentsPage.tsx": [],
+    "frontend/src/pages/admin/knowledge/KnowledgeListPage.tsx": [],
+    "frontend/src/pages/admin/query-term-mapping/QueryTermMappingPage.tsx": [],
+    "frontend/src/pages/admin/sample-questions/SampleQuestionPage.tsx": [],
+    "frontend/src/pages/admin/settings/SystemSettingsPage.tsx": [],
+    "frontend/src/pages/admin/traces/components/FilterBar.tsx": [],
+    "frontend/src/pages/admin/traces/components/PageHeader.tsx": [],
+    "frontend/src/pages/admin/traces/components/RunsTable.tsx": [],
+    "frontend/src/pages/admin/traces/components/StatCard.tsx": [],
+    "frontend/src/pages/admin/traces/RagTraceDetailPage.tsx": [],
+    "frontend/src/pages/admin/traces/RagTracePage.tsx": [],
+    "frontend/src/pages/admin/traces/traceUtils.ts": [],
+    "frontend/src/pages/admin/users/UserListPage.tsx": [],
+    "frontend/src/pages/ChatPage.tsx": [],
+    "frontend/src/pages/LoginPage.tsx": [],
+    "frontend/src/pages/NotFoundPage.tsx": [],
+    "frontend/src/router.tsx": [],
+    "frontend/src/services/api.ts": [],
+    "frontend/src/services/authService.ts": [],
+    "frontend/src/services/chatService.ts": [],
+    "frontend/src/services/dashboardService.ts": [],
+    "frontend/src/services/ingestionService.ts": [],
+    "frontend/src/services/intentTreeService.ts": [],
+    "frontend/src/services/knowledgeService.ts": [
+      "frontend/src/services/api.ts"
+    ],
+    "frontend/src/services/queryTermMappingService.ts": []
+  }
+}

@@ -1,0 +1,999 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 9,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/SampleQuestionController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 97,
+      "nonEmptyLines": 86,
+      "functions": [
+        {
+          "name": "listSampleQuestions",
+          "startLine": 51,
+          "endLine": 54,
+          "params": []
+        },
+        {
+          "name": "pageQuery",
+          "startLine": 59,
+          "endLine": 62,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "queryById",
+          "startLine": 67,
+          "endLine": 70,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "create",
+          "startLine": 75,
+          "endLine": 78,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 83,
+          "endLine": 87,
+          "params": [
+            "id",
+            "requestParam"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 92,
+          "endLine": 96,
+          "params": [
+            "id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SampleQuestionController",
+          "startLine": 42,
+          "endLine": 97,
+          "methods": [
+            "listSampleQuestions",
+            "pageQuery",
+            "queryById",
+            "create",
+            "update",
+            "delete"
+          ],
+          "properties": [
+            "sampleQuestionService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listSampleQuestions",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "pageQuery",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "queryById",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "create",
+          "line": 75,
+          "isDefault": false
+        },
+        {
+          "name": "update",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "delete",
+          "line": 92,
+          "isDefault": false
+        },
+        {
+          "name": "SampleQuestionController",
+          "line": 42,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listSampleQuestions",
+          "callee": "Results.success",
+          "lineNumber": 53
+        },
+        {
+          "caller": "listSampleQuestions",
+          "callee": "sampleQuestionService.listRandomQuestions",
+          "lineNumber": 53
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Results.success",
+          "lineNumber": 61
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "sampleQuestionService.pageQuery",
+          "lineNumber": 61
+        },
+        {
+          "caller": "queryById",
+          "callee": "Results.success",
+          "lineNumber": 69
+        },
+        {
+          "caller": "queryById",
+          "callee": "sampleQuestionService.queryById",
+          "lineNumber": 69
+        },
+        {
+          "caller": "create",
+          "callee": "Results.success",
+          "lineNumber": 77
+        },
+        {
+          "caller": "create",
+          "callee": "sampleQuestionService.create",
+          "lineNumber": 77
+        },
+        {
+          "caller": "update",
+          "callee": "sampleQuestionService.update",
+          "lineNumber": 85
+        },
+        {
+          "caller": "update",
+          "callee": "Results.success",
+          "lineNumber": 86
+        },
+        {
+          "caller": "delete",
+          "callee": "sampleQuestionService.delete",
+          "lineNumber": 94
+        },
+        {
+          "caller": "delete",
+          "callee": "Results.success",
+          "lineNumber": 95
+        }
+      ],
+      "metrics": {
+        "importCount": 7,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 42,
+      "nonEmptyLines": 36,
+      "classes": [
+        {
+          "name": "SampleQuestionCreateRequest",
+          "startLine": 25,
+          "endLine": 42,
+          "methods": [],
+          "properties": [
+            "title",
+            "description",
+            "question"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SampleQuestionCreateRequest",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionPageRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 29,
+      "classes": [
+        {
+          "name": "SampleQuestionPageRequest",
+          "startLine": 26,
+          "endLine": 33,
+          "methods": [],
+          "properties": [
+            "keyword"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SampleQuestionPageRequest",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionUpdateRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 42,
+      "nonEmptyLines": 36,
+      "classes": [
+        {
+          "name": "SampleQuestionUpdateRequest",
+          "startLine": 25,
+          "endLine": 42,
+          "methods": [],
+          "properties": [
+            "title",
+            "description",
+            "question"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SampleQuestionUpdateRequest",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/SampleQuestionVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 42,
+      "nonEmptyLines": 37,
+      "classes": [
+        {
+          "name": "SampleQuestionVO",
+          "startLine": 30,
+          "endLine": 42,
+          "methods": [],
+          "properties": [
+            "id",
+            "title",
+            "description",
+            "question",
+            "createTime",
+            "updateTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SampleQuestionVO",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/SampleQuestionDO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 58,
+      "classes": [
+        {
+          "name": "SampleQuestionDO",
+          "startLine": 36,
+          "endLine": 69,
+          "methods": [],
+          "properties": [
+            "id",
+            "title",
+            "description",
+            "question",
+            "createTime",
+            "updateTime",
+            "deleted"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SampleQuestionDO",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/SampleQuestionMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "SampleQuestionMapper",
+          "startLine": 23,
+          "endLine": 24,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SampleQuestionMapper",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/SampleQuestionService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 49,
+      "classes": [
+        {
+          "name": "SampleQuestionService",
+          "startLine": 28,
+          "endLine": 59,
+          "methods": [
+            "create",
+            "update",
+            "delete",
+            "queryById",
+            "pageQuery",
+            "listRandomQuestions"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SampleQuestionService",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/SampleQuestionServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 147,
+      "nonEmptyLines": 130,
+      "functions": [
+        {
+          "name": "create",
+          "startLine": 46,
+          "endLine": 59,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 61,
+          "endLine": 79,
+          "params": [
+            "id",
+            "requestParam"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 81,
+          "endLine": 85,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "queryById",
+          "startLine": 87,
+          "endLine": 91,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "pageQuery",
+          "startLine": 93,
+          "endLine": 110,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "listRandomQuestions",
+          "startLine": 112,
+          "endLine": 125,
+          "params": []
+        },
+        {
+          "name": "loadById",
+          "startLine": 127,
+          "endLine": 135,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "toVO",
+          "startLine": 137,
+          "endLine": 146,
+          "params": [
+            "record"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SampleQuestionServiceImpl",
+          "startLine": 38,
+          "endLine": 147,
+          "methods": [
+            "create",
+            "update",
+            "delete",
+            "queryById",
+            "pageQuery",
+            "listRandomQuestions",
+            "loadById",
+            "toVO"
+          ],
+          "properties": [
+            "DEFAULT_LIMIT",
+            "sampleQuestionMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "create",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "update",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "delete",
+          "line": 81,
+          "isDefault": false
+        },
+        {
+          "name": "queryById",
+          "line": 87,
+          "isDefault": false
+        },
+        {
+          "name": "pageQuery",
+          "line": 93,
+          "isDefault": false
+        },
+        {
+          "name": "listRandomQuestions",
+          "line": 112,
+          "isDefault": false
+        },
+        {
+          "name": "SampleQuestionServiceImpl",
+          "line": 38,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "create",
+          "callee": "Assert.notNull",
+          "lineNumber": 48
+        },
+        {
+          "caller": "create",
+          "callee": "new ClientException",
+          "lineNumber": 48
+        },
+        {
+          "caller": "create",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 49
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getQuestion",
+          "lineNumber": 49
+        },
+        {
+          "caller": "create",
+          "callee": "Assert.notBlank",
+          "lineNumber": 50
+        },
+        {
+          "caller": "create",
+          "callee": "new ClientException",
+          "lineNumber": 50
+        },
+        {
+          "caller": "create",
+          "callee": "SampleQuestionDO.builder()\r\n                .title(StrUtil.trimToNull(requestParam.getTitle()))\r\n                .description(StrUtil.trimToNull(requestParam.getDescription()))\r\n                .question(question).build",
+          "lineNumber": 52
+        },
+        {
+          "caller": "create",
+          "callee": "SampleQuestionDO.builder()\r\n                .title(StrUtil.trimToNull(requestParam.getTitle()))\r\n                .description(StrUtil.trimToNull(requestParam.getDescription())).question",
+          "lineNumber": 52
+        },
+        {
+          "caller": "create",
+          "callee": "SampleQuestionDO.builder()\r\n                .title(StrUtil.trimToNull(requestParam.getTitle())).description",
+          "lineNumber": 52
+        },
+        {
+          "caller": "create",
+          "callee": "SampleQuestionDO.builder().title",
+          "lineNumber": 52
+        },
+        {
+          "caller": "create",
+          "callee": "SampleQuestionDO.builder",
+          "lineNumber": 52
+        },
+        {
+          "caller": "create",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 53
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getTitle",
+          "lineNumber": 53
+        },
+        {
+          "caller": "create",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 54
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getDescription",
+          "lineNumber": 54
+        },
+        {
+          "caller": "create",
+          "callee": "sampleQuestionMapper.insert",
+          "lineNumber": 57
+        },
+        {
+          "caller": "create",
+          "callee": "String.valueOf",
+          "lineNumber": 58
+        },
+        {
+          "caller": "create",
+          "callee": "record.getId",
+          "lineNumber": 58
+        },
+        {
+          "caller": "update",
+          "callee": "Assert.notNull",
+          "lineNumber": 63
+        },
+        {
+          "caller": "update",
+          "callee": "new ClientException",
+          "lineNumber": 63
+        },
+        {
+          "caller": "update",
+          "callee": "loadById",
+          "lineNumber": 64
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getQuestion",
+          "lineNumber": 66
+        },
+        {
+          "caller": "update",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 67
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getQuestion",
+          "lineNumber": 67
+        },
+        {
+          "caller": "update",
+          "callee": "Assert.notBlank",
+          "lineNumber": 68
+        },
+        {
+          "caller": "update",
+          "callee": "new ClientException",
+          "lineNumber": 68
+        },
+        {
+          "caller": "update",
+          "callee": "record.setQuestion",
+          "lineNumber": 69
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getTitle",
+          "lineNumber": 71
+        },
+        {
+          "caller": "update",
+          "callee": "record.setTitle",
+          "lineNumber": 72
+        },
+        {
+          "caller": "update",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 72
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getTitle",
+          "lineNumber": 72
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getDescription",
+          "lineNumber": 74
+        },
+        {
+          "caller": "update",
+          "callee": "record.setDescription",
+          "lineNumber": 75
+        },
+        {
+          "caller": "update",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 75
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getDescription",
+          "lineNumber": 75
+        },
+        {
+          "caller": "update",
+          "callee": "sampleQuestionMapper.updateById",
+          "lineNumber": 78
+        },
+        {
+          "caller": "delete",
+          "callee": "loadById",
+          "lineNumber": 83
+        },
+        {
+          "caller": "delete",
+          "callee": "sampleQuestionMapper.deleteById",
+          "lineNumber": 84
+        },
+        {
+          "caller": "delete",
+          "callee": "record.getId",
+          "lineNumber": 84
+        },
+        {
+          "caller": "queryById",
+          "callee": "loadById",
+          "lineNumber": 89
+        },
+        {
+          "caller": "queryById",
+          "callee": "toVO",
+          "lineNumber": 90
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 95
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "requestParam.getKeyword",
+          "lineNumber": 95
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "new Page<>",
+          "lineNumber": 96
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "requestParam.getCurrent",
+          "lineNumber": 96
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "requestParam.getSize",
+          "lineNumber": 96
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "sampleQuestionMapper.selectPage",
+          "lineNumber": 97
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.lambdaQuery(SampleQuestionDO.class)\r\n                        .eq(SampleQuestionDO::getDeleted, 0)\r\n                        .and(StrUtil.isNotBlank(keyword), wrapper -> wrapper\r\n                                .like(SampleQuestionDO::getTitle, keyword)\r\n                                .or()\r\n                                .like(SampleQuestionDO::getDescription, keyword)\r\n                                .or()\r\n                                .like(SampleQuestionDO::getQuestion, keyword)).orderByDesc",
+          "lineNumber": 99
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.lambdaQuery(SampleQuestionDO.class)\r\n                        .eq(SampleQuestionDO::getDeleted, 0).and",
+          "lineNumber": 99
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.lambdaQuery(SampleQuestionDO.class).eq",
+          "lineNumber": 99
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 99
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "StrUtil.isNotBlank",
+          "lineNumber": 101
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "wrapper\r\n                                .like(SampleQuestionDO::getTitle, keyword)\r\n                                .or()\r\n                                .like(SampleQuestionDO::getDescription, keyword)\r\n                                .or().like",
+          "lineNumber": 101
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "wrapper\r\n                                .like(SampleQuestionDO::getTitle, keyword)\r\n                                .or()\r\n                                .like(SampleQuestionDO::getDescription, keyword).or",
+          "lineNumber": 101
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "wrapper\r\n                                .like(SampleQuestionDO::getTitle, keyword)\r\n                                .or().like",
+          "lineNumber": 101
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "wrapper\r\n                                .like(SampleQuestionDO::getTitle, keyword).or",
+          "lineNumber": 101
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "wrapper.like",
+          "lineNumber": 101
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "result.convert",
+          "lineNumber": 109
+        },
+        {
+          "caller": "listRandomQuestions",
+          "callee": "sampleQuestionMapper.selectList",
+          "lineNumber": 114
+        },
+        {
+          "caller": "listRandomQuestions",
+          "callee": "Wrappers.lambdaQuery(SampleQuestionDO.class)\r\n                        .eq(SampleQuestionDO::getDeleted, 0).last",
+          "lineNumber": 115
+        },
+        {
+          "caller": "listRandomQuestions",
+          "callee": "Wrappers.lambdaQuery(SampleQuestionDO.class).eq",
+          "lineNumber": 115
+        },
+        {
+          "caller": "listRandomQuestions",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 115
+        },
+        {
+          "caller": "listRandomQuestions",
+          "callee": "records.isEmpty",
+          "lineNumber": 119
+        },
+        {
+          "caller": "listRandomQuestions",
+          "callee": "List.of",
+          "lineNumber": 120
+        },
+        {
+          "caller": "listRandomQuestions",
+          "callee": "records.stream()\r\n                .map(this::toVO).toList",
+          "lineNumber": 122
+        },
+        {
+          "caller": "listRandomQuestions",
+          "callee": "records.stream().map",
+          "lineNumber": 122
+        },
+        {
+          "caller": "listRandomQuestions",
+          "callee": "records.stream",
+          "lineNumber": 122
+        },
+        {
+          "caller": "loadById",
+          "callee": "sampleQuestionMapper.selectOne",
+          "lineNumber": 128
+        },
+        {
+          "caller": "loadById",
+          "callee": "Wrappers.lambdaQuery(SampleQuestionDO.class)\r\n                        .eq(SampleQuestionDO::getId, id).eq",
+          "lineNumber": 129
+        },
+        {
+          "caller": "loadById",
+          "callee": "Wrappers.lambdaQuery(SampleQuestionDO.class).eq",
+          "lineNumber": 129
+        },
+        {
+          "caller": "loadById",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 129
+        },
+        {
+          "caller": "loadById",
+          "callee": "Assert.notNull",
+          "lineNumber": 133
+        },
+        {
+          "caller": "loadById",
+          "callee": "new ClientException",
+          "lineNumber": 133
+        },
+        {
+          "caller": "toVO",
+          "callee": "SampleQuestionVO.builder()\r\n                .id(String.valueOf(record.getId()))\r\n                .title(record.getTitle())\r\n                .description(record.getDescription())\r\n                .question(record.getQuestion())\r\n                .createTime(record.getCreateTime())\r\n                .updateTime(record.getUpdateTime()).build",
+          "lineNumber": 138
+        },
+        {
+          "caller": "toVO",
+          "callee": "SampleQuestionVO.builder()\r\n                .id(String.valueOf(record.getId()))\r\n                .title(record.getTitle())\r\n                .description(record.getDescription())\r\n                .question(record.getQuestion())\r\n                .createTime(record.getCreateTime()).updateTime",
+          "lineNumber": 138
+        },
+        {
+          "caller": "toVO",
+          "callee": "SampleQuestionVO.builder()\r\n                .id(String.valueOf(record.getId()))\r\n                .title(record.getTitle())\r\n                .description(record.getDescription())\r\n                .question(record.getQuestion()).createTime",
+          "lineNumber": 138
+        },
+        {
+          "caller": "toVO",
+          "callee": "SampleQuestionVO.builder()\r\n                .id(String.valueOf(record.getId()))\r\n                .title(record.getTitle())\r\n                .description(record.getDescription()).question",
+          "lineNumber": 138
+        },
+        {
+          "caller": "toVO",
+          "callee": "SampleQuestionVO.builder()\r\n                .id(String.valueOf(record.getId()))\r\n                .title(record.getTitle()).description",
+          "lineNumber": 138
+        },
+        {
+          "caller": "toVO",
+          "callee": "SampleQuestionVO.builder()\r\n                .id(String.valueOf(record.getId())).title",
+          "lineNumber": 138
+        },
+        {
+          "caller": "toVO",
+          "callee": "SampleQuestionVO.builder().id",
+          "lineNumber": 138
+        },
+        {
+          "caller": "toVO",
+          "callee": "SampleQuestionVO.builder",
+          "lineNumber": 138
+        },
+        {
+          "caller": "toVO",
+          "callee": "String.valueOf",
+          "lineNumber": 139
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getId",
+          "lineNumber": 139
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getTitle",
+          "lineNumber": 140
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getDescription",
+          "lineNumber": 141
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getQuestion",
+          "lineNumber": 142
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getCreateTime",
+          "lineNumber": 143
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getUpdateTime",
+          "lineNumber": 144
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 7,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    }
+  ]
+}

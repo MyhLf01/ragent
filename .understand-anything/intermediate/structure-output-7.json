@@ -1,0 +1,6370 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 28,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/DashboardController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 48,
+      "functions": [
+        {
+          "name": "overview",
+          "startLine": 39,
+          "endLine": 42,
+          "params": [
+            "window"
+          ]
+        },
+        {
+          "name": "performance",
+          "startLine": 44,
+          "endLine": 47,
+          "params": [
+            "window"
+          ]
+        },
+        {
+          "name": "trends",
+          "startLine": 49,
+          "endLine": 54,
+          "params": [
+            "metric",
+            "window",
+            "granularity"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DashboardController",
+          "startLine": 32,
+          "endLine": 55,
+          "methods": [
+            "overview",
+            "performance",
+            "trends"
+          ],
+          "properties": [
+            "dashboardService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "overview",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "performance",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "trends",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "DashboardController",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "overview",
+          "callee": "Results.success",
+          "lineNumber": 41
+        },
+        {
+          "caller": "overview",
+          "callee": "dashboardService.loadOverview",
+          "lineNumber": 41
+        },
+        {
+          "caller": "performance",
+          "callee": "Results.success",
+          "lineNumber": 46
+        },
+        {
+          "caller": "performance",
+          "callee": "dashboardService.loadPerformance",
+          "lineNumber": 46
+        },
+        {
+          "caller": "trends",
+          "callee": "Results.success",
+          "lineNumber": 53
+        },
+        {
+          "caller": "trends",
+          "callee": "dashboardService.loadTrends",
+          "lineNumber": 53
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewGroupVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 29,
+      "classes": [
+        {
+          "name": "DashboardOverviewGroupVO",
+          "startLine": 23,
+          "endLine": 38,
+          "methods": [],
+          "properties": [
+            "totalUsers",
+            "activeUsers",
+            "totalSessions",
+            "sessions24h",
+            "totalMessages",
+            "messages24h"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardOverviewGroupVO",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewKpiVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 26,
+      "classes": [
+        {
+          "name": "DashboardOverviewKpiVO",
+          "startLine": 23,
+          "endLine": 32,
+          "methods": [],
+          "properties": [
+            "value",
+            "delta",
+            "deltaPct"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardOverviewKpiVO",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 27,
+      "classes": [
+        {
+          "name": "DashboardOverviewVO",
+          "startLine": 23,
+          "endLine": 34,
+          "methods": [],
+          "properties": [
+            "window",
+            "compareWindow",
+            "updatedAt",
+            "kpis"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardOverviewVO",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardPerformanceVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 40,
+      "nonEmptyLines": 30,
+      "classes": [
+        {
+          "name": "DashboardPerformanceVO",
+          "startLine": 23,
+          "endLine": 40,
+          "methods": [],
+          "properties": [
+            "window",
+            "avgLatencyMs",
+            "p95LatencyMs",
+            "successRate",
+            "errorRate",
+            "noDocRate",
+            "slowRate"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardPerformanceVO",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendPointVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 25,
+      "classes": [
+        {
+          "name": "DashboardTrendPointVO",
+          "startLine": 23,
+          "endLine": 30,
+          "methods": [],
+          "properties": [
+            "ts",
+            "value"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardTrendPointVO",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendSeriesVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 26,
+      "classes": [
+        {
+          "name": "DashboardTrendSeriesVO",
+          "startLine": 25,
+          "endLine": 32,
+          "methods": [],
+          "properties": [
+            "name",
+            "data"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardTrendSeriesVO",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendsVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 28,
+      "classes": [
+        {
+          "name": "DashboardTrendsVO",
+          "startLine": 25,
+          "endLine": 36,
+          "methods": [],
+          "properties": [
+            "metric",
+            "window",
+            "granularity",
+            "series"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardTrendsVO",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/service/DashboardService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 25,
+      "classes": [
+        {
+          "name": "DashboardService",
+          "startLine": 24,
+          "endLine": 31,
+          "methods": [
+            "loadOverview",
+            "loadPerformance",
+            "loadTrends"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardService",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/service/impl/DashboardServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 776,
+      "nonEmptyLines": 705,
+      "functions": [
+        {
+          "name": "loadOverview",
+          "startLine": 73,
+          "endLine": 106,
+          "params": [
+            "window"
+          ]
+        },
+        {
+          "name": "loadPerformance",
+          "startLine": 108,
+          "endLine": 136,
+          "params": [
+            "window"
+          ]
+        },
+        {
+          "name": "loadTrends",
+          "startLine": 138,
+          "endLine": 265,
+          "params": [
+            "metric",
+            "window",
+            "granularity"
+          ]
+        },
+        {
+          "name": "countUsers",
+          "startLine": 267,
+          "endLine": 271,
+          "params": [
+            "start",
+            "end"
+          ]
+        },
+        {
+          "name": "countConversations",
+          "startLine": 273,
+          "endLine": 277,
+          "params": [
+            "start",
+            "end"
+          ]
+        },
+        {
+          "name": "countMessages",
+          "startLine": 279,
+          "endLine": 283,
+          "params": [
+            "start",
+            "end"
+          ]
+        },
+        {
+          "name": "countActiveUsers",
+          "startLine": 285,
+          "endLine": 291,
+          "params": [
+            "start",
+            "end"
+          ]
+        },
+        {
+          "name": "countTraceRuns",
+          "startLine": 293,
+          "endLine": 300,
+          "params": [
+            "start",
+            "end",
+            "status"
+          ]
+        },
+        {
+          "name": "countAssistantMessages",
+          "startLine": 302,
+          "endLine": 308,
+          "params": [
+            "start",
+            "end"
+          ]
+        },
+        {
+          "name": "countNoDocMessages",
+          "startLine": 310,
+          "endLine": 317,
+          "params": [
+            "start",
+            "end"
+          ]
+        },
+        {
+          "name": "listDurations",
+          "startLine": 319,
+          "endLine": 339,
+          "params": [
+            "start",
+            "end"
+          ]
+        },
+        {
+          "name": "extractCount",
+          "startLine": 341,
+          "endLine": 350,
+          "params": [
+            "maps"
+          ]
+        },
+        {
+          "name": "calcPct",
+          "startLine": 352,
+          "endLine": 357,
+          "params": [
+            "current",
+            "prev"
+          ]
+        },
+        {
+          "name": "buildKpi",
+          "startLine": 359,
+          "endLine": 365,
+          "params": [
+            "value",
+            "delta",
+            "deltaPct"
+          ]
+        },
+        {
+          "name": "countConversationsByDay",
+          "startLine": 367,
+          "endLine": 374,
+          "params": [
+            "start",
+            "endExclusive",
+            "zoneId"
+          ]
+        },
+        {
+          "name": "countMessagesByDay",
+          "startLine": 376,
+          "endLine": 383,
+          "params": [
+            "start",
+            "endExclusive",
+            "zoneId"
+          ]
+        },
+        {
+          "name": "countAssistantMessagesByDay",
+          "startLine": 385,
+          "endLine": 393,
+          "params": [
+            "start",
+            "endExclusive",
+            "zoneId"
+          ]
+        },
+        {
+          "name": "countNoDocMessagesByDay",
+          "startLine": 395,
+          "endLine": 404,
+          "params": [
+            "start",
+            "endExclusive",
+            "zoneId"
+          ]
+        },
+        {
+          "name": "countActiveUsersByDay",
+          "startLine": 406,
+          "endLine": 413,
+          "params": [
+            "start",
+            "endExclusive",
+            "zoneId"
+          ]
+        },
+        {
+          "name": "averageLatencyByDay",
+          "startLine": 415,
+          "endLine": 437,
+          "params": [
+            "start",
+            "endExclusive",
+            "zoneId"
+          ]
+        },
+        {
+          "name": "countTraceRunsByDay",
+          "startLine": 439,
+          "endLine": 449,
+          "params": [
+            "start",
+            "endExclusive",
+            "zoneId",
+            "status"
+          ]
+        },
+        {
+          "name": "countConversationsByHour",
+          "startLine": 451,
+          "endLine": 458,
+          "params": [
+            "start",
+            "endExclusive",
+            "zoneId"
+          ]
+        },
+        {
+          "name": "countMessagesByHour",
+          "startLine": 460,
+          "endLine": 467,
+          "params": [
+            "start",
+            "endExclusive",
+            "zoneId"
+          ]
+        },
+        {
+          "name": "countAssistantMessagesByHour",
+          "startLine": 469,
+          "endLine": 477,
+          "params": [
+            "start",
+            "endExclusive",
+            "zoneId"
+          ]
+        },
+        {
+          "name": "countNoDocMessagesByHour",
+          "startLine": 479,
+          "endLine": 488,
+          "params": [
+            "start",
+            "endExclusive",
+            "zoneId"
+          ]
+        },
+        {
+          "name": "countActiveUsersByHour",
+          "startLine": 490,
+          "endLine": 497,
+          "params": [
+            "start",
+            "endExclusive",
+            "zoneId"
+          ]
+        },
+        {
+          "name": "averageLatencyByHour",
+          "startLine": 499,
+          "endLine": 507,
+          "params": [
+            "start",
+            "endExclusive",
+            "zoneId"
+          ]
+        },
+        {
+          "name": "countTraceRunsByHour",
+          "startLine": 509,
+          "endLine": 519,
+          "params": [
+            "start",
+            "endExclusive",
+            "zoneId",
+            "status"
+          ]
+        },
+        {
+          "name": "mapLongResults",
+          "startLine": 521,
+          "endLine": 537,
+          "params": [
+            "maps"
+          ]
+        },
+        {
+          "name": "mapLongResultsByHour",
+          "startLine": 539,
+          "endLine": 555,
+          "params": [
+            "maps"
+          ]
+        },
+        {
+          "name": "mapDoubleResultsByHour",
+          "startLine": 557,
+          "endLine": 572,
+          "params": [
+            "maps"
+          ]
+        },
+        {
+          "name": "buildPoints",
+          "startLine": 574,
+          "endLine": 586,
+          "params": [
+            "start",
+            "endExclusive",
+            "zoneId",
+            "values"
+          ]
+        },
+        {
+          "name": "buildPointsDouble",
+          "startLine": 588,
+          "endLine": 600,
+          "params": [
+            "start",
+            "endExclusive",
+            "zoneId",
+            "values"
+          ]
+        },
+        {
+          "name": "buildPointsByHour",
+          "startLine": 602,
+          "endLine": 618,
+          "params": [
+            "start",
+            "endExclusive",
+            "zoneId",
+            "values"
+          ]
+        },
+        {
+          "name": "buildPointsDoubleByHour",
+          "startLine": 620,
+          "endLine": 636,
+          "params": [
+            "start",
+            "endExclusive",
+            "zoneId",
+            "values"
+          ]
+        },
+        {
+          "name": "average",
+          "startLine": 638,
+          "endLine": 647,
+          "params": [
+            "values"
+          ]
+        },
+        {
+          "name": "percentile",
+          "startLine": 649,
+          "endLine": 658,
+          "params": [
+            "values"
+          ]
+        },
+        {
+          "name": "round1",
+          "startLine": 660,
+          "endLine": 662,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "parseLocalDate",
+          "startLine": 664,
+          "endLine": 669,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "parseLocalDateTime",
+          "startLine": 671,
+          "endLine": 676,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "toLongValue",
+          "startLine": 678,
+          "endLine": 690,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "toDate",
+          "startLine": 692,
+          "endLine": 694,
+          "params": [
+            "date",
+            "zoneId"
+          ]
+        },
+        {
+          "name": "toDate",
+          "startLine": 696,
+          "endLine": 698,
+          "params": [
+            "time",
+            "zoneId"
+          ]
+        },
+        {
+          "name": "toLocalDate",
+          "startLine": 700,
+          "endLine": 702,
+          "params": [
+            "date",
+            "zoneId"
+          ]
+        },
+        {
+          "name": "toLocalDateTime",
+          "startLine": 704,
+          "endLine": 706,
+          "params": [
+            "date",
+            "zoneId"
+          ]
+        },
+        {
+          "name": "resolveWindowRange",
+          "startLine": 708,
+          "endLine": 715,
+          "params": [
+            "window",
+            "fallback"
+          ]
+        },
+        {
+          "name": "parseWindow",
+          "startLine": 717,
+          "endLine": 731,
+          "params": [
+            "window",
+            "fallback"
+          ]
+        },
+        {
+          "name": "resolveTrendGranularity",
+          "startLine": 733,
+          "endLine": 741,
+          "params": [
+            "granularity",
+            "windowDuration"
+          ]
+        },
+        {
+          "name": "parseNumber",
+          "startLine": 743,
+          "endLine": 749,
+          "params": [
+            "value",
+            "fallback"
+          ]
+        },
+        {
+          "name": "formatDuration",
+          "startLine": 751,
+          "endLine": 757,
+          "params": [
+            "duration"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DashboardServiceImpl",
+          "startLine": 55,
+          "endLine": 776,
+          "methods": [
+            "loadOverview",
+            "loadPerformance",
+            "loadTrends",
+            "countUsers",
+            "countConversations",
+            "countMessages",
+            "countActiveUsers",
+            "countTraceRuns",
+            "countAssistantMessages",
+            "countNoDocMessages",
+            "listDurations",
+            "extractCount",
+            "calcPct",
+            "buildKpi",
+            "countConversationsByDay",
+            "countMessagesByDay",
+            "countAssistantMessagesByDay",
+            "countNoDocMessagesByDay",
+            "countActiveUsersByDay",
+            "averageLatencyByDay",
+            "countTraceRunsByDay",
+            "countConversationsByHour",
+            "countMessagesByHour",
+            "countAssistantMessagesByHour",
+            "countNoDocMessagesByHour",
+            "countActiveUsersByHour",
+            "averageLatencyByHour",
+            "countTraceRunsByHour",
+            "mapLongResults",
+            "mapLongResultsByHour",
+            "mapDoubleResultsByHour",
+            "buildPoints",
+            "buildPointsDouble",
+            "buildPointsByHour",
+            "buildPointsDoubleByHour",
+            "average",
+            "percentile",
+            "round1",
+            "parseLocalDate",
+            "parseLocalDateTime",
+            "toLongValue",
+            "toDate",
+            "toDate",
+            "toLocalDate",
+            "toLocalDateTime",
+            "resolveWindowRange",
+            "parseWindow",
+            "resolveTrendGranularity",
+            "parseNumber",
+            "formatDuration"
+          ],
+          "properties": [
+            "STATUS_SUCCESS",
+            "STATUS_ERROR",
+            "ROLE_ASSISTANT",
+            "NO_DOC_REPLY",
+            "GRANULARITY_DAY",
+            "GRANULARITY_HOUR",
+            "SLOW_LATENCY_THRESHOLD_MS",
+            "HOUR_FORMATTER",
+            "userMapper",
+            "conversationMapper",
+            "messageMapper",
+            "traceRunMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "loadOverview",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "loadPerformance",
+          "line": 108,
+          "isDefault": false
+        },
+        {
+          "name": "loadTrends",
+          "line": 138,
+          "isDefault": false
+        },
+        {
+          "name": "DashboardServiceImpl",
+          "line": 55,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "loadOverview",
+          "callee": "resolveWindowRange",
+          "lineNumber": 75
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "Duration.ofHours",
+          "lineNumber": 75
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "userMapper.selectCount",
+          "lineNumber": 77
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 77
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "countUsers",
+          "lineNumber": 78
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "conversationMapper.selectCount",
+          "lineNumber": 80
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 80
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "countConversations",
+          "lineNumber": 81
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "countConversations",
+          "lineNumber": 82
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "messageMapper.selectCount",
+          "lineNumber": 84
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 84
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "countMessages",
+          "lineNumber": 85
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "countMessages",
+          "lineNumber": 86
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "countActiveUsers",
+          "lineNumber": 88
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "countActiveUsers",
+          "lineNumber": 89
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "DashboardOverviewGroupVO.builder()\r\n                .totalUsers(buildKpi(totalUsers, usersInWindow, null))\r\n                .activeUsers(buildKpi(activeUsers, activeUsers - activeUsersPrev, calcPct(activeUsers, activeUsersPrev)))\r\n                .totalSessions(buildKpi(totalSessions, sessionsInWindow, null))\r\n                .sessions24h(buildKpi(sessionsInWindow, sessionsInWindow - sessionsPrevWindow, calcPct(sessionsInWindow, sessionsPrevWindow)))\r\n                .totalMessages(buildKpi(totalMessages, messagesInWindow, null))\r\n                .messages24h(buildKpi(messagesInWindow, messagesInWindow - messagesPrevWindow, calcPct(messagesInWindow, messagesPrevWindow))).build",
+          "lineNumber": 91
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "DashboardOverviewGroupVO.builder()\r\n                .totalUsers(buildKpi(totalUsers, usersInWindow, null))\r\n                .activeUsers(buildKpi(activeUsers, activeUsers - activeUsersPrev, calcPct(activeUsers, activeUsersPrev)))\r\n                .totalSessions(buildKpi(totalSessions, sessionsInWindow, null))\r\n                .sessions24h(buildKpi(sessionsInWindow, sessionsInWindow - sessionsPrevWindow, calcPct(sessionsInWindow, sessionsPrevWindow)))\r\n                .totalMessages(buildKpi(totalMessages, messagesInWindow, null)).messages24h",
+          "lineNumber": 91
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "DashboardOverviewGroupVO.builder()\r\n                .totalUsers(buildKpi(totalUsers, usersInWindow, null))\r\n                .activeUsers(buildKpi(activeUsers, activeUsers - activeUsersPrev, calcPct(activeUsers, activeUsersPrev)))\r\n                .totalSessions(buildKpi(totalSessions, sessionsInWindow, null))\r\n                .sessions24h(buildKpi(sessionsInWindow, sessionsInWindow - sessionsPrevWindow, calcPct(sessionsInWindow, sessionsPrevWindow))).totalMessages",
+          "lineNumber": 91
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "DashboardOverviewGroupVO.builder()\r\n                .totalUsers(buildKpi(totalUsers, usersInWindow, null))\r\n                .activeUsers(buildKpi(activeUsers, activeUsers - activeUsersPrev, calcPct(activeUsers, activeUsersPrev)))\r\n                .totalSessions(buildKpi(totalSessions, sessionsInWindow, null)).sessions24h",
+          "lineNumber": 91
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "DashboardOverviewGroupVO.builder()\r\n                .totalUsers(buildKpi(totalUsers, usersInWindow, null))\r\n                .activeUsers(buildKpi(activeUsers, activeUsers - activeUsersPrev, calcPct(activeUsers, activeUsersPrev))).totalSessions",
+          "lineNumber": 91
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "DashboardOverviewGroupVO.builder()\r\n                .totalUsers(buildKpi(totalUsers, usersInWindow, null)).activeUsers",
+          "lineNumber": 91
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "DashboardOverviewGroupVO.builder().totalUsers",
+          "lineNumber": 91
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "DashboardOverviewGroupVO.builder",
+          "lineNumber": 91
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "buildKpi",
+          "lineNumber": 92
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "buildKpi",
+          "lineNumber": 93
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "calcPct",
+          "lineNumber": 93
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "buildKpi",
+          "lineNumber": 94
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "buildKpi",
+          "lineNumber": 95
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "calcPct",
+          "lineNumber": 95
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "buildKpi",
+          "lineNumber": 96
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "buildKpi",
+          "lineNumber": 97
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "calcPct",
+          "lineNumber": 97
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "DashboardOverviewVO.builder()\r\n                .window(range.windowLabel)\r\n                .compareWindow(range.compareLabel)\r\n                .updatedAt(System.currentTimeMillis())\r\n                .kpis(group).build",
+          "lineNumber": 100
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "DashboardOverviewVO.builder()\r\n                .window(range.windowLabel)\r\n                .compareWindow(range.compareLabel)\r\n                .updatedAt(System.currentTimeMillis()).kpis",
+          "lineNumber": 100
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "DashboardOverviewVO.builder()\r\n                .window(range.windowLabel)\r\n                .compareWindow(range.compareLabel).updatedAt",
+          "lineNumber": 100
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "DashboardOverviewVO.builder()\r\n                .window(range.windowLabel).compareWindow",
+          "lineNumber": 100
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "DashboardOverviewVO.builder().window",
+          "lineNumber": 100
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "DashboardOverviewVO.builder",
+          "lineNumber": 100
+        },
+        {
+          "caller": "loadOverview",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 103
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "resolveWindowRange",
+          "lineNumber": 110
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "Duration.ofHours",
+          "lineNumber": 110
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "listDurations",
+          "lineNumber": 111
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "average",
+          "lineNumber": 112
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "percentile",
+          "lineNumber": 113
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "countTraceRuns",
+          "lineNumber": 115
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "countTraceRuns",
+          "lineNumber": 116
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "countAssistantMessages",
+          "lineNumber": 118
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "countNoDocMessages",
+          "lineNumber": 119
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "durations.stream().filter(duration -> duration > SLOW_LATENCY_THRESHOLD_MS).count",
+          "lineNumber": 120
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "durations.stream().filter",
+          "lineNumber": 120
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "durations.stream",
+          "lineNumber": 120
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "round1",
+          "lineNumber": 122
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "round1",
+          "lineNumber": 123
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "round1",
+          "lineNumber": 124
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "durations.isEmpty",
+          "lineNumber": 125
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "round1",
+          "lineNumber": 125
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "durations.size",
+          "lineNumber": 125
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "DashboardPerformanceVO.builder()\r\n                .window(range.windowLabel)\r\n                .avgLatencyMs(avgLatency)\r\n                .p95LatencyMs(p95Latency)\r\n                .successRate(successRate)\r\n                .errorRate(errorRate)\r\n                .noDocRate(noDocRate)\r\n                .slowRate(slowRate).build",
+          "lineNumber": 127
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "DashboardPerformanceVO.builder()\r\n                .window(range.windowLabel)\r\n                .avgLatencyMs(avgLatency)\r\n                .p95LatencyMs(p95Latency)\r\n                .successRate(successRate)\r\n                .errorRate(errorRate)\r\n                .noDocRate(noDocRate).slowRate",
+          "lineNumber": 127
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "DashboardPerformanceVO.builder()\r\n                .window(range.windowLabel)\r\n                .avgLatencyMs(avgLatency)\r\n                .p95LatencyMs(p95Latency)\r\n                .successRate(successRate)\r\n                .errorRate(errorRate).noDocRate",
+          "lineNumber": 127
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "DashboardPerformanceVO.builder()\r\n                .window(range.windowLabel)\r\n                .avgLatencyMs(avgLatency)\r\n                .p95LatencyMs(p95Latency)\r\n                .successRate(successRate).errorRate",
+          "lineNumber": 127
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "DashboardPerformanceVO.builder()\r\n                .window(range.windowLabel)\r\n                .avgLatencyMs(avgLatency)\r\n                .p95LatencyMs(p95Latency).successRate",
+          "lineNumber": 127
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "DashboardPerformanceVO.builder()\r\n                .window(range.windowLabel)\r\n                .avgLatencyMs(avgLatency).p95LatencyMs",
+          "lineNumber": 127
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "DashboardPerformanceVO.builder()\r\n                .window(range.windowLabel).avgLatencyMs",
+          "lineNumber": 127
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "DashboardPerformanceVO.builder().window",
+          "lineNumber": 127
+        },
+        {
+          "caller": "loadPerformance",
+          "callee": "DashboardPerformanceVO.builder",
+          "lineNumber": 127
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "metric.trim().toLowerCase",
+          "lineNumber": 140
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "metric.trim",
+          "lineNumber": 140
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "parseWindow",
+          "lineNumber": 141
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "Duration.ofDays",
+          "lineNumber": 141
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "resolveWindowRange",
+          "lineNumber": 142
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "Duration.ofDays",
+          "lineNumber": 142
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "resolveTrendGranularity",
+          "lineNumber": 143
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "ZoneId.systemDefault",
+          "lineNumber": 144
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "new ArrayList<>",
+          "lineNumber": 145
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "GRANULARITY_HOUR.equals",
+          "lineNumber": 147
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "toLocalDateTime(range.end, zoneId)\r\n                    .truncatedTo(ChronoUnit.HOURS).plusHours",
+          "lineNumber": 148
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "toLocalDateTime(range.end, zoneId).truncatedTo",
+          "lineNumber": 148
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "toLocalDateTime",
+          "lineNumber": 148
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "endHourExclusive.minusHours",
+          "lineNumber": 151
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "Math.max",
+          "lineNumber": 151
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "windowDuration.toHours",
+          "lineNumber": 151
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "\"sessions\".equals",
+          "lineNumber": 153
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "countConversationsByHour",
+          "lineNumber": 154
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "series.add",
+          "lineNumber": 155
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"会话数\")\r\n                        .data(buildPointsByHour(startHour, endHourExclusive, zoneId, counts)).build",
+          "lineNumber": 155
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"会话数\").data",
+          "lineNumber": 155
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder().name",
+          "lineNumber": 155
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder",
+          "lineNumber": 155
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "buildPointsByHour",
+          "lineNumber": 157
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "\"messages\".equals",
+          "lineNumber": 159
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "countMessagesByHour",
+          "lineNumber": 160
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "series.add",
+          "lineNumber": 161
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"消息数\")\r\n                        .data(buildPointsByHour(startHour, endHourExclusive, zoneId, counts)).build",
+          "lineNumber": 161
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"消息数\").data",
+          "lineNumber": 161
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder().name",
+          "lineNumber": 161
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder",
+          "lineNumber": 161
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "buildPointsByHour",
+          "lineNumber": 163
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "\"activeusers\".equals",
+          "lineNumber": 165
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "countActiveUsersByHour",
+          "lineNumber": 166
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "series.add",
+          "lineNumber": 167
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"活跃用户\")\r\n                        .data(buildPointsByHour(startHour, endHourExclusive, zoneId, counts)).build",
+          "lineNumber": 167
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"活跃用户\").data",
+          "lineNumber": 167
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder().name",
+          "lineNumber": 167
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder",
+          "lineNumber": 167
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "buildPointsByHour",
+          "lineNumber": 169
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "\"avglatency\".equals",
+          "lineNumber": 171
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "averageLatencyByHour",
+          "lineNumber": 172
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "series.add",
+          "lineNumber": 173
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"平均响应时间\")\r\n                        .data(buildPointsDoubleByHour(startHour, endHourExclusive, zoneId, averages)).build",
+          "lineNumber": 173
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"平均响应时间\").data",
+          "lineNumber": 173
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder().name",
+          "lineNumber": 173
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder",
+          "lineNumber": 173
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "buildPointsDoubleByHour",
+          "lineNumber": 175
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "\"quality\".equals",
+          "lineNumber": 177
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "countTraceRunsByHour",
+          "lineNumber": 178
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "countTraceRunsByHour",
+          "lineNumber": 179
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "countAssistantMessagesByHour",
+          "lineNumber": 180
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "countNoDocMessagesByHour",
+          "lineNumber": 181
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "new HashMap<>",
+          "lineNumber": 182
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "new HashMap<>",
+          "lineNumber": 183
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "hour.isBefore",
+          "lineNumber": 184
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "hour.plusHours",
+          "lineNumber": 184
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "successMap.getOrDefault",
+          "lineNumber": 185
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "errorMap.getOrDefault",
+          "lineNumber": 185
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "assistantCountMap.getOrDefault",
+          "lineNumber": 186
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "errorMap.getOrDefault",
+          "lineNumber": 187
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "noDocCountMap.getOrDefault",
+          "lineNumber": 188
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "round1",
+          "lineNumber": 189
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "round1",
+          "lineNumber": 190
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "errorRate.put",
+          "lineNumber": 191
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "noDocRate.put",
+          "lineNumber": 192
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "series.add",
+          "lineNumber": 194
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"错误率\")\r\n                        .data(buildPointsDoubleByHour(startHour, endHourExclusive, zoneId, errorRate)).build",
+          "lineNumber": 194
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"错误率\").data",
+          "lineNumber": 194
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder().name",
+          "lineNumber": 194
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder",
+          "lineNumber": 194
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "buildPointsDoubleByHour",
+          "lineNumber": 196
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "series.add",
+          "lineNumber": 198
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"无知识率\")\r\n                        .data(buildPointsDoubleByHour(startHour, endHourExclusive, zoneId, noDocRate)).build",
+          "lineNumber": 198
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"无知识率\").data",
+          "lineNumber": 198
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder().name",
+          "lineNumber": 198
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder",
+          "lineNumber": 198
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "buildPointsDoubleByHour",
+          "lineNumber": 200
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "toLocalDate",
+          "lineNumber": 204
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "toLocalDate(range.end, zoneId).plusDays",
+          "lineNumber": 205
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "toLocalDate",
+          "lineNumber": 205
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "\"sessions\".equals",
+          "lineNumber": 207
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "countConversationsByDay",
+          "lineNumber": 208
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "series.add",
+          "lineNumber": 209
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"会话数\")\r\n                        .data(buildPoints(startDay, endExclusiveDay, zoneId, counts)).build",
+          "lineNumber": 209
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"会话数\").data",
+          "lineNumber": 209
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder().name",
+          "lineNumber": 209
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder",
+          "lineNumber": 209
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "buildPoints",
+          "lineNumber": 211
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "\"messages\".equals",
+          "lineNumber": 213
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "countMessagesByDay",
+          "lineNumber": 214
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "series.add",
+          "lineNumber": 215
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"消息数\")\r\n                        .data(buildPoints(startDay, endExclusiveDay, zoneId, counts)).build",
+          "lineNumber": 215
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"消息数\").data",
+          "lineNumber": 215
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder().name",
+          "lineNumber": 215
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder",
+          "lineNumber": 215
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "buildPoints",
+          "lineNumber": 217
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "\"activeusers\".equals",
+          "lineNumber": 219
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "countActiveUsersByDay",
+          "lineNumber": 220
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "series.add",
+          "lineNumber": 221
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"活跃用户\")\r\n                        .data(buildPoints(startDay, endExclusiveDay, zoneId, counts)).build",
+          "lineNumber": 221
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"活跃用户\").data",
+          "lineNumber": 221
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder().name",
+          "lineNumber": 221
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder",
+          "lineNumber": 221
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "buildPoints",
+          "lineNumber": 223
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "\"avglatency\".equals",
+          "lineNumber": 225
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "averageLatencyByDay",
+          "lineNumber": 226
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "series.add",
+          "lineNumber": 227
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"平均响应时间\")\r\n                        .data(buildPointsDouble(startDay, endExclusiveDay, zoneId, averages)).build",
+          "lineNumber": 227
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"平均响应时间\").data",
+          "lineNumber": 227
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder().name",
+          "lineNumber": 227
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder",
+          "lineNumber": 227
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "buildPointsDouble",
+          "lineNumber": 229
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "\"quality\".equals",
+          "lineNumber": 231
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "countTraceRunsByDay",
+          "lineNumber": 232
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "countTraceRunsByDay",
+          "lineNumber": 233
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "countAssistantMessagesByDay",
+          "lineNumber": 234
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "countNoDocMessagesByDay",
+          "lineNumber": 235
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "new HashMap<>",
+          "lineNumber": 236
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "new HashMap<>",
+          "lineNumber": 237
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "day.isBefore",
+          "lineNumber": 238
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "day.plusDays",
+          "lineNumber": 238
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "successMap.getOrDefault",
+          "lineNumber": 239
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "errorMap.getOrDefault",
+          "lineNumber": 239
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "assistantCountMap.getOrDefault",
+          "lineNumber": 240
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "errorMap.getOrDefault",
+          "lineNumber": 241
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "noDocCountMap.getOrDefault",
+          "lineNumber": 242
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "round1",
+          "lineNumber": 243
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "round1",
+          "lineNumber": 244
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "errorRate.put",
+          "lineNumber": 245
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "noDocRate.put",
+          "lineNumber": 246
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "series.add",
+          "lineNumber": 248
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"错误率\")\r\n                        .data(buildPointsDouble(startDay, endExclusiveDay, zoneId, errorRate)).build",
+          "lineNumber": 248
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"错误率\").data",
+          "lineNumber": 248
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder().name",
+          "lineNumber": 248
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder",
+          "lineNumber": 248
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "buildPointsDouble",
+          "lineNumber": 250
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "series.add",
+          "lineNumber": 252
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"无知识率\")\r\n                        .data(buildPointsDouble(startDay, endExclusiveDay, zoneId, noDocRate)).build",
+          "lineNumber": 252
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder()\r\n                        .name(\"无知识率\").data",
+          "lineNumber": 252
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder().name",
+          "lineNumber": 252
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendSeriesVO.builder",
+          "lineNumber": 252
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "buildPointsDouble",
+          "lineNumber": 254
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendsVO.builder()\r\n                .metric(metric)\r\n                .window(range.windowLabel)\r\n                .granularity(resolvedGranularity)\r\n                .series(series).build",
+          "lineNumber": 259
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendsVO.builder()\r\n                .metric(metric)\r\n                .window(range.windowLabel)\r\n                .granularity(resolvedGranularity).series",
+          "lineNumber": 259
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendsVO.builder()\r\n                .metric(metric)\r\n                .window(range.windowLabel).granularity",
+          "lineNumber": 259
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendsVO.builder()\r\n                .metric(metric).window",
+          "lineNumber": 259
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendsVO.builder().metric",
+          "lineNumber": 259
+        },
+        {
+          "caller": "loadTrends",
+          "callee": "DashboardTrendsVO.builder",
+          "lineNumber": 259
+        },
+        {
+          "caller": "countUsers",
+          "callee": "userMapper.selectCount",
+          "lineNumber": 268
+        },
+        {
+          "caller": "countUsers",
+          "callee": "Wrappers.lambdaQuery(UserDO.class)\r\n                .ge(UserDO::getCreateTime, start).lt",
+          "lineNumber": 268
+        },
+        {
+          "caller": "countUsers",
+          "callee": "Wrappers.lambdaQuery(UserDO.class).ge",
+          "lineNumber": 268
+        },
+        {
+          "caller": "countUsers",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 268
+        },
+        {
+          "caller": "countConversations",
+          "callee": "conversationMapper.selectCount",
+          "lineNumber": 274
+        },
+        {
+          "caller": "countConversations",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class)\r\n                .ge(ConversationDO::getCreateTime, start).lt",
+          "lineNumber": 274
+        },
+        {
+          "caller": "countConversations",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class).ge",
+          "lineNumber": 274
+        },
+        {
+          "caller": "countConversations",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 274
+        },
+        {
+          "caller": "countMessages",
+          "callee": "messageMapper.selectCount",
+          "lineNumber": 280
+        },
+        {
+          "caller": "countMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                .ge(ConversationMessageDO::getCreateTime, start).lt",
+          "lineNumber": 280
+        },
+        {
+          "caller": "countMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class).ge",
+          "lineNumber": 280
+        },
+        {
+          "caller": "countMessages",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 280
+        },
+        {
+          "caller": "countActiveUsers",
+          "callee": "new QueryWrapper<>",
+          "lineNumber": 286
+        },
+        {
+          "caller": "countActiveUsers",
+          "callee": "wrapper.select(\"count(distinct user_id) as cnt\")\r\n                .ge(\"create_time\", start).lt",
+          "lineNumber": 287
+        },
+        {
+          "caller": "countActiveUsers",
+          "callee": "wrapper.select(\"count(distinct user_id) as cnt\").ge",
+          "lineNumber": 287
+        },
+        {
+          "caller": "countActiveUsers",
+          "callee": "wrapper.select",
+          "lineNumber": 287
+        },
+        {
+          "caller": "countActiveUsers",
+          "callee": "extractCount",
+          "lineNumber": 290
+        },
+        {
+          "caller": "countActiveUsers",
+          "callee": "messageMapper.selectMaps",
+          "lineNumber": 290
+        },
+        {
+          "caller": "countTraceRuns",
+          "callee": "new QueryWrapper<>",
+          "lineNumber": 294
+        },
+        {
+          "caller": "countTraceRuns",
+          "callee": "wrapper.ge(\"start_time\", start).lt",
+          "lineNumber": 295
+        },
+        {
+          "caller": "countTraceRuns",
+          "callee": "wrapper.ge",
+          "lineNumber": 295
+        },
+        {
+          "caller": "countTraceRuns",
+          "callee": "wrapper.eq",
+          "lineNumber": 297
+        },
+        {
+          "caller": "countTraceRuns",
+          "callee": "traceRunMapper.selectCount",
+          "lineNumber": 299
+        },
+        {
+          "caller": "countAssistantMessages",
+          "callee": "new QueryWrapper<>",
+          "lineNumber": 303
+        },
+        {
+          "caller": "countAssistantMessages",
+          "callee": "wrapper.ge(\"create_time\", start)\r\n                .lt(\"create_time\", end).eq",
+          "lineNumber": 304
+        },
+        {
+          "caller": "countAssistantMessages",
+          "callee": "wrapper.ge(\"create_time\", start).lt",
+          "lineNumber": 304
+        },
+        {
+          "caller": "countAssistantMessages",
+          "callee": "wrapper.ge",
+          "lineNumber": 304
+        },
+        {
+          "caller": "countAssistantMessages",
+          "callee": "messageMapper.selectCount",
+          "lineNumber": 307
+        },
+        {
+          "caller": "countNoDocMessages",
+          "callee": "new QueryWrapper<>",
+          "lineNumber": 311
+        },
+        {
+          "caller": "countNoDocMessages",
+          "callee": "wrapper.ge(\"create_time\", start)\r\n                .lt(\"create_time\", end)\r\n                .eq(\"role\", ROLE_ASSISTANT).eq",
+          "lineNumber": 312
+        },
+        {
+          "caller": "countNoDocMessages",
+          "callee": "wrapper.ge(\"create_time\", start)\r\n                .lt(\"create_time\", end).eq",
+          "lineNumber": 312
+        },
+        {
+          "caller": "countNoDocMessages",
+          "callee": "wrapper.ge(\"create_time\", start).lt",
+          "lineNumber": 312
+        },
+        {
+          "caller": "countNoDocMessages",
+          "callee": "wrapper.ge",
+          "lineNumber": 312
+        },
+        {
+          "caller": "countNoDocMessages",
+          "callee": "messageMapper.selectCount",
+          "lineNumber": 316
+        },
+        {
+          "caller": "listDurations",
+          "callee": "new QueryWrapper<>",
+          "lineNumber": 320
+        },
+        {
+          "caller": "listDurations",
+          "callee": "wrapper.select(\"duration_ms\")\r\n                .ge(\"start_time\", start)\r\n                .lt(\"start_time\", end).eq",
+          "lineNumber": 321
+        },
+        {
+          "caller": "listDurations",
+          "callee": "wrapper.select(\"duration_ms\")\r\n                .ge(\"start_time\", start).lt",
+          "lineNumber": 321
+        },
+        {
+          "caller": "listDurations",
+          "callee": "wrapper.select(\"duration_ms\").ge",
+          "lineNumber": 321
+        },
+        {
+          "caller": "listDurations",
+          "callee": "wrapper.select",
+          "lineNumber": 321
+        },
+        {
+          "caller": "listDurations",
+          "callee": "traceRunMapper.selectObjs",
+          "lineNumber": 325
+        },
+        {
+          "caller": "listDurations",
+          "callee": "results.isEmpty",
+          "lineNumber": 326
+        },
+        {
+          "caller": "listDurations",
+          "callee": "Collections.emptyList",
+          "lineNumber": 327
+        },
+        {
+          "caller": "listDurations",
+          "callee": "new ArrayList<>",
+          "lineNumber": 329
+        },
+        {
+          "caller": "listDurations",
+          "callee": "number.longValue",
+          "lineNumber": 332
+        },
+        {
+          "caller": "listDurations",
+          "callee": "durations.add",
+          "lineNumber": 334
+        },
+        {
+          "caller": "extractCount",
+          "callee": "maps.isEmpty",
+          "lineNumber": 342
+        },
+        {
+          "caller": "extractCount",
+          "callee": "maps.get(0).get",
+          "lineNumber": 345
+        },
+        {
+          "caller": "extractCount",
+          "callee": "maps.get",
+          "lineNumber": 345
+        },
+        {
+          "caller": "extractCount",
+          "callee": "number.longValue",
+          "lineNumber": 347
+        },
+        {
+          "caller": "calcPct",
+          "callee": "round1",
+          "lineNumber": 356
+        },
+        {
+          "caller": "buildKpi",
+          "callee": "DashboardOverviewKpiVO.builder()\r\n                .value(value)\r\n                .delta(delta)\r\n                .deltaPct(deltaPct).build",
+          "lineNumber": 360
+        },
+        {
+          "caller": "buildKpi",
+          "callee": "DashboardOverviewKpiVO.builder()\r\n                .value(value)\r\n                .delta(delta).deltaPct",
+          "lineNumber": 360
+        },
+        {
+          "caller": "buildKpi",
+          "callee": "DashboardOverviewKpiVO.builder()\r\n                .value(value).delta",
+          "lineNumber": 360
+        },
+        {
+          "caller": "buildKpi",
+          "callee": "DashboardOverviewKpiVO.builder().value",
+          "lineNumber": 360
+        },
+        {
+          "caller": "buildKpi",
+          "callee": "DashboardOverviewKpiVO.builder",
+          "lineNumber": 360
+        },
+        {
+          "caller": "countConversationsByDay",
+          "callee": "new QueryWrapper<>",
+          "lineNumber": 368
+        },
+        {
+          "caller": "countConversationsByDay",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD') as d\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId))\r\n                .lt(\"create_time\", toDate(endExclusive, zoneId)).groupBy",
+          "lineNumber": 369
+        },
+        {
+          "caller": "countConversationsByDay",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD') as d\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId)).lt",
+          "lineNumber": 369
+        },
+        {
+          "caller": "countConversationsByDay",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD') as d\", \"count(*) as cnt\").ge",
+          "lineNumber": 369
+        },
+        {
+          "caller": "countConversationsByDay",
+          "callee": "wrapper.select",
+          "lineNumber": 369
+        },
+        {
+          "caller": "countConversationsByDay",
+          "callee": "toDate",
+          "lineNumber": 370
+        },
+        {
+          "caller": "countConversationsByDay",
+          "callee": "toDate",
+          "lineNumber": 371
+        },
+        {
+          "caller": "countConversationsByDay",
+          "callee": "mapLongResults",
+          "lineNumber": 373
+        },
+        {
+          "caller": "countConversationsByDay",
+          "callee": "conversationMapper.selectMaps",
+          "lineNumber": 373
+        },
+        {
+          "caller": "countMessagesByDay",
+          "callee": "new QueryWrapper<>",
+          "lineNumber": 377
+        },
+        {
+          "caller": "countMessagesByDay",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD') as d\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId))\r\n                .lt(\"create_time\", toDate(endExclusive, zoneId)).groupBy",
+          "lineNumber": 378
+        },
+        {
+          "caller": "countMessagesByDay",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD') as d\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId)).lt",
+          "lineNumber": 378
+        },
+        {
+          "caller": "countMessagesByDay",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD') as d\", \"count(*) as cnt\").ge",
+          "lineNumber": 378
+        },
+        {
+          "caller": "countMessagesByDay",
+          "callee": "wrapper.select",
+          "lineNumber": 378
+        },
+        {
+          "caller": "countMessagesByDay",
+          "callee": "toDate",
+          "lineNumber": 379
+        },
+        {
+          "caller": "countMessagesByDay",
+          "callee": "toDate",
+          "lineNumber": 380
+        },
+        {
+          "caller": "countMessagesByDay",
+          "callee": "mapLongResults",
+          "lineNumber": 382
+        },
+        {
+          "caller": "countMessagesByDay",
+          "callee": "messageMapper.selectMaps",
+          "lineNumber": 382
+        },
+        {
+          "caller": "countAssistantMessagesByDay",
+          "callee": "new QueryWrapper<>",
+          "lineNumber": 386
+        },
+        {
+          "caller": "countAssistantMessagesByDay",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD') as d\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId))\r\n                .lt(\"create_time\", toDate(endExclusive, zoneId))\r\n                .eq(\"role\", ROLE_ASSISTANT).groupBy",
+          "lineNumber": 387
+        },
+        {
+          "caller": "countAssistantMessagesByDay",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD') as d\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId))\r\n                .lt(\"create_time\", toDate(endExclusive, zoneId)).eq",
+          "lineNumber": 387
+        },
+        {
+          "caller": "countAssistantMessagesByDay",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD') as d\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId)).lt",
+          "lineNumber": 387
+        },
+        {
+          "caller": "countAssistantMessagesByDay",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD') as d\", \"count(*) as cnt\").ge",
+          "lineNumber": 387
+        },
+        {
+          "caller": "countAssistantMessagesByDay",
+          "callee": "wrapper.select",
+          "lineNumber": 387
+        },
+        {
+          "caller": "countAssistantMessagesByDay",
+          "callee": "toDate",
+          "lineNumber": 388
+        },
+        {
+          "caller": "countAssistantMessagesByDay",
+          "callee": "toDate",
+          "lineNumber": 389
+        },
+        {
+          "caller": "countAssistantMessagesByDay",
+          "callee": "mapLongResults",
+          "lineNumber": 392
+        },
+        {
+          "caller": "countAssistantMessagesByDay",
+          "callee": "messageMapper.selectMaps",
+          "lineNumber": 392
+        },
+        {
+          "caller": "countNoDocMessagesByDay",
+          "callee": "new QueryWrapper<>",
+          "lineNumber": 396
+        },
+        {
+          "caller": "countNoDocMessagesByDay",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD') as d\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId))\r\n                .lt(\"create_time\", toDate(endExclusive, zoneId))\r\n                .eq(\"role\", ROLE_ASSISTANT)\r\n                .eq(\"content\", NO_DOC_REPLY).groupBy",
+          "lineNumber": 397
+        },
+        {
+          "caller": "countNoDocMessagesByDay",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD') as d\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId))\r\n                .lt(\"create_time\", toDate(endExclusive, zoneId))\r\n                .eq(\"role\", ROLE_ASSISTANT).eq",
+          "lineNumber": 397
+        },
+        {
+          "caller": "countNoDocMessagesByDay",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD') as d\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId))\r\n                .lt(\"create_time\", toDate(endExclusive, zoneId)).eq",
+          "lineNumber": 397
+        },
+        {
+          "caller": "countNoDocMessagesByDay",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD') as d\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId)).lt",
+          "lineNumber": 397
+        },
+        {
+          "caller": "countNoDocMessagesByDay",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD') as d\", \"count(*) as cnt\").ge",
+          "lineNumber": 397
+        },
+        {
+          "caller": "countNoDocMessagesByDay",
+          "callee": "wrapper.select",
+          "lineNumber": 397
+        },
+        {
+          "caller": "countNoDocMessagesByDay",
+          "callee": "toDate",
+          "lineNumber": 398
+        },
+        {
+          "caller": "countNoDocMessagesByDay",
+          "callee": "toDate",
+          "lineNumber": 399
+        },
+        {
+          "caller": "countNoDocMessagesByDay",
+          "callee": "mapLongResults",
+          "lineNumber": 403
+        },
+        {
+          "caller": "countNoDocMessagesByDay",
+          "callee": "messageMapper.selectMaps",
+          "lineNumber": 403
+        },
+        {
+          "caller": "countActiveUsersByDay",
+          "callee": "new QueryWrapper<>",
+          "lineNumber": 407
+        },
+        {
+          "caller": "countActiveUsersByDay",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD') as d\", \"count(distinct user_id) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId))\r\n                .lt(\"create_time\", toDate(endExclusive, zoneId)).groupBy",
+          "lineNumber": 408
+        },
+        {
+          "caller": "countActiveUsersByDay",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD') as d\", \"count(distinct user_id) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId)).lt",
+          "lineNumber": 408
+        },
+        {
+          "caller": "countActiveUsersByDay",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD') as d\", \"count(distinct user_id) as cnt\").ge",
+          "lineNumber": 408
+        },
+        {
+          "caller": "countActiveUsersByDay",
+          "callee": "wrapper.select",
+          "lineNumber": 408
+        },
+        {
+          "caller": "countActiveUsersByDay",
+          "callee": "toDate",
+          "lineNumber": 409
+        },
+        {
+          "caller": "countActiveUsersByDay",
+          "callee": "toDate",
+          "lineNumber": 410
+        },
+        {
+          "caller": "countActiveUsersByDay",
+          "callee": "mapLongResults",
+          "lineNumber": 412
+        },
+        {
+          "caller": "countActiveUsersByDay",
+          "callee": "messageMapper.selectMaps",
+          "lineNumber": 412
+        },
+        {
+          "caller": "averageLatencyByDay",
+          "callee": "new QueryWrapper<>",
+          "lineNumber": 416
+        },
+        {
+          "caller": "averageLatencyByDay",
+          "callee": "wrapper.select(\"to_char(start_time,'YYYY-MM-DD') as d\", \"avg(duration_ms) as avg\")\r\n                .ge(\"start_time\", toDate(start, zoneId))\r\n                .lt(\"start_time\", toDate(endExclusive, zoneId))\r\n                .eq(\"status\", STATUS_SUCCESS).groupBy",
+          "lineNumber": 417
+        },
+        {
+          "caller": "averageLatencyByDay",
+          "callee": "wrapper.select(\"to_char(start_time,'YYYY-MM-DD') as d\", \"avg(duration_ms) as avg\")\r\n                .ge(\"start_time\", toDate(start, zoneId))\r\n                .lt(\"start_time\", toDate(endExclusive, zoneId)).eq",
+          "lineNumber": 417
+        },
+        {
+          "caller": "averageLatencyByDay",
+          "callee": "wrapper.select(\"to_char(start_time,'YYYY-MM-DD') as d\", \"avg(duration_ms) as avg\")\r\n                .ge(\"start_time\", toDate(start, zoneId)).lt",
+          "lineNumber": 417
+        },
+        {
+          "caller": "averageLatencyByDay",
+          "callee": "wrapper.select(\"to_char(start_time,'YYYY-MM-DD') as d\", \"avg(duration_ms) as avg\").ge",
+          "lineNumber": 417
+        },
+        {
+          "caller": "averageLatencyByDay",
+          "callee": "wrapper.select",
+          "lineNumber": 417
+        },
+        {
+          "caller": "averageLatencyByDay",
+          "callee": "toDate",
+          "lineNumber": 418
+        },
+        {
+          "caller": "averageLatencyByDay",
+          "callee": "toDate",
+          "lineNumber": 419
+        },
+        {
+          "caller": "averageLatencyByDay",
+          "callee": "traceRunMapper.selectMaps",
+          "lineNumber": 422
+        },
+        {
+          "caller": "averageLatencyByDay",
+          "callee": "new HashMap<>",
+          "lineNumber": 423
+        },
+        {
+          "caller": "averageLatencyByDay",
+          "callee": "parseLocalDate",
+          "lineNumber": 428
+        },
+        {
+          "caller": "averageLatencyByDay",
+          "callee": "row.get",
+          "lineNumber": 428
+        },
+        {
+          "caller": "averageLatencyByDay",
+          "callee": "row.get",
+          "lineNumber": 432
+        },
+        {
+          "caller": "averageLatencyByDay",
+          "callee": "number.doubleValue",
+          "lineNumber": 433
+        },
+        {
+          "caller": "averageLatencyByDay",
+          "callee": "result.put",
+          "lineNumber": 434
+        },
+        {
+          "caller": "averageLatencyByDay",
+          "callee": "round1",
+          "lineNumber": 434
+        },
+        {
+          "caller": "countTraceRunsByDay",
+          "callee": "new QueryWrapper<>",
+          "lineNumber": 440
+        },
+        {
+          "caller": "countTraceRunsByDay",
+          "callee": "wrapper.select(\"to_char(start_time,'YYYY-MM-DD') as d\", \"count(*) as cnt\")\r\n                .ge(\"start_time\", toDate(start, zoneId)).lt",
+          "lineNumber": 441
+        },
+        {
+          "caller": "countTraceRunsByDay",
+          "callee": "wrapper.select(\"to_char(start_time,'YYYY-MM-DD') as d\", \"count(*) as cnt\").ge",
+          "lineNumber": 441
+        },
+        {
+          "caller": "countTraceRunsByDay",
+          "callee": "wrapper.select",
+          "lineNumber": 441
+        },
+        {
+          "caller": "countTraceRunsByDay",
+          "callee": "toDate",
+          "lineNumber": 442
+        },
+        {
+          "caller": "countTraceRunsByDay",
+          "callee": "toDate",
+          "lineNumber": 443
+        },
+        {
+          "caller": "countTraceRunsByDay",
+          "callee": "wrapper.eq",
+          "lineNumber": 445
+        },
+        {
+          "caller": "countTraceRunsByDay",
+          "callee": "wrapper.groupBy",
+          "lineNumber": 447
+        },
+        {
+          "caller": "countTraceRunsByDay",
+          "callee": "mapLongResults",
+          "lineNumber": 448
+        },
+        {
+          "caller": "countTraceRunsByDay",
+          "callee": "traceRunMapper.selectMaps",
+          "lineNumber": 448
+        },
+        {
+          "caller": "countConversationsByHour",
+          "callee": "new QueryWrapper<>",
+          "lineNumber": 452
+        },
+        {
+          "caller": "countConversationsByHour",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId))\r\n                .lt(\"create_time\", toDate(endExclusive, zoneId)).groupBy",
+          "lineNumber": 453
+        },
+        {
+          "caller": "countConversationsByHour",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId)).lt",
+          "lineNumber": 453
+        },
+        {
+          "caller": "countConversationsByHour",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(*) as cnt\").ge",
+          "lineNumber": 453
+        },
+        {
+          "caller": "countConversationsByHour",
+          "callee": "wrapper.select",
+          "lineNumber": 453
+        },
+        {
+          "caller": "countConversationsByHour",
+          "callee": "toDate",
+          "lineNumber": 454
+        },
+        {
+          "caller": "countConversationsByHour",
+          "callee": "toDate",
+          "lineNumber": 455
+        },
+        {
+          "caller": "countConversationsByHour",
+          "callee": "mapLongResultsByHour",
+          "lineNumber": 457
+        },
+        {
+          "caller": "countConversationsByHour",
+          "callee": "conversationMapper.selectMaps",
+          "lineNumber": 457
+        },
+        {
+          "caller": "countMessagesByHour",
+          "callee": "new QueryWrapper<>",
+          "lineNumber": 461
+        },
+        {
+          "caller": "countMessagesByHour",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId))\r\n                .lt(\"create_time\", toDate(endExclusive, zoneId)).groupBy",
+          "lineNumber": 462
+        },
+        {
+          "caller": "countMessagesByHour",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId)).lt",
+          "lineNumber": 462
+        },
+        {
+          "caller": "countMessagesByHour",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(*) as cnt\").ge",
+          "lineNumber": 462
+        },
+        {
+          "caller": "countMessagesByHour",
+          "callee": "wrapper.select",
+          "lineNumber": 462
+        },
+        {
+          "caller": "countMessagesByHour",
+          "callee": "toDate",
+          "lineNumber": 463
+        },
+        {
+          "caller": "countMessagesByHour",
+          "callee": "toDate",
+          "lineNumber": 464
+        },
+        {
+          "caller": "countMessagesByHour",
+          "callee": "mapLongResultsByHour",
+          "lineNumber": 466
+        },
+        {
+          "caller": "countMessagesByHour",
+          "callee": "messageMapper.selectMaps",
+          "lineNumber": 466
+        },
+        {
+          "caller": "countAssistantMessagesByHour",
+          "callee": "new QueryWrapper<>",
+          "lineNumber": 470
+        },
+        {
+          "caller": "countAssistantMessagesByHour",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId))\r\n                .lt(\"create_time\", toDate(endExclusive, zoneId))\r\n                .eq(\"role\", ROLE_ASSISTANT).groupBy",
+          "lineNumber": 471
+        },
+        {
+          "caller": "countAssistantMessagesByHour",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId))\r\n                .lt(\"create_time\", toDate(endExclusive, zoneId)).eq",
+          "lineNumber": 471
+        },
+        {
+          "caller": "countAssistantMessagesByHour",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId)).lt",
+          "lineNumber": 471
+        },
+        {
+          "caller": "countAssistantMessagesByHour",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(*) as cnt\").ge",
+          "lineNumber": 471
+        },
+        {
+          "caller": "countAssistantMessagesByHour",
+          "callee": "wrapper.select",
+          "lineNumber": 471
+        },
+        {
+          "caller": "countAssistantMessagesByHour",
+          "callee": "toDate",
+          "lineNumber": 472
+        },
+        {
+          "caller": "countAssistantMessagesByHour",
+          "callee": "toDate",
+          "lineNumber": 473
+        },
+        {
+          "caller": "countAssistantMessagesByHour",
+          "callee": "mapLongResultsByHour",
+          "lineNumber": 476
+        },
+        {
+          "caller": "countAssistantMessagesByHour",
+          "callee": "messageMapper.selectMaps",
+          "lineNumber": 476
+        },
+        {
+          "caller": "countNoDocMessagesByHour",
+          "callee": "new QueryWrapper<>",
+          "lineNumber": 480
+        },
+        {
+          "caller": "countNoDocMessagesByHour",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId))\r\n                .lt(\"create_time\", toDate(endExclusive, zoneId))\r\n                .eq(\"role\", ROLE_ASSISTANT)\r\n                .eq(\"content\", NO_DOC_REPLY).groupBy",
+          "lineNumber": 481
+        },
+        {
+          "caller": "countNoDocMessagesByHour",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId))\r\n                .lt(\"create_time\", toDate(endExclusive, zoneId))\r\n                .eq(\"role\", ROLE_ASSISTANT).eq",
+          "lineNumber": 481
+        },
+        {
+          "caller": "countNoDocMessagesByHour",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId))\r\n                .lt(\"create_time\", toDate(endExclusive, zoneId)).eq",
+          "lineNumber": 481
+        },
+        {
+          "caller": "countNoDocMessagesByHour",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(*) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId)).lt",
+          "lineNumber": 481
+        },
+        {
+          "caller": "countNoDocMessagesByHour",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(*) as cnt\").ge",
+          "lineNumber": 481
+        },
+        {
+          "caller": "countNoDocMessagesByHour",
+          "callee": "wrapper.select",
+          "lineNumber": 481
+        },
+        {
+          "caller": "countNoDocMessagesByHour",
+          "callee": "toDate",
+          "lineNumber": 482
+        },
+        {
+          "caller": "countNoDocMessagesByHour",
+          "callee": "toDate",
+          "lineNumber": 483
+        },
+        {
+          "caller": "countNoDocMessagesByHour",
+          "callee": "mapLongResultsByHour",
+          "lineNumber": 487
+        },
+        {
+          "caller": "countNoDocMessagesByHour",
+          "callee": "messageMapper.selectMaps",
+          "lineNumber": 487
+        },
+        {
+          "caller": "countActiveUsersByHour",
+          "callee": "new QueryWrapper<>",
+          "lineNumber": 491
+        },
+        {
+          "caller": "countActiveUsersByHour",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(distinct user_id) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId))\r\n                .lt(\"create_time\", toDate(endExclusive, zoneId)).groupBy",
+          "lineNumber": 492
+        },
+        {
+          "caller": "countActiveUsersByHour",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(distinct user_id) as cnt\")\r\n                .ge(\"create_time\", toDate(start, zoneId)).lt",
+          "lineNumber": 492
+        },
+        {
+          "caller": "countActiveUsersByHour",
+          "callee": "wrapper.select(\"to_char(create_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(distinct user_id) as cnt\").ge",
+          "lineNumber": 492
+        },
+        {
+          "caller": "countActiveUsersByHour",
+          "callee": "wrapper.select",
+          "lineNumber": 492
+        },
+        {
+          "caller": "countActiveUsersByHour",
+          "callee": "toDate",
+          "lineNumber": 493
+        },
+        {
+          "caller": "countActiveUsersByHour",
+          "callee": "toDate",
+          "lineNumber": 494
+        },
+        {
+          "caller": "countActiveUsersByHour",
+          "callee": "mapLongResultsByHour",
+          "lineNumber": 496
+        },
+        {
+          "caller": "countActiveUsersByHour",
+          "callee": "messageMapper.selectMaps",
+          "lineNumber": 496
+        },
+        {
+          "caller": "averageLatencyByHour",
+          "callee": "new QueryWrapper<>",
+          "lineNumber": 500
+        },
+        {
+          "caller": "averageLatencyByHour",
+          "callee": "wrapper.select(\"to_char(start_time,'YYYY-MM-DD HH24:00:00') as h\", \"avg(duration_ms) as avg\")\r\n                .ge(\"start_time\", toDate(start, zoneId))\r\n                .lt(\"start_time\", toDate(endExclusive, zoneId))\r\n                .eq(\"status\", STATUS_SUCCESS).groupBy",
+          "lineNumber": 501
+        },
+        {
+          "caller": "averageLatencyByHour",
+          "callee": "wrapper.select(\"to_char(start_time,'YYYY-MM-DD HH24:00:00') as h\", \"avg(duration_ms) as avg\")\r\n                .ge(\"start_time\", toDate(start, zoneId))\r\n                .lt(\"start_time\", toDate(endExclusive, zoneId)).eq",
+          "lineNumber": 501
+        },
+        {
+          "caller": "averageLatencyByHour",
+          "callee": "wrapper.select(\"to_char(start_time,'YYYY-MM-DD HH24:00:00') as h\", \"avg(duration_ms) as avg\")\r\n                .ge(\"start_time\", toDate(start, zoneId)).lt",
+          "lineNumber": 501
+        },
+        {
+          "caller": "averageLatencyByHour",
+          "callee": "wrapper.select(\"to_char(start_time,'YYYY-MM-DD HH24:00:00') as h\", \"avg(duration_ms) as avg\").ge",
+          "lineNumber": 501
+        },
+        {
+          "caller": "averageLatencyByHour",
+          "callee": "wrapper.select",
+          "lineNumber": 501
+        },
+        {
+          "caller": "averageLatencyByHour",
+          "callee": "toDate",
+          "lineNumber": 502
+        },
+        {
+          "caller": "averageLatencyByHour",
+          "callee": "toDate",
+          "lineNumber": 503
+        },
+        {
+          "caller": "averageLatencyByHour",
+          "callee": "mapDoubleResultsByHour",
+          "lineNumber": 506
+        },
+        {
+          "caller": "averageLatencyByHour",
+          "callee": "traceRunMapper.selectMaps",
+          "lineNumber": 506
+        },
+        {
+          "caller": "countTraceRunsByHour",
+          "callee": "new QueryWrapper<>",
+          "lineNumber": 510
+        },
+        {
+          "caller": "countTraceRunsByHour",
+          "callee": "wrapper.select(\"to_char(start_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(*) as cnt\")\r\n                .ge(\"start_time\", toDate(start, zoneId)).lt",
+          "lineNumber": 511
+        },
+        {
+          "caller": "countTraceRunsByHour",
+          "callee": "wrapper.select(\"to_char(start_time,'YYYY-MM-DD HH24:00:00') as h\", \"count(*) as cnt\").ge",
+          "lineNumber": 511
+        },
+        {
+          "caller": "countTraceRunsByHour",
+          "callee": "wrapper.select",
+          "lineNumber": 511
+        },
+        {
+          "caller": "countTraceRunsByHour",
+          "callee": "toDate",
+          "lineNumber": 512
+        },
+        {
+          "caller": "countTraceRunsByHour",
+          "callee": "toDate",
+          "lineNumber": 513
+        },
+        {
+          "caller": "countTraceRunsByHour",
+          "callee": "wrapper.eq",
+          "lineNumber": 515
+        },
+        {
+          "caller": "countTraceRunsByHour",
+          "callee": "wrapper.groupBy",
+          "lineNumber": 517
+        },
+        {
+          "caller": "countTraceRunsByHour",
+          "callee": "mapLongResultsByHour",
+          "lineNumber": 518
+        },
+        {
+          "caller": "countTraceRunsByHour",
+          "callee": "traceRunMapper.selectMaps",
+          "lineNumber": 518
+        },
+        {
+          "caller": "mapLongResults",
+          "callee": "new HashMap<>",
+          "lineNumber": 522
+        },
+        {
+          "caller": "mapLongResults",
+          "callee": "parseLocalDate",
+          "lineNumber": 527
+        },
+        {
+          "caller": "mapLongResults",
+          "callee": "row.get",
+          "lineNumber": 527
+        },
+        {
+          "caller": "mapLongResults",
+          "callee": "toLongValue",
+          "lineNumber": 531
+        },
+        {
+          "caller": "mapLongResults",
+          "callee": "row.get",
+          "lineNumber": 531
+        },
+        {
+          "caller": "mapLongResults",
+          "callee": "result.put",
+          "lineNumber": 533
+        },
+        {
+          "caller": "mapLongResultsByHour",
+          "callee": "new HashMap<>",
+          "lineNumber": 540
+        },
+        {
+          "caller": "mapLongResultsByHour",
+          "callee": "parseLocalDateTime",
+          "lineNumber": 545
+        },
+        {
+          "caller": "mapLongResultsByHour",
+          "callee": "row.get",
+          "lineNumber": 545
+        },
+        {
+          "caller": "mapLongResultsByHour",
+          "callee": "toLongValue",
+          "lineNumber": 549
+        },
+        {
+          "caller": "mapLongResultsByHour",
+          "callee": "row.get",
+          "lineNumber": 549
+        },
+        {
+          "caller": "mapLongResultsByHour",
+          "callee": "result.put",
+          "lineNumber": 551
+        },
+        {
+          "caller": "mapDoubleResultsByHour",
+          "callee": "new HashMap<>",
+          "lineNumber": 558
+        },
+        {
+          "caller": "mapDoubleResultsByHour",
+          "callee": "parseLocalDateTime",
+          "lineNumber": 563
+        },
+        {
+          "caller": "mapDoubleResultsByHour",
+          "callee": "row.get",
+          "lineNumber": 563
+        },
+        {
+          "caller": "mapDoubleResultsByHour",
+          "callee": "row.get",
+          "lineNumber": 567
+        },
+        {
+          "caller": "mapDoubleResultsByHour",
+          "callee": "number.doubleValue",
+          "lineNumber": 568
+        },
+        {
+          "caller": "mapDoubleResultsByHour",
+          "callee": "result.put",
+          "lineNumber": 569
+        },
+        {
+          "caller": "mapDoubleResultsByHour",
+          "callee": "round1",
+          "lineNumber": 569
+        },
+        {
+          "caller": "buildPoints",
+          "callee": "new ArrayList<>",
+          "lineNumber": 575
+        },
+        {
+          "caller": "buildPoints",
+          "callee": "cursor.isBefore",
+          "lineNumber": 577
+        },
+        {
+          "caller": "buildPoints",
+          "callee": "values.getOrDefault",
+          "lineNumber": 578
+        },
+        {
+          "caller": "buildPoints",
+          "callee": "points.add",
+          "lineNumber": 579
+        },
+        {
+          "caller": "buildPoints",
+          "callee": "DashboardTrendPointVO.builder()\r\n                    .ts(toDate(cursor, zoneId).getTime())\r\n                    .value((double) value).build",
+          "lineNumber": 579
+        },
+        {
+          "caller": "buildPoints",
+          "callee": "DashboardTrendPointVO.builder()\r\n                    .ts(toDate(cursor, zoneId).getTime()).value",
+          "lineNumber": 579
+        },
+        {
+          "caller": "buildPoints",
+          "callee": "DashboardTrendPointVO.builder().ts",
+          "lineNumber": 579
+        },
+        {
+          "caller": "buildPoints",
+          "callee": "DashboardTrendPointVO.builder",
+          "lineNumber": 579
+        },
+        {
+          "caller": "buildPoints",
+          "callee": "toDate(cursor, zoneId).getTime",
+          "lineNumber": 580
+        },
+        {
+          "caller": "buildPoints",
+          "callee": "toDate",
+          "lineNumber": 580
+        },
+        {
+          "caller": "buildPoints",
+          "callee": "cursor.plusDays",
+          "lineNumber": 583
+        },
+        {
+          "caller": "buildPointsDouble",
+          "callee": "new ArrayList<>",
+          "lineNumber": 589
+        },
+        {
+          "caller": "buildPointsDouble",
+          "callee": "cursor.isBefore",
+          "lineNumber": 591
+        },
+        {
+          "caller": "buildPointsDouble",
+          "callee": "values.getOrDefault",
+          "lineNumber": 592
+        },
+        {
+          "caller": "buildPointsDouble",
+          "callee": "points.add",
+          "lineNumber": 593
+        },
+        {
+          "caller": "buildPointsDouble",
+          "callee": "DashboardTrendPointVO.builder()\r\n                    .ts(toDate(cursor, zoneId).getTime())\r\n                    .value(value).build",
+          "lineNumber": 593
+        },
+        {
+          "caller": "buildPointsDouble",
+          "callee": "DashboardTrendPointVO.builder()\r\n                    .ts(toDate(cursor, zoneId).getTime()).value",
+          "lineNumber": 593
+        },
+        {
+          "caller": "buildPointsDouble",
+          "callee": "DashboardTrendPointVO.builder().ts",
+          "lineNumber": 593
+        },
+        {
+          "caller": "buildPointsDouble",
+          "callee": "DashboardTrendPointVO.builder",
+          "lineNumber": 593
+        },
+        {
+          "caller": "buildPointsDouble",
+          "callee": "toDate(cursor, zoneId).getTime",
+          "lineNumber": 594
+        },
+        {
+          "caller": "buildPointsDouble",
+          "callee": "toDate",
+          "lineNumber": 594
+        },
+        {
+          "caller": "buildPointsDouble",
+          "callee": "cursor.plusDays",
+          "lineNumber": 597
+        },
+        {
+          "caller": "buildPointsByHour",
+          "callee": "new ArrayList<>",
+          "lineNumber": 607
+        },
+        {
+          "caller": "buildPointsByHour",
+          "callee": "cursor.isBefore",
+          "lineNumber": 609
+        },
+        {
+          "caller": "buildPointsByHour",
+          "callee": "values.getOrDefault",
+          "lineNumber": 610
+        },
+        {
+          "caller": "buildPointsByHour",
+          "callee": "points.add",
+          "lineNumber": 611
+        },
+        {
+          "caller": "buildPointsByHour",
+          "callee": "DashboardTrendPointVO.builder()\r\n                    .ts(toDate(cursor, zoneId).getTime())\r\n                    .value((double) value).build",
+          "lineNumber": 611
+        },
+        {
+          "caller": "buildPointsByHour",
+          "callee": "DashboardTrendPointVO.builder()\r\n                    .ts(toDate(cursor, zoneId).getTime()).value",
+          "lineNumber": 611
+        },
+        {
+          "caller": "buildPointsByHour",
+          "callee": "DashboardTrendPointVO.builder().ts",
+          "lineNumber": 611
+        },
+        {
+          "caller": "buildPointsByHour",
+          "callee": "DashboardTrendPointVO.builder",
+          "lineNumber": 611
+        },
+        {
+          "caller": "buildPointsByHour",
+          "callee": "toDate(cursor, zoneId).getTime",
+          "lineNumber": 612
+        },
+        {
+          "caller": "buildPointsByHour",
+          "callee": "toDate",
+          "lineNumber": 612
+        },
+        {
+          "caller": "buildPointsByHour",
+          "callee": "cursor.plusHours",
+          "lineNumber": 615
+        },
+        {
+          "caller": "buildPointsDoubleByHour",
+          "callee": "new ArrayList<>",
+          "lineNumber": 625
+        },
+        {
+          "caller": "buildPointsDoubleByHour",
+          "callee": "cursor.isBefore",
+          "lineNumber": 627
+        },
+        {
+          "caller": "buildPointsDoubleByHour",
+          "callee": "values.getOrDefault",
+          "lineNumber": 628
+        },
+        {
+          "caller": "buildPointsDoubleByHour",
+          "callee": "points.add",
+          "lineNumber": 629
+        },
+        {
+          "caller": "buildPointsDoubleByHour",
+          "callee": "DashboardTrendPointVO.builder()\r\n                    .ts(toDate(cursor, zoneId).getTime())\r\n                    .value(value).build",
+          "lineNumber": 629
+        },
+        {
+          "caller": "buildPointsDoubleByHour",
+          "callee": "DashboardTrendPointVO.builder()\r\n                    .ts(toDate(cursor, zoneId).getTime()).value",
+          "lineNumber": 629
+        },
+        {
+          "caller": "buildPointsDoubleByHour",
+          "callee": "DashboardTrendPointVO.builder().ts",
+          "lineNumber": 629
+        },
+        {
+          "caller": "buildPointsDoubleByHour",
+          "callee": "DashboardTrendPointVO.builder",
+          "lineNumber": 629
+        },
+        {
+          "caller": "buildPointsDoubleByHour",
+          "callee": "toDate(cursor, zoneId).getTime",
+          "lineNumber": 630
+        },
+        {
+          "caller": "buildPointsDoubleByHour",
+          "callee": "toDate",
+          "lineNumber": 630
+        },
+        {
+          "caller": "buildPointsDoubleByHour",
+          "callee": "cursor.plusHours",
+          "lineNumber": 633
+        },
+        {
+          "caller": "average",
+          "callee": "values.isEmpty",
+          "lineNumber": 639
+        },
+        {
+          "caller": "average",
+          "callee": "Math.round",
+          "lineNumber": 646
+        },
+        {
+          "caller": "average",
+          "callee": "values.size",
+          "lineNumber": 646
+        },
+        {
+          "caller": "percentile",
+          "callee": "values.isEmpty",
+          "lineNumber": 650
+        },
+        {
+          "caller": "percentile",
+          "callee": "new ArrayList<>",
+          "lineNumber": 653
+        },
+        {
+          "caller": "percentile",
+          "callee": "sorted.sort",
+          "lineNumber": 654
+        },
+        {
+          "caller": "percentile",
+          "callee": "Math.ceil",
+          "lineNumber": 655
+        },
+        {
+          "caller": "percentile",
+          "callee": "sorted.size",
+          "lineNumber": 655
+        },
+        {
+          "caller": "percentile",
+          "callee": "Math.max",
+          "lineNumber": 656
+        },
+        {
+          "caller": "percentile",
+          "callee": "Math.min",
+          "lineNumber": 656
+        },
+        {
+          "caller": "percentile",
+          "callee": "sorted.size",
+          "lineNumber": 656
+        },
+        {
+          "caller": "percentile",
+          "callee": "sorted.get",
+          "lineNumber": 657
+        },
+        {
+          "caller": "round1",
+          "callee": "Math.round",
+          "lineNumber": 661
+        },
+        {
+          "caller": "parseLocalDate",
+          "callee": "LocalDate.parse",
+          "lineNumber": 668
+        },
+        {
+          "caller": "parseLocalDate",
+          "callee": "String.valueOf",
+          "lineNumber": 668
+        },
+        {
+          "caller": "parseLocalDateTime",
+          "callee": "LocalDateTime.parse",
+          "lineNumber": 675
+        },
+        {
+          "caller": "parseLocalDateTime",
+          "callee": "String.valueOf",
+          "lineNumber": 675
+        },
+        {
+          "caller": "toLongValue",
+          "callee": "number.longValue",
+          "lineNumber": 680
+        },
+        {
+          "caller": "toLongValue",
+          "callee": "Long.parseLong",
+          "lineNumber": 686
+        },
+        {
+          "caller": "toLongValue",
+          "callee": "String.valueOf",
+          "lineNumber": 686
+        },
+        {
+          "caller": "toDate",
+          "callee": "Date.from",
+          "lineNumber": 693
+        },
+        {
+          "caller": "toDate",
+          "callee": "date.atStartOfDay(zoneId).toInstant",
+          "lineNumber": 693
+        },
+        {
+          "caller": "toDate",
+          "callee": "date.atStartOfDay",
+          "lineNumber": 693
+        },
+        {
+          "caller": "toDate",
+          "callee": "Date.from",
+          "lineNumber": 697
+        },
+        {
+          "caller": "toDate",
+          "callee": "time.atZone(zoneId).toInstant",
+          "lineNumber": 697
+        },
+        {
+          "caller": "toDate",
+          "callee": "time.atZone",
+          "lineNumber": 697
+        },
+        {
+          "caller": "toLocalDate",
+          "callee": "date.toInstant().atZone(zoneId).toLocalDate",
+          "lineNumber": 701
+        },
+        {
+          "caller": "toLocalDate",
+          "callee": "date.toInstant().atZone",
+          "lineNumber": 701
+        },
+        {
+          "caller": "toLocalDate",
+          "callee": "date.toInstant",
+          "lineNumber": 701
+        },
+        {
+          "caller": "toLocalDateTime",
+          "callee": "date.toInstant().atZone(zoneId).toLocalDateTime",
+          "lineNumber": 705
+        },
+        {
+          "caller": "toLocalDateTime",
+          "callee": "date.toInstant().atZone",
+          "lineNumber": 705
+        },
+        {
+          "caller": "toLocalDateTime",
+          "callee": "date.toInstant",
+          "lineNumber": 705
+        },
+        {
+          "caller": "resolveWindowRange",
+          "callee": "parseWindow",
+          "lineNumber": 709
+        },
+        {
+          "caller": "resolveWindowRange",
+          "callee": "Instant.now",
+          "lineNumber": 710
+        },
+        {
+          "caller": "resolveWindowRange",
+          "callee": "now.minus",
+          "lineNumber": 711
+        },
+        {
+          "caller": "resolveWindowRange",
+          "callee": "start.minus",
+          "lineNumber": 712
+        },
+        {
+          "caller": "resolveWindowRange",
+          "callee": "new WindowRange",
+          "lineNumber": 713
+        },
+        {
+          "caller": "resolveWindowRange",
+          "callee": "Date.from",
+          "lineNumber": 713
+        },
+        {
+          "caller": "resolveWindowRange",
+          "callee": "Date.from",
+          "lineNumber": 713
+        },
+        {
+          "caller": "resolveWindowRange",
+          "callee": "Date.from",
+          "lineNumber": 713
+        },
+        {
+          "caller": "resolveWindowRange",
+          "callee": "Date.from",
+          "lineNumber": 713
+        },
+        {
+          "caller": "resolveWindowRange",
+          "callee": "formatDuration",
+          "lineNumber": 714
+        },
+        {
+          "caller": "resolveWindowRange",
+          "callee": "formatDuration",
+          "lineNumber": 714
+        },
+        {
+          "caller": "parseWindow",
+          "callee": "window.isBlank",
+          "lineNumber": 718
+        },
+        {
+          "caller": "parseWindow",
+          "callee": "window.trim().toLowerCase",
+          "lineNumber": 721
+        },
+        {
+          "caller": "parseWindow",
+          "callee": "window.trim",
+          "lineNumber": 721
+        },
+        {
+          "caller": "parseWindow",
+          "callee": "normalized.endsWith",
+          "lineNumber": 722
+        },
+        {
+          "caller": "parseWindow",
+          "callee": "parseNumber",
+          "lineNumber": 723
+        },
+        {
+          "caller": "parseWindow",
+          "callee": "normalized.substring",
+          "lineNumber": 723
+        },
+        {
+          "caller": "parseWindow",
+          "callee": "normalized.length",
+          "lineNumber": 723
+        },
+        {
+          "caller": "parseWindow",
+          "callee": "fallback.toHours",
+          "lineNumber": 723
+        },
+        {
+          "caller": "parseWindow",
+          "callee": "Duration.ofHours",
+          "lineNumber": 724
+        },
+        {
+          "caller": "parseWindow",
+          "callee": "normalized.endsWith",
+          "lineNumber": 726
+        },
+        {
+          "caller": "parseWindow",
+          "callee": "parseNumber",
+          "lineNumber": 727
+        },
+        {
+          "caller": "parseWindow",
+          "callee": "normalized.substring",
+          "lineNumber": 727
+        },
+        {
+          "caller": "parseWindow",
+          "callee": "normalized.length",
+          "lineNumber": 727
+        },
+        {
+          "caller": "parseWindow",
+          "callee": "fallback.toDays",
+          "lineNumber": 727
+        },
+        {
+          "caller": "parseWindow",
+          "callee": "Duration.ofDays",
+          "lineNumber": 728
+        },
+        {
+          "caller": "resolveTrendGranularity",
+          "callee": "granularity.isBlank",
+          "lineNumber": 734
+        },
+        {
+          "caller": "resolveTrendGranularity",
+          "callee": "granularity.trim().toLowerCase",
+          "lineNumber": 735
+        },
+        {
+          "caller": "resolveTrendGranularity",
+          "callee": "granularity.trim",
+          "lineNumber": 735
+        },
+        {
+          "caller": "resolveTrendGranularity",
+          "callee": "GRANULARITY_HOUR.equals",
+          "lineNumber": 736
+        },
+        {
+          "caller": "resolveTrendGranularity",
+          "callee": "GRANULARITY_DAY.equals",
+          "lineNumber": 736
+        },
+        {
+          "caller": "resolveTrendGranularity",
+          "callee": "windowDuration.toHours",
+          "lineNumber": 740
+        },
+        {
+          "caller": "parseNumber",
+          "callee": "Long.parseLong",
+          "lineNumber": 745
+        },
+        {
+          "caller": "formatDuration",
+          "callee": "duration.toHours",
+          "lineNumber": 752
+        }
+      ],
+      "metrics": {
+        "importCount": 16,
+        "exportCount": 4,
+        "functionCount": 50,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/aop/ChatRateLimitAspect.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 159,
+      "nonEmptyLines": 144,
+      "functions": [
+        {
+          "name": "limitStreamChat",
+          "startLine": 57,
+          "endLine": 76,
+          "params": [
+            "joinPoint"
+          ]
+        },
+        {
+          "name": "invokeWithTrace",
+          "startLine": 78,
+          "endLine": 129,
+          "params": [
+            "method",
+            "target",
+            "args",
+            "question",
+            "conversationId",
+            "emitter"
+          ]
+        },
+        {
+          "name": "invokeTarget",
+          "startLine": 131,
+          "endLine": 139,
+          "params": [
+            "method",
+            "target",
+            "args",
+            "emitter"
+          ]
+        },
+        {
+          "name": "unwrap",
+          "startLine": 141,
+          "endLine": 147,
+          "params": [
+            "throwable"
+          ]
+        },
+        {
+          "name": "truncateError",
+          "startLine": 149,
+          "endLine": 158,
+          "params": [
+            "throwable"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ChatRateLimitAspect",
+          "startLine": 43,
+          "endLine": 159,
+          "methods": [
+            "limitStreamChat",
+            "invokeWithTrace",
+            "invokeTarget",
+            "unwrap",
+            "truncateError"
+          ],
+          "properties": [
+            "STATUS_RUNNING",
+            "STATUS_SUCCESS",
+            "STATUS_ERROR",
+            "chatQueueLimiter",
+            "ragTraceProperties",
+            "traceRecordService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "limitStreamChat",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "ChatRateLimitAspect",
+          "line": 43,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "limitStreamChat",
+          "callee": "joinPoint.getArgs",
+          "lineNumber": 59
+        },
+        {
+          "caller": "limitStreamChat",
+          "callee": "joinPoint.proceed",
+          "lineNumber": 61
+        },
+        {
+          "caller": "limitStreamChat",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 66
+        },
+        {
+          "caller": "limitStreamChat",
+          "callee": "IdUtil.getSnowflakeNextIdStr",
+          "lineNumber": 66
+        },
+        {
+          "caller": "limitStreamChat",
+          "callee": "joinPoint.getTarget",
+          "lineNumber": 68
+        },
+        {
+          "caller": "limitStreamChat",
+          "callee": "joinPoint.getSignature",
+          "lineNumber": 69
+        },
+        {
+          "caller": "limitStreamChat",
+          "callee": "signature.getMethod",
+          "lineNumber": 70
+        },
+        {
+          "caller": "limitStreamChat",
+          "callee": "chatQueueLimiter.enqueue",
+          "lineNumber": 72
+        },
+        {
+          "caller": "limitStreamChat",
+          "callee": "invokeWithTrace",
+          "lineNumber": 73
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "ragTraceProperties.isEnabled",
+          "lineNumber": 84
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "invokeTarget",
+          "lineNumber": 85
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "IdUtil.getSnowflakeNextIdStr",
+          "lineNumber": 89
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "IdUtil.getSnowflakeNextIdStr",
+          "lineNumber": 90
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 91
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "traceRecordService.startRun",
+          "lineNumber": 92
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "RagTraceRunDO.builder()\r\n                .traceId(traceId)\r\n                .traceName(\"rag-stream-chat\")\r\n                .entryMethod(method.getDeclaringClass().getName() + \"#\" + method.getName())\r\n                .conversationId(conversationId)\r\n                .taskId(taskId)\r\n                .userId(UserContext.getUserId())\r\n                .status(STATUS_RUNNING)\r\n                .startTime(new Date())\r\n                .extraData(StrUtil.format(\"{\\\"questionLength\\\":{}}\", StrUtil.length(question))).build",
+          "lineNumber": 92
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "RagTraceRunDO.builder()\r\n                .traceId(traceId)\r\n                .traceName(\"rag-stream-chat\")\r\n                .entryMethod(method.getDeclaringClass().getName() + \"#\" + method.getName())\r\n                .conversationId(conversationId)\r\n                .taskId(taskId)\r\n                .userId(UserContext.getUserId())\r\n                .status(STATUS_RUNNING)\r\n                .startTime(new Date()).extraData",
+          "lineNumber": 92
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "RagTraceRunDO.builder()\r\n                .traceId(traceId)\r\n                .traceName(\"rag-stream-chat\")\r\n                .entryMethod(method.getDeclaringClass().getName() + \"#\" + method.getName())\r\n                .conversationId(conversationId)\r\n                .taskId(taskId)\r\n                .userId(UserContext.getUserId())\r\n                .status(STATUS_RUNNING).startTime",
+          "lineNumber": 92
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "RagTraceRunDO.builder()\r\n                .traceId(traceId)\r\n                .traceName(\"rag-stream-chat\")\r\n                .entryMethod(method.getDeclaringClass().getName() + \"#\" + method.getName())\r\n                .conversationId(conversationId)\r\n                .taskId(taskId)\r\n                .userId(UserContext.getUserId()).status",
+          "lineNumber": 92
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "RagTraceRunDO.builder()\r\n                .traceId(traceId)\r\n                .traceName(\"rag-stream-chat\")\r\n                .entryMethod(method.getDeclaringClass().getName() + \"#\" + method.getName())\r\n                .conversationId(conversationId)\r\n                .taskId(taskId).userId",
+          "lineNumber": 92
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "RagTraceRunDO.builder()\r\n                .traceId(traceId)\r\n                .traceName(\"rag-stream-chat\")\r\n                .entryMethod(method.getDeclaringClass().getName() + \"#\" + method.getName())\r\n                .conversationId(conversationId).taskId",
+          "lineNumber": 92
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "RagTraceRunDO.builder()\r\n                .traceId(traceId)\r\n                .traceName(\"rag-stream-chat\")\r\n                .entryMethod(method.getDeclaringClass().getName() + \"#\" + method.getName()).conversationId",
+          "lineNumber": 92
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "RagTraceRunDO.builder()\r\n                .traceId(traceId)\r\n                .traceName(\"rag-stream-chat\").entryMethod",
+          "lineNumber": 92
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "RagTraceRunDO.builder()\r\n                .traceId(traceId).traceName",
+          "lineNumber": 92
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "RagTraceRunDO.builder().traceId",
+          "lineNumber": 92
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "RagTraceRunDO.builder",
+          "lineNumber": 92
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "method.getDeclaringClass().getName",
+          "lineNumber": 95
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "method.getDeclaringClass",
+          "lineNumber": 95
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "method.getName",
+          "lineNumber": 95
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "UserContext.getUserId",
+          "lineNumber": 98
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "new Date",
+          "lineNumber": 100
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "StrUtil.format",
+          "lineNumber": 101
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "StrUtil.length",
+          "lineNumber": 101
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "RagTraceContext.setTraceId",
+          "lineNumber": 104
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "RagTraceContext.setTaskId",
+          "lineNumber": 105
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "method.invoke",
+          "lineNumber": 107
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "traceRecordService.finishRun",
+          "lineNumber": 108
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "new Date",
+          "lineNumber": 112
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 113
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "unwrap",
+          "lineNumber": 116
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "traceRecordService.finishRun",
+          "lineNumber": 117
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "truncateError",
+          "lineNumber": 120
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "new Date",
+          "lineNumber": 121
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 122
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "log.warn",
+          "lineNumber": 124
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "emitter.completeWithError",
+          "lineNumber": 125
+        },
+        {
+          "caller": "invokeWithTrace",
+          "callee": "RagTraceContext.clear",
+          "lineNumber": 127
+        },
+        {
+          "caller": "invokeTarget",
+          "callee": "method.invoke",
+          "lineNumber": 133
+        },
+        {
+          "caller": "invokeTarget",
+          "callee": "unwrap",
+          "lineNumber": 135
+        },
+        {
+          "caller": "invokeTarget",
+          "callee": "log.warn",
+          "lineNumber": 136
+        },
+        {
+          "caller": "invokeTarget",
+          "callee": "emitter.completeWithError",
+          "lineNumber": 137
+        },
+        {
+          "caller": "unwrap",
+          "callee": "invocationTargetException.getTargetException",
+          "lineNumber": 143
+        },
+        {
+          "caller": "unwrap",
+          "callee": "invocationTargetException.getTargetException",
+          "lineNumber": 144
+        },
+        {
+          "caller": "truncateError",
+          "callee": "throwable.getClass().getSimpleName",
+          "lineNumber": 153
+        },
+        {
+          "caller": "truncateError",
+          "callee": "throwable.getClass",
+          "lineNumber": 153
+        },
+        {
+          "caller": "truncateError",
+          "callee": "StrUtil.blankToDefault",
+          "lineNumber": 153
+        },
+        {
+          "caller": "truncateError",
+          "callee": "throwable.getMessage",
+          "lineNumber": 153
+        },
+        {
+          "caller": "truncateError",
+          "callee": "message.length",
+          "lineNumber": 154
+        },
+        {
+          "caller": "truncateError",
+          "callee": "ragTraceProperties.getMaxErrorLength",
+          "lineNumber": 154
+        },
+        {
+          "caller": "truncateError",
+          "callee": "message.substring",
+          "lineNumber": 157
+        },
+        {
+          "caller": "truncateError",
+          "callee": "ragTraceProperties.getMaxErrorLength",
+          "lineNumber": 157
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 2,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/aop/RagTraceAspect.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 206,
+      "nonEmptyLines": 189,
+      "functions": [
+        {
+          "name": "aroundRoot",
+          "startLine": 60,
+          "endLine": 115,
+          "params": [
+            "joinPoint",
+            "traceRoot"
+          ]
+        },
+        {
+          "name": "aroundNode",
+          "startLine": 117,
+          "endLine": 173,
+          "params": [
+            "joinPoint",
+            "traceNode"
+          ]
+        },
+        {
+          "name": "resolveStringArg",
+          "startLine": 175,
+          "endLine": 194,
+          "params": [
+            "signature",
+            "args",
+            "argName"
+          ]
+        },
+        {
+          "name": "truncateError",
+          "startLine": 196,
+          "endLine": 205,
+          "params": [
+            "throwable"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RagTraceAspect",
+          "startLine": 46,
+          "endLine": 206,
+          "methods": [
+            "aroundRoot",
+            "aroundNode",
+            "resolveStringArg",
+            "truncateError"
+          ],
+          "properties": [
+            "STATUS_RUNNING",
+            "STATUS_SUCCESS",
+            "STATUS_ERROR",
+            "traceRecordService",
+            "traceProperties"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "aroundRoot",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "aroundNode",
+          "line": 117,
+          "isDefault": false
+        },
+        {
+          "name": "RagTraceAspect",
+          "line": 46,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "aroundRoot",
+          "callee": "traceProperties.isEnabled",
+          "lineNumber": 62
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "joinPoint.proceed",
+          "lineNumber": 63
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "RagTraceContext.getTraceId",
+          "lineNumber": 66
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "StrUtil.isNotBlank",
+          "lineNumber": 67
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "joinPoint.proceed",
+          "lineNumber": 69
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "joinPoint.getSignature",
+          "lineNumber": 72
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "signature.getMethod",
+          "lineNumber": 73
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "IdUtil.getSnowflakeNextIdStr",
+          "lineNumber": 74
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "resolveStringArg",
+          "lineNumber": 75
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "joinPoint.getArgs",
+          "lineNumber": 75
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "traceRoot.conversationIdArg",
+          "lineNumber": 75
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "resolveStringArg",
+          "lineNumber": 76
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "joinPoint.getArgs",
+          "lineNumber": 76
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "traceRoot.taskIdArg",
+          "lineNumber": 76
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "StrUtil.blankToDefault",
+          "lineNumber": 77
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "traceRoot.name",
+          "lineNumber": 77
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "method.getName",
+          "lineNumber": 77
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "new Date",
+          "lineNumber": 78
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 79
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "traceRecordService.startRun",
+          "lineNumber": 81
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "RagTraceRunDO.builder()\r\n                .traceId(traceId)\r\n                .traceName(traceName)\r\n                .entryMethod(method.getDeclaringClass().getName() + \"#\" + method.getName())\r\n                .conversationId(conversationId)\r\n                .taskId(taskId)\r\n                .userId(UserContext.getUserId())\r\n                .status(STATUS_RUNNING)\r\n                .startTime(startTime).build",
+          "lineNumber": 81
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "RagTraceRunDO.builder()\r\n                .traceId(traceId)\r\n                .traceName(traceName)\r\n                .entryMethod(method.getDeclaringClass().getName() + \"#\" + method.getName())\r\n                .conversationId(conversationId)\r\n                .taskId(taskId)\r\n                .userId(UserContext.getUserId())\r\n                .status(STATUS_RUNNING).startTime",
+          "lineNumber": 81
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "RagTraceRunDO.builder()\r\n                .traceId(traceId)\r\n                .traceName(traceName)\r\n                .entryMethod(method.getDeclaringClass().getName() + \"#\" + method.getName())\r\n                .conversationId(conversationId)\r\n                .taskId(taskId)\r\n                .userId(UserContext.getUserId()).status",
+          "lineNumber": 81
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "RagTraceRunDO.builder()\r\n                .traceId(traceId)\r\n                .traceName(traceName)\r\n                .entryMethod(method.getDeclaringClass().getName() + \"#\" + method.getName())\r\n                .conversationId(conversationId)\r\n                .taskId(taskId).userId",
+          "lineNumber": 81
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "RagTraceRunDO.builder()\r\n                .traceId(traceId)\r\n                .traceName(traceName)\r\n                .entryMethod(method.getDeclaringClass().getName() + \"#\" + method.getName())\r\n                .conversationId(conversationId).taskId",
+          "lineNumber": 81
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "RagTraceRunDO.builder()\r\n                .traceId(traceId)\r\n                .traceName(traceName)\r\n                .entryMethod(method.getDeclaringClass().getName() + \"#\" + method.getName()).conversationId",
+          "lineNumber": 81
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "RagTraceRunDO.builder()\r\n                .traceId(traceId)\r\n                .traceName(traceName).entryMethod",
+          "lineNumber": 81
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "RagTraceRunDO.builder()\r\n                .traceId(traceId).traceName",
+          "lineNumber": 81
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "RagTraceRunDO.builder().traceId",
+          "lineNumber": 81
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "RagTraceRunDO.builder",
+          "lineNumber": 81
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "method.getDeclaringClass().getName",
+          "lineNumber": 84
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "method.getDeclaringClass",
+          "lineNumber": 84
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "method.getName",
+          "lineNumber": 84
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "UserContext.getUserId",
+          "lineNumber": 87
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "RagTraceContext.setTraceId",
+          "lineNumber": 92
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "joinPoint.proceed",
+          "lineNumber": 94
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "traceRecordService.finishRun",
+          "lineNumber": 95
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "new Date",
+          "lineNumber": 99
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 100
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "traceRecordService.finishRun",
+          "lineNumber": 104
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "truncateError",
+          "lineNumber": 107
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "new Date",
+          "lineNumber": 108
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 109
+        },
+        {
+          "caller": "aroundRoot",
+          "callee": "RagTraceContext.clear",
+          "lineNumber": 113
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "traceProperties.isEnabled",
+          "lineNumber": 119
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "joinPoint.proceed",
+          "lineNumber": 120
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "RagTraceContext.getTraceId",
+          "lineNumber": 122
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 123
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "joinPoint.proceed",
+          "lineNumber": 124
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "joinPoint.getSignature",
+          "lineNumber": 127
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "signature.getMethod",
+          "lineNumber": 128
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "IdUtil.getSnowflakeNextIdStr",
+          "lineNumber": 129
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "RagTraceContext.currentNodeId",
+          "lineNumber": 130
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "RagTraceContext.depth",
+          "lineNumber": 131
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "new Date",
+          "lineNumber": 132
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 133
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "traceRecordService.startNode",
+          "lineNumber": 135
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "RagTraceNodeDO.builder()\r\n                .traceId(traceId)\r\n                .nodeId(nodeId)\r\n                .parentNodeId(parentNodeId)\r\n                .depth(depth)\r\n                .nodeType(StrUtil.blankToDefault(traceNode.type(), \"METHOD\"))\r\n                .nodeName(StrUtil.blankToDefault(traceNode.name(), method.getName()))\r\n                .className(method.getDeclaringClass().getName())\r\n                .methodName(method.getName())\r\n                .status(STATUS_RUNNING)\r\n                .startTime(startTime).build",
+          "lineNumber": 135
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "RagTraceNodeDO.builder()\r\n                .traceId(traceId)\r\n                .nodeId(nodeId)\r\n                .parentNodeId(parentNodeId)\r\n                .depth(depth)\r\n                .nodeType(StrUtil.blankToDefault(traceNode.type(), \"METHOD\"))\r\n                .nodeName(StrUtil.blankToDefault(traceNode.name(), method.getName()))\r\n                .className(method.getDeclaringClass().getName())\r\n                .methodName(method.getName())\r\n                .status(STATUS_RUNNING).startTime",
+          "lineNumber": 135
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "RagTraceNodeDO.builder()\r\n                .traceId(traceId)\r\n                .nodeId(nodeId)\r\n                .parentNodeId(parentNodeId)\r\n                .depth(depth)\r\n                .nodeType(StrUtil.blankToDefault(traceNode.type(), \"METHOD\"))\r\n                .nodeName(StrUtil.blankToDefault(traceNode.name(), method.getName()))\r\n                .className(method.getDeclaringClass().getName())\r\n                .methodName(method.getName()).status",
+          "lineNumber": 135
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "RagTraceNodeDO.builder()\r\n                .traceId(traceId)\r\n                .nodeId(nodeId)\r\n                .parentNodeId(parentNodeId)\r\n                .depth(depth)\r\n                .nodeType(StrUtil.blankToDefault(traceNode.type(), \"METHOD\"))\r\n                .nodeName(StrUtil.blankToDefault(traceNode.name(), method.getName()))\r\n                .className(method.getDeclaringClass().getName()).methodName",
+          "lineNumber": 135
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "RagTraceNodeDO.builder()\r\n                .traceId(traceId)\r\n                .nodeId(nodeId)\r\n                .parentNodeId(parentNodeId)\r\n                .depth(depth)\r\n                .nodeType(StrUtil.blankToDefault(traceNode.type(), \"METHOD\"))\r\n                .nodeName(StrUtil.blankToDefault(traceNode.name(), method.getName())).className",
+          "lineNumber": 135
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "RagTraceNodeDO.builder()\r\n                .traceId(traceId)\r\n                .nodeId(nodeId)\r\n                .parentNodeId(parentNodeId)\r\n                .depth(depth)\r\n                .nodeType(StrUtil.blankToDefault(traceNode.type(), \"METHOD\")).nodeName",
+          "lineNumber": 135
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "RagTraceNodeDO.builder()\r\n                .traceId(traceId)\r\n                .nodeId(nodeId)\r\n                .parentNodeId(parentNodeId)\r\n                .depth(depth).nodeType",
+          "lineNumber": 135
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "RagTraceNodeDO.builder()\r\n                .traceId(traceId)\r\n                .nodeId(nodeId)\r\n                .parentNodeId(parentNodeId).depth",
+          "lineNumber": 135
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "RagTraceNodeDO.builder()\r\n                .traceId(traceId)\r\n                .nodeId(nodeId).parentNodeId",
+          "lineNumber": 135
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "RagTraceNodeDO.builder()\r\n                .traceId(traceId).nodeId",
+          "lineNumber": 135
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "RagTraceNodeDO.builder().traceId",
+          "lineNumber": 135
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "RagTraceNodeDO.builder",
+          "lineNumber": 135
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "StrUtil.blankToDefault",
+          "lineNumber": 140
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "traceNode.type",
+          "lineNumber": 140
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "StrUtil.blankToDefault",
+          "lineNumber": 141
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "traceNode.name",
+          "lineNumber": 141
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "method.getName",
+          "lineNumber": 141
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "method.getDeclaringClass().getName",
+          "lineNumber": 142
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "method.getDeclaringClass",
+          "lineNumber": 142
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "method.getName",
+          "lineNumber": 143
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "RagTraceContext.pushNode",
+          "lineNumber": 148
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "joinPoint.proceed",
+          "lineNumber": 150
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "traceRecordService.finishNode",
+          "lineNumber": 151
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "new Date",
+          "lineNumber": 156
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 157
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "traceRecordService.finishNode",
+          "lineNumber": 161
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "truncateError",
+          "lineNumber": 165
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "new Date",
+          "lineNumber": 166
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 167
+        },
+        {
+          "caller": "aroundNode",
+          "callee": "RagTraceContext.popNode",
+          "lineNumber": 171
+        },
+        {
+          "caller": "resolveStringArg",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 176
+        },
+        {
+          "caller": "resolveStringArg",
+          "callee": "signature.getParameterNames",
+          "lineNumber": 179
+        },
+        {
+          "caller": "resolveStringArg",
+          "callee": "argName.equals",
+          "lineNumber": 184
+        },
+        {
+          "caller": "resolveStringArg",
+          "callee": "String.valueOf",
+          "lineNumber": 191
+        },
+        {
+          "caller": "truncateError",
+          "callee": "throwable.getClass().getSimpleName",
+          "lineNumber": 200
+        },
+        {
+          "caller": "truncateError",
+          "callee": "throwable.getClass",
+          "lineNumber": 200
+        },
+        {
+          "caller": "truncateError",
+          "callee": "StrUtil.blankToDefault",
+          "lineNumber": 200
+        },
+        {
+          "caller": "truncateError",
+          "callee": "throwable.getMessage",
+          "lineNumber": 200
+        },
+        {
+          "caller": "truncateError",
+          "callee": "message.length",
+          "lineNumber": 201
+        },
+        {
+          "caller": "truncateError",
+          "callee": "traceProperties.getMaxErrorLength",
+          "lineNumber": 201
+        },
+        {
+          "caller": "truncateError",
+          "callee": "message.substring",
+          "lineNumber": 204
+        },
+        {
+          "caller": "truncateError",
+          "callee": "traceProperties.getMaxErrorLength",
+          "lineNumber": 204
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 3,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RagTraceProperties.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 36,
+      "classes": [
+        {
+          "name": "RagTraceProperties",
+          "startLine": 27,
+          "endLine": 41,
+          "methods": [],
+          "properties": [
+            "enabled",
+            "maxErrorLength"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RagTraceProperties",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/RagTraceController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 67,
+      "nonEmptyLines": 59,
+      "functions": [
+        {
+          "name": "pageRuns",
+          "startLine": 47,
+          "endLine": 50,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "detail",
+          "startLine": 55,
+          "endLine": 58,
+          "params": [
+            "traceId"
+          ]
+        },
+        {
+          "name": "nodes",
+          "startLine": 63,
+          "endLine": 66,
+          "params": [
+            "traceId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RagTraceController",
+          "startLine": 38,
+          "endLine": 67,
+          "methods": [
+            "pageRuns",
+            "detail",
+            "nodes"
+          ],
+          "properties": [
+            "ragTraceQueryService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "pageRuns",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "detail",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "nodes",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "RagTraceController",
+          "line": 38,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "pageRuns",
+          "callee": "Results.success",
+          "lineNumber": 49
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "ragTraceQueryService.pageRuns",
+          "lineNumber": 49
+        },
+        {
+          "caller": "detail",
+          "callee": "Results.success",
+          "lineNumber": 57
+        },
+        {
+          "caller": "detail",
+          "callee": "ragTraceQueryService.detail",
+          "lineNumber": 57
+        },
+        {
+          "caller": "nodes",
+          "callee": "Results.success",
+          "lineNumber": 65
+        },
+        {
+          "caller": "nodes",
+          "callee": "ragTraceQueryService.listNodes",
+          "lineNumber": 65
+        }
+      ],
+      "metrics": {
+        "importCount": 7,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/RagTraceRunPageRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 29,
+      "classes": [
+        {
+          "name": "RagTraceRunPageRequest",
+          "startLine": 26,
+          "endLine": 36,
+          "methods": [],
+          "properties": [
+            "traceId",
+            "conversationId",
+            "taskId",
+            "status"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RagTraceRunPageRequest",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceDetailVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 29,
+      "classes": [
+        {
+          "name": "RagTraceDetailVO",
+          "startLine": 28,
+          "endLine": 35,
+          "methods": [],
+          "properties": [
+            "run",
+            "nodes"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RagTraceDetailVO",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceNodeVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 40,
+      "classes": [
+        {
+          "name": "RagTraceNodeVO",
+          "startLine": 28,
+          "endLine": 57,
+          "methods": [],
+          "properties": [
+            "traceId",
+            "nodeId",
+            "parentNodeId",
+            "depth",
+            "nodeType",
+            "nodeName",
+            "className",
+            "methodName",
+            "status",
+            "errorMessage",
+            "durationMs",
+            "startTime",
+            "endTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RagTraceNodeVO",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceRunVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 39,
+      "classes": [
+        {
+          "name": "RagTraceRunVO",
+          "startLine": 28,
+          "endLine": 55,
+          "methods": [],
+          "properties": [
+            "traceId",
+            "traceName",
+            "entryMethod",
+            "conversationId",
+            "taskId",
+            "userId",
+            "username",
+            "status",
+            "errorMessage",
+            "durationMs",
+            "startTime",
+            "endTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RagTraceRunVO",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceNodeDO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 103,
+      "nonEmptyLines": 81,
+      "classes": [
+        {
+          "name": "RagTraceNodeDO",
+          "startLine": 36,
+          "endLine": 103,
+          "methods": [],
+          "properties": [
+            "id",
+            "traceId",
+            "nodeId",
+            "parentNodeId",
+            "depth",
+            "nodeType",
+            "nodeName",
+            "className",
+            "methodName",
+            "status",
+            "errorMessage",
+            "startTime",
+            "endTime",
+            "durationMs",
+            "extraData",
+            "createTime",
+            "updateTime",
+            "deleted"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RagTraceNodeDO",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceRunDO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 93,
+      "nonEmptyLines": 73,
+      "classes": [
+        {
+          "name": "RagTraceRunDO",
+          "startLine": 36,
+          "endLine": 93,
+          "methods": [],
+          "properties": [
+            "id",
+            "traceId",
+            "traceName",
+            "entryMethod",
+            "conversationId",
+            "taskId",
+            "userId",
+            "status",
+            "errorMessage",
+            "startTime",
+            "endTime",
+            "durationMs",
+            "extraData",
+            "createTime",
+            "updateTime",
+            "deleted"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RagTraceRunDO",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceNodeMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "RagTraceNodeMapper",
+          "startLine": 23,
+          "endLine": 24,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RagTraceNodeMapper",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceRunMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "RagTraceRunMapper",
+          "startLine": 23,
+          "endLine": 24,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RagTraceRunMapper",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceQueryService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 31,
+      "classes": [
+        {
+          "name": "RagTraceQueryService",
+          "startLine": 31,
+          "endLine": 38,
+          "methods": [
+            "pageRuns",
+            "detail",
+            "listNodes"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RagTraceQueryService",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceRecordService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 29,
+      "classes": [
+        {
+          "name": "RagTraceRecordService",
+          "startLine": 28,
+          "endLine": 37,
+          "methods": [
+            "startRun",
+            "finishRun",
+            "startNode",
+            "finishNode"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RagTraceRecordService",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/RagTraceQueryServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 172,
+      "nonEmptyLines": 155,
+      "functions": [
+        {
+          "name": "pageRuns",
+          "startLine": 56,
+          "endLine": 77,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "detail",
+          "startLine": 79,
+          "endLine": 92,
+          "params": [
+            "traceId"
+          ]
+        },
+        {
+          "name": "listNodes",
+          "startLine": 94,
+          "endLine": 101,
+          "params": [
+            "traceId"
+          ]
+        },
+        {
+          "name": "toRunVO",
+          "startLine": 103,
+          "endLine": 119,
+          "params": [
+            "run",
+            "usernameMap"
+          ]
+        },
+        {
+          "name": "loadUsernameMap",
+          "startLine": 121,
+          "endLine": 146,
+          "params": [
+            "runs"
+          ]
+        },
+        {
+          "name": "resolveUsername",
+          "startLine": 148,
+          "endLine": 153,
+          "params": [
+            "userId",
+            "usernameMap"
+          ]
+        },
+        {
+          "name": "toNodeVO",
+          "startLine": 155,
+          "endLine": 171,
+          "params": [
+            "node"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RagTraceQueryServiceImpl",
+          "startLine": 48,
+          "endLine": 172,
+          "methods": [
+            "pageRuns",
+            "detail",
+            "listNodes",
+            "toRunVO",
+            "loadUsernameMap",
+            "resolveUsername",
+            "toNodeVO"
+          ],
+          "properties": [
+            "runMapper",
+            "nodeMapper",
+            "userMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "pageRuns",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "detail",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "listNodes",
+          "line": 94,
+          "isDefault": false
+        },
+        {
+          "name": "RagTraceQueryServiceImpl",
+          "line": 48,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "pageRuns",
+          "callee": "Wrappers.lambdaQuery(RagTraceRunDO.class).orderByDesc",
+          "lineNumber": 58
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 58
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "StrUtil.isNotBlank",
+          "lineNumber": 61
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "request.getTraceId",
+          "lineNumber": 61
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "wrapper.eq",
+          "lineNumber": 62
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "request.getTraceId",
+          "lineNumber": 62
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "StrUtil.isNotBlank",
+          "lineNumber": 64
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "request.getConversationId",
+          "lineNumber": 64
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "wrapper.eq",
+          "lineNumber": 65
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "request.getConversationId",
+          "lineNumber": 65
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "StrUtil.isNotBlank",
+          "lineNumber": 67
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "request.getTaskId",
+          "lineNumber": 67
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "wrapper.eq",
+          "lineNumber": 68
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "request.getTaskId",
+          "lineNumber": 68
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "StrUtil.isNotBlank",
+          "lineNumber": 70
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "request.getStatus",
+          "lineNumber": 70
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "wrapper.eq",
+          "lineNumber": 71
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "request.getStatus",
+          "lineNumber": 71
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "runMapper.selectPage",
+          "lineNumber": 74
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "loadUsernameMap",
+          "lineNumber": 75
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "pageResult.getRecords",
+          "lineNumber": 75
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "pageResult.convert",
+          "lineNumber": 76
+        },
+        {
+          "caller": "pageRuns",
+          "callee": "toRunVO",
+          "lineNumber": 76
+        },
+        {
+          "caller": "detail",
+          "callee": "runMapper.selectOne",
+          "lineNumber": 81
+        },
+        {
+          "caller": "detail",
+          "callee": "Wrappers.lambdaQuery(RagTraceRunDO.class)\r\n                .eq(RagTraceRunDO::getTraceId, traceId).last",
+          "lineNumber": 81
+        },
+        {
+          "caller": "detail",
+          "callee": "Wrappers.lambdaQuery(RagTraceRunDO.class).eq",
+          "lineNumber": 81
+        },
+        {
+          "caller": "detail",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 81
+        },
+        {
+          "caller": "detail",
+          "callee": "loadUsernameMap",
+          "lineNumber": 87
+        },
+        {
+          "caller": "detail",
+          "callee": "List.of",
+          "lineNumber": 87
+        },
+        {
+          "caller": "detail",
+          "callee": "RagTraceDetailVO.builder()\r\n                .run(toRunVO(run, usernameMap))\r\n                .nodes(listNodes(traceId)).build",
+          "lineNumber": 88
+        },
+        {
+          "caller": "detail",
+          "callee": "RagTraceDetailVO.builder()\r\n                .run(toRunVO(run, usernameMap)).nodes",
+          "lineNumber": 88
+        },
+        {
+          "caller": "detail",
+          "callee": "RagTraceDetailVO.builder().run",
+          "lineNumber": 88
+        },
+        {
+          "caller": "detail",
+          "callee": "RagTraceDetailVO.builder",
+          "lineNumber": 88
+        },
+        {
+          "caller": "detail",
+          "callee": "toRunVO",
+          "lineNumber": 89
+        },
+        {
+          "caller": "detail",
+          "callee": "listNodes",
+          "lineNumber": 90
+        },
+        {
+          "caller": "listNodes",
+          "callee": "nodeMapper.selectList",
+          "lineNumber": 96
+        },
+        {
+          "caller": "listNodes",
+          "callee": "Wrappers.lambdaQuery(RagTraceNodeDO.class)\r\n                .eq(RagTraceNodeDO::getTraceId, traceId)\r\n                .orderByAsc(RagTraceNodeDO::getStartTime).orderByAsc",
+          "lineNumber": 96
+        },
+        {
+          "caller": "listNodes",
+          "callee": "Wrappers.lambdaQuery(RagTraceNodeDO.class)\r\n                .eq(RagTraceNodeDO::getTraceId, traceId).orderByAsc",
+          "lineNumber": 96
+        },
+        {
+          "caller": "listNodes",
+          "callee": "Wrappers.lambdaQuery(RagTraceNodeDO.class).eq",
+          "lineNumber": 96
+        },
+        {
+          "caller": "listNodes",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 96
+        },
+        {
+          "caller": "listNodes",
+          "callee": "nodes.stream().map(this::toNodeVO).toList",
+          "lineNumber": 100
+        },
+        {
+          "caller": "listNodes",
+          "callee": "nodes.stream().map",
+          "lineNumber": 100
+        },
+        {
+          "caller": "listNodes",
+          "callee": "nodes.stream",
+          "lineNumber": 100
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "resolveUsername",
+          "lineNumber": 104
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "run.getUserId",
+          "lineNumber": 104
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "RagTraceRunVO.builder()\r\n                .traceId(run.getTraceId())\r\n                .traceName(run.getTraceName())\r\n                .entryMethod(run.getEntryMethod())\r\n                .conversationId(run.getConversationId())\r\n                .taskId(run.getTaskId())\r\n                .userId(run.getUserId())\r\n                .username(username)\r\n                .status(run.getStatus())\r\n                .errorMessage(run.getErrorMessage())\r\n                .durationMs(run.getDurationMs())\r\n                .startTime(run.getStartTime())\r\n                .endTime(run.getEndTime()).build",
+          "lineNumber": 105
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "RagTraceRunVO.builder()\r\n                .traceId(run.getTraceId())\r\n                .traceName(run.getTraceName())\r\n                .entryMethod(run.getEntryMethod())\r\n                .conversationId(run.getConversationId())\r\n                .taskId(run.getTaskId())\r\n                .userId(run.getUserId())\r\n                .username(username)\r\n                .status(run.getStatus())\r\n                .errorMessage(run.getErrorMessage())\r\n                .durationMs(run.getDurationMs())\r\n                .startTime(run.getStartTime()).endTime",
+          "lineNumber": 105
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "RagTraceRunVO.builder()\r\n                .traceId(run.getTraceId())\r\n                .traceName(run.getTraceName())\r\n                .entryMethod(run.getEntryMethod())\r\n                .conversationId(run.getConversationId())\r\n                .taskId(run.getTaskId())\r\n                .userId(run.getUserId())\r\n                .username(username)\r\n                .status(run.getStatus())\r\n                .errorMessage(run.getErrorMessage())\r\n                .durationMs(run.getDurationMs()).startTime",
+          "lineNumber": 105
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "RagTraceRunVO.builder()\r\n                .traceId(run.getTraceId())\r\n                .traceName(run.getTraceName())\r\n                .entryMethod(run.getEntryMethod())\r\n                .conversationId(run.getConversationId())\r\n                .taskId(run.getTaskId())\r\n                .userId(run.getUserId())\r\n                .username(username)\r\n                .status(run.getStatus())\r\n                .errorMessage(run.getErrorMessage()).durationMs",
+          "lineNumber": 105
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "RagTraceRunVO.builder()\r\n                .traceId(run.getTraceId())\r\n                .traceName(run.getTraceName())\r\n                .entryMethod(run.getEntryMethod())\r\n                .conversationId(run.getConversationId())\r\n                .taskId(run.getTaskId())\r\n                .userId(run.getUserId())\r\n                .username(username)\r\n                .status(run.getStatus()).errorMessage",
+          "lineNumber": 105
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "RagTraceRunVO.builder()\r\n                .traceId(run.getTraceId())\r\n                .traceName(run.getTraceName())\r\n                .entryMethod(run.getEntryMethod())\r\n                .conversationId(run.getConversationId())\r\n                .taskId(run.getTaskId())\r\n                .userId(run.getUserId())\r\n                .username(username).status",
+          "lineNumber": 105
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "RagTraceRunVO.builder()\r\n                .traceId(run.getTraceId())\r\n                .traceName(run.getTraceName())\r\n                .entryMethod(run.getEntryMethod())\r\n                .conversationId(run.getConversationId())\r\n                .taskId(run.getTaskId())\r\n                .userId(run.getUserId()).username",
+          "lineNumber": 105
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "RagTraceRunVO.builder()\r\n                .traceId(run.getTraceId())\r\n                .traceName(run.getTraceName())\r\n                .entryMethod(run.getEntryMethod())\r\n                .conversationId(run.getConversationId())\r\n                .taskId(run.getTaskId()).userId",
+          "lineNumber": 105
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "RagTraceRunVO.builder()\r\n                .traceId(run.getTraceId())\r\n                .traceName(run.getTraceName())\r\n                .entryMethod(run.getEntryMethod())\r\n                .conversationId(run.getConversationId()).taskId",
+          "lineNumber": 105
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "RagTraceRunVO.builder()\r\n                .traceId(run.getTraceId())\r\n                .traceName(run.getTraceName())\r\n                .entryMethod(run.getEntryMethod()).conversationId",
+          "lineNumber": 105
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "RagTraceRunVO.builder()\r\n                .traceId(run.getTraceId())\r\n                .traceName(run.getTraceName()).entryMethod",
+          "lineNumber": 105
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "RagTraceRunVO.builder()\r\n                .traceId(run.getTraceId()).traceName",
+          "lineNumber": 105
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "RagTraceRunVO.builder().traceId",
+          "lineNumber": 105
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "RagTraceRunVO.builder",
+          "lineNumber": 105
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "run.getTraceId",
+          "lineNumber": 106
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "run.getTraceName",
+          "lineNumber": 107
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "run.getEntryMethod",
+          "lineNumber": 108
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "run.getConversationId",
+          "lineNumber": 109
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "run.getTaskId",
+          "lineNumber": 110
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "run.getUserId",
+          "lineNumber": 111
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "run.getStatus",
+          "lineNumber": 113
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "run.getErrorMessage",
+          "lineNumber": 114
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "run.getDurationMs",
+          "lineNumber": 115
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "run.getStartTime",
+          "lineNumber": 116
+        },
+        {
+          "caller": "toRunVO",
+          "callee": "run.getEndTime",
+          "lineNumber": 117
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "runs.isEmpty",
+          "lineNumber": 122
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "Collections.emptyMap",
+          "lineNumber": 123
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "runs.stream()\r\n                .map(RagTraceRunDO::getUserId)\r\n                .filter(Objects::nonNull).collect",
+          "lineNumber": 126
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "runs.stream()\r\n                .map(RagTraceRunDO::getUserId).filter",
+          "lineNumber": 126
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "runs.stream().map",
+          "lineNumber": 126
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "runs.stream",
+          "lineNumber": 126
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "Collectors.toSet",
+          "lineNumber": 129
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "userIds.isEmpty",
+          "lineNumber": 130
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "Collections.emptyMap",
+          "lineNumber": 131
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "userMapper.selectList",
+          "lineNumber": 134
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "Wrappers.lambdaQuery(UserDO.class)\r\n                .in(UserDO::getId, userIds).select",
+          "lineNumber": 134
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "Wrappers.lambdaQuery(UserDO.class).in",
+          "lineNumber": 134
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 134
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "users.isEmpty",
+          "lineNumber": 137
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "Collections.emptyMap",
+          "lineNumber": 138
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "users.stream().collect",
+          "lineNumber": 141
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "users.stream",
+          "lineNumber": 141
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "Collectors.toMap",
+          "lineNumber": 141
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "String.valueOf",
+          "lineNumber": 142
+        },
+        {
+          "caller": "loadUsernameMap",
+          "callee": "user.getId",
+          "lineNumber": 142
+        },
+        {
+          "caller": "resolveUsername",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 149
+        },
+        {
+          "caller": "resolveUsername",
+          "callee": "usernameMap.isEmpty",
+          "lineNumber": 149
+        },
+        {
+          "caller": "resolveUsername",
+          "callee": "usernameMap.get",
+          "lineNumber": 152
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "RagTraceNodeVO.builder()\r\n                .traceId(node.getTraceId())\r\n                .nodeId(node.getNodeId())\r\n                .parentNodeId(node.getParentNodeId())\r\n                .depth(node.getDepth())\r\n                .nodeType(node.getNodeType())\r\n                .nodeName(node.getNodeName())\r\n                .className(node.getClassName())\r\n                .methodName(node.getMethodName())\r\n                .status(node.getStatus())\r\n                .errorMessage(node.getErrorMessage())\r\n                .durationMs(node.getDurationMs())\r\n                .startTime(node.getStartTime())\r\n                .endTime(node.getEndTime()).build",
+          "lineNumber": 156
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "RagTraceNodeVO.builder()\r\n                .traceId(node.getTraceId())\r\n                .nodeId(node.getNodeId())\r\n                .parentNodeId(node.getParentNodeId())\r\n                .depth(node.getDepth())\r\n                .nodeType(node.getNodeType())\r\n                .nodeName(node.getNodeName())\r\n                .className(node.getClassName())\r\n                .methodName(node.getMethodName())\r\n                .status(node.getStatus())\r\n                .errorMessage(node.getErrorMessage())\r\n                .durationMs(node.getDurationMs())\r\n                .startTime(node.getStartTime()).endTime",
+          "lineNumber": 156
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "RagTraceNodeVO.builder()\r\n                .traceId(node.getTraceId())\r\n                .nodeId(node.getNodeId())\r\n                .parentNodeId(node.getParentNodeId())\r\n                .depth(node.getDepth())\r\n                .nodeType(node.getNodeType())\r\n                .nodeName(node.getNodeName())\r\n                .className(node.getClassName())\r\n                .methodName(node.getMethodName())\r\n                .status(node.getStatus())\r\n                .errorMessage(node.getErrorMessage())\r\n                .durationMs(node.getDurationMs()).startTime",
+          "lineNumber": 156
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "RagTraceNodeVO.builder()\r\n                .traceId(node.getTraceId())\r\n                .nodeId(node.getNodeId())\r\n                .parentNodeId(node.getParentNodeId())\r\n                .depth(node.getDepth())\r\n                .nodeType(node.getNodeType())\r\n                .nodeName(node.getNodeName())\r\n                .className(node.getClassName())\r\n                .methodName(node.getMethodName())\r\n                .status(node.getStatus())\r\n                .errorMessage(node.getErrorMessage()).durationMs",
+          "lineNumber": 156
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "RagTraceNodeVO.builder()\r\n                .traceId(node.getTraceId())\r\n                .nodeId(node.getNodeId())\r\n                .parentNodeId(node.getParentNodeId())\r\n                .depth(node.getDepth())\r\n                .nodeType(node.getNodeType())\r\n                .nodeName(node.getNodeName())\r\n                .className(node.getClassName())\r\n                .methodName(node.getMethodName())\r\n                .status(node.getStatus()).errorMessage",
+          "lineNumber": 156
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "RagTraceNodeVO.builder()\r\n                .traceId(node.getTraceId())\r\n                .nodeId(node.getNodeId())\r\n                .parentNodeId(node.getParentNodeId())\r\n                .depth(node.getDepth())\r\n                .nodeType(node.getNodeType())\r\n                .nodeName(node.getNodeName())\r\n                .className(node.getClassName())\r\n                .methodName(node.getMethodName()).status",
+          "lineNumber": 156
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "RagTraceNodeVO.builder()\r\n                .traceId(node.getTraceId())\r\n                .nodeId(node.getNodeId())\r\n                .parentNodeId(node.getParentNodeId())\r\n                .depth(node.getDepth())\r\n                .nodeType(node.getNodeType())\r\n                .nodeName(node.getNodeName())\r\n                .className(node.getClassName()).methodName",
+          "lineNumber": 156
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "RagTraceNodeVO.builder()\r\n                .traceId(node.getTraceId())\r\n                .nodeId(node.getNodeId())\r\n                .parentNodeId(node.getParentNodeId())\r\n                .depth(node.getDepth())\r\n                .nodeType(node.getNodeType())\r\n                .nodeName(node.getNodeName()).className",
+          "lineNumber": 156
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "RagTraceNodeVO.builder()\r\n                .traceId(node.getTraceId())\r\n                .nodeId(node.getNodeId())\r\n                .parentNodeId(node.getParentNodeId())\r\n                .depth(node.getDepth())\r\n                .nodeType(node.getNodeType()).nodeName",
+          "lineNumber": 156
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "RagTraceNodeVO.builder()\r\n                .traceId(node.getTraceId())\r\n                .nodeId(node.getNodeId())\r\n                .parentNodeId(node.getParentNodeId())\r\n                .depth(node.getDepth()).nodeType",
+          "lineNumber": 156
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "RagTraceNodeVO.builder()\r\n                .traceId(node.getTraceId())\r\n                .nodeId(node.getNodeId())\r\n                .parentNodeId(node.getParentNodeId()).depth",
+          "lineNumber": 156
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "RagTraceNodeVO.builder()\r\n                .traceId(node.getTraceId())\r\n                .nodeId(node.getNodeId()).parentNodeId",
+          "lineNumber": 156
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "RagTraceNodeVO.builder()\r\n                .traceId(node.getTraceId()).nodeId",
+          "lineNumber": 156
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "RagTraceNodeVO.builder().traceId",
+          "lineNumber": 156
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "RagTraceNodeVO.builder",
+          "lineNumber": 156
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "node.getTraceId",
+          "lineNumber": 157
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "node.getNodeId",
+          "lineNumber": 158
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "node.getParentNodeId",
+          "lineNumber": 159
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "node.getDepth",
+          "lineNumber": 160
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "node.getNodeType",
+          "lineNumber": 161
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "node.getNodeName",
+          "lineNumber": 162
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "node.getClassName",
+          "lineNumber": 163
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "node.getMethodName",
+          "lineNumber": 164
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "node.getStatus",
+          "lineNumber": 165
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "node.getErrorMessage",
+          "lineNumber": 166
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "node.getDurationMs",
+          "lineNumber": 167
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "node.getStartTime",
+          "lineNumber": 168
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "node.getEndTime",
+          "lineNumber": 169
+        }
+      ],
+      "metrics": {
+        "importCount": 11,
+        "exportCount": 4,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/RagTraceRecordServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 75,
+      "nonEmptyLines": 66,
+      "functions": [
+        {
+          "name": "startRun",
+          "startLine": 41,
+          "endLine": 44,
+          "params": [
+            "run"
+          ]
+        },
+        {
+          "name": "finishRun",
+          "startLine": 46,
+          "endLine": 56,
+          "params": [
+            "traceId",
+            "status",
+            "errorMessage",
+            "endTime",
+            "durationMs"
+          ]
+        },
+        {
+          "name": "startNode",
+          "startLine": 58,
+          "endLine": 61,
+          "params": [
+            "node"
+          ]
+        },
+        {
+          "name": "finishNode",
+          "startLine": 63,
+          "endLine": 74,
+          "params": [
+            "traceId",
+            "nodeId",
+            "status",
+            "errorMessage",
+            "endTime",
+            "durationMs"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RagTraceRecordServiceImpl",
+          "startLine": 34,
+          "endLine": 75,
+          "methods": [
+            "startRun",
+            "finishRun",
+            "startNode",
+            "finishNode"
+          ],
+          "properties": [
+            "runMapper",
+            "nodeMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "startRun",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "finishRun",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "startNode",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "finishNode",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "RagTraceRecordServiceImpl",
+          "line": 34,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "startRun",
+          "callee": "runMapper.insert",
+          "lineNumber": 43
+        },
+        {
+          "caller": "finishRun",
+          "callee": "RagTraceRunDO.builder()\r\n                .status(status)\r\n                .errorMessage(errorMessage)\r\n                .endTime(endTime)\r\n                .durationMs(durationMs).build",
+          "lineNumber": 48
+        },
+        {
+          "caller": "finishRun",
+          "callee": "RagTraceRunDO.builder()\r\n                .status(status)\r\n                .errorMessage(errorMessage)\r\n                .endTime(endTime).durationMs",
+          "lineNumber": 48
+        },
+        {
+          "caller": "finishRun",
+          "callee": "RagTraceRunDO.builder()\r\n                .status(status)\r\n                .errorMessage(errorMessage).endTime",
+          "lineNumber": 48
+        },
+        {
+          "caller": "finishRun",
+          "callee": "RagTraceRunDO.builder()\r\n                .status(status).errorMessage",
+          "lineNumber": 48
+        },
+        {
+          "caller": "finishRun",
+          "callee": "RagTraceRunDO.builder().status",
+          "lineNumber": 48
+        },
+        {
+          "caller": "finishRun",
+          "callee": "RagTraceRunDO.builder",
+          "lineNumber": 48
+        },
+        {
+          "caller": "finishRun",
+          "callee": "runMapper.update",
+          "lineNumber": 54
+        },
+        {
+          "caller": "finishRun",
+          "callee": "Wrappers.lambdaUpdate(RagTraceRunDO.class).eq",
+          "lineNumber": 54
+        },
+        {
+          "caller": "finishRun",
+          "callee": "Wrappers.lambdaUpdate",
+          "lineNumber": 54
+        },
+        {
+          "caller": "startNode",
+          "callee": "nodeMapper.insert",
+          "lineNumber": 60
+        },
+        {
+          "caller": "finishNode",
+          "callee": "RagTraceNodeDO.builder()\r\n                .status(status)\r\n                .errorMessage(errorMessage)\r\n                .endTime(endTime)\r\n                .durationMs(durationMs).build",
+          "lineNumber": 65
+        },
+        {
+          "caller": "finishNode",
+          "callee": "RagTraceNodeDO.builder()\r\n                .status(status)\r\n                .errorMessage(errorMessage)\r\n                .endTime(endTime).durationMs",
+          "lineNumber": 65
+        },
+        {
+          "caller": "finishNode",
+          "callee": "RagTraceNodeDO.builder()\r\n                .status(status)\r\n                .errorMessage(errorMessage).endTime",
+          "lineNumber": 65
+        },
+        {
+          "caller": "finishNode",
+          "callee": "RagTraceNodeDO.builder()\r\n                .status(status).errorMessage",
+          "lineNumber": 65
+        },
+        {
+          "caller": "finishNode",
+          "callee": "RagTraceNodeDO.builder().status",
+          "lineNumber": 65
+        },
+        {
+          "caller": "finishNode",
+          "callee": "RagTraceNodeDO.builder",
+          "lineNumber": 65
+        },
+        {
+          "caller": "finishNode",
+          "callee": "nodeMapper.update",
+          "lineNumber": 71
+        },
+        {
+          "caller": "finishNode",
+          "callee": "Wrappers.lambdaUpdate(RagTraceNodeDO.class)\r\n                .eq(RagTraceNodeDO::getTraceId, traceId).eq",
+          "lineNumber": 71
+        },
+        {
+          "caller": "finishNode",
+          "callee": "Wrappers.lambdaUpdate(RagTraceNodeDO.class).eq",
+          "lineNumber": 71
+        },
+        {
+          "caller": "finishNode",
+          "callee": "Wrappers.lambdaUpdate",
+          "lineNumber": 71
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceContext.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 89,
+      "nonEmptyLines": 74,
+      "functions": [
+        {
+          "name": "RagTraceContext",
+          "startLine": 35,
+          "endLine": 36,
+          "params": []
+        },
+        {
+          "name": "getTraceId",
+          "startLine": 38,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "setTraceId",
+          "startLine": 42,
+          "endLine": 44,
+          "params": [
+            "traceId"
+          ]
+        },
+        {
+          "name": "getTaskId",
+          "startLine": 46,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "setTaskId",
+          "startLine": 50,
+          "endLine": 52,
+          "params": [
+            "taskId"
+          ]
+        },
+        {
+          "name": "depth",
+          "startLine": 54,
+          "endLine": 57,
+          "params": []
+        },
+        {
+          "name": "currentNodeId",
+          "startLine": 59,
+          "endLine": 62,
+          "params": []
+        },
+        {
+          "name": "pushNode",
+          "startLine": 64,
+          "endLine": 71,
+          "params": [
+            "nodeId"
+          ]
+        },
+        {
+          "name": "popNode",
+          "startLine": 73,
+          "endLine": 82,
+          "params": []
+        },
+        {
+          "name": "clear",
+          "startLine": 84,
+          "endLine": 88,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "RagTraceContext",
+          "startLine": 29,
+          "endLine": 89,
+          "methods": [
+            "RagTraceContext",
+            "getTraceId",
+            "setTraceId",
+            "getTaskId",
+            "setTaskId",
+            "depth",
+            "currentNodeId",
+            "pushNode",
+            "popNode",
+            "clear"
+          ],
+          "properties": [
+            "TRACE_ID",
+            "TASK_ID",
+            "NODE_STACK"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getTraceId",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "setTraceId",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "getTaskId",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "setTaskId",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "depth",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "currentNodeId",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "pushNode",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "popNode",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "clear",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "RagTraceContext",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getTraceId",
+          "callee": "TRACE_ID.get",
+          "lineNumber": 39
+        },
+        {
+          "caller": "setTraceId",
+          "callee": "TRACE_ID.set",
+          "lineNumber": 43
+        },
+        {
+          "caller": "getTaskId",
+          "callee": "TASK_ID.get",
+          "lineNumber": 47
+        },
+        {
+          "caller": "setTaskId",
+          "callee": "TASK_ID.set",
+          "lineNumber": 51
+        },
+        {
+          "caller": "depth",
+          "callee": "NODE_STACK.get",
+          "lineNumber": 55
+        },
+        {
+          "caller": "depth",
+          "callee": "stack.size",
+          "lineNumber": 56
+        },
+        {
+          "caller": "currentNodeId",
+          "callee": "NODE_STACK.get",
+          "lineNumber": 60
+        },
+        {
+          "caller": "currentNodeId",
+          "callee": "stack.peek",
+          "lineNumber": 61
+        },
+        {
+          "caller": "pushNode",
+          "callee": "NODE_STACK.get",
+          "lineNumber": 65
+        },
+        {
+          "caller": "pushNode",
+          "callee": "new ArrayDeque<>",
+          "lineNumber": 67
+        },
+        {
+          "caller": "pushNode",
+          "callee": "NODE_STACK.set",
+          "lineNumber": 68
+        },
+        {
+          "caller": "pushNode",
+          "callee": "stack.push",
+          "lineNumber": 70
+        },
+        {
+          "caller": "popNode",
+          "callee": "NODE_STACK.get",
+          "lineNumber": 74
+        },
+        {
+          "caller": "popNode",
+          "callee": "stack.isEmpty",
+          "lineNumber": 75
+        },
+        {
+          "caller": "popNode",
+          "callee": "stack.pop",
+          "lineNumber": 78
+        },
+        {
+          "caller": "popNode",
+          "callee": "stack.isEmpty",
+          "lineNumber": 79
+        },
+        {
+          "caller": "popNode",
+          "callee": "NODE_STACK.remove",
+          "lineNumber": 80
+        },
+        {
+          "caller": "clear",
+          "callee": "TRACE_ID.remove",
+          "lineNumber": 85
+        },
+        {
+          "caller": "clear",
+          "callee": "TASK_ID.remove",
+          "lineNumber": 86
+        },
+        {
+          "caller": "clear",
+          "callee": "NODE_STACK.remove",
+          "lineNumber": 87
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceRoot.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 46,
+      "nonEmptyLines": 40,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,1925 @@
+{
+  "scriptCompleted": true,
+  "stats": {
+    "filesScanned": 626,
+    "filesWithImports": 232,
+    "totalEdges": 1057
+  },
+  "importMap": {
+    ".claude/settings.local.json": [],
+    ".mvn/wrapper/maven-wrapper.properties": [],
+    "bootstrap/pom.xml": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/DashboardController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardPerformanceVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendsVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/service/DashboardService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewGroupVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewKpiVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardPerformanceVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendPointVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendSeriesVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendsVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/service/DashboardService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardPerformanceVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendsVO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/service/impl/DashboardServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewGroupVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewKpiVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardOverviewVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardPerformanceVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendPointVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendSeriesVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/controller/vo/DashboardTrendsVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/admin/service/DashboardService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationMessageDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceRunDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMessageMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceRunMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/entity/UserDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/mapper/UserMapper.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkEmbeddingService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingService.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingMode.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingOptions.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategy.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategyFactory.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/FixedSizeOptions.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/strategy/FixedSizeTextChunker.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingMode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingOptions.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategy.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/FixedSizeOptions.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/strategy/StructureAwareTextChunker.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingMode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingOptions.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategy.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/TextBoundaryOptions.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/TextBoundaryOptions.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/DocumentParser.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/DocumentParserSelector.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/MarkdownDocumentParser.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/ParseResult.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/ParserType.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/TextCleanupUtil.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/TikaDocumentParser.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ServiceException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/IngestionPipelineController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionPipelineVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IngestionPipelineService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/IngestionTaskController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionTaskCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionTaskNodeVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionTaskVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/IngestionResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IngestionTaskService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineCreateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineNodeRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineUpdateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionTaskCreateRequest.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/DocumentSourceRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceId.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionPipelineNodeVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionPipelineVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionTaskNodeVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionTaskVO.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/NodeLog.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineNodeDO.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/handler/JsonbTypeHandler.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionTaskDO.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/handler/JsonbTypeHandler.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionTaskNodeDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionPipelineMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionPipelineNodeMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineNodeDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionTaskMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionTaskDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionTaskNodeMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionTaskNodeDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/DocumentSource.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/SourceType.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/IngestionContext.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceId.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/NodeLog.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/StructuredDocument.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/ChunkEnrichType.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/EnhanceType.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionNodeType.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionStatus.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/SourceType.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/NodeConfig.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/PipelineDefinition.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/IngestionResult.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionStatus.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/NodeResult.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/settings/ChunkerSettings.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingMode.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/settings/EnhancerSettings.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/EnhanceType.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/settings/EnricherSettings.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/ChunkEnrichType.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/settings/IndexerSettings.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/settings/ParserSettings.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/engine/ConditionEvaluator.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/IngestionContext.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/engine/IngestionEngine.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/IngestionContext.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/NodeLog.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/NodeConfig.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/PipelineDefinition.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/NodeResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/node/IngestionNode.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/engine/NodeOutputExtractor.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/DocumentSource.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/IngestionContext.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionNodeType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/NodeConfig.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/node/ChunkerNode.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkEmbeddingService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingOptions.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategy.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategyFactory.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/IngestionContext.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionNodeType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/NodeConfig.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/NodeResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/settings/ChunkerSettings.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/node/EnhancerNode.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/IngestionContext.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/EnhanceType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionNodeType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/NodeConfig.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/NodeResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/settings/EnhancerSettings.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/prompt/EnhancerPromptManager.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/JsonResponseParser.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/PromptTemplateRenderer.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/node/EnricherNode.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/IngestionContext.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/ChunkEnrichType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionNodeType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/NodeConfig.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/NodeResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/settings/EnricherSettings.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/prompt/EnricherPromptManager.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/JsonResponseParser.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/PromptTemplateRenderer.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/node/FetcherNode.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/DocumentSource.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/IngestionContext.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionNodeType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/SourceType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/NodeConfig.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/NodeResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/strategy/fetcher/DocumentFetcher.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/strategy/fetcher/FetchResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/MimeTypeDetector.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/node/IndexerNode.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/DocumentSource.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/IngestionContext.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionNodeType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/NodeConfig.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/NodeResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/settings/IndexerSettings.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceId.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceSpec.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorStoreAdmin.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorStoreService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/node/IngestionNode.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/IngestionContext.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/NodeConfig.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/NodeResult.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/node/ParserNode.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/DocumentParser.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/DocumentParserSelector.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/ParseResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/ParserType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/IngestionContext.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/StructuredDocument.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionNodeType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/NodeConfig.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/NodeResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/settings/ParserSettings.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/MimeTypeDetector.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/prompt/EnhancerPromptManager.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/EnhanceType.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/prompt/EnricherPromptManager.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/ChunkEnrichType.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/impl/IngestionPipelineServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineNodeRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionPipelineNodeVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionPipelineVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineNodeDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionPipelineMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionPipelineNodeMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionNodeType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/NodeConfig.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/PipelineDefinition.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IngestionPipelineService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/impl/IngestionTaskServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionTaskCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionTaskNodeVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionTaskVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionTaskDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionTaskNodeDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionTaskMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionTaskNodeMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/DocumentSource.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/IngestionContext.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/NodeLog.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionNodeType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/SourceType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/NodeConfig.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/PipelineDefinition.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/IngestionResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/engine/IngestionEngine.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IngestionPipelineService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IngestionTaskService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/MimeTypeDetector.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/DocumentSourceRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceId.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/impl/IntentTreeServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IntentTreeService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeBaseMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/IntentNodeTreeVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentTreeCacheManager.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentTreeFactory.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/IntentNodeDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/IntentNodeMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentKind.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentLevel.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ServiceException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IngestionPipelineService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionPipelineVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/PipelineDefinition.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IngestionTaskService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionTaskCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionTaskNodeVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionTaskVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/IngestionResult.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IntentTreeService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/IntentNodeTreeVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/IntentNodeDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/strategy/fetcher/DocumentFetcher.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/DocumentSource.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/SourceType.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/strategy/fetcher/FeishuFetcher.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/DocumentSource.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/SourceType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/HttpClientHelper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/MimeTypeDetector.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ServiceException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/strategy/fetcher/FetchResult.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/strategy/fetcher/HttpUrlFetcher.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/DocumentSource.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/SourceType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/HttpClientHelper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/MimeTypeDetector.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ServiceException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/strategy/fetcher/LocalFileFetcher.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/DocumentSource.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/SourceType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/MimeTypeDetector.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/FileStorageService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ServiceException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/strategy/fetcher/S3Fetcher.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/DocumentSource.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/SourceType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/MimeTypeDetector.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/FileStorageService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ServiceException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/HttpClientHelper.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ServiceException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/JsonResponseParser.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/util/LLMResponseCleaner.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/MimeTypeDetector.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/PromptTemplateRenderer.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/config/KnowledgeScheduleProperties.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/config/RagSemaphoreProperties.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/config/SemaphoreInitializer.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/KnowledgeBaseController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingMode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBasePageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/ChunkStrategyVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeBaseVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeBaseService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/KnowledgeChunkController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkBatchRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeChunkVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeChunkService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/KnowledgeDocumentController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentUploadRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentChunkLogVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentSearchVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeDocumentService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseCreateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBasePageRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseUpdateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkBatchRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkCreateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkPageRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkUpdateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentCreateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentPageRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentUpdateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentUploadRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/ChunkStrategyVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeBaseVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeChunkVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentChunkLogVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentSearchVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeBaseDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeChunkDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentChunkLogDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleExecDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/handler/JsonbTypeHandler.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeBaseMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeBaseDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeChunkMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeChunkDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentChunkLogMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentChunkLogDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleExecMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleExecDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/DocumentStatus.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/ProcessMode.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/ScheduleRunStatus.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/SourceType.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/filter/UploadRateLimitFilter.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/config/RagSemaphoreProperties.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/handler/RemoteFileFetcher.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/util/HttpClientHelper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/StoredFileDTO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/FileStorageService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ServiceException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/mq/event/KnowledgeDocumentChunkEvent.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/mq/KnowledgeDocumentChunkConsumer.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/mq/event/KnowledgeDocumentChunkEvent.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeDocumentService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/LoginUser.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/MessageWrapper.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/mq/KnowledgeDocumentChunkTransactionChecker.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/DocumentStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/mq/event/KnowledgeDocumentChunkEvent.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/MessageWrapper.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/DelegatingTransactionListener.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/TransactionChecker.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/CronScheduleHelper.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/DocumentStatusHelper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/DocumentStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/StoredFileDTO.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/KnowledgeDocumentScheduleJob.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/config/KnowledgeScheduleProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleMapper.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleLockLease.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleLockManager.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/config/KnowledgeScheduleProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleMapper.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleRefreshProcessor.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeBaseDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleExecDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeBaseMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleExecMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/DocumentStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/ScheduleRunStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/SourceType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/handler/RemoteFileFetcher.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeDocumentServiceImpl.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/StoredFileDTO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/FileStorageService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/LoginUser.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleStateContext.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleStateManager.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleExecDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleExecMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/ScheduleRunStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/handler/RemoteFileFetcher.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/StoredFileDTO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeBaseServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBasePageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeBaseVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeBaseDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeBaseMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeBaseService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceId.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceSpec.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorStoreAdmin.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ServiceException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeChunkServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkBatchRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeChunkVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeBaseDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeChunkDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeBaseMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeChunkMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/DocumentStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeChunkService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorStoreService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ServiceException.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingService.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/token/TokenCounterService.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeDocumentScheduleServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleExecDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleExecMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/SourceType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/CronScheduleHelper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeDocumentScheduleService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeDocumentServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkEmbeddingService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingMode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingOptions.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategy.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategyFactory.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/DocumentParserSelector.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/ParserType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionPipelineMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/IngestionContext.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/PipelineDefinition.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/engine/IngestionEngine.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IngestionPipelineService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/config/KnowledgeScheduleProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentUploadRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeChunkVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentChunkLogVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentSearchVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeBaseDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentChunkLogDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeBaseMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentChunkLogMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/DocumentStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/ProcessMode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/SourceType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/handler/RemoteFileFetcher.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/mq/event/KnowledgeDocumentChunkEvent.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/CronScheduleHelper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeChunkService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeDocumentScheduleService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeDocumentService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceId.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorStoreService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/StoredFileDTO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/FileStorageService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/MessageQueueProducer.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeBaseService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBasePageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeBaseVO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeChunkService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkBatchRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeChunkUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeChunkVO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeDocumentScheduleService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeDocumentService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentUploadRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentChunkLogVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentSearchVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentVO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/aop/ChatQueueLimiter.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/MemoryProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGRateLimitProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/ConversationMemoryService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/CompletionPayload.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/MessageDelta.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/MetaPayload.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/SSEEventType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationGroupService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/SseEmitterSender.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/aop/ChatRateLimit.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/aop/ChatRateLimitAspect.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RagTraceProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceRunDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceRecordService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceContext.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/aop/RagTraceAspect.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RagTraceProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceNodeDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceRunDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceRecordService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceRoot.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/DemoModeInterceptor.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/MessageDelta.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/DemoModeProperties.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/GuidanceProperties.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/HttpClientConfig.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/MemoryProperties.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/validation/ValidMemoryConfig.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/MilvusConfig.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGConfigProperties.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGRateLimitProperties.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RagTraceProperties.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RestFSS3Config.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/SearchChannelProperties.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/ThreadPoolExecutorConfig.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/Utf8ResponseFilter.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/validation/MemoryConfigValidator.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/MemoryProperties.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/validation/ValidMemoryConfig.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/WebConfig.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/constant/RAGConstant.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/ConversationController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/ConversationUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/ConversationMessageVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/ConversationVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/ConversationMessageOrder.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationMessageService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/IntentTreeController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IntentTreeService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeBatchRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/IntentNodeTreeVO.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/MessageFeedbackController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/MessageFeedbackRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/MessageFeedbackService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/QueryTermMappingController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/QueryTermMappingVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/QueryTermMappingAdminService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/RAGChatController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RAGChatService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentSubmit.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/RAGSettingsController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/MemoryProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGConfigProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGRateLimitProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/SystemSettingsVO.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/RagTraceController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/RagTraceRunPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceDetailVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceNodeVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceRunVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceQueryService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/ConversationCreateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/ConversationUpdateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/DocumentSourceRequest.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/SourceType.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeBatchRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeCreateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeUpdateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/MessageFeedbackRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingCreateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingPageRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingUpdateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/RagTraceRunPageRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionCreateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionPageRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionUpdateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/SampleQuestionController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/SampleQuestionVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/SampleQuestionService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/ConversationMessageVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/ConversationVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/IntentNodeTreeVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/QueryTermMappingVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceDetailVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceNodeVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceRunVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/SampleQuestionVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/SystemSettingsVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/guidance/AmbiguityLLMChecker.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptTemplateLoader.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/util/LLMResponseCleaner.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/guidance/GuidanceDecision.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/guidance/IntentGuidanceService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/GuidanceProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/constant/RAGConstant.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNodeRegistry.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScoreFilters.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptTemplateLoader.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/SubQuestionIntent.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentLevel.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/DefaultIntentClassifier.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptTemplateLoader.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/IntentNodeDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/IntentNodeMapper.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/util/LLMResponseCleaner.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentClassifier.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNode.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentKind.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentLevel.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNodeRegistry.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentResolver.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/RewriteResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/IntentCandidate.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/IntentGroup.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/SubQuestionIntent.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentTreeCacheManager.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentTreeFactory.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentKind.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScoreFilters.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/DefaultMcpToolRegistry.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/LLMMcpParameterExtractor.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptTemplateLoader.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/util/LLMResponseCleaner.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpClientAutoConfiguration.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpClientProperties.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpClientToolExecutor.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpParameterExtractor.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpToolExecutor.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpToolRegistry.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/ConversationMemoryService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/ConversationMemoryStore.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/ConversationMemorySummaryService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/DefaultConversationMemoryService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/JdbcConversationMemoryStore.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/MemoryProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/ConversationMessageVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/ConversationMessageOrder.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationCreateBO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationMessageBO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationMessageService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/JdbcConversationMemorySummaryService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/MemoryProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptTemplateLoader.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationMessageDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationSummaryDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationSummaryBO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationGroupService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationMessageService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/ContextFormatter.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/DefaultContextFormatter.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptBuildPlan.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptContext.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptPlan.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptScene.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptTemplateLoader.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptTemplateUtils.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/RAGPromptService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/AbstractParallelRetriever.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/IntentDirectedSearchChannel.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/SearchChannelProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScoreFilters.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/strategy/IntentParallelRetriever.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrieverService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannel.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannelResult.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannelType.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchContext.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/SubQuestionIntent.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/strategy/CollectionParallelRetriever.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/AbstractParallelRetriever.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrieveRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrieverService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/strategy/IntentParallelRetriever.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/AbstractParallelRetriever.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrieveRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrieverService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/VectorGlobalSearchChannel.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeBaseDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeBaseMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/SearchChannelProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/strategy/CollectionParallelRetriever.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrieverService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/MilvusRetrieverService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingService.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/MultiChannelRetrievalEngine.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannel.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannelResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchContext.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/postprocessor/SearchResultPostProcessor.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/SubQuestionIntent.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/PgRetrieverService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingService.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/postprocessor/DeduplicationPostProcessor.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannelResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannelType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/postprocessor/RerankPostProcessor.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannelResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/RerankService.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/postprocessor/SearchResultPostProcessor.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannelResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrievalEngine.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/SearchChannelProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScoreFilters.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpParameterExtractor.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpToolExecutor.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpToolRegistry.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/ContextFormatter.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptTemplateLoader.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/KbResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/RetrievalContext.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/SubQuestionIntent.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrieveRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrieverService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/MultiQuestionRewriteService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGConfigProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptTemplateLoader.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/util/LLMResponseCleaner.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryRewriteService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryTermMappingCacheManager.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/QueryTermMappingDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryTermMappingService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/QueryTermMappingDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/QueryTermMappingMapper.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryTermMappingUtil.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/RewriteResult.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/MilvusVectorStoreAdmin.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/kb/VectorCollectionAlreadyExistsException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/MilvusVectorStoreService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/PgVectorStoreAdmin.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/PgVectorStoreService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceId.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceSpec.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorStoreAdmin.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorStoreService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationMessageDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationSummaryDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/IntentNodeDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/MessageFeedbackDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/QueryTermMappingDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceNodeDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceRunDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/SampleQuestionDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMessageMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationMessageDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationSummaryMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationSummaryDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/IntentNodeMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/IntentNodeDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/MessageFeedbackMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/MessageFeedbackDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/QueryTermMappingMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/QueryTermMappingDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceNodeMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceNodeDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceRunMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceRunDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/SampleQuestionMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/SampleQuestionDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/CompletionPayload.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/IntentCandidate.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/IntentGroup.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/KbResult.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/MessageDelta.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/MetaPayload.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/RetrievalContext.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/StoredFileDTO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/SubQuestionIntent.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/ConversationMessageOrder.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentKind.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentLevel.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/SSEEventType.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/mq/event/MessageFeedbackEvent.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/mq/MessageFeedbackConsumer.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/mq/event/MessageFeedbackEvent.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/MessageFeedbackService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/MessageWrapper.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationCreateBO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationMessageBO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationSummaryBO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationGroupService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationMessageDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationSummaryDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationMessageService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/ConversationMessageVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/ConversationMessageOrder.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationMessageBO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationSummaryBO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/ConversationUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/ConversationVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationCreateBO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/FileStorageService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/StoredFileDTO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/handler/StreamCallbackFactory.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/ConversationMemoryService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationGroupService.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamCallback.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/handler/StreamChatEventHandler.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/ConversationMemoryService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/CompletionPayload.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/MessageDelta.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/MetaPayload.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/SSEEventType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationGroupService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/SseEmitterSender.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamCallback.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/handler/StreamChatHandlerParams.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/ConversationMemoryService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationGroupService.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/handler/StreamTaskManager.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/CompletionPayload.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/SSEEventType.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/SseEmitterSender.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamCancellationHandle.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/ConversationGroupServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationMessageDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationSummaryDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMessageMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationSummaryMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationGroupService.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/ConversationMessageServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/ConversationMessageVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationMessageDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationSummaryDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMessageMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationSummaryMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/ConversationMessageOrder.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationMessageBO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationSummaryBO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationMessageService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/MessageFeedbackService.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/ConversationServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/MemoryProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/ConversationUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/ConversationVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptTemplateLoader.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationMessageDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationSummaryDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMessageMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationSummaryMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationCreateBO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/MessageFeedbackServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/MessageFeedbackRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationMessageDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/MessageFeedbackDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMessageMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/MessageFeedbackMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/mq/event/MessageFeedbackEvent.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/MessageFeedbackService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/MessageQueueProducer.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/QueryTermMappingAdminServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/QueryTermMappingVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryTermMappingCacheManager.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/QueryTermMappingDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/QueryTermMappingMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/QueryTermMappingAdminService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/RAGChatServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/aop/ChatRateLimit.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/handler/StreamCallbackFactory.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/handler/StreamTaskManager.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/pipeline/StreamChatContext.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/pipeline/StreamChatPipeline.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RAGChatService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceContext.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamCallback.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/RagTraceQueryServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/RagTraceRunPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceDetailVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceNodeVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceRunVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceNodeDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceRunDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceNodeMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceRunMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceQueryService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/entity/UserDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/mapper/UserMapper.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/RagTraceRecordServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceNodeDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceRunDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceNodeMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/RagTraceRunMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceRecordService.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/S3FileStorageService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/StoredFileDTO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/FileStorageService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/util/FileTypeDetector.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/SampleQuestionServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/SampleQuestionVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/SampleQuestionDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/SampleQuestionMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/SampleQuestionService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/MessageFeedbackService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/MessageFeedbackRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/mq/event/MessageFeedbackEvent.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/pipeline/StreamChatContext.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/RewriteResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/SubQuestionIntent.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamCallback.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/pipeline/StreamChatPipeline.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/SearchChannelProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/guidance/GuidanceDecision.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/guidance/IntentGuidanceService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentResolver.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/ConversationMemoryService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptContext.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptTemplateLoader.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/RAGPromptService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrievalEngine.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryRewriteService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/RewriteResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/IntentGroup.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/RetrievalContext.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/SubQuestionIntent.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/handler/StreamTaskManager.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamCallback.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamCancellationHandle.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/QueryTermMappingAdminService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/QueryTermMappingVO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RAGChatService.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceQueryService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/RagTraceRunPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceDetailVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceNodeVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/RagTraceRunVO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RagTraceRecordService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceNodeDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/RagTraceRunDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/SampleQuestionService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/SampleQuestionVO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/util/FileTypeDetector.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/RagentApplication.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/config/SaTokenConfig.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/DemoModeInterceptor.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/config/SaTokenStpInterfaceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/entity/UserDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/mapper/UserMapper.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/config/UserContextInterceptor.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/entity/UserDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/mapper/UserMapper.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/LoginUser.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/AuthController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/LoginRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/LoginVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/AuthService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/ChangePasswordRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/LoginRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserCreateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserPageRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserUpdateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/UserController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/ChangePasswordRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/CurrentUserVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/UserVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/UserService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/LoginUser.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/CurrentUserVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/LoginVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/UserVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/entity/UserDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/mapper/UserMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/entity/UserDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/enums/UserRole.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/AuthService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/LoginRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/LoginVO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/impl/AuthServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/LoginRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/LoginVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/entity/UserDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/mapper/UserMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/AuthService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/impl/UserServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/ChangePasswordRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/UserVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/entity/UserDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/dao/mapper/UserMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/enums/UserRole.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/UserService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/LoginUser.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/service/UserService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/ChangePasswordRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/request/UserUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/controller/vo/UserVO.java"
+    ],
+    "bootstrap/src/main/resources/application.yaml": [],
+    "bootstrap/src/main/resources/lua/queue_claim_atomic.lua": [],
+    "bootstrap/src/main/resources/META-INF/additional-spring-configuration-metadata.json": [],
+    "bootstrap/src/main/resources/prompt/answer-chat-kb.st": [],
+    "bootstrap/src/main/resources/prompt/answer-chat-mcp-kb-mixed.st": [],
+    "bootstrap/src/main/resources/prompt/answer-chat-mcp.st": [],
+    "bootstrap/src/main/resources/prompt/answer-chat-system.st": [],
+    "bootstrap/src/main/resources/prompt/context-format.st": [],
+    "bootstrap/src/main/resources/prompt/conversation-summary.st": [],
+    "bootstrap/src/main/resources/prompt/conversation-title.st": [],
+    "bootstrap/src/main/resources/prompt/guidance-ambiguity-check.st": [],
+    "bootstrap/src/main/resources/prompt/guidance-prompt.st": [],
+    "bootstrap/src/main/resources/prompt/intent-classifier.st": [],
+    "bootstrap/src/main/resources/prompt/mcp-parameter-extract-user.st": [],
+    "bootstrap/src/main/resources/prompt/mcp-parameter-extract.st": [],
+    "bootstrap/src/main/resources/prompt/pdf-format-guard.st": [],
+    "bootstrap/src/main/resources/prompt/user-question-rewrite.st": [],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/index/InvoiceIndexDocumentTests.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrieverService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingService.java"
+    ],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleRefreshProcessorTest.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeBaseDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleExecDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeBaseMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleExecMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/DocumentStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/SourceType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/handler/RemoteFileFetcher.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeDocumentServiceImpl.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/StoredFileDTO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/FileStorageService.java"
+    ],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/core/vector/PgVectorStoreServiceTest.java": [],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/embedding/SiliconFlowEmbeddingServiceTests.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingService.java"
+    ],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/Intent/IntentTreeServiceTests.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IntentTreeService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/IntentNodeTreeVO.java"
+    ],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/Intent/SimpleIntentClassifierTests.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java"
+    ],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/Intent/VectorIntentClassifier.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentTreeFactory.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingService.java"
+    ],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/Intent/VectorTreeIntentClassifierTests.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNode.java"
+    ],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/rewrite/MultiQuestionRewriteServiceTests.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/MultiQuestionRewriteService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/RewriteResult.java"
+    ],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/rewrite/QueryRewriteTests.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryRewriteService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java"
+    ],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/RagentCoreApplicationTests.java": [],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/service/ConversationMessageServiceTests.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/ConversationMessageVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/ConversationMessageOrder.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationMessageService.java"
+    ],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/vector/MilvusCollectionTests.java": [],
+    "bootstrap/src/test/resources/mockito-extensions/org.mockito.plugins.MockMaker": [],
+    "docs/examples/pdf-ingestion-example.md": [],
+    "docs/examples/pdf-pipeline-request.json": [],
+    "docs/multi-channel-retrieval.md": [],
+    "docs/quick-start.md": [],
+    "docs/refactoring-summary.md": [],
+    "framework/pom.xml": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/cache/RedisKeySerializer.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/config/DataBaseConfiguration.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/database/MyMetaObjectHandler.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/config/RocketMQAutoConfiguration.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/DelegatingTransactionListener.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/MessageQueueProducer.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/RocketMQProducerAdapter.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/config/WebAutoConfiguration.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/GlobalExceptionHandler.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/ApplicationContextHolder.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/LoginUser.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/database/MyMetaObjectHandler.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/distributedid/CustomIdentifierGenerator.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/distributedid/SnowflakeIdInitializer.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/IErrorCode.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/AbstractException.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/IErrorCode.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/IErrorCode.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/kb/VectorCollectionAlreadyExistsException.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ServiceException.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/RemoteException.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/IErrorCode.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ServiceException.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/IErrorCode.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentConsume.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentConsumeAspect.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ServiceException.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentConsumeStatusEnum.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentSubmit.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentSubmitAspect.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/SpELUtil.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/MessageWrapper.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/DelegatingTransactionListener.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/MessageWrapper.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/MessageQueueProducer.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/RocketMQProducerAdapter.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/MessageWrapper.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/TransactionChecker.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/MessageWrapper.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceContext.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceRoot.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/GlobalExceptionHandler.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/AbstractException.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/AbstractException.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/SseEmitterSender.java": [],
+    "framework/src/main/resources/lua/snowflake_init.lua": [],
+    "frontend/.env": [],
+    "frontend/.prettierignore": [],
+    "frontend/@/components/ui/alert-dialog.tsx": [],
+    "frontend/@/components/ui/badge.tsx": [],
+    "frontend/@/components/ui/button.tsx": [],
+    "frontend/@/components/ui/card.tsx": [],
+    "frontend/@/components/ui/form.tsx": [],
+    "frontend/@/components/ui/input.tsx": [],
+    "frontend/@/components/ui/label.tsx": [],
+    "frontend/@/components/ui/progress.tsx": [],
+    "frontend/@/components/ui/select.tsx": [],
+    "frontend/@/components/ui/separator.tsx": [],
+    "frontend/@/components/ui/sheet.tsx": [],
+    "frontend/@/components/ui/table.tsx": [],
+    "frontend/@/components/ui/tabs.tsx": [],
+    "frontend/@/components/ui/textarea.tsx": [],
+    "frontend/components.json": [],
+    "frontend/index.html": [],
+    "frontend/package.json": [],
+    "frontend/postcss.config.cjs": [],
+    "frontend/src/App.tsx": [],
+    "frontend/src/components/admin/CreateKnowledgeBaseDialog.tsx": [],
+    "frontend/src/components/admin/SimpleLineChart.tsx": [],
+    "frontend/src/components/chat/ChatInput.tsx": [],
+    "frontend/src/components/chat/FeedbackButtons.tsx": [],
+    "frontend/src/components/chat/MarkdownRenderer.tsx": [],
+    "frontend/src/components/chat/MessageItem.tsx": [],
+    "frontend/src/components/chat/MessageList.tsx": [],
+    "frontend/src/components/chat/ThinkingIndicator.tsx": [],
+    "frontend/src/components/chat/WelcomeScreen.tsx": [],
+    "frontend/src/components/common/Avatar.tsx": [],
+    "frontend/src/components/common/ErrorBoundary.tsx": [],
+    "frontend/src/components/common/Loading.tsx": [],
+    "frontend/src/components/common/Toast.tsx": [],
+    "frontend/src/components/layout/Header.tsx": [],
+    "frontend/src/components/layout/MainLayout.tsx": [],
+    "frontend/src/components/layout/Sidebar.tsx": [],
+    "frontend/src/components/session/SessionItem.tsx": [],
+    "frontend/src/components/session/SessionList.tsx": [],
+    "frontend/src/components/ui/alert-dialog.tsx": [],
+    "frontend/src/components/ui/badge.tsx": [],
+    "frontend/src/components/ui/button.tsx": [],
+    "frontend/src/components/ui/card.tsx": [],
+    "frontend/src/components/ui/checkbox.tsx": [],
+    "frontend/src/components/ui/dialog.tsx": [],
+    "frontend/src/components/ui/dropdown-menu.tsx": [],
+    "frontend/src/components/ui/form.tsx": [],
+    "frontend/src/components/ui/input.tsx": [],
+    "frontend/src/components/ui/label.tsx": [],
+    "frontend/src/components/ui/select.tsx": [],
+    "frontend/src/components/ui/separator.tsx": [],
+    "frontend/src/components/ui/table.tsx": [],
+    "frontend/src/components/ui/textarea.tsx": [],
+    "frontend/src/components/ui/tooltip.tsx": [],
+    "frontend/src/hooks/useAuth.ts": [],
+    "frontend/src/hooks/useChat.ts": [],
+    "frontend/src/hooks/useStreamResponse.ts": [],
+    "frontend/src/lib/utils.ts": [],
+    "frontend/src/main.tsx": [],
+    "frontend/src/pages/admin/AdminLayout.tsx": [],
+    "frontend/src/pages/admin/dashboard/DashboardPage.tsx": [],
+    "frontend/src/pages/admin/ingestion/IngestionPage.tsx": [],
+    "frontend/src/pages/admin/intent-tree/IntentEditPage.tsx": [],
+    "frontend/src/pages/admin/intent-tree/IntentListPage.tsx": [],
+    "frontend/src/pages/admin/intent-tree/IntentTreePage.tsx": [],
+    "frontend/src/pages/admin/knowledge/KnowledgeChunksPage.tsx": [],
+    "frontend/src/pages/admin/knowledge/KnowledgeDocumentsPage.tsx": [],
+    "frontend/src/pages/admin/knowledge/KnowledgeListPage.tsx": [],
+    "frontend/src/pages/admin/query-term-mapping/QueryTermMappingPage.tsx": [],
+    "frontend/src/pages/admin/sample-questions/SampleQuestionPage.tsx": [],
+    "frontend/src/pages/admin/settings/SystemSettingsPage.tsx": [],
+    "frontend/src/pages/admin/traces/components/FilterBar.tsx": [],
+    "frontend/src/pages/admin/traces/components/PageHeader.tsx": [],
+    "frontend/src/pages/admin/traces/components/RunsTable.tsx": [],
+    "frontend/src/pages/admin/traces/components/StatCard.tsx": [],
+    "frontend/src/pages/admin/traces/RagTraceDetailPage.tsx": [],
+    "frontend/src/pages/admin/traces/RagTracePage.tsx": [],
+    "frontend/src/pages/admin/traces/traceUtils.ts": [],
+    "frontend/src/pages/admin/users/UserListPage.tsx": [],
+    "frontend/src/pages/ChatPage.tsx": [],
+    "frontend/src/pages/LoginPage.tsx": [],
+    "frontend/src/pages/NotFoundPage.tsx": [],
+    "frontend/src/router.tsx": [],
+    "frontend/src/services/api.ts": [],
+    "frontend/src/services/authService.ts": [],
+    "frontend/src/services/chatService.ts": [],
+    "frontend/src/services/dashboardService.ts": [],
+    "frontend/src/services/ingestionService.ts": [],
+    "frontend/src/services/intentTreeService.ts": [],
+    "frontend/src/services/knowledgeService.ts": [
+      "frontend/src/services/api.ts"
+    ],
+    "frontend/src/services/queryTermMappingService.ts": [],
+    "frontend/src/services/ragTraceService.ts": [],
+    "frontend/src/services/sampleQuestionService.ts": [],
+    "frontend/src/services/sessionService.ts": [],
+    "frontend/src/services/settingsService.ts": [],
+    "frontend/src/services/userService.ts": [],
+    "frontend/src/stores/authStore.ts": [],
+    "frontend/src/stores/chatStore.ts": [],
+    "frontend/src/stores/themeStore.ts": [],
+    "frontend/src/styles/globals.css": [],
+    "frontend/src/types/index.ts": [],
+    "frontend/src/utils/error.ts": [],
+    "frontend/src/utils/helpers.ts": [],
+    "frontend/src/utils/storage.ts": [],
+    "frontend/src/vite-env.d.ts": [],
+    "frontend/tailwind.config.cjs": [],
+    "frontend/TESTING.md": [],
+    "frontend/tsconfig.app.json": [],
+    "frontend/tsconfig.app.tsbuildinfo": [],
+    "frontend/tsconfig.json": [],
+    "frontend/tsconfig.node.json": [],
+    "frontend/tsconfig.node.tsbuildinfo": [],
+    "frontend/vite.config.d.ts": [],
+    "frontend/vite.config.js": [],
+    "frontend/vite.config.ts": [],
+    "infra-ai/pom.xml": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/AbstractOpenAIStyleChatClient.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpMediaTypes.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpResponseHelper.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientErrorType.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientException.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelUrlResolver.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/BaiLianChatClient.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/ChatClient.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/OllamaChatClient.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/OpenAIStyleSseParser.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/ProbeStreamBridge.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/RoutingLLMService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/RemoteException.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelHealthStore.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelRoutingExecutor.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelSelector.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/SiliconFlowChatClient.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamAsyncExecutor.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientErrorType.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientException.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamCallback.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamCancellationHandle.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamCancellationHandles.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/AbstractOpenAIStyleEmbeddingClient.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpMediaTypes.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpResponseHelper.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientErrorType.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientException.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelUrlResolver.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingClient.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingService.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/OllamaEmbeddingClient.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/RoutingEmbeddingService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/RemoteException.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelRoutingExecutor.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelSelector.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/SiliconFlowEmbeddingClient.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpMediaTypes.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpResponseHelper.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientErrorType.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientException.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelUrlResolver.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelCaller.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelHealthStore.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelRoutingExecutor.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/BaseErrorCode.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/RemoteException.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelSelector.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java": [
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/BaiLianRerankClient.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/config/AIModelProperties.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpMediaTypes.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/HttpResponseHelper.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientErrorType.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelClientException.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/http/ModelUrlResolver.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/NoopRerankClient.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelProvider.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/RerankClient.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelTarget.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/RerankService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/RoutingRerankService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/enums/ModelCapability.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelRoutingExecutor.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelSelector.java"
+    ],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/token/HeuristicTokenCounterService.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/token/TokenCounterService.java": [],
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/util/LLMResponseCleaner.java": [],
+    "lombok.config": [],
+    "mcp-server/pom.xml": [],
+    "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/config/McpServerConfig.java": [],
+    "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/executor/SalesMcpExecutor.java": [],
+    "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/executor/TicketMcpExecutor.java": [],
+    "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/executor/WeatherMcpExecutor.java": [],
+    "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/McpServerApplication.java": [],
+    "mcp-server/src/main/resources/application.yml": [],
+    "mvnw": [],
+    "mvnw.cmd": [],
+    "pom.xml": [],
+    "README.md": [],
+    "resources/database/backups/init_data.sql": [],
+    "resources/database/backups/schema_table.sql": [],
+    "resources/database/init_data_pg.sql": [],
+    "resources/database/schema_pg.sql": [],
+    "resources/database/upgrade_v1.0_to_v1.1.sql": [],
+    "resources/database/upgrade_v1.1_to_v1.2.sql": [],
+    "resources/docker/lightweight/milvus-stack-2.5.8.compose.yaml": [],
+    "resources/docker/lightweight/milvus-stack-2.6.6.compose.yaml": [],
+    "resources/docker/lightweight/README.md": [],
+    "resources/docker/milvus-stack-2.6.6.compose.yaml": [],
+    "resources/docker/rocketmq-stack-5.2.0.compose.yaml": [],
+    "resources/docker/rocketmq-stack-amd-5.2.0.compose.yaml": [],
+    "resources/docs/knowledge/biz/biz-ins/互联网保险系统数据安全规范.md": [],
+    "resources/docs/knowledge/biz/biz-oa/OA系统数据安全规范文档.md": [],
+    "resources/docs/knowledge/group/group-finance/开票信息.md": [],
+    "resources/docs/knowledge/group/hr/公司规章制度.md": [],
+    "resources/docs/knowledge/group/hr/人事制度.md": [],
+    "resources/docs/knowledge/group/hr/薪资与福利政策.md": [],
+    "resources/docs/knowledge/group/hr/员工培训.md": [],
+    "resources/docs/knowledge/group/hr/招聘信息.md": [],
+    "resources/docs/knowledge/group/it/IT支持.md": [],
+    "resources/format/copyright.txt": [],
+    "scripts/sse_queue_test.sh": []
+  }
+}

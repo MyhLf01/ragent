@@ -1,0 +1,3453 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 35,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingMode.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 152,
+      "nonEmptyLines": 134,
+      "callGraph": [
+        {
+          "caller": "createOptions",
+          "callee": "new FixedSizeOptions",
+          "lineNumber": 42
+        },
+        {
+          "caller": "createOptions",
+          "callee": "toInt",
+          "lineNumber": 43
+        },
+        {
+          "caller": "createOptions",
+          "callee": "toInt",
+          "lineNumber": 44
+        },
+        {
+          "caller": "createDefaultOptions",
+          "callee": "new FixedSizeOptions",
+          "lineNumber": 49
+        },
+        {
+          "caller": "createOptions",
+          "callee": "new TextBoundaryOptions",
+          "lineNumber": 61
+        },
+        {
+          "caller": "createOptions",
+          "callee": "toInt",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createOptions",
+          "callee": "toInt",
+          "lineNumber": 63
+        },
+        {
+          "caller": "createOptions",
+          "callee": "toInt",
+          "lineNumber": 64
+        },
+        {
+          "caller": "createOptions",
+          "callee": "toInt",
+          "lineNumber": 65
+        },
+        {
+          "caller": "createDefaultOptions",
+          "callee": "new TextBoundaryOptions",
+          "lineNumber": 70
+        },
+        {
+          "caller": "getDefaultConfig",
+          "callee": "createOptions(Map.of()).toConfigMap",
+          "lineNumber": 93
+        },
+        {
+          "caller": "getDefaultConfig",
+          "callee": "createOptions",
+          "lineNumber": 93
+        },
+        {
+          "caller": "getDefaultConfig",
+          "callee": "Map.of",
+          "lineNumber": 93
+        },
+        {
+          "caller": "toInt",
+          "callee": "config.get",
+          "lineNumber": 115
+        },
+        {
+          "caller": "toInt",
+          "callee": "num.intValue",
+          "lineNumber": 117
+        },
+        {
+          "caller": "toInt",
+          "callee": "str.isBlank",
+          "lineNumber": 118
+        },
+        {
+          "caller": "toInt",
+          "callee": "Integer.parseInt",
+          "lineNumber": 120
+        },
+        {
+          "caller": "toInt",
+          "callee": "str.trim",
+          "lineNumber": 120
+        },
+        {
+          "caller": "fromValue",
+          "callee": "normalize",
+          "lineNumber": 133
+        },
+        {
+          "caller": "fromValue",
+          "callee": "values",
+          "lineNumber": 134
+        },
+        {
+          "caller": "fromValue",
+          "callee": "strategy.value.equalsIgnoreCase",
+          "lineNumber": 135
+        },
+        {
+          "caller": "fromValue",
+          "callee": "strategy.name().equalsIgnoreCase",
+          "lineNumber": 135
+        },
+        {
+          "caller": "fromValue",
+          "callee": "strategy.name",
+          "lineNumber": 135
+        },
+        {
+          "caller": "fromValue",
+          "callee": "new IllegalArgumentException",
+          "lineNumber": 139
+        },
+        {
+          "caller": "normalize",
+          "callee": "value.trim",
+          "lineNumber": 143
+        },
+        {
+          "caller": "normalize",
+          "callee": "trimmed.toLowerCase",
+          "lineNumber": 144
+        },
+        {
+          "caller": "normalize",
+          "callee": "lower.replace",
+          "lineNumber": 145
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingOptions.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 31,
+      "classes": [
+        {
+          "name": "ChunkingOptions",
+          "startLine": 29,
+          "endLine": 35,
+          "methods": [
+            "toConfigMap"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChunkingOptions",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategy.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 43,
+      "nonEmptyLines": 38,
+      "classes": [
+        {
+          "name": "ChunkingStrategy",
+          "startLine": 26,
+          "endLine": 43,
+          "methods": [
+            "getType",
+            "chunk"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChunkingStrategy",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategyFactory.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 82,
+      "nonEmptyLines": 72,
+      "functions": [
+        {
+          "name": "findStrategy",
+          "startLine": 48,
+          "endLine": 51,
+          "params": [
+            "type"
+          ]
+        },
+        {
+          "name": "requireStrategy",
+          "startLine": 60,
+          "endLine": 64,
+          "params": [
+            "type"
+          ]
+        },
+        {
+          "name": "init",
+          "startLine": 66,
+          "endLine": 81,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ChunkingStrategyFactory",
+          "startLine": 34,
+          "endLine": 82,
+          "methods": [
+            "findStrategy",
+            "requireStrategy",
+            "init"
+          ],
+          "properties": [
+            "chunkingStrategies",
+            "strategies"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "findStrategy",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "requireStrategy",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "init",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "ChunkingStrategyFactory",
+          "line": 34,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "findStrategy",
+          "callee": "Optional.empty",
+          "lineNumber": 49
+        },
+        {
+          "caller": "findStrategy",
+          "callee": "Optional.ofNullable",
+          "lineNumber": 50
+        },
+        {
+          "caller": "findStrategy",
+          "callee": "strategies.get",
+          "lineNumber": 50
+        },
+        {
+          "caller": "requireStrategy",
+          "callee": "Objects.requireNonNull",
+          "lineNumber": 61
+        },
+        {
+          "caller": "requireStrategy",
+          "callee": "findStrategy(type).orElseThrow",
+          "lineNumber": 62
+        },
+        {
+          "caller": "requireStrategy",
+          "callee": "findStrategy",
+          "lineNumber": 62
+        },
+        {
+          "caller": "requireStrategy",
+          "callee": "new IllegalArgumentException",
+          "lineNumber": 63
+        },
+        {
+          "caller": "init",
+          "callee": "new EnumMap<>",
+          "lineNumber": 68
+        },
+        {
+          "caller": "init",
+          "callee": "chunkingStrategies.forEach",
+          "lineNumber": 70
+        },
+        {
+          "caller": "init",
+          "callee": "map.put",
+          "lineNumber": 71
+        },
+        {
+          "caller": "init",
+          "callee": "s.getType",
+          "lineNumber": 71
+        },
+        {
+          "caller": "init",
+          "callee": "new IllegalStateException",
+          "lineNumber": 73
+        },
+        {
+          "caller": "init",
+          "callee": "s.getType",
+          "lineNumber": 74
+        },
+        {
+          "caller": "init",
+          "callee": "old.getClass().getName",
+          "lineNumber": 75
+        },
+        {
+          "caller": "init",
+          "callee": "old.getClass",
+          "lineNumber": 75
+        },
+        {
+          "caller": "init",
+          "callee": "s.getClass().getName",
+          "lineNumber": 75
+        },
+        {
+          "caller": "init",
+          "callee": "s.getClass",
+          "lineNumber": 75
+        },
+        {
+          "caller": "init",
+          "callee": "Map.copyOf",
+          "lineNumber": 80
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/FixedSizeOptions.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 33,
+      "callGraph": [
+        {
+          "caller": "toConfigMap",
+          "callee": "Map.of",
+          "lineNumber": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/TextBoundaryOptions.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 43,
+      "nonEmptyLines": 39,
+      "callGraph": [
+        {
+          "caller": "toConfigMap",
+          "callee": "Map.of",
+          "lineNumber": 40
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 66,
+      "nonEmptyLines": 57,
+      "classes": [
+        {
+          "name": "VectorChunk",
+          "startLine": 33,
+          "endLine": 66,
+          "methods": [],
+          "properties": [
+            "chunkId",
+            "index",
+            "content",
+            "metadata",
+            "embedding"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "VectorChunk",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/strategy/FixedSizeTextChunker.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 320,
+      "nonEmptyLines": 266,
+      "functions": [
+        {
+          "name": "getType",
+          "startLine": 45,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "chunk",
+          "startLine": 50,
+          "endLine": 112,
+          "params": [
+            "text",
+            "config"
+          ]
+        },
+        {
+          "name": "adjustToBoundary",
+          "startLine": 122,
+          "endLine": 156,
+          "params": [
+            "text",
+            "start",
+            "targetEnd",
+            "overlap"
+          ]
+        },
+        {
+          "name": "normalizeText",
+          "startLine": 166,
+          "endLine": 232,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "shouldJoinBrokenUrl",
+          "startLine": 238,
+          "endLine": 255,
+          "params": [
+            "prev",
+            "next",
+            "s",
+            "nextIndex"
+          ]
+        },
+        {
+          "name": "isListItemStart",
+          "startLine": 257,
+          "endLine": 271,
+          "params": [
+            "s",
+            "i"
+          ]
+        },
+        {
+          "name": "looksLikeUrlStart",
+          "startLine": 273,
+          "endLine": 276,
+          "params": [
+            "s",
+            "i"
+          ]
+        },
+        {
+          "name": "isUrlChar",
+          "startLine": 278,
+          "endLine": 289,
+          "params": [
+            "c"
+          ]
+        },
+        {
+          "name": "isCommonUrlPunct",
+          "startLine": 291,
+          "endLine": 293,
+          "params": [
+            "c"
+          ]
+        },
+        {
+          "name": "isCjkWordChar",
+          "startLine": 295,
+          "endLine": 300,
+          "params": [
+            "c"
+          ]
+        },
+        {
+          "name": "isCjkOrFullWidthLetterOrDigit",
+          "startLine": 302,
+          "endLine": 310,
+          "params": [
+            "c"
+          ]
+        },
+        {
+          "name": "isCjkPunctuation",
+          "startLine": 312,
+          "endLine": 319,
+          "params": [
+            "c"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FixedSizeTextChunker",
+          "startLine": 42,
+          "endLine": 320,
+          "methods": [
+            "getType",
+            "chunk",
+            "adjustToBoundary",
+            "normalizeText",
+            "shouldJoinBrokenUrl",
+            "isListItemStart",
+            "looksLikeUrlStart",
+            "isUrlChar",
+            "isCommonUrlPunct",
+            "isCjkWordChar",
+            "isCjkOrFullWidthLetterOrDigit",
+            "isCjkPunctuation"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "getType",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "chunk",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "FixedSizeTextChunker",
+          "line": 42,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "chunk",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 52
+        },
+        {
+          "caller": "chunk",
+          "callee": "List.of",
+          "lineNumber": 53
+        },
+        {
+          "caller": "chunk",
+          "callee": "normalizeText",
+          "lineNumber": 57
+        },
+        {
+          "caller": "chunk",
+          "callee": "opts.chunkSize",
+          "lineNumber": 60
+        },
+        {
+          "caller": "chunk",
+          "callee": "List.of",
+          "lineNumber": 62
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder()\r\n                    .chunkId(IdUtil.getSnowflakeNextIdStr())\r\n                    .index(0)\r\n                    .content(normalized).build",
+          "lineNumber": 62
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder()\r\n                    .chunkId(IdUtil.getSnowflakeNextIdStr())\r\n                    .index(0).content",
+          "lineNumber": 62
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder()\r\n                    .chunkId(IdUtil.getSnowflakeNextIdStr()).index",
+          "lineNumber": 62
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder().chunkId",
+          "lineNumber": 62
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder",
+          "lineNumber": 62
+        },
+        {
+          "caller": "chunk",
+          "callee": "IdUtil.getSnowflakeNextIdStr",
+          "lineNumber": 63
+        },
+        {
+          "caller": "chunk",
+          "callee": "Math.max",
+          "lineNumber": 69
+        },
+        {
+          "caller": "chunk",
+          "callee": "Math.max",
+          "lineNumber": 70
+        },
+        {
+          "caller": "chunk",
+          "callee": "opts.overlapSize",
+          "lineNumber": 70
+        },
+        {
+          "caller": "chunk",
+          "callee": "Math.min",
+          "lineNumber": 73
+        },
+        {
+          "caller": "chunk",
+          "callee": "normalized.length",
+          "lineNumber": 78
+        },
+        {
+          "caller": "chunk",
+          "callee": "new ArrayList<>",
+          "lineNumber": 79
+        },
+        {
+          "caller": "chunk",
+          "callee": "Math.min",
+          "lineNumber": 86
+        },
+        {
+          "caller": "chunk",
+          "callee": "adjustToBoundary",
+          "lineNumber": 87
+        },
+        {
+          "caller": "chunk",
+          "callee": "normalized.substring",
+          "lineNumber": 94
+        },
+        {
+          "caller": "chunk",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 95
+        },
+        {
+          "caller": "chunk",
+          "callee": "content.strip",
+          "lineNumber": 95
+        },
+        {
+          "caller": "chunk",
+          "callee": "chunks.add",
+          "lineNumber": 96
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder()\r\n                        .chunkId(IdUtil.getSnowflakeNextIdStr())\r\n                        .index(index++)\r\n                        .content(content).build",
+          "lineNumber": 96
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder()\r\n                        .chunkId(IdUtil.getSnowflakeNextIdStr())\r\n                        .index(index++).content",
+          "lineNumber": 96
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder()\r\n                        .chunkId(IdUtil.getSnowflakeNextIdStr()).index",
+          "lineNumber": 96
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder().chunkId",
+          "lineNumber": 96
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder",
+          "lineNumber": 96
+        },
+        {
+          "caller": "chunk",
+          "callee": "IdUtil.getSnowflakeNextIdStr",
+          "lineNumber": 97
+        },
+        {
+          "caller": "chunk",
+          "callee": "Math.max",
+          "lineNumber": 106
+        },
+        {
+          "caller": "adjustToBoundary",
+          "callee": "Math.min",
+          "lineNumber": 125
+        },
+        {
+          "caller": "adjustToBoundary",
+          "callee": "text.charAt",
+          "lineNumber": 132
+        },
+        {
+          "caller": "adjustToBoundary",
+          "callee": "text.charAt",
+          "lineNumber": 139
+        },
+        {
+          "caller": "adjustToBoundary",
+          "callee": "text.charAt",
+          "lineNumber": 147
+        },
+        {
+          "caller": "adjustToBoundary",
+          "callee": "text.length",
+          "lineNumber": 150
+        },
+        {
+          "caller": "adjustToBoundary",
+          "callee": "Character.isWhitespace",
+          "lineNumber": 151
+        },
+        {
+          "caller": "adjustToBoundary",
+          "callee": "text.charAt",
+          "lineNumber": 151
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "text.isEmpty",
+          "lineNumber": 167
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "text.replace",
+          "lineNumber": 169
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "new StringBuilder",
+          "lineNumber": 170
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "src.length",
+          "lineNumber": 170
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "src.length",
+          "lineNumber": 174
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "looksLikeUrlStart",
+          "lineNumber": 175
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "src.charAt",
+          "lineNumber": 179
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "Character.isWhitespace",
+          "lineNumber": 182
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "src.length",
+          "lineNumber": 185
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "Character.isWhitespace",
+          "lineNumber": 185
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "src.charAt",
+          "lineNumber": 185
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "src.charAt",
+          "lineNumber": 186
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "src.charAt",
+          "lineNumber": 190
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "src.length",
+          "lineNumber": 191
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "src.charAt",
+          "lineNumber": 191
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "shouldJoinBrokenUrl",
+          "lineNumber": 194
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "out.append",
+          "lineNumber": 200
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "out.append",
+          "lineNumber": 206
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "isUrlChar",
+          "lineNumber": 209
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "isCommonUrlPunct",
+          "lineNumber": 209
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "src.charAt",
+          "lineNumber": 217
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "src.length",
+          "lineNumber": 218
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "src.charAt",
+          "lineNumber": 218
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "isCjkWordChar",
+          "lineNumber": 220
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "isCjkWordChar",
+          "lineNumber": 220
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "out.append",
+          "lineNumber": 224
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "out.append",
+          "lineNumber": 228
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "out.toString",
+          "lineNumber": 231
+        },
+        {
+          "caller": "shouldJoinBrokenUrl",
+          "callee": "isListItemStart",
+          "lineNumber": 240
+        },
+        {
+          "caller": "shouldJoinBrokenUrl",
+          "callee": "Character.isLetter",
+          "lineNumber": 245
+        },
+        {
+          "caller": "isListItemStart",
+          "callee": "s.length",
+          "lineNumber": 260
+        },
+        {
+          "caller": "isListItemStart",
+          "callee": "s.charAt",
+          "lineNumber": 260
+        },
+        {
+          "caller": "isListItemStart",
+          "callee": "s.charAt",
+          "lineNumber": 260
+        },
+        {
+          "caller": "isListItemStart",
+          "callee": "s.length",
+          "lineNumber": 263
+        },
+        {
+          "caller": "isListItemStart",
+          "callee": "Character.isDigit",
+          "lineNumber": 263
+        },
+        {
+          "caller": "isListItemStart",
+          "callee": "s.charAt",
+          "lineNumber": 263
+        },
+        {
+          "caller": "isListItemStart",
+          "callee": "s.length",
+          "lineNumber": 267
+        },
+        {
+          "caller": "isListItemStart",
+          "callee": "s.charAt",
+          "lineNumber": 267
+        },
+        {
+          "caller": "isListItemStart",
+          "callee": "s.charAt",
+          "lineNumber": 267
+        },
+        {
+          "caller": "isListItemStart",
+          "callee": "s.charAt",
+          "lineNumber": 267
+        },
+        {
+          "caller": "looksLikeUrlStart",
+          "callee": "s.length",
+          "lineNumber": 274
+        },
+        {
+          "caller": "looksLikeUrlStart",
+          "callee": "s.startsWith",
+          "lineNumber": 275
+        },
+        {
+          "caller": "looksLikeUrlStart",
+          "callee": "s.startsWith",
+          "lineNumber": 275
+        },
+        {
+          "caller": "isCjkWordChar",
+          "callee": "Character.isWhitespace",
+          "lineNumber": 297
+        },
+        {
+          "caller": "isCjkWordChar",
+          "callee": "isCjkOrFullWidthLetterOrDigit",
+          "lineNumber": 298
+        },
+        {
+          "caller": "isCjkWordChar",
+          "callee": "isCjkPunctuation",
+          "lineNumber": 299
+        },
+        {
+          "caller": "isCjkOrFullWidthLetterOrDigit",
+          "callee": "Character.UnicodeBlock.of",
+          "lineNumber": 304
+        },
+        {
+          "caller": "isCjkPunctuation",
+          "callee": "Character.UnicodeBlock.of",
+          "lineNumber": 313
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 3,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/strategy/StructureAwareTextChunker.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 327,
+      "nonEmptyLines": 286,
+      "functions": [
+        {
+          "name": "getType",
+          "startLine": 51,
+          "endLine": 54,
+          "params": []
+        },
+        {
+          "name": "chunk",
+          "startLine": 56,
+          "endLine": 97,
+          "params": [
+            "text",
+            "config"
+          ]
+        },
+        {
+          "name": "segmentToBlocks",
+          "startLine": 112,
+          "endLine": 202,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "coalesceTrailingBlanks",
+          "startLine": 205,
+          "endLine": 221,
+          "params": [
+            "blocks",
+            "text"
+          ]
+        },
+        {
+          "name": "packBlocksToChunks",
+          "startLine": 224,
+          "endLine": 269,
+          "params": [
+            "blocks",
+            "textLen",
+            "min",
+            "target",
+            "max"
+          ]
+        },
+        {
+          "name": "materialize",
+          "startLine": 272,
+          "endLine": 298,
+          "params": [
+            "text",
+            "ranges",
+            "overlap"
+          ]
+        },
+        {
+          "name": "indexOfNl",
+          "startLine": 301,
+          "endLine": 304,
+          "params": [
+            "s",
+            "from"
+          ]
+        },
+        {
+          "name": "trimRightKeepLeft",
+          "startLine": 306,
+          "endLine": 312,
+          "params": [
+            "s"
+          ]
+        },
+        {
+          "name": "isAllBlank",
+          "startLine": 314,
+          "endLine": 320,
+          "params": [
+            "s",
+            "from",
+            "to"
+          ]
+        },
+        {
+          "name": "tailByChars",
+          "startLine": 322,
+          "endLine": 326,
+          "params": [
+            "s",
+            "n"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "StructureAwareTextChunker",
+          "startLine": 43,
+          "endLine": 327,
+          "methods": [
+            "getType",
+            "chunk",
+            "segmentToBlocks",
+            "coalesceTrailingBlanks",
+            "packBlocksToChunks",
+            "materialize",
+            "indexOfNl",
+            "trimRightKeepLeft",
+            "isAllBlank",
+            "tailByChars"
+          ],
+          "properties": [
+            "HEADING",
+            "CODE_FENCE",
+            "ATOMIC_IMAGE",
+            "ATOMIC_LINK"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getType",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "chunk",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "StructureAwareTextChunker",
+          "line": 43,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "chunk",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 58
+        },
+        {
+          "caller": "chunk",
+          "callee": "List.of",
+          "lineNumber": 58
+        },
+        {
+          "caller": "chunk",
+          "callee": "text.replace(\"\\r\\n\", \"\\n\").replace",
+          "lineNumber": 61
+        },
+        {
+          "caller": "chunk",
+          "callee": "text.replace",
+          "lineNumber": 61
+        },
+        {
+          "caller": "chunk",
+          "callee": "opts.targetChars",
+          "lineNumber": 64
+        },
+        {
+          "caller": "chunk",
+          "callee": "opts.maxChars",
+          "lineNumber": 65
+        },
+        {
+          "caller": "chunk",
+          "callee": "opts.minChars",
+          "lineNumber": 66
+        },
+        {
+          "caller": "chunk",
+          "callee": "opts.overlapChars",
+          "lineNumber": 67
+        },
+        {
+          "caller": "chunk",
+          "callee": "segmentToBlocks",
+          "lineNumber": 70
+        },
+        {
+          "caller": "chunk",
+          "callee": "blocks.isEmpty",
+          "lineNumber": 72
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder()\r\n                    .content(text)\r\n                    .index(0)\r\n                    .chunkId(IdUtil.getSnowflakeNextIdStr()).build",
+          "lineNumber": 73
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder()\r\n                    .content(text)\r\n                    .index(0).chunkId",
+          "lineNumber": 73
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder()\r\n                    .content(text).index",
+          "lineNumber": 73
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder().content",
+          "lineNumber": 73
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder",
+          "lineNumber": 73
+        },
+        {
+          "caller": "chunk",
+          "callee": "IdUtil.getSnowflakeNextIdStr",
+          "lineNumber": 76
+        },
+        {
+          "caller": "chunk",
+          "callee": "List.of",
+          "lineNumber": 78
+        },
+        {
+          "caller": "chunk",
+          "callee": "packBlocksToChunks",
+          "lineNumber": 82
+        },
+        {
+          "caller": "chunk",
+          "callee": "text.length",
+          "lineNumber": 82
+        },
+        {
+          "caller": "chunk",
+          "callee": "materialize",
+          "lineNumber": 85
+        },
+        {
+          "caller": "chunk",
+          "callee": "out.size",
+          "lineNumber": 88
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder()\r\n                    .content(out.get(i).getContent())\r\n                    .index(i)\r\n                    .chunkId(IdUtil.getSnowflakeNextIdStr()).build",
+          "lineNumber": 89
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder()\r\n                    .content(out.get(i).getContent())\r\n                    .index(i).chunkId",
+          "lineNumber": 89
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder()\r\n                    .content(out.get(i).getContent()).index",
+          "lineNumber": 89
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder().content",
+          "lineNumber": 89
+        },
+        {
+          "caller": "chunk",
+          "callee": "VectorChunk.builder",
+          "lineNumber": 89
+        },
+        {
+          "caller": "chunk",
+          "callee": "out.get(i).getContent",
+          "lineNumber": 90
+        },
+        {
+          "caller": "chunk",
+          "callee": "out.get",
+          "lineNumber": 90
+        },
+        {
+          "caller": "chunk",
+          "callee": "IdUtil.getSnowflakeNextIdStr",
+          "lineNumber": 92
+        },
+        {
+          "caller": "chunk",
+          "callee": "out.set",
+          "lineNumber": 94
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "new ArrayList<>",
+          "lineNumber": 113
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "text.length",
+          "lineNumber": 114
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "indexOfNl",
+          "lineNumber": 124
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "text.charAt",
+          "lineNumber": 126
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "text.substring",
+          "lineNumber": 127
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "trimRightKeepLeft",
+          "lineNumber": 129
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "CODE_FENCE.matcher(trimmed).matches",
+          "lineNumber": 131
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "CODE_FENCE.matcher",
+          "lineNumber": 131
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "blocks.add",
+          "lineNumber": 134
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "new Block",
+          "lineNumber": 134
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "CODE_FENCE.matcher(trimmed).matches",
+          "lineNumber": 146
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "CODE_FENCE.matcher",
+          "lineNumber": 146
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "blocks.add",
+          "lineNumber": 148
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "new Block",
+          "lineNumber": 148
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "trimmed.isEmpty",
+          "lineNumber": 156
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "blocks.add",
+          "lineNumber": 158
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "new Block",
+          "lineNumber": 158
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "HEADING.matcher(trimmed).matches",
+          "lineNumber": 167
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "HEADING.matcher",
+          "lineNumber": 167
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "blocks.add",
+          "lineNumber": 169
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "new Block",
+          "lineNumber": 169
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "blocks.add",
+          "lineNumber": 172
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "new Block",
+          "lineNumber": 172
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "ATOMIC_IMAGE.matcher(trimmed).matches",
+          "lineNumber": 176
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "ATOMIC_IMAGE.matcher",
+          "lineNumber": 176
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "ATOMIC_LINK.matcher(trimmed).matches",
+          "lineNumber": 176
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "ATOMIC_LINK.matcher",
+          "lineNumber": 176
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "blocks.add",
+          "lineNumber": 178
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "new Block",
+          "lineNumber": 178
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "blocks.add",
+          "lineNumber": 181
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "new Block",
+          "lineNumber": 181
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "blocks.add",
+          "lineNumber": 197
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "new Block",
+          "lineNumber": 197
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "blocks.add",
+          "lineNumber": 199
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "new Block",
+          "lineNumber": 199
+        },
+        {
+          "caller": "segmentToBlocks",
+          "callee": "coalesceTrailingBlanks",
+          "lineNumber": 201
+        },
+        {
+          "caller": "coalesceTrailingBlanks",
+          "callee": "blocks.isEmpty",
+          "lineNumber": 206
+        },
+        {
+          "caller": "coalesceTrailingBlanks",
+          "callee": "new ArrayList<>",
+          "lineNumber": 207
+        },
+        {
+          "caller": "coalesceTrailingBlanks",
+          "callee": "blocks.get",
+          "lineNumber": 208
+        },
+        {
+          "caller": "coalesceTrailingBlanks",
+          "callee": "blocks.size",
+          "lineNumber": 209
+        },
+        {
+          "caller": "coalesceTrailingBlanks",
+          "callee": "blocks.get",
+          "lineNumber": 210
+        },
+        {
+          "caller": "coalesceTrailingBlanks",
+          "callee": "isAllBlank",
+          "lineNumber": 211
+        },
+        {
+          "caller": "coalesceTrailingBlanks",
+          "callee": "new Block",
+          "lineNumber": 213
+        },
+        {
+          "caller": "coalesceTrailingBlanks",
+          "callee": "out.add",
+          "lineNumber": 216
+        },
+        {
+          "caller": "coalesceTrailingBlanks",
+          "callee": "out.add",
+          "lineNumber": 219
+        },
+        {
+          "caller": "packBlocksToChunks",
+          "callee": "new ArrayList<>",
+          "lineNumber": 225
+        },
+        {
+          "caller": "packBlocksToChunks",
+          "callee": "blocks.size",
+          "lineNumber": 227
+        },
+        {
+          "caller": "packBlocksToChunks",
+          "callee": "blocks.get",
+          "lineNumber": 228
+        },
+        {
+          "caller": "packBlocksToChunks",
+          "callee": "blocks.get",
+          "lineNumber": 229
+        },
+        {
+          "caller": "packBlocksToChunks",
+          "callee": "blocks.size",
+          "lineNumber": 233
+        },
+        {
+          "caller": "packBlocksToChunks",
+          "callee": "blocks.get",
+          "lineNumber": 234
+        },
+        {
+          "caller": "packBlocksToChunks",
+          "callee": "ranges.add",
+          "lineNumber": 253
+        },
+        {
+          "caller": "packBlocksToChunks",
+          "callee": "ranges.size",
+          "lineNumber": 258
+        },
+        {
+          "caller": "packBlocksToChunks",
+          "callee": "ranges.get",
+          "lineNumber": 259
+        },
+        {
+          "caller": "packBlocksToChunks",
+          "callee": "ranges.size",
+          "lineNumber": 259
+        },
+        {
+          "caller": "packBlocksToChunks",
+          "callee": "Math.min",
+          "lineNumber": 260
+        },
+        {
+          "caller": "packBlocksToChunks",
+          "callee": "ranges.get",
+          "lineNumber": 261
+        },
+        {
+          "caller": "packBlocksToChunks",
+          "callee": "ranges.size",
+          "lineNumber": 261
+        },
+        {
+          "caller": "packBlocksToChunks",
+          "callee": "ranges.remove",
+          "lineNumber": 264
+        },
+        {
+          "caller": "packBlocksToChunks",
+          "callee": "ranges.size",
+          "lineNumber": 264
+        },
+        {
+          "caller": "materialize",
+          "callee": "ranges.isEmpty",
+          "lineNumber": 273
+        },
+        {
+          "caller": "materialize",
+          "callee": "List.of",
+          "lineNumber": 273
+        },
+        {
+          "caller": "materialize",
+          "callee": "new ArrayList<>",
+          "lineNumber": 274
+        },
+        {
+          "caller": "materialize",
+          "callee": "ranges.size",
+          "lineNumber": 277
+        },
+        {
+          "caller": "materialize",
+          "callee": "ranges.get",
+          "lineNumber": 278
+        },
+        {
+          "caller": "materialize",
+          "callee": "ranges.get",
+          "lineNumber": 279
+        },
+        {
+          "caller": "materialize",
+          "callee": "text.substring",
+          "lineNumber": 280
+        },
+        {
+          "caller": "materialize",
+          "callee": "prevTail.isEmpty",
+          "lineNumber": 281
+        },
+        {
+          "caller": "materialize",
+          "callee": "VectorChunk.builder()\r\n                    .content(body)\r\n                    .index(k)\r\n                    .chunkId(IdUtil.getSnowflakeNextIdStr()).build",
+          "lineNumber": 285
+        },
+        {
+          "caller": "materialize",
+          "callee": "VectorChunk.builder()\r\n                    .content(body)\r\n                    .index(k).chunkId",
+          "lineNumber": 285
+        },
+        {
+          "caller": "materialize",
+          "callee": "VectorChunk.builder()\r\n                    .content(body).index",
+          "lineNumber": 285
+        },
+        {
+          "caller": "materialize",
+          "callee": "VectorChunk.builder().content",
+          "lineNumber": 285
+        },
+        {
+          "caller": "materialize",
+          "callee": "VectorChunk.builder",
+          "lineNumber": 285
+        },
+        {
+          "caller": "materialize",
+          "callee": "IdUtil.getSnowflakeNextIdStr",
+          "lineNumber": 288
+        },
+        {
+          "caller": "materialize",
+          "callee": "out.add",
+          "lineNumber": 290
+        },
+        {
+          "caller": "materialize",
+          "callee": "tailByChars",
+          "lineNumber": 294
+        },
+        {
+          "caller": "materialize",
+          "callee": "text.substring",
+          "lineNumber": 294
+        },
+        {
+          "caller": "indexOfNl",
+          "callee": "s.indexOf",
+          "lineNumber": 302
+        },
+        {
+          "caller": "indexOfNl",
+          "callee": "s.length",
+          "lineNumber": 303
+        },
+        {
+          "caller": "trimRightKeepLeft",
+          "callee": "s.length",
+          "lineNumber": 307
+        },
+        {
+          "caller": "trimRightKeepLeft",
+          "callee": "Character.isWhitespace",
+          "lineNumber": 308
+        },
+        {
+          "caller": "trimRightKeepLeft",
+          "callee": "s.charAt",
+          "lineNumber": 308
+        },
+        {
+          "caller": "trimRightKeepLeft",
+          "callee": "s.charAt",
+          "lineNumber": 308
+        },
+        {
+          "caller": "trimRightKeepLeft",
+          "callee": "s.charAt",
+          "lineNumber": 308
+        },
+        {
+          "caller": "trimRightKeepLeft",
+          "callee": "s.substring",
+          "lineNumber": 311
+        },
+        {
+          "caller": "isAllBlank",
+          "callee": "s.charAt",
+          "lineNumber": 316
+        },
+        {
+          "caller": "tailByChars",
+          "callee": "s.length",
+          "lineNumber": 324
+        },
+        {
+          "caller": "tailByChars",
+          "callee": "s.substring",
+          "lineNumber": 325
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 3,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/DocumentParser.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 70,
+      "nonEmptyLines": 63,
+      "classes": [
+        {
+          "name": "DocumentParser",
+          "startLine": 29,
+          "endLine": 70,
+          "methods": [
+            "getParserType",
+            "parse",
+            "extractText",
+            "supports"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DocumentParser",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "parse",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 47
+        },
+        {
+          "caller": "extractText",
+          "callee": "new UnsupportedOperationException",
+          "lineNumber": 58
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/DocumentParserSelector.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 103,
+      "nonEmptyLines": 93,
+      "functions": [
+        {
+          "name": "DocumentParserSelector",
+          "startLine": 47,
+          "endLine": 55,
+          "params": [
+            "parsers"
+          ]
+        },
+        {
+          "name": "select",
+          "startLine": 63,
+          "endLine": 65,
+          "params": [
+            "parserType"
+          ]
+        },
+        {
+          "name": "selectByMimeType",
+          "startLine": 77,
+          "endLine": 82,
+          "params": [
+            "mimeType"
+          ]
+        },
+        {
+          "name": "getAllStrategies",
+          "startLine": 89,
+          "endLine": 91,
+          "params": []
+        },
+        {
+          "name": "getAvailableTypes",
+          "startLine": 98,
+          "endLine": 102,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DocumentParserSelector",
+          "startLine": 41,
+          "endLine": 103,
+          "methods": [
+            "DocumentParserSelector",
+            "select",
+            "selectByMimeType",
+            "getAllStrategies",
+            "getAvailableTypes"
+          ],
+          "properties": [
+            "strategies",
+            "strategyMap"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DocumentParserSelector",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "select",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "selectByMimeType",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "getAllStrategies",
+          "line": 89,
+          "isDefault": false
+        },
+        {
+          "name": "getAvailableTypes",
+          "line": 98,
+          "isDefault": false
+        },
+        {
+          "name": "DocumentParserSelector",
+          "line": 41,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DocumentParserSelector",
+          "callee": "parsers.stream().collect",
+          "lineNumber": 49
+        },
+        {
+          "caller": "DocumentParserSelector",
+          "callee": "parsers.stream",
+          "lineNumber": 49
+        },
+        {
+          "caller": "DocumentParserSelector",
+          "callee": "Collectors.toMap",
+          "lineNumber": 50
+        },
+        {
+          "caller": "DocumentParserSelector",
+          "callee": "Function.identity",
+          "lineNumber": 52
+        },
+        {
+          "caller": "select",
+          "callee": "strategyMap.get",
+          "lineNumber": 64
+        },
+        {
+          "caller": "selectByMimeType",
+          "callee": "strategies.stream()\r\n                .filter(parser -> parser.supports(mimeType))\r\n                .findFirst().orElseGet",
+          "lineNumber": 78
+        },
+        {
+          "caller": "selectByMimeType",
+          "callee": "strategies.stream()\r\n                .filter(parser -> parser.supports(mimeType)).findFirst",
+          "lineNumber": 78
+        },
+        {
+          "caller": "selectByMimeType",
+          "callee": "strategies.stream().filter",
+          "lineNumber": 78
+        },
+        {
+          "caller": "selectByMimeType",
+          "callee": "strategies.stream",
+          "lineNumber": 78
+        },
+        {
+          "caller": "selectByMimeType",
+          "callee": "parser.supports",
+          "lineNumber": 79
+        },
+        {
+          "caller": "selectByMimeType",
+          "callee": "select",
+          "lineNumber": 81
+        },
+        {
+          "caller": "selectByMimeType",
+          "callee": "ParserType.TIKA.getType",
+          "lineNumber": 81
+        },
+        {
+          "caller": "getAllStrategies",
+          "callee": "List.copyOf",
+          "lineNumber": 90
+        },
+        {
+          "caller": "getAvailableTypes",
+          "callee": "strategies.stream()\r\n                .map(DocumentParser::getParserType).toList",
+          "lineNumber": 99
+        },
+        {
+          "caller": "getAvailableTypes",
+          "callee": "strategies.stream().map",
+          "lineNumber": 99
+        },
+        {
+          "caller": "getAvailableTypes",
+          "callee": "strategies.stream",
+          "lineNumber": 99
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/ParseResult.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 43,
+      "nonEmptyLines": 38,
+      "callGraph": [
+        {
+          "caller": "ofText",
+          "callee": "new ParseResult",
+          "lineNumber": 34
+        },
+        {
+          "caller": "ofText",
+          "callee": "Map.of",
+          "lineNumber": 34
+        },
+        {
+          "caller": "of",
+          "callee": "new ParseResult",
+          "lineNumber": 41
+        },
+        {
+          "caller": "of",
+          "callee": "Map.of",
+          "lineNumber": 41
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/ParserType.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 44,
+      "nonEmptyLines": 38,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/TikaDocumentParser.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 85,
+      "nonEmptyLines": 74,
+      "functions": [
+        {
+          "name": "getParserType",
+          "startLine": 48,
+          "endLine": 51,
+          "params": []
+        },
+        {
+          "name": "parse",
+          "startLine": 53,
+          "endLine": 67,
+          "params": [
+            "content",
+            "mimeType",
+            "options"
+          ]
+        },
+        {
+          "name": "extractText",
+          "startLine": 69,
+          "endLine": 78,
+          "params": [
+            "stream",
+            "fileName"
+          ]
+        },
+        {
+          "name": "supports",
+          "startLine": 80,
+          "endLine": 84,
+          "params": [
+            "mimeType"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "TikaDocumentParser",
+          "startLine": 36,
+          "endLine": 85,
+          "methods": [
+            "getParserType",
+            "parse",
+            "extractText",
+            "supports"
+          ],
+          "properties": [
+            "TIKA"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getParserType",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "parse",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "extractText",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "supports",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "TikaDocumentParser",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getParserType",
+          "callee": "ParserType.TIKA.getType",
+          "lineNumber": 50
+        },
+        {
+          "caller": "parse",
+          "callee": "ParseResult.ofText",
+          "lineNumber": 56
+        },
+        {
+          "caller": "parse",
+          "callee": "new ByteArrayInputStream",
+          "lineNumber": 59
+        },
+        {
+          "caller": "parse",
+          "callee": "TIKA.parseToString",
+          "lineNumber": 60
+        },
+        {
+          "caller": "parse",
+          "callee": "TextCleanupUtil.cleanup",
+          "lineNumber": 61
+        },
+        {
+          "caller": "parse",
+          "callee": "ParseResult.ofText",
+          "lineNumber": 62
+        },
+        {
+          "caller": "parse",
+          "callee": "log.error",
+          "lineNumber": 64
+        },
+        {
+          "caller": "parse",
+          "callee": "new ServiceException",
+          "lineNumber": 65
+        },
+        {
+          "caller": "parse",
+          "callee": "e.getMessage",
+          "lineNumber": 65
+        },
+        {
+          "caller": "extractText",
+          "callee": "TIKA.parseToString",
+          "lineNumber": 72
+        },
+        {
+          "caller": "extractText",
+          "callee": "TextCleanupUtil.cleanup",
+          "lineNumber": 73
+        },
+        {
+          "caller": "extractText",
+          "callee": "log.error",
+          "lineNumber": 75
+        },
+        {
+          "caller": "extractText",
+          "callee": "new ServiceException",
+          "lineNumber": 76
+        },
+        {
+          "caller": "supports",
+          "callee": "mimeType.startsWith",
+          "lineNumber": 83
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/IngestionTaskController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 97,
+      "nonEmptyLines": 87,
+      "functions": [
+        {
+          "name": "create",
+          "startLine": 57,
+          "endLine": 60,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "upload",
+          "startLine": 65,
+          "endLine": 70,
+          "params": [
+            "pipelineId",
+            "file"
+          ]
+        },
+        {
+          "name": "get",
+          "startLine": 75,
+          "endLine": 78,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "nodes",
+          "startLine": 83,
+          "endLine": 86,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "page",
+          "startLine": 91,
+          "endLine": 96,
+          "params": [
+            "pageNo",
+            "pageSize",
+            "status"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "IngestionTaskController",
+          "startLine": 47,
+          "endLine": 97,
+          "methods": [
+            "create",
+            "upload",
+            "get",
+            "nodes",
+            "page"
+          ],
+          "properties": [
+            "taskService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "create",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "upload",
+          "line": 65,
+          "isDefault": false
+        },
+        {
+          "name": "get",
+          "line": 75,
+          "isDefault": false
+        },
+        {
+          "name": "nodes",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "page",
+          "line": 91,
+          "isDefault": false
+        },
+        {
+          "name": "IngestionTaskController",
+          "line": 47,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "create",
+          "callee": "Results.success",
+          "lineNumber": 59
+        },
+        {
+          "caller": "create",
+          "callee": "taskService.execute",
+          "lineNumber": 59
+        },
+        {
+          "caller": "upload",
+          "callee": "Results.success",
+          "lineNumber": 69
+        },
+        {
+          "caller": "upload",
+          "callee": "taskService.upload",
+          "lineNumber": 69
+        },
+        {
+          "caller": "get",
+          "callee": "Results.success",
+          "lineNumber": 77
+        },
+        {
+          "caller": "get",
+          "callee": "taskService.get",
+          "lineNumber": 77
+        },
+        {
+          "caller": "nodes",
+          "callee": "Results.success",
+          "lineNumber": 85
+        },
+        {
+          "caller": "nodes",
+          "callee": "taskService.listNodes",
+          "lineNumber": 85
+        },
+        {
+          "caller": "page",
+          "callee": "Results.success",
+          "lineNumber": 95
+        },
+        {
+          "caller": "page",
+          "callee": "taskService.page",
+          "lineNumber": 95
+        },
+        {
+          "caller": "page",
+          "callee": "new Page<>",
+          "lineNumber": 95
+        }
+      ],
+      "metrics": {
+        "importCount": 7,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionTaskCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 54,
+      "nonEmptyLines": 46,
+      "classes": [
+        {
+          "name": "IngestionTaskCreateRequest",
+          "startLine": 30,
+          "endLine": 54,
+          "methods": [],
+          "properties": [
+            "pipelineId",
+            "source",
+            "metadata",
+            "vectorSpaceId"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IngestionTaskCreateRequest",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionTaskNodeVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 102,
+      "nonEmptyLines": 85,
+      "classes": [
+        {
+          "name": "IngestionTaskNodeVO",
+          "startLine": 31,
+          "endLine": 102,
+          "methods": [],
+          "properties": [
+            "id",
+            "taskId",
+            "pipelineId",
+            "nodeId",
+            "nodeType",
+            "nodeOrder",
+            "status",
+            "durationMs",
+            "message",
+            "errorMessage",
+            "output",
+            "createTime",
+            "updateTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IngestionTaskNodeVO",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionTaskVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 113,
+      "nonEmptyLines": 94,
+      "classes": [
+        {
+          "name": "IngestionTaskVO",
+          "startLine": 33,
+          "endLine": 113,
+          "methods": [],
+          "properties": [
+            "id",
+            "pipelineId",
+            "sourceType",
+            "sourceLocation",
+            "sourceFileName",
+            "status",
+            "chunkCount",
+            "errorMessage",
+            "logs",
+            "metadata",
+            "startedAt",
+            "completedAt",
+            "createdBy",
+            "createTime",
+            "updateTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IngestionTaskVO",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionTaskDO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 134,
+      "nonEmptyLines": 113,
+      "classes": [
+        {
+          "name": "IngestionTaskDO",
+          "startLine": 37,
+          "endLine": 134,
+          "methods": [],
+          "properties": [
+            "id",
+            "pipelineId",
+            "sourceType",
+            "sourceLocation",
+            "sourceFileName",
+            "status",
+            "chunkCount",
+            "errorMessage",
+            "logsJson",
+            "metadataJson",
+            "startedAt",
+            "completedAt",
+            "createdBy",
+            "updatedBy",
+            "createTime",
+            "updateTime",
+            "deleted"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IngestionTaskDO",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionTaskNodeDO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 117,
+      "nonEmptyLines": 99,
+      "classes": [
+        {
+          "name": "IngestionTaskNodeDO",
+          "startLine": 36,
+          "endLine": 117,
+          "methods": [],
+          "properties": [
+            "id",
+            "taskId",
+            "pipelineId",
+            "nodeId",
+            "nodeType",
+            "nodeOrder",
+            "status",
+            "durationMs",
+            "message",
+            "errorMessage",
+            "outputJson",
+            "createTime",
+            "updateTime",
+            "deleted"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IngestionTaskNodeDO",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionTaskMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "IngestionTaskMapper",
+          "startLine": 23,
+          "endLine": 24,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IngestionTaskMapper",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionTaskNodeMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "IngestionTaskNodeMapper",
+          "startLine": 23,
+          "endLine": 24,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IngestionTaskNodeMapper",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/DocumentSource.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 60,
+      "nonEmptyLines": 52,
+      "classes": [
+        {
+          "name": "DocumentSource",
+          "startLine": 32,
+          "endLine": 60,
+          "methods": [],
+          "properties": [
+            "type",
+            "location",
+            "fileName",
+            "credentials"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DocumentSource",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/IngestionContext.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 128,
+      "nonEmptyLines": 107,
+      "classes": [
+        {
+          "name": "IngestionContext",
+          "startLine": 35,
+          "endLine": 128,
+          "methods": [],
+          "properties": [
+            "taskId",
+            "pipelineId",
+            "source",
+            "rawBytes",
+            "mimeType",
+            "rawText",
+            "document",
+            "chunks",
+            "enhancedText",
+            "keywords",
+            "questions",
+            "metadata",
+            "vectorSpaceId",
+            "status",
+            "logs",
+            "error",
+            "skipIndexerWrite"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IngestionContext",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/NodeLog.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 74,
+      "nonEmptyLines": 64,
+      "classes": [
+        {
+          "name": "NodeLog",
+          "startLine": 32,
+          "endLine": 74,
+          "methods": [],
+          "properties": [
+            "nodeId",
+            "nodeType",
+            "message",
+            "durationMs",
+            "success",
+            "error",
+            "output"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NodeLog",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/StructuredDocument.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 130,
+      "nonEmptyLines": 111,
+      "classes": [
+        {
+          "name": "StructuredDocument",
+          "startLine": 35,
+          "endLine": 130,
+          "methods": [],
+          "properties": [
+            "text",
+            "sections",
+            "tables",
+            "metadata"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "StructuredDocument",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/ChunkEnrichType.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 84,
+      "nonEmptyLines": 74,
+      "callGraph": [
+        {
+          "caller": "fromValue",
+          "callee": "normalize",
+          "lineNumber": 62
+        },
+        {
+          "caller": "fromValue",
+          "callee": "values",
+          "lineNumber": 63
+        },
+        {
+          "caller": "fromValue",
+          "callee": "type.value.equalsIgnoreCase",
+          "lineNumber": 64
+        },
+        {
+          "caller": "fromValue",
+          "callee": "type.name().equalsIgnoreCase",
+          "lineNumber": 64
+        },
+        {
+          "caller": "fromValue",
+          "callee": "type.name",
+          "lineNumber": 64
+        },
+        {
+          "caller": "fromValue",
+          "callee": "new IllegalArgumentException",
+          "lineNumber": 68
+        },
+        {
+          "caller": "normalize",
+          "callee": "value.trim",
+          "lineNumber": 80
+        },
+        {
+          "caller": "normalize",
+          "callee": "trimmed.toLowerCase",
+          "lineNumber": 81
+        },
+        {
+          "caller": "normalize",
+          "callee": "lower.replace",
+          "lineNumber": 82
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/EnhanceType.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 89,
+      "nonEmptyLines": 78,
+      "callGraph": [
+        {
+          "caller": "fromValue",
+          "callee": "normalize",
+          "lineNumber": 67
+        },
+        {
+          "caller": "fromValue",
+          "callee": "values",
+          "lineNumber": 68
+        },
+        {
+          "caller": "fromValue",
+          "callee": "type.value.equalsIgnoreCase",
+          "lineNumber": 69
+        },
+        {
+          "caller": "fromValue",
+          "callee": "type.name().equalsIgnoreCase",
+          "lineNumber": 69
+        },
+        {
+          "caller": "fromValue",
+          "callee": "type.name",
+          "lineNumber": 69
+        },
+        {
+          "caller": "fromValue",
+          "callee": "new IllegalArgumentException",
+          "lineNumber": 73
+        },
+        {
+          "caller": "normalize",
+          "callee": "value.trim",
+          "lineNumber": 77
+        },
+        {
+          "caller": "normalize",
+          "callee": "trimmed.toLowerCase",
+          "lineNumber": 78
+        },
+        {
+          "caller": "normalize",
+          "callee": "lower.replace",
+          "lineNumber": 79
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionNodeType.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 88,
+      "nonEmptyLines": 76,
+      "callGraph": [
+        {
+          "caller": "fromValue",
+          "callee": "normalize",
+          "lineNumber": 74
+        },
+        {
+          "caller": "fromValue",
+          "callee": "values",
+          "lineNumber": 75
+        },
+        {
+          "caller": "fromValue",
+          "callee": "type.value.equalsIgnoreCase",
+          "lineNumber": 76
+        },
+        {
+          "caller": "fromValue",
+          "callee": "type.name().equalsIgnoreCase",
+          "lineNumber": 76
+        },
+        {
+          "caller": "fromValue",
+          "callee": "type.name",
+          "lineNumber": 76
+        },
+        {
+          "caller": "fromValue",
+          "callee": "new IllegalArgumentException",
+          "lineNumber": 80
+        },
+        {
+          "caller": "normalize",
+          "callee": "value.trim",
+          "lineNumber": 84
+        },
+        {
+          "caller": "normalize",
+          "callee": "trimmed.toLowerCase",
+          "lineNumber": 85
+        },
+        {
+          "caller": "normalize",
+          "callee": "lower.replace",
+          "lineNumber": 86
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionStatus.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 89,
+      "nonEmptyLines": 78,
+      "callGraph": [
+        {
+          "caller": "fromValue",
+          "callee": "normalize",
+          "lineNumber": 67
+        },
+        {
+          "caller": "fromValue",
+          "callee": "values",
+          "lineNumber": 68
+        },
+        {
+          "caller": "fromValue",
+          "callee": "status.value.equalsIgnoreCase",
+          "lineNumber": 69
+        },
+        {
+          "caller": "fromValue",
+          "callee": "status.name().equalsIgnoreCase",
+          "lineNumber": 69
+        },
+        {
+          "caller": "fromValue",
+          "callee": "status.name",
+          "lineNumber": 69
+        },
+        {
+          "caller": "fromValue",
+          "callee": "new IllegalArgumentException",
+          "lineNumber": 73
+        },
+        {
+          "caller": "normalize",
+          "callee": "value.trim",
+          "lineNumber": 77
+        },
+        {
+          "caller": "normalize",
+          "callee": "trimmed.toLowerCase",
+          "lineNumber": 78
+        },
+        {
+          "caller": "normalize",
+          "callee": "lower.replace",
+          "lineNumber": 79
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/SourceType.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 89,
+      "nonEmptyLines": 78,
+      "callGraph": [
+        {
+          "caller": "fromValue",
+          "callee": "normalize",
+          "lineNumber": 67
+        },
+        {
+          "caller": "fromValue",
+          "callee": "values",
+          "lineNumber": 68
+        },
+        {
+          "caller": "fromValue",
+          "callee": "type.value.equalsIgnoreCase",
+          "lineNumber": 69
+        },
+        {
+          "caller": "fromValue",
+          "callee": "type.name().equalsIgnoreCase",
+          "lineNumber": 69
+        },
+        {
+          "caller": "fromValue",
+          "callee": "type.name",
+          "lineNumber": 69
+        },
+        {
+          "caller": "fromValue",
+          "callee": "new IllegalArgumentException",
+          "lineNumber": 73
+        },
+        {
+          "caller": "normalize",
+          "callee": "value.trim",
+          "lineNumber": 77
+        },
+        {
+          "caller": "normalize",
+          "callee": "trimmed.toLowerCase",
+          "lineNumber": 78
+        },
+        {
+          "caller": "normalize",
+          "callee": "lower.replace",
+          "lineNumber": 79
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/NodeConfig.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 64,
+      "nonEmptyLines": 56,
+      "classes": [
+        {
+          "name": "NodeConfig",
+          "startLine": 30,
+          "endLine": 64,
+          "methods": [],
+          "properties": [
+            "nodeId",
+            "nodeType",
+            "settings",
+            "condition",
+            "nextNodeId"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NodeConfig",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/IngestionResult.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 61,
+      "nonEmptyLines": 53,
+      "classes": [
+        {
+          "name": "IngestionResult",
+          "startLine": 30,
+          "endLine": 61,
+          "methods": [],
+          "properties": [
+            "taskId",
+            "pipelineId",
+            "status",
+            "chunkCount",
+            "message"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IngestionResult",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/NodeResult.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 108,
+      "nonEmptyLines": 96,
+      "functions": [
+        {
+          "name": "ok",
+          "startLine": 60,
+          "endLine": 62,
+          "params": []
+        },
+        {
+          "name": "ok",
+          "startLine": 70,
+          "endLine": 72,
+          "params": [
+            "message"
+          ]
+        },
+        {
+          "name": "skip",
+          "startLine": 80,
+          "endLine": 82,
+          "params": [
+            "reason"
+          ]
+        },
+        {
+          "name": "fail",
+          "startLine": 90,
+          "endLine": 97,
+          "params": [
+            "error"
+          ]
+        },
+        {
+          "name": "terminate",
+          "startLine": 105,
+          "endLine": 107,
+          "params": [
+            "reason"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NodeResult",
+          "startLine": 29,
+          "endLine": 108,
+          "methods": [
+            "ok",
+            "ok",
+            "skip",
+            "fail",
+            "terminate"
+          ],
+          "properties": [
+            "success",
+            "shouldContinue",
+            "message",
+            "error"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ok",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "ok",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "skip",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "fail",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "terminate",
+          "line": 105,
+          "isDefault": false
+        },
+        {
+          "name": "NodeResult",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ok",
+          "callee": "NodeResult.builder().success(true).shouldContinue(true).build",
+          "lineNumber": 61
+        },
+        {
+          "caller": "ok",
+          "callee": "NodeResult.builder().success(true).shouldContinue",
+          "lineNumber": 61
+        },
+        {
+          "caller": "ok",
+          "callee": "NodeResult.builder().success",
+          "lineNumber": 61
+        },
+        {
+          "caller": "ok",
+          "callee": "NodeResult.builder",
+          "lineNumber": 61
+        },
+        {
+          "caller": "ok",
+          "callee": "NodeResult.builder().success(true).shouldContinue(true).message(message).build",
+          "lineNumber": 71
+        },
+        {
+          "caller": "ok",
+          "callee": "NodeResult.builder().success(true).shouldContinue(true).message",
+          "lineNumber": 71
+        },
+        {
+          "caller": "ok",
+          "callee": "NodeResult.builder().success(true).shouldContinue",
+          "lineNumber": 71
+        },
+        {
+          "caller": "ok",
+          "callee": "NodeResult.builder().success",
+          "lineNumber": 71
+        },
+        {
+          "caller": "ok",
+          "callee": "NodeResult.builder",
+          "lineNumber": 71
+        },
+        {
+          "caller": "skip",
+          "callee": "NodeResult.builder().success(true).shouldContinue(true).message(\"Skipped: \" + reason).build",
+          "lineNumber": 81
+        },
+        {
+          "caller": "skip",
+          "callee": "NodeResult.builder().success(true).shouldContinue(true).message",
+          "lineNumber": 81
+        },
+        {
+          "caller": "skip",
+          "callee": "NodeResult.builder().success(true).shouldContinue",
+          "lineNumber": 81
+        },
+        {
+          "caller": "skip",
+          "callee": "NodeResult.builder().success",
+          "lineNumber": 81
+        },
+        {
+          "caller": "skip",
+          "callee": "NodeResult.builder",
+          "lineNumber": 81
+        },
+        {
+          "caller": "fail",
+          "callee": "NodeResult.builder()\r\n                .success(false)\r\n                .shouldContinue(false)\r\n                .error(error)\r\n                .message(error == null ? null : error.getMessage()).build",
+          "lineNumber": 91
+        },
+        {
+          "caller": "fail",
+          "callee": "NodeResult.builder()\r\n                .success(false)\r\n                .shouldContinue(false)\r\n                .error(error).message",
+          "lineNumber": 91
+        },
+        {
+          "caller": "fail",
+          "callee": "NodeResult.builder()\r\n                .success(false)\r\n                .shouldContinue(false).error",
+          "lineNumber": 91
+        },
+        {
+          "caller": "fail",
+          "callee": "NodeResult.builder()\r\n                .success(false).shouldContinue",
+          "lineNumber": 91
+        },
+        {
+          "caller": "fail",
+          "callee": "NodeResult.builder().success",
+          "lineNumber": 91
+        },
+        {
+          "caller": "fail",
+          "callee": "NodeResult.builder",
+          "lineNumber": 91
+        },
+        {
+          "caller": "fail",
+          "callee": "error.getMessage",
+          "lineNumber": 95
+        },
+        {
+          "caller": "terminate",
+          "callee": "NodeResult.builder().success(true).shouldContinue(false).message(reason).build",
+          "lineNumber": 106
+        },
+        {
+          "caller": "terminate",
+          "callee": "NodeResult.builder().success(true).shouldContinue(false).message",
+          "lineNumber": 106
+        },
+        {
+          "caller": "terminate",
+          "callee": "NodeResult.builder().success(true).shouldContinue",
+          "lineNumber": 106
+        },
+        {
+          "caller": "terminate",
+          "callee": "NodeResult.builder().success",
+          "lineNumber": 106
+        },
+        {
+          "caller": "terminate",
+          "callee": "NodeResult.builder",
+          "lineNumber": 106
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/settings/ChunkerSettings.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 51,
+      "classes": [
+        {
+          "name": "ChunkerSettings",
+          "startLine": 30,
+          "endLine": 58,
+          "methods": [],
+          "properties": [
+            "strategy",
+            "chunkSize",
+            "overlapSize",
+            "separator"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChunkerSettings",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    }
+  ]
+}

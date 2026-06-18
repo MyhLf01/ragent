@@ -1,0 +1,88 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/MessageFeedbackController.java",
+      "language": "java",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/MessageFeedbackRequest.java",
+      "language": "java",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/MessageFeedbackDO.java",
+      "language": "java",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/MessageFeedbackMapper.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/mq/MessageFeedbackConsumer.java",
+      "language": "java",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/mq/event/MessageFeedbackEvent.java",
+      "language": "java",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/MessageFeedbackService.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/MessageFeedbackServiceImpl.java",
+      "language": "java",
+      "sizeLines": 179,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/MessageFeedbackController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/MessageFeedbackRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/MessageFeedbackService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/MessageFeedbackRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/MessageFeedbackDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/MessageFeedbackMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/MessageFeedbackDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/mq/MessageFeedbackConsumer.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/mq/event/MessageFeedbackEvent.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/MessageFeedbackService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/MessageWrapper.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/mq/event/MessageFeedbackEvent.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/MessageFeedbackService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/MessageFeedbackRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/mq/event/MessageFeedbackEvent.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/MessageFeedbackServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/MessageFeedbackRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/ConversationMessageDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/MessageFeedbackDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMessageMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/MessageFeedbackMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/mq/event/MessageFeedbackEvent.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/MessageFeedbackService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/mq/producer/MessageQueueProducer.java"
+    ]
+  }
+}

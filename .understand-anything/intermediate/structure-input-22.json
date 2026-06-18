@@ -1,0 +1,35 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "resources/database/init_data_pg.sql",
+      "language": "sql",
+      "sizeLines": 4,
+      "fileCategory": "data"
+    },
+    {
+      "path": "resources/database/schema_pg.sql",
+      "language": "sql",
+      "sizeLines": 724,
+      "fileCategory": "data"
+    },
+    {
+      "path": "resources/database/upgrade_v1.0_to_v1.1.sql",
+      "language": "sql",
+      "sizeLines": 8,
+      "fileCategory": "data"
+    },
+    {
+      "path": "resources/database/upgrade_v1.1_to_v1.2.sql",
+      "language": "sql",
+      "sizeLines": 5,
+      "fileCategory": "data"
+    }
+  ],
+  "batchImportData": {
+    "resources/database/init_data_pg.sql": [],
+    "resources/database/schema_pg.sql": [],
+    "resources/database/upgrade_v1.0_to_v1.1.sql": [],
+    "resources/database/upgrade_v1.1_to_v1.2.sql": []
+  }
+}

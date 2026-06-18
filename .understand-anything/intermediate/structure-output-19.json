@@ -1,0 +1,169 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 420,
+      "nonEmptyLines": 279,
+      "sections": [
+        {
+          "heading": "🚀 什么是 Ragent AI？",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "🧭 快速导航",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "🤝 贡献",
+          "level": 2,
+          "line": 54
+        },
+        {
+          "heading": "💡 为什么学习 AI 项目",
+          "level": 2,
+          "line": 91
+        },
+        {
+          "heading": "1. 校招现状",
+          "level": 3,
+          "line": 102
+        },
+        {
+          "heading": "2. 社招现状",
+          "level": 3,
+          "line": 106
+        },
+        {
+          "heading": "3. 问题是，怎么学？",
+          "level": 3,
+          "line": 116
+        },
+        {
+          "heading": "⚠️ RAG 常见误区",
+          "level": 2,
+          "line": 130
+        },
+        {
+          "heading": "1. 调个 API 就算会 RAG 了",
+          "level": 3,
+          "line": 141
+        },
+        {
+          "heading": "2. RAG 就是“检索 + 生成”两步走",
+          "level": 3,
+          "line": 149
+        },
+        {
+          "heading": "3. 用 OpenAI/LangChain 套一套就是企业级",
+          "level": 3,
+          "line": 162
+        },
+        {
+          "heading": "4. 只关注模型，忽略工程能力",
+          "level": 3,
+          "line": 175
+        },
+        {
+          "heading": "🏗️ Ragent 核心设计",
+          "level": 2,
+          "line": 185
+        },
+        {
+          "heading": "✨ 项目质量怎么样？",
+          "level": 2,
+          "line": 235
+        },
+        {
+          "heading": "1. 代码规模",
+          "level": 3,
+          "line": 239
+        },
+        {
+          "heading": "2. 工程规范",
+          "level": 3,
+          "line": 248
+        },
+        {
+          "heading": "3. 可扩展性",
+          "level": 3,
+          "line": 259
+        },
+        {
+          "heading": "4. 生产级特性",
+          "level": 3,
+          "line": 271
+        },
+        {
+          "heading": "5. 精美控制台",
+          "level": 3,
+          "line": 284
+        },
+        {
+          "heading": "5.1 用户问答界面",
+          "level": 4,
+          "line": 290
+        },
+        {
+          "heading": "5.2 管理后台",
+          "level": 4,
+          "line": 311
+        },
+        {
+          "heading": "6. 和市面上项目的区别",
+          "level": 3,
+          "line": 336
+        },
+        {
+          "heading": "❓ 常见问题答疑",
+          "level": 2,
+          "line": 352
+        },
+        {
+          "heading": "1. 能够学到什么？",
+          "level": 3,
+          "line": 359
+        },
+        {
+          "heading": "2. 适合人群",
+          "level": 3,
+          "line": 369
+        },
+        {
+          "heading": "🌟 为什么开源？",
+          "level": 2,
+          "line": 386
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 26
+      }
+    },
+    {
+      "path": "mvnw.cmd",
+      "language": "batch",
+      "fileCategory": "script",
+      "totalLines": 189,
+      "nonEmptyLines": 165,
+      "metrics": {}
+    },
+    {
+      "path": "pom.xml",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 248,
+      "nonEmptyLines": 221,
+      "metrics": {}
+    }
+  ]
+}

@@ -1,0 +1,542 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "resources/docs/knowledge/group/hr/人事制度.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 449,
+      "nonEmptyLines": 313,
+      "sections": [
+        {
+          "heading": "人事制度",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "一、总体概述",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "二、员工类型与管理原则",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "三、试用期管理规则",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "四、绩效管理流程（年度 / 半年度）",
+          "level": 2,
+          "line": 71
+        },
+        {
+          "heading": "五、晋升与调岗流程",
+          "level": 2,
+          "line": 103
+        },
+        {
+          "heading": "六、SOP：试用期转正评审流程",
+          "level": 2,
+          "line": 134
+        },
+        {
+          "heading": "6.1（补充）转正需要准备什么材料？（员工侧材料清单）",
+          "level": 3,
+          "line": 160
+        },
+        {
+          "heading": "七、常见问题 FAQ（原文档）",
+          "level": 2,
+          "line": 176
+        },
+        {
+          "heading": "八、注意事项与合规要求",
+          "level": 2,
+          "line": 193
+        },
+        {
+          "heading": "九、示例：试用期转正评价要点",
+          "level": 2,
+          "line": 211
+        },
+        {
+          "heading": "十、请假与考勤制度",
+          "level": 2,
+          "line": 225
+        },
+        {
+          "heading": "1. 概述（Overview）",
+          "level": 3,
+          "line": 227
+        },
+        {
+          "heading": "2. 考勤方式",
+          "level": 3,
+          "line": 233
+        },
+        {
+          "heading": "3. 假期类型与规则（示例）",
+          "level": 3,
+          "line": 242
+        },
+        {
+          "heading": "4. 请假流程",
+          "level": 3,
+          "line": 266
+        },
+        {
+          "heading": "5. 迟到、早退与旷工认定（示例规则）",
+          "level": 3,
+          "line": 288
+        },
+        {
+          "heading": "6. SOP：年假申请",
+          "level": 3,
+          "line": 304
+        },
+        {
+          "heading": "7. FAQ（原文档）",
+          "level": 3,
+          "line": 313
+        },
+        {
+          "heading": "8. 注意事项",
+          "level": 3,
+          "line": 333
+        },
+        {
+          "heading": "9. 示例：考勤异常申诉场景",
+          "level": 3,
+          "line": 341
+        },
+        {
+          "heading": "十一、补充 FAQ：年假制度 / 加班调休与加班费 / 转正材料 / 离职流程",
+          "level": 2,
+          "line": 353
+        },
+        {
+          "heading": "11.1 “公司年假制度是怎样的？什么时候清零？”",
+          "level": 3,
+          "line": 359
+        },
+        {
+          "heading": "11.1.1 年假适用对象与口径",
+          "level": 4,
+          "line": 361
+        },
+        {
+          "heading": "11.1.2 年假发放与余额（建议制度写清的 5 个点）",
+          "level": 4,
+          "line": 365
+        },
+        {
+          "heading": "11.1.3 清零与结转（直接回答“什么时候清零”）",
+          "level": 4,
+          "line": 373
+        },
+        {
+          "heading": "11.2 “加班调休和加班费怎么算？”",
+          "level": 3,
+          "line": 388
+        },
+        {
+          "heading": "11.2.1 加班认定（先审批、后加班）",
+          "level": 4,
+          "line": 390
+        },
+        {
+          "heading": "11.2.2 调休（补休）规则（建议统一写法）",
+          "level": 4,
+          "line": 395
+        },
+        {
+          "heading": "11.2.3 加班费计算（建议制度写清：何时给钱、何时给调休）",
+          "level": 4,
+          "line": 401
+        },
+        {
+          "heading": "11.3 “试用期转正流程是什么？需要准备什么材料？”",
+          "level": 3,
+          "line": 410
+        },
+        {
+          "heading": "11.3.1 转正流程（与第六章 SOP 一致）",
+          "level": 4,
+          "line": 412
+        },
+        {
+          "heading": "11.3.2 员工材料清单（可直接贴到系统附件要求）",
+          "level": 4,
+          "line": 415
+        },
+        {
+          "heading": "11.4 “离职流程是怎样的？提前多久提？”",
+          "level": 3,
+          "line": 425
+        },
+        {
+          "heading": "11.4.1 提前多久提（常见口径）",
+          "level": 4,
+          "line": 427
+        },
+        {
+          "heading": "11.4.2 离职 SOP（建议作为公司标准流程）",
+          "level": 4,
+          "line": 433
+        },
+        {
+          "heading": "11.4.3 离职需要准备的材料（建议）",
+          "level": 4,
+          "line": 445
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 37
+      }
+    },
+    {
+      "path": "resources/docs/knowledge/group/hr/公司规章制度.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 176,
+      "nonEmptyLines": 119,
+      "sections": [
+        {
+          "heading": "公司规章制度",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "一、总体概述",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "二、工作时间与加班制度",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "1. 正常工作时间",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "2. 弹性工作制",
+          "level": 3,
+          "line": 26
+        },
+        {
+          "heading": "3. 加班管理原则",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "三、员工行为规范（基础规则）",
+          "level": 2,
+          "line": 44
+        },
+        {
+          "heading": "四、违纪处理流程",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "五、SOP：一般违纪事件处理流程",
+          "level": 2,
+          "line": 104
+        },
+        {
+          "heading": "六、常见问题 FAQ",
+          "level": 2,
+          "line": 132
+        },
+        {
+          "heading": "七、注意事项与制度管理要求",
+          "level": 2,
+          "line": 153
+        },
+        {
+          "heading": "八、示例：轻微违纪情形（虚构）",
+          "level": 2,
+          "line": 168
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "resources/docs/knowledge/group/hr/员工培训.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 207,
+      "nonEmptyLines": 147,
+      "sections": [
+        {
+          "heading": "员工培训与发展体系指引",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "一、整体概述",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "二、培训体系分类与说明",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "三、培训需求收集与执行流程",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "四、职业发展与晋升机制（示例）",
+          "level": 2,
+          "line": 91
+        },
+        {
+          "heading": "1. 专业发展通道（示例）",
+          "level": 3,
+          "line": 95
+        },
+        {
+          "heading": "2. 管理发展通道（示例）",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "3. 通道转换机制",
+          "level": 3,
+          "line": 113
+        },
+        {
+          "heading": "五、SOP：新员工入职培训组织流程",
+          "level": 2,
+          "line": 123
+        },
+        {
+          "heading": "六、常见问题 FAQ",
+          "level": 2,
+          "line": 158
+        },
+        {
+          "heading": "七、注意事项与管理要求",
+          "level": 2,
+          "line": 175
+        },
+        {
+          "heading": "八、示例：晋升准备路径（虚构案例）",
+          "level": 2,
+          "line": 194
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "resources/docs/knowledge/group/hr/招聘信息.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 311,
+      "nonEmptyLines": 228,
+      "sections": [
+        {
+          "heading": "招聘与入职流程指引",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "一、整体概述",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "二、社会招聘流程",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "1. 岗位申请与发布",
+          "level": 3,
+          "line": 19
+        },
+        {
+          "heading": "2. 标准社招流程",
+          "level": 3,
+          "line": 48
+        },
+        {
+          "heading": "2.1 简历收集与初筛",
+          "level": 4,
+          "line": 52
+        },
+        {
+          "heading": "2.2 业务面试（1–2 轮）",
+          "level": 4,
+          "line": 62
+        },
+        {
+          "heading": "2.3 综合面 / 终面",
+          "level": 4,
+          "line": 77
+        },
+        {
+          "heading": "2.4 HR 面与背景调查",
+          "level": 4,
+          "line": 86
+        },
+        {
+          "heading": "2.5 Offer 评审与审批",
+          "level": 4,
+          "line": 99
+        },
+        {
+          "heading": "2.6 候选人确认与入职前沟通",
+          "level": 4,
+          "line": 112
+        },
+        {
+          "heading": "三、校园招聘流程",
+          "level": 2,
+          "line": 122
+        },
+        {
+          "heading": "四、新员工入职办理 SOP",
+          "level": 2,
+          "line": 159
+        },
+        {
+          "heading": "1. 报到当天流程",
+          "level": 3,
+          "line": 161
+        },
+        {
+          "heading": "2. 入职后 1 个月内的关键节点",
+          "level": 3,
+          "line": 208
+        },
+        {
+          "heading": "五、常见问题 FAQ",
+          "level": 2,
+          "line": 228
+        },
+        {
+          "heading": "六、注意事项与合规要求",
+          "level": 2,
+          "line": 248
+        },
+        {
+          "heading": "新员工电脑发放",
+          "level": 2,
+          "line": 272
+        },
+        {
+          "heading": "七、示例场景：社招 Java 后端工程师（P5）",
+          "level": 2,
+          "line": 282
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 19
+      }
+    },
+    {
+      "path": "resources/docs/knowledge/group/hr/薪资与福利政策.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 215,
+      "nonEmptyLines": 147,
+      "sections": [
+        {
+          "heading": "企业薪酬与福利政策指引",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "一、整体概述",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "二、薪酬结构构成",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "三、薪酬发放与调薪流程",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "1. 发薪规则",
+          "level": 3,
+          "line": 48
+        },
+        {
+          "heading": "2. 调薪流程（以年度调薪为例）",
+          "level": 3,
+          "line": 68
+        },
+        {
+          "heading": "四、福利政策示例",
+          "level": 2,
+          "line": 98
+        },
+        {
+          "heading": "五、薪资核对与异议处理 SOP",
+          "level": 2,
+          "line": 130
+        },
+        {
+          "heading": "六、常见问题 FAQ",
+          "level": 2,
+          "line": 158
+        },
+        {
+          "heading": "七、注意事项与合规要求",
+          "level": 2,
+          "line": 180
+        },
+        {
+          "heading": "八、示例：虚构薪资结构案例",
+          "level": 2,
+          "line": 198
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    }
+  ]
+}

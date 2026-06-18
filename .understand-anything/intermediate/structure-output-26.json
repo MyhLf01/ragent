@@ -1,0 +1,2722 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".claude/settings.local.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 53,
+      "nonEmptyLines": 53,
+      "sections": [
+        {
+          "heading": "permissions",
+          "level": 1,
+          "line": 2
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".mvn/wrapper/maven-wrapper.properties",
+      "language": "properties",
+      "fileCategory": "config",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {}
+    },
+    {
+      "path": "bootstrap/pom.xml",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 98,
+      "nonEmptyLines": 82,
+      "metrics": {}
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/MarkdownDocumentParser.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 70,
+      "nonEmptyLines": 61,
+      "functions": [
+        {
+          "name": "getParserType",
+          "startLine": 38,
+          "endLine": 41,
+          "params": []
+        },
+        {
+          "name": "parse",
+          "startLine": 43,
+          "endLine": 51,
+          "params": [
+            "content",
+            "mimeType",
+            "options"
+          ]
+        },
+        {
+          "name": "extractText",
+          "startLine": 53,
+          "endLine": 60,
+          "params": [
+            "stream",
+            "fileName"
+          ]
+        },
+        {
+          "name": "supports",
+          "startLine": 62,
+          "endLine": 69,
+          "params": [
+            "mimeType"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MarkdownDocumentParser",
+          "startLine": 35,
+          "endLine": 70,
+          "methods": [
+            "getParserType",
+            "parse",
+            "extractText",
+            "supports"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "getParserType",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "parse",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "extractText",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "supports",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "MarkdownDocumentParser",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getParserType",
+          "callee": "ParserType.MARKDOWN.getType",
+          "lineNumber": 40
+        },
+        {
+          "caller": "parse",
+          "callee": "ParseResult.ofText",
+          "lineNumber": 46
+        },
+        {
+          "caller": "parse",
+          "callee": "new String",
+          "lineNumber": 49
+        },
+        {
+          "caller": "parse",
+          "callee": "ParseResult.ofText",
+          "lineNumber": 50
+        },
+        {
+          "caller": "extractText",
+          "callee": "new BufferedReader",
+          "lineNumber": 55
+        },
+        {
+          "caller": "extractText",
+          "callee": "new InputStreamReader",
+          "lineNumber": 55
+        },
+        {
+          "caller": "extractText",
+          "callee": "reader.lines().collect",
+          "lineNumber": 56
+        },
+        {
+          "caller": "extractText",
+          "callee": "reader.lines",
+          "lineNumber": 56
+        },
+        {
+          "caller": "extractText",
+          "callee": "Collectors.joining",
+          "lineNumber": 56
+        },
+        {
+          "caller": "extractText",
+          "callee": "new RuntimeException",
+          "lineNumber": 58
+        },
+        {
+          "caller": "supports",
+          "callee": "mimeType.equals",
+          "lineNumber": 65
+        },
+        {
+          "caller": "supports",
+          "callee": "mimeType.equals",
+          "lineNumber": 66
+        },
+        {
+          "caller": "supports",
+          "callee": "mimeType.equals",
+          "lineNumber": 67
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/TextCleanupUtil.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 95,
+      "nonEmptyLines": 84,
+      "functions": [
+        {
+          "name": "TextCleanupUtil",
+          "startLine": 27,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "cleanup",
+          "startLine": 42,
+          "endLine": 56,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "cleanup",
+          "startLine": 68,
+          "endLine": 94,
+          "params": [
+            "text",
+            "removeBOM",
+            "trimTrailingSpaces",
+            "compressEmptyLines",
+            "maxConsecutiveLines"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "TextCleanupUtil",
+          "startLine": 25,
+          "endLine": 95,
+          "methods": [
+            "TextCleanupUtil",
+            "cleanup",
+            "cleanup"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "cleanup",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "cleanup",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "TextCleanupUtil",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "cleanup",
+          "callee": "text.isEmpty",
+          "lineNumber": 43
+        },
+        {
+          "caller": "cleanup",
+          "callee": "text\r\n                // 移除 BOM 标记\r\n                .replace(\"\\uFEFF\", \"\")\r\n                // 移除行尾的空格和制表符\r\n                .replaceAll(\"[ \\\\t]+\\\\n\", \"\\n\")\r\n                // 压缩连续的空行（3个以上压缩为2个）\r\n                .replaceAll(\"\\\\n{3,}\", \"\\n\\n\").trim",
+          "lineNumber": 47
+        },
+        {
+          "caller": "cleanup",
+          "callee": "text\r\n                // 移除 BOM 标记\r\n                .replace(\"\\uFEFF\", \"\")\r\n                // 移除行尾的空格和制表符\r\n                .replaceAll(\"[ \\\\t]+\\\\n\", \"\\n\").replaceAll",
+          "lineNumber": 47
+        },
+        {
+          "caller": "cleanup",
+          "callee": "text\r\n                // 移除 BOM 标记\r\n                .replace(\"\\uFEFF\", \"\").replaceAll",
+          "lineNumber": 47
+        },
+        {
+          "caller": "cleanup",
+          "callee": "text.replace",
+          "lineNumber": 47
+        },
+        {
+          "caller": "cleanup",
+          "callee": "text.isEmpty",
+          "lineNumber": 73
+        },
+        {
+          "caller": "cleanup",
+          "callee": "result.replace",
+          "lineNumber": 80
+        },
+        {
+          "caller": "cleanup",
+          "callee": "result.replaceAll",
+          "lineNumber": 84
+        },
+        {
+          "caller": "cleanup",
+          "callee": "\"\\n\".repeat",
+          "lineNumber": 89
+        },
+        {
+          "caller": "cleanup",
+          "callee": "result.replaceAll",
+          "lineNumber": 90
+        },
+        {
+          "caller": "cleanup",
+          "callee": "result.trim",
+          "lineNumber": 93
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/config/RagSemaphoreProperties.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 67,
+      "nonEmptyLines": 58,
+      "classes": [
+        {
+          "name": "RagSemaphoreProperties",
+          "startLine": 31,
+          "endLine": 67,
+          "methods": [],
+          "properties": [
+            "documentUpload"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RagSemaphoreProperties",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/config/SemaphoreInitializer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 42,
+      "functions": [
+        {
+          "name": "documentUploadSemaphoreInitialize",
+          "startLine": 38,
+          "endLine": 47,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SemaphoreInitializer",
+          "startLine": 30,
+          "endLine": 48,
+          "methods": [
+            "documentUploadSemaphoreInitialize"
+          ],
+          "properties": [
+            "redissonClient",
+            "semaphoreProperties"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "documentUploadSemaphoreInitialize",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "SemaphoreInitializer",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "documentUploadSemaphoreInitialize",
+          "callee": "semaphoreProperties.getDocumentUpload",
+          "lineNumber": 40
+        },
+        {
+          "caller": "documentUploadSemaphoreInitialize",
+          "callee": "redissonClient.getPermitExpirableSemaphore",
+          "lineNumber": 41
+        },
+        {
+          "caller": "documentUploadSemaphoreInitialize",
+          "callee": "config.getName",
+          "lineNumber": 41
+        },
+        {
+          "caller": "documentUploadSemaphoreInitialize",
+          "callee": "semaphore.setPermits",
+          "lineNumber": 43
+        },
+        {
+          "caller": "documentUploadSemaphoreInitialize",
+          "callee": "config.getMaxConcurrent",
+          "lineNumber": 43
+        },
+        {
+          "caller": "documentUploadSemaphoreInitialize",
+          "callee": "log.info",
+          "lineNumber": 44
+        },
+        {
+          "caller": "documentUploadSemaphoreInitialize",
+          "callee": "config.getName",
+          "lineNumber": 45
+        },
+        {
+          "caller": "documentUploadSemaphoreInitialize",
+          "callee": "config.getMaxConcurrent",
+          "lineNumber": 46
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 54,
+      "nonEmptyLines": 45,
+      "classes": [
+        {
+          "name": "KnowledgeDocumentCreateRequest",
+          "startLine": 22,
+          "endLine": 54,
+          "methods": [],
+          "properties": [
+            "kbId",
+            "docName",
+            "fileUrl",
+            "fileType",
+            "fileSize",
+            "enabled"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeDocumentCreateRequest",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/filter/UploadRateLimitFilter.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 112,
+      "nonEmptyLines": 100,
+      "functions": [
+        {
+          "name": "doFilterInternal",
+          "startLine": 51,
+          "endLine": 97,
+          "params": [
+            "request",
+            "response",
+            "chain"
+          ]
+        },
+        {
+          "name": "isUploadRequest",
+          "startLine": 105,
+          "endLine": 111,
+          "params": [
+            "request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "UploadRateLimitFilter",
+          "startLine": 42,
+          "endLine": 112,
+          "methods": [
+            "doFilterInternal",
+            "isUploadRequest"
+          ],
+          "properties": [
+            "redissonClient",
+            "semaphoreProperties",
+            "UPLOAD_PATH_PATTERN",
+            "UPLOAD_PATH_SUFFIX"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "UploadRateLimitFilter",
+          "line": 42,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "doFilterInternal",
+          "callee": "isUploadRequest",
+          "lineNumber": 56
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "chain.doFilter",
+          "lineNumber": 57
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "semaphoreProperties.getDocumentUpload",
+          "lineNumber": 62
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "redissonClient.getPermitExpirableSemaphore",
+          "lineNumber": 63
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "config.getName",
+          "lineNumber": 63
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "semaphore.tryAcquire",
+          "lineNumber": 68
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "config.getMaxWaitSeconds",
+          "lineNumber": 69
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "config.getLeaseSeconds",
+          "lineNumber": 70
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "response.setStatus",
+          "lineNumber": 76
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "response.setContentType",
+          "lineNumber": 77
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "response.getWriter().write",
+          "lineNumber": 78
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "response.getWriter",
+          "lineNumber": 78
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "chain.doFilter",
+          "lineNumber": 83
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "Thread.currentThread().interrupt",
+          "lineNumber": 85
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "Thread.currentThread",
+          "lineNumber": 85
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "response.setStatus",
+          "lineNumber": 86
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "response.setContentType",
+          "lineNumber": 87
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "response.getWriter().write",
+          "lineNumber": 88
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "response.getWriter",
+          "lineNumber": 88
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "semaphore.tryRelease",
+          "lineNumber": 91
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "log.warn",
+          "lineNumber": 93
+        },
+        {
+          "caller": "isUploadRequest",
+          "callee": "\"POST\".equals",
+          "lineNumber": 106
+        },
+        {
+          "caller": "isUploadRequest",
+          "callee": "request.getMethod",
+          "lineNumber": 106
+        },
+        {
+          "caller": "isUploadRequest",
+          "callee": "request.getRequestURI",
+          "lineNumber": 109
+        },
+        {
+          "caller": "isUploadRequest",
+          "callee": "uri.contains",
+          "lineNumber": 110
+        },
+        {
+          "caller": "isUploadRequest",
+          "callee": "uri.endsWith",
+          "lineNumber": 110
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleLockLease.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 19,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/schedule/ScheduleStateContext.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 29,
+      "classes": [
+        {
+          "name": "ScheduleStateContext",
+          "startLine": 25,
+          "endLine": 34,
+          "methods": [],
+          "properties": [
+            "scheduleId",
+            "execId",
+            "cronExpr",
+            "startTime",
+            "nextRunTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ScheduleStateContext",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/DemoModeProperties.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 32,
+      "classes": [
+        {
+          "name": "DemoModeProperties",
+          "startLine": 27,
+          "endLine": 36,
+          "methods": [],
+          "properties": [
+            "demoMode"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DemoModeProperties",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/HttpClientConfig.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 61,
+      "nonEmptyLines": 55,
+      "functions": [
+        {
+          "name": "streamingHttpClient",
+          "startLine": 36,
+          "endLine": 46,
+          "params": []
+        },
+        {
+          "name": "syncHttpClient",
+          "startLine": 51,
+          "endLine": 60,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "HttpClientConfig",
+          "startLine": 30,
+          "endLine": 61,
+          "methods": [
+            "streamingHttpClient",
+            "syncHttpClient"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "streamingHttpClient",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "syncHttpClient",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "HttpClientConfig",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "streamingHttpClient",
+          "callee": "new OkHttpClient.Builder()\r\n                .connectTimeout(Duration.ofSeconds(30))\r\n                .writeTimeout(Duration.ofSeconds(60))\r\n                .readTimeout(Duration.ZERO)\r\n                .callTimeout(Duration.ZERO)\r\n                .retryOnConnectionFailure(true).build",
+          "lineNumber": 39
+        },
+        {
+          "caller": "streamingHttpClient",
+          "callee": "new OkHttpClient.Builder()\r\n                .connectTimeout(Duration.ofSeconds(30))\r\n                .writeTimeout(Duration.ofSeconds(60))\r\n                .readTimeout(Duration.ZERO)\r\n                .callTimeout(Duration.ZERO).retryOnConnectionFailure",
+          "lineNumber": 39
+        },
+        {
+          "caller": "streamingHttpClient",
+          "callee": "new OkHttpClient.Builder()\r\n                .connectTimeout(Duration.ofSeconds(30))\r\n                .writeTimeout(Duration.ofSeconds(60))\r\n                .readTimeout(Duration.ZERO).callTimeout",
+          "lineNumber": 39
+        },
+        {
+          "caller": "streamingHttpClient",
+          "callee": "new OkHttpClient.Builder()\r\n                .connectTimeout(Duration.ofSeconds(30))\r\n                .writeTimeout(Duration.ofSeconds(60)).readTimeout",
+          "lineNumber": 39
+        },
+        {
+          "caller": "streamingHttpClient",
+          "callee": "new OkHttpClient.Builder()\r\n                .connectTimeout(Duration.ofSeconds(30)).writeTimeout",
+          "lineNumber": 39
+        },
+        {
+          "caller": "streamingHttpClient",
+          "callee": "new OkHttpClient.Builder().connectTimeout",
+          "lineNumber": 39
+        },
+        {
+          "caller": "streamingHttpClient",
+          "callee": "new OkHttpClient.Builder",
+          "lineNumber": 39
+        },
+        {
+          "caller": "streamingHttpClient",
+          "callee": "Duration.ofSeconds",
+          "lineNumber": 40
+        },
+        {
+          "caller": "streamingHttpClient",
+          "callee": "Duration.ofSeconds",
+          "lineNumber": 41
+        },
+        {
+          "caller": "syncHttpClient",
+          "callee": "new OkHttpClient.Builder()\r\n                .connectTimeout(Duration.ofSeconds(10))\r\n                .writeTimeout(Duration.ofSeconds(30))\r\n                .readTimeout(Duration.ofSeconds(30))\r\n                .callTimeout(Duration.ofSeconds(45))\r\n                .retryOnConnectionFailure(true).build",
+          "lineNumber": 53
+        },
+        {
+          "caller": "syncHttpClient",
+          "callee": "new OkHttpClient.Builder()\r\n                .connectTimeout(Duration.ofSeconds(10))\r\n                .writeTimeout(Duration.ofSeconds(30))\r\n                .readTimeout(Duration.ofSeconds(30))\r\n                .callTimeout(Duration.ofSeconds(45)).retryOnConnectionFailure",
+          "lineNumber": 53
+        },
+        {
+          "caller": "syncHttpClient",
+          "callee": "new OkHttpClient.Builder()\r\n                .connectTimeout(Duration.ofSeconds(10))\r\n                .writeTimeout(Duration.ofSeconds(30))\r\n                .readTimeout(Duration.ofSeconds(30)).callTimeout",
+          "lineNumber": 53
+        },
+        {
+          "caller": "syncHttpClient",
+          "callee": "new OkHttpClient.Builder()\r\n                .connectTimeout(Duration.ofSeconds(10))\r\n                .writeTimeout(Duration.ofSeconds(30)).readTimeout",
+          "lineNumber": 53
+        },
+        {
+          "caller": "syncHttpClient",
+          "callee": "new OkHttpClient.Builder()\r\n                .connectTimeout(Duration.ofSeconds(10)).writeTimeout",
+          "lineNumber": 53
+        },
+        {
+          "caller": "syncHttpClient",
+          "callee": "new OkHttpClient.Builder().connectTimeout",
+          "lineNumber": 53
+        },
+        {
+          "caller": "syncHttpClient",
+          "callee": "new OkHttpClient.Builder",
+          "lineNumber": 53
+        },
+        {
+          "caller": "syncHttpClient",
+          "callee": "Duration.ofSeconds",
+          "lineNumber": 54
+        },
+        {
+          "caller": "syncHttpClient",
+          "callee": "Duration.ofSeconds",
+          "lineNumber": 55
+        },
+        {
+          "caller": "syncHttpClient",
+          "callee": "Duration.ofSeconds",
+          "lineNumber": 56
+        },
+        {
+          "caller": "syncHttpClient",
+          "callee": "Duration.ofSeconds",
+          "lineNumber": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/MilvusConfig.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 76,
+      "nonEmptyLines": 69,
+      "functions": [
+        {
+          "name": "milvusClient",
+          "startLine": 59,
+          "endLine": 75,
+          "params": [
+            "uri",
+            "token"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MilvusConfig",
+          "startLine": 43,
+          "endLine": 76,
+          "methods": [
+            "milvusClient"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "milvusClient",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "MilvusConfig",
+          "line": 43,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "milvusClient",
+          "callee": "ConnectConfig.builder()\r\n                .uri(uri)\r\n                .connectTimeoutMs(10000).rpcDeadlineMs",
+          "lineNumber": 63
+        },
+        {
+          "caller": "milvusClient",
+          "callee": "ConnectConfig.builder()\r\n                .uri(uri).connectTimeoutMs",
+          "lineNumber": 63
+        },
+        {
+          "caller": "milvusClient",
+          "callee": "ConnectConfig.builder().uri",
+          "lineNumber": 63
+        },
+        {
+          "caller": "milvusClient",
+          "callee": "ConnectConfig.builder",
+          "lineNumber": 63
+        },
+        {
+          "caller": "milvusClient",
+          "callee": "token.isEmpty",
+          "lineNumber": 69
+        },
+        {
+          "caller": "milvusClient",
+          "callee": "builder.token",
+          "lineNumber": 70
+        },
+        {
+          "caller": "milvusClient",
+          "callee": "new MilvusClientV2",
+          "lineNumber": 74
+        },
+        {
+          "caller": "milvusClient",
+          "callee": "builder.build",
+          "lineNumber": 74
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RestFSS3Config.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 76,
+      "nonEmptyLines": 70,
+      "functions": [
+        {
+          "name": "s3Client",
+          "startLine": 39,
+          "endLine": 53,
+          "params": [
+            "rustfsUrl",
+            "accessKeyId",
+            "secretAccessKey"
+          ]
+        },
+        {
+          "name": "s3Presigner",
+          "startLine": 59,
+          "endLine": 75,
+          "params": [
+            "rustfsUrl",
+            "accessKeyId",
+            "secretAccessKey"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RestFSS3Config",
+          "startLine": 36,
+          "endLine": 76,
+          "methods": [
+            "s3Client",
+            "s3Presigner"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "s3Client",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "s3Presigner",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "RestFSS3Config",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "s3Client",
+          "callee": "S3Client.builder()\r\n                .endpointOverride(URI.create(rustfsUrl))\r\n                .region(Region.US_EAST_1)\r\n                .credentialsProvider(\r\n                        StaticCredentialsProvider.create(\r\n                                AwsBasicCredentials.create(accessKeyId, secretAccessKey)\r\n                        )\r\n                )\r\n                .forcePathStyle(true).build",
+          "lineNumber": 43
+        },
+        {
+          "caller": "s3Client",
+          "callee": "S3Client.builder()\r\n                .endpointOverride(URI.create(rustfsUrl))\r\n                .region(Region.US_EAST_1)\r\n                .credentialsProvider(\r\n                        StaticCredentialsProvider.create(\r\n                                AwsBasicCredentials.create(accessKeyId, secretAccessKey)\r\n                        )\r\n                ).forcePathStyle",
+          "lineNumber": 43
+        },
+        {
+          "caller": "s3Client",
+          "callee": "S3Client.builder()\r\n                .endpointOverride(URI.create(rustfsUrl))\r\n                .region(Region.US_EAST_1).credentialsProvider",
+          "lineNumber": 43
+        },
+        {
+          "caller": "s3Client",
+          "callee": "S3Client.builder()\r\n                .endpointOverride(URI.create(rustfsUrl)).region",
+          "lineNumber": 43
+        },
+        {
+          "caller": "s3Client",
+          "callee": "S3Client.builder().endpointOverride",
+          "lineNumber": 43
+        },
+        {
+          "caller": "s3Client",
+          "callee": "S3Client.builder",
+          "lineNumber": 43
+        },
+        {
+          "caller": "s3Client",
+          "callee": "URI.create",
+          "lineNumber": 44
+        },
+        {
+          "caller": "s3Client",
+          "callee": "StaticCredentialsProvider.create",
+          "lineNumber": 47
+        },
+        {
+          "caller": "s3Client",
+          "callee": "AwsBasicCredentials.create",
+          "lineNumber": 48
+        },
+        {
+          "caller": "s3Presigner",
+          "callee": "S3Presigner.builder()\r\n                .endpointOverride(URI.create(rustfsUrl))\r\n                .region(Region.US_EAST_1)\r\n                .credentialsProvider(\r\n                        StaticCredentialsProvider.create(\r\n                                AwsBasicCredentials.create(accessKeyId, secretAccessKey)\r\n                        )\r\n                )\r\n                .serviceConfiguration(S3Configuration.builder()\r\n                        .pathStyleAccessEnabled(true)\r\n                        .build()).build",
+          "lineNumber": 63
+        },
+        {
+          "caller": "s3Presigner",
+          "callee": "S3Presigner.builder()\r\n                .endpointOverride(URI.create(rustfsUrl))\r\n                .region(Region.US_EAST_1)\r\n                .credentialsProvider(\r\n                        StaticCredentialsProvider.create(\r\n                                AwsBasicCredentials.create(accessKeyId, secretAccessKey)\r\n                        )\r\n                ).serviceConfiguration",
+          "lineNumber": 63
+        },
+        {
+          "caller": "s3Presigner",
+          "callee": "S3Presigner.builder()\r\n                .endpointOverride(URI.create(rustfsUrl))\r\n                .region(Region.US_EAST_1).credentialsProvider",
+          "lineNumber": 63
+        },
+        {
+          "caller": "s3Presigner",
+          "callee": "S3Presigner.builder()\r\n                .endpointOverride(URI.create(rustfsUrl)).region",
+          "lineNumber": 63
+        },
+        {
+          "caller": "s3Presigner",
+          "callee": "S3Presigner.builder().endpointOverride",
+          "lineNumber": 63
+        },
+        {
+          "caller": "s3Presigner",
+          "callee": "S3Presigner.builder",
+          "lineNumber": 63
+        },
+        {
+          "caller": "s3Presigner",
+          "callee": "URI.create",
+          "lineNumber": 64
+        },
+        {
+          "caller": "s3Presigner",
+          "callee": "StaticCredentialsProvider.create",
+          "lineNumber": 67
+        },
+        {
+          "caller": "s3Presigner",
+          "callee": "AwsBasicCredentials.create",
+          "lineNumber": 68
+        },
+        {
+          "caller": "s3Presigner",
+          "callee": "S3Configuration.builder()\r\n                        .pathStyleAccessEnabled(true).build",
+          "lineNumber": 71
+        },
+        {
+          "caller": "s3Presigner",
+          "callee": "S3Configuration.builder().pathStyleAccessEnabled",
+          "lineNumber": 71
+        },
+        {
+          "caller": "s3Presigner",
+          "callee": "S3Configuration.builder",
+          "lineNumber": 71
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/ThreadPoolExecutorConfig.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 232,
+      "nonEmptyLines": 217,
+      "functions": [
+        {
+          "name": "mcpBatchExecutor",
+          "startLine": 46,
+          "endLine": 60,
+          "params": []
+        },
+        {
+          "name": "ragContextExecutor",
+          "startLine": 65,
+          "endLine": 79,
+          "params": []
+        },
+        {
+          "name": "ragRetrievalExecutor",
+          "startLine": 84,
+          "endLine": 98,
+          "params": []
+        },
+        {
+          "name": "innerRetrievalExecutor",
+          "startLine": 103,
+          "endLine": 117,
+          "params": []
+        },
+        {
+          "name": "intentClassifyExecutor",
+          "startLine": 122,
+          "endLine": 136,
+          "params": []
+        },
+        {
+          "name": "memorySummaryExecutor",
+          "startLine": 141,
+          "endLine": 155,
+          "params": []
+        },
+        {
+          "name": "modelStreamExecutor",
+          "startLine": 160,
+          "endLine": 174,
+          "params": []
+        },
+        {
+          "name": "chatEntryExecutor",
+          "startLine": 179,
+          "endLine": 193,
+          "params": []
+        },
+        {
+          "name": "knowledgeChunkExecutor",
+          "startLine": 198,
+          "endLine": 212,
+          "params": []
+        },
+        {
+          "name": "memoryLoadExecutor",
+          "startLine": 217,
+          "endLine": 231,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ThreadPoolExecutorConfig",
+          "startLine": 35,
+          "endLine": 232,
+          "methods": [
+            "mcpBatchExecutor",
+            "ragContextExecutor",
+            "ragRetrievalExecutor",
+            "innerRetrievalExecutor",
+            "intentClassifyExecutor",
+            "memorySummaryExecutor",
+            "modelStreamExecutor",
+            "chatEntryExecutor",
+            "knowledgeChunkExecutor",
+            "memoryLoadExecutor"
+          ],
+          "properties": [
+            "CPU_COUNT"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CPU_COUNT",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "mcpBatchExecutor",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "ragContextExecutor",
+          "line": 65,
+          "isDefault": false
+        },
+        {
+          "name": "ragRetrievalExecutor",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "innerRetrievalExecutor",
+          "line": 103,
+          "isDefault": false
+        },
+        {
+          "name": "intentClassifyExecutor",
+          "line": 122,
+          "isDefault": false
+        },
+        {
+          "name": "memorySummaryExecutor",
+          "line": 141,
+          "isDefault": false
+        },
+        {
+          "name": "modelStreamExecutor",
+          "line": 160,
+          "isDefault": false
+        },
+        {
+          "name": "chatEntryExecutor",
+          "line": 179,
+          "isDefault": false
+        },
+        {
+          "name": "knowledgeChunkExecutor",
+          "line": 198,
+          "isDefault": false
+        },
+        {
+          "name": "memoryLoadExecutor",
+          "line": 217,
+          "isDefault": false
+        },
+        {
+          "name": "ThreadPoolExecutorConfig",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "mcpBatchExecutor",
+          "callee": "new ThreadPoolExecutor",
+          "lineNumber": 48
+        },
+        {
+          "caller": "mcpBatchExecutor",
+          "callee": "new SynchronousQueue<>",
+          "lineNumber": 53
+        },
+        {
+          "caller": "mcpBatchExecutor",
+          "callee": "ThreadFactoryBuilder.create()\r\n                        .setNamePrefix(\"mcp_batch_executor_\").build",
+          "lineNumber": 54
+        },
+        {
+          "caller": "mcpBatchExecutor",
+          "callee": "ThreadFactoryBuilder.create().setNamePrefix",
+          "lineNumber": 54
+        },
+        {
+          "caller": "mcpBatchExecutor",
+          "callee": "ThreadFactoryBuilder.create",
+          "lineNumber": 54
+        },
+        {
+          "caller": "mcpBatchExecutor",
+          "callee": "new ThreadPoolExecutor.CallerRunsPolicy",
+          "lineNumber": 57
+        },
+        {
+          "caller": "mcpBatchExecutor",
+          "callee": "TtlExecutors.getTtlExecutor",
+          "lineNumber": 59
+        },
+        {
+          "caller": "ragContextExecutor",
+          "callee": "new ThreadPoolExecutor",
+          "lineNumber": 67
+        },
+        {
+          "caller": "ragContextExecutor",
+          "callee": "new SynchronousQueue<>",
+          "lineNumber": 72
+        },
+        {
+          "caller": "ragContextExecutor",
+          "callee": "ThreadFactoryBuilder.create()\r\n                        .setNamePrefix(\"rag_context_executor_\").build",
+          "lineNumber": 73
+        },
+        {
+          "caller": "ragContextExecutor",
+          "callee": "ThreadFactoryBuilder.create().setNamePrefix",
+          "lineNumber": 73
+        },
+        {
+          "caller": "ragContextExecutor",
+          "callee": "ThreadFactoryBuilder.create",
+          "lineNumber": 73
+        },
+        {
+          "caller": "ragContextExecutor",
+          "callee": "new ThreadPoolExecutor.CallerRunsPolicy",
+          "lineNumber": 76
+        },
+        {
+          "caller": "ragContextExecutor",
+          "callee": "TtlExecutors.getTtlExecutor",
+          "lineNumber": 78
+        },
+        {
+          "caller": "ragRetrievalExecutor",
+          "callee": "new ThreadPoolExecutor",
+          "lineNumber": 86
+        },
+        {
+          "caller": "ragRetrievalExecutor",
+          "callee": "new SynchronousQueue<>",
+          "lineNumber": 91
+        },
+        {
+          "caller": "ragRetrievalExecutor",
+          "callee": "ThreadFactoryBuilder.create()\r\n                        .setNamePrefix(\"rag_retrieval_executor_\").build",
+          "lineNumber": 92
+        },
+        {
+          "caller": "ragRetrievalExecutor",
+          "callee": "ThreadFactoryBuilder.create().setNamePrefix",
+          "lineNumber": 92
+        },
+        {
+          "caller": "ragRetrievalExecutor",
+          "callee": "ThreadFactoryBuilder.create",
+          "lineNumber": 92
+        },
+        {
+          "caller": "ragRetrievalExecutor",
+          "callee": "new ThreadPoolExecutor.CallerRunsPolicy",
+          "lineNumber": 95
+        },
+        {
+          "caller": "ragRetrievalExecutor",
+          "callee": "TtlExecutors.getTtlExecutor",
+          "lineNumber": 97
+        },
+        {
+          "caller": "innerRetrievalExecutor",
+          "callee": "new ThreadPoolExecutor",
+          "lineNumber": 105
+        },
+        {
+          "caller": "innerRetrievalExecutor",
+          "callee": "new LinkedBlockingQueue<>",
+          "lineNumber": 110
+        },
+        {
+          "caller": "innerRetrievalExecutor",
+          "callee": "ThreadFactoryBuilder.create()\r\n                        .setNamePrefix(\"rag_inner_retrieval_executor_\").build",
+          "lineNumber": 111
+        },
+        {
+          "caller": "innerRetrievalExecutor",
+          "callee": "ThreadFactoryBuilder.create().setNamePrefix",
+          "lineNumber": 111
+        },
+        {
+          "caller": "innerRetrievalExecutor",
+          "callee": "ThreadFactoryBuilder.create",
+          "lineNumber": 111
+        },
+        {
+          "caller": "innerRetrievalExecutor",
+          "callee": "new ThreadPoolExecutor.CallerRunsPolicy",
+          "lineNumber": 114
+        },
+        {
+          "caller": "innerRetrievalExecutor",
+          "callee": "TtlExecutors.getTtlExecutor",
+          "lineNumber": 116
+        },
+        {
+          "caller": "intentClassifyExecutor",
+          "callee": "new ThreadPoolExecutor",
+          "lineNumber": 124
+        },
+        {
+          "caller": "intentClassifyExecutor",
+          "callee": "new SynchronousQueue<>",
+          "lineNumber": 129
+        },
+        {
+          "caller": "intentClassifyExecutor",
+          "callee": "ThreadFactoryBuilder.create()\r\n                        .setNamePrefix(\"intent_classify_executor_\").build",
+          "lineNumber": 130
+        },
+        {
+          "caller": "intentClassifyExecutor",
+          "callee": "ThreadFactoryBuilder.create().setNamePrefix",
+          "lineNumber": 130
+        },
+        {
+          "caller": "intentClassifyExecutor",
+          "callee": "ThreadFactoryBuilder.create",
+          "lineNumber": 130
+        },
+        {
+          "caller": "intentClassifyExecutor",
+          "callee": "new ThreadPoolExecutor.CallerRunsPolicy",
+          "lineNumber": 133
+        },
+        {
+          "caller": "intentClassifyExecutor",
+          "callee": "TtlExecutors.getTtlExecutor",
+          "lineNumber": 135
+        },
+        {
+          "caller": "memorySummaryExecutor",
+          "callee": "new ThreadPoolExecutor",
+          "lineNumber": 143
+        },
+        {
+          "caller": "memorySummaryExecutor",
+          "callee": "Math.max",
+          "lineNumber": 145
+        },
+        {
+          "caller": "memorySummaryExecutor",
+          "callee": "new LinkedBlockingQueue<>",
+          "lineNumber": 148
+        },
+        {
+          "caller": "memorySummaryExecutor",
+          "callee": "ThreadFactoryBuilder.create()\r\n                        .setNamePrefix(\"memory_summary_executor_\").build",
+          "lineNumber": 149
+        },
+        {
+          "caller": "memorySummaryExecutor",
+          "callee": "ThreadFactoryBuilder.create().setNamePrefix",
+          "lineNumber": 149
+        },
+        {
+          "caller": "memorySummaryExecutor",
+          "callee": "ThreadFactoryBuilder.create",
+          "lineNumber": 149
+        },
+        {
+          "caller": "memorySummaryExecutor",
+          "callee": "new ThreadPoolExecutor.CallerRunsPolicy",
+          "lineNumber": 152
+        },
+        {
+          "caller": "memorySummaryExecutor",
+          "callee": "TtlExecutors.getTtlExecutor",
+          "lineNumber": 154
+        },
+        {
+          "caller": "modelStreamExecutor",
+          "callee": "new ThreadPoolExecutor",
+          "lineNumber": 162
+        },
+        {
+          "caller": "modelStreamExecutor",
+          "callee": "Math.max",
+          "lineNumber": 163
+        },
+        {
+          "caller": "modelStreamExecutor",
+          "callee": "Math.max",
+          "lineNumber": 164
+        },
+        {
+          "caller": "modelStreamExecutor",
+          "callee": "new LinkedBlockingQueue<>",
+          "lineNumber": 167
+        },
+        {
+          "caller": "modelStreamExecutor",
+          "callee": "ThreadFactoryBuilder.create()\r\n                        .setNamePrefix(\"model_stream_executor_\").build",
+          "lineNumber": 168
+        },
+        {
+          "caller": "modelStreamExecutor",
+          "callee": "ThreadFactoryBuilder.create().setNamePrefix",
+          "lineNumber": 168
+        },
+        {
+          "caller": "modelStreamExecutor",
+          "callee": "ThreadFactoryBuilder.create",
+          "lineNumber": 168
+        },
+        {
+          "caller": "modelStreamExecutor",
+          "callee": "new ThreadPoolExecutor.AbortPolicy",
+          "lineNumber": 171
+        },
+        {
+          "caller": "modelStreamExecutor",
+          "callee": "TtlExecutors.getTtlExecutor",
+          "lineNumber": 173
+        },
+        {
+          "caller": "chatEntryExecutor",
+          "callee": "new ThreadPoolExecutor",
+          "lineNumber": 181
+        },
+        {
+          "caller": "chatEntryExecutor",
+          "callee": "Math.max",
+          "lineNumber": 182
+        },
+        {
+          "caller": "chatEntryExecutor",
+          "callee": "Math.max",
+          "lineNumber": 183
+        },
+        {
+          "caller": "chatEntryExecutor",
+          "callee": "new LinkedBlockingQueue<>",
+          "lineNumber": 186
+        },
+        {
+          "caller": "chatEntryExecutor",
+          "callee": "ThreadFactoryBuilder.create()\r\n                        .setNamePrefix(\"chat_entry_executor_\").build",
+          "lineNumber": 187
+        },
+        {
+          "caller": "chatEntryExecutor",
+          "callee": "ThreadFactoryBuilder.create().setNamePrefix",
+          "lineNumber": 187
+        },
+        {
+          "caller": "chatEntryExecutor",
+          "callee": "ThreadFactoryBuilder.create",
+          "lineNumber": 187
+        },
+        {
+          "caller": "chatEntryExecutor",
+          "callee": "new ThreadPoolExecutor.AbortPolicy",
+          "lineNumber": 190
+        },
+        {
+          "caller": "chatEntryExecutor",
+          "callee": "TtlExecutors.getTtlExecutor",
+          "lineNumber": 192
+        },
+        {
+          "caller": "knowledgeChunkExecutor",
+          "callee": "new ThreadPoolExecutor",
+          "lineNumber": 200
+        },
+        {
+          "caller": "knowledgeChunkExecutor",
+          "callee": "Math.max",
+          "lineNumber": 201
+        },
+        {
+          "caller": "knowledgeChunkExecutor",
+          "callee": "Math.max",
+          "lineNumber": 202
+        },
+        {
+          "caller": "knowledgeChunkExecutor",
+          "callee": "new LinkedBlockingQueue<>",
+          "lineNumber": 205
+        },
+        {
+          "caller": "knowledgeChunkExecutor",
+          "callee": "ThreadFactoryBuilder.create()\r\n                        .setNamePrefix(\"kb_chunk_executor_\").build",
+          "lineNumber": 206
+        },
+        {
+          "caller": "knowledgeChunkExecutor",
+          "callee": "ThreadFactoryBuilder.create().setNamePrefix",
+          "lineNumber": 206
+        },
+        {
+          "caller": "knowledgeChunkExecutor",
+          "callee": "ThreadFactoryBuilder.create",
+          "lineNumber": 206
+        },
+        {
+          "caller": "knowledgeChunkExecutor",
+          "callee": "new ThreadPoolExecutor.AbortPolicy",
+          "lineNumber": 209
+        },
+        {
+          "caller": "knowledgeChunkExecutor",
+          "callee": "TtlExecutors.getTtlExecutor",
+          "lineNumber": 211
+        },
+        {
+          "caller": "memoryLoadExecutor",
+          "callee": "new ThreadPoolExecutor",
+          "lineNumber": 219
+        },
+        {
+          "caller": "memoryLoadExecutor",
+          "callee": "Math.max",
+          "lineNumber": 220
+        },
+        {
+          "caller": "memoryLoadExecutor",
+          "callee": "Math.max",
+          "lineNumber": 221
+        },
+        {
+          "caller": "memoryLoadExecutor",
+          "callee": "new LinkedBlockingQueue<>",
+          "lineNumber": 224
+        },
+        {
+          "caller": "memoryLoadExecutor",
+          "callee": "ThreadFactoryBuilder.create()\r\n                        .setNamePrefix(\"memory_load_executor_\").build",
+          "lineNumber": 225
+        },
+        {
+          "caller": "memoryLoadExecutor",
+          "callee": "ThreadFactoryBuilder.create().setNamePrefix",
+          "lineNumber": 225
+        },
+        {
+          "caller": "memoryLoadExecutor",
+          "callee": "ThreadFactoryBuilder.create",
+          "lineNumber": 225
+        },
+        {
+          "caller": "memoryLoadExecutor",
+          "callee": "new ThreadPoolExecutor.CallerRunsPolicy",
+          "lineNumber": 228
+        },
+        {
+          "caller": "memoryLoadExecutor",
+          "callee": "TtlExecutors.getTtlExecutor",
+          "lineNumber": 230
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/Utf8ResponseFilter.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 61,
+      "functions": [
+        {
+          "name": "doFilter",
+          "startLine": 56,
+          "endLine": 67,
+          "params": [
+            "request",
+            "response",
+            "chain"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Utf8ResponseFilter",
+          "startLine": 44,
+          "endLine": 68,
+          "methods": [
+            "doFilter"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "doFilter",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "Utf8ResponseFilter",
+          "line": 44,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "doFilter",
+          "callee": "response.setCharacterEncoding",
+          "lineNumber": 63
+        },
+        {
+          "caller": "doFilter",
+          "callee": "chain.doFilter",
+          "lineNumber": 66
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/WebConfig.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 77,
+      "nonEmptyLines": 69,
+      "functions": [
+        {
+          "name": "configureMessageConverters",
+          "startLine": 54,
+          "endLine": 65,
+          "params": [
+            "converters"
+          ]
+        },
+        {
+          "name": "addCorsMappings",
+          "startLine": 67,
+          "endLine": 76,
+          "params": [
+            "registry"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "WebConfig",
+          "startLine": 41,
+          "endLine": 77,
+          "methods": [
+            "configureMessageConverters",
+            "addCorsMappings"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "configureMessageConverters",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "addCorsMappings",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "WebConfig",
+          "line": 41,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "configureMessageConverters",
+          "callee": "new StringHttpMessageConverter",
+          "lineNumber": 57
+        },
+        {
+          "caller": "configureMessageConverters",
+          "callee": "stringConverter.setWriteAcceptCharset",
+          "lineNumber": 61
+        },
+        {
+          "caller": "configureMessageConverters",
+          "callee": "converters.add",
+          "lineNumber": 64
+        },
+        {
+          "caller": "addCorsMappings",
+          "callee": "registry.addMapping(\"/**\")\r\n                .allowedOriginPatterns(\"*\")\r\n                .allowedMethods(\"GET\", \"POST\", \"PUT\", \"DELETE\", \"PATCH\", \"OPTIONS\")\r\n                .allowedHeaders(\"*\")\r\n                .exposedHeaders(\"Authorization\")\r\n                .allowCredentials(true).maxAge",
+          "lineNumber": 69
+        },
+        {
+          "caller": "addCorsMappings",
+          "callee": "registry.addMapping(\"/**\")\r\n                .allowedOriginPatterns(\"*\")\r\n                .allowedMethods(\"GET\", \"POST\", \"PUT\", \"DELETE\", \"PATCH\", \"OPTIONS\")\r\n                .allowedHeaders(\"*\")\r\n                .exposedHeaders(\"Authorization\").allowCredentials",
+          "lineNumber": 69
+        },
+        {
+          "caller": "addCorsMappings",
+          "callee": "registry.addMapping(\"/**\")\r\n                .allowedOriginPatterns(\"*\")\r\n                .allowedMethods(\"GET\", \"POST\", \"PUT\", \"DELETE\", \"PATCH\", \"OPTIONS\")\r\n                .allowedHeaders(\"*\").exposedHeaders",
+          "lineNumber": 69
+        },
+        {
+          "caller": "addCorsMappings",
+          "callee": "registry.addMapping(\"/**\")\r\n                .allowedOriginPatterns(\"*\")\r\n                .allowedMethods(\"GET\", \"POST\", \"PUT\", \"DELETE\", \"PATCH\", \"OPTIONS\").allowedHeaders",
+          "lineNumber": 69
+        },
+        {
+          "caller": "addCorsMappings",
+          "callee": "registry.addMapping(\"/**\")\r\n                .allowedOriginPatterns(\"*\").allowedMethods",
+          "lineNumber": 69
+        },
+        {
+          "caller": "addCorsMappings",
+          "callee": "registry.addMapping(\"/**\").allowedOriginPatterns",
+          "lineNumber": 69
+        },
+        {
+          "caller": "addCorsMappings",
+          "callee": "registry.addMapping",
+          "lineNumber": 69
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/ConversationCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 47,
+      "classes": [
+        {
+          "name": "ConversationCreateRequest",
+          "startLine": 30,
+          "endLine": 56,
+          "methods": [],
+          "properties": [
+            "conversationId",
+            "userId",
+            "question",
+            "lastTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConversationCreateRequest",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentClassifier.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 50,
+      "classes": [
+        {
+          "name": "IntentClassifier",
+          "startLine": 31,
+          "endLine": 55,
+          "methods": [
+            "classifyTargets",
+            "topKAboveThreshold"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IntentClassifier",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "topKAboveThreshold",
+          "callee": "classifyTargets(question).stream()\r\n                .filter(ns -> ns.getScore() >= minScore)\r\n                .limit(topN).toList",
+          "lineNumber": 50
+        },
+        {
+          "caller": "topKAboveThreshold",
+          "callee": "classifyTargets(question).stream()\r\n                .filter(ns -> ns.getScore() >= minScore).limit",
+          "lineNumber": 50
+        },
+        {
+          "caller": "topKAboveThreshold",
+          "callee": "classifyTargets(question).stream().filter",
+          "lineNumber": 50
+        },
+        {
+          "caller": "topKAboveThreshold",
+          "callee": "classifyTargets(question).stream",
+          "lineNumber": 50
+        },
+        {
+          "caller": "topKAboveThreshold",
+          "callee": "classifyTargets",
+          "lineNumber": 50
+        },
+        {
+          "caller": "topKAboveThreshold",
+          "callee": "ns.getScore",
+          "lineNumber": 51
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/DefaultMcpToolRegistry.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 123,
+      "nonEmptyLines": 106,
+      "functions": [
+        {
+          "name": "init",
+          "startLine": 56,
+          "endLine": 66,
+          "params": []
+        },
+        {
+          "name": "register",
+          "startLine": 68,
+          "endLine": 87,
+          "params": [
+            "executor"
+          ]
+        },
+        {
+          "name": "unregister",
+          "startLine": 89,
+          "endLine": 95,
+          "params": [
+            "toolId"
+          ]
+        },
+        {
+          "name": "getExecutor",
+          "startLine": 97,
+          "endLine": 100,
+          "params": [
+            "toolId"
+          ]
+        },
+        {
+          "name": "listAllTools",
+          "startLine": 102,
+          "endLine": 107,
+          "params": []
+        },
+        {
+          "name": "listAllExecutors",
+          "startLine": 109,
+          "endLine": 112,
+          "params": []
+        },
+        {
+          "name": "contains",
+          "startLine": 114,
+          "endLine": 117,
+          "params": [
+            "toolId"
+          ]
+        },
+        {
+          "name": "size",
+          "startLine": 119,
+          "endLine": 122,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DefaultMcpToolRegistry",
+          "startLine": 37,
+          "endLine": 123,
+          "methods": [
+            "init",
+            "register",
+            "unregister",
+            "getExecutor",
+            "listAllTools",
+            "listAllExecutors",
+            "contains",
+            "size"
+          ],
+          "properties": [
+            "executorMap",
+            "autoDiscoveredExecutors"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "init",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "register",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "unregister",
+          "line": 89,
+          "isDefault": false
+        },
+        {
+          "name": "getExecutor",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "listAllTools",
+          "line": 102,
+          "isDefault": false
+        },
+        {
+          "name": "listAllExecutors",
+          "line": 109,
+          "isDefault": false
+        },
+        {
+          "name": "contains",
+          "line": 114,
+          "isDefault": false
+        },
+        {
+          "name": "size",
+          "line": 119,
+          "isDefault": false
+        },
+        {
+          "name": "DefaultMcpToolRegistry",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "init",
+          "callee": "CollUtil.isEmpty",
+          "lineNumber": 58
+        },
+        {
+          "caller": "init",
+          "callee": "log.info",
+          "lineNumber": 59
+        },
+        {
+          "caller": "init",
+          "callee": "register",
+          "lineNumber": 63
+        },
+        {
+          "caller": "init",
+          "callee": "log.info",
+          "lineNumber": 65
+        },
+        {
+          "caller": "init",
+          "callee": "autoDiscoveredExecutors.size",
+          "lineNumber": 65
+        },
+        {
+          "caller": "register",
+          "callee": "executor.getToolDefinition",
+          "lineNumber": 70
+        },
+        {
+          "caller": "register",
+          "callee": "log.warn",
+          "lineNumber": 71
+        },
+        {
+          "caller": "register",
+          "callee": "executor.getToolId",
+          "lineNumber": 75
+        },
+        {
+          "caller": "register",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 76
+        },
+        {
+          "caller": "register",
+          "callee": "log.warn",
+          "lineNumber": 77
+        },
+        {
+          "caller": "register",
+          "callee": "executorMap.put",
+          "lineNumber": 81
+        },
+        {
+          "caller": "register",
+          "callee": "log.warn",
+          "lineNumber": 83
+        },
+        {
+          "caller": "register",
+          "callee": "log.info",
+          "lineNumber": 85
+        },
+        {
+          "caller": "unregister",
+          "callee": "executorMap.remove",
+          "lineNumber": 91
+        },
+        {
+          "caller": "unregister",
+          "callee": "log.info",
+          "lineNumber": 93
+        },
+        {
+          "caller": "getExecutor",
+          "callee": "Optional.ofNullable",
+          "lineNumber": 99
+        },
+        {
+          "caller": "getExecutor",
+          "callee": "executorMap.get",
+          "lineNumber": 99
+        },
+        {
+          "caller": "listAllTools",
+          "callee": "executorMap.values().stream()\r\n                .map(McpToolExecutor::getToolDefinition).toList",
+          "lineNumber": 104
+        },
+        {
+          "caller": "listAllTools",
+          "callee": "executorMap.values().stream().map",
+          "lineNumber": 104
+        },
+        {
+          "caller": "listAllTools",
+          "callee": "executorMap.values().stream",
+          "lineNumber": 104
+        },
+        {
+          "caller": "listAllTools",
+          "callee": "executorMap.values",
+          "lineNumber": 104
+        },
+        {
+          "caller": "listAllExecutors",
+          "callee": "new ArrayList<>",
+          "lineNumber": 111
+        },
+        {
+          "caller": "listAllExecutors",
+          "callee": "executorMap.values",
+          "lineNumber": 111
+        },
+        {
+          "caller": "contains",
+          "callee": "executorMap.containsKey",
+          "lineNumber": 116
+        },
+        {
+          "caller": "size",
+          "callee": "executorMap.size",
+          "lineNumber": 121
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpClientAutoConfiguration.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 108,
+      "nonEmptyLines": 93,
+      "functions": [
+        {
+          "name": "init",
+          "startLine": 52,
+          "endLine": 63,
+          "params": []
+        },
+        {
+          "name": "registerRemoteTools",
+          "startLine": 65,
+          "endLine": 96,
+          "params": [
+            "server"
+          ]
+        },
+        {
+          "name": "destroy",
+          "startLine": 98,
+          "endLine": 107,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "McpClientAutoConfiguration",
+          "startLine": 41,
+          "endLine": 108,
+          "methods": [
+            "init",
+            "registerRemoteTools",
+            "destroy"
+          ],
+          "properties": [
+            "properties",
+            "toolRegistry",
+            "clients"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "init",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "destroy",
+          "line": 98,
+          "isDefault": false
+        },
+        {
+          "name": "McpClientAutoConfiguration",
+          "line": 41,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "init",
+          "callee": "properties.getServers",
+          "lineNumber": 54
+        },
+        {
+          "caller": "init",
+          "callee": "servers.isEmpty",
+          "lineNumber": 55
+        },
+        {
+          "caller": "init",
+          "callee": "log.info",
+          "lineNumber": 56
+        },
+        {
+          "caller": "init",
+          "callee": "registerRemoteTools",
+          "lineNumber": 61
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "server.getName",
+          "lineNumber": 66
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "server.getUrl",
+          "lineNumber": 67
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "log.info",
+          "lineNumber": 68
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "serverUrl.endsWith",
+          "lineNumber": 71
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "HttpClientStreamableHttpTransport.builder(mcpUrl).build",
+          "lineNumber": 73
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "HttpClientStreamableHttpTransport.builder",
+          "lineNumber": 73
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "McpClient.sync(transport)\r\n                    .clientInfo(new Implementation(\"ragent-bootstrap\", \"1.0.0\")).build",
+          "lineNumber": 75
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "McpClient.sync(transport).clientInfo",
+          "lineNumber": 75
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "McpClient.sync",
+          "lineNumber": 75
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "new Implementation",
+          "lineNumber": 76
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "client.initialize",
+          "lineNumber": 78
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "clients.add",
+          "lineNumber": 79
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "client.listTools",
+          "lineNumber": 81
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "result.tools",
+          "lineNumber": 82
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "CollUtil.isEmpty",
+          "lineNumber": 83
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "log.info",
+          "lineNumber": 84
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "log.info",
+          "lineNumber": 87
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "tools.size",
+          "lineNumber": 87
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "new McpClientToolExecutor",
+          "lineNumber": 90
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "toolRegistry.register",
+          "lineNumber": 91
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "log.error",
+          "lineNumber": 94
+        },
+        {
+          "caller": "registerRemoteTools",
+          "callee": "e.getMessage",
+          "lineNumber": 94
+        },
+        {
+          "caller": "destroy",
+          "callee": "client.close",
+          "lineNumber": 102
+        },
+        {
+          "caller": "destroy",
+          "callee": "log.warn",
+          "lineNumber": 104
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpClientProperties.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 51,
+      "nonEmptyLines": 43,
+      "classes": [
+        {
+          "name": "McpClientProperties",
+          "startLine": 29,
+          "endLine": 51,
+          "methods": [],
+          "properties": [
+            "servers"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "McpClientProperties",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpClientToolExecutor.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 62,
+      "functions": [
+        {
+          "name": "getToolDefinition",
+          "startLine": 42,
+          "endLine": 45,
+          "params": []
+        },
+        {
+          "name": "execute",
+          "startLine": 47,
+          "endLine": 68,
+          "params": [
+            "parameters"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "McpClientToolExecutor",
+          "startLine": 35,
+          "endLine": 69,
+          "methods": [
+            "getToolDefinition",
+            "execute"
+          ],
+          "properties": [
+            "mcpClient",
+            "toolDefinition"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getToolDefinition",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "execute",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "McpClientToolExecutor",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "execute",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 49
+        },
+        {
+          "caller": "execute",
+          "callee": "Map.of",
+          "lineNumber": 51
+        },
+        {
+          "caller": "execute",
+          "callee": "mcpClient.callTool",
+          "lineNumber": 52
+        },
+        {
+          "caller": "execute",
+          "callee": "new CallToolRequest",
+          "lineNumber": 52
+        },
+        {
+          "caller": "execute",
+          "callee": "toolDefinition.name",
+          "lineNumber": 52
+        },
+        {
+          "caller": "execute",
+          "callee": "log.info",
+          "lineNumber": 53
+        },
+        {
+          "caller": "execute",
+          "callee": "toolDefinition.name",
+          "lineNumber": 54
+        },
+        {
+          "caller": "execute",
+          "callee": "result.content",
+          "lineNumber": 55
+        },
+        {
+          "caller": "execute",
+          "callee": "result.content().size",
+          "lineNumber": 55
+        },
+        {
+          "caller": "execute",
+          "callee": "result.content",
+          "lineNumber": 55
+        },
+        {
+          "caller": "execute",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 56
+        },
+        {
+          "caller": "execute",
+          "callee": "e.getMessage",
+          "lineNumber": 59
+        },
+        {
+          "caller": "execute",
+          "callee": "e.getMessage",
+          "lineNumber": 59
+        },
+        {
+          "caller": "execute",
+          "callee": "e.getClass().getSimpleName",
+          "lineNumber": 59
+        },
+        {
+          "caller": "execute",
+          "callee": "e.getClass",
+          "lineNumber": 59
+        },
+        {
+          "caller": "execute",
+          "callee": "log.warn",
+          "lineNumber": 60
+        },
+        {
+          "caller": "execute",
+          "callee": "toolDefinition.name",
+          "lineNumber": 61
+        },
+        {
+          "caller": "execute",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 62
+        },
+        {
+          "caller": "execute",
+          "callee": "CallToolResult.builder()\r\n                    .content(List.of(new TextContent(\"远程调用失败: \" + reason)))\r\n                    .isError(true).build",
+          "lineNumber": 63
+        },
+        {
+          "caller": "execute",
+          "callee": "CallToolResult.builder()\r\n                    .content(List.of(new TextContent(\"远程调用失败: \" + reason))).isError",
+          "lineNumber": 63
+        },
+        {
+          "caller": "execute",
+          "callee": "CallToolResult.builder().content",
+          "lineNumber": 63
+        },
+        {
+          "caller": "execute",
+          "callee": "CallToolResult.builder",
+          "lineNumber": 63
+        },
+        {
+          "caller": "execute",
+          "callee": "List.of",
+          "lineNumber": 64
+        },
+        {
+          "caller": "execute",
+          "callee": "new TextContent",
+          "lineNumber": 64
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptBuildPlan.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 28,
+      "classes": [
+        {
+          "name": "PromptBuildPlan",
+          "startLine": 23,
+          "endLine": 36,
+          "methods": [],
+          "properties": [
+            "scene",
+            "baseTemplate",
+            "mcpContext",
+            "kbContext",
+            "question"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PromptBuildPlan",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    }
+  ]
+}

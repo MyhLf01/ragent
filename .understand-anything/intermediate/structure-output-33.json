@@ -1,0 +1,5215 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 18,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/token/HeuristicTokenCounterService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 79,
+      "nonEmptyLines": 71,
+      "functions": [
+        {
+          "name": "countTokens",
+          "startLine": 29,
+          "endLine": 57,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "isCjk",
+          "startLine": 59,
+          "endLine": 78,
+          "params": [
+            "ch"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "HeuristicTokenCounterService",
+          "startLine": 26,
+          "endLine": 79,
+          "methods": [
+            "countTokens",
+            "isCjk"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "countTokens",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "HeuristicTokenCounterService",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "countTokens",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 31
+        },
+        {
+          "caller": "countTokens",
+          "callee": "text.length",
+          "lineNumber": 39
+        },
+        {
+          "caller": "countTokens",
+          "callee": "text.charAt",
+          "lineNumber": 40
+        },
+        {
+          "caller": "countTokens",
+          "callee": "Character.isWhitespace",
+          "lineNumber": 41
+        },
+        {
+          "caller": "countTokens",
+          "callee": "isCjk",
+          "lineNumber": 46
+        },
+        {
+          "caller": "countTokens",
+          "callee": "Math.max",
+          "lineNumber": 56
+        },
+        {
+          "caller": "isCjk",
+          "callee": "Character.UnicodeBlock.of",
+          "lineNumber": 60
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lombok.config",
+      "language": "config",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "metrics": {}
+    },
+    {
+      "path": "mcp-server/pom.xml",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 38,
+      "nonEmptyLines": 33,
+      "metrics": {}
+    },
+    {
+      "path": "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/config/McpServerConfig.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 49,
+      "functions": [
+        {
+          "name": "transportProvider",
+          "startLine": 36,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "mcpServlet",
+          "startLine": 42,
+          "endLine": 46,
+          "params": [
+            "transportProvider"
+          ]
+        },
+        {
+          "name": "mcpServer",
+          "startLine": 48,
+          "endLine": 55,
+          "params": [
+            "transportProvider",
+            "toolSpecs"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "McpServerConfig",
+          "startLine": 33,
+          "endLine": 56,
+          "methods": [
+            "transportProvider",
+            "mcpServlet",
+            "mcpServer"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "transportProvider",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "mcpServlet",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "mcpServer",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "McpServerConfig",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "transportProvider",
+          "callee": "HttpServletStreamableServerTransportProvider.builder().build",
+          "lineNumber": 38
+        },
+        {
+          "caller": "transportProvider",
+          "callee": "HttpServletStreamableServerTransportProvider.builder",
+          "lineNumber": 38
+        },
+        {
+          "caller": "mcpServlet",
+          "callee": "new ServletRegistrationBean<>",
+          "lineNumber": 45
+        },
+        {
+          "caller": "mcpServer",
+          "callee": "McpServer.sync(transportProvider)\r\n                .serverInfo(\"ragent-mcp-server\", \"0.0.1\")\r\n                .tools(toolSpecs).build",
+          "lineNumber": 51
+        },
+        {
+          "caller": "mcpServer",
+          "callee": "McpServer.sync(transportProvider)\r\n                .serverInfo(\"ragent-mcp-server\", \"0.0.1\").tools",
+          "lineNumber": 51
+        },
+        {
+          "caller": "mcpServer",
+          "callee": "McpServer.sync(transportProvider).serverInfo",
+          "lineNumber": 51
+        },
+        {
+          "caller": "mcpServer",
+          "callee": "McpServer.sync",
+          "lineNumber": 51
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/executor/SalesMcpExecutor.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 337,
+      "nonEmptyLines": 301,
+      "functions": [
+        {
+          "name": "salesToolSpecification",
+          "startLine": 64,
+          "endLine": 68,
+          "params": []
+        },
+        {
+          "name": "buildTool",
+          "startLine": 70,
+          "endLine": 118,
+          "params": []
+        },
+        {
+          "name": "handleCall",
+          "startLine": 120,
+          "endLine": 153,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "buildSummaryResult",
+          "startLine": 155,
+          "endLine": 186,
+          "params": [
+            "data",
+            "region",
+            "period",
+            "product",
+            "salesPerson"
+          ]
+        },
+        {
+          "name": "buildRankingResult",
+          "startLine": 188,
+          "endLine": 206,
+          "params": [
+            "data",
+            "region",
+            "period",
+            "limit"
+          ]
+        },
+        {
+          "name": "buildDetailResult",
+          "startLine": 208,
+          "endLine": 222,
+          "params": [
+            "data",
+            "region",
+            "period",
+            "limit"
+          ]
+        },
+        {
+          "name": "buildTrendResult",
+          "startLine": 224,
+          "endLine": 239,
+          "params": [
+            "data",
+            "region",
+            "period"
+          ]
+        },
+        {
+          "name": "filterData",
+          "startLine": 241,
+          "endLine": 247,
+          "params": [
+            "data",
+            "region",
+            "product",
+            "salesPerson"
+          ]
+        },
+        {
+          "name": "getOrGenerateData",
+          "startLine": 249,
+          "endLine": 256,
+          "params": [
+            "period"
+          ]
+        },
+        {
+          "name": "getDateRange",
+          "startLine": 258,
+          "endLine": 275,
+          "params": [
+            "period"
+          ]
+        },
+        {
+          "name": "generateMockData",
+          "startLine": 277,
+          "endLine": 302,
+          "params": [
+            "start",
+            "end"
+          ]
+        },
+        {
+          "name": "stringArg",
+          "startLine": 304,
+          "endLine": 307,
+          "params": [
+            "args",
+            "key"
+          ]
+        },
+        {
+          "name": "intArg",
+          "startLine": 309,
+          "endLine": 313,
+          "params": [
+            "args",
+            "key"
+          ]
+        },
+        {
+          "name": "successResult",
+          "startLine": 315,
+          "endLine": 320,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "errorResult",
+          "startLine": 322,
+          "endLine": 327,
+          "params": [
+            "message"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SalesMcpExecutor",
+          "startLine": 39,
+          "endLine": 337,
+          "methods": [
+            "salesToolSpecification",
+            "buildTool",
+            "handleCall",
+            "buildSummaryResult",
+            "buildRankingResult",
+            "buildDetailResult",
+            "buildTrendResult",
+            "filterData",
+            "getOrGenerateData",
+            "getDateRange",
+            "generateMockData",
+            "stringArg",
+            "intArg",
+            "successResult",
+            "errorResult"
+          ],
+          "properties": [
+            "TOOL_ID",
+            "REGIONS",
+            "PRODUCTS",
+            "SALES_BY_REGION",
+            "CUSTOMER_POOL",
+            "cachedData",
+            "cacheKey"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "salesToolSpecification",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "SalesMcpExecutor",
+          "line": 39,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "salesToolSpecification",
+          "callee": "new McpServerFeatures.SyncToolSpecification",
+          "lineNumber": 66
+        },
+        {
+          "caller": "salesToolSpecification",
+          "callee": "buildTool",
+          "lineNumber": 66
+        },
+        {
+          "caller": "salesToolSpecification",
+          "callee": "handleCall",
+          "lineNumber": 67
+        },
+        {
+          "caller": "buildTool",
+          "callee": "new LinkedHashMap<>",
+          "lineNumber": 71
+        },
+        {
+          "caller": "buildTool",
+          "callee": "properties.put",
+          "lineNumber": 73
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Map.of",
+          "lineNumber": 73
+        },
+        {
+          "caller": "buildTool",
+          "callee": "List.of",
+          "lineNumber": 76
+        },
+        {
+          "caller": "buildTool",
+          "callee": "properties.put",
+          "lineNumber": 79
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Map.of",
+          "lineNumber": 79
+        },
+        {
+          "caller": "buildTool",
+          "callee": "List.of",
+          "lineNumber": 82
+        },
+        {
+          "caller": "buildTool",
+          "callee": "properties.put",
+          "lineNumber": 86
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Map.of",
+          "lineNumber": 86
+        },
+        {
+          "caller": "buildTool",
+          "callee": "List.of",
+          "lineNumber": 89
+        },
+        {
+          "caller": "buildTool",
+          "callee": "properties.put",
+          "lineNumber": 92
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Map.of",
+          "lineNumber": 92
+        },
+        {
+          "caller": "buildTool",
+          "callee": "properties.put",
+          "lineNumber": 97
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Map.of",
+          "lineNumber": 97
+        },
+        {
+          "caller": "buildTool",
+          "callee": "List.of",
+          "lineNumber": 100
+        },
+        {
+          "caller": "buildTool",
+          "callee": "properties.put",
+          "lineNumber": 104
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Map.of",
+          "lineNumber": 104
+        },
+        {
+          "caller": "buildTool",
+          "callee": "new JsonSchema",
+          "lineNumber": 110
+        },
+        {
+          "caller": "buildTool",
+          "callee": "List.of",
+          "lineNumber": 111
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Tool.builder()\r\n                .name(TOOL_ID)\r\n                .description(\"查询软件销售数据，支持按地区、时间、产品、销售人员等维度筛选，支持汇总统计、排名、明细列表等多种查询\")\r\n                .inputSchema(inputSchema).build",
+          "lineNumber": 113
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Tool.builder()\r\n                .name(TOOL_ID)\r\n                .description(\"查询软件销售数据，支持按地区、时间、产品、销售人员等维度筛选，支持汇总统计、排名、明细列表等多种查询\").inputSchema",
+          "lineNumber": 113
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Tool.builder()\r\n                .name(TOOL_ID).description",
+          "lineNumber": 113
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Tool.builder().name",
+          "lineNumber": 113
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Tool.builder",
+          "lineNumber": 113
+        },
+        {
+          "caller": "handleCall",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 121
+        },
+        {
+          "caller": "handleCall",
+          "callee": "request.arguments",
+          "lineNumber": 123
+        },
+        {
+          "caller": "handleCall",
+          "callee": "request.arguments",
+          "lineNumber": 123
+        },
+        {
+          "caller": "handleCall",
+          "callee": "Map.of",
+          "lineNumber": 123
+        },
+        {
+          "caller": "handleCall",
+          "callee": "stringArg",
+          "lineNumber": 124
+        },
+        {
+          "caller": "handleCall",
+          "callee": "stringArg",
+          "lineNumber": 125
+        },
+        {
+          "caller": "handleCall",
+          "callee": "stringArg",
+          "lineNumber": 126
+        },
+        {
+          "caller": "handleCall",
+          "callee": "stringArg",
+          "lineNumber": 127
+        },
+        {
+          "caller": "handleCall",
+          "callee": "stringArg",
+          "lineNumber": 128
+        },
+        {
+          "caller": "handleCall",
+          "callee": "intArg",
+          "lineNumber": 129
+        },
+        {
+          "caller": "handleCall",
+          "callee": "period.isBlank",
+          "lineNumber": 131
+        },
+        {
+          "caller": "handleCall",
+          "callee": "queryType.isBlank",
+          "lineNumber": 132
+        },
+        {
+          "caller": "handleCall",
+          "callee": "getOrGenerateData",
+          "lineNumber": 135
+        },
+        {
+          "caller": "handleCall",
+          "callee": "filterData",
+          "lineNumber": 136
+        },
+        {
+          "caller": "handleCall",
+          "callee": "buildRankingResult",
+          "lineNumber": 139
+        },
+        {
+          "caller": "handleCall",
+          "callee": "buildDetailResult",
+          "lineNumber": 140
+        },
+        {
+          "caller": "handleCall",
+          "callee": "buildTrendResult",
+          "lineNumber": 141
+        },
+        {
+          "caller": "handleCall",
+          "callee": "buildSummaryResult",
+          "lineNumber": 142
+        },
+        {
+          "caller": "handleCall",
+          "callee": "log.info",
+          "lineNumber": 145
+        },
+        {
+          "caller": "handleCall",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 146
+        },
+        {
+          "caller": "handleCall",
+          "callee": "successResult",
+          "lineNumber": 147
+        },
+        {
+          "caller": "handleCall",
+          "callee": "log.error",
+          "lineNumber": 149
+        },
+        {
+          "caller": "handleCall",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 150
+        },
+        {
+          "caller": "handleCall",
+          "callee": "errorResult",
+          "lineNumber": 151
+        },
+        {
+          "caller": "handleCall",
+          "callee": "e.getMessage",
+          "lineNumber": 151
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream().mapToDouble(r -> r.amount).sum",
+          "lineNumber": 157
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream().mapToDouble",
+          "lineNumber": 157
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream",
+          "lineNumber": 157
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.size",
+          "lineNumber": 158
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream().collect",
+          "lineNumber": 160
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream",
+          "lineNumber": 160
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "Collectors.groupingBy",
+          "lineNumber": 161
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "Collectors.summingDouble",
+          "lineNumber": 161
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream().collect",
+          "lineNumber": 162
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream",
+          "lineNumber": 162
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "Collectors.groupingBy",
+          "lineNumber": 163
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "Collectors.summingDouble",
+          "lineNumber": 163
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "new StringBuilder",
+          "lineNumber": 165
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append(\"【\").append(period).append",
+          "lineNumber": 166
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append(\"【\").append",
+          "lineNumber": 166
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 166
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "new ArrayList<>",
+          "lineNumber": 167
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "filters.add",
+          "lineNumber": 168
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "filters.add",
+          "lineNumber": 169
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "filters.add",
+          "lineNumber": 170
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "filters.isEmpty",
+          "lineNumber": 171
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append(\"筛选条件: \").append(String.join(\"，\", filters)).append",
+          "lineNumber": 171
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append(\"筛选条件: \").append",
+          "lineNumber": 171
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 171
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "String.join",
+          "lineNumber": 171
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 172
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "String.format",
+          "lineNumber": 172
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 173
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "String.format",
+          "lineNumber": 173
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 174
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "String.format",
+          "lineNumber": 174
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byProduct.isEmpty",
+          "lineNumber": 175
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 176
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byProduct.entrySet().stream().sorted((a, b) -> Double.compare(b.getValue(), a.getValue())).forEach",
+          "lineNumber": 177
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byProduct.entrySet().stream().sorted",
+          "lineNumber": 177
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byProduct.entrySet().stream",
+          "lineNumber": 177
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byProduct.entrySet",
+          "lineNumber": 177
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "Double.compare",
+          "lineNumber": 177
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "b.getValue",
+          "lineNumber": 177
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "a.getValue",
+          "lineNumber": 177
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 178
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "String.format",
+          "lineNumber": 178
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "e.getKey",
+          "lineNumber": 178
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "e.getValue",
+          "lineNumber": 178
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "e.getValue",
+          "lineNumber": 178
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byRegion.isEmpty",
+          "lineNumber": 180
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 181
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byRegion.entrySet().stream().sorted((a, b) -> Double.compare(b.getValue(), a.getValue())).forEach",
+          "lineNumber": 182
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byRegion.entrySet().stream().sorted",
+          "lineNumber": 182
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byRegion.entrySet().stream",
+          "lineNumber": 182
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byRegion.entrySet",
+          "lineNumber": 182
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "Double.compare",
+          "lineNumber": 182
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "b.getValue",
+          "lineNumber": 182
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "a.getValue",
+          "lineNumber": 182
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 183
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "String.format",
+          "lineNumber": 183
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "e.getKey",
+          "lineNumber": 183
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "e.getValue",
+          "lineNumber": 183
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "e.getValue",
+          "lineNumber": 183
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.toString().trim",
+          "lineNumber": 185
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.toString",
+          "lineNumber": 185
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "data.stream().collect",
+          "lineNumber": 189
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "data.stream",
+          "lineNumber": 189
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "Collectors.groupingBy",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "Collectors.summingDouble",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "bySales.entrySet().stream()\r\n                .sorted((a, b) -> Double.compare(b.getValue(), a.getValue())).limit(limit).toList",
+          "lineNumber": 191
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "bySales.entrySet().stream()\r\n                .sorted((a, b) -> Double.compare(b.getValue(), a.getValue())).limit",
+          "lineNumber": 191
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "bySales.entrySet().stream().sorted",
+          "lineNumber": 191
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "bySales.entrySet().stream",
+          "lineNumber": 191
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "bySales.entrySet",
+          "lineNumber": 191
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "Double.compare",
+          "lineNumber": 192
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "b.getValue",
+          "lineNumber": 192
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "a.getValue",
+          "lineNumber": 192
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "new StringBuilder",
+          "lineNumber": 193
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "sb.append(\"【\").append",
+          "lineNumber": 194
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "sb.append",
+          "lineNumber": 194
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "sb.append(\" \").append",
+          "lineNumber": 195
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "sb.append",
+          "lineNumber": 195
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "sb.append",
+          "lineNumber": 196
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "ranking.isEmpty",
+          "lineNumber": 197
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "sb.append",
+          "lineNumber": 198
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "ranking.size",
+          "lineNumber": 200
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "ranking.get",
+          "lineNumber": 201
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "sb.append",
+          "lineNumber": 202
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "String.format",
+          "lineNumber": 202
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "entry.getKey",
+          "lineNumber": 202
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "entry.getValue",
+          "lineNumber": 202
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "sb.toString().trim",
+          "lineNumber": 205
+        },
+        {
+          "caller": "buildRankingResult",
+          "callee": "sb.toString",
+          "lineNumber": 205
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "data.stream().sorted((a, b) -> Double.compare(b.amount, a.amount)).limit(limit).toList",
+          "lineNumber": 209
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "data.stream().sorted((a, b) -> Double.compare(b.amount, a.amount)).limit",
+          "lineNumber": 209
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "data.stream().sorted",
+          "lineNumber": 209
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "data.stream",
+          "lineNumber": 209
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "Double.compare",
+          "lineNumber": 209
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "new StringBuilder",
+          "lineNumber": 210
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "sb.append(\"【\").append",
+          "lineNumber": 211
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "sb.append",
+          "lineNumber": 211
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "sb.append(\" \").append",
+          "lineNumber": 212
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "sb.append",
+          "lineNumber": 212
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "sb.append",
+          "lineNumber": 213
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "sb.append",
+          "lineNumber": 214
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "String.format",
+          "lineNumber": 214
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "data.size",
+          "lineNumber": 214
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "topRecords.size",
+          "lineNumber": 214
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "topRecords.size",
+          "lineNumber": 215
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "topRecords.get",
+          "lineNumber": 216
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "sb.append",
+          "lineNumber": 217
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "String.format",
+          "lineNumber": 217
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "sb.append",
+          "lineNumber": 218
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "String.format",
+          "lineNumber": 218
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "sb.append",
+          "lineNumber": 219
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "String.format",
+          "lineNumber": 219
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "sb.toString().trim",
+          "lineNumber": 221
+        },
+        {
+          "caller": "buildDetailResult",
+          "callee": "sb.toString",
+          "lineNumber": 221
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "data.stream().collect",
+          "lineNumber": 225
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "data.stream",
+          "lineNumber": 225
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "Collectors.groupingBy",
+          "lineNumber": 225
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "LocalDate.parse(r.date).getDayOfMonth",
+          "lineNumber": 226
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "LocalDate.parse",
+          "lineNumber": 226
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "Collectors.summingDouble",
+          "lineNumber": 227
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "new StringBuilder",
+          "lineNumber": 228
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "sb.append(\"【\").append",
+          "lineNumber": 229
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "sb.append",
+          "lineNumber": 229
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "sb.append(\" \").append",
+          "lineNumber": 230
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "sb.append",
+          "lineNumber": 230
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "sb.append",
+          "lineNumber": 231
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "byWeek.isEmpty",
+          "lineNumber": 232
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "sb.append",
+          "lineNumber": 233
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "byWeek.entrySet().stream().sorted(Map.Entry.comparingByKey()).forEach",
+          "lineNumber": 235
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "byWeek.entrySet().stream().sorted",
+          "lineNumber": 235
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "byWeek.entrySet().stream",
+          "lineNumber": 235
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "byWeek.entrySet",
+          "lineNumber": 235
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "Map.Entry.comparingByKey",
+          "lineNumber": 235
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "sb.append",
+          "lineNumber": 236
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "String.format",
+          "lineNumber": 236
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "e.getKey",
+          "lineNumber": 236
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "e.getValue",
+          "lineNumber": 236
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "sb.toString().trim",
+          "lineNumber": 238
+        },
+        {
+          "caller": "buildTrendResult",
+          "callee": "sb.toString",
+          "lineNumber": 238
+        },
+        {
+          "caller": "filterData",
+          "callee": "data.stream()\r\n                .filter(r -> region == null || region.equals(r.region))\r\n                .filter(r -> product == null || product.equals(r.product))\r\n                .filter(r -> salesPerson == null || salesPerson.equals(r.salesPerson)).toList",
+          "lineNumber": 242
+        },
+        {
+          "caller": "filterData",
+          "callee": "data.stream()\r\n                .filter(r -> region == null || region.equals(r.region))\r\n                .filter(r -> product == null || product.equals(r.product)).filter",
+          "lineNumber": 242
+        },
+        {
+          "caller": "filterData",
+          "callee": "data.stream()\r\n                .filter(r -> region == null || region.equals(r.region)).filter",
+          "lineNumber": 242
+        },
+        {
+          "caller": "filterData",
+          "callee": "data.stream().filter",
+          "lineNumber": 242
+        },
+        {
+          "caller": "filterData",
+          "callee": "data.stream",
+          "lineNumber": 242
+        },
+        {
+          "caller": "filterData",
+          "callee": "region.equals",
+          "lineNumber": 243
+        },
+        {
+          "caller": "filterData",
+          "callee": "product.equals",
+          "lineNumber": 244
+        },
+        {
+          "caller": "filterData",
+          "callee": "salesPerson.equals",
+          "lineNumber": 245
+        },
+        {
+          "caller": "getOrGenerateData",
+          "callee": "LocalDate.now",
+          "lineNumber": 250
+        },
+        {
+          "caller": "getOrGenerateData",
+          "callee": "key.equals",
+          "lineNumber": 251
+        },
+        {
+          "caller": "getOrGenerateData",
+          "callee": "getDateRange",
+          "lineNumber": 252
+        },
+        {
+          "caller": "getOrGenerateData",
+          "callee": "generateMockData",
+          "lineNumber": 253
+        },
+        {
+          "caller": "getDateRange",
+          "callee": "LocalDate.now",
+          "lineNumber": 259
+        },
+        {
+          "caller": "getDateRange",
+          "callee": "now.minusMonths(1).withDayOfMonth",
+          "lineNumber": 261
+        },
+        {
+          "caller": "getDateRange",
+          "callee": "now.minusMonths",
+          "lineNumber": 261
+        },
+        {
+          "caller": "getDateRange",
+          "callee": "now.withDayOfMonth(1).minusDays",
+          "lineNumber": 261
+        },
+        {
+          "caller": "getDateRange",
+          "callee": "now.withDayOfMonth",
+          "lineNumber": 261
+        },
+        {
+          "caller": "getDateRange",
+          "callee": "now.getMonthValue",
+          "lineNumber": 263
+        },
+        {
+          "caller": "getDateRange",
+          "callee": "now.withMonth(q * 3 + 1).withDayOfMonth",
+          "lineNumber": 264
+        },
+        {
+          "caller": "getDateRange",
+          "callee": "now.withMonth",
+          "lineNumber": 264
+        },
+        {
+          "caller": "getDateRange",
+          "callee": "now.getMonthValue",
+          "lineNumber": 267
+        },
+        {
+          "caller": "getDateRange",
+          "callee": "now.withMonth(q * 3 + 1).withDayOfMonth(1).minusDays",
+          "lineNumber": 268
+        },
+        {
+          "caller": "getDateRange",
+          "callee": "now.withMonth(q * 3 + 1).withDayOfMonth",
+          "lineNumber": 268
+        },
+        {
+          "caller": "getDateRange",
+          "callee": "now.withMonth",
+          "lineNumber": 268
+        },
+        {
+          "caller": "getDateRange",
+          "callee": "end.withMonth(((q - 1 + 4) % 4) * 3 + 1).withDayOfMonth",
+          "lineNumber": 269
+        },
+        {
+          "caller": "getDateRange",
+          "callee": "end.withMonth",
+          "lineNumber": 269
+        },
+        {
+          "caller": "getDateRange",
+          "callee": "now.withDayOfYear",
+          "lineNumber": 272
+        },
+        {
+          "caller": "getDateRange",
+          "callee": "now.withDayOfMonth",
+          "lineNumber": 273
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "new ArrayList<>",
+          "lineNumber": 278
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "new Random",
+          "lineNumber": 279
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "start.toEpochDay",
+          "lineNumber": 279
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "end.toEpochDay",
+          "lineNumber": 280
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "start.toEpochDay",
+          "lineNumber": 280
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "start.plusDays",
+          "lineNumber": 282
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "date.getDayOfWeek().getValue",
+          "lineNumber": 283
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "date.getDayOfWeek",
+          "lineNumber": 283
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "random.nextInt",
+          "lineNumber": 284
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "new SalesRecord",
+          "lineNumber": 286
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "REGIONS.get",
+          "lineNumber": 287
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "random.nextInt",
+          "lineNumber": 287
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "REGIONS.size",
+          "lineNumber": 287
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "SALES_BY_REGION.get(record.region).get",
+          "lineNumber": 288
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "SALES_BY_REGION.get",
+          "lineNumber": 288
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "random.nextInt",
+          "lineNumber": 288
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "PRODUCTS.get",
+          "lineNumber": 289
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "random.nextInt",
+          "lineNumber": 289
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "PRODUCTS.size",
+          "lineNumber": 289
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "CUSTOMER_POOL.get",
+          "lineNumber": 290
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "random.nextInt",
+          "lineNumber": 290
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "CUSTOMER_POOL.size",
+          "lineNumber": 290
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "date.getDayOfMonth",
+          "lineNumber": 290
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "random.nextDouble",
+          "lineNumber": 292
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "random.nextDouble",
+          "lineNumber": 293
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "random.nextDouble",
+          "lineNumber": 294
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "Math.round",
+          "lineNumber": 296
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "date.format",
+          "lineNumber": 297
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "records.add",
+          "lineNumber": 298
+        },
+        {
+          "caller": "stringArg",
+          "callee": "args.get",
+          "lineNumber": 305
+        },
+        {
+          "caller": "stringArg",
+          "callee": "val.toString",
+          "lineNumber": 306
+        },
+        {
+          "caller": "intArg",
+          "callee": "args.get",
+          "lineNumber": 310
+        },
+        {
+          "caller": "intArg",
+          "callee": "n.intValue",
+          "lineNumber": 311
+        },
+        {
+          "caller": "successResult",
+          "callee": "CallToolResult.builder()\r\n                .content(List.of(new TextContent(text)))\r\n                .isError(false).build",
+          "lineNumber": 316
+        },
+        {
+          "caller": "successResult",
+          "callee": "CallToolResult.builder()\r\n                .content(List.of(new TextContent(text))).isError",
+          "lineNumber": 316
+        },
+        {
+          "caller": "successResult",
+          "callee": "CallToolResult.builder().content",
+          "lineNumber": 316
+        },
+        {
+          "caller": "successResult",
+          "callee": "CallToolResult.builder",
+          "lineNumber": 316
+        },
+        {
+          "caller": "successResult",
+          "callee": "List.of",
+          "lineNumber": 317
+        },
+        {
+          "caller": "successResult",
+          "callee": "new TextContent",
+          "lineNumber": 317
+        },
+        {
+          "caller": "errorResult",
+          "callee": "CallToolResult.builder()\r\n                .content(List.of(new TextContent(message)))\r\n                .isError(true).build",
+          "lineNumber": 323
+        },
+        {
+          "caller": "errorResult",
+          "callee": "CallToolResult.builder()\r\n                .content(List.of(new TextContent(message))).isError",
+          "lineNumber": 323
+        },
+        {
+          "caller": "errorResult",
+          "callee": "CallToolResult.builder().content",
+          "lineNumber": 323
+        },
+        {
+          "caller": "errorResult",
+          "callee": "CallToolResult.builder",
+          "lineNumber": 323
+        },
+        {
+          "caller": "errorResult",
+          "callee": "List.of",
+          "lineNumber": 324
+        },
+        {
+          "caller": "errorResult",
+          "callee": "new TextContent",
+          "lineNumber": 324
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 15,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/executor/TicketMcpExecutor.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 414,
+      "nonEmptyLines": 356,
+      "functions": [
+        {
+          "name": "ticketToolSpecification",
+          "startLine": 92,
+          "endLine": 96,
+          "params": []
+        },
+        {
+          "name": "buildTool",
+          "startLine": 98,
+          "endLine": 151,
+          "params": []
+        },
+        {
+          "name": "handleCall",
+          "startLine": 153,
+          "endLine": 185,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "buildSummaryResult",
+          "startLine": 187,
+          "endLine": 242,
+          "params": [
+            "data",
+            "region",
+            "status",
+            "priority",
+            "product"
+          ]
+        },
+        {
+          "name": "buildListResult",
+          "startLine": 244,
+          "endLine": 267,
+          "params": [
+            "data",
+            "limit"
+          ]
+        },
+        {
+          "name": "buildStatsResult",
+          "startLine": 269,
+          "endLine": 306,
+          "params": [
+            "data"
+          ]
+        },
+        {
+          "name": "filterData",
+          "startLine": 308,
+          "endLine": 317,
+          "params": [
+            "data",
+            "region",
+            "status",
+            "priority",
+            "product",
+            "customerName"
+          ]
+        },
+        {
+          "name": "getOrGenerateData",
+          "startLine": 319,
+          "endLine": 325,
+          "params": []
+        },
+        {
+          "name": "generateMockData",
+          "startLine": 327,
+          "endLine": 375,
+          "params": []
+        },
+        {
+          "name": "stringArg",
+          "startLine": 377,
+          "endLine": 380,
+          "params": [
+            "args",
+            "key"
+          ]
+        },
+        {
+          "name": "intArg",
+          "startLine": 382,
+          "endLine": 386,
+          "params": [
+            "args",
+            "key"
+          ]
+        },
+        {
+          "name": "successResult",
+          "startLine": 388,
+          "endLine": 393,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "errorResult",
+          "startLine": 395,
+          "endLine": 400,
+          "params": [
+            "message"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "TicketMcpExecutor",
+          "startLine": 39,
+          "endLine": 414,
+          "methods": [
+            "ticketToolSpecification",
+            "buildTool",
+            "handleCall",
+            "buildSummaryResult",
+            "buildListResult",
+            "buildStatsResult",
+            "filterData",
+            "getOrGenerateData",
+            "generateMockData",
+            "stringArg",
+            "intArg",
+            "successResult",
+            "errorResult"
+          ],
+          "properties": [
+            "TOOL_ID",
+            "REGIONS",
+            "PRODUCTS",
+            "STATUS_PENDING",
+            "STATUS_IN_PROGRESS",
+            "STATUS_RESOLVED",
+            "STATUS_CLOSED",
+            "STATUSES",
+            "PRIORITIES",
+            "CATEGORIES",
+            "CUSTOMERS_BY_REGION",
+            "ENGINEERS_BY_REGION",
+            "ISSUE_TEMPLATES",
+            "cachedData",
+            "cacheKey"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ticketToolSpecification",
+          "line": 92,
+          "isDefault": false
+        },
+        {
+          "name": "TicketMcpExecutor",
+          "line": 39,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ticketToolSpecification",
+          "callee": "new McpServerFeatures.SyncToolSpecification",
+          "lineNumber": 94
+        },
+        {
+          "caller": "ticketToolSpecification",
+          "callee": "buildTool",
+          "lineNumber": 94
+        },
+        {
+          "caller": "ticketToolSpecification",
+          "callee": "handleCall",
+          "lineNumber": 95
+        },
+        {
+          "caller": "buildTool",
+          "callee": "new LinkedHashMap<>",
+          "lineNumber": 99
+        },
+        {
+          "caller": "buildTool",
+          "callee": "properties.put",
+          "lineNumber": 101
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Map.of",
+          "lineNumber": 101
+        },
+        {
+          "caller": "buildTool",
+          "callee": "List.of",
+          "lineNumber": 104
+        },
+        {
+          "caller": "buildTool",
+          "callee": "properties.put",
+          "lineNumber": 107
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Map.of",
+          "lineNumber": 107
+        },
+        {
+          "caller": "buildTool",
+          "callee": "properties.put",
+          "lineNumber": 113
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Map.of",
+          "lineNumber": 113
+        },
+        {
+          "caller": "buildTool",
+          "callee": "List.of",
+          "lineNumber": 116
+        },
+        {
+          "caller": "buildTool",
+          "callee": "properties.put",
+          "lineNumber": 119
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Map.of",
+          "lineNumber": 119
+        },
+        {
+          "caller": "buildTool",
+          "callee": "List.of",
+          "lineNumber": 122
+        },
+        {
+          "caller": "buildTool",
+          "callee": "properties.put",
+          "lineNumber": 125
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Map.of",
+          "lineNumber": 125
+        },
+        {
+          "caller": "buildTool",
+          "callee": "properties.put",
+          "lineNumber": 130
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Map.of",
+          "lineNumber": 130
+        },
+        {
+          "caller": "buildTool",
+          "callee": "List.of",
+          "lineNumber": 133
+        },
+        {
+          "caller": "buildTool",
+          "callee": "properties.put",
+          "lineNumber": 137
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Map.of",
+          "lineNumber": 137
+        },
+        {
+          "caller": "buildTool",
+          "callee": "new JsonSchema",
+          "lineNumber": 143
+        },
+        {
+          "caller": "buildTool",
+          "callee": "List.of",
+          "lineNumber": 144
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Tool.builder()\r\n                .name(TOOL_ID)\r\n                .description(\"查询客户技术支持工单数据，支持按地区、状态、优先级、产品、客户等维度筛选，支持汇总概览、工单列表、统计分析等多种查询\")\r\n                .inputSchema(inputSchema).build",
+          "lineNumber": 146
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Tool.builder()\r\n                .name(TOOL_ID)\r\n                .description(\"查询客户技术支持工单数据，支持按地区、状态、优先级、产品、客户等维度筛选，支持汇总概览、工单列表、统计分析等多种查询\").inputSchema",
+          "lineNumber": 146
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Tool.builder()\r\n                .name(TOOL_ID).description",
+          "lineNumber": 146
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Tool.builder().name",
+          "lineNumber": 146
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Tool.builder",
+          "lineNumber": 146
+        },
+        {
+          "caller": "handleCall",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 154
+        },
+        {
+          "caller": "handleCall",
+          "callee": "request.arguments",
+          "lineNumber": 156
+        },
+        {
+          "caller": "handleCall",
+          "callee": "request.arguments",
+          "lineNumber": 156
+        },
+        {
+          "caller": "handleCall",
+          "callee": "Map.of",
+          "lineNumber": 156
+        },
+        {
+          "caller": "handleCall",
+          "callee": "stringArg",
+          "lineNumber": 157
+        },
+        {
+          "caller": "handleCall",
+          "callee": "stringArg",
+          "lineNumber": 158
+        },
+        {
+          "caller": "handleCall",
+          "callee": "stringArg",
+          "lineNumber": 159
+        },
+        {
+          "caller": "handleCall",
+          "callee": "stringArg",
+          "lineNumber": 160
+        },
+        {
+          "caller": "handleCall",
+          "callee": "stringArg",
+          "lineNumber": 161
+        },
+        {
+          "caller": "handleCall",
+          "callee": "stringArg",
+          "lineNumber": 162
+        },
+        {
+          "caller": "handleCall",
+          "callee": "intArg",
+          "lineNumber": 163
+        },
+        {
+          "caller": "handleCall",
+          "callee": "queryType.isBlank",
+          "lineNumber": 165
+        },
+        {
+          "caller": "handleCall",
+          "callee": "getOrGenerateData",
+          "lineNumber": 168
+        },
+        {
+          "caller": "handleCall",
+          "callee": "filterData",
+          "lineNumber": 169
+        },
+        {
+          "caller": "handleCall",
+          "callee": "buildListResult",
+          "lineNumber": 172
+        },
+        {
+          "caller": "handleCall",
+          "callee": "buildStatsResult",
+          "lineNumber": 173
+        },
+        {
+          "caller": "handleCall",
+          "callee": "buildSummaryResult",
+          "lineNumber": 174
+        },
+        {
+          "caller": "handleCall",
+          "callee": "log.info",
+          "lineNumber": 177
+        },
+        {
+          "caller": "handleCall",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 178
+        },
+        {
+          "caller": "handleCall",
+          "callee": "successResult",
+          "lineNumber": 179
+        },
+        {
+          "caller": "handleCall",
+          "callee": "log.error",
+          "lineNumber": 181
+        },
+        {
+          "caller": "handleCall",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 182
+        },
+        {
+          "caller": "handleCall",
+          "callee": "errorResult",
+          "lineNumber": 183
+        },
+        {
+          "caller": "handleCall",
+          "callee": "e.getMessage",
+          "lineNumber": 183
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.size",
+          "lineNumber": 189
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream().filter(t -> STATUS_PENDING.equals(t.status)).count",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream().filter",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "STATUS_PENDING.equals",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream().filter(t -> STATUS_IN_PROGRESS.equals(t.status)).count",
+          "lineNumber": 191
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream().filter",
+          "lineNumber": 191
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream",
+          "lineNumber": 191
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "STATUS_IN_PROGRESS.equals",
+          "lineNumber": 191
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream().filter(t -> STATUS_RESOLVED.equals(t.status)).count",
+          "lineNumber": 192
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream().filter",
+          "lineNumber": 192
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream",
+          "lineNumber": 192
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "STATUS_RESOLVED.equals",
+          "lineNumber": 192
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream().filter(t -> STATUS_CLOSED.equals(t.status)).count",
+          "lineNumber": 193
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream().filter",
+          "lineNumber": 193
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream",
+          "lineNumber": 193
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "STATUS_CLOSED.equals",
+          "lineNumber": 193
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream().filter(t -> \"紧急\".equals(t.priority)).count",
+          "lineNumber": 194
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream().filter",
+          "lineNumber": 194
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream",
+          "lineNumber": 194
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "\"紧急\".equals",
+          "lineNumber": 194
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream().filter(t -> \"高\".equals(t.priority)).count",
+          "lineNumber": 195
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream().filter",
+          "lineNumber": 195
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream",
+          "lineNumber": 195
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "\"高\".equals",
+          "lineNumber": 195
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "new StringBuilder",
+          "lineNumber": 197
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 198
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "new ArrayList<>",
+          "lineNumber": 200
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "filters.add",
+          "lineNumber": 201
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "filters.add",
+          "lineNumber": 202
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "filters.add",
+          "lineNumber": 203
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "filters.add",
+          "lineNumber": 204
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "filters.isEmpty",
+          "lineNumber": 205
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append(\"筛选条件: \").append(String.join(\"，\", filters)).append",
+          "lineNumber": 205
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append(\"筛选条件: \").append",
+          "lineNumber": 205
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 205
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "String.join",
+          "lineNumber": 205
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 207
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "String.format",
+          "lineNumber": 207
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 208
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 209
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "String.format",
+          "lineNumber": 209
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 210
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "String.format",
+          "lineNumber": 210
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 211
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "String.format",
+          "lineNumber": 211
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 212
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "String.format",
+          "lineNumber": 212
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 216
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "String.format",
+          "lineNumber": 216
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 220
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "String.format",
+          "lineNumber": 220
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream().collect",
+          "lineNumber": 223
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream",
+          "lineNumber": 223
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "Collectors.groupingBy",
+          "lineNumber": 224
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "Collectors.counting",
+          "lineNumber": 224
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byProduct.isEmpty",
+          "lineNumber": 225
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 226
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byProduct.entrySet().stream()\r\n                    .sorted((a, b) -> Long.compare(b.getValue(), a.getValue())).forEach",
+          "lineNumber": 227
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byProduct.entrySet().stream().sorted",
+          "lineNumber": 227
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byProduct.entrySet().stream",
+          "lineNumber": 227
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byProduct.entrySet",
+          "lineNumber": 227
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "Long.compare",
+          "lineNumber": 228
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "b.getValue",
+          "lineNumber": 228
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "a.getValue",
+          "lineNumber": 228
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 229
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "String.format",
+          "lineNumber": 229
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "e.getKey",
+          "lineNumber": 229
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "e.getValue",
+          "lineNumber": 229
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream().collect",
+          "lineNumber": 232
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "data.stream",
+          "lineNumber": 232
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "Collectors.groupingBy",
+          "lineNumber": 233
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "Collectors.counting",
+          "lineNumber": 233
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byRegion.isEmpty",
+          "lineNumber": 234
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 235
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byRegion.entrySet().stream()\r\n                    .sorted((a, b) -> Long.compare(b.getValue(), a.getValue())).forEach",
+          "lineNumber": 236
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byRegion.entrySet().stream().sorted",
+          "lineNumber": 236
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byRegion.entrySet().stream",
+          "lineNumber": 236
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "byRegion.entrySet",
+          "lineNumber": 236
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "Long.compare",
+          "lineNumber": 237
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "b.getValue",
+          "lineNumber": 237
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "a.getValue",
+          "lineNumber": 237
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.append",
+          "lineNumber": 238
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "String.format",
+          "lineNumber": 238
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "e.getKey",
+          "lineNumber": 238
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "e.getValue",
+          "lineNumber": 238
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.toString().trim",
+          "lineNumber": 241
+        },
+        {
+          "caller": "buildSummaryResult",
+          "callee": "sb.toString",
+          "lineNumber": 241
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "data.stream()\r\n                .sorted((a, b) -> {\r\n                    int pa = PRIORITIES.indexOf(a.priority);\r\n                    int pb = PRIORITIES.indexOf(b.priority);\r\n                    if (pa != pb) return Integer.compare(pa, pb);\r\n                    return b.createDate.compareTo(a.createDate);\r\n                })\r\n                .limit(limit).toList",
+          "lineNumber": 245
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "data.stream()\r\n                .sorted((a, b) -> {\r\n                    int pa = PRIORITIES.indexOf(a.priority);\r\n                    int pb = PRIORITIES.indexOf(b.priority);\r\n                    if (pa != pb) return Integer.compare(pa, pb);\r\n                    return b.createDate.compareTo(a.createDate);\r\n                }).limit",
+          "lineNumber": 245
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "data.stream().sorted",
+          "lineNumber": 245
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "data.stream",
+          "lineNumber": 245
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "PRIORITIES.indexOf",
+          "lineNumber": 247
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "PRIORITIES.indexOf",
+          "lineNumber": 248
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "Integer.compare",
+          "lineNumber": 249
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "b.createDate.compareTo",
+          "lineNumber": 250
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "new StringBuilder",
+          "lineNumber": 255
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "sb.append",
+          "lineNumber": 256
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "String.format",
+          "lineNumber": 256
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "data.size",
+          "lineNumber": 256
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "sorted.size",
+          "lineNumber": 256
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "sorted.size",
+          "lineNumber": 258
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "sorted.get",
+          "lineNumber": 259
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "sb.append",
+          "lineNumber": 260
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "String.format",
+          "lineNumber": 260
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "sb.append",
+          "lineNumber": 261
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "String.format",
+          "lineNumber": 261
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "sb.append",
+          "lineNumber": 262
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "String.format",
+          "lineNumber": 262
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "sb.append",
+          "lineNumber": 263
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "String.format",
+          "lineNumber": 263
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "sb.toString().trim",
+          "lineNumber": 266
+        },
+        {
+          "caller": "buildListResult",
+          "callee": "sb.toString",
+          "lineNumber": 266
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "new StringBuilder",
+          "lineNumber": 270
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "sb.append",
+          "lineNumber": 271
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "data.isEmpty",
+          "lineNumber": 273
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "sb.append",
+          "lineNumber": 274
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "sb.toString",
+          "lineNumber": 275
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "data.stream().collect",
+          "lineNumber": 278
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "data.stream",
+          "lineNumber": 278
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "Collectors.groupingBy",
+          "lineNumber": 279
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "Collectors.counting",
+          "lineNumber": 279
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "sb.append",
+          "lineNumber": 280
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "byCategory.entrySet().stream()\r\n                .sorted((a, b) -> Long.compare(b.getValue(), a.getValue())).forEach",
+          "lineNumber": 281
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "byCategory.entrySet().stream().sorted",
+          "lineNumber": 281
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "byCategory.entrySet().stream",
+          "lineNumber": 281
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "byCategory.entrySet",
+          "lineNumber": 281
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "Long.compare",
+          "lineNumber": 282
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "b.getValue",
+          "lineNumber": 282
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "a.getValue",
+          "lineNumber": 282
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "sb.append",
+          "lineNumber": 283
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "String.format",
+          "lineNumber": 283
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "e.getKey",
+          "lineNumber": 284
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "e.getValue",
+          "lineNumber": 284
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "e.getValue",
+          "lineNumber": 284
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "data.size",
+          "lineNumber": 284
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "sb.append",
+          "lineNumber": 286
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "data.stream().collect",
+          "lineNumber": 287
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "data.stream",
+          "lineNumber": 287
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "Collectors.groupingBy",
+          "lineNumber": 288
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "byProduct.forEach",
+          "lineNumber": 289
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "tickets.stream()\r\n                    .filter(t -> STATUS_RESOLVED.equals(t.status) || STATUS_CLOSED.equals(t.status)).count",
+          "lineNumber": 290
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "tickets.stream().filter",
+          "lineNumber": 290
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "tickets.stream",
+          "lineNumber": 290
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "STATUS_RESOLVED.equals",
+          "lineNumber": 291
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "STATUS_CLOSED.equals",
+          "lineNumber": 291
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "sb.append",
+          "lineNumber": 292
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "String.format",
+          "lineNumber": 292
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "tickets.size",
+          "lineNumber": 293
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "tickets.size",
+          "lineNumber": 293
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "sb.append",
+          "lineNumber": 296
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "data.stream()\r\n                .filter(t -> STATUS_PENDING.equals(t.status) || STATUS_IN_PROGRESS.equals(t.status)).collect",
+          "lineNumber": 297
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "data.stream().filter",
+          "lineNumber": 297
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "data.stream",
+          "lineNumber": 297
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "STATUS_PENDING.equals",
+          "lineNumber": 298
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "STATUS_IN_PROGRESS.equals",
+          "lineNumber": 298
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "Collectors.groupingBy",
+          "lineNumber": 299
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "Collectors.counting",
+          "lineNumber": 299
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "byEngineer.entrySet().stream()\r\n                .sorted((a, b) -> Long.compare(b.getValue(), a.getValue()))\r\n                .limit(5).forEach",
+          "lineNumber": 300
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "byEngineer.entrySet().stream()\r\n                .sorted((a, b) -> Long.compare(b.getValue(), a.getValue())).limit",
+          "lineNumber": 300
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "byEngineer.entrySet().stream().sorted",
+          "lineNumber": 300
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "byEngineer.entrySet().stream",
+          "lineNumber": 300
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "byEngineer.entrySet",
+          "lineNumber": 300
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "Long.compare",
+          "lineNumber": 301
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "b.getValue",
+          "lineNumber": 301
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "a.getValue",
+          "lineNumber": 301
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "sb.append",
+          "lineNumber": 303
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "String.format",
+          "lineNumber": 303
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "e.getKey",
+          "lineNumber": 303
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "e.getValue",
+          "lineNumber": 303
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "sb.toString().trim",
+          "lineNumber": 305
+        },
+        {
+          "caller": "buildStatsResult",
+          "callee": "sb.toString",
+          "lineNumber": 305
+        },
+        {
+          "caller": "filterData",
+          "callee": "data.stream()\r\n                .filter(t -> region == null || region.equals(t.region))\r\n                .filter(t -> status == null || status.equals(t.status))\r\n                .filter(t -> priority == null || priority.equals(t.priority))\r\n                .filter(t -> product == null || product.equals(t.product))\r\n                .filter(t -> customerName == null || t.customer.contains(customerName)).toList",
+          "lineNumber": 310
+        },
+        {
+          "caller": "filterData",
+          "callee": "data.stream()\r\n                .filter(t -> region == null || region.equals(t.region))\r\n                .filter(t -> status == null || status.equals(t.status))\r\n                .filter(t -> priority == null || priority.equals(t.priority))\r\n                .filter(t -> product == null || product.equals(t.product)).filter",
+          "lineNumber": 310
+        },
+        {
+          "caller": "filterData",
+          "callee": "data.stream()\r\n                .filter(t -> region == null || region.equals(t.region))\r\n                .filter(t -> status == null || status.equals(t.status))\r\n                .filter(t -> priority == null || priority.equals(t.priority)).filter",
+          "lineNumber": 310
+        },
+        {
+          "caller": "filterData",
+          "callee": "data.stream()\r\n                .filter(t -> region == null || region.equals(t.region))\r\n                .filter(t -> status == null || status.equals(t.status)).filter",
+          "lineNumber": 310
+        },
+        {
+          "caller": "filterData",
+          "callee": "data.stream()\r\n                .filter(t -> region == null || region.equals(t.region)).filter",
+          "lineNumber": 310
+        },
+        {
+          "caller": "filterData",
+          "callee": "data.stream().filter",
+          "lineNumber": 310
+        },
+        {
+          "caller": "filterData",
+          "callee": "data.stream",
+          "lineNumber": 310
+        },
+        {
+          "caller": "filterData",
+          "callee": "region.equals",
+          "lineNumber": 311
+        },
+        {
+          "caller": "filterData",
+          "callee": "status.equals",
+          "lineNumber": 312
+        },
+        {
+          "caller": "filterData",
+          "callee": "priority.equals",
+          "lineNumber": 313
+        },
+        {
+          "caller": "filterData",
+          "callee": "product.equals",
+          "lineNumber": 314
+        },
+        {
+          "caller": "filterData",
+          "callee": "t.customer.contains",
+          "lineNumber": 315
+        },
+        {
+          "caller": "getOrGenerateData",
+          "callee": "LocalDate.now",
+          "lineNumber": 320
+        },
+        {
+          "caller": "getOrGenerateData",
+          "callee": "key.equals",
+          "lineNumber": 321
+        },
+        {
+          "caller": "getOrGenerateData",
+          "callee": "generateMockData",
+          "lineNumber": 322
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "new ArrayList<>",
+          "lineNumber": 328
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "LocalDate.now",
+          "lineNumber": 329
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "new Random",
+          "lineNumber": 330
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "today.toEpochDay",
+          "lineNumber": 330
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "today.minusDays",
+          "lineNumber": 334
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "date.getDayOfWeek().getValue",
+          "lineNumber": 335
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "date.getDayOfWeek",
+          "lineNumber": 335
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "random.nextInt",
+          "lineNumber": 336
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "new TicketRecord",
+          "lineNumber": 339
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "String.format",
+          "lineNumber": 340
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "today.format",
+          "lineNumber": 340
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "DateTimeFormatter.ofPattern",
+          "lineNumber": 340
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "REGIONS.get",
+          "lineNumber": 341
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "random.nextInt",
+          "lineNumber": 341
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "REGIONS.size",
+          "lineNumber": 341
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "CUSTOMERS_BY_REGION.get(ticket.region).get",
+          "lineNumber": 342
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "CUSTOMERS_BY_REGION.get",
+          "lineNumber": 342
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "random.nextInt",
+          "lineNumber": 342
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "PRODUCTS.get",
+          "lineNumber": 343
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "random.nextInt",
+          "lineNumber": 343
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "PRODUCTS.size",
+          "lineNumber": 343
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "ISSUE_TEMPLATES.get",
+          "lineNumber": 344
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "random.nextInt",
+          "lineNumber": 344
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "ISSUE_TEMPLATES.size",
+          "lineNumber": 344
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "CATEGORIES.get",
+          "lineNumber": 345
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "random.nextInt",
+          "lineNumber": 345
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "CATEGORIES.size",
+          "lineNumber": 345
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "ENGINEERS_BY_REGION.get(ticket.region).get",
+          "lineNumber": 346
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "ENGINEERS_BY_REGION.get",
+          "lineNumber": 346
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "random.nextInt",
+          "lineNumber": 346
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "date.format",
+          "lineNumber": 347
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "random.nextInt",
+          "lineNumber": 349
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "random.nextInt",
+          "lineNumber": 356
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "random.nextInt",
+          "lineNumber": 358
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "random.nextInt",
+          "lineNumber": 364
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "records.add",
+          "lineNumber": 371
+        },
+        {
+          "caller": "stringArg",
+          "callee": "args.get",
+          "lineNumber": 378
+        },
+        {
+          "caller": "stringArg",
+          "callee": "val.toString",
+          "lineNumber": 379
+        },
+        {
+          "caller": "intArg",
+          "callee": "args.get",
+          "lineNumber": 383
+        },
+        {
+          "caller": "intArg",
+          "callee": "n.intValue",
+          "lineNumber": 384
+        },
+        {
+          "caller": "successResult",
+          "callee": "CallToolResult.builder()\r\n                .content(List.of(new TextContent(text)))\r\n                .isError(false).build",
+          "lineNumber": 389
+        },
+        {
+          "caller": "successResult",
+          "callee": "CallToolResult.builder()\r\n                .content(List.of(new TextContent(text))).isError",
+          "lineNumber": 389
+        },
+        {
+          "caller": "successResult",
+          "callee": "CallToolResult.builder().content",
+          "lineNumber": 389
+        },
+        {
+          "caller": "successResult",
+          "callee": "CallToolResult.builder",
+          "lineNumber": 389
+        },
+        {
+          "caller": "successResult",
+          "callee": "List.of",
+          "lineNumber": 390
+        },
+        {
+          "caller": "successResult",
+          "callee": "new TextContent",
+          "lineNumber": 390
+        },
+        {
+          "caller": "errorResult",
+          "callee": "CallToolResult.builder()\r\n                .content(List.of(new TextContent(message)))\r\n                .isError(true).build",
+          "lineNumber": 396
+        },
+        {
+          "caller": "errorResult",
+          "callee": "CallToolResult.builder()\r\n                .content(List.of(new TextContent(message))).isError",
+          "lineNumber": 396
+        },
+        {
+          "caller": "errorResult",
+          "callee": "CallToolResult.builder().content",
+          "lineNumber": 396
+        },
+        {
+          "caller": "errorResult",
+          "callee": "CallToolResult.builder",
+          "lineNumber": 396
+        },
+        {
+          "caller": "errorResult",
+          "callee": "List.of",
+          "lineNumber": 397
+        },
+        {
+          "caller": "errorResult",
+          "callee": "new TextContent",
+          "lineNumber": 397
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 13,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/executor/WeatherMcpExecutor.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 296,
+      "nonEmptyLines": 251,
+      "functions": [
+        {
+          "name": "weatherToolSpecification",
+          "startLine": 73,
+          "endLine": 77,
+          "params": []
+        },
+        {
+          "name": "buildTool",
+          "startLine": 79,
+          "endLine": 108,
+          "params": []
+        },
+        {
+          "name": "handleCall",
+          "startLine": 110,
+          "endLine": 142,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "buildCurrentResult",
+          "startLine": 144,
+          "endLine": 169,
+          "params": [
+            "city"
+          ]
+        },
+        {
+          "name": "buildForecastResult",
+          "startLine": 171,
+          "endLine": 198,
+          "params": [
+            "city",
+            "days"
+          ]
+        },
+        {
+          "name": "generateWeatherForDate",
+          "startLine": 200,
+          "endLine": 259,
+          "params": [
+            "city",
+            "date"
+          ]
+        },
+        {
+          "name": "stringArg",
+          "startLine": 261,
+          "endLine": 264,
+          "params": [
+            "args",
+            "key"
+          ]
+        },
+        {
+          "name": "intArg",
+          "startLine": 266,
+          "endLine": 270,
+          "params": [
+            "args",
+            "key"
+          ]
+        },
+        {
+          "name": "successResult",
+          "startLine": 272,
+          "endLine": 277,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "errorResult",
+          "startLine": 279,
+          "endLine": 284,
+          "params": [
+            "message"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "WeatherMcpExecutor",
+          "startLine": 37,
+          "endLine": 296,
+          "methods": [
+            "weatherToolSpecification",
+            "buildTool",
+            "handleCall",
+            "buildCurrentResult",
+            "buildForecastResult",
+            "generateWeatherForDate",
+            "stringArg",
+            "intArg",
+            "successResult",
+            "errorResult"
+          ],
+          "properties": [
+            "TOOL_ID",
+            "CITY_COORDINATES",
+            "WEATHER_TYPES_SPRING",
+            "WEATHER_TYPES_SUMMER",
+            "WEATHER_TYPES_AUTUMN",
+            "WEATHER_TYPES_WINTER"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "weatherToolSpecification",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "WeatherMcpExecutor",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "weatherToolSpecification",
+          "callee": "new McpServerFeatures.SyncToolSpecification",
+          "lineNumber": 75
+        },
+        {
+          "caller": "weatherToolSpecification",
+          "callee": "buildTool",
+          "lineNumber": 75
+        },
+        {
+          "caller": "weatherToolSpecification",
+          "callee": "handleCall",
+          "lineNumber": 76
+        },
+        {
+          "caller": "buildTool",
+          "callee": "new LinkedHashMap<>",
+          "lineNumber": 80
+        },
+        {
+          "caller": "buildTool",
+          "callee": "properties.put",
+          "lineNumber": 82
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Map.of",
+          "lineNumber": 82
+        },
+        {
+          "caller": "buildTool",
+          "callee": "properties.put",
+          "lineNumber": 87
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Map.of",
+          "lineNumber": 87
+        },
+        {
+          "caller": "buildTool",
+          "callee": "List.of",
+          "lineNumber": 90
+        },
+        {
+          "caller": "buildTool",
+          "callee": "properties.put",
+          "lineNumber": 94
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Map.of",
+          "lineNumber": 94
+        },
+        {
+          "caller": "buildTool",
+          "callee": "new JsonSchema",
+          "lineNumber": 100
+        },
+        {
+          "caller": "buildTool",
+          "callee": "List.of",
+          "lineNumber": 101
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Tool.builder()\r\n                .name(TOOL_ID)\r\n                .description(\"查询城市天气信息，支持查看当前实时天气和未来多天天气预报，包含温度、湿度、风力、天气状况等信息\")\r\n                .inputSchema(inputSchema).build",
+          "lineNumber": 103
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Tool.builder()\r\n                .name(TOOL_ID)\r\n                .description(\"查询城市天气信息，支持查看当前实时天气和未来多天天气预报，包含温度、湿度、风力、天气状况等信息\").inputSchema",
+          "lineNumber": 103
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Tool.builder()\r\n                .name(TOOL_ID).description",
+          "lineNumber": 103
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Tool.builder().name",
+          "lineNumber": 103
+        },
+        {
+          "caller": "buildTool",
+          "callee": "Tool.builder",
+          "lineNumber": 103
+        },
+        {
+          "caller": "handleCall",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 111
+        },
+        {
+          "caller": "handleCall",
+          "callee": "request.arguments",
+          "lineNumber": 113
+        },
+        {
+          "caller": "handleCall",
+          "callee": "request.arguments",
+          "lineNumber": 113
+        },
+        {
+          "caller": "handleCall",
+          "callee": "Map.of",
+          "lineNumber": 113
+        },
+        {
+          "caller": "handleCall",
+          "callee": "stringArg",
+          "lineNumber": 114
+        },
+        {
+          "caller": "handleCall",
+          "callee": "stringArg",
+          "lineNumber": 115
+        },
+        {
+          "caller": "handleCall",
+          "callee": "intArg",
+          "lineNumber": 116
+        },
+        {
+          "caller": "handleCall",
+          "callee": "city.isBlank",
+          "lineNumber": 118
+        },
+        {
+          "caller": "handleCall",
+          "callee": "errorResult",
+          "lineNumber": 119
+        },
+        {
+          "caller": "handleCall",
+          "callee": "queryType.isBlank",
+          "lineNumber": 121
+        },
+        {
+          "caller": "handleCall",
+          "callee": "CITY_COORDINATES.containsKey",
+          "lineNumber": 125
+        },
+        {
+          "caller": "handleCall",
+          "callee": "errorResult",
+          "lineNumber": 126
+        },
+        {
+          "caller": "handleCall",
+          "callee": "String.join",
+          "lineNumber": 126
+        },
+        {
+          "caller": "handleCall",
+          "callee": "CITY_COORDINATES.keySet",
+          "lineNumber": 126
+        },
+        {
+          "caller": "handleCall",
+          "callee": "buildForecastResult",
+          "lineNumber": 130
+        },
+        {
+          "caller": "handleCall",
+          "callee": "buildCurrentResult",
+          "lineNumber": 131
+        },
+        {
+          "caller": "handleCall",
+          "callee": "log.info",
+          "lineNumber": 134
+        },
+        {
+          "caller": "handleCall",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 135
+        },
+        {
+          "caller": "handleCall",
+          "callee": "successResult",
+          "lineNumber": 136
+        },
+        {
+          "caller": "handleCall",
+          "callee": "log.error",
+          "lineNumber": 138
+        },
+        {
+          "caller": "handleCall",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 139
+        },
+        {
+          "caller": "handleCall",
+          "callee": "errorResult",
+          "lineNumber": 140
+        },
+        {
+          "caller": "handleCall",
+          "callee": "e.getMessage",
+          "lineNumber": 140
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "LocalDate.now",
+          "lineNumber": 145
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "generateWeatherForDate",
+          "lineNumber": 146
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "new StringBuilder",
+          "lineNumber": 148
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "sb.append",
+          "lineNumber": 149
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "String.format",
+          "lineNumber": 149
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "sb.append",
+          "lineNumber": 150
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "String.format",
+          "lineNumber": 150
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "today.format",
+          "lineNumber": 150
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "DateTimeFormatter.ofPattern",
+          "lineNumber": 150
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "sb.append",
+          "lineNumber": 151
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "String.format",
+          "lineNumber": 151
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "sb.append",
+          "lineNumber": 152
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "String.format",
+          "lineNumber": 152
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "sb.append",
+          "lineNumber": 153
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "String.format",
+          "lineNumber": 153
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "sb.append",
+          "lineNumber": 154
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "String.format",
+          "lineNumber": 154
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "sb.append",
+          "lineNumber": 155
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "String.format",
+          "lineNumber": 155
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "sb.append",
+          "lineNumber": 156
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "String.format",
+          "lineNumber": 156
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "sb.append",
+          "lineNumber": 157
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "String.format",
+          "lineNumber": 157
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "sb.append",
+          "lineNumber": 158
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "String.format",
+          "lineNumber": 158
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "weather.weatherType.contains",
+          "lineNumber": 160
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "weather.weatherType.contains",
+          "lineNumber": 160
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "sb.append",
+          "lineNumber": 161
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "sb.append",
+          "lineNumber": 163
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "sb.append",
+          "lineNumber": 165
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "sb.toString().trim",
+          "lineNumber": 168
+        },
+        {
+          "caller": "buildCurrentResult",
+          "callee": "sb.toString",
+          "lineNumber": 168
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "LocalDate.now",
+          "lineNumber": 172
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "new StringBuilder",
+          "lineNumber": 174
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "sb.append",
+          "lineNumber": 175
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "String.format",
+          "lineNumber": 175
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "today.plusDays",
+          "lineNumber": 178
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "generateWeatherForDate",
+          "lineNumber": 179
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "date.format",
+          "lineNumber": 180
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "DateTimeFormatter.ofPattern",
+          "lineNumber": 180
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "sb.append",
+          "lineNumber": 182
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "String.format",
+          "lineNumber": 182
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "date.format",
+          "lineNumber": 182
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "DateTimeFormatter.ofPattern",
+          "lineNumber": 182
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "sb.append",
+          "lineNumber": 183
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "String.format",
+          "lineNumber": 183
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "sb.append",
+          "lineNumber": 184
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "String.format",
+          "lineNumber": 184
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "generateWeatherForDate",
+          "lineNumber": 187
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "generateWeatherForDate",
+          "lineNumber": 188
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "today.plusDays",
+          "lineNumber": 188
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "Math.abs",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "sb.append",
+          "lineNumber": 191
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "String.format",
+          "lineNumber": 191
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "sb.toString().trim",
+          "lineNumber": 197
+        },
+        {
+          "caller": "buildForecastResult",
+          "callee": "sb.toString",
+          "lineNumber": 197
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "CITY_COORDINATES.get",
+          "lineNumber": 201
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "date.toEpochDay",
+          "lineNumber": 203
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "city.hashCode",
+          "lineNumber": 203
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "new Random",
+          "lineNumber": 204
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "date.getMonthValue",
+          "lineNumber": 206
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "random.nextInt",
+          "lineNumber": 216
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "random.nextInt",
+          "lineNumber": 217
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "random.nextInt",
+          "lineNumber": 218
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "Math.max",
+          "lineNumber": 218
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "weatherTypes.get",
+          "lineNumber": 226
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "random.nextInt",
+          "lineNumber": 226
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "weatherTypes.size",
+          "lineNumber": 226
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "random.nextInt",
+          "lineNumber": 229
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "random.nextInt",
+          "lineNumber": 230
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "random.nextInt",
+          "lineNumber": 231
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "weatherType.contains",
+          "lineNumber": 233
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "weatherType.contains",
+          "lineNumber": 233
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "Math.min",
+          "lineNumber": 233
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "random.nextInt",
+          "lineNumber": 236
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "random.nextInt",
+          "lineNumber": 238
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "random.nextInt",
+          "lineNumber": 241
+        },
+        {
+          "caller": "generateWeatherForDate",
+          "callee": "new WeatherData",
+          "lineNumber": 249
+        },
+        {
+          "caller": "stringArg",
+          "callee": "args.get",
+          "lineNumber": 262
+        },
+        {
+          "caller": "stringArg",
+          "callee": "val.toString",
+          "lineNumber": 263
+        },
+        {
+          "caller": "intArg",
+          "callee": "args.get",
+          "lineNumber": 267
+        },
+        {
+          "caller": "intArg",
+          "callee": "n.intValue",
+          "lineNumber": 268
+        },
+        {
+          "caller": "successResult",
+          "callee": "CallToolResult.builder()\r\n                .content(List.of(new TextContent(text)))\r\n                .isError(false).build",
+          "lineNumber": 273
+        },
+        {
+          "caller": "successResult",
+          "callee": "CallToolResult.builder()\r\n                .content(List.of(new TextContent(text))).isError",
+          "lineNumber": 273
+        },
+        {
+          "caller": "successResult",
+          "callee": "CallToolResult.builder().content",
+          "lineNumber": 273
+        },
+        {
+          "caller": "successResult",
+          "callee": "CallToolResult.builder",
+          "lineNumber": 273
+        },
+        {
+          "caller": "successResult",
+          "callee": "List.of",
+          "lineNumber": 274
+        },
+        {
+          "caller": "successResult",
+          "callee": "new TextContent",
+          "lineNumber": 274
+        },
+        {
+          "caller": "errorResult",
+          "callee": "CallToolResult.builder()\r\n                .content(List.of(new TextContent(message)))\r\n                .isError(true).build",
+          "lineNumber": 280
+        },
+        {
+          "caller": "errorResult",
+          "callee": "CallToolResult.builder()\r\n                .content(List.of(new TextContent(message))).isError",
+          "lineNumber": 280
+        },
+        {
+          "caller": "errorResult",
+          "callee": "CallToolResult.builder().content",
+          "lineNumber": 280
+        },
+        {
+          "caller": "errorResult",
+          "callee": "CallToolResult.builder",
+          "lineNumber": 280
+        },
+        {
+          "caller": "errorResult",
+          "callee": "List.of",
+          "lineNumber": 281
+        },
+        {
+          "caller": "errorResult",
+          "callee": "new TextContent",
+          "lineNumber": 281
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/McpServerApplication.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 28,
+      "functions": [
+        {
+          "name": "main",
+          "startLine": 29,
+          "endLine": 31,
+          "params": [
+            "args"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "McpServerApplication",
+          "startLine": 26,
+          "endLine": 32,
+          "methods": [
+            "main"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "main",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "McpServerApplication",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "main",
+          "callee": "SpringApplication.run",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "mcp-server/src/main/resources/application.yml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "sections": [
+        {
+          "heading": "server",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "spring",
+          "level": 1,
+          "line": 4
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "mvnw",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 295,
+      "nonEmptyLines": 263,
+      "metrics": {}
+    },
+    {
+      "path": "resources/database/backups/init_data.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 0
+      }
+    },
+    {
+      "path": "resources/database/backups/schema_table.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 402,
+      "nonEmptyLines": 382,
+      "definitions": [
+        {
+          "name": "t_conversation",
+          "kind": "table",
+          "fields": [],
+          "startLine": 6,
+          "endLine": 11
+        },
+        {
+          "name": "t_conversation_summary",
+          "kind": "table",
+          "fields": [],
+          "startLine": 21,
+          "endLine": 26
+        },
+        {
+          "name": "t_ingestion_pipeline",
+          "kind": "table",
+          "fields": [],
+          "startLine": 35,
+          "endLine": 40
+        },
+        {
+          "name": "t_ingestion_pipeline_node",
+          "kind": "table",
+          "fields": [],
+          "startLine": 49,
+          "endLine": 54
+        },
+        {
+          "name": "t_ingestion_task",
+          "kind": "table",
+          "fields": [],
+          "startLine": 68,
+          "endLine": 73
+        },
+        {
+          "name": "t_ingestion_task_node",
+          "kind": "table",
+          "fields": [],
+          "startLine": 92,
+          "endLine": 97
+        },
+        {
+          "name": "t_intent_node",
+          "kind": "table",
+          "fields": [],
+          "startLine": 114,
+          "endLine": 119
+        },
+        {
+          "name": "t_knowledge_base",
+          "kind": "table",
+          "fields": [],
+          "startLine": 141,
+          "endLine": 146
+        },
+        {
+          "name": "t_knowledge_chunk",
+          "kind": "table",
+          "fields": [],
+          "startLine": 157,
+          "endLine": 162
+        },
+        {
+          "name": "t_knowledge_document",
+          "kind": "table",
+          "fields": [],
+          "startLine": 177,
+          "endLine": 182
+        },
+        {
+          "name": "t_knowledge_document_chunk_log",
+          "kind": "table",
+          "fields": [],
+          "startLine": 205,
+          "endLine": 210
+        },
+        {
+          "name": "t_knowledge_document_schedule",
+          "kind": "table",
+          "fields": [],
+          "startLine": 227,
+          "endLine": 232
+        },
+        {
+          "name": "t_knowledge_document_schedule_exec",
+          "kind": "table",
+          "fields": [],
+          "startLine": 252,
+          "endLine": 257
+        },
+        {
+          "name": "t_message",
+          "kind": "table",
+          "fields": [],
+          "startLine": 274,
+          "endLine": 279
+        },
+        {
+          "name": "t_message_feedback",
+          "kind": "table",
+          "fields": [],
+          "startLine": 291,
+          "endLine": 296
+        },
+        {
+          "name": "t_query_term_mapping",
+          "kind": "table",
+          "fields": [],
+          "startLine": 309,
+          "endLine": 314
+        },
+        {
+          "name": "t_rag_trace_node",
+          "kind": "table",
+          "fields": [],
+          "startLine": 329,
+          "endLine": 334
+        },
+        {
+          "name": "t_rag_trace_run",
+          "kind": "table",
+          "fields": [],
+          "startLine": 353,
+          "endLine": 358
+        },
+        {
+          "name": "t_sample_question",
+          "kind": "table",
+          "fields": [],
+          "startLine": 377,
+          "endLine": 382
+        },
+        {
+          "name": "t_user",
+          "kind": "table",
+          "fields": [],
+          "startLine": 390,
+          "endLine": 395
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 20
+      }
+    },
+    {
+      "path": "resources/docs/knowledge/biz/biz-ins/互联网保险系统数据安全规范.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 219,
+      "nonEmptyLines": 140,
+      "sections": [
+        {
+          "heading": "互联网保险系统数据安全规范",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. 总览与目标",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "2. 适用范围与对象",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "3. 领域图谱与数据对象",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "4. 安全架构与治理原则",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "5. 数据分类分级与标签化",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "6. 身份认证与账号生命周期",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "7. 访问控制：RBAC + ABAC + 风险分级",
+          "level": 2,
+          "line": 54
+        },
+        {
+          "heading": "8. 传输安全与接口防护",
+          "level": 2,
+          "line": 65
+        },
+        {
+          "heading": "9. 存储安全、密钥治理与脱敏展现",
+          "level": 2,
+          "line": 72
+        },
+        {
+          "heading": "10. 审计日志与行为分析（UEBA）",
+          "level": 2,
+          "line": 80
+        },
+        {
+          "heading": "11. 备份、容灾与可恢复性",
+          "level": 2,
+          "line": 87
+        },
+        {
+          "heading": "12. DLP（泄露防护）、导出治理与水印追踪",
+          "level": 2,
+          "line": 93
+        },
+        {
+          "heading": "13. 移动端、代理人门户与外部接入",
+          "level": 2,
+          "line": 101
+        },
+        {
+          "heading": "14. 模型与算法安全（定价/核保/反欺诈）",
+          "level": 2,
+          "line": 109
+        },
+        {
+          "heading": "15. 安全事件分级、响应与复盘",
+          "level": 2,
+          "line": 115
+        },
+        {
+          "heading": "16. 合规对齐与检查清单",
+          "level": 2,
+          "line": 127
+        },
+        {
+          "heading": "17. 风险场景与处置示例",
+          "level": 2,
+          "line": 134
+        },
+        {
+          "heading": "18. 落地路线与度量指标",
+          "level": 2,
+          "line": 163
+        },
+        {
+          "heading": "19. 附录（样例节选）",
+          "level": 2,
+          "line": 182
+        },
+        {
+          "heading": "结语",
+          "level": 2,
+          "line": 217
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 21
+      }
+    },
+    {
+      "path": "resources/docs/knowledge/biz/biz-oa/OA系统数据安全规范文档.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 314,
+      "nonEmptyLines": 197,
+      "sections": [
+        {
+          "heading": "OA 系统数据安全规范",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. 总览与目标",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "2. 适用范围与对象",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "3. 名词与数据对象",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "4. 架构与治理原则",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "5. 数据分类分级与标签化",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "6. 身份认证与账号生命周期",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "7. 访问控制（RBAC + ABAC）与细粒度授权",
+          "level": 2,
+          "line": 88
+        },
+        {
+          "heading": "8. 存储安全与密钥治理",
+          "level": 2,
+          "line": 109
+        },
+        {
+          "heading": "9. 传输安全与接口防护",
+          "level": 2,
+          "line": 129
+        },
+        {
+          "heading": "10. 日志审计与行为分析",
+          "level": 2,
+          "line": 145
+        },
+        {
+          "heading": "11. 备份、容灾与演练",
+          "level": 2,
+          "line": 166
+        },
+        {
+          "heading": "12. DLP、导出治理与水印追踪",
+          "level": 2,
+          "line": 181
+        },
+        {
+          "heading": "13. 移动端与零信任外部接入",
+          "level": 2,
+          "line": 199
+        },
+        {
+          "heading": "14. 安全事件分级、响应与复盘",
+          "level": 2,
+          "line": 213
+        },
+        {
+          "heading": "15. 合规与审计协同",
+          "level": 2,
+          "line": 229
+        },
+        {
+          "heading": "16. 风险场景与处置示例",
+          "level": 2,
+          "line": 235
+        },
+        {
+          "heading": "17. 落地路线图与度量指标",
+          "level": 2,
+          "line": 259
+        },
+        {
+          "heading": "18. 附录（样例）",
+          "level": 2,
+          "line": 278
+        },
+        {
+          "heading": "结语",
+          "level": 2,
+          "line": 312
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 20
+      }
+    },
+    {
+      "path": "resources/docs/knowledge/group/group-finance/开票信息.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 257,
+      "nonEmptyLines": 137,
+      "sections": [
+        {
+          "heading": "集团开票信息汇总",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "阿里巴巴健康集团开票信息：",
+          "level": 3,
+          "line": 5
+        },
+        {
+          "heading": "阿里巴巴健康科技开票信息：",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "腾讯网络开票信息：",
+          "level": 3,
+          "line": 40
+        },
+        {
+          "heading": "快手科技开票信息：",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "百度科技开票信息：",
+          "level": 3,
+          "line": 74
+        },
+        {
+          "heading": "快手西湖分公司开票信息：",
+          "level": 3,
+          "line": 91
+        },
+        {
+          "heading": "快手余杭分公司开票信息：",
+          "level": 3,
+          "line": 108
+        },
+        {
+          "heading": "字节跳动开票信息：",
+          "level": 3,
+          "line": 125
+        },
+        {
+          "heading": "美团开票信息：",
+          "level": 3,
+          "line": 142
+        },
+        {
+          "heading": "京东数据开票信息：",
+          "level": 3,
+          "line": 159
+        },
+        {
+          "heading": "拼多多开票信息：",
+          "level": 3,
+          "line": 176
+        },
+        {
+          "heading": "哔哩哔哩开票信息：",
+          "level": 3,
+          "line": 193
+        },
+        {
+          "heading": "滴滴出行开票信息：",
+          "level": 3,
+          "line": 210
+        },
+        {
+          "heading": "小红书开票信息：",
+          "level": 3,
+          "line": 227
+        },
+        {
+          "heading": "网易开票信息：",
+          "level": 3,
+          "line": 244
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": "resources/docs/knowledge/group/it/IT支持.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 760,
+      "nonEmptyLines": 545,
+      "sections": [
+        {
+          "heading": "阿里巴巴 IT 支持知识库示例资料",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "2. 账号与密码（电脑账号/统一身份/应用登录）",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "2.1 典型问题（按“症状”描述，利于精准提问）",
+          "level": 3,
+          "line": 12
+        },
+        {
+          "heading": "2.2 员工自助处理路径（更“像操作手册”的写法）",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "2.2.1 先判断问题范围",
+          "level": 4,
+          "line": 38
+        },
+        {
+          "heading": "2.2.2 密码重置（统一身份）",
+          "level": 4,
+          "line": 47
+        },
+        {
+          "heading": "2.2.3 处理“多端密码不一致 / 旧密码缓存”",
+          "level": 4,
+          "line": 57
+        },
+        {
+          "heading": "2.2.4 账号解锁",
+          "level": 4,
+          "line": 75
+        },
+        {
+          "heading": "2.2.5 入职初期“账号未激活/组织未同步”",
+          "level": 4,
+          "line": 84
+        },
+        {
+          "heading": "2.2.6 二次验证问题",
+          "level": 4,
+          "line": 92
+        },
+        {
+          "heading": "2.3 服务台排查清单",
+          "level": 3,
+          "line": 101
+        },
+        {
+          "heading": "2.4 工单模板",
+          "level": 3,
+          "line": 116
+        },
+        {
+          "heading": "3. VPN 支持（远程访问）",
+          "level": 2,
+          "line": 138
+        },
+        {
+          "heading": "3.1 使用前提（示例）",
+          "level": 3,
+          "line": 143
+        },
+        {
+          "heading": "3.2 Windows 连接 VPN（示例步骤）",
+          "level": 3,
+          "line": 157
+        },
+        {
+          "heading": "3.3 macOS 连接 VPN（示例步骤）",
+          "level": 3,
+          "line": 187
+        },
+        {
+          "heading": "3.4 典型问题与快速排查",
+          "level": 3,
+          "line": 215
+        },
+        {
+          "heading": "3.4.1 无法连接（超时/握手失败）",
+          "level": 4,
+          "line": 217
+        },
+        {
+          "heading": "3.4.2 连接成功但访问某内网系统失败",
+          "level": 4,
+          "line": 237
+        },
+        {
+          "heading": "3.4.3 连接后网络变慢",
+          "level": 4,
+          "line": 248
+        },
+        {
+          "heading": "3.5 VPN 合规提示（示例）",
+          "level": 3,
+          "line": 264
+        },
+        {
+          "heading": "4. 邮箱与企业协作",
+          "level": 2,
+          "line": 273
+        },
+        {
+          "heading": "4.1 常见请求类型",
+          "level": 3,
+          "line": 275
+        },
+        {
+          "heading": "4.2 邮件收发异常排查（员工视角）",
+          "level": 3,
+          "line": 283
+        },
+        {
+          "heading": "4.3 共享邮箱与群组权限（示例）",
+          "level": 3,
+          "line": 301
+        },
+        {
+          "heading": "4.4 钓鱼邮件与可疑附件处理",
+          "level": 3,
+          "line": 312
+        },
+        {
+          "heading": "5. 园区网络与 Wi-Fi",
+          "level": 2,
+          "line": 323
+        },
+        {
+          "heading": "5.1 典型故障画像",
+          "level": 3,
+          "line": 325
+        },
+        {
+          "heading": "5.2 员工自助排查（办公区）",
+          "level": 3,
+          "line": 332
+        },
+        {
+          "heading": "5.3 工单所需信息（便于网络定位）",
+          "level": 3,
+          "line": 340
+        },
+        {
+          "heading": "5.4 访客网络管理（示例）",
+          "level": 3,
+          "line": 349
+        },
+        {
+          "heading": "6. 打印机与扫描",
+          "level": 2,
+          "line": 357
+        },
+        {
+          "heading": "6.1 打印类型与使用建议（示例）",
+          "level": 3,
+          "line": 362
+        },
+        {
+          "heading": "6.2 Windows 添加/连接打印机",
+          "level": 3,
+          "line": 375
+        },
+        {
+          "heading": "6.2.1 方式 A：自动发现添加（同网段/园区常用）",
+          "level": 4,
+          "line": 379
+        },
+        {
+          "heading": "6.2.2 方式 B：通过打印门户/队列添加（示例）",
+          "level": 4,
+          "line": 394
+        },
+        {
+          "heading": "6.2.3 方式 C：手动添加 IP 打印（备用）",
+          "level": 4,
+          "line": 407
+        },
+        {
+          "heading": "6.3 macOS 添加/连接打印机",
+          "level": 3,
+          "line": 424
+        },
+        {
+          "heading": "6.3.1 方式 A：系统自动发现（Bonjour/AirPrint）",
+          "level": 4,
+          "line": 428
+        },
+        {
+          "heading": "6.3.2 方式 B：通过 IPP/LPD 手动添加（备用）",
+          "level": 4,
+          "line": 441
+        },
+        {
+          "heading": "6.3.3 方式 C：安全打印队列（示例）",
+          "level": 4,
+          "line": 454
+        },
+        {
+          "heading": "6.4 扫描功能（示例）",
+          "level": 3,
+          "line": 464
+        },
+        {
+          "heading": "6.5 常见问题与排查",
+          "level": 3,
+          "line": 483
+        },
+        {
+          "heading": "6.5.1 搜不到打印机",
+          "level": 4,
+          "line": 485
+        },
+        {
+          "heading": "6.5.2 打印排队不出纸",
+          "level": 4,
+          "line": 497
+        },
+        {
+          "heading": "6.5.3 卡纸/缺墨/耗材",
+          "level": 4,
+          "line": 507
+        },
+        {
+          "heading": "6.6 打印合规提示（示例）",
+          "level": 3,
+          "line": 514
+        },
+        {
+          "heading": "7. 办公电脑与终端设备",
+          "level": 2,
+          "line": 522
+        },
+        {
+          "heading": "7.1 常见硬件/系统问题",
+          "level": 3,
+          "line": 524
+        },
+        {
+          "heading": "7.2 服务策略与员工建议（示例）",
+          "level": 3,
+          "line": 531
+        },
+        {
+          "heading": "7.3 终端安全基线（示例语境）",
+          "level": 3,
+          "line": 537
+        },
+        {
+          "heading": "8. 办公软件（IM、文档、会议、浏览器组件）",
+          "level": 2,
+          "line": 545
+        },
+        {
+          "heading": "8.1 常见请求类型",
+          "level": 3,
+          "line": 547
+        },
+        {
+          "heading": "8.2 自助建议（员工端）",
+          "level": 3,
+          "line": 554
+        },
+        {
+          "heading": "8.3 会议问题快速排查",
+          "level": 3,
+          "line": 560
+        },
+        {
+          "heading": "9. 权限申请与系统访问（与 IT 交叉）",
+          "level": 2,
+          "line": 573
+        },
+        {
+          "heading": "9.1 典型场景",
+          "level": 3,
+          "line": 575
+        },
+        {
+          "heading": "9.2 申请规则（示例）",
+          "level": 3,
+          "line": 581
+        },
+        {
+          "heading": "10. 故障等级与升级机制（示例）",
+          "level": 2,
+          "line": 590
+        },
+        {
+          "heading": "10.1 等级参考",
+          "level": 3,
+          "line": 592
+        },
+        {
+          "heading": "10.2 升级路径（示例）",
+          "level": 3,
+          "line": 602
+        },
+        {
+          "heading": "11. FAQ（综合增强版）",
+          "level": 2,
+          "line": 610
+        },
+        {
+          "heading": "Q1：我在家连不上 VPN，但手机热点可以连，是我电脑问题吗？",
+          "level": 3,
+          "line": 612
+        },
+        {
+          "heading": "Q2：邮箱突然收不到外部客户邮件怎么办？",
+          "level": 3,
+          "line": 617
+        },
+        {
+          "heading": "Q3：打印机显示正常但不出纸？",
+          "level": 3,
+          "line": 622
+        },
+        {
+          "heading": "Q4：我忘记电脑密码，能让同事帮我重置吗？",
+          "level": 3,
+          "line": 627
+        },
+        {
+          "heading": "Q5：会议共享屏幕提示无权限？",
+          "level": 3,
+          "line": 632
+        },
+        {
+          "heading": "12. 示例工单（增强版｜更贴近真实描述）",
+          "level": 2,
+          "line": 639
+        },
+        {
+          "heading": "12.1 工单示例 A：VPN 连接失败（对照信息充分）",
+          "level": 3,
+          "line": 643
+        },
+        {
+          "heading": "12.2 工单示例 B：共享邮箱对外发送异常（带业务场景）",
+          "level": 3,
+          "line": 659
+        },
+        {
+          "heading": "12.3 工单示例 C：Wi-Fi 局部异常（影响范围清晰）",
+          "level": 3,
+          "line": 671
+        },
+        {
+          "heading": "12.4 工单示例 D：研发电脑无法开机（含交付压力）",
+          "level": 3,
+          "line": 684
+        },
+        {
+          "heading": "12.5 工单示例 E：办公软件插件冲突（可复现信息）",
+          "level": 3,
+          "line": 696
+        },
+        {
+          "heading": "13. 员工自助诊断清单（增强版）",
+          "level": 2,
+          "line": 710
+        },
+        {
+          "heading": "14. 术语表（增强版）",
+          "level": 2,
+          "line": 729
+        },
+        {
+          "heading": "15. 可用于 RAG 的“问答对”样例（增强版）",
+          "level": 2,
+          "line": 744
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 76
+      }
+    },
+    {
+      "path": "resources/format/copyright.txt",
+      "language": "txt",
+      "fileCategory": "docs",
+      "totalLines": 17,
+      "nonEmptyLines": 16,
+      "metrics": {}
+    },
+    {
+      "path": "scripts/sse_queue_test.sh",
+      "language": "shell",
+      "fileCategory": "script",
+      "totalLines": 297,
+      "nonEmptyLines": 253,
+      "functions": [
+        {
+          "name": "get_display_width",
+          "startLine": 37,
+          "endLine": 73,
+          "params": []
+        },
+        {
+          "name": "draw_config_box",
+          "startLine": 76,
+          "endLine": 130,
+          "params": []
+        },
+        {
+          "name": "draw_summary_box",
+          "startLine": 230,
+          "endLine": 275,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    }
+  ]
+}

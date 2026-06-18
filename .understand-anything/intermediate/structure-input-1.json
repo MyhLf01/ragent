@@ -1,0 +1,295 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingMode.java",
+      "language": "java",
+      "sizeLines": 152,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingOptions.java",
+      "language": "java",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategy.java",
+      "language": "java",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategyFactory.java",
+      "language": "java",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/FixedSizeOptions.java",
+      "language": "java",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/TextBoundaryOptions.java",
+      "language": "java",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java",
+      "language": "java",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/strategy/FixedSizeTextChunker.java",
+      "language": "java",
+      "sizeLines": 320,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/strategy/StructureAwareTextChunker.java",
+      "language": "java",
+      "sizeLines": 327,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/DocumentParser.java",
+      "language": "java",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/DocumentParserSelector.java",
+      "language": "java",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/ParseResult.java",
+      "language": "java",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/ParserType.java",
+      "language": "java",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/TikaDocumentParser.java",
+      "language": "java",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/IngestionTaskController.java",
+      "language": "java",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionTaskCreateRequest.java",
+      "language": "java",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionTaskNodeVO.java",
+      "language": "java",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionTaskVO.java",
+      "language": "java",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionTaskDO.java",
+      "language": "java",
+      "sizeLines": 134,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionTaskNodeDO.java",
+      "language": "java",
+      "sizeLines": 117,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionTaskMapper.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionTaskNodeMapper.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/DocumentSource.java",
+      "language": "java",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/IngestionContext.java",
+      "language": "java",
+      "sizeLines": 128,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/NodeLog.java",
+      "language": "java",
+      "sizeLines": 74,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/StructuredDocument.java",
+      "language": "java",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/ChunkEnrichType.java",
+      "language": "java",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/EnhanceType.java",
+      "language": "java",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionNodeType.java",
+      "language": "java",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionStatus.java",
+      "language": "java",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/SourceType.java",
+      "language": "java",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/NodeConfig.java",
+      "language": "java",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/IngestionResult.java",
+      "language": "java",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/NodeResult.java",
+      "language": "java",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/settings/ChunkerSettings.java",
+      "language": "java",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingMode.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingOptions.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategy.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategyFactory.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/FixedSizeOptions.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/TextBoundaryOptions.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/strategy/FixedSizeTextChunker.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingMode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingOptions.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategy.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/FixedSizeOptions.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/strategy/StructureAwareTextChunker.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingMode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingOptions.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingStrategy.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/TextBoundaryOptions.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/DocumentParser.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/DocumentParserSelector.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/ParseResult.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/ParserType.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/parser/TikaDocumentParser.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ServiceException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/IngestionTaskController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionTaskCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionTaskNodeVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionTaskVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/IngestionResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IngestionTaskService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionTaskCreateRequest.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/DocumentSourceRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceId.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionTaskNodeVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionTaskVO.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/NodeLog.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionTaskDO.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/handler/JsonbTypeHandler.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionTaskNodeDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionTaskMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionTaskDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionTaskNodeMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionTaskNodeDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/DocumentSource.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/SourceType.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/IngestionContext.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/VectorChunk.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionStatus.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceId.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/NodeLog.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/context/StructuredDocument.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/ChunkEnrichType.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/EnhanceType.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionNodeType.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionStatus.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/SourceType.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/NodeConfig.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/IngestionResult.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/enums/IngestionStatus.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/result/NodeResult.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/settings/ChunkerSettings.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkingMode.java"
+    ]
+  }
+}

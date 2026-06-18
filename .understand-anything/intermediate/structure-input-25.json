@@ -1,0 +1,42 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "resources/docs/knowledge/group/hr/人事制度.md",
+      "language": "markdown",
+      "sizeLines": 449,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/docs/knowledge/group/hr/公司规章制度.md",
+      "language": "markdown",
+      "sizeLines": 176,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/docs/knowledge/group/hr/员工培训.md",
+      "language": "markdown",
+      "sizeLines": 207,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/docs/knowledge/group/hr/招聘信息.md",
+      "language": "markdown",
+      "sizeLines": 311,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/docs/knowledge/group/hr/薪资与福利政策.md",
+      "language": "markdown",
+      "sizeLines": 215,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "resources/docs/knowledge/group/hr/人事制度.md": [],
+    "resources/docs/knowledge/group/hr/公司规章制度.md": [],
+    "resources/docs/knowledge/group/hr/员工培训.md": [],
+    "resources/docs/knowledge/group/hr/招聘信息.md": [],
+    "resources/docs/knowledge/group/hr/薪资与福利政策.md": []
+  }
+}

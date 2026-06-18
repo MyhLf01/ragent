@@ -1,0 +1,334 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkEmbeddingService.java",
+      "language": "java",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/aop/ChatQueueLimiter.java",
+      "language": "java",
+      "sizeLines": 532,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/aop/ChatRateLimit.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/GuidanceProperties.java",
+      "language": "java",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/SearchChannelProperties.java",
+      "language": "java",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/constant/RAGConstant.java",
+      "language": "java",
+      "sizeLines": 145,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/guidance/GuidanceDecision.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/guidance/IntentGuidanceService.java",
+      "language": "java",
+      "sizeLines": 275,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNode.java",
+      "language": "java",
+      "sizeLines": 156,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNodeRegistry.java",
+      "language": "java",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentResolver.java",
+      "language": "java",
+      "sizeLines": 223,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "language": "java",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScoreFilters.java",
+      "language": "java",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpParameterExtractor.java",
+      "language": "java",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpToolExecutor.java",
+      "language": "java",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpToolRegistry.java",
+      "language": "java",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/ConversationMemoryService.java",
+      "language": "java",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/ContextFormatter.java",
+      "language": "java",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/DefaultContextFormatter.java",
+      "language": "java",
+      "sizeLines": 253,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptContext.java",
+      "language": "java",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptPlan.java",
+      "language": "java",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/RAGPromptService.java",
+      "language": "java",
+      "sizeLines": 247,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/MilvusRetrieverService.java",
+      "language": "java",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/MultiChannelRetrievalEngine.java",
+      "language": "java",
+      "sizeLines": 219,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/PgRetrieverService.java",
+      "language": "java",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrievalEngine.java",
+      "language": "java",
+      "sizeLines": 290,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrieveRequest.java",
+      "language": "java",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrieverService.java",
+      "language": "java",
+      "sizeLines": 101,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/AbstractParallelRetriever.java",
+      "language": "java",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/IntentDirectedSearchChannel.java",
+      "language": "java",
+      "sizeLines": 161,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannel.java",
+      "language": "java",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannelResult.java",
+      "language": "java",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannelType.java",
+      "language": "java",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/core/chunk/ChunkEmbeddingService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingService.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/aop/ChatQueueLimiter.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/MemoryProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGRateLimitProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/ConversationMemoryService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/CompletionPayload.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/MessageDelta.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/MetaPayload.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/SSEEventType.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationGroupService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/SseEmitterSender.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/aop/ChatRateLimit.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/GuidanceProperties.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/SearchChannelProperties.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/constant/RAGConstant.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/guidance/GuidanceDecision.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/guidance/IntentGuidanceService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/GuidanceProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/constant/RAGConstant.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNodeRegistry.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScoreFilters.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptTemplateLoader.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/SubQuestionIntent.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentLevel.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNode.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentKind.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentLevel.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNodeRegistry.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentResolver.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/RewriteResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/IntentCandidate.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/IntentGroup.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/SubQuestionIntent.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScoreFilters.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpParameterExtractor.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpToolExecutor.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpToolRegistry.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/memory/ConversationMemoryService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/ContextFormatter.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/DefaultContextFormatter.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptContext.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptPlan.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/RAGPromptService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/MilvusRetrieverService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingService.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/MultiChannelRetrievalEngine.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannel.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannelResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchContext.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/postprocessor/SearchResultPostProcessor.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/SubQuestionIntent.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/PgRetrieverService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingService.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrievalEngine.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/SearchChannelProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScoreFilters.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpParameterExtractor.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpToolExecutor.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/mcp/McpToolRegistry.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/ContextFormatter.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptTemplateLoader.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/KbResult.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/RetrievalContext.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/SubQuestionIntent.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/trace/RagTraceNode.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrieveRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrieverService.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/AbstractParallelRetriever.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/IntentDirectedSearchChannel.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/SearchChannelProperties.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScore.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/NodeScoreFilters.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/strategy/IntentParallelRetriever.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/RetrieverService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannel.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannelResult.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchChannelType.java": []
+  }
+}

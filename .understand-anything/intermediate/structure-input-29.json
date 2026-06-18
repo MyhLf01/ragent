@@ -1,0 +1,182 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "frontend/@/components/ui/table.tsx",
+      "language": "typescript",
+      "sizeLines": 117,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/tabs.tsx",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/textarea.tsx",
+      "language": "typescript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/postcss.config.cjs",
+      "language": "javascript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/App.tsx",
+      "language": "typescript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/admin/CreateKnowledgeBaseDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 248,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/admin/SimpleLineChart.tsx",
+      "language": "typescript",
+      "sizeLines": 765,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/chat/ChatInput.tsx",
+      "language": "typescript",
+      "sizeLines": 160,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/chat/FeedbackButtons.tsx",
+      "language": "typescript",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/chat/MarkdownRenderer.tsx",
+      "language": "typescript",
+      "sizeLines": 201,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/chat/MessageItem.tsx",
+      "language": "typescript",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/chat/MessageList.tsx",
+      "language": "typescript",
+      "sizeLines": 233,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/chat/ThinkingIndicator.tsx",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/chat/WelcomeScreen.tsx",
+      "language": "typescript",
+      "sizeLines": 313,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/Avatar.tsx",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/ErrorBoundary.tsx",
+      "language": "typescript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/Loading.tsx",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/Toast.tsx",
+      "language": "typescript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/layout/Header.tsx",
+      "language": "typescript",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/layout/MainLayout.tsx",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/layout/Sidebar.tsx",
+      "language": "typescript",
+      "sizeLines": 480,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/session/SessionItem.tsx",
+      "language": "typescript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/session/SessionList.tsx",
+      "language": "typescript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/alert-dialog.tsx",
+      "language": "typescript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/badge.tsx",
+      "language": "typescript",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "frontend/@/components/ui/table.tsx": [],
+    "frontend/@/components/ui/tabs.tsx": [],
+    "frontend/@/components/ui/textarea.tsx": [],
+    "frontend/postcss.config.cjs": [],
+    "frontend/src/App.tsx": [],
+    "frontend/src/components/admin/CreateKnowledgeBaseDialog.tsx": [],
+    "frontend/src/components/admin/SimpleLineChart.tsx": [],
+    "frontend/src/components/chat/ChatInput.tsx": [],
+    "frontend/src/components/chat/FeedbackButtons.tsx": [],
+    "frontend/src/components/chat/MarkdownRenderer.tsx": [],
+    "frontend/src/components/chat/MessageItem.tsx": [],
+    "frontend/src/components/chat/MessageList.tsx": [],
+    "frontend/src/components/chat/ThinkingIndicator.tsx": [],
+    "frontend/src/components/chat/WelcomeScreen.tsx": [],
+    "frontend/src/components/common/Avatar.tsx": [],
+    "frontend/src/components/common/ErrorBoundary.tsx": [],
+    "frontend/src/components/common/Loading.tsx": [],
+    "frontend/src/components/common/Toast.tsx": [],
+    "frontend/src/components/layout/Header.tsx": [],
+    "frontend/src/components/layout/MainLayout.tsx": [],
+    "frontend/src/components/layout/Sidebar.tsx": [],
+    "frontend/src/components/session/SessionItem.tsx": [],
+    "frontend/src/components/session/SessionList.tsx": [],
+    "frontend/src/components/ui/alert-dialog.tsx": [],
+    "frontend/src/components/ui/badge.tsx": []
+  }
+}

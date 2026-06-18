@@ -1,0 +1,4614 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 14,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IntentTreeService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 57,
+      "classes": [
+        {
+          "name": "IntentTreeService",
+          "startLine": 28,
+          "endLine": 69,
+          "methods": [
+            "getFullTree",
+            "createNode",
+            "updateNode",
+            "deleteNode",
+            "batchEnableNodes",
+            "batchDisableNodes",
+            "batchDeleteNodes",
+            "initFromFactory"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IntentTreeService",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/impl/IntentTreeServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 463,
+      "nonEmptyLines": 419,
+      "functions": [
+        {
+          "name": "getFullTree",
+          "startLine": 66,
+          "endLine": 88,
+          "params": []
+        },
+        {
+          "name": "buildTree",
+          "startLine": 90,
+          "endLine": 104,
+          "params": [
+            "current",
+            "parentMap"
+          ]
+        },
+        {
+          "name": "createNode",
+          "startLine": 106,
+          "endLine": 162,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "updateNode",
+          "startLine": 164,
+          "endLine": 215,
+          "params": [
+            "id",
+            "req"
+          ]
+        },
+        {
+          "name": "deleteNode",
+          "startLine": 217,
+          "endLine": 223,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "batchEnableNodes",
+          "startLine": 225,
+          "endLine": 236,
+          "params": [
+            "ids"
+          ]
+        },
+        {
+          "name": "batchDisableNodes",
+          "startLine": 238,
+          "endLine": 267,
+          "params": [
+            "ids"
+          ]
+        },
+        {
+          "name": "batchDeleteNodes",
+          "startLine": 269,
+          "endLine": 305,
+          "params": [
+            "ids"
+          ]
+        },
+        {
+          "name": "initFromFactory",
+          "startLine": 307,
+          "endLine": 343,
+          "params": []
+        },
+        {
+          "name": "flatten",
+          "startLine": 348,
+          "endLine": 363,
+          "params": [
+            "roots"
+          ]
+        },
+        {
+          "name": "mapLevel",
+          "startLine": 368,
+          "endLine": 370,
+          "params": [
+            "level"
+          ]
+        },
+        {
+          "name": "mapKind",
+          "startLine": 375,
+          "endLine": 380,
+          "params": [
+            "kind"
+          ]
+        },
+        {
+          "name": "existsByIntentCode",
+          "startLine": 385,
+          "endLine": 391,
+          "params": [
+            "intentCode"
+          ]
+        },
+        {
+          "name": "normalizeTopK",
+          "startLine": 398,
+          "endLine": 406,
+          "params": [
+            "topK"
+          ]
+        },
+        {
+          "name": "listAndValidateTargetNodes",
+          "startLine": 408,
+          "endLine": 424,
+          "params": [
+            "ids"
+          ]
+        },
+        {
+          "name": "listActiveNodes",
+          "startLine": 426,
+          "endLine": 429,
+          "params": []
+        },
+        {
+          "name": "buildChildrenMap",
+          "startLine": 431,
+          "endLine": 436,
+          "params": [
+            "nodes"
+          ]
+        },
+        {
+          "name": "collectDescendants",
+          "startLine": 438,
+          "endLine": 455,
+          "params": [
+            "intentCode",
+            "childrenMap"
+          ]
+        },
+        {
+          "name": "summarizeNodeNames",
+          "startLine": 457,
+          "endLine": 462,
+          "params": [
+            "nodes"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "IntentTreeServiceImpl",
+          "startLine": 57,
+          "endLine": 463,
+          "methods": [
+            "getFullTree",
+            "buildTree",
+            "createNode",
+            "updateNode",
+            "deleteNode",
+            "batchEnableNodes",
+            "batchDisableNodes",
+            "batchDeleteNodes",
+            "initFromFactory",
+            "flatten",
+            "mapLevel",
+            "mapKind",
+            "existsByIntentCode",
+            "normalizeTopK",
+            "listAndValidateTargetNodes",
+            "listActiveNodes",
+            "buildChildrenMap",
+            "collectDescendants",
+            "summarizeNodeNames"
+          ],
+          "properties": [
+            "knowledgeBaseMapper",
+            "intentTreeCacheManager",
+            "GSON"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getFullTree",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "createNode",
+          "line": 106,
+          "isDefault": false
+        },
+        {
+          "name": "updateNode",
+          "line": 164,
+          "isDefault": false
+        },
+        {
+          "name": "deleteNode",
+          "line": 217,
+          "isDefault": false
+        },
+        {
+          "name": "batchEnableNodes",
+          "line": 225,
+          "isDefault": false
+        },
+        {
+          "name": "batchDisableNodes",
+          "line": 238,
+          "isDefault": false
+        },
+        {
+          "name": "batchDeleteNodes",
+          "line": 269,
+          "isDefault": false
+        },
+        {
+          "name": "initFromFactory",
+          "line": 307,
+          "isDefault": false
+        },
+        {
+          "name": "IntentTreeServiceImpl",
+          "line": 57,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getFullTree",
+          "callee": "this.list",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "new LambdaQueryWrapper<IntentNodeDO>()\r\n                .eq(IntentNodeDO::getDeleted, 0).orderByAsc",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "new LambdaQueryWrapper<IntentNodeDO>().eq",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "new LambdaQueryWrapper<IntentNodeDO>",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "list.stream().collect",
+          "lineNumber": 73
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "list.stream",
+          "lineNumber": 73
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "Collectors.groupingBy",
+          "lineNumber": 74
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "node.getParentCode",
+          "lineNumber": 75
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "parentMap.getOrDefault",
+          "lineNumber": 80
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "Collections.emptyList",
+          "lineNumber": 80
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "new ArrayList<>",
+          "lineNumber": 83
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "tree.add",
+          "lineNumber": 85
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "buildTree",
+          "lineNumber": 85
+        },
+        {
+          "caller": "buildTree",
+          "callee": "BeanUtil.toBean",
+          "lineNumber": 92
+        },
+        {
+          "caller": "buildTree",
+          "callee": "parentMap.getOrDefault",
+          "lineNumber": 93
+        },
+        {
+          "caller": "buildTree",
+          "callee": "current.getIntentCode",
+          "lineNumber": 93
+        },
+        {
+          "caller": "buildTree",
+          "callee": "Collections.emptyList",
+          "lineNumber": 93
+        },
+        {
+          "caller": "buildTree",
+          "callee": "CollectionUtils.isEmpty",
+          "lineNumber": 95
+        },
+        {
+          "caller": "buildTree",
+          "callee": "children.stream()\r\n                    .map(child -> buildTree(child, parentMap)).collect",
+          "lineNumber": 96
+        },
+        {
+          "caller": "buildTree",
+          "callee": "children.stream().map",
+          "lineNumber": 96
+        },
+        {
+          "caller": "buildTree",
+          "callee": "children.stream",
+          "lineNumber": 96
+        },
+        {
+          "caller": "buildTree",
+          "callee": "buildTree",
+          "lineNumber": 97
+        },
+        {
+          "caller": "buildTree",
+          "callee": "Collectors.toList",
+          "lineNumber": 98
+        },
+        {
+          "caller": "buildTree",
+          "callee": "result.setChildren",
+          "lineNumber": 100
+        },
+        {
+          "caller": "createNode",
+          "callee": "this.count",
+          "lineNumber": 109
+        },
+        {
+          "caller": "createNode",
+          "callee": "new LambdaQueryWrapper<IntentNodeDO>()\r\n                .eq(IntentNodeDO::getIntentCode, requestParam.getIntentCode()).eq",
+          "lineNumber": 109
+        },
+        {
+          "caller": "createNode",
+          "callee": "new LambdaQueryWrapper<IntentNodeDO>().eq",
+          "lineNumber": 109
+        },
+        {
+          "caller": "createNode",
+          "callee": "new LambdaQueryWrapper<IntentNodeDO>",
+          "lineNumber": 109
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getIntentCode",
+          "lineNumber": 110
+        },
+        {
+          "caller": "createNode",
+          "callee": "new ClientException",
+          "lineNumber": 113
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getIntentCode",
+          "lineNumber": 113
+        },
+        {
+          "caller": "createNode",
+          "callee": "Objects.equals",
+          "lineNumber": 116
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getLevel",
+          "lineNumber": 116
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentLevel.TOPIC.getCode",
+          "lineNumber": 116
+        },
+        {
+          "caller": "createNode",
+          "callee": "Objects.equals",
+          "lineNumber": 117
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getKind",
+          "lineNumber": 117
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentKind.KB.getCode",
+          "lineNumber": 117
+        },
+        {
+          "caller": "createNode",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 118
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getKbId",
+          "lineNumber": 118
+        },
+        {
+          "caller": "createNode",
+          "callee": "new ClientException",
+          "lineNumber": 119
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder()\r\n                .intentCode(requestParam.getIntentCode())\r\n                .kbId(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? requestParam.getKbId() : null\r\n                )\r\n                .collectionName(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? knowledgeBaseMapper.selectById(requestParam.getKbId()).getCollectionName() : null\r\n                )\r\n                .name(requestParam.getName())\r\n                .level(requestParam.getLevel())\r\n                .parentCode(requestParam.getParentCode())\r\n                .description(requestParam.getDescription())\r\n                .mcpToolId(requestParam.getMcpToolId())\r\n                .examples(\r\n                        requestParam.getExamples() == null ? null : GSON.toJson(requestParam.getExamples())\r\n                )\r\n                .topK(normalizeTopK(requestParam.getTopK()))\r\n                .kind(\r\n                        requestParam.getKind() == null ? 0 : requestParam.getKind()\r\n                )\r\n                .sortOrder(\r\n                        requestParam.getSortOrder() == null ? 0 : requestParam.getSortOrder()\r\n                )\r\n                .enabled(\r\n                        requestParam.getEnabled() == null ? 1 : requestParam.getEnabled()\r\n                )\r\n                .createBy(UserContext.getUsername())\r\n                .updateBy(UserContext.getUsername())\r\n                .paramPromptTemplate(requestParam.getParamPromptTemplate())\r\n                .promptSnippet(requestParam.getPromptSnippet())\r\n                .promptTemplate(requestParam.getPromptTemplate())\r\n                .deleted(0).build",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder()\r\n                .intentCode(requestParam.getIntentCode())\r\n                .kbId(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? requestParam.getKbId() : null\r\n                )\r\n                .collectionName(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? knowledgeBaseMapper.selectById(requestParam.getKbId()).getCollectionName() : null\r\n                )\r\n                .name(requestParam.getName())\r\n                .level(requestParam.getLevel())\r\n                .parentCode(requestParam.getParentCode())\r\n                .description(requestParam.getDescription())\r\n                .mcpToolId(requestParam.getMcpToolId())\r\n                .examples(\r\n                        requestParam.getExamples() == null ? null : GSON.toJson(requestParam.getExamples())\r\n                )\r\n                .topK(normalizeTopK(requestParam.getTopK()))\r\n                .kind(\r\n                        requestParam.getKind() == null ? 0 : requestParam.getKind()\r\n                )\r\n                .sortOrder(\r\n                        requestParam.getSortOrder() == null ? 0 : requestParam.getSortOrder()\r\n                )\r\n                .enabled(\r\n                        requestParam.getEnabled() == null ? 1 : requestParam.getEnabled()\r\n                )\r\n                .createBy(UserContext.getUsername())\r\n                .updateBy(UserContext.getUsername())\r\n                .paramPromptTemplate(requestParam.getParamPromptTemplate())\r\n                .promptSnippet(requestParam.getPromptSnippet())\r\n                .promptTemplate(requestParam.getPromptTemplate()).deleted",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder()\r\n                .intentCode(requestParam.getIntentCode())\r\n                .kbId(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? requestParam.getKbId() : null\r\n                )\r\n                .collectionName(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? knowledgeBaseMapper.selectById(requestParam.getKbId()).getCollectionName() : null\r\n                )\r\n                .name(requestParam.getName())\r\n                .level(requestParam.getLevel())\r\n                .parentCode(requestParam.getParentCode())\r\n                .description(requestParam.getDescription())\r\n                .mcpToolId(requestParam.getMcpToolId())\r\n                .examples(\r\n                        requestParam.getExamples() == null ? null : GSON.toJson(requestParam.getExamples())\r\n                )\r\n                .topK(normalizeTopK(requestParam.getTopK()))\r\n                .kind(\r\n                        requestParam.getKind() == null ? 0 : requestParam.getKind()\r\n                )\r\n                .sortOrder(\r\n                        requestParam.getSortOrder() == null ? 0 : requestParam.getSortOrder()\r\n                )\r\n                .enabled(\r\n                        requestParam.getEnabled() == null ? 1 : requestParam.getEnabled()\r\n                )\r\n                .createBy(UserContext.getUsername())\r\n                .updateBy(UserContext.getUsername())\r\n                .paramPromptTemplate(requestParam.getParamPromptTemplate())\r\n                .promptSnippet(requestParam.getPromptSnippet()).promptTemplate",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder()\r\n                .intentCode(requestParam.getIntentCode())\r\n                .kbId(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? requestParam.getKbId() : null\r\n                )\r\n                .collectionName(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? knowledgeBaseMapper.selectById(requestParam.getKbId()).getCollectionName() : null\r\n                )\r\n                .name(requestParam.getName())\r\n                .level(requestParam.getLevel())\r\n                .parentCode(requestParam.getParentCode())\r\n                .description(requestParam.getDescription())\r\n                .mcpToolId(requestParam.getMcpToolId())\r\n                .examples(\r\n                        requestParam.getExamples() == null ? null : GSON.toJson(requestParam.getExamples())\r\n                )\r\n                .topK(normalizeTopK(requestParam.getTopK()))\r\n                .kind(\r\n                        requestParam.getKind() == null ? 0 : requestParam.getKind()\r\n                )\r\n                .sortOrder(\r\n                        requestParam.getSortOrder() == null ? 0 : requestParam.getSortOrder()\r\n                )\r\n                .enabled(\r\n                        requestParam.getEnabled() == null ? 1 : requestParam.getEnabled()\r\n                )\r\n                .createBy(UserContext.getUsername())\r\n                .updateBy(UserContext.getUsername())\r\n                .paramPromptTemplate(requestParam.getParamPromptTemplate()).promptSnippet",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder()\r\n                .intentCode(requestParam.getIntentCode())\r\n                .kbId(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? requestParam.getKbId() : null\r\n                )\r\n                .collectionName(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? knowledgeBaseMapper.selectById(requestParam.getKbId()).getCollectionName() : null\r\n                )\r\n                .name(requestParam.getName())\r\n                .level(requestParam.getLevel())\r\n                .parentCode(requestParam.getParentCode())\r\n                .description(requestParam.getDescription())\r\n                .mcpToolId(requestParam.getMcpToolId())\r\n                .examples(\r\n                        requestParam.getExamples() == null ? null : GSON.toJson(requestParam.getExamples())\r\n                )\r\n                .topK(normalizeTopK(requestParam.getTopK()))\r\n                .kind(\r\n                        requestParam.getKind() == null ? 0 : requestParam.getKind()\r\n                )\r\n                .sortOrder(\r\n                        requestParam.getSortOrder() == null ? 0 : requestParam.getSortOrder()\r\n                )\r\n                .enabled(\r\n                        requestParam.getEnabled() == null ? 1 : requestParam.getEnabled()\r\n                )\r\n                .createBy(UserContext.getUsername())\r\n                .updateBy(UserContext.getUsername()).paramPromptTemplate",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder()\r\n                .intentCode(requestParam.getIntentCode())\r\n                .kbId(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? requestParam.getKbId() : null\r\n                )\r\n                .collectionName(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? knowledgeBaseMapper.selectById(requestParam.getKbId()).getCollectionName() : null\r\n                )\r\n                .name(requestParam.getName())\r\n                .level(requestParam.getLevel())\r\n                .parentCode(requestParam.getParentCode())\r\n                .description(requestParam.getDescription())\r\n                .mcpToolId(requestParam.getMcpToolId())\r\n                .examples(\r\n                        requestParam.getExamples() == null ? null : GSON.toJson(requestParam.getExamples())\r\n                )\r\n                .topK(normalizeTopK(requestParam.getTopK()))\r\n                .kind(\r\n                        requestParam.getKind() == null ? 0 : requestParam.getKind()\r\n                )\r\n                .sortOrder(\r\n                        requestParam.getSortOrder() == null ? 0 : requestParam.getSortOrder()\r\n                )\r\n                .enabled(\r\n                        requestParam.getEnabled() == null ? 1 : requestParam.getEnabled()\r\n                )\r\n                .createBy(UserContext.getUsername()).updateBy",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder()\r\n                .intentCode(requestParam.getIntentCode())\r\n                .kbId(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? requestParam.getKbId() : null\r\n                )\r\n                .collectionName(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? knowledgeBaseMapper.selectById(requestParam.getKbId()).getCollectionName() : null\r\n                )\r\n                .name(requestParam.getName())\r\n                .level(requestParam.getLevel())\r\n                .parentCode(requestParam.getParentCode())\r\n                .description(requestParam.getDescription())\r\n                .mcpToolId(requestParam.getMcpToolId())\r\n                .examples(\r\n                        requestParam.getExamples() == null ? null : GSON.toJson(requestParam.getExamples())\r\n                )\r\n                .topK(normalizeTopK(requestParam.getTopK()))\r\n                .kind(\r\n                        requestParam.getKind() == null ? 0 : requestParam.getKind()\r\n                )\r\n                .sortOrder(\r\n                        requestParam.getSortOrder() == null ? 0 : requestParam.getSortOrder()\r\n                )\r\n                .enabled(\r\n                        requestParam.getEnabled() == null ? 1 : requestParam.getEnabled()\r\n                ).createBy",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder()\r\n                .intentCode(requestParam.getIntentCode())\r\n                .kbId(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? requestParam.getKbId() : null\r\n                )\r\n                .collectionName(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? knowledgeBaseMapper.selectById(requestParam.getKbId()).getCollectionName() : null\r\n                )\r\n                .name(requestParam.getName())\r\n                .level(requestParam.getLevel())\r\n                .parentCode(requestParam.getParentCode())\r\n                .description(requestParam.getDescription())\r\n                .mcpToolId(requestParam.getMcpToolId())\r\n                .examples(\r\n                        requestParam.getExamples() == null ? null : GSON.toJson(requestParam.getExamples())\r\n                )\r\n                .topK(normalizeTopK(requestParam.getTopK()))\r\n                .kind(\r\n                        requestParam.getKind() == null ? 0 : requestParam.getKind()\r\n                )\r\n                .sortOrder(\r\n                        requestParam.getSortOrder() == null ? 0 : requestParam.getSortOrder()\r\n                ).enabled",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder()\r\n                .intentCode(requestParam.getIntentCode())\r\n                .kbId(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? requestParam.getKbId() : null\r\n                )\r\n                .collectionName(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? knowledgeBaseMapper.selectById(requestParam.getKbId()).getCollectionName() : null\r\n                )\r\n                .name(requestParam.getName())\r\n                .level(requestParam.getLevel())\r\n                .parentCode(requestParam.getParentCode())\r\n                .description(requestParam.getDescription())\r\n                .mcpToolId(requestParam.getMcpToolId())\r\n                .examples(\r\n                        requestParam.getExamples() == null ? null : GSON.toJson(requestParam.getExamples())\r\n                )\r\n                .topK(normalizeTopK(requestParam.getTopK()))\r\n                .kind(\r\n                        requestParam.getKind() == null ? 0 : requestParam.getKind()\r\n                ).sortOrder",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder()\r\n                .intentCode(requestParam.getIntentCode())\r\n                .kbId(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? requestParam.getKbId() : null\r\n                )\r\n                .collectionName(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? knowledgeBaseMapper.selectById(requestParam.getKbId()).getCollectionName() : null\r\n                )\r\n                .name(requestParam.getName())\r\n                .level(requestParam.getLevel())\r\n                .parentCode(requestParam.getParentCode())\r\n                .description(requestParam.getDescription())\r\n                .mcpToolId(requestParam.getMcpToolId())\r\n                .examples(\r\n                        requestParam.getExamples() == null ? null : GSON.toJson(requestParam.getExamples())\r\n                )\r\n                .topK(normalizeTopK(requestParam.getTopK())).kind",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder()\r\n                .intentCode(requestParam.getIntentCode())\r\n                .kbId(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? requestParam.getKbId() : null\r\n                )\r\n                .collectionName(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? knowledgeBaseMapper.selectById(requestParam.getKbId()).getCollectionName() : null\r\n                )\r\n                .name(requestParam.getName())\r\n                .level(requestParam.getLevel())\r\n                .parentCode(requestParam.getParentCode())\r\n                .description(requestParam.getDescription())\r\n                .mcpToolId(requestParam.getMcpToolId())\r\n                .examples(\r\n                        requestParam.getExamples() == null ? null : GSON.toJson(requestParam.getExamples())\r\n                ).topK",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder()\r\n                .intentCode(requestParam.getIntentCode())\r\n                .kbId(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? requestParam.getKbId() : null\r\n                )\r\n                .collectionName(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? knowledgeBaseMapper.selectById(requestParam.getKbId()).getCollectionName() : null\r\n                )\r\n                .name(requestParam.getName())\r\n                .level(requestParam.getLevel())\r\n                .parentCode(requestParam.getParentCode())\r\n                .description(requestParam.getDescription())\r\n                .mcpToolId(requestParam.getMcpToolId()).examples",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder()\r\n                .intentCode(requestParam.getIntentCode())\r\n                .kbId(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? requestParam.getKbId() : null\r\n                )\r\n                .collectionName(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? knowledgeBaseMapper.selectById(requestParam.getKbId()).getCollectionName() : null\r\n                )\r\n                .name(requestParam.getName())\r\n                .level(requestParam.getLevel())\r\n                .parentCode(requestParam.getParentCode())\r\n                .description(requestParam.getDescription()).mcpToolId",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder()\r\n                .intentCode(requestParam.getIntentCode())\r\n                .kbId(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? requestParam.getKbId() : null\r\n                )\r\n                .collectionName(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? knowledgeBaseMapper.selectById(requestParam.getKbId()).getCollectionName() : null\r\n                )\r\n                .name(requestParam.getName())\r\n                .level(requestParam.getLevel())\r\n                .parentCode(requestParam.getParentCode()).description",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder()\r\n                .intentCode(requestParam.getIntentCode())\r\n                .kbId(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? requestParam.getKbId() : null\r\n                )\r\n                .collectionName(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? knowledgeBaseMapper.selectById(requestParam.getKbId()).getCollectionName() : null\r\n                )\r\n                .name(requestParam.getName())\r\n                .level(requestParam.getLevel()).parentCode",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder()\r\n                .intentCode(requestParam.getIntentCode())\r\n                .kbId(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? requestParam.getKbId() : null\r\n                )\r\n                .collectionName(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? knowledgeBaseMapper.selectById(requestParam.getKbId()).getCollectionName() : null\r\n                )\r\n                .name(requestParam.getName()).level",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder()\r\n                .intentCode(requestParam.getIntentCode())\r\n                .kbId(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? requestParam.getKbId() : null\r\n                )\r\n                .collectionName(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? knowledgeBaseMapper.selectById(requestParam.getKbId()).getCollectionName() : null\r\n                ).name",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder()\r\n                .intentCode(requestParam.getIntentCode())\r\n                .kbId(\r\n                        StrUtil.isNotBlank(requestParam.getKbId()) ? requestParam.getKbId() : null\r\n                ).collectionName",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder()\r\n                .intentCode(requestParam.getIntentCode()).kbId",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder().intentCode",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "IntentNodeDO.builder",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getIntentCode",
+          "lineNumber": 123
+        },
+        {
+          "caller": "createNode",
+          "callee": "StrUtil.isNotBlank",
+          "lineNumber": 125
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getKbId",
+          "lineNumber": 125
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getKbId",
+          "lineNumber": 125
+        },
+        {
+          "caller": "createNode",
+          "callee": "StrUtil.isNotBlank",
+          "lineNumber": 128
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getKbId",
+          "lineNumber": 128
+        },
+        {
+          "caller": "createNode",
+          "callee": "knowledgeBaseMapper.selectById(requestParam.getKbId()).getCollectionName",
+          "lineNumber": 128
+        },
+        {
+          "caller": "createNode",
+          "callee": "knowledgeBaseMapper.selectById",
+          "lineNumber": 128
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getKbId",
+          "lineNumber": 128
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getName",
+          "lineNumber": 130
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getLevel",
+          "lineNumber": 131
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getParentCode",
+          "lineNumber": 132
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getDescription",
+          "lineNumber": 133
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getMcpToolId",
+          "lineNumber": 134
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getExamples",
+          "lineNumber": 136
+        },
+        {
+          "caller": "createNode",
+          "callee": "GSON.toJson",
+          "lineNumber": 136
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getExamples",
+          "lineNumber": 136
+        },
+        {
+          "caller": "createNode",
+          "callee": "normalizeTopK",
+          "lineNumber": 138
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getTopK",
+          "lineNumber": 138
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getKind",
+          "lineNumber": 140
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getKind",
+          "lineNumber": 140
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getSortOrder",
+          "lineNumber": 143
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getSortOrder",
+          "lineNumber": 143
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getEnabled",
+          "lineNumber": 146
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getEnabled",
+          "lineNumber": 146
+        },
+        {
+          "caller": "createNode",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 148
+        },
+        {
+          "caller": "createNode",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 149
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getParamPromptTemplate",
+          "lineNumber": 150
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getPromptSnippet",
+          "lineNumber": 151
+        },
+        {
+          "caller": "createNode",
+          "callee": "requestParam.getPromptTemplate",
+          "lineNumber": 152
+        },
+        {
+          "caller": "createNode",
+          "callee": "this.save",
+          "lineNumber": 156
+        },
+        {
+          "caller": "createNode",
+          "callee": "intentTreeCacheManager.clearIntentTreeCache",
+          "lineNumber": 159
+        },
+        {
+          "caller": "createNode",
+          "callee": "String.valueOf",
+          "lineNumber": 161
+        },
+        {
+          "caller": "createNode",
+          "callee": "node.getId",
+          "lineNumber": 161
+        },
+        {
+          "caller": "updateNode",
+          "callee": "this.getById",
+          "lineNumber": 166
+        },
+        {
+          "caller": "updateNode",
+          "callee": "Objects.equals",
+          "lineNumber": 167
+        },
+        {
+          "caller": "updateNode",
+          "callee": "node.getDeleted",
+          "lineNumber": 167
+        },
+        {
+          "caller": "updateNode",
+          "callee": "new ServiceException",
+          "lineNumber": 168
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getName",
+          "lineNumber": 171
+        },
+        {
+          "caller": "updateNode",
+          "callee": "node.setName",
+          "lineNumber": 172
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getName",
+          "lineNumber": 172
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getLevel",
+          "lineNumber": 174
+        },
+        {
+          "caller": "updateNode",
+          "callee": "node.setLevel",
+          "lineNumber": 175
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getLevel",
+          "lineNumber": 175
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getParentCode",
+          "lineNumber": 177
+        },
+        {
+          "caller": "updateNode",
+          "callee": "node.setParentCode",
+          "lineNumber": 178
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getParentCode",
+          "lineNumber": 178
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getDescription",
+          "lineNumber": 180
+        },
+        {
+          "caller": "updateNode",
+          "callee": "node.setDescription",
+          "lineNumber": 181
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getDescription",
+          "lineNumber": 181
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getExamples",
+          "lineNumber": 183
+        },
+        {
+          "caller": "updateNode",
+          "callee": "node.setExamples",
+          "lineNumber": 184
+        },
+        {
+          "caller": "updateNode",
+          "callee": "GSON.toJson",
+          "lineNumber": 184
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getExamples",
+          "lineNumber": 184
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getCollectionName",
+          "lineNumber": 186
+        },
+        {
+          "caller": "updateNode",
+          "callee": "node.setCollectionName",
+          "lineNumber": 187
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getCollectionName",
+          "lineNumber": 187
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getTopK",
+          "lineNumber": 189
+        },
+        {
+          "caller": "updateNode",
+          "callee": "node.setTopK",
+          "lineNumber": 190
+        },
+        {
+          "caller": "updateNode",
+          "callee": "normalizeTopK",
+          "lineNumber": 190
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getTopK",
+          "lineNumber": 190
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getKind",
+          "lineNumber": 192
+        },
+        {
+          "caller": "updateNode",
+          "callee": "node.setKind",
+          "lineNumber": 193
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getKind",
+          "lineNumber": 193
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getSortOrder",
+          "lineNumber": 195
+        },
+        {
+          "caller": "updateNode",
+          "callee": "node.setSortOrder",
+          "lineNumber": 196
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getSortOrder",
+          "lineNumber": 196
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getEnabled",
+          "lineNumber": 198
+        },
+        {
+          "caller": "updateNode",
+          "callee": "node.setEnabled",
+          "lineNumber": 199
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getEnabled",
+          "lineNumber": 199
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getPromptSnippet",
+          "lineNumber": 201
+        },
+        {
+          "caller": "updateNode",
+          "callee": "node.setPromptSnippet",
+          "lineNumber": 202
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getPromptSnippet",
+          "lineNumber": 202
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getPromptTemplate",
+          "lineNumber": 204
+        },
+        {
+          "caller": "updateNode",
+          "callee": "node.setPromptTemplate",
+          "lineNumber": 205
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getPromptTemplate",
+          "lineNumber": 205
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getParamPromptTemplate",
+          "lineNumber": 207
+        },
+        {
+          "caller": "updateNode",
+          "callee": "node.setParamPromptTemplate",
+          "lineNumber": 208
+        },
+        {
+          "caller": "updateNode",
+          "callee": "req.getParamPromptTemplate",
+          "lineNumber": 208
+        },
+        {
+          "caller": "updateNode",
+          "callee": "node.setUpdateBy",
+          "lineNumber": 210
+        },
+        {
+          "caller": "updateNode",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 210
+        },
+        {
+          "caller": "updateNode",
+          "callee": "this.updateById",
+          "lineNumber": 211
+        },
+        {
+          "caller": "updateNode",
+          "callee": "intentTreeCacheManager.clearIntentTreeCache",
+          "lineNumber": 214
+        },
+        {
+          "caller": "deleteNode",
+          "callee": "this.removeById",
+          "lineNumber": 219
+        },
+        {
+          "caller": "deleteNode",
+          "callee": "intentTreeCacheManager.clearIntentTreeCache",
+          "lineNumber": 222
+        },
+        {
+          "caller": "batchEnableNodes",
+          "callee": "listAndValidateTargetNodes",
+          "lineNumber": 228
+        },
+        {
+          "caller": "batchEnableNodes",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 229
+        },
+        {
+          "caller": "batchEnableNodes",
+          "callee": "targetNodes.forEach",
+          "lineNumber": 230
+        },
+        {
+          "caller": "batchEnableNodes",
+          "callee": "node.setEnabled",
+          "lineNumber": 231
+        },
+        {
+          "caller": "batchEnableNodes",
+          "callee": "node.setUpdateBy",
+          "lineNumber": 232
+        },
+        {
+          "caller": "batchEnableNodes",
+          "callee": "this.updateBatchById",
+          "lineNumber": 234
+        },
+        {
+          "caller": "batchEnableNodes",
+          "callee": "intentTreeCacheManager.clearIntentTreeCache",
+          "lineNumber": 235
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "listAndValidateTargetNodes",
+          "lineNumber": 241
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "listActiveNodes",
+          "lineNumber": 242
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "buildChildrenMap",
+          "lineNumber": 243
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "targetNodes.stream().map(IntentNodeDO::getId).collect",
+          "lineNumber": 244
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "targetNodes.stream().map",
+          "lineNumber": 244
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "targetNodes.stream",
+          "lineNumber": 244
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "Collectors.toSet",
+          "lineNumber": 244
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "collectDescendants",
+          "lineNumber": 246
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "targetNode.getIntentCode",
+          "lineNumber": 246
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "descendants.stream()\r\n                    .filter(item -> Objects.equals(item.getEnabled(), 1) && !targetIdSet.contains(item.getId())).collect",
+          "lineNumber": 247
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "descendants.stream().filter",
+          "lineNumber": 247
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "descendants.stream",
+          "lineNumber": 247
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "Objects.equals",
+          "lineNumber": 248
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "item.getEnabled",
+          "lineNumber": 248
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "targetIdSet.contains",
+          "lineNumber": 248
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "item.getId",
+          "lineNumber": 248
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "Collectors.toList",
+          "lineNumber": 249
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "CollectionUtils.isNotEmpty",
+          "lineNumber": 250
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "new ClientException",
+          "lineNumber": 251
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "String.format",
+          "lineNumber": 252
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "targetNode.getName",
+          "lineNumber": 254
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "summarizeNodeNames",
+          "lineNumber": 255
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 260
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "targetNodes.forEach",
+          "lineNumber": 261
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "node.setEnabled",
+          "lineNumber": 262
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "node.setUpdateBy",
+          "lineNumber": 263
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "this.updateBatchById",
+          "lineNumber": 265
+        },
+        {
+          "caller": "batchDisableNodes",
+          "callee": "intentTreeCacheManager.clearIntentTreeCache",
+          "lineNumber": 266
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "listAndValidateTargetNodes",
+          "lineNumber": 272
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "listActiveNodes",
+          "lineNumber": 273
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "buildChildrenMap",
+          "lineNumber": 274
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "targetNodes.stream().map(IntentNodeDO::getId).collect",
+          "lineNumber": 275
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "targetNodes.stream().map",
+          "lineNumber": 275
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "targetNodes.stream",
+          "lineNumber": 275
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "Collectors.toSet",
+          "lineNumber": 275
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "collectDescendants",
+          "lineNumber": 277
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "targetNode.getIntentCode",
+          "lineNumber": 277
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "descendants.stream()\r\n                    .filter(item -> !targetIdSet.contains(item.getId())).collect",
+          "lineNumber": 278
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "descendants.stream().filter",
+          "lineNumber": 278
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "descendants.stream",
+          "lineNumber": 278
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "targetIdSet.contains",
+          "lineNumber": 279
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "item.getId",
+          "lineNumber": 279
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "Collectors.toList",
+          "lineNumber": 280
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "CollectionUtils.isNotEmpty",
+          "lineNumber": 281
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "notSelectedDescendants.stream()\r\n                        .filter(item -> Objects.equals(item.getEnabled(), 1)).collect",
+          "lineNumber": 282
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "notSelectedDescendants.stream().filter",
+          "lineNumber": 282
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "notSelectedDescendants.stream",
+          "lineNumber": 282
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "Objects.equals",
+          "lineNumber": 283
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "item.getEnabled",
+          "lineNumber": 283
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "Collectors.toList",
+          "lineNumber": 284
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "CollectionUtils.isNotEmpty",
+          "lineNumber": 285
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "new ClientException",
+          "lineNumber": 286
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "String.format",
+          "lineNumber": 287
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "targetNode.getName",
+          "lineNumber": 289
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "summarizeNodeNames",
+          "lineNumber": 290
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "new ClientException",
+          "lineNumber": 294
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "String.format",
+          "lineNumber": 295
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "targetNode.getName",
+          "lineNumber": 297
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "summarizeNodeNames",
+          "lineNumber": 298
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "this.removeByIds",
+          "lineNumber": 303
+        },
+        {
+          "caller": "batchDeleteNodes",
+          "callee": "intentTreeCacheManager.clearIntentTreeCache",
+          "lineNumber": 304
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "IntentTreeFactory.buildIntentTree",
+          "lineNumber": 309
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "flatten",
+          "lineNumber": 310
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "existsByIntentCode",
+          "lineNumber": 317
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "node.getId",
+          "lineNumber": 317
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "IntentNodeCreateRequest.builder()\r\n                    .kbId(node.getKbId())\r\n                    .intentCode(node.getId())\r\n                    .name(node.getName())\r\n                    .level(mapLevel(node.getLevel()))\r\n                    .parentCode(node.getParentId())\r\n                    .description(node.getDescription())\r\n                    .examples(node.getExamples())\r\n                    .topK(normalizeTopK(node.getTopK()))\r\n                    .kind(mapKind(node.getKind()))\r\n                    .mcpToolId(node.getMcpToolId())\r\n                    .sortOrder(sort++)\r\n                    .enabled(1)\r\n                    .promptTemplate(node.getPromptTemplate())\r\n                    .promptSnippet(node.getPromptSnippet())\r\n                    .paramPromptTemplate(node.getParamPromptTemplate()).build",
+          "lineNumber": 321
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "IntentNodeCreateRequest.builder()\r\n                    .kbId(node.getKbId())\r\n                    .intentCode(node.getId())\r\n                    .name(node.getName())\r\n                    .level(mapLevel(node.getLevel()))\r\n                    .parentCode(node.getParentId())\r\n                    .description(node.getDescription())\r\n                    .examples(node.getExamples())\r\n                    .topK(normalizeTopK(node.getTopK()))\r\n                    .kind(mapKind(node.getKind()))\r\n                    .mcpToolId(node.getMcpToolId())\r\n                    .sortOrder(sort++)\r\n                    .enabled(1)\r\n                    .promptTemplate(node.getPromptTemplate())\r\n                    .promptSnippet(node.getPromptSnippet()).paramPromptTemplate",
+          "lineNumber": 321
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "IntentNodeCreateRequest.builder()\r\n                    .kbId(node.getKbId())\r\n                    .intentCode(node.getId())\r\n                    .name(node.getName())\r\n                    .level(mapLevel(node.getLevel()))\r\n                    .parentCode(node.getParentId())\r\n                    .description(node.getDescription())\r\n                    .examples(node.getExamples())\r\n                    .topK(normalizeTopK(node.getTopK()))\r\n                    .kind(mapKind(node.getKind()))\r\n                    .mcpToolId(node.getMcpToolId())\r\n                    .sortOrder(sort++)\r\n                    .enabled(1)\r\n                    .promptTemplate(node.getPromptTemplate()).promptSnippet",
+          "lineNumber": 321
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "IntentNodeCreateRequest.builder()\r\n                    .kbId(node.getKbId())\r\n                    .intentCode(node.getId())\r\n                    .name(node.getName())\r\n                    .level(mapLevel(node.getLevel()))\r\n                    .parentCode(node.getParentId())\r\n                    .description(node.getDescription())\r\n                    .examples(node.getExamples())\r\n                    .topK(normalizeTopK(node.getTopK()))\r\n                    .kind(mapKind(node.getKind()))\r\n                    .mcpToolId(node.getMcpToolId())\r\n                    .sortOrder(sort++)\r\n                    .enabled(1).promptTemplate",
+          "lineNumber": 321
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "IntentNodeCreateRequest.builder()\r\n                    .kbId(node.getKbId())\r\n                    .intentCode(node.getId())\r\n                    .name(node.getName())\r\n                    .level(mapLevel(node.getLevel()))\r\n                    .parentCode(node.getParentId())\r\n                    .description(node.getDescription())\r\n                    .examples(node.getExamples())\r\n                    .topK(normalizeTopK(node.getTopK()))\r\n                    .kind(mapKind(node.getKind()))\r\n                    .mcpToolId(node.getMcpToolId())\r\n                    .sortOrder(sort++).enabled",
+          "lineNumber": 321
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "IntentNodeCreateRequest.builder()\r\n                    .kbId(node.getKbId())\r\n                    .intentCode(node.getId())\r\n                    .name(node.getName())\r\n                    .level(mapLevel(node.getLevel()))\r\n                    .parentCode(node.getParentId())\r\n                    .description(node.getDescription())\r\n                    .examples(node.getExamples())\r\n                    .topK(normalizeTopK(node.getTopK()))\r\n                    .kind(mapKind(node.getKind()))\r\n                    .mcpToolId(node.getMcpToolId()).sortOrder",
+          "lineNumber": 321
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "IntentNodeCreateRequest.builder()\r\n                    .kbId(node.getKbId())\r\n                    .intentCode(node.getId())\r\n                    .name(node.getName())\r\n                    .level(mapLevel(node.getLevel()))\r\n                    .parentCode(node.getParentId())\r\n                    .description(node.getDescription())\r\n                    .examples(node.getExamples())\r\n                    .topK(normalizeTopK(node.getTopK()))\r\n                    .kind(mapKind(node.getKind())).mcpToolId",
+          "lineNumber": 321
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "IntentNodeCreateRequest.builder()\r\n                    .kbId(node.getKbId())\r\n                    .intentCode(node.getId())\r\n                    .name(node.getName())\r\n                    .level(mapLevel(node.getLevel()))\r\n                    .parentCode(node.getParentId())\r\n                    .description(node.getDescription())\r\n                    .examples(node.getExamples())\r\n                    .topK(normalizeTopK(node.getTopK())).kind",
+          "lineNumber": 321
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "IntentNodeCreateRequest.builder()\r\n                    .kbId(node.getKbId())\r\n                    .intentCode(node.getId())\r\n                    .name(node.getName())\r\n                    .level(mapLevel(node.getLevel()))\r\n                    .parentCode(node.getParentId())\r\n                    .description(node.getDescription())\r\n                    .examples(node.getExamples()).topK",
+          "lineNumber": 321
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "IntentNodeCreateRequest.builder()\r\n                    .kbId(node.getKbId())\r\n                    .intentCode(node.getId())\r\n                    .name(node.getName())\r\n                    .level(mapLevel(node.getLevel()))\r\n                    .parentCode(node.getParentId())\r\n                    .description(node.getDescription()).examples",
+          "lineNumber": 321
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "IntentNodeCreateRequest.builder()\r\n                    .kbId(node.getKbId())\r\n                    .intentCode(node.getId())\r\n                    .name(node.getName())\r\n                    .level(mapLevel(node.getLevel()))\r\n                    .parentCode(node.getParentId()).description",
+          "lineNumber": 321
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "IntentNodeCreateRequest.builder()\r\n                    .kbId(node.getKbId())\r\n                    .intentCode(node.getId())\r\n                    .name(node.getName())\r\n                    .level(mapLevel(node.getLevel())).parentCode",
+          "lineNumber": 321
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "IntentNodeCreateRequest.builder()\r\n                    .kbId(node.getKbId())\r\n                    .intentCode(node.getId())\r\n                    .name(node.getName()).level",
+          "lineNumber": 321
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "IntentNodeCreateRequest.builder()\r\n                    .kbId(node.getKbId())\r\n                    .intentCode(node.getId()).name",
+          "lineNumber": 321
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "IntentNodeCreateRequest.builder()\r\n                    .kbId(node.getKbId()).intentCode",
+          "lineNumber": 321
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "IntentNodeCreateRequest.builder().kbId",
+          "lineNumber": 321
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "IntentNodeCreateRequest.builder",
+          "lineNumber": 321
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "node.getKbId",
+          "lineNumber": 322
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "node.getId",
+          "lineNumber": 323
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "node.getName",
+          "lineNumber": 324
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "mapLevel",
+          "lineNumber": 325
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "node.getLevel",
+          "lineNumber": 325
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "node.getParentId",
+          "lineNumber": 326
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "node.getDescription",
+          "lineNumber": 327
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "node.getExamples",
+          "lineNumber": 328
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "normalizeTopK",
+          "lineNumber": 329
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "node.getTopK",
+          "lineNumber": 329
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "mapKind",
+          "lineNumber": 330
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "node.getKind",
+          "lineNumber": 330
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "node.getMcpToolId",
+          "lineNumber": 331
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "node.getPromptTemplate",
+          "lineNumber": 334
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "node.getPromptSnippet",
+          "lineNumber": 335
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "node.getParamPromptTemplate",
+          "lineNumber": 336
+        },
+        {
+          "caller": "initFromFactory",
+          "callee": "createNode",
+          "lineNumber": 338
+        },
+        {
+          "caller": "flatten",
+          "callee": "new ArrayList<>",
+          "lineNumber": 349
+        },
+        {
+          "caller": "flatten",
+          "callee": "new ArrayDeque<>",
+          "lineNumber": 350
+        },
+        {
+          "caller": "flatten",
+          "callee": "stack.isEmpty",
+          "lineNumber": 351
+        },
+        {
+          "caller": "flatten",
+          "callee": "stack.pop",
+          "lineNumber": 352
+        },
+        {
+          "caller": "flatten",
+          "callee": "result.add",
+          "lineNumber": 353
+        },
+        {
+          "caller": "flatten",
+          "callee": "n.getChildren",
+          "lineNumber": 354
+        },
+        {
+          "caller": "flatten",
+          "callee": "n.getChildren().isEmpty",
+          "lineNumber": 354
+        },
+        {
+          "caller": "flatten",
+          "callee": "n.getChildren",
+          "lineNumber": 354
+        },
+        {
+          "caller": "flatten",
+          "callee": "n.getChildren",
+          "lineNumber": 356
+        },
+        {
+          "caller": "flatten",
+          "callee": "children.size",
+          "lineNumber": 357
+        },
+        {
+          "caller": "flatten",
+          "callee": "stack.push",
+          "lineNumber": 358
+        },
+        {
+          "caller": "flatten",
+          "callee": "children.get",
+          "lineNumber": 358
+        },
+        {
+          "caller": "mapLevel",
+          "callee": "level.getCode",
+          "lineNumber": 369
+        },
+        {
+          "caller": "mapKind",
+          "callee": "kind.getCode",
+          "lineNumber": 379
+        },
+        {
+          "caller": "existsByIntentCode",
+          "callee": "baseMapper.selectCount",
+          "lineNumber": 386
+        },
+        {
+          "caller": "existsByIntentCode",
+          "callee": "new LambdaQueryWrapper<IntentNodeDO>()\r\n                        .eq(IntentNodeDO::getIntentCode, intentCode).eq",
+          "lineNumber": 387
+        },
+        {
+          "caller": "existsByIntentCode",
+          "callee": "new LambdaQueryWrapper<IntentNodeDO>().eq",
+          "lineNumber": 387
+        },
+        {
+          "caller": "existsByIntentCode",
+          "callee": "new LambdaQueryWrapper<IntentNodeDO>",
+          "lineNumber": 387
+        },
+        {
+          "caller": "normalizeTopK",
+          "callee": "new ClientException",
+          "lineNumber": 403
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "Assert.notEmpty",
+          "lineNumber": 409
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "new ClientException",
+          "lineNumber": 409
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "ids.stream().filter(Objects::nonNull).distinct().collect",
+          "lineNumber": 410
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "ids.stream().filter(Objects::nonNull).distinct",
+          "lineNumber": 410
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "ids.stream().filter",
+          "lineNumber": 410
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "ids.stream",
+          "lineNumber": 410
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "Collectors.toList",
+          "lineNumber": 410
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "Assert.notEmpty",
+          "lineNumber": 411
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "new ClientException",
+          "lineNumber": 411
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "this.list",
+          "lineNumber": 412
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "new LambdaQueryWrapper<IntentNodeDO>()\r\n                .in(IntentNodeDO::getId, normalizedIds).eq",
+          "lineNumber": 412
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "new LambdaQueryWrapper<IntentNodeDO>().in",
+          "lineNumber": 412
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "new LambdaQueryWrapper<IntentNodeDO>",
+          "lineNumber": 412
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "targetNodes.size",
+          "lineNumber": 415
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "normalizedIds.size",
+          "lineNumber": 415
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "targetNodes.stream().map(IntentNodeDO::getId).collect",
+          "lineNumber": 416
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "targetNodes.stream().map",
+          "lineNumber": 416
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "targetNodes.stream",
+          "lineNumber": 416
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "Collectors.toSet",
+          "lineNumber": 416
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "normalizedIds.stream()\r\n                    .filter(id -> !existingIds.contains(id))\r\n                    .limit(5).toList",
+          "lineNumber": 417
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "normalizedIds.stream()\r\n                    .filter(id -> !existingIds.contains(id)).limit",
+          "lineNumber": 417
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "normalizedIds.stream().filter",
+          "lineNumber": 417
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "normalizedIds.stream",
+          "lineNumber": 417
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "existingIds.contains",
+          "lineNumber": 418
+        },
+        {
+          "caller": "listAndValidateTargetNodes",
+          "callee": "new ClientException",
+          "lineNumber": 421
+        },
+        {
+          "caller": "listActiveNodes",
+          "callee": "this.list",
+          "lineNumber": 427
+        },
+        {
+          "caller": "listActiveNodes",
+          "callee": "new LambdaQueryWrapper<IntentNodeDO>().eq",
+          "lineNumber": 427
+        },
+        {
+          "caller": "listActiveNodes",
+          "callee": "new LambdaQueryWrapper<IntentNodeDO>",
+          "lineNumber": 427
+        },
+        {
+          "caller": "buildChildrenMap",
+          "callee": "nodes.stream().collect",
+          "lineNumber": 432
+        },
+        {
+          "caller": "buildChildrenMap",
+          "callee": "nodes.stream",
+          "lineNumber": 432
+        },
+        {
+          "caller": "buildChildrenMap",
+          "callee": "Collectors.groupingBy",
+          "lineNumber": 432
+        },
+        {
+          "caller": "buildChildrenMap",
+          "callee": "node.getParentCode",
+          "lineNumber": 433
+        },
+        {
+          "caller": "collectDescendants",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 439
+        },
+        {
+          "caller": "collectDescendants",
+          "callee": "Collections.emptyList",
+          "lineNumber": 440
+        },
+        {
+          "caller": "collectDescendants",
+          "callee": "new ArrayList<>",
+          "lineNumber": 442
+        },
+        {
+          "caller": "collectDescendants",
+          "callee": "new ArrayDeque<>",
+          "lineNumber": 443
+        },
+        {
+          "caller": "collectDescendants",
+          "callee": "childrenMap.getOrDefault",
+          "lineNumber": 444
+        },
+        {
+          "caller": "collectDescendants",
+          "callee": "Collections.emptyList",
+          "lineNumber": 444
+        },
+        {
+          "caller": "collectDescendants",
+          "callee": "stack.isEmpty",
+          "lineNumber": 446
+        },
+        {
+          "caller": "collectDescendants",
+          "callee": "stack.pop",
+          "lineNumber": 447
+        },
+        {
+          "caller": "collectDescendants",
+          "callee": "result.add",
+          "lineNumber": 448
+        },
+        {
+          "caller": "collectDescendants",
+          "callee": "childrenMap.getOrDefault",
+          "lineNumber": 449
+        },
+        {
+          "caller": "collectDescendants",
+          "callee": "current.getIntentCode",
+          "lineNumber": 449
+        },
+        {
+          "caller": "collectDescendants",
+          "callee": "Collections.emptyList",
+          "lineNumber": 449
+        },
+        {
+          "caller": "collectDescendants",
+          "callee": "children.size",
+          "lineNumber": 450
+        },
+        {
+          "caller": "collectDescendants",
+          "callee": "stack.push",
+          "lineNumber": 451
+        },
+        {
+          "caller": "collectDescendants",
+          "callee": "children.get",
+          "lineNumber": 451
+        },
+        {
+          "caller": "summarizeNodeNames",
+          "callee": "nodes.stream()\r\n                .limit(3)\r\n                .map(item -> StrUtil.blankToDefault(item.getName(), item.getIntentCode())).collect",
+          "lineNumber": 458
+        },
+        {
+          "caller": "summarizeNodeNames",
+          "callee": "nodes.stream()\r\n                .limit(3).map",
+          "lineNumber": 458
+        },
+        {
+          "caller": "summarizeNodeNames",
+          "callee": "nodes.stream().limit",
+          "lineNumber": 458
+        },
+        {
+          "caller": "summarizeNodeNames",
+          "callee": "nodes.stream",
+          "lineNumber": 458
+        },
+        {
+          "caller": "summarizeNodeNames",
+          "callee": "StrUtil.blankToDefault",
+          "lineNumber": 460
+        },
+        {
+          "caller": "summarizeNodeNames",
+          "callee": "item.getName",
+          "lineNumber": 460
+        },
+        {
+          "caller": "summarizeNodeNames",
+          "callee": "item.getIntentCode",
+          "lineNumber": 460
+        },
+        {
+          "caller": "summarizeNodeNames",
+          "callee": "Collectors.joining",
+          "lineNumber": 461
+        }
+      ],
+      "metrics": {
+        "importCount": 15,
+        "exportCount": 9,
+        "functionCount": 19,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/IntentTreeController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 103,
+      "nonEmptyLines": 91,
+      "functions": [
+        {
+          "name": "tree",
+          "startLine": 51,
+          "endLine": 54,
+          "params": []
+        },
+        {
+          "name": "createNode",
+          "startLine": 59,
+          "endLine": 62,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "updateNode",
+          "startLine": 67,
+          "endLine": 70,
+          "params": [
+            "id",
+            "requestParam"
+          ]
+        },
+        {
+          "name": "deleteNode",
+          "startLine": 75,
+          "endLine": 78,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "batchEnable",
+          "startLine": 83,
+          "endLine": 86,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "batchDisable",
+          "startLine": 91,
+          "endLine": 94,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "batchDelete",
+          "startLine": 99,
+          "endLine": 102,
+          "params": [
+            "requestParam"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "IntentTreeController",
+          "startLine": 42,
+          "endLine": 103,
+          "methods": [
+            "tree",
+            "createNode",
+            "updateNode",
+            "deleteNode",
+            "batchEnable",
+            "batchDisable",
+            "batchDelete"
+          ],
+          "properties": [
+            "intentTreeService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "tree",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "createNode",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "updateNode",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "deleteNode",
+          "line": 75,
+          "isDefault": false
+        },
+        {
+          "name": "batchEnable",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "batchDisable",
+          "line": 91,
+          "isDefault": false
+        },
+        {
+          "name": "batchDelete",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "IntentTreeController",
+          "line": 42,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "tree",
+          "callee": "Results.success",
+          "lineNumber": 53
+        },
+        {
+          "caller": "tree",
+          "callee": "intentTreeService.getFullTree",
+          "lineNumber": 53
+        },
+        {
+          "caller": "createNode",
+          "callee": "Results.success",
+          "lineNumber": 61
+        },
+        {
+          "caller": "createNode",
+          "callee": "intentTreeService.createNode",
+          "lineNumber": 61
+        },
+        {
+          "caller": "updateNode",
+          "callee": "intentTreeService.updateNode",
+          "lineNumber": 69
+        },
+        {
+          "caller": "deleteNode",
+          "callee": "intentTreeService.deleteNode",
+          "lineNumber": 77
+        },
+        {
+          "caller": "batchEnable",
+          "callee": "intentTreeService.batchEnableNodes",
+          "lineNumber": 85
+        },
+        {
+          "caller": "batchEnable",
+          "callee": "requestParam.getIds",
+          "lineNumber": 85
+        },
+        {
+          "caller": "batchDisable",
+          "callee": "intentTreeService.batchDisableNodes",
+          "lineNumber": 93
+        },
+        {
+          "caller": "batchDisable",
+          "callee": "requestParam.getIds",
+          "lineNumber": 93
+        },
+        {
+          "caller": "batchDelete",
+          "callee": "intentTreeService.batchDeleteNodes",
+          "lineNumber": 101
+        },
+        {
+          "caller": "batchDelete",
+          "callee": "requestParam.getIds",
+          "lineNumber": 101
+        }
+      ],
+      "metrics": {
+        "importCount": 7,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeBatchRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 32,
+      "classes": [
+        {
+          "name": "IntentNodeBatchRequest",
+          "startLine": 27,
+          "endLine": 37,
+          "methods": [],
+          "properties": [
+            "ids"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IntentNodeBatchRequest",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 55,
+      "classes": [
+        {
+          "name": "IntentNodeCreateRequest",
+          "startLine": 27,
+          "endLine": 63,
+          "methods": [],
+          "properties": [
+            "kbId",
+            "intentCode",
+            "name",
+            "level",
+            "parentCode",
+            "description",
+            "examples",
+            "mcpToolId",
+            "topK",
+            "kind",
+            "sortOrder",
+            "enabled",
+            "promptSnippet",
+            "promptTemplate",
+            "paramPromptTemplate"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IntentNodeCreateRequest",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeUpdateRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 46,
+      "nonEmptyLines": 41,
+      "classes": [
+        {
+          "name": "IntentNodeUpdateRequest",
+          "startLine": 27,
+          "endLine": 46,
+          "methods": [],
+          "properties": [
+            "name",
+            "level",
+            "parentCode",
+            "description",
+            "examples",
+            "collectionName",
+            "topK",
+            "kind",
+            "sortOrder",
+            "enabled",
+            "promptSnippet",
+            "promptTemplate",
+            "paramPromptTemplate"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IntentNodeUpdateRequest",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/IntentNodeTreeVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 67,
+      "nonEmptyLines": 57,
+      "classes": [
+        {
+          "name": "IntentNodeTreeVO",
+          "startLine": 27,
+          "endLine": 67,
+          "methods": [],
+          "properties": [
+            "id",
+            "intentCode",
+            "name",
+            "level",
+            "parentCode",
+            "description",
+            "examples",
+            "collectionName",
+            "topK",
+            "kind",
+            "sortOrder",
+            "enabled",
+            "mcpToolId",
+            "promptSnippet",
+            "promptTemplate",
+            "paramPromptTemplate",
+            "children"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IntentNodeTreeVO",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentTreeCacheManager.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 122,
+      "nonEmptyLines": 110,
+      "functions": [
+        {
+          "name": "getIntentTreeFromCache",
+          "startLine": 57,
+          "endLine": 74,
+          "params": []
+        },
+        {
+          "name": "saveIntentTreeToCache",
+          "startLine": 81,
+          "endLine": 94,
+          "params": [
+            "roots"
+          ]
+        },
+        {
+          "name": "clearIntentTreeCache",
+          "startLine": 100,
+          "endLine": 107,
+          "params": []
+        },
+        {
+          "name": "isCacheExists",
+          "startLine": 114,
+          "endLine": 121,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "IntentTreeCacheManager",
+          "startLine": 34,
+          "endLine": 122,
+          "methods": [
+            "getIntentTreeFromCache",
+            "saveIntentTreeToCache",
+            "clearIntentTreeCache",
+            "isCacheExists"
+          ],
+          "properties": [
+            "stringRedisTemplate",
+            "objectMapper",
+            "INTENT_TREE_CACHE_KEY",
+            "CACHE_EXPIRE_DAYS"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getIntentTreeFromCache",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "saveIntentTreeToCache",
+          "line": 81,
+          "isDefault": false
+        },
+        {
+          "name": "clearIntentTreeCache",
+          "line": 100,
+          "isDefault": false
+        },
+        {
+          "name": "isCacheExists",
+          "line": 114,
+          "isDefault": false
+        },
+        {
+          "name": "IntentTreeCacheManager",
+          "line": 34,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getIntentTreeFromCache",
+          "callee": "stringRedisTemplate.opsForValue().get",
+          "lineNumber": 59
+        },
+        {
+          "caller": "getIntentTreeFromCache",
+          "callee": "stringRedisTemplate.opsForValue",
+          "lineNumber": 59
+        },
+        {
+          "caller": "getIntentTreeFromCache",
+          "callee": "log.info",
+          "lineNumber": 61
+        },
+        {
+          "caller": "getIntentTreeFromCache",
+          "callee": "objectMapper.readValue",
+          "lineNumber": 65
+        },
+        {
+          "caller": "getIntentTreeFromCache",
+          "callee": "new TypeReference<>",
+          "lineNumber": 67
+        },
+        {
+          "caller": "getIntentTreeFromCache",
+          "callee": "log.error",
+          "lineNumber": 71
+        },
+        {
+          "caller": "saveIntentTreeToCache",
+          "callee": "objectMapper.writeValueAsString",
+          "lineNumber": 83
+        },
+        {
+          "caller": "saveIntentTreeToCache",
+          "callee": "stringRedisTemplate.opsForValue().set",
+          "lineNumber": 84
+        },
+        {
+          "caller": "saveIntentTreeToCache",
+          "callee": "stringRedisTemplate.opsForValue",
+          "lineNumber": 84
+        },
+        {
+          "caller": "saveIntentTreeToCache",
+          "callee": "log.info",
+          "lineNumber": 90
+        },
+        {
+          "caller": "saveIntentTreeToCache",
+          "callee": "roots.size",
+          "lineNumber": 90
+        },
+        {
+          "caller": "saveIntentTreeToCache",
+          "callee": "log.error",
+          "lineNumber": 92
+        },
+        {
+          "caller": "clearIntentTreeCache",
+          "callee": "stringRedisTemplate.delete",
+          "lineNumber": 101
+        },
+        {
+          "caller": "clearIntentTreeCache",
+          "callee": "log.info",
+          "lineNumber": 103
+        },
+        {
+          "caller": "clearIntentTreeCache",
+          "callee": "log.info",
+          "lineNumber": 105
+        },
+        {
+          "caller": "isCacheExists",
+          "callee": "stringRedisTemplate.hasKey",
+          "lineNumber": 116
+        },
+        {
+          "caller": "isCacheExists",
+          "callee": "log.error",
+          "lineNumber": 118
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentTreeFactory.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 457,
+      "nonEmptyLines": 384,
+      "functions": [
+        {
+          "name": "buildIntentTree",
+          "startLine": 37,
+          "endLine": 296,
+          "params": []
+        },
+        {
+          "name": "fillFullPath",
+          "startLine": 298,
+          "endLine": 309,
+          "params": [
+            "nodes",
+            "parent"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "IntentTreeFactory",
+          "startLine": 32,
+          "endLine": 457,
+          "methods": [
+            "buildIntentTree",
+            "fillFullPath"
+          ],
+          "properties": [
+            "KB_ID_GROUP",
+            "KB_ID_BIZ",
+            "FINANCE_INVOICE_PROMPT_TEMPLATE",
+            "MCP_SALES_DATA_PARAMETER_EXTRACT_PROMPT",
+            "MCP_SALES_DATA_PROMPT_TEMPLATE"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "buildIntentTree",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "MCP_SALES_DATA_PARAMETER_EXTRACT_PROMPT",
+          "line": 357,
+          "isDefault": false
+        },
+        {
+          "name": "IntentTreeFactory",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "buildIntentTree",
+          "callee": "new ArrayList<>",
+          "lineNumber": 38
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"集团信息化\")\r\n                .level(DOMAIN)\r\n                .kind(IntentKind.KB).build",
+          "lineNumber": 41
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"集团信息化\")\r\n                .level(DOMAIN).kind",
+          "lineNumber": 41
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"集团信息化\").level",
+          "lineNumber": 41
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group\")\r\n                .kbId(KB_ID_GROUP).name",
+          "lineNumber": 41
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group\").kbId",
+          "lineNumber": 41
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder().id",
+          "lineNumber": 41
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder",
+          "lineNumber": 41
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-hr\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"人事\")\r\n                .level(CATEGORY)\r\n                .parentId(group.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"招聘、入职、转正、离职、绩效、薪资、考勤、请假等人力资源相关问题\")\r\n                .examples(List.of(\r\n                        \"请假流程是怎样的？\",\r\n                        \"试用期多久转正？\",\r\n                        \"迟到会有什么处罚？\"\r\n                )).build",
+          "lineNumber": 49
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-hr\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"人事\")\r\n                .level(CATEGORY)\r\n                .parentId(group.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"招聘、入职、转正、离职、绩效、薪资、考勤、请假等人力资源相关问题\").examples",
+          "lineNumber": 49
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-hr\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"人事\")\r\n                .level(CATEGORY)\r\n                .parentId(group.getId())\r\n                .kind(IntentKind.KB).description",
+          "lineNumber": 49
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-hr\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"人事\")\r\n                .level(CATEGORY)\r\n                .parentId(group.getId()).kind",
+          "lineNumber": 49
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-hr\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"人事\")\r\n                .level(CATEGORY).parentId",
+          "lineNumber": 49
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-hr\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"人事\").level",
+          "lineNumber": 49
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-hr\")\r\n                .kbId(KB_ID_GROUP).name",
+          "lineNumber": 49
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-hr\").kbId",
+          "lineNumber": 49
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder().id",
+          "lineNumber": 49
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder",
+          "lineNumber": 49
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "group.getId",
+          "lineNumber": 54
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 57
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-it\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"IT支持\")\r\n                .level(CATEGORY)\r\n                .parentId(group.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"VPN、邮箱、打印机、网络、电脑账号密码、办公软件等 IT 支持相关问题\")\r\n                .examples(List.of(\r\n                        \"电脑打印机怎么连？\",\r\n                        \"公司 VPN 连不上怎么办？\",\r\n                        \"邮箱密码忘了怎么重置？\"\r\n                )).build",
+          "lineNumber": 64
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-it\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"IT支持\")\r\n                .level(CATEGORY)\r\n                .parentId(group.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"VPN、邮箱、打印机、网络、电脑账号密码、办公软件等 IT 支持相关问题\").examples",
+          "lineNumber": 64
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-it\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"IT支持\")\r\n                .level(CATEGORY)\r\n                .parentId(group.getId())\r\n                .kind(IntentKind.KB).description",
+          "lineNumber": 64
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-it\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"IT支持\")\r\n                .level(CATEGORY)\r\n                .parentId(group.getId()).kind",
+          "lineNumber": 64
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-it\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"IT支持\")\r\n                .level(CATEGORY).parentId",
+          "lineNumber": 64
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-it\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"IT支持\").level",
+          "lineNumber": 64
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-it\")\r\n                .kbId(KB_ID_GROUP).name",
+          "lineNumber": 64
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-it\").kbId",
+          "lineNumber": 64
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder().id",
+          "lineNumber": 64
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder",
+          "lineNumber": 64
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "group.getId",
+          "lineNumber": 69
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 72
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-finance\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"财务\")\r\n                .level(CATEGORY)\r\n                .parentId(group.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"报销、付款、成本中心、预算等财务相关问题\")\r\n                .examples(List.of(\r\n                        \"差旅报销需要哪些资料？\"\r\n                )).build",
+          "lineNumber": 79
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-finance\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"财务\")\r\n                .level(CATEGORY)\r\n                .parentId(group.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"报销、付款、成本中心、预算等财务相关问题\").examples",
+          "lineNumber": 79
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-finance\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"财务\")\r\n                .level(CATEGORY)\r\n                .parentId(group.getId())\r\n                .kind(IntentKind.KB).description",
+          "lineNumber": 79
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-finance\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"财务\")\r\n                .level(CATEGORY)\r\n                .parentId(group.getId()).kind",
+          "lineNumber": 79
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-finance\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"财务\")\r\n                .level(CATEGORY).parentId",
+          "lineNumber": 79
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-finance\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"财务\").level",
+          "lineNumber": 79
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-finance\")\r\n                .kbId(KB_ID_GROUP).name",
+          "lineNumber": 79
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-finance\").kbId",
+          "lineNumber": 79
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder().id",
+          "lineNumber": 79
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder",
+          "lineNumber": 79
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "group.getId",
+          "lineNumber": 84
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 87
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-finance-invoice\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"发票相关\")\r\n                .level(TOPIC)\r\n                .parentId(finance.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"获取公司发票抬头相关信息\")\r\n                .examples(List.of(\r\n                        \"发票抬头有哪些？\"\r\n                ))\r\n                .promptTemplate(FINANCE_INVOICE_PROMPT_TEMPLATE).build",
+          "lineNumber": 92
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-finance-invoice\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"发票相关\")\r\n                .level(TOPIC)\r\n                .parentId(finance.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"获取公司发票抬头相关信息\")\r\n                .examples(List.of(\r\n                        \"发票抬头有哪些？\"\r\n                )).promptTemplate",
+          "lineNumber": 92
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-finance-invoice\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"发票相关\")\r\n                .level(TOPIC)\r\n                .parentId(finance.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"获取公司发票抬头相关信息\").examples",
+          "lineNumber": 92
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-finance-invoice\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"发票相关\")\r\n                .level(TOPIC)\r\n                .parentId(finance.getId())\r\n                .kind(IntentKind.KB).description",
+          "lineNumber": 92
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-finance-invoice\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"发票相关\")\r\n                .level(TOPIC)\r\n                .parentId(finance.getId()).kind",
+          "lineNumber": 92
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-finance-invoice\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"发票相关\")\r\n                .level(TOPIC).parentId",
+          "lineNumber": 92
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-finance-invoice\")\r\n                .kbId(KB_ID_GROUP)\r\n                .name(\"发票相关\").level",
+          "lineNumber": 92
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-finance-invoice\")\r\n                .kbId(KB_ID_GROUP).name",
+          "lineNumber": 92
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"group-finance-invoice\").kbId",
+          "lineNumber": 92
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder().id",
+          "lineNumber": 92
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder",
+          "lineNumber": 92
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "finance.getId",
+          "lineNumber": 97
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 100
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "finance.setChildren",
+          "lineNumber": 106
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 106
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "group.setChildren",
+          "lineNumber": 108
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 108
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "roots.add",
+          "lineNumber": 109
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"业务系统\")\r\n                .level(DOMAIN)\r\n                .kind(IntentKind.KB).build",
+          "lineNumber": 112
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"业务系统\")\r\n                .level(DOMAIN).kind",
+          "lineNumber": 112
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"业务系统\").level",
+          "lineNumber": 112
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz\")\r\n                .kbId(KB_ID_BIZ).name",
+          "lineNumber": 112
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz\").kbId",
+          "lineNumber": 112
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder().id",
+          "lineNumber": 112
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder",
+          "lineNumber": 112
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"OA系统\")\r\n                .level(CATEGORY)\r\n                .parentId(biz.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"OA 系统相关，例如流程审批、待办、公告、文档中心等\")\r\n                .examples(List.of(\r\n                        \"OA系统主要提供哪些功能？\",\r\n                        \"请假审批在哪个菜单？\"\r\n                )).build",
+          "lineNumber": 121
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"OA系统\")\r\n                .level(CATEGORY)\r\n                .parentId(biz.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"OA 系统相关，例如流程审批、待办、公告、文档中心等\").examples",
+          "lineNumber": 121
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"OA系统\")\r\n                .level(CATEGORY)\r\n                .parentId(biz.getId())\r\n                .kind(IntentKind.KB).description",
+          "lineNumber": 121
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"OA系统\")\r\n                .level(CATEGORY)\r\n                .parentId(biz.getId()).kind",
+          "lineNumber": 121
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"OA系统\")\r\n                .level(CATEGORY).parentId",
+          "lineNumber": 121
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"OA系统\").level",
+          "lineNumber": 121
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa\")\r\n                .kbId(KB_ID_BIZ).name",
+          "lineNumber": 121
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa\").kbId",
+          "lineNumber": 121
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder().id",
+          "lineNumber": 121
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder",
+          "lineNumber": 121
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "biz.getId",
+          "lineNumber": 126
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 129
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa-intro\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"系统介绍\")\r\n                .level(TOPIC)\r\n                .parentId(oa.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"OA 系统整体功能说明、主要模块、典型使用场景\")\r\n                .examples(List.of(\r\n                        \"OA系统是做什么的？\"\r\n                )).build",
+          "lineNumber": 135
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa-intro\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"系统介绍\")\r\n                .level(TOPIC)\r\n                .parentId(oa.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"OA 系统整体功能说明、主要模块、典型使用场景\").examples",
+          "lineNumber": 135
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa-intro\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"系统介绍\")\r\n                .level(TOPIC)\r\n                .parentId(oa.getId())\r\n                .kind(IntentKind.KB).description",
+          "lineNumber": 135
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa-intro\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"系统介绍\")\r\n                .level(TOPIC)\r\n                .parentId(oa.getId()).kind",
+          "lineNumber": 135
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa-intro\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"系统介绍\")\r\n                .level(TOPIC).parentId",
+          "lineNumber": 135
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa-intro\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"系统介绍\").level",
+          "lineNumber": 135
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa-intro\")\r\n                .kbId(KB_ID_BIZ).name",
+          "lineNumber": 135
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa-intro\").kbId",
+          "lineNumber": 135
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder().id",
+          "lineNumber": 135
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder",
+          "lineNumber": 135
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "oa.getId",
+          "lineNumber": 140
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 143
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa-security\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"数据安全\")\r\n                .level(TOPIC)\r\n                .parentId(oa.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"OA系统的数据权限、访问控制、安全审计等相关说明\")\r\n                .examples(List.of(\r\n                        \"OA系统如何控制不同角色的权限？\"\r\n                )).build",
+          "lineNumber": 148
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa-security\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"数据安全\")\r\n                .level(TOPIC)\r\n                .parentId(oa.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"OA系统的数据权限、访问控制、安全审计等相关说明\").examples",
+          "lineNumber": 148
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa-security\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"数据安全\")\r\n                .level(TOPIC)\r\n                .parentId(oa.getId())\r\n                .kind(IntentKind.KB).description",
+          "lineNumber": 148
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa-security\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"数据安全\")\r\n                .level(TOPIC)\r\n                .parentId(oa.getId()).kind",
+          "lineNumber": 148
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa-security\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"数据安全\")\r\n                .level(TOPIC).parentId",
+          "lineNumber": 148
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa-security\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"数据安全\").level",
+          "lineNumber": 148
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa-security\")\r\n                .kbId(KB_ID_BIZ).name",
+          "lineNumber": 148
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-oa-security\").kbId",
+          "lineNumber": 148
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder().id",
+          "lineNumber": 148
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder",
+          "lineNumber": 148
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "oa.getId",
+          "lineNumber": 153
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 156
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "oa.setChildren",
+          "lineNumber": 161
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 161
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"保险系统\")\r\n                .level(CATEGORY)\r\n                .parentId(biz.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"保险相关业务系统，如投保、核保、理赔等的功能与架构说明\")\r\n                .examples(List.of(\r\n                        \"保险系统整体架构是怎样的？\"\r\n                )).build",
+          "lineNumber": 164
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"保险系统\")\r\n                .level(CATEGORY)\r\n                .parentId(biz.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"保险相关业务系统，如投保、核保、理赔等的功能与架构说明\").examples",
+          "lineNumber": 164
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"保险系统\")\r\n                .level(CATEGORY)\r\n                .parentId(biz.getId())\r\n                .kind(IntentKind.KB).description",
+          "lineNumber": 164
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"保险系统\")\r\n                .level(CATEGORY)\r\n                .parentId(biz.getId()).kind",
+          "lineNumber": 164
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"保险系统\")\r\n                .level(CATEGORY).parentId",
+          "lineNumber": 164
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"保险系统\").level",
+          "lineNumber": 164
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins\")\r\n                .kbId(KB_ID_BIZ).name",
+          "lineNumber": 164
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins\").kbId",
+          "lineNumber": 164
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder().id",
+          "lineNumber": 164
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder",
+          "lineNumber": 164
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "biz.getId",
+          "lineNumber": 169
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 172
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-intro\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"系统介绍\")\r\n                .level(TOPIC)\r\n                .parentId(ins.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"保险系统业务模块说明与主要流程介绍\")\r\n                .examples(List.of(\r\n                        \"保险系统都包括哪些子系统？\"\r\n                )).build",
+          "lineNumber": 177
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-intro\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"系统介绍\")\r\n                .level(TOPIC)\r\n                .parentId(ins.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"保险系统业务模块说明与主要流程介绍\").examples",
+          "lineNumber": 177
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-intro\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"系统介绍\")\r\n                .level(TOPIC)\r\n                .parentId(ins.getId())\r\n                .kind(IntentKind.KB).description",
+          "lineNumber": 177
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-intro\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"系统介绍\")\r\n                .level(TOPIC)\r\n                .parentId(ins.getId()).kind",
+          "lineNumber": 177
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-intro\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"系统介绍\")\r\n                .level(TOPIC).parentId",
+          "lineNumber": 177
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-intro\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"系统介绍\").level",
+          "lineNumber": 177
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-intro\")\r\n                .kbId(KB_ID_BIZ).name",
+          "lineNumber": 177
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-intro\").kbId",
+          "lineNumber": 177
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder().id",
+          "lineNumber": 177
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder",
+          "lineNumber": 177
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "ins.getId",
+          "lineNumber": 182
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 185
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-arch\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"架构设计\")\r\n                .level(TOPIC)\r\n                .parentId(ins.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"保险系统的技术架构、服务拆分、数据库设计等\")\r\n                .examples(List.of(\r\n                        \"保险系统是如何做服务拆分的？\"\r\n                )).build",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-arch\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"架构设计\")\r\n                .level(TOPIC)\r\n                .parentId(ins.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"保险系统的技术架构、服务拆分、数据库设计等\").examples",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-arch\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"架构设计\")\r\n                .level(TOPIC)\r\n                .parentId(ins.getId())\r\n                .kind(IntentKind.KB).description",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-arch\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"架构设计\")\r\n                .level(TOPIC)\r\n                .parentId(ins.getId()).kind",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-arch\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"架构设计\")\r\n                .level(TOPIC).parentId",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-arch\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"架构设计\").level",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-arch\")\r\n                .kbId(KB_ID_BIZ).name",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-arch\").kbId",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder().id",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "ins.getId",
+          "lineNumber": 195
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 198
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-security\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"数据安全\")\r\n                .level(TOPIC)\r\n                .parentId(ins.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"保险系统的数据脱敏、权限控制、审计与合规等\")\r\n                .examples(List.of(\r\n                        \"保险系统的敏感信息如何保护？\"\r\n                )).build",
+          "lineNumber": 203
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-security\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"数据安全\")\r\n                .level(TOPIC)\r\n                .parentId(ins.getId())\r\n                .kind(IntentKind.KB)\r\n                .description(\"保险系统的数据脱敏、权限控制、审计与合规等\").examples",
+          "lineNumber": 203
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-security\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"数据安全\")\r\n                .level(TOPIC)\r\n                .parentId(ins.getId())\r\n                .kind(IntentKind.KB).description",
+          "lineNumber": 203
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-security\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"数据安全\")\r\n                .level(TOPIC)\r\n                .parentId(ins.getId()).kind",
+          "lineNumber": 203
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-security\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"数据安全\")\r\n                .level(TOPIC).parentId",
+          "lineNumber": 203
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-security\")\r\n                .kbId(KB_ID_BIZ)\r\n                .name(\"数据安全\").level",
+          "lineNumber": 203
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-security\")\r\n                .kbId(KB_ID_BIZ).name",
+          "lineNumber": 203
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"biz-ins-security\").kbId",
+          "lineNumber": 203
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder().id",
+          "lineNumber": 203
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder",
+          "lineNumber": 203
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "ins.getId",
+          "lineNumber": 208
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 211
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "ins.setChildren",
+          "lineNumber": 216
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 216
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "biz.setChildren",
+          "lineNumber": 218
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 218
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "roots.add",
+          "lineNumber": 219
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sales\")\r\n                .name(\"销售汇总数据统计\")\r\n                .level(DOMAIN)\r\n                .kind(IntentKind.MCP).build",
+          "lineNumber": 223
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sales\")\r\n                .name(\"销售汇总数据统计\")\r\n                .level(DOMAIN).kind",
+          "lineNumber": 223
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sales\")\r\n                .name(\"销售汇总数据统计\").level",
+          "lineNumber": 223
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sales\").name",
+          "lineNumber": 223
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder().id",
+          "lineNumber": 223
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder",
+          "lineNumber": 223
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sales-data\")\r\n                .name(\"销售数据统计\")\r\n                .level(CATEGORY)\r\n                .parentId(sales.getId())\r\n                .mcpToolId(\"sales_query\")\r\n                .kind(IntentKind.MCP)\r\n                .promptTemplate(MCP_SALES_DATA_PROMPT_TEMPLATE)\r\n                .paramPromptTemplate(MCP_SALES_DATA_PARAMETER_EXTRACT_PROMPT)\r\n                .description(\"销售数据统计，如：销售总额、销售量、销售占比、销售趋势、销售预测等\")\r\n                .examples(List.of(\r\n                        \"销售总额是多少？\",\r\n                        \"销售量是多少？\"\r\n                )).build",
+          "lineNumber": 230
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sales-data\")\r\n                .name(\"销售数据统计\")\r\n                .level(CATEGORY)\r\n                .parentId(sales.getId())\r\n                .mcpToolId(\"sales_query\")\r\n                .kind(IntentKind.MCP)\r\n                .promptTemplate(MCP_SALES_DATA_PROMPT_TEMPLATE)\r\n                .paramPromptTemplate(MCP_SALES_DATA_PARAMETER_EXTRACT_PROMPT)\r\n                .description(\"销售数据统计，如：销售总额、销售量、销售占比、销售趋势、销售预测等\").examples",
+          "lineNumber": 230
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sales-data\")\r\n                .name(\"销售数据统计\")\r\n                .level(CATEGORY)\r\n                .parentId(sales.getId())\r\n                .mcpToolId(\"sales_query\")\r\n                .kind(IntentKind.MCP)\r\n                .promptTemplate(MCP_SALES_DATA_PROMPT_TEMPLATE)\r\n                .paramPromptTemplate(MCP_SALES_DATA_PARAMETER_EXTRACT_PROMPT).description",
+          "lineNumber": 230
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sales-data\")\r\n                .name(\"销售数据统计\")\r\n                .level(CATEGORY)\r\n                .parentId(sales.getId())\r\n                .mcpToolId(\"sales_query\")\r\n                .kind(IntentKind.MCP)\r\n                .promptTemplate(MCP_SALES_DATA_PROMPT_TEMPLATE).paramPromptTemplate",
+          "lineNumber": 230
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sales-data\")\r\n                .name(\"销售数据统计\")\r\n                .level(CATEGORY)\r\n                .parentId(sales.getId())\r\n                .mcpToolId(\"sales_query\")\r\n                .kind(IntentKind.MCP).promptTemplate",
+          "lineNumber": 230
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sales-data\")\r\n                .name(\"销售数据统计\")\r\n                .level(CATEGORY)\r\n                .parentId(sales.getId())\r\n                .mcpToolId(\"sales_query\").kind",
+          "lineNumber": 230
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sales-data\")\r\n                .name(\"销售数据统计\")\r\n                .level(CATEGORY)\r\n                .parentId(sales.getId()).mcpToolId",
+          "lineNumber": 230
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sales-data\")\r\n                .name(\"销售数据统计\")\r\n                .level(CATEGORY).parentId",
+          "lineNumber": 230
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sales-data\")\r\n                .name(\"销售数据统计\").level",
+          "lineNumber": 230
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sales-data\").name",
+          "lineNumber": 230
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder().id",
+          "lineNumber": 230
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder",
+          "lineNumber": 230
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "sales.getId",
+          "lineNumber": 234
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 240
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "sales.setChildren",
+          "lineNumber": 246
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 246
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "roots.add",
+          "lineNumber": 247
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sys\")\r\n                .name(\"系统交互\")\r\n                .level(DOMAIN)\r\n                .kind(IntentKind.SYSTEM).build",
+          "lineNumber": 250
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sys\")\r\n                .name(\"系统交互\")\r\n                .level(DOMAIN).kind",
+          "lineNumber": 250
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sys\")\r\n                .name(\"系统交互\").level",
+          "lineNumber": 250
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sys\").name",
+          "lineNumber": 250
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder().id",
+          "lineNumber": 250
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder",
+          "lineNumber": 250
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sys-welcome\")\r\n                .name(\"欢迎与问候\")\r\n                .level(CATEGORY) // 直接作为叶子\r\n                .parentId(sys.getId())\r\n                .description(\"用户与助手打招呼，如：你好、早上好、hi、在吗 等\")\r\n                .examples(List.of(\r\n                        \"你好\",\r\n                        \"hello\",\r\n                        \"早上好\",\r\n                        \"在吗\",\r\n                        \"嗨\"\r\n                ))\r\n                .kind(IntentKind.SYSTEM).build",
+          "lineNumber": 258
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sys-welcome\")\r\n                .name(\"欢迎与问候\")\r\n                .level(CATEGORY) // 直接作为叶子\r\n                .parentId(sys.getId())\r\n                .description(\"用户与助手打招呼，如：你好、早上好、hi、在吗 等\")\r\n                .examples(List.of(\r\n                        \"你好\",\r\n                        \"hello\",\r\n                        \"早上好\",\r\n                        \"在吗\",\r\n                        \"嗨\"\r\n                )).kind",
+          "lineNumber": 258
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sys-welcome\")\r\n                .name(\"欢迎与问候\")\r\n                .level(CATEGORY) // 直接作为叶子\r\n                .parentId(sys.getId())\r\n                .description(\"用户与助手打招呼，如：你好、早上好、hi、在吗 等\").examples",
+          "lineNumber": 258
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sys-welcome\")\r\n                .name(\"欢迎与问候\")\r\n                .level(CATEGORY) // 直接作为叶子\r\n                .parentId(sys.getId()).description",
+          "lineNumber": 258
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sys-welcome\")\r\n                .name(\"欢迎与问候\")\r\n                .level(CATEGORY).parentId",
+          "lineNumber": 258
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sys-welcome\")\r\n                .name(\"欢迎与问候\").level",
+          "lineNumber": 258
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sys-welcome\").name",
+          "lineNumber": 258
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder().id",
+          "lineNumber": 258
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder",
+          "lineNumber": 258
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "sys.getId",
+          "lineNumber": 262
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 264
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sys-about-bot\")\r\n                .name(\"关于助手\")\r\n                .level(CATEGORY)\r\n                .parentId(sys.getId())\r\n                .description(\"询问助手是做什么的、是谁、能做什么等\")\r\n                .examples(List.of(\r\n                        \"你是谁\",\r\n                        \"你是做什么的\",\r\n                        \"你能帮我做什么\",\r\n                        \"你是什么AI\"\r\n                ))\r\n                .kind(IntentKind.SYSTEM).build",
+          "lineNumber": 275
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sys-about-bot\")\r\n                .name(\"关于助手\")\r\n                .level(CATEGORY)\r\n                .parentId(sys.getId())\r\n                .description(\"询问助手是做什么的、是谁、能做什么等\")\r\n                .examples(List.of(\r\n                        \"你是谁\",\r\n                        \"你是做什么的\",\r\n                        \"你能帮我做什么\",\r\n                        \"你是什么AI\"\r\n                )).kind",
+          "lineNumber": 275
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sys-about-bot\")\r\n                .name(\"关于助手\")\r\n                .level(CATEGORY)\r\n                .parentId(sys.getId())\r\n                .description(\"询问助手是做什么的、是谁、能做什么等\").examples",
+          "lineNumber": 275
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sys-about-bot\")\r\n                .name(\"关于助手\")\r\n                .level(CATEGORY)\r\n                .parentId(sys.getId()).description",
+          "lineNumber": 275
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sys-about-bot\")\r\n                .name(\"关于助手\")\r\n                .level(CATEGORY).parentId",
+          "lineNumber": 275
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sys-about-bot\")\r\n                .name(\"关于助手\").level",
+          "lineNumber": 275
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder()\r\n                .id(\"sys-about-bot\").name",
+          "lineNumber": 275
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder().id",
+          "lineNumber": 275
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "IntentNode.builder",
+          "lineNumber": 275
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "sys.getId",
+          "lineNumber": 279
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 281
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "sys.setChildren",
+          "lineNumber": 290
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "List.of",
+          "lineNumber": 290
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "roots.add",
+          "lineNumber": 291
+        },
+        {
+          "caller": "buildIntentTree",
+          "callee": "fillFullPath",
+          "lineNumber": 294
+        },
+        {
+          "caller": "fillFullPath",
+          "callee": "node.setFullPath",
+          "lineNumber": 301
+        },
+        {
+          "caller": "fillFullPath",
+          "callee": "node.getName",
+          "lineNumber": 301
+        },
+        {
+          "caller": "fillFullPath",
+          "callee": "node.setFullPath",
+          "lineNumber": 303
+        },
+        {
+          "caller": "fillFullPath",
+          "callee": "parent.getFullPath",
+          "lineNumber": 303
+        },
+        {
+          "caller": "fillFullPath",
+          "callee": "node.getName",
+          "lineNumber": 303
+        },
+        {
+          "caller": "fillFullPath",
+          "callee": "node.getChildren",
+          "lineNumber": 305
+        },
+        {
+          "caller": "fillFullPath",
+          "callee": "node.getChildren().isEmpty",
+          "lineNumber": 305
+        },
+        {
+          "caller": "fillFullPath",
+          "callee": "node.getChildren",
+          "lineNumber": 305
+        },
+        {
+          "caller": "fillFullPath",
+          "callee": "fillFullPath",
+          "lineNumber": 306
+        },
+        {
+          "caller": "fillFullPath",
+          "callee": "node.getChildren",
+          "lineNumber": 306
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/IntentNodeDO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 135,
+      "nonEmptyLines": 110,
+      "classes": [
+        {
+          "name": "IntentNodeDO",
+          "startLine": 33,
+          "endLine": 135,
+          "methods": [],
+          "properties": [
+            "id",
+            "kbId",
+            "intentCode",
+            "name",
+            "level",
+            "parentCode",
+            "description",
+            "examples",
+            "collectionName",
+            "mcpToolId",
+            "topK",
+            "kind",
+            "sortOrder",
+            "promptSnippet",
+            "promptTemplate",
+            "paramPromptTemplate",
+            "enabled",
+            "createBy",
+            "updateBy",
+            "createTime",
+            "updateTime",
+            "deleted"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IntentNodeDO",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/IntentNodeMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "IntentNodeMapper",
+          "startLine": 23,
+          "endLine": 24,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IntentNodeMapper",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentKind.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 78,
+      "nonEmptyLines": 69,
+      "callGraph": [
+        {
+          "caller": "fromCode",
+          "callee": "values",
+          "lineNumber": 61
+        },
+        {
+          "caller": "toString",
+          "callee": "name",
+          "lineNumber": 76
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/Intent/IntentTreeServiceTests.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 159,
+      "nonEmptyLines": 137,
+      "functions": [
+        {
+          "name": "initFromFactory",
+          "startLine": 41,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "getFullTree",
+          "startLine": 46,
+          "endLine": 71,
+          "params": []
+        },
+        {
+          "name": "printNodeTree",
+          "startLine": 81,
+          "endLine": 129,
+          "params": [
+            "node",
+            "depth",
+            "sb"
+          ]
+        },
+        {
+          "name": "levelLabel",
+          "startLine": 134,
+          "endLine": 142,
+          "params": [
+            "level"
+          ]
+        },
+        {
+          "name": "compareBySortOrder",
+          "startLine": 147,
+          "endLine": 154,
+          "params": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "name": "safe",
+          "startLine": 156,
+          "endLine": 158,
+          "params": [
+            "s"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "IntentTreeServiceTests",
+          "startLine": 34,
+          "endLine": 159,
+          "methods": [
+            "initFromFactory",
+            "getFullTree",
+            "printNodeTree",
+            "levelLabel",
+            "compareBySortOrder",
+            "safe"
+          ],
+          "properties": [
+            "intentTreeService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "initFromFactory",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "getFullTree",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "IntentTreeServiceTests",
+          "line": 34,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "initFromFactory",
+          "callee": "intentTreeService.initFromFactory",
+          "lineNumber": 43
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "intentTreeService.getFullTree",
+          "lineNumber": 48
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "roots.isEmpty",
+          "lineNumber": 49
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "System.out.println",
+          "lineNumber": 50
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "roots.stream()\r\n                .sorted(this::compareBySortOrder).toList",
+          "lineNumber": 55
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "roots.stream().sorted",
+          "lineNumber": 55
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "roots.stream",
+          "lineNumber": 55
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "new StringBuilder",
+          "lineNumber": 59
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "roots.size",
+          "lineNumber": 61
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "roots.get",
+          "lineNumber": 62
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "sb.append",
+          "lineNumber": 65
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "printNodeTree",
+          "lineNumber": 67
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "System.out.println",
+          "lineNumber": 70
+        },
+        {
+          "caller": "getFullTree",
+          "callee": "sb.toString",
+          "lineNumber": 70
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "\"  \".repeat",
+          "lineNumber": 82
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "Math.max",
+          "lineNumber": 82
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "sb.append(indent)\r\n                .append(\"- \").append",
+          "lineNumber": 85
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "sb.append(indent).append",
+          "lineNumber": 85
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "sb.append",
+          "lineNumber": 85
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "safe",
+          "lineNumber": 87
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "node.getName",
+          "lineNumber": 87
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "levelLabel",
+          "lineNumber": 89
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "node.getLevel",
+          "lineNumber": 89
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "levelLabel.isEmpty",
+          "lineNumber": 90
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "sb.append(\" (\").append(levelLabel).append",
+          "lineNumber": 91
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "sb.append(\" (\").append",
+          "lineNumber": 91
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "sb.append",
+          "lineNumber": 91
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "sb.append",
+          "lineNumber": 93
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "node.getDescription",
+          "lineNumber": 96
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "node.getDescription().isBlank",
+          "lineNumber": 96
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "node.getDescription",
+          "lineNumber": 96
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "sb.append(indent)\r\n                    .append(\"  \")\r\n                    .append(\"备注: \")\r\n                    .append(node.getDescription().trim()).append",
+          "lineNumber": 97
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "sb.append(indent)\r\n                    .append(\"  \")\r\n                    .append(\"备注: \").append",
+          "lineNumber": 97
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "sb.append(indent)\r\n                    .append(\"  \").append",
+          "lineNumber": 97
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "sb.append(indent).append",
+          "lineNumber": 97
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "sb.append",
+          "lineNumber": 97
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "node.getDescription().trim",
+          "lineNumber": 100
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "node.getDescription",
+          "lineNumber": 100
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "node.getExamples",
+          "lineNumber": 105
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "node.getExamples().isEmpty",
+          "lineNumber": 105
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "node.getExamples",
+          "lineNumber": 105
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "JSONUtil.parseArray",
+          "lineNumber": 106
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "node.getExamples",
+          "lineNumber": 106
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "jsonArray.stream()\r\n                    .filter(Objects::nonNull)\r\n                    .map(Object::toString)\r\n                    .map(String::trim)\r\n                    .filter(s -> !s.isEmpty()).collect",
+          "lineNumber": 107
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "jsonArray.stream()\r\n                    .filter(Objects::nonNull)\r\n                    .map(Object::toString)\r\n                    .map(String::trim).filter",
+          "lineNumber": 107
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "jsonArray.stream()\r\n                    .filter(Objects::nonNull)\r\n                    .map(Object::toString).map",
+          "lineNumber": 107
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "jsonArray.stream()\r\n                    .filter(Objects::nonNull).map",
+          "lineNumber": 107
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "jsonArray.stream().filter",
+          "lineNumber": 107
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "jsonArray.stream",
+          "lineNumber": 107
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "s.isEmpty",
+          "lineNumber": 111
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "Collectors.joining",
+          "lineNumber": 112
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "joinedExamples.isEmpty",
+          "lineNumber": 114
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "sb.append(indent)\r\n                        .append(\"  \")\r\n                        .append(\"示例: \")\r\n                        .append(joinedExamples).append",
+          "lineNumber": 115
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "sb.append(indent)\r\n                        .append(\"  \")\r\n                        .append(\"示例: \").append",
+          "lineNumber": 115
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "sb.append(indent)\r\n                        .append(\"  \").append",
+          "lineNumber": 115
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "sb.append(indent).append",
+          "lineNumber": 115
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "sb.append",
+          "lineNumber": 115
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "node.getChildren",
+          "lineNumber": 124
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "node.getChildren().isEmpty",
+          "lineNumber": 124
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "node.getChildren",
+          "lineNumber": 124
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "node.getChildren().stream()\r\n                    .sorted(this::compareBySortOrder).forEach",
+          "lineNumber": 125
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "node.getChildren().stream().sorted",
+          "lineNumber": 125
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "node.getChildren().stream",
+          "lineNumber": 125
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "node.getChildren",
+          "lineNumber": 125
+        },
+        {
+          "caller": "printNodeTree",
+          "callee": "printNodeTree",
+          "lineNumber": 127
+        },
+        {
+          "caller": "compareBySortOrder",
+          "callee": "a.getSortOrder",
+          "lineNumber": 148
+        },
+        {
+          "caller": "compareBySortOrder",
+          "callee": "b.getSortOrder",
+          "lineNumber": 149
+        },
+        {
+          "caller": "compareBySortOrder",
+          "callee": "Integer.compare",
+          "lineNumber": 153
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 3,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/Intent/VectorIntentClassifier.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 161,
+      "nonEmptyLines": 140,
+      "functions": [
+        {
+          "name": "init",
+          "startLine": 54,
+          "endLine": 73,
+          "params": []
+        },
+        {
+          "name": "flatten",
+          "startLine": 75,
+          "endLine": 88,
+          "params": [
+            "roots"
+          ]
+        },
+        {
+          "name": "buildNodeText",
+          "startLine": 90,
+          "endLine": 101,
+          "params": [
+            "node"
+          ]
+        },
+        {
+          "name": "toArray",
+          "startLine": 103,
+          "endLine": 109,
+          "params": [
+            "list"
+          ]
+        },
+        {
+          "name": "cosine",
+          "startLine": 111,
+          "endLine": 120,
+          "params": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "name": "classifyTargets",
+          "startLine": 127,
+          "endLine": 134,
+          "params": [
+            "question"
+          ]
+        },
+        {
+          "name": "topKAboveThreshold",
+          "startLine": 141,
+          "endLine": 147,
+          "params": [
+            "question",
+            "topN",
+            "minScore"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "VectorIntentClassifier",
+          "startLine": 31,
+          "endLine": 160,
+          "methods": [
+            "init",
+            "flatten",
+            "buildNodeText",
+            "toArray",
+            "cosine",
+            "classifyTargets",
+            "topKAboveThreshold"
+          ],
+          "properties": [
+            "embeddingService",
+            "allNodes",
+            "targetNodes",
+            "rootNodes"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "init",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "classifyTargets",
+          "line": 127,
+          "isDefault": false
+        },
+        {
+          "name": "topKAboveThreshold",
+          "line": 141,
+          "isDefault": false
+        },
+        {
+          "name": "VectorIntentClassifier",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "init",
+          "callee": "IntentTreeFactory.buildIntentTree",
+          "lineNumber": 56
+        },
+        {
+          "caller": "init",
+          "callee": "flatten",
+          "lineNumber": 57
+        },
+        {
+          "caller": "init",
+          "callee": "allNodes.stream()\r\n                .filter(IntentNode::isLeaf).collect",
+          "lineNumber": 60
+        },
+        {
+          "caller": "init",
+          "callee": "allNodes.stream().filter",
+          "lineNumber": 60
+        },
+        {
+          "caller": "init",
+          "callee": "allNodes.stream",
+          "lineNumber": 60
+        },
+        {
+          "caller": "init",
+          "callee": "Collectors.toList",
+          "lineNumber": 62
+        },
+        {
+          "caller": "init",
+          "callee": "buildNodeText",
+          "lineNumber": 66
+        },
+        {
+          "caller": "init",
+          "callee": "toArray",
+          "lineNumber": 67
+        },
+        {
+          "caller": "init",
+          "callee": "embeddingService.embed",
+          "lineNumber": 67
+        },
+        {
+          "caller": "init",
+          "callee": "node.setEmbedding",
+          "lineNumber": 68
+        },
+        {
+          "caller": "init",
+          "callee": "log.info",
+          "lineNumber": 71
+        },
+        {
+          "caller": "init",
+          "callee": "allNodes.size",
+          "lineNumber": 72
+        },
+        {
+          "caller": "init",
+          "callee": "targetNodes.size",
+          "lineNumber": 72
+        },
+        {
+          "caller": "flatten",
+          "callee": "new ArrayList<>",
+          "lineNumber": 76
+        },
+        {
+          "caller": "flatten",
+          "callee": "new ArrayDeque<>",
+          "lineNumber": 77
+        },
+        {
+          "caller": "flatten",
+          "callee": "stack.isEmpty",
+          "lineNumber": 78
+        },
+        {
+          "caller": "flatten",
+          "callee": "stack.pop",
+          "lineNumber": 79
+        },
+        {
+          "caller": "flatten",
+          "callee": "result.add",
+          "lineNumber": 80
+        },
+        {
+          "caller": "flatten",
+          "callee": "n.getChildren",
+          "lineNumber": 81
+        },
+        {
+          "caller": "flatten",
+          "callee": "n.getChildren",
+          "lineNumber": 82
+        },
+        {
+          "caller": "flatten",
+          "callee": "stack.push",
+          "lineNumber": 83
+        },
+        {
+          "caller": "buildNodeText",
+          "callee": "new StringBuilder",
+          "lineNumber": 91
+        },
+        {
+          "caller": "buildNodeText",
+          "callee": "sb.append(\"路径: \").append(node.getFullPath()).append",
+          "lineNumber": 92
+        },
+        {
+          "caller": "buildNodeText",
+          "callee": "sb.append(\"路径: \").append",
+          "lineNumber": 92
+        },
+        {
+          "caller": "buildNodeText",
+          "callee": "sb.append",
+          "lineNumber": 92
+        },
+        {
+          "caller": "buildNodeText",
+          "callee": "node.getFullPath",
+          "lineNumber": 92
+        },
+        {
+          "caller": "buildNodeText",
+          "callee": "sb.append(\"说明: \").append(node.getDescription()).append",
+          "lineNumber": 93
+        },
+        {
+          "caller": "buildNodeText",
+          "callee": "sb.append(\"说明: \").append",
+          "lineNumber": 93
+        },
+        {
+          "caller": "buildNodeText",
+          "callee": "sb.append",
+          "lineNumber": 93
+        },
+        {
+          "caller": "buildNodeText",
+          "callee": "node.getDescription",
+          "lineNumber": 93
+        },
+        {
+          "caller": "buildNodeText",
+          "callee": "node.getExamples",
+          "lineNumber": 94
+        },
+        {
+          "caller": "buildNodeText",
+          "callee": "node.getExamples().isEmpty",
+          "lineNumber": 94
+        },
+        {
+          "caller": "buildNodeText",
+          "callee": "node.getExamples",
+          "lineNumber": 94
+        },
+        {
+          "caller": "buildNodeText",
+          "callee": "sb.append",
+          "lineNumber": 95
+        },
+        {
+          "caller": "buildNodeText",
+          "callee": "node.getExamples",
+          "lineNumber": 96
+        },
+        {
+          "caller": "buildNodeText",
+          "callee": "sb.append(\"【\").append(ex).append",
+          "lineNumber": 97
+        },
+        {
+          "caller": "buildNodeText",
+          "callee": "sb.append(\"【\").append",
+          "lineNumber": 97
+        },
+        {
+          "caller": "buildNodeText",
+          "callee": "sb.append",
+          "lineNumber": 97
+        },
+        {
+          "caller": "buildNodeText",
+          "callee": "sb.toString",
+          "lineNumber": 100
+        },
+        {
+          "caller": "toArray",
+          "callee": "list.size",
+          "lineNumber": 104
+        },
+        {
+          "caller": "toArray",
+          "callee": "list.size",
+          "lineNumber": 105
+        },
+        {
+          "caller": "toArray",
+          "callee": "list.get",
+          "lineNumber": 106
+        },
+        {
+          "caller": "cosine",
+          "callee": "Math.sqrt",
+          "lineNumber": 119
+        },
+        {
+          "caller": "cosine",
+          "callee": "Math.sqrt",
+          "lineNumber": 119
+        },
+        {
+          "caller": "classifyTargets",
+          "callee": "toArray",
+          "lineNumber": 128
+        },
+        {
+          "caller": "classifyTargets",
+          "callee": "embeddingService.embed",
+          "lineNumber": 128
+        },
+        {
+          "caller": "classifyTargets",
+          "callee": "targetNodes.stream()\r\n                .map(n -> new NodeScore(n, cosine(qVec, n.getEmbedding())))\r\n                .sorted(Comparator.comparingDouble(NodeScore::score).reversed()).toList",
+          "lineNumber": 130
+        },
+        {
+          "caller": "classifyTargets",
+          "callee": "targetNodes.stream()\r\n                .map(n -> new NodeScore(n, cosine(qVec, n.getEmbedding()))).sorted",
+          "lineNumber": 130
+        },
+        {
+          "caller": "classifyTargets",
+          "callee": "targetNodes.stream().map",
+          "lineNumber": 130
+        },
+        {
+          "caller": "classifyTargets",
+          "callee": "targetNodes.stream",
+          "lineNumber": 130
+        },
+        {
+          "caller": "classifyTargets",
+          "callee": "new NodeScore",
+          "lineNumber": 131
+        },
+        {
+          "caller": "classifyTargets",
+          "callee": "cosine",
+          "lineNumber": 131
+        },
+        {
+          "caller": "classifyTargets",
+          "callee": "n.getEmbedding",
+          "lineNumber": 131
+        },
+        {
+          "caller": "classifyTargets",
+          "callee": "Comparator.comparingDouble(NodeScore::score).reversed",
+          "lineNumber": 132
+        },
+        {
+          "caller": "classifyTargets",
+          "callee": "Comparator.comparingDouble",
+          "lineNumber": 132
+        },
+        {
+          "caller": "topKAboveThreshold",
+          "callee": "classifyTargets",
+          "lineNumber": 142
+        },
+        {
+          "caller": "topKAboveThreshold",
+          "callee": "all.stream()\r\n                .filter(ns -> ns.score() >= minScore)\r\n                .limit(topN).toList",
+          "lineNumber": 143
+        },
+        {
+          "caller": "topKAboveThreshold",
+          "callee": "all.stream()\r\n                .filter(ns -> ns.score() >= minScore).limit",
+          "lineNumber": 143
+        },
+        {
+          "caller": "topKAboveThreshold",
+          "callee": "all.stream().filter",
+          "lineNumber": 143
+        },
+        {
+          "caller": "topKAboveThreshold",
+          "callee": "all.stream",
+          "lineNumber": 143
+        },
+        {
+          "caller": "topKAboveThreshold",
+          "callee": "ns.score",
+          "lineNumber": 144
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 4,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    }
+  ]
+}

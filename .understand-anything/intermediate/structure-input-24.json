@@ -1,0 +1,28 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "resources/docker/milvus-stack-2.6.6.compose.yaml",
+      "language": "yaml",
+      "sizeLines": 98,
+      "fileCategory": "config"
+    },
+    {
+      "path": "resources/docker/rocketmq-stack-5.2.0.compose.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "resources/docker/rocketmq-stack-amd-5.2.0.compose.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    "resources/docker/milvus-stack-2.6.6.compose.yaml": [],
+    "resources/docker/rocketmq-stack-5.2.0.compose.yaml": [],
+    "resources/docker/rocketmq-stack-amd-5.2.0.compose.yaml": []
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/token/HeuristicTokenCounterService.java",
+      "language": "java",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "lombok.config",
+      "language": "config",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mcp-server/pom.xml",
+      "language": "xml",
+      "sizeLines": 38,
+      "fileCategory": "config"
+    },
+    {
+      "path": "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/config/McpServerConfig.java",
+      "language": "java",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/executor/SalesMcpExecutor.java",
+      "language": "java",
+      "sizeLines": 337,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/executor/TicketMcpExecutor.java",
+      "language": "java",
+      "sizeLines": 414,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/executor/WeatherMcpExecutor.java",
+      "language": "java",
+      "sizeLines": 296,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/McpServerApplication.java",
+      "language": "java",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mcp-server/src/main/resources/application.yml",
+      "language": "yaml",
+      "sizeLines": 6,
+      "fileCategory": "config"
+    },
+    {
+      "path": "mvnw",
+      "language": "unknown",
+      "sizeLines": 295,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/database/backups/init_data.sql",
+      "language": "sql",
+      "sizeLines": 3,
+      "fileCategory": "data"
+    },
+    {
+      "path": "resources/database/backups/schema_table.sql",
+      "language": "sql",
+      "sizeLines": 401,
+      "fileCategory": "data"
+    },
+    {
+      "path": "resources/docs/knowledge/biz/biz-ins/互联网保险系统数据安全规范.md",
+      "language": "markdown",
+      "sizeLines": 219,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/docs/knowledge/biz/biz-oa/OA系统数据安全规范文档.md",
+      "language": "markdown",
+      "sizeLines": 314,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/docs/knowledge/group/group-finance/开票信息.md",
+      "language": "markdown",
+      "sizeLines": 257,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/docs/knowledge/group/it/IT支持.md",
+      "language": "markdown",
+      "sizeLines": 760,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/format/copyright.txt",
+      "language": "txt",
+      "sizeLines": 17,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "scripts/sse_queue_test.sh",
+      "language": "shell",
+      "sizeLines": 297,
+      "fileCategory": "script"
+    }
+  ],
+  "batchImportData": {
+    "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/token/HeuristicTokenCounterService.java": [],
+    "lombok.config": [],
+    "mcp-server/pom.xml": [],
+    "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/config/McpServerConfig.java": [],
+    "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/executor/SalesMcpExecutor.java": [],
+    "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/executor/TicketMcpExecutor.java": [],
+    "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/executor/WeatherMcpExecutor.java": [],
+    "mcp-server/src/main/java/com/nageoffer/ai/ragent/mcp/McpServerApplication.java": [],
+    "mcp-server/src/main/resources/application.yml": [],
+    "mvnw": [],
+    "resources/database/backups/init_data.sql": [],
+    "resources/database/backups/schema_table.sql": [],
+    "resources/docs/knowledge/biz/biz-ins/互联网保险系统数据安全规范.md": [],
+    "resources/docs/knowledge/biz/biz-oa/OA系统数据安全规范文档.md": [],
+    "resources/docs/knowledge/group/group-finance/开票信息.md": [],
+    "resources/docs/knowledge/group/it/IT支持.md": [],
+    "resources/format/copyright.txt": [],
+    "scripts/sse_queue_test.sh": []
+  }
+}

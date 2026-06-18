@@ -1,0 +1,1847 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 24,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/config/KnowledgeScheduleProperties.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 50,
+      "classes": [
+        {
+          "name": "KnowledgeScheduleProperties",
+          "startLine": 28,
+          "endLine": 58,
+          "methods": [],
+          "properties": [
+            "scanDelayMs",
+            "lockSeconds",
+            "batchSize",
+            "minIntervalSeconds",
+            "runningTimeoutMinutes"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeScheduleProperties",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/KnowledgeDocumentController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 142,
+      "nonEmptyLines": 128,
+      "functions": [
+        {
+          "name": "upload",
+          "startLine": 63,
+          "endLine": 68,
+          "params": [
+            "kbId",
+            "file",
+            "requestParam"
+          ]
+        },
+        {
+          "name": "startChunk",
+          "startLine": 73,
+          "endLine": 77,
+          "params": [
+            "docId"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 82,
+          "endLine": 86,
+          "params": [
+            "docId"
+          ]
+        },
+        {
+          "name": "get",
+          "startLine": 91,
+          "endLine": 94,
+          "params": [
+            "docId"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 99,
+          "endLine": 104,
+          "params": [
+            "docId",
+            "requestParam"
+          ]
+        },
+        {
+          "name": "page",
+          "startLine": 109,
+          "endLine": 113,
+          "params": [
+            "kbId",
+            "requestParam"
+          ]
+        },
+        {
+          "name": "search",
+          "startLine": 118,
+          "endLine": 122,
+          "params": [
+            "keyword",
+            "limit"
+          ]
+        },
+        {
+          "name": "enable",
+          "startLine": 127,
+          "endLine": 132,
+          "params": [
+            "docId",
+            "enabled"
+          ]
+        },
+        {
+          "name": "getChunkLogs",
+          "startLine": 137,
+          "endLine": 141,
+          "params": [
+            "docId",
+            "page"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "KnowledgeDocumentController",
+          "startLine": 53,
+          "endLine": 142,
+          "methods": [
+            "upload",
+            "startChunk",
+            "delete",
+            "get",
+            "update",
+            "page",
+            "search",
+            "enable",
+            "getChunkLogs"
+          ],
+          "properties": [
+            "documentService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "upload",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "startChunk",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "delete",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "get",
+          "line": 91,
+          "isDefault": false
+        },
+        {
+          "name": "update",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "page",
+          "line": 109,
+          "isDefault": false
+        },
+        {
+          "name": "search",
+          "line": 118,
+          "isDefault": false
+        },
+        {
+          "name": "enable",
+          "line": 127,
+          "isDefault": false
+        },
+        {
+          "name": "getChunkLogs",
+          "line": 137,
+          "isDefault": false
+        },
+        {
+          "name": "KnowledgeDocumentController",
+          "line": 53,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "upload",
+          "callee": "Results.success",
+          "lineNumber": 67
+        },
+        {
+          "caller": "upload",
+          "callee": "documentService.upload",
+          "lineNumber": 67
+        },
+        {
+          "caller": "startChunk",
+          "callee": "documentService.startChunk",
+          "lineNumber": 75
+        },
+        {
+          "caller": "startChunk",
+          "callee": "Results.success",
+          "lineNumber": 76
+        },
+        {
+          "caller": "delete",
+          "callee": "documentService.delete",
+          "lineNumber": 84
+        },
+        {
+          "caller": "delete",
+          "callee": "Results.success",
+          "lineNumber": 85
+        },
+        {
+          "caller": "get",
+          "callee": "Results.success",
+          "lineNumber": 93
+        },
+        {
+          "caller": "get",
+          "callee": "documentService.get",
+          "lineNumber": 93
+        },
+        {
+          "caller": "update",
+          "callee": "documentService.update",
+          "lineNumber": 102
+        },
+        {
+          "caller": "update",
+          "callee": "Results.success",
+          "lineNumber": 103
+        },
+        {
+          "caller": "page",
+          "callee": "Results.success",
+          "lineNumber": 112
+        },
+        {
+          "caller": "page",
+          "callee": "documentService.page",
+          "lineNumber": 112
+        },
+        {
+          "caller": "search",
+          "callee": "Results.success",
+          "lineNumber": 121
+        },
+        {
+          "caller": "search",
+          "callee": "documentService.search",
+          "lineNumber": 121
+        },
+        {
+          "caller": "enable",
+          "callee": "documentService.enable",
+          "lineNumber": 130
+        },
+        {
+          "caller": "enable",
+          "callee": "Results.success",
+          "lineNumber": 131
+        },
+        {
+          "caller": "getChunkLogs",
+          "callee": "Results.success",
+          "lineNumber": 140
+        },
+        {
+          "caller": "getChunkLogs",
+          "callee": "documentService.getChunkLogs",
+          "lineNumber": 140
+        }
+      ],
+      "metrics": {
+        "importCount": 9,
+        "exportCount": 10,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentPageRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 29,
+      "nonEmptyLines": 24,
+      "classes": [
+        {
+          "name": "KnowledgeDocumentPageRequest",
+          "startLine": 23,
+          "endLine": 29,
+          "methods": [],
+          "properties": [
+            "status",
+            "keyword"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeDocumentPageRequest",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentUpdateRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 64,
+      "nonEmptyLines": 53,
+      "classes": [
+        {
+          "name": "KnowledgeDocumentUpdateRequest",
+          "startLine": 22,
+          "endLine": 64,
+          "methods": [],
+          "properties": [
+            "docName",
+            "processMode",
+            "chunkStrategy",
+            "chunkConfig",
+            "pipelineId",
+            "sourceLocation",
+            "scheduleEnabled",
+            "scheduleCron"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeDocumentUpdateRequest",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeDocumentUploadRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 58,
+      "classes": [
+        {
+          "name": "KnowledgeDocumentUploadRequest",
+          "startLine": 22,
+          "endLine": 69,
+          "methods": [],
+          "properties": [
+            "sourceType",
+            "sourceLocation",
+            "scheduleEnabled",
+            "scheduleCron",
+            "processMode",
+            "chunkStrategy",
+            "chunkConfig",
+            "pipelineId"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeDocumentUploadRequest",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentChunkLogVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 110,
+      "nonEmptyLines": 88,
+      "classes": [
+        {
+          "name": "KnowledgeDocumentChunkLogVO",
+          "startLine": 27,
+          "endLine": 110,
+          "methods": [],
+          "properties": [
+            "id",
+            "docId",
+            "status",
+            "processMode",
+            "chunkStrategy",
+            "pipelineId",
+            "pipelineName",
+            "extractDuration",
+            "chunkDuration",
+            "embedDuration",
+            "persistDuration",
+            "otherDuration",
+            "totalDuration",
+            "chunkCount",
+            "errorMessage",
+            "startTime",
+            "endTime",
+            "createTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeDocumentChunkLogVO",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentSearchVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 47,
+      "nonEmptyLines": 40,
+      "classes": [
+        {
+          "name": "KnowledgeDocumentSearchVO",
+          "startLine": 25,
+          "endLine": 47,
+          "methods": [],
+          "properties": [
+            "id",
+            "kbId",
+            "docName",
+            "kbName"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeDocumentSearchVO",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeDocumentVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 137,
+      "nonEmptyLines": 112,
+      "classes": [
+        {
+          "name": "KnowledgeDocumentVO",
+          "startLine": 27,
+          "endLine": 137,
+          "methods": [],
+          "properties": [
+            "id",
+            "kbId",
+            "docName",
+            "sourceType",
+            "sourceLocation",
+            "scheduleEnabled",
+            "scheduleCron",
+            "enabled",
+            "chunkCount",
+            "fileUrl",
+            "fileType",
+            "fileSize",
+            "chunkStrategy",
+            "processMode",
+            "chunkConfig",
+            "pipelineId",
+            "status",
+            "createdBy",
+            "updatedBy",
+            "createTime",
+            "updateTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeDocumentVO",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeBaseDO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 83,
+      "nonEmptyLines": 69,
+      "classes": [
+        {
+          "name": "KnowledgeBaseDO",
+          "startLine": 36,
+          "endLine": 82,
+          "methods": [],
+          "properties": [
+            "id",
+            "name",
+            "embeddingModel",
+            "collectionName",
+            "createdBy",
+            "updatedBy",
+            "createTime",
+            "updateTime",
+            "deleted"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeBaseDO",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentChunkLogDO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 120,
+      "nonEmptyLines": 99,
+      "classes": [
+        {
+          "name": "KnowledgeDocumentChunkLogDO",
+          "startLine": 35,
+          "endLine": 120,
+          "methods": [],
+          "properties": [
+            "id",
+            "docId",
+            "status",
+            "processMode",
+            "chunkStrategy",
+            "pipelineId",
+            "extractDuration",
+            "chunkDuration",
+            "embedDuration",
+            "persistDuration",
+            "totalDuration",
+            "chunkCount",
+            "errorMessage",
+            "startTime",
+            "endTime",
+            "createTime",
+            "updateTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeDocumentChunkLogDO",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentDO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 157,
+      "nonEmptyLines": 131,
+      "classes": [
+        {
+          "name": "KnowledgeDocumentDO",
+          "startLine": 36,
+          "endLine": 157,
+          "methods": [],
+          "properties": [
+            "id",
+            "kbId",
+            "docName",
+            "sourceType",
+            "sourceLocation",
+            "scheduleEnabled",
+            "scheduleCron",
+            "enabled",
+            "chunkCount",
+            "fileUrl",
+            "fileType",
+            "fileSize",
+            "processMode",
+            "chunkStrategy",
+            "chunkConfig",
+            "pipelineId",
+            "status",
+            "createdBy",
+            "updatedBy",
+            "createTime",
+            "updateTime",
+            "deleted"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeDocumentDO",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleDO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 120,
+      "nonEmptyLines": 99,
+      "classes": [
+        {
+          "name": "KnowledgeDocumentScheduleDO",
+          "startLine": 35,
+          "endLine": 120,
+          "methods": [],
+          "properties": [
+            "id",
+            "docId",
+            "kbId",
+            "cronExpr",
+            "enabled",
+            "nextRunTime",
+            "lastRunTime",
+            "lastSuccessTime",
+            "lastStatus",
+            "lastError",
+            "lastEtag",
+            "lastModified",
+            "lastContentHash",
+            "lockOwner",
+            "lockUntil",
+            "createTime",
+            "updateTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeDocumentScheduleDO",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/entity/KnowledgeDocumentScheduleExecDO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 110,
+      "nonEmptyLines": 91,
+      "classes": [
+        {
+          "name": "KnowledgeDocumentScheduleExecDO",
+          "startLine": 35,
+          "endLine": 110,
+          "methods": [],
+          "properties": [
+            "id",
+            "scheduleId",
+            "docId",
+            "kbId",
+            "status",
+            "message",
+            "startTime",
+            "endTime",
+            "fileName",
+            "fileSize",
+            "contentHash",
+            "etag",
+            "lastModified",
+            "createTime",
+            "updateTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeDocumentScheduleExecDO",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeBaseMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "KnowledgeBaseMapper",
+          "startLine": 23,
+          "endLine": 24,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeBaseMapper",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentChunkLogMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 24,
+      "classes": [
+        {
+          "name": "KnowledgeDocumentChunkLogMapper",
+          "startLine": 26,
+          "endLine": 27,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeDocumentChunkLogMapper",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "KnowledgeDocumentMapper",
+          "startLine": 23,
+          "endLine": 24,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeDocumentMapper",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleExecMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "KnowledgeDocumentScheduleExecMapper",
+          "startLine": 23,
+          "endLine": 24,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeDocumentScheduleExecMapper",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeDocumentScheduleMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "KnowledgeDocumentScheduleMapper",
+          "startLine": 23,
+          "endLine": 24,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeDocumentScheduleMapper",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/DocumentStatus.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 48,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/ProcessMode.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 78,
+      "nonEmptyLines": 70,
+      "callGraph": [
+        {
+          "caller": "fromValue",
+          "callee": "value.trim().toLowerCase",
+          "lineNumber": 56
+        },
+        {
+          "caller": "fromValue",
+          "callee": "value.trim",
+          "lineNumber": 56
+        },
+        {
+          "caller": "fromValue",
+          "callee": "values",
+          "lineNumber": 57
+        },
+        {
+          "caller": "fromValue",
+          "callee": "mode.value.equals",
+          "lineNumber": 58
+        },
+        {
+          "caller": "normalize",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 69
+        },
+        {
+          "caller": "normalize",
+          "callee": "new IllegalArgumentException",
+          "lineNumber": 70
+        },
+        {
+          "caller": "normalize",
+          "callee": "fromValue",
+          "lineNumber": 72
+        },
+        {
+          "caller": "normalize",
+          "callee": "new IllegalArgumentException",
+          "lineNumber": 74
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/ScheduleRunStatus.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 51,
+      "nonEmptyLines": 43,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/enums/SourceType.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 80,
+      "nonEmptyLines": 72,
+      "callGraph": [
+        {
+          "caller": "fromValue",
+          "callee": "value.trim().toLowerCase",
+          "lineNumber": 56
+        },
+        {
+          "caller": "fromValue",
+          "callee": "value.trim",
+          "lineNumber": 56
+        },
+        {
+          "caller": "fromValue",
+          "callee": "\"file\".equals",
+          "lineNumber": 58
+        },
+        {
+          "caller": "fromValue",
+          "callee": "\"localfile\".equals",
+          "lineNumber": 58
+        },
+        {
+          "caller": "fromValue",
+          "callee": "\"local_file\".equals",
+          "lineNumber": 58
+        },
+        {
+          "caller": "fromValue",
+          "callee": "\"url\".equals",
+          "lineNumber": 61
+        },
+        {
+          "caller": "normalize",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 71
+        },
+        {
+          "caller": "normalize",
+          "callee": "new IllegalArgumentException",
+          "lineNumber": 72
+        },
+        {
+          "caller": "normalize",
+          "callee": "fromValue",
+          "lineNumber": 74
+        },
+        {
+          "caller": "normalize",
+          "callee": "new IllegalArgumentException",
+          "lineNumber": 76
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/handler/RemoteFileFetcher.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 296,
+      "nonEmptyLines": 265,
+      "functions": [
+        {
+          "name": "fetchAndStore",
+          "startLine": 59,
+          "endLine": 73,
+          "params": [
+            "bucketName",
+            "url"
+          ]
+        },
+        {
+          "name": "fetchIfChanged",
+          "startLine": 79,
+          "endLine": 123,
+          "params": [
+            "url",
+            "lastEtag",
+            "lastModified",
+            "lastContentHash",
+            "fallbackFileName"
+          ]
+        },
+        {
+          "name": "tryHead",
+          "startLine": 125,
+          "endLine": 132,
+          "params": [
+            "url"
+          ]
+        },
+        {
+          "name": "checkSizeLimit",
+          "startLine": 134,
+          "endLine": 138,
+          "params": [
+            "maxBytes",
+            "contentLength"
+          ]
+        },
+        {
+          "name": "uploadViaTemp",
+          "startLine": 140,
+          "endLine": 163,
+          "params": [
+            "bucketName",
+            "remoteStream",
+            "fileName",
+            "contentType",
+            "maxBytes"
+          ]
+        },
+        {
+          "name": "copyWithLimit",
+          "startLine": 165,
+          "endLine": 179,
+          "params": [
+            "inputStream",
+            "tempFile",
+            "maxBytes"
+          ]
+        },
+        {
+          "name": "copyWithLimitAndDigest",
+          "startLine": 181,
+          "endLine": 201,
+          "params": [
+            "inputStream",
+            "tempFile",
+            "maxBytes"
+          ]
+        },
+        {
+          "name": "hexEncode",
+          "startLine": 206,
+          "endLine": 216,
+          "params": [
+            "hash"
+          ]
+        },
+        {
+          "name": "deleteTempFileQuietly",
+          "startLine": 218,
+          "endLine": 226,
+          "params": [
+            "tempFile"
+          ]
+        },
+        {
+          "name": "firstHasText",
+          "startLine": 228,
+          "endLine": 233,
+          "params": []
+        },
+        {
+          "name": "trimOrNull",
+          "startLine": 235,
+          "endLine": 237,
+          "params": [
+            "value"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RemoteFileFetcher",
+          "startLine": 45,
+          "endLine": 296,
+          "methods": [
+            "fetchAndStore",
+            "fetchIfChanged",
+            "tryHead",
+            "checkSizeLimit",
+            "uploadViaTemp",
+            "copyWithLimit",
+            "copyWithLimitAndDigest",
+            "hexEncode",
+            "deleteTempFileQuietly",
+            "firstHasText",
+            "trimOrNull"
+          ],
+          "properties": [
+            "httpClientHelper",
+            "fileStorageService",
+            "maxFileSize"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "fetchAndStore",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "fetchIfChanged",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "RemoteFileFetcher",
+          "line": 45,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fetchAndStore",
+          "callee": "maxFileSize.toBytes",
+          "lineNumber": 60
+        },
+        {
+          "caller": "fetchAndStore",
+          "callee": "url.trim",
+          "lineNumber": 61
+        },
+        {
+          "caller": "fetchAndStore",
+          "callee": "tryHead",
+          "lineNumber": 62
+        },
+        {
+          "caller": "fetchAndStore",
+          "callee": "headResponse.contentLength",
+          "lineNumber": 63
+        },
+        {
+          "caller": "fetchAndStore",
+          "callee": "checkSizeLimit",
+          "lineNumber": 64
+        },
+        {
+          "caller": "fetchAndStore",
+          "callee": "httpClientHelper.openStream",
+          "lineNumber": 66
+        },
+        {
+          "caller": "fetchAndStore",
+          "callee": "Map.of",
+          "lineNumber": 66
+        },
+        {
+          "caller": "fetchAndStore",
+          "callee": "firstHasText",
+          "lineNumber": 67
+        },
+        {
+          "caller": "fetchAndStore",
+          "callee": "response.fileName",
+          "lineNumber": 67
+        },
+        {
+          "caller": "fetchAndStore",
+          "callee": "headResponse.fileName",
+          "lineNumber": 67
+        },
+        {
+          "caller": "fetchAndStore",
+          "callee": "firstHasText",
+          "lineNumber": 68
+        },
+        {
+          "caller": "fetchAndStore",
+          "callee": "response.contentType",
+          "lineNumber": 68
+        },
+        {
+          "caller": "fetchAndStore",
+          "callee": "headResponse.contentType",
+          "lineNumber": 68
+        },
+        {
+          "caller": "fetchAndStore",
+          "callee": "uploadViaTemp",
+          "lineNumber": 71
+        },
+        {
+          "caller": "fetchAndStore",
+          "callee": "response.bodyStream",
+          "lineNumber": 71
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "maxFileSize.toBytes",
+          "lineNumber": 81
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "url.trim",
+          "lineNumber": 82
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "tryHead",
+          "lineNumber": 83
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "checkSizeLimit",
+          "lineNumber": 86
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "headResponse.contentLength",
+          "lineNumber": 86
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "trimOrNull",
+          "lineNumber": 87
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "headResponse.etag",
+          "lineNumber": 87
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "trimOrNull",
+          "lineNumber": 88
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "headResponse.lastModified",
+          "lineNumber": 88
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 89
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "etag.equals",
+          "lineNumber": 89
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "trimOrNull",
+          "lineNumber": 89
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 90
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "headLastModified.equals",
+          "lineNumber": 90
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "trimOrNull",
+          "lineNumber": 90
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "RemoteFetchResult.skipped",
+          "lineNumber": 92
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "httpClientHelper.openStream",
+          "lineNumber": 97
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "Map.of",
+          "lineNumber": 97
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "Files.createTempFile",
+          "lineNumber": 98
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "copyWithLimitAndDigest",
+          "lineNumber": 99
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "response.bodyStream",
+          "lineNumber": 99
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "deleteTempFileQuietly",
+          "lineNumber": 101
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "new ClientException",
+          "lineNumber": 102
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "firstHasText",
+          "lineNumber": 106
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "trimOrNull",
+          "lineNumber": 106
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "response.etag",
+          "lineNumber": 106
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "trimOrNull",
+          "lineNumber": 106
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "headResponse.etag",
+          "lineNumber": 106
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "firstHasText",
+          "lineNumber": 107
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "trimOrNull",
+          "lineNumber": 107
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "response.lastModified",
+          "lineNumber": 107
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "trimOrNull",
+          "lineNumber": 107
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "headResponse.lastModified",
+          "lineNumber": 107
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 109
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "hash.equals",
+          "lineNumber": 109
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "trimOrNull",
+          "lineNumber": 109
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "deleteTempFileQuietly",
+          "lineNumber": 110
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "RemoteFetchResult.skipped",
+          "lineNumber": 111
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 114
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "response.fileName",
+          "lineNumber": 114
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "response.fileName",
+          "lineNumber": 114
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "RemoteFetchResult.changed",
+          "lineNumber": 115
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "response.contentType",
+          "lineNumber": 115
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "deleteTempFileQuietly",
+          "lineNumber": 117
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "new ServiceException",
+          "lineNumber": 118
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "e.getMessage",
+          "lineNumber": 118
+        },
+        {
+          "caller": "fetchIfChanged",
+          "callee": "deleteTempFileQuietly",
+          "lineNumber": 120
+        },
+        {
+          "caller": "tryHead",
+          "callee": "httpClientHelper.head",
+          "lineNumber": 127
+        },
+        {
+          "caller": "tryHead",
+          "callee": "Map.of",
+          "lineNumber": 127
+        },
+        {
+          "caller": "tryHead",
+          "callee": "log.debug",
+          "lineNumber": 129
+        },
+        {
+          "caller": "checkSizeLimit",
+          "callee": "new ClientException",
+          "lineNumber": 136
+        },
+        {
+          "caller": "uploadViaTemp",
+          "callee": "Files.createTempFile",
+          "lineNumber": 144
+        },
+        {
+          "caller": "uploadViaTemp",
+          "callee": "copyWithLimit",
+          "lineNumber": 145
+        },
+        {
+          "caller": "uploadViaTemp",
+          "callee": "new ClientException",
+          "lineNumber": 147
+        },
+        {
+          "caller": "uploadViaTemp",
+          "callee": "Files.newInputStream",
+          "lineNumber": 149
+        },
+        {
+          "caller": "uploadViaTemp",
+          "callee": "fileStorageService.upload",
+          "lineNumber": 150
+        },
+        {
+          "caller": "uploadViaTemp",
+          "callee": "new ServiceException",
+          "lineNumber": 153
+        },
+        {
+          "caller": "uploadViaTemp",
+          "callee": "e.getMessage",
+          "lineNumber": 153
+        },
+        {
+          "caller": "uploadViaTemp",
+          "callee": "Files.deleteIfExists",
+          "lineNumber": 157
+        },
+        {
+          "caller": "uploadViaTemp",
+          "callee": "log.warn",
+          "lineNumber": 159
+        },
+        {
+          "caller": "copyWithLimit",
+          "callee": "Files.newOutputStream",
+          "lineNumber": 167
+        },
+        {
+          "caller": "copyWithLimit",
+          "callee": "inputStream.read",
+          "lineNumber": 170
+        },
+        {
+          "caller": "copyWithLimit",
+          "callee": "new ClientException",
+          "lineNumber": 173
+        },
+        {
+          "caller": "copyWithLimit",
+          "callee": "outputStream.write",
+          "lineNumber": 175
+        },
+        {
+          "caller": "copyWithLimitAndDigest",
+          "callee": "MessageDigest.getInstance",
+          "lineNumber": 183
+        },
+        {
+          "caller": "copyWithLimitAndDigest",
+          "callee": "Files.newOutputStream",
+          "lineNumber": 185
+        },
+        {
+          "caller": "copyWithLimitAndDigest",
+          "callee": "inputStream.read",
+          "lineNumber": 188
+        },
+        {
+          "caller": "copyWithLimitAndDigest",
+          "callee": "new ClientException",
+          "lineNumber": 191
+        },
+        {
+          "caller": "copyWithLimitAndDigest",
+          "callee": "outputStream.write",
+          "lineNumber": 193
+        },
+        {
+          "caller": "copyWithLimitAndDigest",
+          "callee": "digest.update",
+          "lineNumber": 194
+        },
+        {
+          "caller": "copyWithLimitAndDigest",
+          "callee": "new CopyResult",
+          "lineNumber": 197
+        },
+        {
+          "caller": "copyWithLimitAndDigest",
+          "callee": "hexEncode",
+          "lineNumber": 197
+        },
+        {
+          "caller": "copyWithLimitAndDigest",
+          "callee": "digest.digest",
+          "lineNumber": 197
+        },
+        {
+          "caller": "copyWithLimitAndDigest",
+          "callee": "new ServiceException",
+          "lineNumber": 199
+        },
+        {
+          "caller": "hexEncode",
+          "callee": "new StringBuilder",
+          "lineNumber": 207
+        },
+        {
+          "caller": "hexEncode",
+          "callee": "Integer.toHexString",
+          "lineNumber": 209
+        },
+        {
+          "caller": "hexEncode",
+          "callee": "value.length",
+          "lineNumber": 210
+        },
+        {
+          "caller": "hexEncode",
+          "callee": "hex.append",
+          "lineNumber": 211
+        },
+        {
+          "caller": "hexEncode",
+          "callee": "hex.append",
+          "lineNumber": 213
+        },
+        {
+          "caller": "hexEncode",
+          "callee": "hex.toString",
+          "lineNumber": 215
+        },
+        {
+          "caller": "deleteTempFileQuietly",
+          "callee": "Files.deleteIfExists",
+          "lineNumber": 221
+        },
+        {
+          "caller": "deleteTempFileQuietly",
+          "callee": "log.warn",
+          "lineNumber": 223
+        },
+        {
+          "caller": "firstHasText",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 230
+        },
+        {
+          "caller": "trimOrNull",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 236
+        },
+        {
+          "caller": "trimOrNull",
+          "callee": "value.trim",
+          "lineNumber": 236
+        },
+        {
+          "caller": "skipped",
+          "callee": "new RemoteFetchResult",
+          "lineNumber": 266
+        },
+        {
+          "caller": "changed",
+          "callee": "new RemoteFetchResult",
+          "lineNumber": 271
+        },
+        {
+          "caller": "close",
+          "callee": "Files.deleteIfExists",
+          "lineNumber": 288
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 3,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/mq/KnowledgeDocumentChunkConsumer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 52,
+      "functions": [
+        {
+          "name": "onMessage",
+          "startLine": 46,
+          "endLine": 58,
+          "params": [
+            "message"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "KnowledgeDocumentChunkConsumer",
+          "startLine": 35,
+          "endLine": 59,
+          "methods": [
+            "onMessage"
+          ],
+          "properties": [
+            "documentService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "onMessage",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "KnowledgeDocumentChunkConsumer",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "onMessage",
+          "callee": "message.getBody",
+          "lineNumber": 48
+        },
+        {
+          "caller": "onMessage",
+          "callee": "log.info",
+          "lineNumber": 50
+        },
+        {
+          "caller": "onMessage",
+          "callee": "event.getDocId",
+          "lineNumber": 50
+        },
+        {
+          "caller": "onMessage",
+          "callee": "message.getKeys",
+          "lineNumber": 50
+        },
+        {
+          "caller": "onMessage",
+          "callee": "UserContext.set",
+          "lineNumber": 52
+        },
+        {
+          "caller": "onMessage",
+          "callee": "LoginUser.builder().username(event.getOperator()).build",
+          "lineNumber": 52
+        },
+        {
+          "caller": "onMessage",
+          "callee": "LoginUser.builder().username",
+          "lineNumber": 52
+        },
+        {
+          "caller": "onMessage",
+          "callee": "LoginUser.builder",
+          "lineNumber": 52
+        },
+        {
+          "caller": "onMessage",
+          "callee": "event.getOperator",
+          "lineNumber": 52
+        },
+        {
+          "caller": "onMessage",
+          "callee": "documentService.executeChunk",
+          "lineNumber": 54
+        },
+        {
+          "caller": "onMessage",
+          "callee": "event.getDocId",
+          "lineNumber": 54
+        },
+        {
+          "caller": "onMessage",
+          "callee": "UserContext.clear",
+          "lineNumber": 56
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    }
+  ]
+}

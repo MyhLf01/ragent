@@ -1,0 +1,94 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/SampleQuestionController.java",
+      "language": "java",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionCreateRequest.java",
+      "language": "java",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionPageRequest.java",
+      "language": "java",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionUpdateRequest.java",
+      "language": "java",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/SampleQuestionVO.java",
+      "language": "java",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/SampleQuestionDO.java",
+      "language": "java",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/SampleQuestionMapper.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/SampleQuestionService.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/SampleQuestionServiceImpl.java",
+      "language": "java",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/SampleQuestionController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/SampleQuestionVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/SampleQuestionService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionCreateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionPageRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionUpdateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/SampleQuestionVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/SampleQuestionDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/SampleQuestionMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/SampleQuestionDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/SampleQuestionService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/SampleQuestionVO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/SampleQuestionServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionPageRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/SampleQuestionUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/SampleQuestionVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/SampleQuestionDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/SampleQuestionMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/SampleQuestionService.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java"
+    ]
+  }
+}

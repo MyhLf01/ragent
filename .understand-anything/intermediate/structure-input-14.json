@@ -1,0 +1,145 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IntentTreeService.java",
+      "language": "java",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/impl/IntentTreeServiceImpl.java",
+      "language": "java",
+      "sizeLines": 463,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/IntentTreeController.java",
+      "language": "java",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeBatchRequest.java",
+      "language": "java",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeCreateRequest.java",
+      "language": "java",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeUpdateRequest.java",
+      "language": "java",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/IntentNodeTreeVO.java",
+      "language": "java",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentTreeCacheManager.java",
+      "language": "java",
+      "sizeLines": 122,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentTreeFactory.java",
+      "language": "java",
+      "sizeLines": 456,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/IntentNodeDO.java",
+      "language": "java",
+      "sizeLines": 135,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/IntentNodeMapper.java",
+      "language": "java",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentKind.java",
+      "language": "java",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/Intent/IntentTreeServiceTests.java",
+      "language": "java",
+      "sizeLines": 159,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/Intent/VectorIntentClassifier.java",
+      "language": "java",
+      "sizeLines": 161,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IntentTreeService.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/IntentNodeTreeVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/IntentNodeDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/impl/IntentTreeServiceImpl.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IntentTreeService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/mapper/KnowledgeBaseMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/IntentNodeTreeVO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentTreeCacheManager.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentTreeFactory.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/IntentNodeDO.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/IntentNodeMapper.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentKind.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentLevel.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/UserContext.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ClientException.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/ServiceException.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/IntentTreeController.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IntentTreeService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeBatchRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeCreateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeUpdateRequest.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/IntentNodeTreeVO.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeBatchRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeCreateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/IntentNodeUpdateRequest.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/IntentNodeTreeVO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentTreeCacheManager.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentTreeFactory.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentKind.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/IntentNodeDO.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/IntentNodeMapper.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/IntentNodeDO.java"
+    ],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentKind.java": [],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/Intent/IntentTreeServiceTests.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IntentTreeService.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/IntentNodeTreeVO.java"
+    ],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/Intent/VectorIntentClassifier.java": [
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentNode.java",
+      "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/intent/IntentTreeFactory.java",
+      "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingService.java"
+    ]
+  }
+}

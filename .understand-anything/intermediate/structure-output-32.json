@@ -1,0 +1,1599 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "frontend/src/services/ragTraceService.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 78,
+      "nonEmptyLines": 70,
+      "functions": [
+        {
+          "name": "getRagTraceRuns",
+          "startLine": 57,
+          "endLine": 70,
+          "params": [
+            "query"
+          ]
+        },
+        {
+          "name": "getRagTraceDetail",
+          "startLine": 72,
+          "endLine": 74,
+          "params": [
+            "traceId"
+          ]
+        },
+        {
+          "name": "getRagTraceNodes",
+          "startLine": 76,
+          "endLine": 78,
+          "params": [
+            "traceId"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getRagTraceRuns",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "getRagTraceDetail",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "getRagTraceNodes",
+          "line": 76,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getRagTraceRuns",
+          "callee": "api.get",
+          "lineNumber": 60
+        },
+        {
+          "caller": "getRagTraceDetail",
+          "callee": "api.get",
+          "lineNumber": 73
+        },
+        {
+          "caller": "getRagTraceNodes",
+          "callee": "api.get",
+          "lineNumber": 77
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/services/sampleQuestionService.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 50,
+      "nonEmptyLines": 42,
+      "functions": [
+        {
+          "name": "listSampleQuestions",
+          "startLine": 26,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "getSampleQuestionsPage",
+          "startLine": 30,
+          "endLine": 38,
+          "params": [
+            "current",
+            "size",
+            "keyword"
+          ]
+        },
+        {
+          "name": "createSampleQuestion",
+          "startLine": 40,
+          "endLine": 42,
+          "params": [
+            "payload"
+          ]
+        },
+        {
+          "name": "updateSampleQuestion",
+          "startLine": 44,
+          "endLine": 46,
+          "params": [
+            "id",
+            "payload"
+          ]
+        },
+        {
+          "name": "deleteSampleQuestion",
+          "startLine": 48,
+          "endLine": 50,
+          "params": [
+            "id"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listSampleQuestions",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "getSampleQuestionsPage",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "createSampleQuestion",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "updateSampleQuestion",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "deleteSampleQuestion",
+          "line": 48,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listSampleQuestions",
+          "callee": "api.get",
+          "lineNumber": 27
+        },
+        {
+          "caller": "getSampleQuestionsPage",
+          "callee": "api.get",
+          "lineNumber": 35
+        },
+        {
+          "caller": "createSampleQuestion",
+          "callee": "api.post",
+          "lineNumber": 41
+        },
+        {
+          "caller": "updateSampleQuestion",
+          "callee": "api.put",
+          "lineNumber": 45
+        },
+        {
+          "caller": "deleteSampleQuestion",
+          "callee": "api.delete",
+          "lineNumber": 49
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/services/sessionService.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 28,
+      "functions": [
+        {
+          "name": "listSessions",
+          "startLine": 20,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "deleteSession",
+          "startLine": 24,
+          "endLine": 26,
+          "params": [
+            "conversationId"
+          ]
+        },
+        {
+          "name": "renameSession",
+          "startLine": 28,
+          "endLine": 30,
+          "params": [
+            "conversationId",
+            "title"
+          ]
+        },
+        {
+          "name": "listMessages",
+          "startLine": 32,
+          "endLine": 34,
+          "params": [
+            "conversationId"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listSessions",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "deleteSession",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "renameSession",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "listMessages",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listSessions",
+          "callee": "api.get",
+          "lineNumber": 21
+        },
+        {
+          "caller": "deleteSession",
+          "callee": "api.delete",
+          "lineNumber": 25
+        },
+        {
+          "caller": "renameSession",
+          "callee": "api.put",
+          "lineNumber": 29
+        },
+        {
+          "caller": "listMessages",
+          "callee": "api.get",
+          "lineNumber": 33
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/services/settingsService.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 75,
+      "nonEmptyLines": 71,
+      "functions": [
+        {
+          "name": "getSystemSettings",
+          "startLine": 73,
+          "endLine": 75,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "getSystemSettings",
+          "line": 73,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getSystemSettings",
+          "callee": "api.get",
+          "lineNumber": 74
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/services/userService.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 53,
+      "functions": [
+        {
+          "name": "getUsersPage",
+          "startLine": 39,
+          "endLine": 47,
+          "params": [
+            "current",
+            "size",
+            "keyword"
+          ]
+        },
+        {
+          "name": "createUser",
+          "startLine": 49,
+          "endLine": 51,
+          "params": [
+            "payload"
+          ]
+        },
+        {
+          "name": "updateUser",
+          "startLine": 53,
+          "endLine": 55,
+          "params": [
+            "id",
+            "payload"
+          ]
+        },
+        {
+          "name": "deleteUser",
+          "startLine": 57,
+          "endLine": 59,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "changePassword",
+          "startLine": 61,
+          "endLine": 63,
+          "params": [
+            "payload"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getUsersPage",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "createUser",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "updateUser",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "deleteUser",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "changePassword",
+          "line": 61,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getUsersPage",
+          "callee": "api.get",
+          "lineNumber": 44
+        },
+        {
+          "caller": "createUser",
+          "callee": "api.post",
+          "lineNumber": 50
+        },
+        {
+          "caller": "updateUser",
+          "callee": "api.put",
+          "lineNumber": 54
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "api.delete",
+          "lineNumber": 58
+        },
+        {
+          "caller": "changePassword",
+          "callee": "api.put",
+          "lineNumber": 62
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/stores/authStore.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 115,
+      "nonEmptyLines": 111,
+      "exports": [
+        {
+          "name": "useAuthStore",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/stores/chatStore.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 527,
+      "nonEmptyLines": 513,
+      "functions": [
+        {
+          "name": "mapVoteToFeedback",
+          "startLine": 45,
+          "endLine": 49,
+          "params": [
+            "vote"
+          ]
+        },
+        {
+          "name": "upsertSession",
+          "startLine": 51,
+          "endLine": 64,
+          "params": [
+            "sessions",
+            "next"
+          ]
+        },
+        {
+          "name": "computeThinkingDuration",
+          "startLine": 66,
+          "endLine": 70,
+          "params": [
+            "startAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useChatStore",
+          "line": 74,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "upsertSession",
+          "callee": "sessions.findIndex",
+          "lineNumber": 52
+        },
+        {
+          "caller": "upsertSession",
+          "callee": "updated.unshift",
+          "lineNumber": 57
+        },
+        {
+          "caller": "upsertSession",
+          "callee": "updated.sort",
+          "lineNumber": 59
+        },
+        {
+          "caller": "upsertSession",
+          "callee": "new Date(a.lastTime).getTime",
+          "lineNumber": 60
+        },
+        {
+          "caller": "upsertSession",
+          "callee": "new Date(b.lastTime).getTime",
+          "lineNumber": 61
+        },
+        {
+          "caller": "computeThinkingDuration",
+          "callee": "Math.round",
+          "lineNumber": 68
+        },
+        {
+          "caller": "computeThinkingDuration",
+          "callee": "Date.now",
+          "lineNumber": 68
+        },
+        {
+          "caller": "computeThinkingDuration",
+          "callee": "Math.max",
+          "lineNumber": 69
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/stores/themeStore.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 30,
+      "functions": [
+        {
+          "name": "applyTheme",
+          "startLine": 14,
+          "endLine": 16,
+          "params": [
+            "theme"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useThemeStore",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "applyTheme",
+          "callee": "document.documentElement.classList.toggle",
+          "lineNumber": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/styles/globals.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 2227,
+      "nonEmptyLines": 1840,
+      "metrics": {}
+    },
+    {
+      "path": "frontend/src/types/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 49,
+      "nonEmptyLines": 40,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/utils/error.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "getErrorMessage",
+          "startLine": 1,
+          "endLine": 12,
+          "params": [
+            "error",
+            "fallback"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getErrorMessage",
+          "line": 1,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getErrorMessage",
+          "callee": "error.trim",
+          "lineNumber": 2
+        },
+        {
+          "caller": "getErrorMessage",
+          "callee": "maybeMessage.trim",
+          "lineNumber": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/utils/helpers.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 23,
+      "functions": [
+        {
+          "name": "formatTimestamp",
+          "startLine": 3,
+          "endLine": 10,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "truncate",
+          "startLine": 12,
+          "endLine": 16,
+          "params": [
+            "text",
+            "max"
+          ]
+        },
+        {
+          "name": "buildQuery",
+          "startLine": 18,
+          "endLine": 26,
+          "params": [
+            "params"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "formatTimestamp",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "truncate",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "buildQuery",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "formatTimestamp",
+          "callee": "format",
+          "lineNumber": 6
+        },
+        {
+          "caller": "truncate",
+          "callee": "text.slice",
+          "lineNumber": 15
+        },
+        {
+          "caller": "buildQuery",
+          "callee": "Object.entries(params).forEach",
+          "lineNumber": 20
+        },
+        {
+          "caller": "buildQuery",
+          "callee": "Object.entries",
+          "lineNumber": 20
+        },
+        {
+          "caller": "buildQuery",
+          "callee": "search.set",
+          "lineNumber": 22
+        },
+        {
+          "caller": "buildQuery",
+          "callee": "String",
+          "lineNumber": 22
+        },
+        {
+          "caller": "buildQuery",
+          "callee": "search.toString",
+          "lineNumber": 24
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/utils/storage.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 66,
+      "nonEmptyLines": 61,
+      "functions": [
+        {
+          "name": "safeGet",
+          "startLine": 7,
+          "endLine": 13,
+          "params": [
+            "key"
+          ]
+        },
+        {
+          "name": "safeSet",
+          "startLine": 15,
+          "endLine": 21,
+          "params": [
+            "key",
+            "value"
+          ]
+        },
+        {
+          "name": "safeRemove",
+          "startLine": 23,
+          "endLine": 29,
+          "params": [
+            "key"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "storage",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "safeGet",
+          "callee": "window.localStorage.getItem",
+          "lineNumber": 9
+        },
+        {
+          "caller": "safeSet",
+          "callee": "window.localStorage.setItem",
+          "lineNumber": 17
+        },
+        {
+          "caller": "safeRemove",
+          "callee": "window.localStorage.removeItem",
+          "lineNumber": 25
+        },
+        {
+          "caller": "getToken",
+          "callee": "safeGet",
+          "lineNumber": 33
+        },
+        {
+          "caller": "setToken",
+          "callee": "safeSet",
+          "lineNumber": 36
+        },
+        {
+          "caller": "clearToken",
+          "callee": "safeRemove",
+          "lineNumber": 39
+        },
+        {
+          "caller": "getUser",
+          "callee": "safeGet",
+          "lineNumber": 42
+        },
+        {
+          "caller": "getUser",
+          "callee": "JSON.parse",
+          "lineNumber": 45
+        },
+        {
+          "caller": "setUser",
+          "callee": "safeSet",
+          "lineNumber": 51
+        },
+        {
+          "caller": "setUser",
+          "callee": "JSON.stringify",
+          "lineNumber": 51
+        },
+        {
+          "caller": "clearUser",
+          "callee": "safeRemove",
+          "lineNumber": 54
+        },
+        {
+          "caller": "clearAuth",
+          "callee": "safeRemove",
+          "lineNumber": 57
+        },
+        {
+          "caller": "clearAuth",
+          "callee": "safeRemove",
+          "lineNumber": 58
+        },
+        {
+          "caller": "getTheme",
+          "callee": "safeGet",
+          "lineNumber": 61
+        },
+        {
+          "caller": "setTheme",
+          "callee": "safeSet",
+          "lineNumber": 64
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/vite-env.d.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/tailwind.config.cjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 82,
+      "nonEmptyLines": 82,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/tsconfig.app.tsbuildinfo",
+      "language": "tsbuildinfo",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {}
+    },
+    {
+      "path": "frontend/tsconfig.node.tsbuildinfo",
+      "language": "tsbuildinfo",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {}
+    },
+    {
+      "path": "frontend/vite.config.d.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 2,
+      "nonEmptyLines": 2,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/vite.config.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 22,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/vite.config.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 22,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "infra-ai/pom.xml",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 25,
+      "nonEmptyLines": 22,
+      "metrics": {}
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/OpenAIStyleSseParser.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 114,
+      "nonEmptyLines": 98,
+      "functions": [
+        {
+          "name": "parseLine",
+          "startLine": 36,
+          "endLine": 61,
+          "params": [
+            "line",
+            "gson",
+            "reasoningEnabled"
+          ]
+        },
+        {
+          "name": "hasFinishReason",
+          "startLine": 63,
+          "endLine": 69,
+          "params": [
+            "choice"
+          ]
+        },
+        {
+          "name": "extractText",
+          "startLine": 71,
+          "endLine": 94,
+          "params": [
+            "choice",
+            "fieldName"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "OpenAIStyleSseParser",
+          "startLine": 30,
+          "endLine": 114,
+          "methods": [
+            "parseLine",
+            "hasFinishReason",
+            "extractText"
+          ],
+          "properties": [
+            "DATA_PREFIX",
+            "DONE_MARKER"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "OpenAIStyleSseParser",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "parseLine",
+          "callee": "line.isBlank",
+          "lineNumber": 37
+        },
+        {
+          "caller": "parseLine",
+          "callee": "ParsedEvent.empty",
+          "lineNumber": 38
+        },
+        {
+          "caller": "parseLine",
+          "callee": "line.trim",
+          "lineNumber": 41
+        },
+        {
+          "caller": "parseLine",
+          "callee": "payload.startsWith",
+          "lineNumber": 42
+        },
+        {
+          "caller": "parseLine",
+          "callee": "payload.substring(DATA_PREFIX.length()).trim",
+          "lineNumber": 43
+        },
+        {
+          "caller": "parseLine",
+          "callee": "payload.substring",
+          "lineNumber": 43
+        },
+        {
+          "caller": "parseLine",
+          "callee": "DATA_PREFIX.length",
+          "lineNumber": 43
+        },
+        {
+          "caller": "parseLine",
+          "callee": "DONE_MARKER.equalsIgnoreCase",
+          "lineNumber": 45
+        },
+        {
+          "caller": "parseLine",
+          "callee": "ParsedEvent.done",
+          "lineNumber": 46
+        },
+        {
+          "caller": "parseLine",
+          "callee": "gson.fromJson",
+          "lineNumber": 49
+        },
+        {
+          "caller": "parseLine",
+          "callee": "obj.getAsJsonArray",
+          "lineNumber": 50
+        },
+        {
+          "caller": "parseLine",
+          "callee": "choices.isEmpty",
+          "lineNumber": 51
+        },
+        {
+          "caller": "parseLine",
+          "callee": "ParsedEvent.empty",
+          "lineNumber": 52
+        },
+        {
+          "caller": "parseLine",
+          "callee": "choices.get(0).getAsJsonObject",
+          "lineNumber": 55
+        },
+        {
+          "caller": "parseLine",
+          "callee": "choices.get",
+          "lineNumber": 55
+        },
+        {
+          "caller": "parseLine",
+          "callee": "extractText",
+          "lineNumber": 56
+        },
+        {
+          "caller": "parseLine",
+          "callee": "extractText",
+          "lineNumber": 57
+        },
+        {
+          "caller": "parseLine",
+          "callee": "hasFinishReason",
+          "lineNumber": 58
+        },
+        {
+          "caller": "parseLine",
+          "callee": "new ParsedEvent",
+          "lineNumber": 60
+        },
+        {
+          "caller": "hasFinishReason",
+          "callee": "choice.has",
+          "lineNumber": 64
+        },
+        {
+          "caller": "hasFinishReason",
+          "callee": "choice.get",
+          "lineNumber": 67
+        },
+        {
+          "caller": "hasFinishReason",
+          "callee": "finishReason.isJsonNull",
+          "lineNumber": 68
+        },
+        {
+          "caller": "extractText",
+          "callee": "choice.has",
+          "lineNumber": 75
+        },
+        {
+          "caller": "extractText",
+          "callee": "choice.get(\"delta\").isJsonObject",
+          "lineNumber": 75
+        },
+        {
+          "caller": "extractText",
+          "callee": "choice.get",
+          "lineNumber": 75
+        },
+        {
+          "caller": "extractText",
+          "callee": "choice.getAsJsonObject",
+          "lineNumber": 76
+        },
+        {
+          "caller": "extractText",
+          "callee": "delta.has",
+          "lineNumber": 77
+        },
+        {
+          "caller": "extractText",
+          "callee": "delta.get",
+          "lineNumber": 78
+        },
+        {
+          "caller": "extractText",
+          "callee": "value.isJsonNull",
+          "lineNumber": 79
+        },
+        {
+          "caller": "extractText",
+          "callee": "value.getAsString",
+          "lineNumber": 80
+        },
+        {
+          "caller": "extractText",
+          "callee": "choice.has",
+          "lineNumber": 84
+        },
+        {
+          "caller": "extractText",
+          "callee": "choice.get(\"message\").isJsonObject",
+          "lineNumber": 84
+        },
+        {
+          "caller": "extractText",
+          "callee": "choice.get",
+          "lineNumber": 84
+        },
+        {
+          "caller": "extractText",
+          "callee": "choice.getAsJsonObject",
+          "lineNumber": 85
+        },
+        {
+          "caller": "extractText",
+          "callee": "message.has",
+          "lineNumber": 86
+        },
+        {
+          "caller": "extractText",
+          "callee": "message.get",
+          "lineNumber": 87
+        },
+        {
+          "caller": "extractText",
+          "callee": "value.isJsonNull",
+          "lineNumber": 88
+        },
+        {
+          "caller": "extractText",
+          "callee": "value.getAsString",
+          "lineNumber": 89
+        },
+        {
+          "caller": "empty",
+          "callee": "new ParsedEvent",
+          "lineNumber": 99
+        },
+        {
+          "caller": "done",
+          "callee": "new ParsedEvent",
+          "lineNumber": 103
+        },
+        {
+          "caller": "hasContent",
+          "callee": "content.isEmpty",
+          "lineNumber": 107
+        },
+        {
+          "caller": "hasReasoning",
+          "callee": "reasoning.isEmpty",
+          "lineNumber": 111
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/ProbeStreamBridge.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 146,
+      "nonEmptyLines": 123,
+      "functions": [
+        {
+          "name": "ProbeStreamBridge",
+          "startLine": 40,
+          "endLine": 42,
+          "params": [
+            "downstream"
+          ]
+        },
+        {
+          "name": "onContent",
+          "startLine": 44,
+          "endLine": 48,
+          "params": [
+            "content"
+          ]
+        },
+        {
+          "name": "onThinking",
+          "startLine": 50,
+          "endLine": 54,
+          "params": [
+            "content"
+          ]
+        },
+        {
+          "name": "onComplete",
+          "startLine": 56,
+          "endLine": 60,
+          "params": []
+        },
+        {
+          "name": "onError",
+          "startLine": 62,
+          "endLine": 66,
+          "params": [
+            "t"
+          ]
+        },
+        {
+          "name": "awaitFirstPacket",
+          "startLine": 71,
+          "endLine": 85,
+          "params": [
+            "timeout",
+            "unit"
+          ]
+        },
+        {
+          "name": "commit",
+          "startLine": 87,
+          "endLine": 95,
+          "params": []
+        },
+        {
+          "name": "bufferOrDispatch",
+          "startLine": 97,
+          "endLine": 108,
+          "params": [
+            "action"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ProbeStreamBridge",
+          "startLine": 32,
+          "endLine": 146,
+          "methods": [
+            "ProbeStreamBridge",
+            "onContent",
+            "onThinking",
+            "onComplete",
+            "onError",
+            "awaitFirstPacket",
+            "commit",
+            "bufferOrDispatch"
+          ],
+          "properties": [
+            "downstream",
+            "probe",
+            "lock",
+            "buffer",
+            "committed"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "onContent",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "onThinking",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "onComplete",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "onError",
+          "line": 62,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "onContent",
+          "callee": "probe.complete",
+          "lineNumber": 46
+        },
+        {
+          "caller": "onContent",
+          "callee": "ProbeResult.success",
+          "lineNumber": 46
+        },
+        {
+          "caller": "onContent",
+          "callee": "bufferOrDispatch",
+          "lineNumber": 47
+        },
+        {
+          "caller": "onContent",
+          "callee": "downstream.onContent",
+          "lineNumber": 47
+        },
+        {
+          "caller": "onThinking",
+          "callee": "probe.complete",
+          "lineNumber": 52
+        },
+        {
+          "caller": "onThinking",
+          "callee": "ProbeResult.success",
+          "lineNumber": 52
+        },
+        {
+          "caller": "onThinking",
+          "callee": "bufferOrDispatch",
+          "lineNumber": 53
+        },
+        {
+          "caller": "onThinking",
+          "callee": "downstream.onThinking",
+          "lineNumber": 53
+        },
+        {
+          "caller": "onComplete",
+          "callee": "probe.complete",
+          "lineNumber": 58
+        },
+        {
+          "caller": "onComplete",
+          "callee": "ProbeResult.noContent",
+          "lineNumber": 58
+        },
+        {
+          "caller": "onComplete",
+          "callee": "bufferOrDispatch",
+          "lineNumber": 59
+        },
+        {
+          "caller": "onError",
+          "callee": "probe.complete",
+          "lineNumber": 64
+        },
+        {
+          "caller": "onError",
+          "callee": "ProbeResult.error",
+          "lineNumber": 64
+        },
+        {
+          "caller": "onError",
+          "callee": "bufferOrDispatch",
+          "lineNumber": 65
+        },
+        {
+          "caller": "onError",
+          "callee": "downstream.onError",
+          "lineNumber": 65
+        },
+        {
+          "caller": "awaitFirstPacket",
+          "callee": "probe.get",
+          "lineNumber": 74
+        },
+        {
+          "caller": "awaitFirstPacket",
+          "callee": "ProbeResult.timeout",
+          "lineNumber": 76
+        },
+        {
+          "caller": "awaitFirstPacket",
+          "callee": "ProbeResult.error",
+          "lineNumber": 78
+        },
+        {
+          "caller": "awaitFirstPacket",
+          "callee": "e.getCause",
+          "lineNumber": 78
+        },
+        {
+          "caller": "awaitFirstPacket",
+          "callee": "result.isSuccess",
+          "lineNumber": 81
+        },
+        {
+          "caller": "awaitFirstPacket",
+          "callee": "commit",
+          "lineNumber": 82
+        },
+        {
+          "caller": "commit",
+          "callee": "buffer.forEach",
+          "lineNumber": 93
+        },
+        {
+          "caller": "bufferOrDispatch",
+          "callee": "buffer.add",
+          "lineNumber": 102
+        },
+        {
+          "caller": "bufferOrDispatch",
+          "callee": "action.run",
+          "lineNumber": 106
+        },
+        {
+          "caller": "success",
+          "callee": "new ProbeResult",
+          "lineNumber": 127
+        },
+        {
+          "caller": "error",
+          "callee": "new ProbeResult",
+          "lineNumber": 131
+        },
+        {
+          "caller": "timeout",
+          "callee": "new ProbeResult",
+          "lineNumber": 135
+        },
+        {
+          "caller": "noContent",
+          "callee": "new ProbeResult",
+          "lineNumber": 139
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamCancellationHandles.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 67,
+      "nonEmptyLines": 56,
+      "functions": [
+        {
+          "name": "noop",
+          "startLine": 35,
+          "endLine": 37,
+          "params": []
+        },
+        {
+          "name": "fromOkHttp",
+          "startLine": 39,
+          "endLine": 41,
+          "params": [
+            "call",
+            "cancelled"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "StreamCancellationHandles",
+          "startLine": 29,
+          "endLine": 67,
+          "methods": [
+            "noop",
+            "fromOkHttp"
+          ],
+          "properties": [
+            "NOOP"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "noop",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "fromOkHttp",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "StreamCancellationHandles",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fromOkHttp",
+          "callee": "new OkHttpCancellationHandle",
+          "lineNumber": 40
+        },
+        {
+          "caller": "cancel",
+          "callee": "once.compareAndSet",
+          "lineNumber": 56
+        },
+        {
+          "caller": "cancel",
+          "callee": "cancelled.set",
+          "lineNumber": 60
+        },
+        {
+          "caller": "cancel",
+          "callee": "call.cancel",
+          "lineNumber": 63
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/model/ModelCaller.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 42,
+      "nonEmptyLines": 39,
+      "classes": [
+        {
+          "name": "ModelCaller",
+          "startLine": 30,
+          "endLine": 42,
+          "methods": [
+            "call"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ModelCaller",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    }
+  ]
+}

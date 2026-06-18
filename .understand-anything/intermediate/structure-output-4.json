@@ -1,0 +1,3966 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 32,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/SearchContext.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 74,
+      "nonEmptyLines": 63,
+      "functions": [
+        {
+          "name": "getMainQuestion",
+          "startLine": 71,
+          "endLine": 73,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SearchContext",
+          "startLine": 33,
+          "endLine": 74,
+          "methods": [
+            "getMainQuestion"
+          ],
+          "properties": [
+            "originalQuestion",
+            "rewrittenQuestion",
+            "subQuestions",
+            "intents",
+            "topK",
+            "metadata"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getMainQuestion",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "SearchContext",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/strategy/CollectionParallelRetriever.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 68,
+      "nonEmptyLines": 59,
+      "functions": [
+        {
+          "name": "CollectionParallelRetriever",
+          "startLine": 38,
+          "endLine": 41,
+          "params": [
+            "retrieverService",
+            "executor"
+          ]
+        },
+        {
+          "name": "createRetrievalTask",
+          "startLine": 43,
+          "endLine": 57,
+          "params": [
+            "question",
+            "collectionName",
+            "topK"
+          ]
+        },
+        {
+          "name": "getTargetIdentifier",
+          "startLine": 59,
+          "endLine": 62,
+          "params": [
+            "collectionName"
+          ]
+        },
+        {
+          "name": "getStatisticsName",
+          "startLine": 64,
+          "endLine": 67,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CollectionParallelRetriever",
+          "startLine": 33,
+          "endLine": 68,
+          "methods": [
+            "CollectionParallelRetriever",
+            "createRetrievalTask",
+            "getTargetIdentifier",
+            "getStatisticsName"
+          ],
+          "properties": [
+            "retrieverService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CollectionParallelRetriever",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "CollectionParallelRetriever",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createRetrievalTask",
+          "callee": "retrieverService.retrieve",
+          "lineNumber": 46
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "RetrieveRequest.builder()\r\n                            .collectionName(collectionName)\r\n                            .query(question)\r\n                            .topK(topK).build",
+          "lineNumber": 47
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "RetrieveRequest.builder()\r\n                            .collectionName(collectionName)\r\n                            .query(question).topK",
+          "lineNumber": 47
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "RetrieveRequest.builder()\r\n                            .collectionName(collectionName).query",
+          "lineNumber": 47
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "RetrieveRequest.builder().collectionName",
+          "lineNumber": 47
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "RetrieveRequest.builder",
+          "lineNumber": 47
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "log.error",
+          "lineNumber": 54
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "e.getMessage",
+          "lineNumber": 54
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "List.of",
+          "lineNumber": 55
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 2,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/channel/strategy/IntentParallelRetriever.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 115,
+      "nonEmptyLines": 101,
+      "functions": [
+        {
+          "name": "IntentParallelRetriever",
+          "startLine": 43,
+          "endLine": 47,
+          "params": [
+            "retrieverService",
+            "executor"
+          ]
+        },
+        {
+          "name": "executeParallelRetrieval",
+          "startLine": 52,
+          "endLine": 63,
+          "params": [
+            "question",
+            "targets",
+            "fallbackTopK",
+            "topKMultiplier"
+          ]
+        },
+        {
+          "name": "createRetrievalTask",
+          "startLine": 65,
+          "endLine": 82,
+          "params": [
+            "question",
+            "task",
+            "ignoredTopK"
+          ]
+        },
+        {
+          "name": "getTargetIdentifier",
+          "startLine": 84,
+          "endLine": 89,
+          "params": [
+            "task"
+          ]
+        },
+        {
+          "name": "getStatisticsName",
+          "startLine": 91,
+          "endLine": 94,
+          "params": []
+        },
+        {
+          "name": "resolveIntentTopK",
+          "startLine": 99,
+          "endLine": 114,
+          "params": [
+            "nodeScore",
+            "fallbackTopK",
+            "topKMultiplier"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "IntentParallelRetriever",
+          "startLine": 35,
+          "endLine": 115,
+          "methods": [
+            "IntentParallelRetriever",
+            "executeParallelRetrieval",
+            "createRetrievalTask",
+            "getTargetIdentifier",
+            "getStatisticsName",
+            "resolveIntentTopK"
+          ],
+          "properties": [
+            "retrieverService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IntentParallelRetriever",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "executeParallelRetrieval",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "IntentParallelRetriever",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "executeParallelRetrieval",
+          "callee": "targets.stream()\r\n                .map(nodeScore -> new IntentTask(\r\n                        nodeScore,\r\n                        resolveIntentTopK(nodeScore, fallbackTopK, topKMultiplier)\r\n                )).toList",
+          "lineNumber": 56
+        },
+        {
+          "caller": "executeParallelRetrieval",
+          "callee": "targets.stream().map",
+          "lineNumber": 56
+        },
+        {
+          "caller": "executeParallelRetrieval",
+          "callee": "targets.stream",
+          "lineNumber": 56
+        },
+        {
+          "caller": "executeParallelRetrieval",
+          "callee": "new IntentTask",
+          "lineNumber": 57
+        },
+        {
+          "caller": "executeParallelRetrieval",
+          "callee": "resolveIntentTopK",
+          "lineNumber": 59
+        },
+        {
+          "caller": "executeParallelRetrieval",
+          "callee": "super.executeParallelRetrieval",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "task.nodeScore",
+          "lineNumber": 67
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "nodeScore.getNode",
+          "lineNumber": 68
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "retrieverService.retrieve",
+          "lineNumber": 70
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "RetrieveRequest.builder()\r\n                            .collectionName(node.getCollectionName())\r\n                            .query(question)\r\n                            .topK(task.intentTopK()).build",
+          "lineNumber": 71
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "RetrieveRequest.builder()\r\n                            .collectionName(node.getCollectionName())\r\n                            .query(question).topK",
+          "lineNumber": 71
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "RetrieveRequest.builder()\r\n                            .collectionName(node.getCollectionName()).query",
+          "lineNumber": 71
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "RetrieveRequest.builder().collectionName",
+          "lineNumber": 71
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "RetrieveRequest.builder",
+          "lineNumber": 71
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "node.getCollectionName",
+          "lineNumber": 72
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "task.intentTopK",
+          "lineNumber": 74
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "log.error",
+          "lineNumber": 78
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "node.getId",
+          "lineNumber": 79
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "node.getName",
+          "lineNumber": 79
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "node.getCollectionName",
+          "lineNumber": 79
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "e.getMessage",
+          "lineNumber": 79
+        },
+        {
+          "caller": "createRetrievalTask",
+          "callee": "List.of",
+          "lineNumber": 80
+        },
+        {
+          "caller": "getTargetIdentifier",
+          "callee": "task.nodeScore",
+          "lineNumber": 86
+        },
+        {
+          "caller": "getTargetIdentifier",
+          "callee": "nodeScore.getNode",
+          "lineNumber": 87
+        },
+        {
+          "caller": "getTargetIdentifier",
+          "callee": "String.format",
+          "lineNumber": 88
+        },
+        {
+          "caller": "getTargetIdentifier",
+          "callee": "node.getId",
+          "lineNumber": 88
+        },
+        {
+          "caller": "getTargetIdentifier",
+          "callee": "node.getName",
+          "lineNumber": 88
+        },
+        {
+          "caller": "resolveIntentTopK",
+          "callee": "nodeScore.getNode",
+          "lineNumber": 101
+        },
+        {
+          "caller": "resolveIntentTopK",
+          "callee": "nodeScore.getNode().getTopK",
+          "lineNumber": 102
+        },
+        {
+          "caller": "resolveIntentTopK",
+          "callee": "nodeScore.getNode",
+          "lineNumber": 102
+        },
+        {
+          "caller": "resolveIntentTopK",
+          "callee": "log.warn",
+          "lineNumber": 109
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 3,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/postprocessor/DeduplicationPostProcessor.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 111,
+      "nonEmptyLines": 98,
+      "functions": [
+        {
+          "name": "getName",
+          "startLine": 42,
+          "endLine": 45,
+          "params": []
+        },
+        {
+          "name": "getOrder",
+          "startLine": 47,
+          "endLine": 50,
+          "params": []
+        },
+        {
+          "name": "isEnabled",
+          "startLine": 52,
+          "endLine": 55,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "process",
+          "startLine": 57,
+          "endLine": 88,
+          "params": [
+            "chunks",
+            "results",
+            "context"
+          ]
+        },
+        {
+          "name": "generateChunkKey",
+          "startLine": 93,
+          "endLine": 98,
+          "params": [
+            "chunk"
+          ]
+        },
+        {
+          "name": "getChannelPriority",
+          "startLine": 103,
+          "endLine": 110,
+          "params": [
+            "type"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DeduplicationPostProcessor",
+          "startLine": 38,
+          "endLine": 111,
+          "methods": [
+            "getName",
+            "getOrder",
+            "isEnabled",
+            "process",
+            "generateChunkKey",
+            "getChannelPriority"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "getName",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "getOrder",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "isEnabled",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "process",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "DeduplicationPostProcessor",
+          "line": 38,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "process",
+          "callee": "new LinkedHashMap<>",
+          "lineNumber": 62
+        },
+        {
+          "caller": "process",
+          "callee": "results.stream()\r\n                .sorted((r1, r2) -> Integer.compare(\r\n                        getChannelPriority(r1.getChannelType()),\r\n                        getChannelPriority(r2.getChannelType())\r\n                )).forEach",
+          "lineNumber": 65
+        },
+        {
+          "caller": "process",
+          "callee": "results.stream().sorted",
+          "lineNumber": 65
+        },
+        {
+          "caller": "process",
+          "callee": "results.stream",
+          "lineNumber": 65
+        },
+        {
+          "caller": "process",
+          "callee": "Integer.compare",
+          "lineNumber": 66
+        },
+        {
+          "caller": "process",
+          "callee": "getChannelPriority",
+          "lineNumber": 67
+        },
+        {
+          "caller": "process",
+          "callee": "r1.getChannelType",
+          "lineNumber": 67
+        },
+        {
+          "caller": "process",
+          "callee": "getChannelPriority",
+          "lineNumber": 68
+        },
+        {
+          "caller": "process",
+          "callee": "r2.getChannelType",
+          "lineNumber": 68
+        },
+        {
+          "caller": "process",
+          "callee": "result.getChunks",
+          "lineNumber": 71
+        },
+        {
+          "caller": "process",
+          "callee": "generateChunkKey",
+          "lineNumber": 72
+        },
+        {
+          "caller": "process",
+          "callee": "chunkMap.containsKey",
+          "lineNumber": 74
+        },
+        {
+          "caller": "process",
+          "callee": "chunkMap.put",
+          "lineNumber": 76
+        },
+        {
+          "caller": "process",
+          "callee": "chunkMap.get",
+          "lineNumber": 79
+        },
+        {
+          "caller": "process",
+          "callee": "chunk.getScore",
+          "lineNumber": 80
+        },
+        {
+          "caller": "process",
+          "callee": "existing.getScore",
+          "lineNumber": 80
+        },
+        {
+          "caller": "process",
+          "callee": "chunkMap.put",
+          "lineNumber": 81
+        },
+        {
+          "caller": "process",
+          "callee": "new ArrayList<>",
+          "lineNumber": 87
+        },
+        {
+          "caller": "process",
+          "callee": "chunkMap.values",
+          "lineNumber": 87
+        },
+        {
+          "caller": "generateChunkKey",
+          "callee": "chunk.getId",
+          "lineNumber": 95
+        },
+        {
+          "caller": "generateChunkKey",
+          "callee": "chunk.getId",
+          "lineNumber": 96
+        },
+        {
+          "caller": "generateChunkKey",
+          "callee": "String.valueOf",
+          "lineNumber": 97
+        },
+        {
+          "caller": "generateChunkKey",
+          "callee": "chunk.getText().hashCode",
+          "lineNumber": 97
+        },
+        {
+          "caller": "generateChunkKey",
+          "callee": "chunk.getText",
+          "lineNumber": 97
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 5,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/postprocessor/RerankPostProcessor.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 73,
+      "nonEmptyLines": 63,
+      "functions": [
+        {
+          "name": "getName",
+          "startLine": 43,
+          "endLine": 46,
+          "params": []
+        },
+        {
+          "name": "getOrder",
+          "startLine": 48,
+          "endLine": 51,
+          "params": []
+        },
+        {
+          "name": "isEnabled",
+          "startLine": 53,
+          "endLine": 56,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "process",
+          "startLine": 58,
+          "endLine": 72,
+          "params": [
+            "chunks",
+            "results",
+            "context"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RerankPostProcessor",
+          "startLine": 36,
+          "endLine": 73,
+          "methods": [
+            "getName",
+            "getOrder",
+            "isEnabled",
+            "process"
+          ],
+          "properties": [
+            "rerankService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getName",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "getOrder",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "isEnabled",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "process",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "RerankPostProcessor",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "process",
+          "callee": "chunks.isEmpty",
+          "lineNumber": 62
+        },
+        {
+          "caller": "process",
+          "callee": "log.info",
+          "lineNumber": 63
+        },
+        {
+          "caller": "process",
+          "callee": "rerankService.rerank",
+          "lineNumber": 67
+        },
+        {
+          "caller": "process",
+          "callee": "context.getMainQuestion",
+          "lineNumber": 68
+        },
+        {
+          "caller": "process",
+          "callee": "context.getTopK",
+          "lineNumber": 70
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/retrieve/postprocessor/SearchResultPostProcessor.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 68,
+      "nonEmptyLines": 60,
+      "classes": [
+        {
+          "name": "SearchResultPostProcessor",
+          "startLine": 37,
+          "endLine": 68,
+          "methods": [
+            "getName",
+            "getOrder",
+            "isEnabled",
+            "process"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SearchResultPostProcessor",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/RewriteResult.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 20,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/CompletionPayload.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 27,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/IntentCandidate.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 29,
+      "nonEmptyLines": 26,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/IntentGroup.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 27,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/KbResult.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 34,
+      "callGraph": [
+        {
+          "caller": "empty",
+          "callee": "new KbResult",
+          "lineNumber": 36
+        },
+        {
+          "caller": "empty",
+          "callee": "Map.of",
+          "lineNumber": 36
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/MessageDelta.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 35,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/MetaPayload.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 19,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/RetrievalContext.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 70,
+      "nonEmptyLines": 60,
+      "functions": [
+        {
+          "name": "hasMcp",
+          "startLine": 53,
+          "endLine": 55,
+          "params": []
+        },
+        {
+          "name": "hasKb",
+          "startLine": 60,
+          "endLine": 62,
+          "params": []
+        },
+        {
+          "name": "isEmpty",
+          "startLine": 67,
+          "endLine": 69,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "RetrievalContext",
+          "startLine": 31,
+          "endLine": 70,
+          "methods": [
+            "hasMcp",
+            "hasKb",
+            "isEmpty"
+          ],
+          "properties": [
+            "mcpContext",
+            "kbContext",
+            "intentChunks"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "hasMcp",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "hasKb",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "isEmpty",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "RetrievalContext",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "hasMcp",
+          "callee": "StrUtil.isNotBlank",
+          "lineNumber": 54
+        },
+        {
+          "caller": "hasKb",
+          "callee": "StrUtil.isNotBlank",
+          "lineNumber": 61
+        },
+        {
+          "caller": "isEmpty",
+          "callee": "hasMcp",
+          "lineNumber": 68
+        },
+        {
+          "caller": "isEmpty",
+          "callee": "hasKb",
+          "lineNumber": 68
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dto/SubQuestionIntent.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 27,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/IntentLevel.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 75,
+      "nonEmptyLines": 66,
+      "callGraph": [
+        {
+          "caller": "fromCode",
+          "callee": "values",
+          "lineNumber": 58
+        },
+        {
+          "caller": "toString",
+          "callee": "name",
+          "lineNumber": 73
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/SSEEventType.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 66,
+      "nonEmptyLines": 55,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/handler/StreamCallbackFactory.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 64,
+      "nonEmptyLines": 58,
+      "functions": [
+        {
+          "name": "createChatEventHandler",
+          "startLine": 49,
+          "endLine": 63,
+          "params": [
+            "emitter",
+            "conversationId",
+            "taskId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "StreamCallbackFactory",
+          "startLine": 32,
+          "endLine": 64,
+          "methods": [
+            "createChatEventHandler"
+          ],
+          "properties": [
+            "modelProperties",
+            "memoryService",
+            "conversationGroupService",
+            "taskManager"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createChatEventHandler",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "StreamCallbackFactory",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createChatEventHandler",
+          "callee": "StreamChatHandlerParams.builder()\r\n                .emitter(emitter)\r\n                .conversationId(conversationId)\r\n                .taskId(taskId)\r\n                .modelProperties(modelProperties)\r\n                .memoryService(memoryService)\r\n                .conversationGroupService(conversationGroupService)\r\n                .taskManager(taskManager).build",
+          "lineNumber": 52
+        },
+        {
+          "caller": "createChatEventHandler",
+          "callee": "StreamChatHandlerParams.builder()\r\n                .emitter(emitter)\r\n                .conversationId(conversationId)\r\n                .taskId(taskId)\r\n                .modelProperties(modelProperties)\r\n                .memoryService(memoryService)\r\n                .conversationGroupService(conversationGroupService).taskManager",
+          "lineNumber": 52
+        },
+        {
+          "caller": "createChatEventHandler",
+          "callee": "StreamChatHandlerParams.builder()\r\n                .emitter(emitter)\r\n                .conversationId(conversationId)\r\n                .taskId(taskId)\r\n                .modelProperties(modelProperties)\r\n                .memoryService(memoryService).conversationGroupService",
+          "lineNumber": 52
+        },
+        {
+          "caller": "createChatEventHandler",
+          "callee": "StreamChatHandlerParams.builder()\r\n                .emitter(emitter)\r\n                .conversationId(conversationId)\r\n                .taskId(taskId)\r\n                .modelProperties(modelProperties).memoryService",
+          "lineNumber": 52
+        },
+        {
+          "caller": "createChatEventHandler",
+          "callee": "StreamChatHandlerParams.builder()\r\n                .emitter(emitter)\r\n                .conversationId(conversationId)\r\n                .taskId(taskId).modelProperties",
+          "lineNumber": 52
+        },
+        {
+          "caller": "createChatEventHandler",
+          "callee": "StreamChatHandlerParams.builder()\r\n                .emitter(emitter)\r\n                .conversationId(conversationId).taskId",
+          "lineNumber": 52
+        },
+        {
+          "caller": "createChatEventHandler",
+          "callee": "StreamChatHandlerParams.builder()\r\n                .emitter(emitter).conversationId",
+          "lineNumber": 52
+        },
+        {
+          "caller": "createChatEventHandler",
+          "callee": "StreamChatHandlerParams.builder().emitter",
+          "lineNumber": 52
+        },
+        {
+          "caller": "createChatEventHandler",
+          "callee": "StreamChatHandlerParams.builder",
+          "lineNumber": 52
+        },
+        {
+          "caller": "createChatEventHandler",
+          "callee": "new StreamChatEventHandler",
+          "lineNumber": 62
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/handler/StreamChatEventHandler.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 221,
+      "nonEmptyLines": 201,
+      "functions": [
+        {
+          "name": "StreamChatEventHandler",
+          "startLine": 62,
+          "endLine": 77,
+          "params": [
+            "params"
+          ]
+        },
+        {
+          "name": "initialize",
+          "startLine": 82,
+          "endLine": 85,
+          "params": []
+        },
+        {
+          "name": "resolveMessageChunkSize",
+          "startLine": 90,
+          "endLine": 94,
+          "params": [
+            "modelProperties"
+          ]
+        },
+        {
+          "name": "shouldSendTitle",
+          "startLine": 99,
+          "endLine": 105,
+          "params": []
+        },
+        {
+          "name": "buildCompletionPayloadOnCancel",
+          "startLine": 110,
+          "endLine": 124,
+          "params": []
+        },
+        {
+          "name": "onContent",
+          "startLine": 126,
+          "endLine": 139,
+          "params": [
+            "chunk"
+          ]
+        },
+        {
+          "name": "onThinking",
+          "startLine": 141,
+          "endLine": 154,
+          "params": [
+            "chunk"
+          ]
+        },
+        {
+          "name": "onComplete",
+          "startLine": 156,
+          "endLine": 175,
+          "params": []
+        },
+        {
+          "name": "onError",
+          "startLine": 177,
+          "endLine": 184,
+          "params": [
+            "t"
+          ]
+        },
+        {
+          "name": "sendChunked",
+          "startLine": 186,
+          "endLine": 205,
+          "params": [
+            "type",
+            "content"
+          ]
+        },
+        {
+          "name": "resolveThinkingDuration",
+          "startLine": 207,
+          "endLine": 209,
+          "params": []
+        },
+        {
+          "name": "resolveTitleForEvent",
+          "startLine": 211,
+          "endLine": 220,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "StreamChatEventHandler",
+          "startLine": 37,
+          "endLine": 221,
+          "methods": [
+            "StreamChatEventHandler",
+            "initialize",
+            "resolveMessageChunkSize",
+            "shouldSendTitle",
+            "buildCompletionPayloadOnCancel",
+            "onContent",
+            "onThinking",
+            "onComplete",
+            "onError",
+            "sendChunked",
+            "resolveThinkingDuration",
+            "resolveTitleForEvent"
+          ],
+          "properties": [
+            "TYPE_THINK",
+            "TYPE_RESPONSE",
+            "messageChunkSize",
+            "sender",
+            "conversationId",
+            "memoryService",
+            "conversationGroupService",
+            "taskId",
+            "userId",
+            "taskManager",
+            "sendTitleOnComplete",
+            "answer",
+            "thinking",
+            "thinkingStartMs",
+            "thinkingDurationSeconds"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "StreamChatEventHandler",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "onContent",
+          "line": 126,
+          "isDefault": false
+        },
+        {
+          "name": "onThinking",
+          "line": 141,
+          "isDefault": false
+        },
+        {
+          "name": "onComplete",
+          "line": 156,
+          "isDefault": false
+        },
+        {
+          "name": "onError",
+          "line": 177,
+          "isDefault": false
+        },
+        {
+          "name": "StreamChatEventHandler",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "StreamChatEventHandler",
+          "callee": "new SseEmitterSender",
+          "lineNumber": 63
+        },
+        {
+          "caller": "StreamChatEventHandler",
+          "callee": "params.getEmitter",
+          "lineNumber": 63
+        },
+        {
+          "caller": "StreamChatEventHandler",
+          "callee": "params.getConversationId",
+          "lineNumber": 64
+        },
+        {
+          "caller": "StreamChatEventHandler",
+          "callee": "params.getTaskId",
+          "lineNumber": 65
+        },
+        {
+          "caller": "StreamChatEventHandler",
+          "callee": "params.getMemoryService",
+          "lineNumber": 66
+        },
+        {
+          "caller": "StreamChatEventHandler",
+          "callee": "params.getConversationGroupService",
+          "lineNumber": 67
+        },
+        {
+          "caller": "StreamChatEventHandler",
+          "callee": "params.getTaskManager",
+          "lineNumber": 68
+        },
+        {
+          "caller": "StreamChatEventHandler",
+          "callee": "UserContext.getUserId",
+          "lineNumber": 69
+        },
+        {
+          "caller": "StreamChatEventHandler",
+          "callee": "resolveMessageChunkSize",
+          "lineNumber": 72
+        },
+        {
+          "caller": "StreamChatEventHandler",
+          "callee": "params.getModelProperties",
+          "lineNumber": 72
+        },
+        {
+          "caller": "StreamChatEventHandler",
+          "callee": "shouldSendTitle",
+          "lineNumber": 73
+        },
+        {
+          "caller": "StreamChatEventHandler",
+          "callee": "initialize",
+          "lineNumber": 76
+        },
+        {
+          "caller": "initialize",
+          "callee": "sender.sendEvent",
+          "lineNumber": 83
+        },
+        {
+          "caller": "initialize",
+          "callee": "SSEEventType.META.value",
+          "lineNumber": 83
+        },
+        {
+          "caller": "initialize",
+          "callee": "new MetaPayload",
+          "lineNumber": 83
+        },
+        {
+          "caller": "initialize",
+          "callee": "taskManager.register",
+          "lineNumber": 84
+        },
+        {
+          "caller": "resolveMessageChunkSize",
+          "callee": "Math.max",
+          "lineNumber": 91
+        },
+        {
+          "caller": "resolveMessageChunkSize",
+          "callee": "Optional.ofNullable(modelProperties.getStream())\r\n                .map(AIModelProperties.Stream::getMessageChunkSize).orElse",
+          "lineNumber": 91
+        },
+        {
+          "caller": "resolveMessageChunkSize",
+          "callee": "Optional.ofNullable(modelProperties.getStream()).map",
+          "lineNumber": 91
+        },
+        {
+          "caller": "resolveMessageChunkSize",
+          "callee": "Optional.ofNullable",
+          "lineNumber": 91
+        },
+        {
+          "caller": "resolveMessageChunkSize",
+          "callee": "modelProperties.getStream",
+          "lineNumber": 91
+        },
+        {
+          "caller": "shouldSendTitle",
+          "callee": "conversationGroupService.findConversation",
+          "lineNumber": 100
+        },
+        {
+          "caller": "shouldSendTitle",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 104
+        },
+        {
+          "caller": "shouldSendTitle",
+          "callee": "existingConversation.getTitle",
+          "lineNumber": 104
+        },
+        {
+          "caller": "buildCompletionPayloadOnCancel",
+          "callee": "answer.toString",
+          "lineNumber": 111
+        },
+        {
+          "caller": "buildCompletionPayloadOnCancel",
+          "callee": "StrUtil.isNotBlank",
+          "lineNumber": 113
+        },
+        {
+          "caller": "buildCompletionPayloadOnCancel",
+          "callee": "thinking.isEmpty",
+          "lineNumber": 115
+        },
+        {
+          "caller": "buildCompletionPayloadOnCancel",
+          "callee": "thinking.toString",
+          "lineNumber": 115
+        },
+        {
+          "caller": "buildCompletionPayloadOnCancel",
+          "callee": "ChatMessage.assistant",
+          "lineNumber": 116
+        },
+        {
+          "caller": "buildCompletionPayloadOnCancel",
+          "callee": "resolveThinkingDuration",
+          "lineNumber": 116
+        },
+        {
+          "caller": "buildCompletionPayloadOnCancel",
+          "callee": "memoryService.append",
+          "lineNumber": 117
+        },
+        {
+          "caller": "buildCompletionPayloadOnCancel",
+          "callee": "log.error",
+          "lineNumber": 119
+        },
+        {
+          "caller": "buildCompletionPayloadOnCancel",
+          "callee": "resolveTitleForEvent",
+          "lineNumber": 122
+        },
+        {
+          "caller": "buildCompletionPayloadOnCancel",
+          "callee": "new CompletionPayload",
+          "lineNumber": 123
+        },
+        {
+          "caller": "buildCompletionPayloadOnCancel",
+          "callee": "String.valueOf",
+          "lineNumber": 123
+        },
+        {
+          "caller": "onContent",
+          "callee": "taskManager.isCancelled",
+          "lineNumber": 128
+        },
+        {
+          "caller": "onContent",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 131
+        },
+        {
+          "caller": "onContent",
+          "callee": "Math.max",
+          "lineNumber": 135
+        },
+        {
+          "caller": "onContent",
+          "callee": "Math.round",
+          "lineNumber": 135
+        },
+        {
+          "caller": "onContent",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 135
+        },
+        {
+          "caller": "onContent",
+          "callee": "answer.append",
+          "lineNumber": 137
+        },
+        {
+          "caller": "onContent",
+          "callee": "sendChunked",
+          "lineNumber": 138
+        },
+        {
+          "caller": "onThinking",
+          "callee": "taskManager.isCancelled",
+          "lineNumber": 143
+        },
+        {
+          "caller": "onThinking",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 146
+        },
+        {
+          "caller": "onThinking",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 150
+        },
+        {
+          "caller": "onThinking",
+          "callee": "thinking.append",
+          "lineNumber": 152
+        },
+        {
+          "caller": "onThinking",
+          "callee": "sendChunked",
+          "lineNumber": 153
+        },
+        {
+          "caller": "onComplete",
+          "callee": "taskManager.isCancelled",
+          "lineNumber": 158
+        },
+        {
+          "caller": "onComplete",
+          "callee": "thinking.isEmpty",
+          "lineNumber": 163
+        },
+        {
+          "caller": "onComplete",
+          "callee": "thinking.toString",
+          "lineNumber": 163
+        },
+        {
+          "caller": "onComplete",
+          "callee": "ChatMessage.assistant",
+          "lineNumber": 164
+        },
+        {
+          "caller": "onComplete",
+          "callee": "answer.toString",
+          "lineNumber": 164
+        },
+        {
+          "caller": "onComplete",
+          "callee": "resolveThinkingDuration",
+          "lineNumber": 164
+        },
+        {
+          "caller": "onComplete",
+          "callee": "memoryService.append",
+          "lineNumber": 165
+        },
+        {
+          "caller": "onComplete",
+          "callee": "log.error",
+          "lineNumber": 167
+        },
+        {
+          "caller": "onComplete",
+          "callee": "resolveTitleForEvent",
+          "lineNumber": 169
+        },
+        {
+          "caller": "onComplete",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 170
+        },
+        {
+          "caller": "onComplete",
+          "callee": "sender.sendEvent",
+          "lineNumber": 171
+        },
+        {
+          "caller": "onComplete",
+          "callee": "SSEEventType.FINISH.value",
+          "lineNumber": 171
+        },
+        {
+          "caller": "onComplete",
+          "callee": "new CompletionPayload",
+          "lineNumber": 171
+        },
+        {
+          "caller": "onComplete",
+          "callee": "sender.sendEvent",
+          "lineNumber": 172
+        },
+        {
+          "caller": "onComplete",
+          "callee": "SSEEventType.DONE.value",
+          "lineNumber": 172
+        },
+        {
+          "caller": "onComplete",
+          "callee": "taskManager.unregister",
+          "lineNumber": 173
+        },
+        {
+          "caller": "onComplete",
+          "callee": "sender.complete",
+          "lineNumber": 174
+        },
+        {
+          "caller": "onError",
+          "callee": "taskManager.isCancelled",
+          "lineNumber": 179
+        },
+        {
+          "caller": "onError",
+          "callee": "taskManager.unregister",
+          "lineNumber": 182
+        },
+        {
+          "caller": "onError",
+          "callee": "sender.fail",
+          "lineNumber": 183
+        },
+        {
+          "caller": "sendChunked",
+          "callee": "content.length",
+          "lineNumber": 187
+        },
+        {
+          "caller": "sendChunked",
+          "callee": "new StringBuilder",
+          "lineNumber": 190
+        },
+        {
+          "caller": "sendChunked",
+          "callee": "content.codePointAt",
+          "lineNumber": 192
+        },
+        {
+          "caller": "sendChunked",
+          "callee": "buffer.appendCodePoint",
+          "lineNumber": 193
+        },
+        {
+          "caller": "sendChunked",
+          "callee": "Character.charCount",
+          "lineNumber": 194
+        },
+        {
+          "caller": "sendChunked",
+          "callee": "sender.sendEvent",
+          "lineNumber": 197
+        },
+        {
+          "caller": "sendChunked",
+          "callee": "SSEEventType.MESSAGE.value",
+          "lineNumber": 197
+        },
+        {
+          "caller": "sendChunked",
+          "callee": "new MessageDelta",
+          "lineNumber": 197
+        },
+        {
+          "caller": "sendChunked",
+          "callee": "buffer.toString",
+          "lineNumber": 197
+        },
+        {
+          "caller": "sendChunked",
+          "callee": "buffer.setLength",
+          "lineNumber": 198
+        },
+        {
+          "caller": "sendChunked",
+          "callee": "buffer.isEmpty",
+          "lineNumber": 202
+        },
+        {
+          "caller": "sendChunked",
+          "callee": "sender.sendEvent",
+          "lineNumber": 203
+        },
+        {
+          "caller": "sendChunked",
+          "callee": "SSEEventType.MESSAGE.value",
+          "lineNumber": 203
+        },
+        {
+          "caller": "sendChunked",
+          "callee": "new MessageDelta",
+          "lineNumber": 203
+        },
+        {
+          "caller": "sendChunked",
+          "callee": "buffer.toString",
+          "lineNumber": 203
+        },
+        {
+          "caller": "resolveTitleForEvent",
+          "callee": "conversationGroupService.findConversation",
+          "lineNumber": 215
+        },
+        {
+          "caller": "resolveTitleForEvent",
+          "callee": "StrUtil.isNotBlank",
+          "lineNumber": 216
+        },
+        {
+          "caller": "resolveTitleForEvent",
+          "callee": "conversation.getTitle",
+          "lineNumber": 216
+        },
+        {
+          "caller": "resolveTitleForEvent",
+          "callee": "conversation.getTitle",
+          "lineNumber": 217
+        }
+      ],
+      "metrics": {
+        "importCount": 12,
+        "exportCount": 6,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/handler/StreamTaskManager.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 183,
+      "nonEmptyLines": 156,
+      "functions": [
+        {
+          "name": "StreamTaskManager",
+          "startLine": 56,
+          "endLine": 58,
+          "params": [
+            "redissonClient"
+          ]
+        },
+        {
+          "name": "subscribe",
+          "startLine": 60,
+          "endLine": 69,
+          "params": []
+        },
+        {
+          "name": "unsubscribe",
+          "startLine": 71,
+          "endLine": 77,
+          "params": []
+        },
+        {
+          "name": "register",
+          "startLine": 79,
+          "endLine": 88,
+          "params": [
+            "taskId",
+            "sender",
+            "onCancelSupplier"
+          ]
+        },
+        {
+          "name": "bindHandle",
+          "startLine": 90,
+          "endLine": 96,
+          "params": [
+            "taskId",
+            "handle"
+          ]
+        },
+        {
+          "name": "isCancelled",
+          "startLine": 98,
+          "endLine": 101,
+          "params": [
+            "taskId"
+          ]
+        },
+        {
+          "name": "cancel",
+          "startLine": 103,
+          "endLine": 111,
+          "params": [
+            "taskId"
+          ]
+        },
+        {
+          "name": "isTaskCancelledInRedis",
+          "startLine": 117,
+          "endLine": 129,
+          "params": [
+            "taskId",
+            "taskInfo"
+          ]
+        },
+        {
+          "name": "cancelLocal",
+          "startLine": 131,
+          "endLine": 152,
+          "params": [
+            "taskId"
+          ]
+        },
+        {
+          "name": "unregister",
+          "startLine": 154,
+          "endLine": 160,
+          "params": [
+            "taskId"
+          ]
+        },
+        {
+          "name": "cancelKey",
+          "startLine": 162,
+          "endLine": 164,
+          "params": [
+            "taskId"
+          ]
+        },
+        {
+          "name": "sendCancelAndDone",
+          "startLine": 166,
+          "endLine": 170,
+          "params": [
+            "sender",
+            "payload"
+          ]
+        },
+        {
+          "name": "getOrCreate",
+          "startLine": 172,
+          "endLine": 175,
+          "params": [
+            "taskId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "StreamTaskManager",
+          "startLine": 40,
+          "endLine": 183,
+          "methods": [
+            "StreamTaskManager",
+            "subscribe",
+            "unsubscribe",
+            "register",
+            "bindHandle",
+            "isCancelled",
+            "cancel",
+            "isTaskCancelledInRedis",
+            "cancelLocal",
+            "unregister",
+            "cancelKey",
+            "sendCancelAndDone",
+            "getOrCreate"
+          ],
+          "properties": [
+            "CANCEL_TOPIC",
+            "CANCEL_KEY_PREFIX",
+            "CANCEL_TTL",
+            "tasks",
+            "redissonClient",
+            "listenerId"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "StreamTaskManager",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "subscribe",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "unsubscribe",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "register",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "bindHandle",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "isCancelled",
+          "line": 98,
+          "isDefault": false
+        },
+        {
+          "name": "cancel",
+          "line": 103,
+          "isDefault": false
+        },
+        {
+          "name": "unregister",
+          "line": 154,
+          "isDefault": false
+        },
+        {
+          "name": "StreamTaskManager",
+          "line": 40,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "subscribe",
+          "callee": "redissonClient.getTopic",
+          "lineNumber": 62
+        },
+        {
+          "caller": "subscribe",
+          "callee": "topic.addListener",
+          "lineNumber": 63
+        },
+        {
+          "caller": "subscribe",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 64
+        },
+        {
+          "caller": "subscribe",
+          "callee": "cancelLocal",
+          "lineNumber": 67
+        },
+        {
+          "caller": "unsubscribe",
+          "callee": "redissonClient.getTopic(CANCEL_TOPIC).removeListener",
+          "lineNumber": 76
+        },
+        {
+          "caller": "unsubscribe",
+          "callee": "redissonClient.getTopic",
+          "lineNumber": 76
+        },
+        {
+          "caller": "register",
+          "callee": "getOrCreate",
+          "lineNumber": 80
+        },
+        {
+          "caller": "register",
+          "callee": "isTaskCancelledInRedis",
+          "lineNumber": 83
+        },
+        {
+          "caller": "register",
+          "callee": "taskInfo.onCancelSupplier.get",
+          "lineNumber": 84
+        },
+        {
+          "caller": "register",
+          "callee": "sendCancelAndDone",
+          "lineNumber": 85
+        },
+        {
+          "caller": "register",
+          "callee": "sender.complete",
+          "lineNumber": 86
+        },
+        {
+          "caller": "bindHandle",
+          "callee": "getOrCreate",
+          "lineNumber": 91
+        },
+        {
+          "caller": "bindHandle",
+          "callee": "taskInfo.cancelled.get",
+          "lineNumber": 93
+        },
+        {
+          "caller": "bindHandle",
+          "callee": "handle.cancel",
+          "lineNumber": 94
+        },
+        {
+          "caller": "isCancelled",
+          "callee": "tasks.getIfPresent",
+          "lineNumber": 99
+        },
+        {
+          "caller": "isCancelled",
+          "callee": "info.cancelled.get",
+          "lineNumber": 100
+        },
+        {
+          "caller": "cancel",
+          "callee": "redissonClient.getBucket",
+          "lineNumber": 105
+        },
+        {
+          "caller": "cancel",
+          "callee": "cancelKey",
+          "lineNumber": 105
+        },
+        {
+          "caller": "cancel",
+          "callee": "bucket.set",
+          "lineNumber": 106
+        },
+        {
+          "caller": "cancel",
+          "callee": "redissonClient.getTopic(CANCEL_TOPIC).publish",
+          "lineNumber": 110
+        },
+        {
+          "caller": "cancel",
+          "callee": "redissonClient.getTopic",
+          "lineNumber": 110
+        },
+        {
+          "caller": "isTaskCancelledInRedis",
+          "callee": "taskInfo.cancelled.get",
+          "lineNumber": 118
+        },
+        {
+          "caller": "isTaskCancelledInRedis",
+          "callee": "redissonClient.getBucket",
+          "lineNumber": 122
+        },
+        {
+          "caller": "isTaskCancelledInRedis",
+          "callee": "cancelKey",
+          "lineNumber": 122
+        },
+        {
+          "caller": "isTaskCancelledInRedis",
+          "callee": "bucket.get",
+          "lineNumber": 123
+        },
+        {
+          "caller": "isTaskCancelledInRedis",
+          "callee": "Boolean.TRUE.equals",
+          "lineNumber": 124
+        },
+        {
+          "caller": "isTaskCancelledInRedis",
+          "callee": "taskInfo.cancelled.set",
+          "lineNumber": 125
+        },
+        {
+          "caller": "cancelLocal",
+          "callee": "tasks.getIfPresent",
+          "lineNumber": 132
+        },
+        {
+          "caller": "cancelLocal",
+          "callee": "taskInfo.cancelled.compareAndSet",
+          "lineNumber": 138
+        },
+        {
+          "caller": "cancelLocal",
+          "callee": "taskInfo.handle.cancel",
+          "lineNumber": 143
+        },
+        {
+          "caller": "cancelLocal",
+          "callee": "taskInfo.onCancelSupplier.get",
+          "lineNumber": 148
+        },
+        {
+          "caller": "cancelLocal",
+          "callee": "sendCancelAndDone",
+          "lineNumber": 149
+        },
+        {
+          "caller": "cancelLocal",
+          "callee": "taskInfo.sender.complete",
+          "lineNumber": 150
+        },
+        {
+          "caller": "unregister",
+          "callee": "tasks.invalidate",
+          "lineNumber": 156
+        },
+        {
+          "caller": "unregister",
+          "callee": "redissonClient.getBucket(cancelKey(taskId)).deleteAsync",
+          "lineNumber": 159
+        },
+        {
+          "caller": "unregister",
+          "callee": "redissonClient.getBucket",
+          "lineNumber": 159
+        },
+        {
+          "caller": "unregister",
+          "callee": "cancelKey",
+          "lineNumber": 159
+        },
+        {
+          "caller": "sendCancelAndDone",
+          "callee": "new CompletionPayload",
+          "lineNumber": 167
+        },
+        {
+          "caller": "sendCancelAndDone",
+          "callee": "sender.sendEvent",
+          "lineNumber": 168
+        },
+        {
+          "caller": "sendCancelAndDone",
+          "callee": "SSEEventType.CANCEL.value",
+          "lineNumber": 168
+        },
+        {
+          "caller": "sendCancelAndDone",
+          "callee": "sender.sendEvent",
+          "lineNumber": 169
+        },
+        {
+          "caller": "sendCancelAndDone",
+          "callee": "SSEEventType.DONE.value",
+          "lineNumber": 169
+        },
+        {
+          "caller": "getOrCreate",
+          "callee": "tasks.get",
+          "lineNumber": 174
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 9,
+        "functionCount": 13,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/RAGChatServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 81,
+      "nonEmptyLines": 72,
+      "functions": [
+        {
+          "name": "streamChat",
+          "startLine": 48,
+          "endLine": 75,
+          "params": [
+            "question",
+            "conversationId",
+            "deepThinking",
+            "emitter"
+          ]
+        },
+        {
+          "name": "stopTask",
+          "startLine": 77,
+          "endLine": 80,
+          "params": [
+            "taskId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RAGChatServiceImpl",
+          "startLine": 39,
+          "endLine": 81,
+          "methods": [
+            "streamChat",
+            "stopTask"
+          ],
+          "properties": [
+            "chatPipeline",
+            "callbackFactory",
+            "taskManager"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "streamChat",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "stopTask",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "RAGChatServiceImpl",
+          "line": 39,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "streamChat",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 51
+        },
+        {
+          "caller": "streamChat",
+          "callee": "IdUtil.getSnowflakeNextIdStr",
+          "lineNumber": 51
+        },
+        {
+          "caller": "streamChat",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 52
+        },
+        {
+          "caller": "streamChat",
+          "callee": "RagTraceContext.getTaskId",
+          "lineNumber": 52
+        },
+        {
+          "caller": "streamChat",
+          "callee": "IdUtil.getSnowflakeNextIdStr",
+          "lineNumber": 53
+        },
+        {
+          "caller": "streamChat",
+          "callee": "RagTraceContext.getTaskId",
+          "lineNumber": 54
+        },
+        {
+          "caller": "streamChat",
+          "callee": "log.info",
+          "lineNumber": 55
+        },
+        {
+          "caller": "streamChat",
+          "callee": "Boolean.TRUE.equals",
+          "lineNumber": 56
+        },
+        {
+          "caller": "streamChat",
+          "callee": "callbackFactory.createChatEventHandler",
+          "lineNumber": 58
+        },
+        {
+          "caller": "streamChat",
+          "callee": "StreamChatContext.builder()\r\n                .question(question)\r\n                .conversationId(actualConversationId)\r\n                .taskId(taskId)\r\n                .deepThinking(thinkingEnabled)\r\n                .userId(UserContext.getUserId())\r\n                .callback(callback).build",
+          "lineNumber": 60
+        },
+        {
+          "caller": "streamChat",
+          "callee": "StreamChatContext.builder()\r\n                .question(question)\r\n                .conversationId(actualConversationId)\r\n                .taskId(taskId)\r\n                .deepThinking(thinkingEnabled)\r\n                .userId(UserContext.getUserId()).callback",
+          "lineNumber": 60
+        },
+        {
+          "caller": "streamChat",
+          "callee": "StreamChatContext.builder()\r\n                .question(question)\r\n                .conversationId(actualConversationId)\r\n                .taskId(taskId)\r\n                .deepThinking(thinkingEnabled).userId",
+          "lineNumber": 60
+        },
+        {
+          "caller": "streamChat",
+          "callee": "StreamChatContext.builder()\r\n                .question(question)\r\n                .conversationId(actualConversationId)\r\n                .taskId(taskId).deepThinking",
+          "lineNumber": 60
+        },
+        {
+          "caller": "streamChat",
+          "callee": "StreamChatContext.builder()\r\n                .question(question)\r\n                .conversationId(actualConversationId).taskId",
+          "lineNumber": 60
+        },
+        {
+          "caller": "streamChat",
+          "callee": "StreamChatContext.builder()\r\n                .question(question).conversationId",
+          "lineNumber": 60
+        },
+        {
+          "caller": "streamChat",
+          "callee": "StreamChatContext.builder().question",
+          "lineNumber": 60
+        },
+        {
+          "caller": "streamChat",
+          "callee": "StreamChatContext.builder",
+          "lineNumber": 60
+        },
+        {
+          "caller": "streamChat",
+          "callee": "UserContext.getUserId",
+          "lineNumber": 65
+        },
+        {
+          "caller": "streamChat",
+          "callee": "chatPipeline.execute",
+          "lineNumber": 70
+        },
+        {
+          "caller": "streamChat",
+          "callee": "log.error",
+          "lineNumber": 72
+        },
+        {
+          "caller": "streamChat",
+          "callee": "callback.onError",
+          "lineNumber": 73
+        },
+        {
+          "caller": "stopTask",
+          "callee": "taskManager.cancel",
+          "lineNumber": 79
+        }
+      ],
+      "metrics": {
+        "importCount": 9,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/pipeline/StreamChatContext.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 46,
+      "classes": [
+        {
+          "name": "StreamChatContext",
+          "startLine": 33,
+          "endLine": 56,
+          "methods": [],
+          "properties": [
+            "question",
+            "conversationId",
+            "taskId",
+            "deepThinking",
+            "userId",
+            "callback",
+            "history",
+            "rewriteResult",
+            "subIntents"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "StreamChatContext",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/pipeline/StreamChatPipeline.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 235,
+      "nonEmptyLines": 208,
+      "functions": [
+        {
+          "name": "execute",
+          "startLine": 78,
+          "endLine": 96,
+          "params": [
+            "ctx"
+          ]
+        },
+        {
+          "name": "loadMemory",
+          "startLine": 100,
+          "endLine": 107,
+          "params": [
+            "ctx"
+          ]
+        },
+        {
+          "name": "rewriteQuery",
+          "startLine": 109,
+          "endLine": 112,
+          "params": [
+            "ctx"
+          ]
+        },
+        {
+          "name": "resolveIntents",
+          "startLine": 114,
+          "endLine": 117,
+          "params": [
+            "ctx"
+          ]
+        },
+        {
+          "name": "handleGuidance",
+          "startLine": 119,
+          "endLine": 131,
+          "params": [
+            "ctx"
+          ]
+        },
+        {
+          "name": "handleSystemOnly",
+          "startLine": 133,
+          "endLine": 154,
+          "params": [
+            "ctx"
+          ]
+        },
+        {
+          "name": "retrieve",
+          "startLine": 156,
+          "endLine": 158,
+          "params": [
+            "ctx"
+          ]
+        },
+        {
+          "name": "handleEmptyRetrieval",
+          "startLine": 160,
+          "endLine": 168,
+          "params": [
+            "ctx",
+            "retrievalCtx"
+          ]
+        },
+        {
+          "name": "streamRagResponse",
+          "startLine": 170,
+          "endLine": 183,
+          "params": [
+            "ctx",
+            "retrievalCtx"
+          ]
+        },
+        {
+          "name": "streamSystemResponse",
+          "startLine": 187,
+          "endLine": 206,
+          "params": [
+            "question",
+            "history",
+            "customPrompt",
+            "callback"
+          ]
+        },
+        {
+          "name": "streamLLMResponse",
+          "startLine": 208,
+          "endLine": 234,
+          "params": [
+            "rewriteResult",
+            "ctx",
+            "intentGroup",
+            "history",
+            "deepThinking",
+            "callback"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "StreamChatPipeline",
+          "startLine": 59,
+          "endLine": 235,
+          "methods": [
+            "execute",
+            "loadMemory",
+            "rewriteQuery",
+            "resolveIntents",
+            "handleGuidance",
+            "handleSystemOnly",
+            "retrieve",
+            "handleEmptyRetrieval",
+            "streamRagResponse",
+            "streamSystemResponse",
+            "streamLLMResponse"
+          ],
+          "properties": [
+            "searchProperties",
+            "memoryService",
+            "queryRewriteService",
+            "intentResolver",
+            "guidanceService",
+            "retrievalEngine",
+            "llmService",
+            "promptBuilder",
+            "promptTemplateLoader",
+            "taskManager"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "execute",
+          "line": 78,
+          "isDefault": false
+        },
+        {
+          "name": "StreamChatPipeline",
+          "line": 59,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "execute",
+          "callee": "loadMemory",
+          "lineNumber": 79
+        },
+        {
+          "caller": "execute",
+          "callee": "rewriteQuery",
+          "lineNumber": 80
+        },
+        {
+          "caller": "execute",
+          "callee": "resolveIntents",
+          "lineNumber": 81
+        },
+        {
+          "caller": "execute",
+          "callee": "handleGuidance",
+          "lineNumber": 83
+        },
+        {
+          "caller": "execute",
+          "callee": "handleSystemOnly",
+          "lineNumber": 86
+        },
+        {
+          "caller": "execute",
+          "callee": "retrieve",
+          "lineNumber": 90
+        },
+        {
+          "caller": "execute",
+          "callee": "handleEmptyRetrieval",
+          "lineNumber": 91
+        },
+        {
+          "caller": "execute",
+          "callee": "streamRagResponse",
+          "lineNumber": 95
+        },
+        {
+          "caller": "loadMemory",
+          "callee": "memoryService.loadAndAppend",
+          "lineNumber": 101
+        },
+        {
+          "caller": "loadMemory",
+          "callee": "ctx.getConversationId",
+          "lineNumber": 102
+        },
+        {
+          "caller": "loadMemory",
+          "callee": "ctx.getUserId",
+          "lineNumber": 103
+        },
+        {
+          "caller": "loadMemory",
+          "callee": "ChatMessage.user",
+          "lineNumber": 104
+        },
+        {
+          "caller": "loadMemory",
+          "callee": "ctx.getQuestion",
+          "lineNumber": 104
+        },
+        {
+          "caller": "loadMemory",
+          "callee": "ctx.setHistory",
+          "lineNumber": 106
+        },
+        {
+          "caller": "rewriteQuery",
+          "callee": "queryRewriteService.rewriteWithSplit",
+          "lineNumber": 110
+        },
+        {
+          "caller": "rewriteQuery",
+          "callee": "ctx.getQuestion",
+          "lineNumber": 110
+        },
+        {
+          "caller": "rewriteQuery",
+          "callee": "ctx.getHistory",
+          "lineNumber": 110
+        },
+        {
+          "caller": "rewriteQuery",
+          "callee": "ctx.setRewriteResult",
+          "lineNumber": 111
+        },
+        {
+          "caller": "resolveIntents",
+          "callee": "intentResolver.resolve",
+          "lineNumber": 115
+        },
+        {
+          "caller": "resolveIntents",
+          "callee": "ctx.getRewriteResult",
+          "lineNumber": 115
+        },
+        {
+          "caller": "resolveIntents",
+          "callee": "ctx.setSubIntents",
+          "lineNumber": 116
+        },
+        {
+          "caller": "handleGuidance",
+          "callee": "guidanceService.detectAmbiguity",
+          "lineNumber": 120
+        },
+        {
+          "caller": "handleGuidance",
+          "callee": "ctx.getRewriteResult().rewrittenQuestion",
+          "lineNumber": 121
+        },
+        {
+          "caller": "handleGuidance",
+          "callee": "ctx.getRewriteResult",
+          "lineNumber": 121
+        },
+        {
+          "caller": "handleGuidance",
+          "callee": "ctx.getSubIntents",
+          "lineNumber": 122
+        },
+        {
+          "caller": "handleGuidance",
+          "callee": "decision.isPrompt",
+          "lineNumber": 124
+        },
+        {
+          "caller": "handleGuidance",
+          "callee": "ctx.getCallback",
+          "lineNumber": 127
+        },
+        {
+          "caller": "handleGuidance",
+          "callee": "callback.onContent",
+          "lineNumber": 128
+        },
+        {
+          "caller": "handleGuidance",
+          "callee": "decision.getPrompt",
+          "lineNumber": 128
+        },
+        {
+          "caller": "handleGuidance",
+          "callee": "callback.onComplete",
+          "lineNumber": 129
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "ctx.getSubIntents",
+          "lineNumber": 134
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "subIntents.stream().allMatch",
+          "lineNumber": 135
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "subIntents.stream",
+          "lineNumber": 135
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "intentResolver.isSystemOnly",
+          "lineNumber": 136
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "si.nodeScores",
+          "lineNumber": 136
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "subIntents.stream()\r\n                .flatMap(si -> si.nodeScores().stream())\r\n                .map(ns -> ns.getNode().getPromptTemplate())\r\n                .filter(StrUtil::isNotBlank)\r\n                .findFirst().orElse",
+          "lineNumber": 140
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "subIntents.stream()\r\n                .flatMap(si -> si.nodeScores().stream())\r\n                .map(ns -> ns.getNode().getPromptTemplate())\r\n                .filter(StrUtil::isNotBlank).findFirst",
+          "lineNumber": 140
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "subIntents.stream()\r\n                .flatMap(si -> si.nodeScores().stream())\r\n                .map(ns -> ns.getNode().getPromptTemplate()).filter",
+          "lineNumber": 140
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "subIntents.stream()\r\n                .flatMap(si -> si.nodeScores().stream()).map",
+          "lineNumber": 140
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "subIntents.stream().flatMap",
+          "lineNumber": 140
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "subIntents.stream",
+          "lineNumber": 140
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "si.nodeScores().stream",
+          "lineNumber": 141
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "si.nodeScores",
+          "lineNumber": 141
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "ns.getNode().getPromptTemplate",
+          "lineNumber": 142
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "ns.getNode",
+          "lineNumber": 142
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "streamSystemResponse",
+          "lineNumber": 146
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "ctx.getRewriteResult().rewrittenQuestion",
+          "lineNumber": 147
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "ctx.getRewriteResult",
+          "lineNumber": 147
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "ctx.getHistory",
+          "lineNumber": 148
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "ctx.getCallback",
+          "lineNumber": 150
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "taskManager.bindHandle",
+          "lineNumber": 152
+        },
+        {
+          "caller": "handleSystemOnly",
+          "callee": "ctx.getTaskId",
+          "lineNumber": 152
+        },
+        {
+          "caller": "retrieve",
+          "callee": "retrievalEngine.retrieve",
+          "lineNumber": 157
+        },
+        {
+          "caller": "retrieve",
+          "callee": "ctx.getSubIntents",
+          "lineNumber": 157
+        },
+        {
+          "caller": "retrieve",
+          "callee": "searchProperties.getDefaultTopK",
+          "lineNumber": 157
+        },
+        {
+          "caller": "handleEmptyRetrieval",
+          "callee": "retrievalCtx.isEmpty",
+          "lineNumber": 161
+        },
+        {
+          "caller": "handleEmptyRetrieval",
+          "callee": "ctx.getCallback",
+          "lineNumber": 164
+        },
+        {
+          "caller": "handleEmptyRetrieval",
+          "callee": "callback.onContent",
+          "lineNumber": 165
+        },
+        {
+          "caller": "handleEmptyRetrieval",
+          "callee": "callback.onComplete",
+          "lineNumber": 166
+        },
+        {
+          "caller": "streamRagResponse",
+          "callee": "intentResolver.mergeIntentGroup",
+          "lineNumber": 172
+        },
+        {
+          "caller": "streamRagResponse",
+          "callee": "ctx.getSubIntents",
+          "lineNumber": 172
+        },
+        {
+          "caller": "streamRagResponse",
+          "callee": "streamLLMResponse",
+          "lineNumber": 174
+        },
+        {
+          "caller": "streamRagResponse",
+          "callee": "ctx.getRewriteResult",
+          "lineNumber": 175
+        },
+        {
+          "caller": "streamRagResponse",
+          "callee": "ctx.getHistory",
+          "lineNumber": 178
+        },
+        {
+          "caller": "streamRagResponse",
+          "callee": "ctx.isDeepThinking",
+          "lineNumber": 179
+        },
+        {
+          "caller": "streamRagResponse",
+          "callee": "ctx.getCallback",
+          "lineNumber": 180
+        },
+        {
+          "caller": "streamRagResponse",
+          "callee": "taskManager.bindHandle",
+          "lineNumber": 182
+        },
+        {
+          "caller": "streamRagResponse",
+          "callee": "ctx.getTaskId",
+          "lineNumber": 182
+        },
+        {
+          "caller": "streamSystemResponse",
+          "callee": "StrUtil.isNotBlank",
+          "lineNumber": 189
+        },
+        {
+          "caller": "streamSystemResponse",
+          "callee": "promptTemplateLoader.load",
+          "lineNumber": 191
+        },
+        {
+          "caller": "streamSystemResponse",
+          "callee": "new ArrayList<>",
+          "lineNumber": 193
+        },
+        {
+          "caller": "streamSystemResponse",
+          "callee": "messages.add",
+          "lineNumber": 194
+        },
+        {
+          "caller": "streamSystemResponse",
+          "callee": "ChatMessage.system",
+          "lineNumber": 194
+        },
+        {
+          "caller": "streamSystemResponse",
+          "callee": "CollUtil.isNotEmpty",
+          "lineNumber": 195
+        },
+        {
+          "caller": "streamSystemResponse",
+          "callee": "messages.addAll",
+          "lineNumber": 196
+        },
+        {
+          "caller": "streamSystemResponse",
+          "callee": "messages.add",
+          "lineNumber": 198
+        },
+        {
+          "caller": "streamSystemResponse",
+          "callee": "ChatMessage.user",
+          "lineNumber": 198
+        },
+        {
+          "caller": "streamSystemResponse",
+          "callee": "ChatRequest.builder()\r\n                .messages(messages)\r\n                .temperature(0.7D)\r\n                .thinking(false).build",
+          "lineNumber": 200
+        },
+        {
+          "caller": "streamSystemResponse",
+          "callee": "ChatRequest.builder()\r\n                .messages(messages)\r\n                .temperature(0.7D).thinking",
+          "lineNumber": 200
+        },
+        {
+          "caller": "streamSystemResponse",
+          "callee": "ChatRequest.builder()\r\n                .messages(messages).temperature",
+          "lineNumber": 200
+        },
+        {
+          "caller": "streamSystemResponse",
+          "callee": "ChatRequest.builder().messages",
+          "lineNumber": 200
+        },
+        {
+          "caller": "streamSystemResponse",
+          "callee": "ChatRequest.builder",
+          "lineNumber": 200
+        },
+        {
+          "caller": "streamSystemResponse",
+          "callee": "llmService.streamChat",
+          "lineNumber": 205
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "PromptContext.builder()\r\n                .question(rewriteResult.rewrittenQuestion())\r\n                .mcpContext(ctx.getMcpContext())\r\n                .kbContext(ctx.getKbContext())\r\n                .mcpIntents(intentGroup.mcpIntents())\r\n                .kbIntents(intentGroup.kbIntents())\r\n                .intentChunks(ctx.getIntentChunks()).build",
+          "lineNumber": 211
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "PromptContext.builder()\r\n                .question(rewriteResult.rewrittenQuestion())\r\n                .mcpContext(ctx.getMcpContext())\r\n                .kbContext(ctx.getKbContext())\r\n                .mcpIntents(intentGroup.mcpIntents())\r\n                .kbIntents(intentGroup.kbIntents()).intentChunks",
+          "lineNumber": 211
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "PromptContext.builder()\r\n                .question(rewriteResult.rewrittenQuestion())\r\n                .mcpContext(ctx.getMcpContext())\r\n                .kbContext(ctx.getKbContext())\r\n                .mcpIntents(intentGroup.mcpIntents()).kbIntents",
+          "lineNumber": 211
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "PromptContext.builder()\r\n                .question(rewriteResult.rewrittenQuestion())\r\n                .mcpContext(ctx.getMcpContext())\r\n                .kbContext(ctx.getKbContext()).mcpIntents",
+          "lineNumber": 211
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "PromptContext.builder()\r\n                .question(rewriteResult.rewrittenQuestion())\r\n                .mcpContext(ctx.getMcpContext()).kbContext",
+          "lineNumber": 211
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "PromptContext.builder()\r\n                .question(rewriteResult.rewrittenQuestion()).mcpContext",
+          "lineNumber": 211
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "PromptContext.builder().question",
+          "lineNumber": 211
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "PromptContext.builder",
+          "lineNumber": 211
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "rewriteResult.rewrittenQuestion",
+          "lineNumber": 212
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "ctx.getMcpContext",
+          "lineNumber": 213
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "ctx.getKbContext",
+          "lineNumber": 214
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "intentGroup.mcpIntents",
+          "lineNumber": 215
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "intentGroup.kbIntents",
+          "lineNumber": 216
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "ctx.getIntentChunks",
+          "lineNumber": 217
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "promptBuilder.buildStructuredMessages",
+          "lineNumber": 220
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "rewriteResult.rewrittenQuestion",
+          "lineNumber": 223
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "rewriteResult.subQuestions",
+          "lineNumber": 224
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "ChatRequest.builder()\r\n                .messages(messages)\r\n                .thinking(deepThinking)\r\n                .temperature(ctx.hasMcp() ? 0.3D : 0D)  // MCP 场景稍微放宽温度\r\n                .topP(ctx.hasMcp() ? 0.8D : 1D).build",
+          "lineNumber": 226
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "ChatRequest.builder()\r\n                .messages(messages)\r\n                .thinking(deepThinking)\r\n                .temperature(ctx.hasMcp() ? 0.3D : 0D).topP",
+          "lineNumber": 226
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "ChatRequest.builder()\r\n                .messages(messages)\r\n                .thinking(deepThinking).temperature",
+          "lineNumber": 226
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "ChatRequest.builder()\r\n                .messages(messages).thinking",
+          "lineNumber": 226
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "ChatRequest.builder().messages",
+          "lineNumber": 226
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "ChatRequest.builder",
+          "lineNumber": 226
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "ctx.hasMcp",
+          "lineNumber": 229
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "ctx.hasMcp",
+          "lineNumber": 230
+        },
+        {
+          "caller": "streamLLMResponse",
+          "callee": "llmService.streamChat",
+          "lineNumber": 233
+        }
+      ],
+      "metrics": {
+        "importCount": 20,
+        "exportCount": 2,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/Intent/VectorTreeIntentClassifierTests.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 119,
+      "nonEmptyLines": 100,
+      "functions": [
+        {
+          "name": "classifyAttendancePunishment",
+          "startLine": 40,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "classifyItSupportQuestion",
+          "startLine": 49,
+          "endLine": 53,
+          "params": []
+        },
+        {
+          "name": "classifyMiddlewareRedisQuestion",
+          "startLine": 58,
+          "endLine": 62,
+          "params": []
+        },
+        {
+          "name": "classifyBizSystemQuestion",
+          "startLine": 67,
+          "endLine": 71,
+          "params": []
+        },
+        {
+          "name": "runCase",
+          "startLine": 75,
+          "endLine": 112,
+          "params": [
+            "question"
+          ]
+        },
+        {
+          "name": "safeFullPath",
+          "startLine": 114,
+          "endLine": 117,
+          "params": [
+            "node"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "VectorTreeIntentClassifierTests",
+          "startLine": 29,
+          "endLine": 118,
+          "methods": [
+            "classifyAttendancePunishment",
+            "classifyItSupportQuestion",
+            "classifyMiddlewareRedisQuestion",
+            "classifyBizSystemQuestion",
+            "runCase",
+            "safeFullPath"
+          ],
+          "properties": [
+            "intentClassifier"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "classifyAttendancePunishment",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "classifyItSupportQuestion",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "classifyMiddlewareRedisQuestion",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "classifyBizSystemQuestion",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "VectorTreeIntentClassifierTests",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "classifyAttendancePunishment",
+          "callee": "runCase",
+          "lineNumber": 43
+        },
+        {
+          "caller": "classifyItSupportQuestion",
+          "callee": "runCase",
+          "lineNumber": 52
+        },
+        {
+          "caller": "classifyMiddlewareRedisQuestion",
+          "callee": "runCase",
+          "lineNumber": 61
+        },
+        {
+          "caller": "classifyBizSystemQuestion",
+          "callee": "runCase",
+          "lineNumber": 70
+        },
+        {
+          "caller": "runCase",
+          "callee": "System.nanoTime",
+          "lineNumber": 80
+        },
+        {
+          "caller": "runCase",
+          "callee": "intentClassifier.classifyTargets",
+          "lineNumber": 81
+        },
+        {
+          "caller": "runCase",
+          "callee": "System.nanoTime",
+          "lineNumber": 82
+        },
+        {
+          "caller": "runCase",
+          "callee": "allScores.isEmpty",
+          "lineNumber": 85
+        },
+        {
+          "caller": "runCase",
+          "callee": "allScores.get(0).score",
+          "lineNumber": 85
+        },
+        {
+          "caller": "runCase",
+          "callee": "allScores.get",
+          "lineNumber": 85
+        },
+        {
+          "caller": "runCase",
+          "callee": "System.out.println",
+          "lineNumber": 87
+        },
+        {
+          "caller": "runCase",
+          "callee": "System.out.println",
+          "lineNumber": 88
+        },
+        {
+          "caller": "runCase",
+          "callee": "System.out.println",
+          "lineNumber": 89
+        },
+        {
+          "caller": "runCase",
+          "callee": "System.out.println",
+          "lineNumber": 90
+        },
+        {
+          "caller": "runCase",
+          "callee": "System.out.println",
+          "lineNumber": 91
+        },
+        {
+          "caller": "runCase",
+          "callee": "System.out.println",
+          "lineNumber": 92
+        },
+        {
+          "caller": "runCase",
+          "callee": "allScores.stream()\r\n                .filter(ns -> ns.score() >= MIN_SCORE)\r\n                .limit(TOP_N).forEach",
+          "lineNumber": 94
+        },
+        {
+          "caller": "runCase",
+          "callee": "allScores.stream()\r\n                .filter(ns -> ns.score() >= MIN_SCORE).limit",
+          "lineNumber": 94
+        },
+        {
+          "caller": "runCase",
+          "callee": "allScores.stream().filter",
+          "lineNumber": 94
+        },
+        {
+          "caller": "runCase",
+          "callee": "allScores.stream",
+          "lineNumber": 94
+        },
+        {
+          "caller": "runCase",
+          "callee": "ns.score",
+          "lineNumber": 95
+        },
+        {
+          "caller": "runCase",
+          "callee": "ns.node",
+          "lineNumber": 98
+        },
+        {
+          "caller": "runCase",
+          "callee": "System.out.printf",
+          "lineNumber": 99
+        },
+        {
+          "caller": "runCase",
+          "callee": "ns.score",
+          "lineNumber": 100
+        },
+        {
+          "caller": "runCase",
+          "callee": "safeFullPath",
+          "lineNumber": 101
+        },
+        {
+          "caller": "runCase",
+          "callee": "n.getId",
+          "lineNumber": 102
+        },
+        {
+          "caller": "runCase",
+          "callee": "allScores.stream().noneMatch",
+          "lineNumber": 105
+        },
+        {
+          "caller": "runCase",
+          "callee": "allScores.stream",
+          "lineNumber": 105
+        },
+        {
+          "caller": "runCase",
+          "callee": "ns.score",
+          "lineNumber": 105
+        },
+        {
+          "caller": "runCase",
+          "callee": "System.out.println",
+          "lineNumber": 106
+        },
+        {
+          "caller": "runCase",
+          "callee": "System.out.println",
+          "lineNumber": 109
+        },
+        {
+          "caller": "runCase",
+          "callee": "System.out.println",
+          "lineNumber": 110
+        },
+        {
+          "caller": "runCase",
+          "callee": "System.out.println",
+          "lineNumber": 111
+        },
+        {
+          "caller": "safeFullPath",
+          "callee": "node.getFullPath",
+          "lineNumber": 116
+        },
+        {
+          "caller": "safeFullPath",
+          "callee": "node.getFullPath",
+          "lineNumber": 116
+        },
+        {
+          "caller": "safeFullPath",
+          "callee": "node.getName",
+          "lineNumber": 116
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 5,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/embedding/SiliconFlowEmbeddingServiceTests.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 35,
+      "functions": [
+        {
+          "name": "embeddingSiliconFlow",
+          "startLine": 36,
+          "endLine": 40,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SiliconFlowEmbeddingServiceTests",
+          "startLine": 29,
+          "endLine": 41,
+          "methods": [
+            "embeddingSiliconFlow"
+          ],
+          "properties": [
+            "embeddingService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "embeddingSiliconFlow",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "SiliconFlowEmbeddingServiceTests",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "embeddingSiliconFlow",
+          "callee": "embeddingService.embed",
+          "lineNumber": 38
+        },
+        {
+          "caller": "embeddingSiliconFlow",
+          "callee": "System.out.println",
+          "lineNumber": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/rewrite/MultiQuestionRewriteServiceTests.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 47,
+      "functions": [
+        {
+          "name": "shouldReturnRewriteAndSubQuestions",
+          "startLine": 38,
+          "endLine": 55,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "MultiQuestionRewriteServiceTests",
+          "startLine": 31,
+          "endLine": 56,
+          "methods": [
+            "shouldReturnRewriteAndSubQuestions"
+          ],
+          "properties": [
+            "multiQuestionRewriteService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "shouldReturnRewriteAndSubQuestions",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "MultiQuestionRewriteServiceTests",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "multiQuestionRewriteService.rewriteWithSplit",
+          "lineNumber": 42
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "Assertions.assertNotNull",
+          "lineNumber": 44
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "Assertions.assertNotNull",
+          "lineNumber": 45
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "result.rewrittenQuestion",
+          "lineNumber": 45
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "Assertions.assertFalse",
+          "lineNumber": 46
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "result.rewrittenQuestion().isBlank",
+          "lineNumber": 46
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "result.rewrittenQuestion",
+          "lineNumber": 46
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "result.subQuestions",
+          "lineNumber": 48
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "Assertions.assertNotNull",
+          "lineNumber": 49
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "Assertions.assertFalse",
+          "lineNumber": 50
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "subs.isEmpty",
+          "lineNumber": 50
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "Assertions.assertTrue",
+          "lineNumber": 51
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "subs.stream().allMatch",
+          "lineNumber": 51
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "subs.stream",
+          "lineNumber": 51
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "s.isBlank",
+          "lineNumber": 51
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "subs.stream().anyMatch",
+          "lineNumber": 52
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "subs.stream",
+          "lineNumber": 52
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "s.contains",
+          "lineNumber": 52
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "subs.stream().anyMatch",
+          "lineNumber": 53
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "subs.stream",
+          "lineNumber": 53
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "s.contains",
+          "lineNumber": 53
+        },
+        {
+          "caller": "shouldReturnRewriteAndSubQuestions",
+          "callee": "Assertions.assertTrue",
+          "lineNumber": 54
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/RetrievedChunk.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 54,
+      "nonEmptyLines": 48,
+      "classes": [
+        {
+          "name": "RetrievedChunk",
+          "startLine": 31,
+          "endLine": 54,
+          "methods": [],
+          "properties": [
+            "id",
+            "text",
+            "score"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RetrievedChunk",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/SseEmitterSender.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 125,
+      "nonEmptyLines": 114,
+      "functions": [
+        {
+          "name": "SseEmitterSender",
+          "startLine": 48,
+          "endLine": 53,
+          "params": [
+            "emitter"
+          ]
+        },
+        {
+          "name": "sendEvent",
+          "startLine": 67,
+          "endLine": 80,
+          "params": [
+            "eventName",
+            "data"
+          ]
+        },
+        {
+          "name": "complete",
+          "startLine": 88,
+          "endLine": 93,
+          "params": []
+        },
+        {
+          "name": "fail",
+          "startLine": 106,
+          "endLine": 109,
+          "params": [
+            "throwable"
+          ]
+        },
+        {
+          "name": "closeWithError",
+          "startLine": 119,
+          "endLine": 124,
+          "params": [
+            "throwable"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SseEmitterSender",
+          "startLine": 31,
+          "endLine": 125,
+          "methods": [
+            "SseEmitterSender",
+            "sendEvent",
+            "complete",
+            "fail",
+            "closeWithError"
+          ],
+          "properties": [
+            "emitter",
+            "closed"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SseEmitterSender",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "sendEvent",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "complete",
+          "line": 88,
+          "isDefault": false
+        },
+        {
+          "name": "fail",
+          "line": 106,
+          "isDefault": false
+        },
+        {
+          "name": "SseEmitterSender",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SseEmitterSender",
+          "callee": "emitter.onCompletion",
+          "lineNumber": 50
+        },
+        {
+          "caller": "SseEmitterSender",
+          "callee": "closed.set",
+          "lineNumber": 50
+        },
+        {
+          "caller": "SseEmitterSender",
+          "callee": "emitter.onTimeout",
+          "lineNumber": 51
+        },
+        {
+          "caller": "SseEmitterSender",
+          "callee": "closed.set",
+          "lineNumber": 51
+        },
+        {
+          "caller": "SseEmitterSender",
+          "callee": "emitter.onError",
+          "lineNumber": 52
+        },
+        {
+          "caller": "SseEmitterSender",
+          "callee": "closed.set",
+          "lineNumber": 52
+        },
+        {
+          "caller": "sendEvent",
+          "callee": "closed.get",
+          "lineNumber": 68
+        },
+        {
+          "caller": "sendEvent",
+          "callee": "emitter.send",
+          "lineNumber": 73
+        },
+        {
+          "caller": "sendEvent",
+          "callee": "emitter.send",
+          "lineNumber": 76
+        },
+        {
+          "caller": "sendEvent",
+          "callee": "SseEmitter.event().name(eventName).data",
+          "lineNumber": 76
+        },
+        {
+          "caller": "sendEvent",
+          "callee": "SseEmitter.event().name",
+          "lineNumber": 76
+        },
+        {
+          "caller": "sendEvent",
+          "callee": "SseEmitter.event",
+          "lineNumber": 76
+        },
+        {
+          "caller": "sendEvent",
+          "callee": "fail",
+          "lineNumber": 78
+        },
+        {
+          "caller": "complete",
+          "callee": "closed.compareAndSet",
+          "lineNumber": 90
+        },
+        {
+          "caller": "complete",
+          "callee": "emitter.complete",
+          "lineNumber": 91
+        },
+        {
+          "caller": "fail",
+          "callee": "closeWithError",
+          "lineNumber": 107
+        },
+        {
+          "caller": "fail",
+          "callee": "log.warn",
+          "lineNumber": 108
+        },
+        {
+          "caller": "closeWithError",
+          "callee": "closed.compareAndSet",
+          "lineNumber": 121
+        },
+        {
+          "caller": "closeWithError",
+          "callee": "emitter.completeWithError",
+          "lineNumber": 122
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamCallback.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 86,
+      "nonEmptyLines": 80,
+      "classes": [
+        {
+          "name": "StreamCallback",
+          "startLine": 38,
+          "endLine": 86,
+          "methods": [
+            "onContent",
+            "onThinking",
+            "onComplete",
+            "onError"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "StreamCallback",
+          "line": 38,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/StreamCancellationHandle.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 45,
+      "classes": [
+        {
+          "name": "StreamCancellationHandle",
+          "startLine": 37,
+          "endLine": 48,
+          "methods": [
+            "cancel"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "StreamCancellationHandle",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/embedding/EmbeddingService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 96,
+      "nonEmptyLines": 88,
+      "classes": [
+        {
+          "name": "EmbeddingService",
+          "startLine": 39,
+          "endLine": 96,
+          "methods": [
+            "embed",
+            "embed",
+            "embedBatch",
+            "embedBatch",
+            "dimension"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "EmbeddingService",
+          "line": 39,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/rerank/RerankService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 34,
+      "classes": [
+        {
+          "name": "RerankService",
+          "startLine": 28,
+          "endLine": 39,
+          "methods": [
+            "rerank"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RerankService",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    }
+  ]
+}

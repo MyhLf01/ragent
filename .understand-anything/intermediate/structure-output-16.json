@@ -1,0 +1,1428 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 11,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/QueryTermMappingController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 87,
+      "nonEmptyLines": 78,
+      "functions": [
+        {
+          "name": "pageQuery",
+          "startLine": 49,
+          "endLine": 52,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "queryById",
+          "startLine": 57,
+          "endLine": 60,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "create",
+          "startLine": 65,
+          "endLine": 68,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 73,
+          "endLine": 77,
+          "params": [
+            "id",
+            "requestParam"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 82,
+          "endLine": 86,
+          "params": [
+            "id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "QueryTermMappingController",
+          "startLine": 40,
+          "endLine": 87,
+          "methods": [
+            "pageQuery",
+            "queryById",
+            "create",
+            "update",
+            "delete"
+          ],
+          "properties": [
+            "queryTermMappingAdminService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "pageQuery",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "queryById",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "create",
+          "line": 65,
+          "isDefault": false
+        },
+        {
+          "name": "update",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "delete",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "QueryTermMappingController",
+          "line": 40,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "pageQuery",
+          "callee": "Results.success",
+          "lineNumber": 51
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "queryTermMappingAdminService.pageQuery",
+          "lineNumber": 51
+        },
+        {
+          "caller": "queryById",
+          "callee": "Results.success",
+          "lineNumber": 59
+        },
+        {
+          "caller": "queryById",
+          "callee": "queryTermMappingAdminService.queryById",
+          "lineNumber": 59
+        },
+        {
+          "caller": "create",
+          "callee": "Results.success",
+          "lineNumber": 67
+        },
+        {
+          "caller": "create",
+          "callee": "queryTermMappingAdminService.create",
+          "lineNumber": 67
+        },
+        {
+          "caller": "update",
+          "callee": "queryTermMappingAdminService.update",
+          "lineNumber": 75
+        },
+        {
+          "caller": "update",
+          "callee": "Results.success",
+          "lineNumber": 76
+        },
+        {
+          "caller": "delete",
+          "callee": "queryTermMappingAdminService.delete",
+          "lineNumber": 84
+        },
+        {
+          "caller": "delete",
+          "callee": "Results.success",
+          "lineNumber": 85
+        }
+      ],
+      "metrics": {
+        "importCount": 7,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 48,
+      "classes": [
+        {
+          "name": "QueryTermMappingCreateRequest",
+          "startLine": 25,
+          "endLine": 57,
+          "methods": [],
+          "properties": [
+            "sourceTerm",
+            "targetTerm",
+            "matchType",
+            "priority",
+            "enabled",
+            "remark"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "QueryTermMappingCreateRequest",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingPageRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 29,
+      "classes": [
+        {
+          "name": "QueryTermMappingPageRequest",
+          "startLine": 26,
+          "endLine": 33,
+          "methods": [],
+          "properties": [
+            "keyword"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "QueryTermMappingPageRequest",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/request/QueryTermMappingUpdateRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 48,
+      "classes": [
+        {
+          "name": "QueryTermMappingUpdateRequest",
+          "startLine": 25,
+          "endLine": 57,
+          "methods": [],
+          "properties": [
+            "sourceTerm",
+            "targetTerm",
+            "matchType",
+            "priority",
+            "enabled",
+            "remark"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "QueryTermMappingUpdateRequest",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/QueryTermMappingVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 40,
+      "classes": [
+        {
+          "name": "QueryTermMappingVO",
+          "startLine": 30,
+          "endLine": 45,
+          "methods": [],
+          "properties": [
+            "id",
+            "sourceTerm",
+            "targetTerm",
+            "matchType",
+            "priority",
+            "enabled",
+            "remark",
+            "createTime",
+            "updateTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "QueryTermMappingVO",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryTermMappingCacheManager.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 97,
+      "nonEmptyLines": 87,
+      "functions": [
+        {
+          "name": "getMappingsFromCache",
+          "startLine": 55,
+          "endLine": 68,
+          "params": []
+        },
+        {
+          "name": "saveMappingsToCache",
+          "startLine": 75,
+          "endLine": 83,
+          "params": [
+            "mappings"
+          ]
+        },
+        {
+          "name": "clearCache",
+          "startLine": 89,
+          "endLine": 96,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "QueryTermMappingCacheManager",
+          "startLine": 35,
+          "endLine": 97,
+          "methods": [
+            "getMappingsFromCache",
+            "saveMappingsToCache",
+            "clearCache"
+          ],
+          "properties": [
+            "stringRedisTemplate",
+            "objectMapper",
+            "CACHE_KEY",
+            "CACHE_EXPIRE_DAYS"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getMappingsFromCache",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "saveMappingsToCache",
+          "line": 75,
+          "isDefault": false
+        },
+        {
+          "name": "clearCache",
+          "line": 89,
+          "isDefault": false
+        },
+        {
+          "name": "QueryTermMappingCacheManager",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getMappingsFromCache",
+          "callee": "stringRedisTemplate.opsForValue().get",
+          "lineNumber": 57
+        },
+        {
+          "caller": "getMappingsFromCache",
+          "callee": "stringRedisTemplate.opsForValue",
+          "lineNumber": 57
+        },
+        {
+          "caller": "getMappingsFromCache",
+          "callee": "log.info",
+          "lineNumber": 59
+        },
+        {
+          "caller": "getMappingsFromCache",
+          "callee": "objectMapper.readValue",
+          "lineNumber": 62
+        },
+        {
+          "caller": "getMappingsFromCache",
+          "callee": "new TypeReference<>",
+          "lineNumber": 62
+        },
+        {
+          "caller": "getMappingsFromCache",
+          "callee": "log.error",
+          "lineNumber": 65
+        },
+        {
+          "caller": "saveMappingsToCache",
+          "callee": "objectMapper.writeValueAsString",
+          "lineNumber": 77
+        },
+        {
+          "caller": "saveMappingsToCache",
+          "callee": "stringRedisTemplate.opsForValue().set",
+          "lineNumber": 78
+        },
+        {
+          "caller": "saveMappingsToCache",
+          "callee": "stringRedisTemplate.opsForValue",
+          "lineNumber": 78
+        },
+        {
+          "caller": "saveMappingsToCache",
+          "callee": "log.info",
+          "lineNumber": 79
+        },
+        {
+          "caller": "saveMappingsToCache",
+          "callee": "mappings.size",
+          "lineNumber": 79
+        },
+        {
+          "caller": "saveMappingsToCache",
+          "callee": "log.error",
+          "lineNumber": 81
+        },
+        {
+          "caller": "clearCache",
+          "callee": "stringRedisTemplate.delete",
+          "lineNumber": 90
+        },
+        {
+          "caller": "clearCache",
+          "callee": "log.info",
+          "lineNumber": 92
+        },
+        {
+          "caller": "clearCache",
+          "callee": "log.info",
+          "lineNumber": 94
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryTermMappingService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 99,
+      "nonEmptyLines": 87,
+      "functions": [
+        {
+          "name": "normalize",
+          "startLine": 43,
+          "endLine": 73,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "loadMappings",
+          "startLine": 78,
+          "endLine": 98,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "QueryTermMappingService",
+          "startLine": 32,
+          "endLine": 99,
+          "methods": [
+            "normalize",
+            "loadMappings"
+          ],
+          "properties": [
+            "mappingMapper",
+            "cacheManager"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "normalize",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "QueryTermMappingService",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "normalize",
+          "callee": "text.isEmpty",
+          "lineNumber": 44
+        },
+        {
+          "caller": "normalize",
+          "callee": "loadMappings",
+          "lineNumber": 48
+        },
+        {
+          "caller": "normalize",
+          "callee": "mappings.isEmpty",
+          "lineNumber": 49
+        },
+        {
+          "caller": "normalize",
+          "callee": "mapping.getEnabled",
+          "lineNumber": 55
+        },
+        {
+          "caller": "normalize",
+          "callee": "mapping.getEnabled",
+          "lineNumber": 55
+        },
+        {
+          "caller": "normalize",
+          "callee": "mapping.getMatchType",
+          "lineNumber": 58
+        },
+        {
+          "caller": "normalize",
+          "callee": "mapping.getMatchType",
+          "lineNumber": 58
+        },
+        {
+          "caller": "normalize",
+          "callee": "mapping.getSourceTerm",
+          "lineNumber": 61
+        },
+        {
+          "caller": "normalize",
+          "callee": "mapping.getTargetTerm",
+          "lineNumber": 62
+        },
+        {
+          "caller": "normalize",
+          "callee": "source.isEmpty",
+          "lineNumber": 63
+        },
+        {
+          "caller": "normalize",
+          "callee": "target.isEmpty",
+          "lineNumber": 63
+        },
+        {
+          "caller": "normalize",
+          "callee": "QueryTermMappingUtil.applyMapping",
+          "lineNumber": 66
+        },
+        {
+          "caller": "normalize",
+          "callee": "Objects.equals",
+          "lineNumber": 69
+        },
+        {
+          "caller": "normalize",
+          "callee": "log.info",
+          "lineNumber": 70
+        },
+        {
+          "caller": "loadMappings",
+          "callee": "cacheManager.getMappingsFromCache",
+          "lineNumber": 79
+        },
+        {
+          "caller": "loadMappings",
+          "callee": "CollUtil.isNotEmpty",
+          "lineNumber": 80
+        },
+        {
+          "caller": "loadMappings",
+          "callee": "mappingMapper.selectList",
+          "lineNumber": 85
+        },
+        {
+          "caller": "loadMappings",
+          "callee": "Wrappers.lambdaQuery(QueryTermMappingDO.class).eq",
+          "lineNumber": 86
+        },
+        {
+          "caller": "loadMappings",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 86
+        },
+        {
+          "caller": "loadMappings",
+          "callee": "dbList.sort",
+          "lineNumber": 89
+        },
+        {
+          "caller": "loadMappings",
+          "callee": "Comparator\r\n                .comparing(QueryTermMappingDO::getPriority, Comparator.nullsLast(Integer::compareTo)).reversed().thenComparing",
+          "lineNumber": 89
+        },
+        {
+          "caller": "loadMappings",
+          "callee": "Comparator\r\n                .comparing(QueryTermMappingDO::getPriority, Comparator.nullsLast(Integer::compareTo)).reversed",
+          "lineNumber": 89
+        },
+        {
+          "caller": "loadMappings",
+          "callee": "Comparator.comparing",
+          "lineNumber": 89
+        },
+        {
+          "caller": "loadMappings",
+          "callee": "Comparator.nullsLast",
+          "lineNumber": 90
+        },
+        {
+          "caller": "loadMappings",
+          "callee": "m.getSourceTerm",
+          "lineNumber": 91
+        },
+        {
+          "caller": "loadMappings",
+          "callee": "m.getSourceTerm().length",
+          "lineNumber": 91
+        },
+        {
+          "caller": "loadMappings",
+          "callee": "m.getSourceTerm",
+          "lineNumber": 91
+        },
+        {
+          "caller": "loadMappings",
+          "callee": "Comparator.reverseOrder",
+          "lineNumber": 91
+        },
+        {
+          "caller": "loadMappings",
+          "callee": "cacheManager.saveMappingsToCache",
+          "lineNumber": 95
+        },
+        {
+          "caller": "loadMappings",
+          "callee": "log.info",
+          "lineNumber": 96
+        },
+        {
+          "caller": "loadMappings",
+          "callee": "dbList.size",
+          "lineNumber": 96
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/entity/QueryTermMappingDO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 76,
+      "nonEmptyLines": 60,
+      "classes": [
+        {
+          "name": "QueryTermMappingDO",
+          "startLine": 27,
+          "endLine": 76,
+          "methods": [],
+          "properties": [
+            "id",
+            "domain",
+            "sourceTerm",
+            "targetTerm",
+            "matchType",
+            "priority",
+            "enabled",
+            "remark",
+            "createBy",
+            "updateBy",
+            "createTime",
+            "updateTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "QueryTermMappingDO",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/QueryTermMappingMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "QueryTermMappingMapper",
+          "startLine": 23,
+          "endLine": 24,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "QueryTermMappingMapper",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/QueryTermMappingAdminService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 52,
+      "nonEmptyLines": 44,
+      "classes": [
+        {
+          "name": "QueryTermMappingAdminService",
+          "startLine": 26,
+          "endLine": 52,
+          "methods": [
+            "create",
+            "update",
+            "delete",
+            "queryById",
+            "pageQuery"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "QueryTermMappingAdminService",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/QueryTermMappingAdminServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 146,
+      "nonEmptyLines": 131,
+      "functions": [
+        {
+          "name": "create",
+          "startLine": 44,
+          "endLine": 63,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 65,
+          "endLine": 95,
+          "params": [
+            "id",
+            "requestParam"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 97,
+          "endLine": 102,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "queryById",
+          "startLine": 104,
+          "endLine": 108,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "pageQuery",
+          "startLine": 110,
+          "endLine": 125,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "loadById",
+          "startLine": 127,
+          "endLine": 131,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "toVO",
+          "startLine": 133,
+          "endLine": 145,
+          "params": [
+            "record"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "QueryTermMappingAdminServiceImpl",
+          "startLine": 37,
+          "endLine": 146,
+          "methods": [
+            "create",
+            "update",
+            "delete",
+            "queryById",
+            "pageQuery",
+            "loadById",
+            "toVO"
+          ],
+          "properties": [
+            "queryTermMappingMapper",
+            "queryTermMappingCacheManager"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "create",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "update",
+          "line": 65,
+          "isDefault": false
+        },
+        {
+          "name": "delete",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "queryById",
+          "line": 104,
+          "isDefault": false
+        },
+        {
+          "name": "pageQuery",
+          "line": 110,
+          "isDefault": false
+        },
+        {
+          "name": "QueryTermMappingAdminServiceImpl",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "create",
+          "callee": "Assert.notNull",
+          "lineNumber": 46
+        },
+        {
+          "caller": "create",
+          "callee": "new ClientException",
+          "lineNumber": 46
+        },
+        {
+          "caller": "create",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 47
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getSourceTerm",
+          "lineNumber": 47
+        },
+        {
+          "caller": "create",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 48
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getTargetTerm",
+          "lineNumber": 48
+        },
+        {
+          "caller": "create",
+          "callee": "Assert.notBlank",
+          "lineNumber": 49
+        },
+        {
+          "caller": "create",
+          "callee": "new ClientException",
+          "lineNumber": 49
+        },
+        {
+          "caller": "create",
+          "callee": "Assert.notBlank",
+          "lineNumber": 50
+        },
+        {
+          "caller": "create",
+          "callee": "new ClientException",
+          "lineNumber": 50
+        },
+        {
+          "caller": "create",
+          "callee": "new QueryTermMappingDO",
+          "lineNumber": 52
+        },
+        {
+          "caller": "create",
+          "callee": "record.setSourceTerm",
+          "lineNumber": 53
+        },
+        {
+          "caller": "create",
+          "callee": "record.setTargetTerm",
+          "lineNumber": 54
+        },
+        {
+          "caller": "create",
+          "callee": "record.setMatchType",
+          "lineNumber": 55
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getMatchType",
+          "lineNumber": 55
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getMatchType",
+          "lineNumber": 55
+        },
+        {
+          "caller": "create",
+          "callee": "record.setPriority",
+          "lineNumber": 56
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getPriority",
+          "lineNumber": 56
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getPriority",
+          "lineNumber": 56
+        },
+        {
+          "caller": "create",
+          "callee": "record.setEnabled",
+          "lineNumber": 57
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getEnabled",
+          "lineNumber": 57
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getEnabled",
+          "lineNumber": 57
+        },
+        {
+          "caller": "create",
+          "callee": "record.setRemark",
+          "lineNumber": 58
+        },
+        {
+          "caller": "create",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 58
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getRemark",
+          "lineNumber": 58
+        },
+        {
+          "caller": "create",
+          "callee": "queryTermMappingMapper.insert",
+          "lineNumber": 60
+        },
+        {
+          "caller": "create",
+          "callee": "queryTermMappingCacheManager.clearCache",
+          "lineNumber": 61
+        },
+        {
+          "caller": "create",
+          "callee": "String.valueOf",
+          "lineNumber": 62
+        },
+        {
+          "caller": "create",
+          "callee": "record.getId",
+          "lineNumber": 62
+        },
+        {
+          "caller": "update",
+          "callee": "Assert.notNull",
+          "lineNumber": 67
+        },
+        {
+          "caller": "update",
+          "callee": "new ClientException",
+          "lineNumber": 67
+        },
+        {
+          "caller": "update",
+          "callee": "loadById",
+          "lineNumber": 68
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getSourceTerm",
+          "lineNumber": 70
+        },
+        {
+          "caller": "update",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 71
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getSourceTerm",
+          "lineNumber": 71
+        },
+        {
+          "caller": "update",
+          "callee": "Assert.notBlank",
+          "lineNumber": 72
+        },
+        {
+          "caller": "update",
+          "callee": "new ClientException",
+          "lineNumber": 72
+        },
+        {
+          "caller": "update",
+          "callee": "record.setSourceTerm",
+          "lineNumber": 73
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getTargetTerm",
+          "lineNumber": 75
+        },
+        {
+          "caller": "update",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 76
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getTargetTerm",
+          "lineNumber": 76
+        },
+        {
+          "caller": "update",
+          "callee": "Assert.notBlank",
+          "lineNumber": 77
+        },
+        {
+          "caller": "update",
+          "callee": "new ClientException",
+          "lineNumber": 77
+        },
+        {
+          "caller": "update",
+          "callee": "record.setTargetTerm",
+          "lineNumber": 78
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getMatchType",
+          "lineNumber": 80
+        },
+        {
+          "caller": "update",
+          "callee": "record.setMatchType",
+          "lineNumber": 81
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getMatchType",
+          "lineNumber": 81
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getPriority",
+          "lineNumber": 83
+        },
+        {
+          "caller": "update",
+          "callee": "record.setPriority",
+          "lineNumber": 84
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getPriority",
+          "lineNumber": 84
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getEnabled",
+          "lineNumber": 86
+        },
+        {
+          "caller": "update",
+          "callee": "record.setEnabled",
+          "lineNumber": 87
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getEnabled",
+          "lineNumber": 87
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getRemark",
+          "lineNumber": 89
+        },
+        {
+          "caller": "update",
+          "callee": "record.setRemark",
+          "lineNumber": 90
+        },
+        {
+          "caller": "update",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 90
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getRemark",
+          "lineNumber": 90
+        },
+        {
+          "caller": "update",
+          "callee": "queryTermMappingMapper.updateById",
+          "lineNumber": 93
+        },
+        {
+          "caller": "update",
+          "callee": "queryTermMappingCacheManager.clearCache",
+          "lineNumber": 94
+        },
+        {
+          "caller": "delete",
+          "callee": "loadById",
+          "lineNumber": 99
+        },
+        {
+          "caller": "delete",
+          "callee": "queryTermMappingMapper.deleteById",
+          "lineNumber": 100
+        },
+        {
+          "caller": "delete",
+          "callee": "record.getId",
+          "lineNumber": 100
+        },
+        {
+          "caller": "delete",
+          "callee": "queryTermMappingCacheManager.clearCache",
+          "lineNumber": 101
+        },
+        {
+          "caller": "queryById",
+          "callee": "loadById",
+          "lineNumber": 106
+        },
+        {
+          "caller": "queryById",
+          "callee": "toVO",
+          "lineNumber": 107
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "StrUtil.trimToNull",
+          "lineNumber": 112
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "requestParam.getKeyword",
+          "lineNumber": 112
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "new Page<>",
+          "lineNumber": 113
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "requestParam.getCurrent",
+          "lineNumber": 113
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "requestParam.getSize",
+          "lineNumber": 113
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "queryTermMappingMapper.selectPage",
+          "lineNumber": 114
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.lambdaQuery(QueryTermMappingDO.class)\r\n                        .and(StrUtil.isNotBlank(keyword), wrapper -> wrapper\r\n                                .like(QueryTermMappingDO::getSourceTerm, keyword)\r\n                                .or()\r\n                                .like(QueryTermMappingDO::getTargetTerm, keyword))\r\n                        .orderByAsc(QueryTermMappingDO::getPriority).orderByDesc",
+          "lineNumber": 116
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.lambdaQuery(QueryTermMappingDO.class)\r\n                        .and(StrUtil.isNotBlank(keyword), wrapper -> wrapper\r\n                                .like(QueryTermMappingDO::getSourceTerm, keyword)\r\n                                .or()\r\n                                .like(QueryTermMappingDO::getTargetTerm, keyword)).orderByAsc",
+          "lineNumber": 116
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.lambdaQuery(QueryTermMappingDO.class).and",
+          "lineNumber": 116
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 116
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "StrUtil.isNotBlank",
+          "lineNumber": 117
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "wrapper\r\n                                .like(QueryTermMappingDO::getSourceTerm, keyword)\r\n                                .or().like",
+          "lineNumber": 117
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "wrapper\r\n                                .like(QueryTermMappingDO::getSourceTerm, keyword).or",
+          "lineNumber": 117
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "wrapper.like",
+          "lineNumber": 117
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "result.convert",
+          "lineNumber": 124
+        },
+        {
+          "caller": "loadById",
+          "callee": "queryTermMappingMapper.selectById",
+          "lineNumber": 128
+        },
+        {
+          "caller": "loadById",
+          "callee": "Assert.notNull",
+          "lineNumber": 129
+        },
+        {
+          "caller": "loadById",
+          "callee": "new ClientException",
+          "lineNumber": 129
+        },
+        {
+          "caller": "toVO",
+          "callee": "QueryTermMappingVO.builder()\r\n                .id(String.valueOf(record.getId()))\r\n                .sourceTerm(record.getSourceTerm())\r\n                .targetTerm(record.getTargetTerm())\r\n                .matchType(record.getMatchType())\r\n                .priority(record.getPriority())\r\n                .enabled(record.getEnabled() != null && record.getEnabled() == 1)\r\n                .remark(record.getRemark())\r\n                .createTime(record.getCreateTime())\r\n                .updateTime(record.getUpdateTime()).build",
+          "lineNumber": 134
+        },
+        {
+          "caller": "toVO",
+          "callee": "QueryTermMappingVO.builder()\r\n                .id(String.valueOf(record.getId()))\r\n                .sourceTerm(record.getSourceTerm())\r\n                .targetTerm(record.getTargetTerm())\r\n                .matchType(record.getMatchType())\r\n                .priority(record.getPriority())\r\n                .enabled(record.getEnabled() != null && record.getEnabled() == 1)\r\n                .remark(record.getRemark())\r\n                .createTime(record.getCreateTime()).updateTime",
+          "lineNumber": 134
+        },
+        {
+          "caller": "toVO",
+          "callee": "QueryTermMappingVO.builder()\r\n                .id(String.valueOf(record.getId()))\r\n                .sourceTerm(record.getSourceTerm())\r\n                .targetTerm(record.getTargetTerm())\r\n                .matchType(record.getMatchType())\r\n                .priority(record.getPriority())\r\n                .enabled(record.getEnabled() != null && record.getEnabled() == 1)\r\n                .remark(record.getRemark()).createTime",
+          "lineNumber": 134
+        },
+        {
+          "caller": "toVO",
+          "callee": "QueryTermMappingVO.builder()\r\n                .id(String.valueOf(record.getId()))\r\n                .sourceTerm(record.getSourceTerm())\r\n                .targetTerm(record.getTargetTerm())\r\n                .matchType(record.getMatchType())\r\n                .priority(record.getPriority())\r\n                .enabled(record.getEnabled() != null && record.getEnabled() == 1).remark",
+          "lineNumber": 134
+        },
+        {
+          "caller": "toVO",
+          "callee": "QueryTermMappingVO.builder()\r\n                .id(String.valueOf(record.getId()))\r\n                .sourceTerm(record.getSourceTerm())\r\n                .targetTerm(record.getTargetTerm())\r\n                .matchType(record.getMatchType())\r\n                .priority(record.getPriority()).enabled",
+          "lineNumber": 134
+        },
+        {
+          "caller": "toVO",
+          "callee": "QueryTermMappingVO.builder()\r\n                .id(String.valueOf(record.getId()))\r\n                .sourceTerm(record.getSourceTerm())\r\n                .targetTerm(record.getTargetTerm())\r\n                .matchType(record.getMatchType()).priority",
+          "lineNumber": 134
+        },
+        {
+          "caller": "toVO",
+          "callee": "QueryTermMappingVO.builder()\r\n                .id(String.valueOf(record.getId()))\r\n                .sourceTerm(record.getSourceTerm())\r\n                .targetTerm(record.getTargetTerm()).matchType",
+          "lineNumber": 134
+        },
+        {
+          "caller": "toVO",
+          "callee": "QueryTermMappingVO.builder()\r\n                .id(String.valueOf(record.getId()))\r\n                .sourceTerm(record.getSourceTerm()).targetTerm",
+          "lineNumber": 134
+        },
+        {
+          "caller": "toVO",
+          "callee": "QueryTermMappingVO.builder()\r\n                .id(String.valueOf(record.getId())).sourceTerm",
+          "lineNumber": 134
+        },
+        {
+          "caller": "toVO",
+          "callee": "QueryTermMappingVO.builder().id",
+          "lineNumber": 134
+        },
+        {
+          "caller": "toVO",
+          "callee": "QueryTermMappingVO.builder",
+          "lineNumber": 134
+        },
+        {
+          "caller": "toVO",
+          "callee": "String.valueOf",
+          "lineNumber": 135
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getId",
+          "lineNumber": 135
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getSourceTerm",
+          "lineNumber": 136
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getTargetTerm",
+          "lineNumber": 137
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getMatchType",
+          "lineNumber": 138
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getPriority",
+          "lineNumber": 139
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getEnabled",
+          "lineNumber": 140
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getEnabled",
+          "lineNumber": 140
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getRemark",
+          "lineNumber": 141
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getCreateTime",
+          "lineNumber": 142
+        },
+        {
+          "caller": "toVO",
+          "callee": "record.getUpdateTime",
+          "lineNumber": 143
+        }
+      ],
+      "metrics": {
+        "importCount": 9,
+        "exportCount": 6,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    }
+  ]
+}

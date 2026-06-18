@@ -1,0 +1,1468 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "docs/examples/pdf-ingestion-example.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 287,
+      "nonEmptyLines": 224,
+      "sections": [
+        {
+          "heading": "PDF文档摄取完整示例",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "📋 流程说明",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "🚀 完整操作步骤",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Step 1: 创建流水线",
+          "level": 3,
+          "line": 21
+        },
+        {
+          "heading": "Step 2: 上传PDF文档",
+          "level": 3,
+          "line": 52
+        },
+        {
+          "heading": "Step 3: 查看任务状态",
+          "level": 3,
+          "line": 81
+        },
+        {
+          "heading": "🎯 节点连线说明",
+          "level": 2,
+          "line": 118
+        },
+        {
+          "heading": "核心概念",
+          "level": 3,
+          "line": 120
+        },
+        {
+          "heading": "📊 配置字段说明",
+          "level": 2,
+          "line": 135
+        },
+        {
+          "heading": "NodeConfig 字段",
+          "level": 3,
+          "line": 137
+        },
+        {
+          "heading": "⚠️ 常见错误",
+          "level": 2,
+          "line": 149
+        },
+        {
+          "heading": "错误1: 循环依赖",
+          "level": 3,
+          "line": 151
+        },
+        {
+          "heading": "错误2: 引用不存在的节点",
+          "level": 3,
+          "line": 168
+        },
+        {
+          "heading": "错误3: 没有起始节点",
+          "level": 3,
+          "line": 183
+        },
+        {
+          "heading": "🧪 快速测试脚本",
+          "level": 2,
+          "line": 201
+        },
+        {
+          "heading": "📝 一键创建命令",
+          "level": 2,
+          "line": 256
+        },
+        {
+          "heading": "📚 相关文档",
+          "level": 2,
+          "line": 277
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    },
+    {
+      "path": "docs/examples/pdf-pipeline-request.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 60,
+      "nonEmptyLines": 60,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "description",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "nodes",
+          "level": 1,
+          "line": 4
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "framework/pom.xml",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 79,
+      "nonEmptyLines": 65,
+      "metrics": {}
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/cache/RedisKeySerializer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 50,
+      "nonEmptyLines": 43,
+      "functions": [
+        {
+          "name": "serialize",
+          "startLine": 40,
+          "endLine": 44,
+          "params": [
+            "key"
+          ]
+        },
+        {
+          "name": "deserialize",
+          "startLine": 46,
+          "endLine": 49,
+          "params": [
+            "bytes"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RedisKeySerializer",
+          "startLine": 32,
+          "endLine": 50,
+          "methods": [
+            "serialize",
+            "deserialize"
+          ],
+          "properties": [
+            "keyPrefix"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "serialize",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "deserialize",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "RedisKeySerializer",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "serialize",
+          "callee": "builderKey.getBytes",
+          "lineNumber": 43
+        },
+        {
+          "caller": "deserialize",
+          "callee": "new String",
+          "lineNumber": 48
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/config/DataBaseConfiguration.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 47,
+      "functions": [
+        {
+          "name": "mybatisPlusInterceptor",
+          "startLine": 39,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "myMetaObjectHandler",
+          "startLine": 49,
+          "endLine": 52,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DataBaseConfiguration",
+          "startLine": 33,
+          "endLine": 53,
+          "methods": [
+            "mybatisPlusInterceptor",
+            "myMetaObjectHandler"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "mybatisPlusInterceptor",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "myMetaObjectHandler",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "DataBaseConfiguration",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "mybatisPlusInterceptor",
+          "callee": "new MybatisPlusInterceptor",
+          "lineNumber": 41
+        },
+        {
+          "caller": "mybatisPlusInterceptor",
+          "callee": "interceptor.addInnerInterceptor",
+          "lineNumber": 42
+        },
+        {
+          "caller": "mybatisPlusInterceptor",
+          "callee": "new PaginationInnerInterceptor",
+          "lineNumber": 42
+        },
+        {
+          "caller": "myMetaObjectHandler",
+          "callee": "new MyMetaObjectHandler",
+          "lineNumber": 51
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/ApplicationContextHolder.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 86,
+      "nonEmptyLines": 74,
+      "functions": [
+        {
+          "name": "setApplicationContext",
+          "startLine": 40,
+          "endLine": 43,
+          "params": [
+            "applicationContext"
+          ]
+        },
+        {
+          "name": "getBean",
+          "startLine": 48,
+          "endLine": 50,
+          "params": [
+            "clazz"
+          ]
+        },
+        {
+          "name": "getBean",
+          "startLine": 55,
+          "endLine": 57,
+          "params": [
+            "name"
+          ]
+        },
+        {
+          "name": "getBean",
+          "startLine": 62,
+          "endLine": 64,
+          "params": [
+            "name",
+            "clazz"
+          ]
+        },
+        {
+          "name": "getBeansOfType",
+          "startLine": 69,
+          "endLine": 71,
+          "params": [
+            "clazz"
+          ]
+        },
+        {
+          "name": "findAnnotationOnBean",
+          "startLine": 76,
+          "endLine": 78,
+          "params": [
+            "beanName",
+            "annotationType"
+          ]
+        },
+        {
+          "name": "getInstance",
+          "startLine": 83,
+          "endLine": 85,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ApplicationContextHolder",
+          "startLine": 35,
+          "endLine": 86,
+          "methods": [
+            "setApplicationContext",
+            "getBean",
+            "getBean",
+            "getBean",
+            "getBeansOfType",
+            "findAnnotationOnBean",
+            "getInstance"
+          ],
+          "properties": [
+            "CONTEXT"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "setApplicationContext",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "getBean",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "getBean",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "getBean",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "getBeansOfType",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "findAnnotationOnBean",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "getInstance",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "ApplicationContextHolder",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getBean",
+          "callee": "CONTEXT.getBean",
+          "lineNumber": 49
+        },
+        {
+          "caller": "getBean",
+          "callee": "CONTEXT.getBean",
+          "lineNumber": 56
+        },
+        {
+          "caller": "getBean",
+          "callee": "CONTEXT.getBean",
+          "lineNumber": 63
+        },
+        {
+          "caller": "getBeansOfType",
+          "callee": "CONTEXT.getBeansOfType",
+          "lineNumber": 70
+        },
+        {
+          "caller": "findAnnotationOnBean",
+          "callee": "CONTEXT.findAnnotationOnBean",
+          "lineNumber": 77
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/database/MyMetaObjectHandler.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 35,
+      "functions": [
+        {
+          "name": "insertFill",
+          "startLine": 30,
+          "endLine": 35,
+          "params": [
+            "metaObject"
+          ]
+        },
+        {
+          "name": "updateFill",
+          "startLine": 37,
+          "endLine": 40,
+          "params": [
+            "metaObject"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MyMetaObjectHandler",
+          "startLine": 28,
+          "endLine": 41,
+          "methods": [
+            "insertFill",
+            "updateFill"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "insertFill",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "updateFill",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "MyMetaObjectHandler",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "insertFill",
+          "callee": "strictInsertFill",
+          "lineNumber": 32
+        },
+        {
+          "caller": "insertFill",
+          "callee": "strictInsertFill",
+          "lineNumber": 33
+        },
+        {
+          "caller": "insertFill",
+          "callee": "strictInsertFill",
+          "lineNumber": 34
+        },
+        {
+          "caller": "updateFill",
+          "callee": "strictUpdateFill",
+          "lineNumber": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/distributedid/CustomIdentifierGenerator.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 40,
+      "nonEmptyLines": 35,
+      "functions": [
+        {
+          "name": "nextId",
+          "startLine": 31,
+          "endLine": 34,
+          "params": [
+            "entity"
+          ]
+        },
+        {
+          "name": "nextUUID",
+          "startLine": 36,
+          "endLine": 39,
+          "params": [
+            "entity"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "CustomIdentifierGenerator",
+          "startLine": 28,
+          "endLine": 40,
+          "methods": [
+            "nextId",
+            "nextUUID"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "nextId",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "nextUUID",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "CustomIdentifierGenerator",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "nextId",
+          "callee": "IdUtil.getSnowflakeNextId",
+          "lineNumber": 33
+        },
+        {
+          "caller": "nextUUID",
+          "callee": "IdUtil.getSnowflakeNextIdStr",
+          "lineNumber": 38
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/distributedid/SnowflakeIdInitializer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 74,
+      "nonEmptyLines": 63,
+      "functions": [
+        {
+          "name": "init",
+          "startLine": 46,
+          "endLine": 73,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SnowflakeIdInitializer",
+          "startLine": 39,
+          "endLine": 74,
+          "methods": [
+            "init"
+          ],
+          "properties": [
+            "stringRedisTemplate"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "init",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "SnowflakeIdInitializer",
+          "line": 39,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "init",
+          "callee": "new DefaultRedisScript<>",
+          "lineNumber": 50
+        },
+        {
+          "caller": "init",
+          "callee": "script.setScriptSource",
+          "lineNumber": 51
+        },
+        {
+          "caller": "init",
+          "callee": "new ResourceScriptSource",
+          "lineNumber": 51
+        },
+        {
+          "caller": "init",
+          "callee": "new ClassPathResource",
+          "lineNumber": 51
+        },
+        {
+          "caller": "init",
+          "callee": "script.setResultType",
+          "lineNumber": 52
+        },
+        {
+          "caller": "init",
+          "callee": "stringRedisTemplate.execute",
+          "lineNumber": 56
+        },
+        {
+          "caller": "init",
+          "callee": "Collections.emptyList",
+          "lineNumber": 56
+        },
+        {
+          "caller": "init",
+          "callee": "CollUtil.isEmpty",
+          "lineNumber": 58
+        },
+        {
+          "caller": "init",
+          "callee": "result.size",
+          "lineNumber": 58
+        },
+        {
+          "caller": "init",
+          "callee": "new RuntimeException",
+          "lineNumber": 59
+        },
+        {
+          "caller": "init",
+          "callee": "result.get",
+          "lineNumber": 62
+        },
+        {
+          "caller": "init",
+          "callee": "result.get",
+          "lineNumber": 63
+        },
+        {
+          "caller": "init",
+          "callee": "new Snowflake",
+          "lineNumber": 66
+        },
+        {
+          "caller": "init",
+          "callee": "Singleton.put",
+          "lineNumber": 67
+        },
+        {
+          "caller": "init",
+          "callee": "log.info",
+          "lineNumber": 69
+        },
+        {
+          "caller": "init",
+          "callee": "new RuntimeException",
+          "lineNumber": 71
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentConsume.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 46,
+      "nonEmptyLines": 40,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentConsumeStatusEnum.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 45,
+      "callGraph": [
+        {
+          "caller": "isError",
+          "callee": "Objects.equals",
+          "lineNumber": 51
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/SpELUtil.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 73,
+      "nonEmptyLines": 66,
+      "functions": [
+        {
+          "name": "parseKey",
+          "startLine": 46,
+          "endLine": 53,
+          "params": [
+            "spEl",
+            "method",
+            "contextObj"
+          ]
+        },
+        {
+          "name": "parse",
+          "startLine": 62,
+          "endLine": 72,
+          "params": [
+            "spEl",
+            "method",
+            "contextObj"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SpELUtil",
+          "startLine": 35,
+          "endLine": 73,
+          "methods": [
+            "parseKey",
+            "parse"
+          ],
+          "properties": [
+            "PARAMETER_NAME_DISCOVERER",
+            "EXPRESSION_PARSER"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "parseKey",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "parse",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "SpELUtil",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "parseKey",
+          "callee": "ListUtil.of",
+          "lineNumber": 47
+        },
+        {
+          "caller": "parseKey",
+          "callee": "spELFlag.stream().filter(spEl::contains).findFirst",
+          "lineNumber": 48
+        },
+        {
+          "caller": "parseKey",
+          "callee": "spELFlag.stream().filter",
+          "lineNumber": 48
+        },
+        {
+          "caller": "parseKey",
+          "callee": "spELFlag.stream",
+          "lineNumber": 48
+        },
+        {
+          "caller": "parseKey",
+          "callee": "optional.isPresent",
+          "lineNumber": 49
+        },
+        {
+          "caller": "parseKey",
+          "callee": "parse",
+          "lineNumber": 50
+        },
+        {
+          "caller": "parse",
+          "callee": "EXPRESSION_PARSER.parseExpression",
+          "lineNumber": 63
+        },
+        {
+          "caller": "parse",
+          "callee": "PARAMETER_NAME_DISCOVERER.getParameterNames",
+          "lineNumber": 64
+        },
+        {
+          "caller": "parse",
+          "callee": "new StandardEvaluationContext",
+          "lineNumber": 65
+        },
+        {
+          "caller": "parse",
+          "callee": "ArrayUtil.isNotEmpty",
+          "lineNumber": 66
+        },
+        {
+          "caller": "parse",
+          "callee": "context.setVariable",
+          "lineNumber": 68
+        },
+        {
+          "caller": "parse",
+          "callee": "exp.getValue",
+          "lineNumber": 71
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/resources/lua/snowflake_init.lua",
+      "language": "lua",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 27,
+      "metrics": {}
+    },
+    {
+      "path": "frontend/.prettierignore",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "metrics": {}
+    },
+    {
+      "path": "frontend/@/components/ui/alert-dialog.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 141,
+      "nonEmptyLines": 127,
+      "functions": [
+        {
+          "name": "AlertDialogHeader",
+          "startLine": 48,
+          "endLine": 59,
+          "params": [
+            "{\r\n  className,\r\n  ...props\r\n}"
+          ]
+        },
+        {
+          "name": "AlertDialogFooter",
+          "startLine": 62,
+          "endLine": 73,
+          "params": [
+            "{\r\n  className,\r\n  ...props\r\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AlertDialog",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogPortal",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogOverlay",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogTrigger",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogContent",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogHeader",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogFooter",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogTitle",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogDescription",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogAction",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogCancel",
+          "line": 129,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AlertDialogHeader",
+          "callee": "cn",
+          "lineNumber": 53
+        },
+        {
+          "caller": "AlertDialogFooter",
+          "callee": "cn",
+          "lineNumber": 67
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/@/components/ui/badge.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "Badge",
+          "startLine": 30,
+          "endLine": 34,
+          "params": [
+            "{ className, variant, ...props }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Badge",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "badgeVariants",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Badge",
+          "callee": "cn",
+          "lineNumber": 32
+        },
+        {
+          "caller": "Badge",
+          "callee": "badgeVariants",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/@/components/ui/button.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 51,
+      "exports": [
+        {
+          "name": "Button",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "buttonVariants",
+          "line": 56,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/@/components/ui/card.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 79,
+      "nonEmptyLines": 71,
+      "exports": [
+        {
+          "name": "Card",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "CardHeader",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "CardFooter",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "CardTitle",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "CardDescription",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "CardContent",
+          "line": 79,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/@/components/ui/form.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 176,
+      "nonEmptyLines": 151,
+      "functions": [
+        {
+          "name": "FormField",
+          "startLine": 27,
+          "endLine": 38,
+          "params": [
+            "{\r\n  ...props\r\n}"
+          ]
+        },
+        {
+          "name": "useFormField",
+          "startLine": 40,
+          "endLine": 65,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "useFormField",
+          "line": 167,
+          "isDefault": false
+        },
+        {
+          "name": "Form",
+          "line": 167,
+          "isDefault": false
+        },
+        {
+          "name": "FormItem",
+          "line": 167,
+          "isDefault": false
+        },
+        {
+          "name": "FormLabel",
+          "line": 167,
+          "isDefault": false
+        },
+        {
+          "name": "FormControl",
+          "line": 167,
+          "isDefault": false
+        },
+        {
+          "name": "FormDescription",
+          "line": 167,
+          "isDefault": false
+        },
+        {
+          "name": "FormMessage",
+          "line": 167,
+          "isDefault": false
+        },
+        {
+          "name": "FormField",
+          "line": 167,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useFormField",
+          "callee": "React.useContext",
+          "lineNumber": 41
+        },
+        {
+          "caller": "useFormField",
+          "callee": "React.useContext",
+          "lineNumber": 42
+        },
+        {
+          "caller": "useFormField",
+          "callee": "useFormContext",
+          "lineNumber": 43
+        },
+        {
+          "caller": "useFormField",
+          "callee": "getFieldState",
+          "lineNumber": 53
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/@/components/ui/input.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 19,
+      "exports": [
+        {
+          "name": "Input",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/@/components/ui/label.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 21,
+      "exports": [
+        {
+          "name": "Label",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/@/components/ui/progress.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 24,
+      "exports": [
+        {
+          "name": "Progress",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/@/components/ui/select.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 158,
+      "nonEmptyLines": 145,
+      "exports": [
+        {
+          "name": "Select",
+          "line": 147,
+          "isDefault": false
+        },
+        {
+          "name": "SelectGroup",
+          "line": 147,
+          "isDefault": false
+        },
+        {
+          "name": "SelectValue",
+          "line": 147,
+          "isDefault": false
+        },
+        {
+          "name": "SelectTrigger",
+          "line": 147,
+          "isDefault": false
+        },
+        {
+          "name": "SelectContent",
+          "line": 147,
+          "isDefault": false
+        },
+        {
+          "name": "SelectLabel",
+          "line": 147,
+          "isDefault": false
+        },
+        {
+          "name": "SelectItem",
+          "line": 147,
+          "isDefault": false
+        },
+        {
+          "name": "SelectSeparator",
+          "line": 147,
+          "isDefault": false
+        },
+        {
+          "name": "SelectScrollUpButton",
+          "line": 147,
+          "isDefault": false
+        },
+        {
+          "name": "SelectScrollDownButton",
+          "line": 147,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/@/components/ui/separator.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 29,
+      "nonEmptyLines": 26,
+      "exports": [
+        {
+          "name": "Separator",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/@/components/ui/sheet.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 138,
+      "nonEmptyLines": 124,
+      "functions": [
+        {
+          "name": "SheetHeader",
+          "startLine": 75,
+          "endLine": 86,
+          "params": [
+            "{\r\n  className,\r\n  ...props\r\n}"
+          ]
+        },
+        {
+          "name": "SheetFooter",
+          "startLine": 89,
+          "endLine": 100,
+          "params": [
+            "{\r\n  className,\r\n  ...props\r\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Sheet",
+          "line": 127,
+          "isDefault": false
+        },
+        {
+          "name": "SheetPortal",
+          "line": 127,
+          "isDefault": false
+        },
+        {
+          "name": "SheetOverlay",
+          "line": 127,
+          "isDefault": false
+        },
+        {
+          "name": "SheetTrigger",
+          "line": 127,
+          "isDefault": false
+        },
+        {
+          "name": "SheetClose",
+          "line": 127,
+          "isDefault": false
+        },
+        {
+          "name": "SheetContent",
+          "line": 127,
+          "isDefault": false
+        },
+        {
+          "name": "SheetHeader",
+          "line": 127,
+          "isDefault": false
+        },
+        {
+          "name": "SheetFooter",
+          "line": 127,
+          "isDefault": false
+        },
+        {
+          "name": "SheetTitle",
+          "line": 127,
+          "isDefault": false
+        },
+        {
+          "name": "SheetDescription",
+          "line": 127,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SheetHeader",
+          "callee": "cn",
+          "lineNumber": 80
+        },
+        {
+          "caller": "SheetFooter",
+          "callee": "cn",
+          "lineNumber": 94
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    }
+  ]
+}

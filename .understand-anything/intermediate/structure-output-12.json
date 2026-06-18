@@ -1,0 +1,3200 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 21,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "ConversationMapper",
+          "startLine": 23,
+          "endLine": 24,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConversationMapper",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationMessageMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "ConversationMessageMapper",
+          "startLine": 23,
+          "endLine": 24,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConversationMessageMapper",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/dao/mapper/ConversationSummaryMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "ConversationSummaryMapper",
+          "startLine": 23,
+          "endLine": 24,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConversationSummaryMapper",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/enums/ConversationMessageOrder.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 30,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationGroupService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 90,
+      "nonEmptyLines": 80,
+      "classes": [
+        {
+          "name": "ConversationGroupService",
+          "startLine": 31,
+          "endLine": 90,
+          "methods": [
+            "listLatestUserOnlyMessages",
+            "listMessagesBetweenIds",
+            "findMaxMessageIdAtOrBefore",
+            "countUserMessages",
+            "findLatestSummary",
+            "findConversation"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConversationGroupService",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationMessageService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 46,
+      "classes": [
+        {
+          "name": "ConversationMessageService",
+          "startLine": 27,
+          "endLine": 53,
+          "methods": [
+            "addMessage",
+            "listMessages",
+            "addMessageSummary"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConversationMessageService",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/ConversationService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 62,
+      "nonEmptyLines": 54,
+      "classes": [
+        {
+          "name": "ConversationService",
+          "startLine": 30,
+          "endLine": 62,
+          "methods": [
+            "listByUserId",
+            "createOrUpdate",
+            "rename",
+            "delete"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConversationService",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationCreateBO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 47,
+      "classes": [
+        {
+          "name": "ConversationCreateBO",
+          "startLine": 30,
+          "endLine": 55,
+          "methods": [],
+          "properties": [
+            "conversationId",
+            "userId",
+            "question",
+            "lastTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConversationCreateBO",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationMessageBO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 54,
+      "classes": [
+        {
+          "name": "ConversationMessageBO",
+          "startLine": 28,
+          "endLine": 63,
+          "methods": [],
+          "properties": [
+            "conversationId",
+            "userId",
+            "role",
+            "content",
+            "thinkingContent",
+            "thinkingDuration"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConversationMessageBO",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/bo/ConversationSummaryBO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 46,
+      "classes": [
+        {
+          "name": "ConversationSummaryBO",
+          "startLine": 28,
+          "endLine": 53,
+          "methods": [],
+          "properties": [
+            "conversationId",
+            "userId",
+            "content",
+            "lastMessageId"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConversationSummaryBO",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/ConversationGroupServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 137,
+      "nonEmptyLines": 126,
+      "functions": [
+        {
+          "name": "listLatestUserOnlyMessages",
+          "startLine": 42,
+          "endLine": 56,
+          "params": [
+            "conversationId",
+            "userId",
+            "limit"
+          ]
+        },
+        {
+          "name": "listMessagesBetweenIds",
+          "startLine": 58,
+          "endLine": 77,
+          "params": [
+            "conversationId",
+            "userId",
+            "afterId",
+            "beforeId"
+          ]
+        },
+        {
+          "name": "findMaxMessageIdAtOrBefore",
+          "startLine": 79,
+          "endLine": 94,
+          "params": [
+            "conversationId",
+            "userId",
+            "at"
+          ]
+        },
+        {
+          "name": "countUserMessages",
+          "startLine": 96,
+          "endLine": 108,
+          "params": [
+            "conversationId",
+            "userId"
+          ]
+        },
+        {
+          "name": "findLatestSummary",
+          "startLine": 110,
+          "endLine": 123,
+          "params": [
+            "conversationId",
+            "userId"
+          ]
+        },
+        {
+          "name": "findConversation",
+          "startLine": 125,
+          "endLine": 136,
+          "params": [
+            "conversationId",
+            "userId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ConversationGroupServiceImpl",
+          "startLine": 34,
+          "endLine": 137,
+          "methods": [
+            "listLatestUserOnlyMessages",
+            "listMessagesBetweenIds",
+            "findMaxMessageIdAtOrBefore",
+            "countUserMessages",
+            "findLatestSummary",
+            "findConversation"
+          ],
+          "properties": [
+            "messageMapper",
+            "summaryMapper",
+            "conversationMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listLatestUserOnlyMessages",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "listMessagesBetweenIds",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "findMaxMessageIdAtOrBefore",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "countUserMessages",
+          "line": 96,
+          "isDefault": false
+        },
+        {
+          "name": "findLatestSummary",
+          "line": 110,
+          "isDefault": false
+        },
+        {
+          "name": "findConversation",
+          "line": 125,
+          "isDefault": false
+        },
+        {
+          "name": "ConversationGroupServiceImpl",
+          "line": 34,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listLatestUserOnlyMessages",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 44
+        },
+        {
+          "caller": "listLatestUserOnlyMessages",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 44
+        },
+        {
+          "caller": "listLatestUserOnlyMessages",
+          "callee": "List.of",
+          "lineNumber": 45
+        },
+        {
+          "caller": "listLatestUserOnlyMessages",
+          "callee": "messageMapper.selectList",
+          "lineNumber": 47
+        },
+        {
+          "caller": "listLatestUserOnlyMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getConversationId, conversationId)\r\n                        .eq(ConversationMessageDO::getUserId, userId)\r\n                        .eq(ConversationMessageDO::getRole, \"user\")\r\n                        .eq(ConversationMessageDO::getDeleted, 0)\r\n                        .orderByDesc(ConversationMessageDO::getCreateTime).last",
+          "lineNumber": 48
+        },
+        {
+          "caller": "listLatestUserOnlyMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getConversationId, conversationId)\r\n                        .eq(ConversationMessageDO::getUserId, userId)\r\n                        .eq(ConversationMessageDO::getRole, \"user\")\r\n                        .eq(ConversationMessageDO::getDeleted, 0).orderByDesc",
+          "lineNumber": 48
+        },
+        {
+          "caller": "listLatestUserOnlyMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getConversationId, conversationId)\r\n                        .eq(ConversationMessageDO::getUserId, userId)\r\n                        .eq(ConversationMessageDO::getRole, \"user\").eq",
+          "lineNumber": 48
+        },
+        {
+          "caller": "listLatestUserOnlyMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getConversationId, conversationId)\r\n                        .eq(ConversationMessageDO::getUserId, userId).eq",
+          "lineNumber": 48
+        },
+        {
+          "caller": "listLatestUserOnlyMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getConversationId, conversationId).eq",
+          "lineNumber": 48
+        },
+        {
+          "caller": "listLatestUserOnlyMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class).eq",
+          "lineNumber": 48
+        },
+        {
+          "caller": "listLatestUserOnlyMessages",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 48
+        },
+        {
+          "caller": "listMessagesBetweenIds",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 60
+        },
+        {
+          "caller": "listMessagesBetweenIds",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 60
+        },
+        {
+          "caller": "listMessagesBetweenIds",
+          "callee": "List.of",
+          "lineNumber": 61
+        },
+        {
+          "caller": "listMessagesBetweenIds",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                .eq(ConversationMessageDO::getConversationId, conversationId)\r\n                .eq(ConversationMessageDO::getUserId, userId)\r\n                .in(ConversationMessageDO::getRole, \"user\", \"assistant\").eq",
+          "lineNumber": 63
+        },
+        {
+          "caller": "listMessagesBetweenIds",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                .eq(ConversationMessageDO::getConversationId, conversationId)\r\n                .eq(ConversationMessageDO::getUserId, userId).in",
+          "lineNumber": 63
+        },
+        {
+          "caller": "listMessagesBetweenIds",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                .eq(ConversationMessageDO::getConversationId, conversationId).eq",
+          "lineNumber": 63
+        },
+        {
+          "caller": "listMessagesBetweenIds",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class).eq",
+          "lineNumber": 63
+        },
+        {
+          "caller": "listMessagesBetweenIds",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 63
+        },
+        {
+          "caller": "listMessagesBetweenIds",
+          "callee": "query.gt",
+          "lineNumber": 69
+        },
+        {
+          "caller": "listMessagesBetweenIds",
+          "callee": "query.lt",
+          "lineNumber": 72
+        },
+        {
+          "caller": "listMessagesBetweenIds",
+          "callee": "messageMapper.selectList",
+          "lineNumber": 74
+        },
+        {
+          "caller": "listMessagesBetweenIds",
+          "callee": "query.orderByAsc",
+          "lineNumber": 75
+        },
+        {
+          "caller": "findMaxMessageIdAtOrBefore",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 81
+        },
+        {
+          "caller": "findMaxMessageIdAtOrBefore",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 81
+        },
+        {
+          "caller": "findMaxMessageIdAtOrBefore",
+          "callee": "messageMapper.selectOne",
+          "lineNumber": 84
+        },
+        {
+          "caller": "findMaxMessageIdAtOrBefore",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getConversationId, conversationId)\r\n                        .eq(ConversationMessageDO::getUserId, userId)\r\n                        .eq(ConversationMessageDO::getDeleted, 0)\r\n                        .le(ConversationMessageDO::getCreateTime, at)\r\n                        .orderByDesc(ConversationMessageDO::getId).last",
+          "lineNumber": 85
+        },
+        {
+          "caller": "findMaxMessageIdAtOrBefore",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getConversationId, conversationId)\r\n                        .eq(ConversationMessageDO::getUserId, userId)\r\n                        .eq(ConversationMessageDO::getDeleted, 0)\r\n                        .le(ConversationMessageDO::getCreateTime, at).orderByDesc",
+          "lineNumber": 85
+        },
+        {
+          "caller": "findMaxMessageIdAtOrBefore",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getConversationId, conversationId)\r\n                        .eq(ConversationMessageDO::getUserId, userId)\r\n                        .eq(ConversationMessageDO::getDeleted, 0).le",
+          "lineNumber": 85
+        },
+        {
+          "caller": "findMaxMessageIdAtOrBefore",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getConversationId, conversationId)\r\n                        .eq(ConversationMessageDO::getUserId, userId).eq",
+          "lineNumber": 85
+        },
+        {
+          "caller": "findMaxMessageIdAtOrBefore",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getConversationId, conversationId).eq",
+          "lineNumber": 85
+        },
+        {
+          "caller": "findMaxMessageIdAtOrBefore",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class).eq",
+          "lineNumber": 85
+        },
+        {
+          "caller": "findMaxMessageIdAtOrBefore",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 85
+        },
+        {
+          "caller": "findMaxMessageIdAtOrBefore",
+          "callee": "record.getId",
+          "lineNumber": 93
+        },
+        {
+          "caller": "countUserMessages",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 98
+        },
+        {
+          "caller": "countUserMessages",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 98
+        },
+        {
+          "caller": "countUserMessages",
+          "callee": "messageMapper.selectCount",
+          "lineNumber": 101
+        },
+        {
+          "caller": "countUserMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getConversationId, conversationId)\r\n                        .eq(ConversationMessageDO::getUserId, userId)\r\n                        .eq(ConversationMessageDO::getRole, \"user\").eq",
+          "lineNumber": 102
+        },
+        {
+          "caller": "countUserMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getConversationId, conversationId)\r\n                        .eq(ConversationMessageDO::getUserId, userId).eq",
+          "lineNumber": 102
+        },
+        {
+          "caller": "countUserMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getConversationId, conversationId).eq",
+          "lineNumber": 102
+        },
+        {
+          "caller": "countUserMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class).eq",
+          "lineNumber": 102
+        },
+        {
+          "caller": "countUserMessages",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 102
+        },
+        {
+          "caller": "findLatestSummary",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 112
+        },
+        {
+          "caller": "findLatestSummary",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 112
+        },
+        {
+          "caller": "findLatestSummary",
+          "callee": "summaryMapper.selectOne",
+          "lineNumber": 115
+        },
+        {
+          "caller": "findLatestSummary",
+          "callee": "Wrappers.lambdaQuery(ConversationSummaryDO.class)\r\n                        .eq(ConversationSummaryDO::getConversationId, conversationId)\r\n                        .eq(ConversationSummaryDO::getUserId, userId)\r\n                        .eq(ConversationSummaryDO::getDeleted, 0)\r\n                        .orderByDesc(ConversationSummaryDO::getId).last",
+          "lineNumber": 116
+        },
+        {
+          "caller": "findLatestSummary",
+          "callee": "Wrappers.lambdaQuery(ConversationSummaryDO.class)\r\n                        .eq(ConversationSummaryDO::getConversationId, conversationId)\r\n                        .eq(ConversationSummaryDO::getUserId, userId)\r\n                        .eq(ConversationSummaryDO::getDeleted, 0).orderByDesc",
+          "lineNumber": 116
+        },
+        {
+          "caller": "findLatestSummary",
+          "callee": "Wrappers.lambdaQuery(ConversationSummaryDO.class)\r\n                        .eq(ConversationSummaryDO::getConversationId, conversationId)\r\n                        .eq(ConversationSummaryDO::getUserId, userId).eq",
+          "lineNumber": 116
+        },
+        {
+          "caller": "findLatestSummary",
+          "callee": "Wrappers.lambdaQuery(ConversationSummaryDO.class)\r\n                        .eq(ConversationSummaryDO::getConversationId, conversationId).eq",
+          "lineNumber": 116
+        },
+        {
+          "caller": "findLatestSummary",
+          "callee": "Wrappers.lambdaQuery(ConversationSummaryDO.class).eq",
+          "lineNumber": 116
+        },
+        {
+          "caller": "findLatestSummary",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 116
+        },
+        {
+          "caller": "findConversation",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 127
+        },
+        {
+          "caller": "findConversation",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 127
+        },
+        {
+          "caller": "findConversation",
+          "callee": "conversationMapper.selectOne",
+          "lineNumber": 130
+        },
+        {
+          "caller": "findConversation",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class)\r\n                        .eq(ConversationDO::getConversationId, conversationId)\r\n                        .eq(ConversationDO::getUserId, userId).eq",
+          "lineNumber": 131
+        },
+        {
+          "caller": "findConversation",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class)\r\n                        .eq(ConversationDO::getConversationId, conversationId).eq",
+          "lineNumber": 131
+        },
+        {
+          "caller": "findConversation",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class).eq",
+          "lineNumber": 131
+        },
+        {
+          "caller": "findConversation",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 131
+        }
+      ],
+      "metrics": {
+        "importCount": 7,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/ConversationMessageServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 121,
+      "nonEmptyLines": 107,
+      "functions": [
+        {
+          "name": "addMessage",
+          "startLine": 52,
+          "endLine": 57,
+          "params": [
+            "conversationMessage"
+          ]
+        },
+        {
+          "name": "listMessages",
+          "startLine": 59,
+          "endLine": 114,
+          "params": [
+            "conversationId",
+            "userId",
+            "limit",
+            "order"
+          ]
+        },
+        {
+          "name": "addMessageSummary",
+          "startLine": 116,
+          "endLine": 120,
+          "params": [
+            "conversationSummary"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ConversationMessageServiceImpl",
+          "startLine": 43,
+          "endLine": 121,
+          "methods": [
+            "addMessage",
+            "listMessages",
+            "addMessageSummary"
+          ],
+          "properties": [
+            "conversationMessageMapper",
+            "conversationSummaryMapper",
+            "conversationMapper",
+            "feedbackService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "addMessage",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "listMessages",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "addMessageSummary",
+          "line": 116,
+          "isDefault": false
+        },
+        {
+          "name": "ConversationMessageServiceImpl",
+          "line": 43,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "addMessage",
+          "callee": "BeanUtil.toBean",
+          "lineNumber": 54
+        },
+        {
+          "caller": "addMessage",
+          "callee": "conversationMessageMapper.insert",
+          "lineNumber": 55
+        },
+        {
+          "caller": "addMessage",
+          "callee": "messageDO.getId",
+          "lineNumber": 56
+        },
+        {
+          "caller": "listMessages",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 61
+        },
+        {
+          "caller": "listMessages",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 61
+        },
+        {
+          "caller": "listMessages",
+          "callee": "List.of",
+          "lineNumber": 62
+        },
+        {
+          "caller": "listMessages",
+          "callee": "conversationMapper.selectOne",
+          "lineNumber": 65
+        },
+        {
+          "caller": "listMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class)\r\n                        .eq(ConversationDO::getConversationId, conversationId)\r\n                        .eq(ConversationDO::getUserId, userId).eq",
+          "lineNumber": 66
+        },
+        {
+          "caller": "listMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class)\r\n                        .eq(ConversationDO::getConversationId, conversationId).eq",
+          "lineNumber": 66
+        },
+        {
+          "caller": "listMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class).eq",
+          "lineNumber": 66
+        },
+        {
+          "caller": "listMessages",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 66
+        },
+        {
+          "caller": "listMessages",
+          "callee": "List.of",
+          "lineNumber": 72
+        },
+        {
+          "caller": "listMessages",
+          "callee": "conversationMessageMapper.selectList",
+          "lineNumber": 76
+        },
+        {
+          "caller": "listMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getConversationId, conversationId)\r\n                        .eq(ConversationMessageDO::getUserId, userId)\r\n                        .eq(ConversationMessageDO::getDeleted, 0)\r\n                        .orderBy(true, asc, ConversationMessageDO::getCreateTime).last",
+          "lineNumber": 77
+        },
+        {
+          "caller": "listMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getConversationId, conversationId)\r\n                        .eq(ConversationMessageDO::getUserId, userId)\r\n                        .eq(ConversationMessageDO::getDeleted, 0).orderBy",
+          "lineNumber": 77
+        },
+        {
+          "caller": "listMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getConversationId, conversationId)\r\n                        .eq(ConversationMessageDO::getUserId, userId).eq",
+          "lineNumber": 77
+        },
+        {
+          "caller": "listMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getConversationId, conversationId).eq",
+          "lineNumber": 77
+        },
+        {
+          "caller": "listMessages",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class).eq",
+          "lineNumber": 77
+        },
+        {
+          "caller": "listMessages",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 77
+        },
+        {
+          "caller": "listMessages",
+          "callee": "records.isEmpty",
+          "lineNumber": 84
+        },
+        {
+          "caller": "listMessages",
+          "callee": "List.of",
+          "lineNumber": 85
+        },
+        {
+          "caller": "listMessages",
+          "callee": "Collections.reverse",
+          "lineNumber": 89
+        },
+        {
+          "caller": "listMessages",
+          "callee": "records.stream()\r\n                .filter(record -> \"assistant\".equalsIgnoreCase(record.getRole()))\r\n                .map(ConversationMessageDO::getId).toList",
+          "lineNumber": 92
+        },
+        {
+          "caller": "listMessages",
+          "callee": "records.stream()\r\n                .filter(record -> \"assistant\".equalsIgnoreCase(record.getRole())).map",
+          "lineNumber": 92
+        },
+        {
+          "caller": "listMessages",
+          "callee": "records.stream().filter",
+          "lineNumber": 92
+        },
+        {
+          "caller": "listMessages",
+          "callee": "records.stream",
+          "lineNumber": 92
+        },
+        {
+          "caller": "listMessages",
+          "callee": "\"assistant\".equalsIgnoreCase",
+          "lineNumber": 93
+        },
+        {
+          "caller": "listMessages",
+          "callee": "record.getRole",
+          "lineNumber": 93
+        },
+        {
+          "caller": "listMessages",
+          "callee": "feedbackService.getUserVotes",
+          "lineNumber": 96
+        },
+        {
+          "caller": "listMessages",
+          "callee": "new ArrayList<>",
+          "lineNumber": 98
+        },
+        {
+          "caller": "listMessages",
+          "callee": "ConversationMessageVO.builder()\r\n                    .id(String.valueOf(record.getId()))\r\n                    .conversationId(record.getConversationId())\r\n                    .role(record.getRole())\r\n                    .content(record.getContent())\r\n                    .thinkingContent(record.getThinkingContent())\r\n                    .thinkingDuration(record.getThinkingDuration())\r\n                    .vote(votesByMessageId.get(record.getId()))\r\n                    .createTime(record.getCreateTime()).build",
+          "lineNumber": 100
+        },
+        {
+          "caller": "listMessages",
+          "callee": "ConversationMessageVO.builder()\r\n                    .id(String.valueOf(record.getId()))\r\n                    .conversationId(record.getConversationId())\r\n                    .role(record.getRole())\r\n                    .content(record.getContent())\r\n                    .thinkingContent(record.getThinkingContent())\r\n                    .thinkingDuration(record.getThinkingDuration())\r\n                    .vote(votesByMessageId.get(record.getId())).createTime",
+          "lineNumber": 100
+        },
+        {
+          "caller": "listMessages",
+          "callee": "ConversationMessageVO.builder()\r\n                    .id(String.valueOf(record.getId()))\r\n                    .conversationId(record.getConversationId())\r\n                    .role(record.getRole())\r\n                    .content(record.getContent())\r\n                    .thinkingContent(record.getThinkingContent())\r\n                    .thinkingDuration(record.getThinkingDuration()).vote",
+          "lineNumber": 100
+        },
+        {
+          "caller": "listMessages",
+          "callee": "ConversationMessageVO.builder()\r\n                    .id(String.valueOf(record.getId()))\r\n                    .conversationId(record.getConversationId())\r\n                    .role(record.getRole())\r\n                    .content(record.getContent())\r\n                    .thinkingContent(record.getThinkingContent()).thinkingDuration",
+          "lineNumber": 100
+        },
+        {
+          "caller": "listMessages",
+          "callee": "ConversationMessageVO.builder()\r\n                    .id(String.valueOf(record.getId()))\r\n                    .conversationId(record.getConversationId())\r\n                    .role(record.getRole())\r\n                    .content(record.getContent()).thinkingContent",
+          "lineNumber": 100
+        },
+        {
+          "caller": "listMessages",
+          "callee": "ConversationMessageVO.builder()\r\n                    .id(String.valueOf(record.getId()))\r\n                    .conversationId(record.getConversationId())\r\n                    .role(record.getRole()).content",
+          "lineNumber": 100
+        },
+        {
+          "caller": "listMessages",
+          "callee": "ConversationMessageVO.builder()\r\n                    .id(String.valueOf(record.getId()))\r\n                    .conversationId(record.getConversationId()).role",
+          "lineNumber": 100
+        },
+        {
+          "caller": "listMessages",
+          "callee": "ConversationMessageVO.builder()\r\n                    .id(String.valueOf(record.getId())).conversationId",
+          "lineNumber": 100
+        },
+        {
+          "caller": "listMessages",
+          "callee": "ConversationMessageVO.builder().id",
+          "lineNumber": 100
+        },
+        {
+          "caller": "listMessages",
+          "callee": "ConversationMessageVO.builder",
+          "lineNumber": 100
+        },
+        {
+          "caller": "listMessages",
+          "callee": "String.valueOf",
+          "lineNumber": 101
+        },
+        {
+          "caller": "listMessages",
+          "callee": "record.getId",
+          "lineNumber": 101
+        },
+        {
+          "caller": "listMessages",
+          "callee": "record.getConversationId",
+          "lineNumber": 102
+        },
+        {
+          "caller": "listMessages",
+          "callee": "record.getRole",
+          "lineNumber": 103
+        },
+        {
+          "caller": "listMessages",
+          "callee": "record.getContent",
+          "lineNumber": 104
+        },
+        {
+          "caller": "listMessages",
+          "callee": "record.getThinkingContent",
+          "lineNumber": 105
+        },
+        {
+          "caller": "listMessages",
+          "callee": "record.getThinkingDuration",
+          "lineNumber": 106
+        },
+        {
+          "caller": "listMessages",
+          "callee": "votesByMessageId.get",
+          "lineNumber": 107
+        },
+        {
+          "caller": "listMessages",
+          "callee": "record.getId",
+          "lineNumber": 107
+        },
+        {
+          "caller": "listMessages",
+          "callee": "record.getCreateTime",
+          "lineNumber": 108
+        },
+        {
+          "caller": "listMessages",
+          "callee": "result.add",
+          "lineNumber": 110
+        },
+        {
+          "caller": "addMessageSummary",
+          "callee": "BeanUtil.toBean",
+          "lineNumber": 118
+        },
+        {
+          "caller": "addMessageSummary",
+          "callee": "conversationSummaryMapper.insert",
+          "lineNumber": 119
+        }
+      ],
+      "metrics": {
+        "importCount": 12,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/impl/ConversationServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 213,
+      "nonEmptyLines": 190,
+      "functions": [
+        {
+          "name": "listByUserId",
+          "startLine": 66,
+          "endLine": 89,
+          "params": [
+            "userId"
+          ]
+        },
+        {
+          "name": "createOrUpdate",
+          "startLine": 91,
+          "endLine": 121,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "rename",
+          "startLine": 123,
+          "endLine": 151,
+          "params": [
+            "conversationId",
+            "request"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 153,
+          "endLine": 184,
+          "params": [
+            "conversationId"
+          ]
+        },
+        {
+          "name": "generateTitleFromQuestion",
+          "startLine": 186,
+          "endLine": 212,
+          "params": [
+            "question"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ConversationServiceImpl",
+          "startLine": 54,
+          "endLine": 213,
+          "methods": [
+            "listByUserId",
+            "createOrUpdate",
+            "rename",
+            "delete",
+            "generateTitleFromQuestion"
+          ],
+          "properties": [
+            "conversationMapper",
+            "messageMapper",
+            "summaryMapper",
+            "memoryProperties",
+            "promptTemplateLoader",
+            "llmService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listByUserId",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "createOrUpdate",
+          "line": 91,
+          "isDefault": false
+        },
+        {
+          "name": "rename",
+          "line": 123,
+          "isDefault": false
+        },
+        {
+          "name": "delete",
+          "line": 153,
+          "isDefault": false
+        },
+        {
+          "name": "ConversationServiceImpl",
+          "line": 54,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listByUserId",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 68
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "List.of",
+          "lineNumber": 69
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "conversationMapper.selectList",
+          "lineNumber": 72
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class)\r\n                        .eq(ConversationDO::getUserId, userId)\r\n                        .eq(ConversationDO::getDeleted, 0).orderByDesc",
+          "lineNumber": 73
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class)\r\n                        .eq(ConversationDO::getUserId, userId).eq",
+          "lineNumber": 73
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class).eq",
+          "lineNumber": 73
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 73
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "records.isEmpty",
+          "lineNumber": 78
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "List.of",
+          "lineNumber": 79
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "records.stream()\r\n                .map(item -> ConversationVO.builder()\r\n                        .conversationId(item.getConversationId())\r\n                        .title(item.getTitle())\r\n                        .lastTime(item.getLastTime())\r\n                        .build()).collect",
+          "lineNumber": 82
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "records.stream().map",
+          "lineNumber": 82
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "records.stream",
+          "lineNumber": 82
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "ConversationVO.builder()\r\n                        .conversationId(item.getConversationId())\r\n                        .title(item.getTitle())\r\n                        .lastTime(item.getLastTime()).build",
+          "lineNumber": 83
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "ConversationVO.builder()\r\n                        .conversationId(item.getConversationId())\r\n                        .title(item.getTitle()).lastTime",
+          "lineNumber": 83
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "ConversationVO.builder()\r\n                        .conversationId(item.getConversationId()).title",
+          "lineNumber": 83
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "ConversationVO.builder().conversationId",
+          "lineNumber": 83
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "ConversationVO.builder",
+          "lineNumber": 83
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "item.getConversationId",
+          "lineNumber": 84
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "item.getTitle",
+          "lineNumber": 85
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "item.getLastTime",
+          "lineNumber": 86
+        },
+        {
+          "caller": "listByUserId",
+          "callee": "Collectors.toList",
+          "lineNumber": 88
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "request.getUserId",
+          "lineNumber": 93
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "request.getConversationId",
+          "lineNumber": 94
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "request.getQuestion",
+          "lineNumber": 95
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 96
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "new ClientException",
+          "lineNumber": 97
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "conversationMapper.selectOne",
+          "lineNumber": 100
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class)\r\n                        .eq(ConversationDO::getConversationId, conversationId)\r\n                        .eq(ConversationDO::getUserId, userId).eq",
+          "lineNumber": 101
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class)\r\n                        .eq(ConversationDO::getConversationId, conversationId).eq",
+          "lineNumber": 101
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class).eq",
+          "lineNumber": 101
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 101
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "generateTitleFromQuestion",
+          "lineNumber": 108
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "ConversationDO.builder()\r\n                    .conversationId(conversationId)\r\n                    .userId(userId)\r\n                    .title(title)\r\n                    .lastTime(request.getLastTime()).build",
+          "lineNumber": 109
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "ConversationDO.builder()\r\n                    .conversationId(conversationId)\r\n                    .userId(userId)\r\n                    .title(title).lastTime",
+          "lineNumber": 109
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "ConversationDO.builder()\r\n                    .conversationId(conversationId)\r\n                    .userId(userId).title",
+          "lineNumber": 109
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "ConversationDO.builder()\r\n                    .conversationId(conversationId).userId",
+          "lineNumber": 109
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "ConversationDO.builder().conversationId",
+          "lineNumber": 109
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "ConversationDO.builder",
+          "lineNumber": 109
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "request.getLastTime",
+          "lineNumber": 113
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "conversationMapper.insert",
+          "lineNumber": 115
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "existing.setLastTime",
+          "lineNumber": 119
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "request.getLastTime",
+          "lineNumber": 119
+        },
+        {
+          "caller": "createOrUpdate",
+          "callee": "conversationMapper.updateById",
+          "lineNumber": 120
+        },
+        {
+          "caller": "rename",
+          "callee": "UserContext.getUserId",
+          "lineNumber": 125
+        },
+        {
+          "caller": "rename",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 126
+        },
+        {
+          "caller": "rename",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 126
+        },
+        {
+          "caller": "rename",
+          "callee": "new ClientException",
+          "lineNumber": 127
+        },
+        {
+          "caller": "rename",
+          "callee": "request.getTitle",
+          "lineNumber": 130
+        },
+        {
+          "caller": "rename",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 131
+        },
+        {
+          "caller": "rename",
+          "callee": "new ClientException",
+          "lineNumber": 132
+        },
+        {
+          "caller": "rename",
+          "callee": "memoryProperties.getTitleMaxLength",
+          "lineNumber": 134
+        },
+        {
+          "caller": "rename",
+          "callee": "title.length",
+          "lineNumber": 135
+        },
+        {
+          "caller": "rename",
+          "callee": "new ClientException",
+          "lineNumber": 136
+        },
+        {
+          "caller": "rename",
+          "callee": "conversationMapper.selectOne",
+          "lineNumber": 139
+        },
+        {
+          "caller": "rename",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class)\r\n                        .eq(ConversationDO::getConversationId, conversationId)\r\n                        .eq(ConversationDO::getUserId, userId).eq",
+          "lineNumber": 140
+        },
+        {
+          "caller": "rename",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class)\r\n                        .eq(ConversationDO::getConversationId, conversationId).eq",
+          "lineNumber": 140
+        },
+        {
+          "caller": "rename",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class).eq",
+          "lineNumber": 140
+        },
+        {
+          "caller": "rename",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 140
+        },
+        {
+          "caller": "rename",
+          "callee": "new ClientException",
+          "lineNumber": 146
+        },
+        {
+          "caller": "rename",
+          "callee": "record.setTitle",
+          "lineNumber": 149
+        },
+        {
+          "caller": "rename",
+          "callee": "title.trim",
+          "lineNumber": 149
+        },
+        {
+          "caller": "rename",
+          "callee": "conversationMapper.updateById",
+          "lineNumber": 150
+        },
+        {
+          "caller": "delete",
+          "callee": "UserContext.getUserId",
+          "lineNumber": 156
+        },
+        {
+          "caller": "delete",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 157
+        },
+        {
+          "caller": "delete",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 157
+        },
+        {
+          "caller": "delete",
+          "callee": "new ClientException",
+          "lineNumber": 158
+        },
+        {
+          "caller": "delete",
+          "callee": "conversationMapper.selectOne",
+          "lineNumber": 161
+        },
+        {
+          "caller": "delete",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class)\r\n                        .eq(ConversationDO::getConversationId, conversationId)\r\n                        .eq(ConversationDO::getUserId, userId).eq",
+          "lineNumber": 162
+        },
+        {
+          "caller": "delete",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class)\r\n                        .eq(ConversationDO::getConversationId, conversationId).eq",
+          "lineNumber": 162
+        },
+        {
+          "caller": "delete",
+          "callee": "Wrappers.lambdaQuery(ConversationDO.class).eq",
+          "lineNumber": 162
+        },
+        {
+          "caller": "delete",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 162
+        },
+        {
+          "caller": "delete",
+          "callee": "new ClientException",
+          "lineNumber": 168
+        },
+        {
+          "caller": "delete",
+          "callee": "conversationMapper.deleteById",
+          "lineNumber": 171
+        },
+        {
+          "caller": "delete",
+          "callee": "record.getId",
+          "lineNumber": 171
+        },
+        {
+          "caller": "delete",
+          "callee": "messageMapper.delete",
+          "lineNumber": 172
+        },
+        {
+          "caller": "delete",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getConversationId, conversationId)\r\n                        .eq(ConversationMessageDO::getUserId, userId).eq",
+          "lineNumber": 173
+        },
+        {
+          "caller": "delete",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class)\r\n                        .eq(ConversationMessageDO::getConversationId, conversationId).eq",
+          "lineNumber": 173
+        },
+        {
+          "caller": "delete",
+          "callee": "Wrappers.lambdaQuery(ConversationMessageDO.class).eq",
+          "lineNumber": 173
+        },
+        {
+          "caller": "delete",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 173
+        },
+        {
+          "caller": "delete",
+          "callee": "summaryMapper.delete",
+          "lineNumber": 178
+        },
+        {
+          "caller": "delete",
+          "callee": "Wrappers.lambdaQuery(ConversationSummaryDO.class)\r\n                        .eq(ConversationSummaryDO::getConversationId, conversationId)\r\n                        .eq(ConversationSummaryDO::getUserId, userId).eq",
+          "lineNumber": 179
+        },
+        {
+          "caller": "delete",
+          "callee": "Wrappers.lambdaQuery(ConversationSummaryDO.class)\r\n                        .eq(ConversationSummaryDO::getConversationId, conversationId).eq",
+          "lineNumber": 179
+        },
+        {
+          "caller": "delete",
+          "callee": "Wrappers.lambdaQuery(ConversationSummaryDO.class).eq",
+          "lineNumber": 179
+        },
+        {
+          "caller": "delete",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 179
+        },
+        {
+          "caller": "generateTitleFromQuestion",
+          "callee": "memoryProperties.getTitleMaxLength",
+          "lineNumber": 187
+        },
+        {
+          "caller": "generateTitleFromQuestion",
+          "callee": "promptTemplateLoader.render",
+          "lineNumber": 191
+        },
+        {
+          "caller": "generateTitleFromQuestion",
+          "callee": "Map.of",
+          "lineNumber": 193
+        },
+        {
+          "caller": "generateTitleFromQuestion",
+          "callee": "String.valueOf",
+          "lineNumber": 194
+        },
+        {
+          "caller": "generateTitleFromQuestion",
+          "callee": "ChatRequest.builder()\r\n                    .messages(List.of(ChatMessage.user(prompt)))\r\n                    .temperature(0.7D)\r\n                    .topP(0.3D)\r\n                    .thinking(false).build",
+          "lineNumber": 200
+        },
+        {
+          "caller": "generateTitleFromQuestion",
+          "callee": "ChatRequest.builder()\r\n                    .messages(List.of(ChatMessage.user(prompt)))\r\n                    .temperature(0.7D)\r\n                    .topP(0.3D).thinking",
+          "lineNumber": 200
+        },
+        {
+          "caller": "generateTitleFromQuestion",
+          "callee": "ChatRequest.builder()\r\n                    .messages(List.of(ChatMessage.user(prompt)))\r\n                    .temperature(0.7D).topP",
+          "lineNumber": 200
+        },
+        {
+          "caller": "generateTitleFromQuestion",
+          "callee": "ChatRequest.builder()\r\n                    .messages(List.of(ChatMessage.user(prompt))).temperature",
+          "lineNumber": 200
+        },
+        {
+          "caller": "generateTitleFromQuestion",
+          "callee": "ChatRequest.builder().messages",
+          "lineNumber": 200
+        },
+        {
+          "caller": "generateTitleFromQuestion",
+          "callee": "ChatRequest.builder",
+          "lineNumber": 200
+        },
+        {
+          "caller": "generateTitleFromQuestion",
+          "callee": "List.of",
+          "lineNumber": 201
+        },
+        {
+          "caller": "generateTitleFromQuestion",
+          "callee": "ChatMessage.user",
+          "lineNumber": 201
+        },
+        {
+          "caller": "generateTitleFromQuestion",
+          "callee": "llmService.chat",
+          "lineNumber": 207
+        },
+        {
+          "caller": "generateTitleFromQuestion",
+          "callee": "log.warn",
+          "lineNumber": 209
+        }
+      ],
+      "metrics": {
+        "importCount": 17,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/index/InvoiceIndexDocumentTests.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 350,
+      "nonEmptyLines": 290,
+      "functions": [
+        {
+          "name": "indexDocument",
+          "startLine": 66,
+          "endLine": 86,
+          "params": []
+        },
+        {
+          "name": "chatLlmQuery",
+          "startLine": 88,
+          "endLine": 138,
+          "params": []
+        },
+        {
+          "name": "extractText",
+          "startLine": 140,
+          "endLine": 176,
+          "params": [
+            "filePath"
+          ]
+        },
+        {
+          "name": "testSplit",
+          "startLine": 178,
+          "endLine": 273,
+          "params": []
+        },
+        {
+          "name": "splitIntoLineChunks",
+          "startLine": 278,
+          "endLine": 309,
+          "params": [
+            "text",
+            "linesPerChunk"
+          ]
+        },
+        {
+          "name": "buildRowsForChunks",
+          "startLine": 314,
+          "endLine": 342,
+          "params": [
+            "documentId",
+            "chunks"
+          ]
+        },
+        {
+          "name": "floatListToJson",
+          "startLine": 345,
+          "endLine": 349,
+          "params": [
+            "list"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "InvoiceIndexDocumentTests",
+          "startLine": 53,
+          "endLine": 350,
+          "methods": [
+            "indexDocument",
+            "chatLlmQuery",
+            "extractText",
+            "testSplit",
+            "splitIntoLineChunks",
+            "buildRowsForChunks",
+            "floatListToJson"
+          ],
+          "properties": [
+            "llmService",
+            "embeddingService",
+            "milvusClient",
+            "retrieverService",
+            "ragDefaultProperties",
+            "tika"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "chatLlmQuery",
+          "line": 88,
+          "isDefault": false
+        },
+        {
+          "name": "testSplit",
+          "line": 178,
+          "isDefault": false
+        },
+        {
+          "name": "InvoiceIndexDocumentTests",
+          "line": 53,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "indexDocument",
+          "callee": "extractText",
+          "lineNumber": 69
+        },
+        {
+          "caller": "indexDocument",
+          "callee": "System.out.println",
+          "lineNumber": 70
+        },
+        {
+          "caller": "indexDocument",
+          "callee": "splitIntoLineChunks",
+          "lineNumber": 71
+        },
+        {
+          "caller": "indexDocument",
+          "callee": "UUID.randomUUID().toString",
+          "lineNumber": 73
+        },
+        {
+          "caller": "indexDocument",
+          "callee": "UUID.randomUUID",
+          "lineNumber": 73
+        },
+        {
+          "caller": "indexDocument",
+          "callee": "buildRowsForChunks",
+          "lineNumber": 74
+        },
+        {
+          "caller": "indexDocument",
+          "callee": "InsertReq.builder()\r\n                .collectionName(ragDefaultProperties.getCollectionName())\r\n                .data(rows).build",
+          "lineNumber": 79
+        },
+        {
+          "caller": "indexDocument",
+          "callee": "InsertReq.builder()\r\n                .collectionName(ragDefaultProperties.getCollectionName()).data",
+          "lineNumber": 79
+        },
+        {
+          "caller": "indexDocument",
+          "callee": "InsertReq.builder().collectionName",
+          "lineNumber": 79
+        },
+        {
+          "caller": "indexDocument",
+          "callee": "InsertReq.builder",
+          "lineNumber": 79
+        },
+        {
+          "caller": "indexDocument",
+          "callee": "ragDefaultProperties.getCollectionName",
+          "lineNumber": 80
+        },
+        {
+          "caller": "indexDocument",
+          "callee": "milvusClient.insert",
+          "lineNumber": 84
+        },
+        {
+          "caller": "indexDocument",
+          "callee": "log.info",
+          "lineNumber": 85
+        },
+        {
+          "caller": "indexDocument",
+          "callee": "chunks.size",
+          "lineNumber": 85
+        },
+        {
+          "caller": "indexDocument",
+          "callee": "resp.getInsertCnt",
+          "lineNumber": 85
+        },
+        {
+          "caller": "chatLlmQuery",
+          "callee": "retrieverService.retrieve",
+          "lineNumber": 91
+        },
+        {
+          "caller": "chatLlmQuery",
+          "callee": "retrievedChunks.isEmpty",
+          "lineNumber": 93
+        },
+        {
+          "caller": "chatLlmQuery",
+          "callee": "System.out.println",
+          "lineNumber": 94
+        },
+        {
+          "caller": "chatLlmQuery",
+          "callee": "retrievedChunks.stream()\r\n                .map(h -> \"- \" + h.getText()).collect",
+          "lineNumber": 98
+        },
+        {
+          "caller": "chatLlmQuery",
+          "callee": "retrievedChunks.stream().map",
+          "lineNumber": 98
+        },
+        {
+          "caller": "chatLlmQuery",
+          "callee": "retrievedChunks.stream",
+          "lineNumber": 98
+        },
+        {
+          "caller": "chatLlmQuery",
+          "callee": "h.getText",
+          "lineNumber": 99
+        },
+        {
+          "caller": "chatLlmQuery",
+          "callee": "Collectors.joining",
+          "lineNumber": 100
+        },
+        {
+          "caller": "chatLlmQuery",
+          "callee": "\"\"\"\r\n                你是专业的企业发票信息查询助手，现在根据【文档内容】回答用户关于开票信息的问题。\r\n                \r\n                请严格遵守以下规则：\r\n                \r\n                【回答格式规则】\r\n                1. 回答必须严格基于【文档内容】，不得虚构任何信息。\r\n                2. 如果查询结果只有一个公司，请输出“单条发票信息”的完整格式化内容。\r\n                3. 如果查询到多个公司，请输出 “发票信息列表”，列表中每一项都是完整的一段发票信息，不使用零散的分点描述。\r\n                4. 每条发票信息必须按如下统一格式输出：\r\n                \r\n                开票抬头：xxx\r\n                纳税资质：xxx\r\n                纳税人识别号：xxx\r\n                地址、电话：xxx\r\n                开户银行、账号：xxx\r\n                \r\n                5. 字段有缺失时必须保留字段名并标注“文档未提供该字段”。\r\n                6. 如果文档内没有与用户问题相关的企业，请回答：“文档未包含相关信息。”\r\n                \r\n                【文档内容】\r\n                %s\r\n                \r\n                【用户问题】\r\n                %s\r\n                \"\"\".formatted",
+          "lineNumber": 102
+        },
+        {
+          "caller": "chatLlmQuery",
+          "callee": "ChatRequest.builder()\r\n                .messages(List.of(ChatMessage.user(prompt)))\r\n                .thinking(false)\r\n                .temperature(0D)\r\n                .topP(0.7D).build",
+          "lineNumber": 129
+        },
+        {
+          "caller": "chatLlmQuery",
+          "callee": "ChatRequest.builder()\r\n                .messages(List.of(ChatMessage.user(prompt)))\r\n                .thinking(false)\r\n                .temperature(0D).topP",
+          "lineNumber": 129
+        },
+        {
+          "caller": "chatLlmQuery",
+          "callee": "ChatRequest.builder()\r\n                .messages(List.of(ChatMessage.user(prompt)))\r\n                .thinking(false).temperature",
+          "lineNumber": 129
+        },
+        {
+          "caller": "chatLlmQuery",
+          "callee": "ChatRequest.builder()\r\n                .messages(List.of(ChatMessage.user(prompt))).thinking",
+          "lineNumber": 129
+        },
+        {
+          "caller": "chatLlmQuery",
+          "callee": "ChatRequest.builder().messages",
+          "lineNumber": 129
+        },
+        {
+          "caller": "chatLlmQuery",
+          "callee": "ChatRequest.builder",
+          "lineNumber": 129
+        },
+        {
+          "caller": "chatLlmQuery",
+          "callee": "List.of",
+          "lineNumber": 130
+        },
+        {
+          "caller": "chatLlmQuery",
+          "callee": "ChatMessage.user",
+          "lineNumber": 130
+        },
+        {
+          "caller": "chatLlmQuery",
+          "callee": "llmService.chat",
+          "lineNumber": 136
+        },
+        {
+          "caller": "chatLlmQuery",
+          "callee": "System.out.println",
+          "lineNumber": 137
+        },
+        {
+          "caller": "extractText",
+          "callee": "Paths.get",
+          "lineNumber": 141
+        },
+        {
+          "caller": "extractText",
+          "callee": "new Metadata",
+          "lineNumber": 142
+        },
+        {
+          "caller": "extractText",
+          "callee": "tika.parseToString",
+          "lineNumber": 143
+        },
+        {
+          "caller": "extractText",
+          "callee": "Files.newInputStream",
+          "lineNumber": 143
+        },
+        {
+          "caller": "extractText",
+          "callee": "\"\"\"\r\n                你是一名专业的企业文档清洗助手，负责从 Markdown 文档中提取“有用的业务字段”，并清除以下所有噪声内容：\r\n                \r\n                【需要删除的内容】\r\n                - 所有 Markdown 标记：###、---、:::、```、> 等\r\n                - 所有主题标题、装饰性标题、空白标题\r\n                - 所有无意义分隔符（---、***）\r\n                - 所有多余空行\r\n                - 无意义的提示/说明性文字\r\n                \r\n                【需要保留的内容】\r\n                - 真实业务信息，例如：\r\n                  - 开票抬头\r\n                  - 纳税人识别号\r\n                  - 银行账号\r\n                  - 公司地址与电话\r\n                  - 其他结构化字段\r\n                \r\n                【输出要求】\r\n                1. 仅输出清洗后的核心内容\r\n                2. 保留原始字段结构（例如“开票抬头：xxx”）\r\n                3. 不要添加虚构信息\r\n                4. 不要改变字段顺序\r\n                5. 不要解释，只输出清洗后的文本\r\n                6. 多个发票之间不允许有空行\r\n                \r\n                【需要处理的原文】：\r\n                %s\r\n                \"\"\".formatted",
+          "lineNumber": 145
+        },
+        {
+          "caller": "extractText",
+          "callee": "llmService.chat",
+          "lineNumber": 175
+        },
+        {
+          "caller": "testSplit",
+          "callee": "splitIntoLineChunks",
+          "lineNumber": 271
+        },
+        {
+          "caller": "testSplit",
+          "callee": "System.out.println",
+          "lineNumber": 272
+        },
+        {
+          "caller": "splitIntoLineChunks",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 279
+        },
+        {
+          "caller": "splitIntoLineChunks",
+          "callee": "List.of",
+          "lineNumber": 280
+        },
+        {
+          "caller": "splitIntoLineChunks",
+          "callee": "new ArrayList<>",
+          "lineNumber": 283
+        },
+        {
+          "caller": "splitIntoLineChunks",
+          "callee": "Arrays.asList",
+          "lineNumber": 284
+        },
+        {
+          "caller": "splitIntoLineChunks",
+          "callee": "text.split",
+          "lineNumber": 284
+        },
+        {
+          "caller": "splitIntoLineChunks",
+          "callee": "lines.size",
+          "lineNumber": 286
+        },
+        {
+          "caller": "splitIntoLineChunks",
+          "callee": "Math.min",
+          "lineNumber": 287
+        },
+        {
+          "caller": "splitIntoLineChunks",
+          "callee": "lines.size",
+          "lineNumber": 287
+        },
+        {
+          "caller": "splitIntoLineChunks",
+          "callee": "lines.subList",
+          "lineNumber": 288
+        },
+        {
+          "caller": "splitIntoLineChunks",
+          "callee": "sub.stream()\r\n                    .map(String::trim).allMatch",
+          "lineNumber": 291
+        },
+        {
+          "caller": "splitIntoLineChunks",
+          "callee": "sub.stream().map",
+          "lineNumber": 291
+        },
+        {
+          "caller": "splitIntoLineChunks",
+          "callee": "sub.stream",
+          "lineNumber": 291
+        },
+        {
+          "caller": "splitIntoLineChunks",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 293
+        },
+        {
+          "caller": "splitIntoLineChunks",
+          "callee": "sub.stream()\r\n                    .map(String::trim) // 去掉每行前后的空格\r\n                    .collect(Collectors.joining(\"\\n\")).trim",
+          "lineNumber": 300
+        },
+        {
+          "caller": "splitIntoLineChunks",
+          "callee": "sub.stream()\r\n                    .map(String::trim).collect",
+          "lineNumber": 300
+        },
+        {
+          "caller": "splitIntoLineChunks",
+          "callee": "sub.stream().map",
+          "lineNumber": 300
+        },
+        {
+          "caller": "splitIntoLineChunks",
+          "callee": "sub.stream",
+          "lineNumber": 300
+        },
+        {
+          "caller": "splitIntoLineChunks",
+          "callee": "Collectors.joining",
+          "lineNumber": 302
+        },
+        {
+          "caller": "splitIntoLineChunks",
+          "callee": "chunks.add",
+          "lineNumber": 305
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "new ArrayList<>",
+          "lineNumber": 316
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "System.currentTimeMillis",
+          "lineNumber": 317
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "chunks.size",
+          "lineNumber": 319
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "chunks.get",
+          "lineNumber": 320
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 321
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "embeddingService.embed",
+          "lineNumber": 323
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "new JsonObject",
+          "lineNumber": 325
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "row.addProperty",
+          "lineNumber": 327
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "IdUtil.getSnowflakeNextIdStr",
+          "lineNumber": 327
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "row.add",
+          "lineNumber": 328
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "floatListToJson",
+          "lineNumber": 328
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "row.addProperty",
+          "lineNumber": 329
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "new JsonObject",
+          "lineNumber": 331
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "metadata.addProperty",
+          "lineNumber": 332
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "metadata.addProperty",
+          "lineNumber": 333
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "metadata.addProperty",
+          "lineNumber": 334
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "chunks.size",
+          "lineNumber": 334
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "metadata.addProperty",
+          "lineNumber": 335
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "row.add",
+          "lineNumber": 336
+        },
+        {
+          "caller": "buildRowsForChunks",
+          "callee": "rows.add",
+          "lineNumber": 338
+        },
+        {
+          "caller": "floatListToJson",
+          "callee": "new JsonArray",
+          "lineNumber": 346
+        },
+        {
+          "caller": "floatListToJson",
+          "callee": "list.forEach",
+          "lineNumber": 347
+        }
+      ],
+      "metrics": {
+        "importCount": 7,
+        "exportCount": 3,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/Intent/SimpleIntentClassifierTests.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 330,
+      "nonEmptyLines": 283,
+      "functions": [
+        {
+          "name": "intentClassifier",
+          "startLine": 45,
+          "endLine": 56,
+          "params": []
+        },
+        {
+          "name": "buildIntentPrompt",
+          "startLine": 58,
+          "endLine": 113,
+          "params": [
+            "question"
+          ]
+        },
+        {
+          "name": "multiExpertIntentClassifier",
+          "startLine": 115,
+          "endLine": 161,
+          "params": []
+        },
+        {
+          "name": "scoreCategory",
+          "startLine": 163,
+          "endLine": 183,
+          "params": [
+            "category",
+            "question"
+          ]
+        },
+        {
+          "name": "buildCategoryScorePrompt",
+          "startLine": 185,
+          "endLine": 234,
+          "params": [
+            "category",
+            "question"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SimpleIntentClassifierTests",
+          "startLine": 36,
+          "endLine": 330,
+          "methods": [
+            "intentClassifier",
+            "buildIntentPrompt",
+            "multiExpertIntentClassifier",
+            "scoreCategory",
+            "buildCategoryScorePrompt"
+          ],
+          "properties": [
+            "llmService",
+            "gson"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "intentClassifier",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "multiExpertIntentClassifier",
+          "line": 115,
+          "isDefault": false
+        },
+        {
+          "name": "SimpleIntentClassifierTests",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "intentClassifier",
+          "callee": "buildIntentPrompt",
+          "lineNumber": 48
+        },
+        {
+          "caller": "intentClassifier",
+          "callee": "System.nanoTime",
+          "lineNumber": 50
+        },
+        {
+          "caller": "intentClassifier",
+          "callee": "llmService.chat",
+          "lineNumber": 51
+        },
+        {
+          "caller": "intentClassifier",
+          "callee": "System.nanoTime",
+          "lineNumber": 52
+        },
+        {
+          "caller": "intentClassifier",
+          "callee": "System.out.println",
+          "lineNumber": 54
+        },
+        {
+          "caller": "intentClassifier",
+          "callee": "System.out.println",
+          "lineNumber": 55
+        },
+        {
+          "caller": "buildIntentPrompt",
+          "callee": "\"\"\"\r\n                你是一个企业内部知识库 RAG 系统中的【意图识别模块】。\r\n                你的任务是：根据用户提出的问题，判断该问题属于哪一类业务意图，\r\n                并给出推荐的集合名称和元数据过滤条件，以便向量数据库检索。\r\n                \r\n                请特别注意：\r\n                1. 需要支持【模糊问法和同义词】，例如：\r\n                   - “上班时间”“几点上班”“每天要工作多久” → 归类为 ATTENDANCE（考勤/工作时间）\r\n                   - “能不能多休几天”“休假怎么安排” → ATTENDANCE\r\n                   - “发工资时间”“年终奖怎么算”“涨工资流程” → COMPENSATION\r\n                   - “面试流程是怎样的”“校招社招流程”“投递简历后会怎样” → RECRUITMENT\r\n                   - “VPN 连接”“企业邮箱”“打印机连不上网” → IT_SUPPORT\r\n                   - “员工手册里关于xxx的规定”“违纪怎么处理” → POLICY\r\n                2. 用户问题可能同时涉及多个内容时，选择【对用户当前核心问题最重要】的那个意图作为主意图。\r\n                3. 如果无法明显归类，使用 GENERAL。\r\n                \r\n                请从下面这些意图中选择一个作为主意图（intent）：\r\n                - RECRUITMENT: 招聘、校招、社招、面试流程等\r\n                - COMPENSATION: 薪资、年终奖、福利、调薪、绩效等\r\n                - ATTENDANCE: 工作时间、上班时间、请假、考勤、加班、调休等\r\n                - POLICY: 一般公司制度、规章、行为规范等\r\n                - IT_SUPPORT: VPN、邮箱、打印机、网络、账号密码等 IT 使用问题\r\n                - GENERAL: 无法归类或属于以上多种的综合问题\r\n                \r\n                同时，你需要给出：\r\n                - 对应的推荐向量集合（collectionName），例如：\r\n                  - 大部分人事/制度类问题：rag_hr_collection\r\n                  - IT 支持类问题：rag_it_collection\r\n                - 可选的元数据过滤条件（filterExpr），用于 Milvus expr，\r\n                  例如：biz_type in [\"ATTENDANCE\",\"WORKING_HOURS\"]\r\n                \r\n                【输出格式要求（非常重要）】：\r\n                1. 只输出一个 JSON 对象，不要包含任何多余文字。\r\n                2. JSON 字段包括：\r\n                   - intent: 字符串，取值为 [\"RECRUITMENT\",\"COMPENSATION\",\"ATTENDANCE\",\"POLICY\",\"IT_SUPPORT\",\"GENERAL\"] 之一\r\n                   - collectionName: 字符串，向量集合名称，如 \"rag_hr_collection\" 或 \"rag_it_collection\"\r\n                   - filterExpr: 字符串或 null，Milvus 的 expr 过滤条件，如 \"biz_type in [\\\\\"ATTENDANCE\\\\\"]\"\r\n                   - confidence: 0 到 1 之间的小数，表示你对该分类的信心度\r\n                   - reason: 字符串，简要说明你这样分类的理由\r\n                \r\n                示例输出：\r\n                {\r\n                  \"intent\": \"ATTENDANCE\",\r\n                  \"collectionName\": \"rag_hr_collection\",\r\n                  \"filterExpr\": \"biz_type in [\\\\\"ATTENDANCE\\\\\",\\\\\"WORKING_HOURS\\\\\"]\",\r\n                  \"confidence\": 0.92,\r\n                  \"reason\": \"问题询问工作时间和加班制度，属于考勤与工作时间相关\"\r\n                }\r\n                \r\n                现在开始，请根据下方【用户问题】进行判断，并严格按上述 JSON 格式输出。\r\n                \r\n                【用户问题】\r\n                %s\r\n                \"\"\".formatted",
+          "lineNumber": 59
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "List.of",
+          "lineNumber": 120
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "Executors.newFixedThreadPool",
+          "lineNumber": 129
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "categories.size",
+          "lineNumber": 129
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "System.nanoTime",
+          "lineNumber": 131
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "categories.stream()\r\n                .map(cat -> CompletableFuture.supplyAsync(\r\n                        () -> scoreCategory(cat, question),\r\n                        executor)).toList",
+          "lineNumber": 133
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "categories.stream().map",
+          "lineNumber": 133
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "categories.stream",
+          "lineNumber": 133
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "CompletableFuture.supplyAsync",
+          "lineNumber": 134
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "scoreCategory",
+          "lineNumber": 135
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "futures.stream()\r\n                .map(CompletableFuture::join).toList",
+          "lineNumber": 140
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "futures.stream().map",
+          "lineNumber": 140
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "futures.stream",
+          "lineNumber": 140
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "System.nanoTime",
+          "lineNumber": 144
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "executor.shutdown",
+          "lineNumber": 145
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "System.out.println",
+          "lineNumber": 147
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "scores.forEach",
+          "lineNumber": 148
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "System.out.println",
+          "lineNumber": 149
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "cs.category().code",
+          "lineNumber": 149
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "cs.category",
+          "lineNumber": 149
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "cs.score",
+          "lineNumber": 149
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "cs.reason",
+          "lineNumber": 150
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "scores.stream()\r\n                .max(Comparator.comparingDouble(CategoryScore::score)).orElseThrow",
+          "lineNumber": 154
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "scores.stream().max",
+          "lineNumber": 154
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "scores.stream",
+          "lineNumber": 154
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "Comparator.comparingDouble",
+          "lineNumber": 155
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "System.out.println",
+          "lineNumber": 158
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "best.category().code",
+          "lineNumber": 158
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "best.category",
+          "lineNumber": 158
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "best.score",
+          "lineNumber": 159
+        },
+        {
+          "caller": "multiExpertIntentClassifier",
+          "callee": "System.out.println",
+          "lineNumber": 160
+        },
+        {
+          "caller": "scoreCategory",
+          "callee": "buildCategoryScorePrompt",
+          "lineNumber": 164
+        },
+        {
+          "caller": "scoreCategory",
+          "callee": "llmService.chat",
+          "lineNumber": 167
+        },
+        {
+          "caller": "scoreCategory",
+          "callee": "gson.fromJson",
+          "lineNumber": 172
+        },
+        {
+          "caller": "scoreCategory",
+          "callee": "obj.get(\"score\").getAsDouble",
+          "lineNumber": 173
+        },
+        {
+          "caller": "scoreCategory",
+          "callee": "obj.get",
+          "lineNumber": 173
+        },
+        {
+          "caller": "scoreCategory",
+          "callee": "obj.has",
+          "lineNumber": 174
+        },
+        {
+          "caller": "scoreCategory",
+          "callee": "obj.get(\"reason\").isJsonNull",
+          "lineNumber": 174
+        },
+        {
+          "caller": "scoreCategory",
+          "callee": "obj.get",
+          "lineNumber": 174
+        },
+        {
+          "caller": "scoreCategory",
+          "callee": "obj.get(\"reason\").getAsString",
+          "lineNumber": 175
+        },
+        {
+          "caller": "scoreCategory",
+          "callee": "obj.get",
+          "lineNumber": 175
+        },
+        {
+          "caller": "scoreCategory",
+          "callee": "new CategoryScore",
+          "lineNumber": 177
+        },
+        {
+          "caller": "scoreCategory",
+          "callee": "log.warn",
+          "lineNumber": 179
+        },
+        {
+          "caller": "scoreCategory",
+          "callee": "category.code",
+          "lineNumber": 179
+        },
+        {
+          "caller": "scoreCategory",
+          "callee": "new CategoryScore",
+          "lineNumber": 181
+        },
+        {
+          "caller": "buildCategoryScorePrompt",
+          "callee": "category.examples().stream()\r\n                .map(ex -> \"- \" + ex).collect",
+          "lineNumber": 186
+        },
+        {
+          "caller": "buildCategoryScorePrompt",
+          "callee": "category.examples().stream().map",
+          "lineNumber": 186
+        },
+        {
+          "caller": "buildCategoryScorePrompt",
+          "callee": "category.examples().stream",
+          "lineNumber": 186
+        },
+        {
+          "caller": "buildCategoryScorePrompt",
+          "callee": "category.examples",
+          "lineNumber": 186
+        },
+        {
+          "caller": "buildCategoryScorePrompt",
+          "callee": "Collectors.joining",
+          "lineNumber": 188
+        },
+        {
+          "caller": "buildCategoryScorePrompt",
+          "callee": "\"\"\"\r\n                你是一个企业内部知识库 RAG 系统中的【意图评分模块】。\r\n                现在你只负责判断：当前这个“用户问题”，和下面这个【单一分类】是否属于同一类问题。\r\n                \r\n                请根据分类的说明和典型问题示例，判断该用户问题与该分类的相关度，并打一个 0~1 的分数。\r\n                \r\n                评分说明：\r\n                - 0.0：完全无关\r\n                - 0.3：略有关系，但大概率不是这个分类\r\n                - 0.6：有一定关系，可以考虑作为候选\r\n                - 0.8~1.0：高度相关，几乎可以认为就是这个分类的问题\r\n                \r\n                请注意：\r\n                - 需要支持模糊问法和同义表达（例如“上班时间”“几点打卡”“每天工作多久”，都归入考勤/工作时间类）。\r\n                - 不需要和其他分类比较，只评估「当前分类 vs 当前问题」这一对的相关度。\r\n                \r\n                【当前分类】\r\n                编码：%s\r\n                说明：%s\r\n                \r\n                【该分类的典型问题示例（仅示例，并不完整）】\r\n                %s\r\n                \r\n                【用户问题】\r\n                %s\r\n                \r\n                【输出格式要求】：\r\n                1. 只输出一个 JSON对象，不要包含任何多余文字。\r\n                2. 必须包含字段：\r\n                   - score: 0~1 的小数，例如 0.85\r\n                   - reason: 简要中文说明你打这个分的原因\r\n                \r\n                示例输出：\r\n                {\r\n                  \"score\": 0.93,\r\n                  \"reason\": \"问题是关于 Mac 打印机连接，和 IT 支持类非常接近\"\r\n                }\r\n                \"\"\".formatted",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildCategoryScorePrompt",
+          "callee": "category.code",
+          "lineNumber": 229
+        },
+        {
+          "caller": "buildCategoryScorePrompt",
+          "callee": "category.description",
+          "lineNumber": 230
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/rewrite/QueryRewriteTests.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 118,
+      "nonEmptyLines": 100,
+      "functions": [
+        {
+          "name": "testQueryRewrite",
+          "startLine": 84,
+          "endLine": 95,
+          "params": [
+            "question"
+          ]
+        },
+        {
+          "name": "testQueryTermMapping",
+          "startLine": 97,
+          "endLine": 100,
+          "params": []
+        },
+        {
+          "name": "rewriteQuery",
+          "startLine": 105,
+          "endLine": 117,
+          "params": [
+            "userQuestion"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "QueryRewriteTests",
+          "startLine": 35,
+          "endLine": 118,
+          "methods": [
+            "testQueryRewrite",
+            "testQueryTermMapping",
+            "rewriteQuery"
+          ],
+          "properties": [
+            "llmService",
+            "defaultQueryRewriteService",
+            "QUERY_REWRITE_PROMPT"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "testQueryRewrite",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "testQueryTermMapping",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "QueryRewriteTests",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "testQueryRewrite",
+          "callee": "rewriteQuery",
+          "lineNumber": 92
+        },
+        {
+          "caller": "testQueryRewrite",
+          "callee": "Assertions.assertNotNull",
+          "lineNumber": 93
+        },
+        {
+          "caller": "testQueryRewrite",
+          "callee": "Assertions.assertFalse",
+          "lineNumber": 94
+        },
+        {
+          "caller": "testQueryRewrite",
+          "callee": "rewritten.isBlank",
+          "lineNumber": 94
+        },
+        {
+          "caller": "testQueryTermMapping",
+          "callee": "defaultQueryRewriteService.rewrite",
+          "lineNumber": 99
+        },
+        {
+          "caller": "rewriteQuery",
+          "callee": "QUERY_REWRITE_PROMPT.formatted",
+          "lineNumber": 106
+        },
+        {
+          "caller": "rewriteQuery",
+          "callee": "ChatRequest.builder()\r\n                .messages(List.of(ChatMessage.user(prompt)))\r\n                .thinking(false).build",
+          "lineNumber": 108
+        },
+        {
+          "caller": "rewriteQuery",
+          "callee": "ChatRequest.builder()\r\n                .messages(List.of(ChatMessage.user(prompt))).thinking",
+          "lineNumber": 108
+        },
+        {
+          "caller": "rewriteQuery",
+          "callee": "ChatRequest.builder().messages",
+          "lineNumber": 108
+        },
+        {
+          "caller": "rewriteQuery",
+          "callee": "ChatRequest.builder",
+          "lineNumber": 108
+        },
+        {
+          "caller": "rewriteQuery",
+          "callee": "List.of",
+          "lineNumber": 109
+        },
+        {
+          "caller": "rewriteQuery",
+          "callee": "ChatMessage.user",
+          "lineNumber": 109
+        },
+        {
+          "caller": "rewriteQuery",
+          "callee": "llmService.chat",
+          "lineNumber": 113
+        },
+        {
+          "caller": "rewriteQuery",
+          "callee": "log.info",
+          "lineNumber": 115
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/service/ConversationMessageServiceTests.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 44,
+      "nonEmptyLines": 38,
+      "functions": [
+        {
+          "name": "listMessagesTest",
+          "startLine": 39,
+          "endLine": 43,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ConversationMessageServiceTests",
+          "startLine": 32,
+          "endLine": 44,
+          "methods": [
+            "listMessagesTest"
+          ],
+          "properties": [
+            "conversationMessageService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listMessagesTest",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "ConversationMessageServiceTests",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listMessagesTest",
+          "callee": "conversationMessageService.listMessages",
+          "lineNumber": 41
+        },
+        {
+          "caller": "listMessagesTest",
+          "callee": "log.info",
+          "lineNumber": 42
+        },
+        {
+          "caller": "listMessagesTest",
+          "callee": "JSONUtil.toJsonStr",
+          "lineNumber": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatMessage.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 158,
+      "nonEmptyLines": 141,
+      "functions": [
+        {
+          "name": "ChatMessage",
+          "startLine": 98,
+          "endLine": 101,
+          "params": [
+            "role",
+            "content"
+          ]
+        },
+        {
+          "name": "system",
+          "startLine": 109,
+          "endLine": 111,
+          "params": [
+            "content"
+          ]
+        },
+        {
+          "name": "user",
+          "startLine": 119,
+          "endLine": 121,
+          "params": [
+            "content"
+          ]
+        },
+        {
+          "name": "assistant",
+          "startLine": 129,
+          "endLine": 131,
+          "params": [
+            "content"
+          ]
+        },
+        {
+          "name": "assistant",
+          "startLine": 140,
+          "endLine": 142,
+          "params": [
+            "content",
+            "thinkingContent"
+          ]
+        },
+        {
+          "name": "assistant",
+          "startLine": 152,
+          "endLine": 157,
+          "params": [
+            "content",
+            "thinkingContent",
+            "thinkingDuration"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ChatMessage",
+          "startLine": 37,
+          "endLine": 158,
+          "methods": [
+            "ChatMessage",
+            "system",
+            "user",
+            "assistant",
+            "assistant",
+            "assistant"
+          ],
+          "properties": [
+            "role",
+            "content",
+            "thinkingContent",
+            "thinkingDuration"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChatMessage",
+          "line": 98,
+          "isDefault": false
+        },
+        {
+          "name": "system",
+          "line": 109,
+          "isDefault": false
+        },
+        {
+          "name": "user",
+          "line": 119,
+          "isDefault": false
+        },
+        {
+          "name": "assistant",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "assistant",
+          "line": 140,
+          "isDefault": false
+        },
+        {
+          "name": "assistant",
+          "line": 152,
+          "isDefault": false
+        },
+        {
+          "name": "ChatMessage",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fromString",
+          "callee": "Role.values",
+          "lineNumber": 69
+        },
+        {
+          "caller": "fromString",
+          "callee": "role.name().equalsIgnoreCase",
+          "lineNumber": 70
+        },
+        {
+          "caller": "fromString",
+          "callee": "role.name",
+          "lineNumber": 70
+        },
+        {
+          "caller": "fromString",
+          "callee": "new IllegalArgumentException",
+          "lineNumber": 74
+        },
+        {
+          "caller": "system",
+          "callee": "new ChatMessage",
+          "lineNumber": 110
+        },
+        {
+          "caller": "user",
+          "callee": "new ChatMessage",
+          "lineNumber": 120
+        },
+        {
+          "caller": "assistant",
+          "callee": "new ChatMessage",
+          "lineNumber": 130
+        },
+        {
+          "caller": "assistant",
+          "callee": "assistant",
+          "lineNumber": 141
+        },
+        {
+          "caller": "assistant",
+          "callee": "new ChatMessage",
+          "lineNumber": 153
+        },
+        {
+          "caller": "assistant",
+          "callee": "message.setThinkingContent",
+          "lineNumber": 154
+        },
+        {
+          "caller": "assistant",
+          "callee": "message.setThinkingDuration",
+          "lineNumber": 155
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/ChatRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 124,
+      "nonEmptyLines": 112,
+      "classes": [
+        {
+          "name": "ChatRequest",
+          "startLine": 46,
+          "endLine": 124,
+          "methods": [],
+          "properties": [
+            "messages",
+            "temperature",
+            "topP",
+            "topK",
+            "maxTokens",
+            "thinking",
+            "enableTools"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChatRequest",
+          "line": 46,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/chat/LLMService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 137,
+      "nonEmptyLines": 128,
+      "classes": [
+        {
+          "name": "LLMService",
+          "startLine": 48,
+          "endLine": 137,
+          "methods": [
+            "chat",
+            "chat",
+            "chat",
+            "streamChat",
+            "streamChat"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LLMService",
+          "line": 48,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "chat",
+          "callee": "ChatRequest.builder()\r\n                .messages(List.of(ChatMessage.user(prompt))).build",
+          "lineNumber": 66
+        },
+        {
+          "caller": "chat",
+          "callee": "ChatRequest.builder().messages",
+          "lineNumber": 66
+        },
+        {
+          "caller": "chat",
+          "callee": "ChatRequest.builder",
+          "lineNumber": 66
+        },
+        {
+          "caller": "chat",
+          "callee": "List.of",
+          "lineNumber": 67
+        },
+        {
+          "caller": "chat",
+          "callee": "ChatMessage.user",
+          "lineNumber": 67
+        },
+        {
+          "caller": "chat",
+          "callee": "chat",
+          "lineNumber": 69
+        },
+        {
+          "caller": "chat",
+          "callee": "chat",
+          "lineNumber": 100
+        },
+        {
+          "caller": "streamChat",
+          "callee": "ChatRequest.builder()\r\n                .messages(List.of(ChatMessage.user(prompt))).build",
+          "lineNumber": 116
+        },
+        {
+          "caller": "streamChat",
+          "callee": "ChatRequest.builder().messages",
+          "lineNumber": 116
+        },
+        {
+          "caller": "streamChat",
+          "callee": "ChatRequest.builder",
+          "lineNumber": 116
+        },
+        {
+          "caller": "streamChat",
+          "callee": "List.of",
+          "lineNumber": 117
+        },
+        {
+          "caller": "streamChat",
+          "callee": "ChatMessage.user",
+          "lineNumber": 117
+        },
+        {
+          "caller": "streamChat",
+          "callee": "streamChat",
+          "lineNumber": 119
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "infra-ai/src/main/java/com/nageoffer/ai/ragent/infra/util/LLMResponseCleaner.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 39,
+      "functions": [
+        {
+          "name": "stripMarkdownCodeFence",
+          "startLine": 36,
+          "endLine": 44,
+          "params": [
+            "raw"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "LLMResponseCleaner",
+          "startLine": 27,
+          "endLine": 45,
+          "methods": [
+            "stripMarkdownCodeFence"
+          ],
+          "properties": [
+            "LEADING_CODE_FENCE",
+            "TRAILING_CODE_FENCE"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "stripMarkdownCodeFence",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "LLMResponseCleaner",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "stripMarkdownCodeFence",
+          "callee": "raw.trim",
+          "lineNumber": 40
+        },
+        {
+          "caller": "stripMarkdownCodeFence",
+          "callee": "LEADING_CODE_FENCE.matcher(cleaned).replaceFirst",
+          "lineNumber": 41
+        },
+        {
+          "caller": "stripMarkdownCodeFence",
+          "callee": "LEADING_CODE_FENCE.matcher",
+          "lineNumber": 41
+        },
+        {
+          "caller": "stripMarkdownCodeFence",
+          "callee": "TRAILING_CODE_FENCE.matcher(cleaned).replaceFirst",
+          "lineNumber": 42
+        },
+        {
+          "caller": "stripMarkdownCodeFence",
+          "callee": "TRAILING_CODE_FENCE.matcher",
+          "lineNumber": 42
+        },
+        {
+          "caller": "stripMarkdownCodeFence",
+          "callee": "cleaned.trim",
+          "lineNumber": 43
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    }
+  ]
+}

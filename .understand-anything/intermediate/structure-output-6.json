@@ -1,0 +1,4996 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 30,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/KnowledgeBaseController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 106,
+      "nonEmptyLines": 95,
+      "functions": [
+        {
+          "name": "createKnowledgeBase",
+          "startLine": 55,
+          "endLine": 58,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "renameKnowledgeBase",
+          "startLine": 63,
+          "endLine": 68,
+          "params": [
+            "kbId",
+            "requestParam"
+          ]
+        },
+        {
+          "name": "deleteKnowledgeBase",
+          "startLine": 73,
+          "endLine": 77,
+          "params": [
+            "kbId"
+          ]
+        },
+        {
+          "name": "queryKnowledgeBase",
+          "startLine": 82,
+          "endLine": 85,
+          "params": [
+            "kbId"
+          ]
+        },
+        {
+          "name": "pageQuery",
+          "startLine": 90,
+          "endLine": 93,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "listChunkStrategies",
+          "startLine": 98,
+          "endLine": 105,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "KnowledgeBaseController",
+          "startLine": 46,
+          "endLine": 106,
+          "methods": [
+            "createKnowledgeBase",
+            "renameKnowledgeBase",
+            "deleteKnowledgeBase",
+            "queryKnowledgeBase",
+            "pageQuery",
+            "listChunkStrategies"
+          ],
+          "properties": [
+            "knowledgeBaseService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createKnowledgeBase",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "renameKnowledgeBase",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "deleteKnowledgeBase",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "queryKnowledgeBase",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "pageQuery",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "listChunkStrategies",
+          "line": 98,
+          "isDefault": false
+        },
+        {
+          "name": "KnowledgeBaseController",
+          "line": 46,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createKnowledgeBase",
+          "callee": "Results.success",
+          "lineNumber": 57
+        },
+        {
+          "caller": "createKnowledgeBase",
+          "callee": "knowledgeBaseService.create",
+          "lineNumber": 57
+        },
+        {
+          "caller": "renameKnowledgeBase",
+          "callee": "knowledgeBaseService.rename",
+          "lineNumber": 66
+        },
+        {
+          "caller": "renameKnowledgeBase",
+          "callee": "Results.success",
+          "lineNumber": 67
+        },
+        {
+          "caller": "deleteKnowledgeBase",
+          "callee": "knowledgeBaseService.delete",
+          "lineNumber": 75
+        },
+        {
+          "caller": "deleteKnowledgeBase",
+          "callee": "Results.success",
+          "lineNumber": 76
+        },
+        {
+          "caller": "queryKnowledgeBase",
+          "callee": "Results.success",
+          "lineNumber": 84
+        },
+        {
+          "caller": "queryKnowledgeBase",
+          "callee": "knowledgeBaseService.queryById",
+          "lineNumber": 84
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Results.success",
+          "lineNumber": 92
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "knowledgeBaseService.pageQuery",
+          "lineNumber": 92
+        },
+        {
+          "caller": "listChunkStrategies",
+          "callee": "Arrays.stream(ChunkingMode.values())\r\n                .filter(ChunkingMode::isVisible)\r\n                .map(mode -> new ChunkStrategyVO(mode.getValue(), mode.getLabel(), mode.getDefaultConfig())).toList",
+          "lineNumber": 100
+        },
+        {
+          "caller": "listChunkStrategies",
+          "callee": "Arrays.stream(ChunkingMode.values())\r\n                .filter(ChunkingMode::isVisible).map",
+          "lineNumber": 100
+        },
+        {
+          "caller": "listChunkStrategies",
+          "callee": "Arrays.stream(ChunkingMode.values()).filter",
+          "lineNumber": 100
+        },
+        {
+          "caller": "listChunkStrategies",
+          "callee": "Arrays.stream",
+          "lineNumber": 100
+        },
+        {
+          "caller": "listChunkStrategies",
+          "callee": "ChunkingMode.values",
+          "lineNumber": 100
+        },
+        {
+          "caller": "listChunkStrategies",
+          "callee": "new ChunkStrategyVO",
+          "lineNumber": 102
+        },
+        {
+          "caller": "listChunkStrategies",
+          "callee": "mode.getValue",
+          "lineNumber": 102
+        },
+        {
+          "caller": "listChunkStrategies",
+          "callee": "mode.getLabel",
+          "lineNumber": 102
+        },
+        {
+          "caller": "listChunkStrategies",
+          "callee": "mode.getDefaultConfig",
+          "lineNumber": 102
+        },
+        {
+          "caller": "listChunkStrategies",
+          "callee": "Results.success",
+          "lineNumber": 104
+        }
+      ],
+      "metrics": {
+        "importCount": 9,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 33,
+      "classes": [
+        {
+          "name": "KnowledgeBaseCreateRequest",
+          "startLine": 22,
+          "endLine": 39,
+          "methods": [],
+          "properties": [
+            "name",
+            "embeddingModel",
+            "collectionName"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeBaseCreateRequest",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBasePageRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 29,
+      "classes": [
+        {
+          "name": "KnowledgeBasePageRequest",
+          "startLine": 26,
+          "endLine": 33,
+          "methods": [],
+          "properties": [
+            "name"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeBasePageRequest",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/request/KnowledgeBaseUpdateRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 30,
+      "classes": [
+        {
+          "name": "KnowledgeBaseUpdateRequest",
+          "startLine": 22,
+          "endLine": 36,
+          "methods": [],
+          "properties": [
+            "id",
+            "name",
+            "embeddingModel"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeBaseUpdateRequest",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/ChunkStrategyVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 27,
+      "classes": [
+        {
+          "name": "ChunkStrategyVO",
+          "startLine": 25,
+          "endLine": 34,
+          "methods": [],
+          "properties": [
+            "value",
+            "label",
+            "defaultConfig"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChunkStrategyVO",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/controller/vo/KnowledgeBaseVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 57,
+      "classes": [
+        {
+          "name": "KnowledgeBaseVO",
+          "startLine": 27,
+          "endLine": 69,
+          "methods": [],
+          "properties": [
+            "id",
+            "name",
+            "embeddingModel",
+            "collectionName",
+            "documentCount",
+            "createdBy",
+            "createTime",
+            "updateTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeBaseVO",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/KnowledgeBaseService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 76,
+      "nonEmptyLines": 67,
+      "classes": [
+        {
+          "name": "KnowledgeBaseService",
+          "startLine": 29,
+          "endLine": 76,
+          "methods": [
+            "create",
+            "update",
+            "rename",
+            "delete",
+            "queryById",
+            "pageQuery"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "KnowledgeBaseService",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/service/impl/KnowledgeBaseServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 254,
+      "nonEmptyLines": 225,
+      "functions": [
+        {
+          "name": "create",
+          "startLine": 66,
+          "endLine": 113,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 115,
+          "endLine": 144,
+          "params": [
+            "requestParam"
+          ]
+        },
+        {
+          "name": "rename",
+          "startLine": 146,
+          "endLine": 174,
+          "params": [
+            "kbId",
+            "requestParam"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 176,
+          "endLine": 196,
+          "params": [
+            "kbId"
+          ]
+        },
+        {
+          "name": "queryById",
+          "startLine": 198,
+          "endLine": 205,
+          "params": [
+            "kbId"
+          ]
+        },
+        {
+          "name": "pageQuery",
+          "startLine": 207,
+          "endLine": 253,
+          "params": [
+            "requestParam"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "KnowledgeBaseServiceImpl",
+          "startLine": 56,
+          "endLine": 254,
+          "methods": [
+            "create",
+            "update",
+            "rename",
+            "delete",
+            "queryById",
+            "pageQuery"
+          ],
+          "properties": [
+            "knowledgeBaseMapper",
+            "knowledgeDocumentMapper",
+            "vectorStoreAdmin",
+            "s3Client"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "create",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "update",
+          "line": 115,
+          "isDefault": false
+        },
+        {
+          "name": "rename",
+          "line": 146,
+          "isDefault": false
+        },
+        {
+          "name": "delete",
+          "line": 176,
+          "isDefault": false
+        },
+        {
+          "name": "queryById",
+          "line": 198,
+          "isDefault": false
+        },
+        {
+          "name": "pageQuery",
+          "line": 207,
+          "isDefault": false
+        },
+        {
+          "name": "KnowledgeBaseServiceImpl",
+          "line": 56,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "create",
+          "callee": "requestParam.getName().replaceAll",
+          "lineNumber": 70
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getName",
+          "lineNumber": 70
+        },
+        {
+          "caller": "create",
+          "callee": "knowledgeBaseMapper.selectCount",
+          "lineNumber": 71
+        },
+        {
+          "caller": "create",
+          "callee": "new LambdaQueryWrapper<KnowledgeBaseDO>()\r\n                        .eq(KnowledgeBaseDO::getName, name).eq",
+          "lineNumber": 72
+        },
+        {
+          "caller": "create",
+          "callee": "new LambdaQueryWrapper<KnowledgeBaseDO>().eq",
+          "lineNumber": 72
+        },
+        {
+          "caller": "create",
+          "callee": "new LambdaQueryWrapper<KnowledgeBaseDO>",
+          "lineNumber": 72
+        },
+        {
+          "caller": "create",
+          "callee": "new ServiceException",
+          "lineNumber": 77
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getName",
+          "lineNumber": 77
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeBaseDO.builder()\r\n                .name(requestParam.getName())\r\n                .embeddingModel(requestParam.getEmbeddingModel())\r\n                .collectionName(requestParam.getCollectionName())\r\n                .createdBy(UserContext.getUsername())\r\n                .updatedBy(UserContext.getUsername())\r\n                .deleted(0).build",
+          "lineNumber": 80
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeBaseDO.builder()\r\n                .name(requestParam.getName())\r\n                .embeddingModel(requestParam.getEmbeddingModel())\r\n                .collectionName(requestParam.getCollectionName())\r\n                .createdBy(UserContext.getUsername())\r\n                .updatedBy(UserContext.getUsername()).deleted",
+          "lineNumber": 80
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeBaseDO.builder()\r\n                .name(requestParam.getName())\r\n                .embeddingModel(requestParam.getEmbeddingModel())\r\n                .collectionName(requestParam.getCollectionName())\r\n                .createdBy(UserContext.getUsername()).updatedBy",
+          "lineNumber": 80
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeBaseDO.builder()\r\n                .name(requestParam.getName())\r\n                .embeddingModel(requestParam.getEmbeddingModel())\r\n                .collectionName(requestParam.getCollectionName()).createdBy",
+          "lineNumber": 80
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeBaseDO.builder()\r\n                .name(requestParam.getName())\r\n                .embeddingModel(requestParam.getEmbeddingModel()).collectionName",
+          "lineNumber": 80
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeBaseDO.builder()\r\n                .name(requestParam.getName()).embeddingModel",
+          "lineNumber": 80
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeBaseDO.builder().name",
+          "lineNumber": 80
+        },
+        {
+          "caller": "create",
+          "callee": "KnowledgeBaseDO.builder",
+          "lineNumber": 80
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getName",
+          "lineNumber": 81
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getEmbeddingModel",
+          "lineNumber": 82
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getCollectionName",
+          "lineNumber": 83
+        },
+        {
+          "caller": "create",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 84
+        },
+        {
+          "caller": "create",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 85
+        },
+        {
+          "caller": "create",
+          "callee": "knowledgeBaseMapper.insert",
+          "lineNumber": 89
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getCollectionName",
+          "lineNumber": 91
+        },
+        {
+          "caller": "create",
+          "callee": "s3Client.createBucket",
+          "lineNumber": 93
+        },
+        {
+          "caller": "create",
+          "callee": "builder.bucket",
+          "lineNumber": 93
+        },
+        {
+          "caller": "create",
+          "callee": "log.info",
+          "lineNumber": 94
+        },
+        {
+          "caller": "create",
+          "callee": "log.error",
+          "lineNumber": 97
+        },
+        {
+          "caller": "create",
+          "callee": "log.error",
+          "lineNumber": 99
+        },
+        {
+          "caller": "create",
+          "callee": "new ServiceException",
+          "lineNumber": 101
+        },
+        {
+          "caller": "create",
+          "callee": "VectorSpaceSpec.builder()\r\n                .spaceId(VectorSpaceId.builder()\r\n                        .logicalName(requestParam.getCollectionName())\r\n                        .build())\r\n                .remark(requestParam.getName()).build",
+          "lineNumber": 104
+        },
+        {
+          "caller": "create",
+          "callee": "VectorSpaceSpec.builder()\r\n                .spaceId(VectorSpaceId.builder()\r\n                        .logicalName(requestParam.getCollectionName())\r\n                        .build()).remark",
+          "lineNumber": 104
+        },
+        {
+          "caller": "create",
+          "callee": "VectorSpaceSpec.builder().spaceId",
+          "lineNumber": 104
+        },
+        {
+          "caller": "create",
+          "callee": "VectorSpaceSpec.builder",
+          "lineNumber": 104
+        },
+        {
+          "caller": "create",
+          "callee": "VectorSpaceId.builder()\r\n                        .logicalName(requestParam.getCollectionName()).build",
+          "lineNumber": 105
+        },
+        {
+          "caller": "create",
+          "callee": "VectorSpaceId.builder().logicalName",
+          "lineNumber": 105
+        },
+        {
+          "caller": "create",
+          "callee": "VectorSpaceId.builder",
+          "lineNumber": 105
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getCollectionName",
+          "lineNumber": 106
+        },
+        {
+          "caller": "create",
+          "callee": "requestParam.getName",
+          "lineNumber": 108
+        },
+        {
+          "caller": "create",
+          "callee": "vectorStoreAdmin.ensureVectorSpace",
+          "lineNumber": 110
+        },
+        {
+          "caller": "create",
+          "callee": "String.valueOf",
+          "lineNumber": 112
+        },
+        {
+          "caller": "create",
+          "callee": "kbDO.getId",
+          "lineNumber": 112
+        },
+        {
+          "caller": "update",
+          "callee": "knowledgeBaseMapper.selectById",
+          "lineNumber": 117
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getId",
+          "lineNumber": 117
+        },
+        {
+          "caller": "update",
+          "callee": "kb.getDeleted",
+          "lineNumber": 118
+        },
+        {
+          "caller": "update",
+          "callee": "kb.getDeleted",
+          "lineNumber": 118
+        },
+        {
+          "caller": "update",
+          "callee": "new ClientException",
+          "lineNumber": 119
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getId",
+          "lineNumber": 119
+        },
+        {
+          "caller": "update",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 122
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getEmbeddingModel",
+          "lineNumber": 122
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getEmbeddingModel().equals",
+          "lineNumber": 123
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getEmbeddingModel",
+          "lineNumber": 123
+        },
+        {
+          "caller": "update",
+          "callee": "kb.getEmbeddingModel",
+          "lineNumber": 123
+        },
+        {
+          "caller": "update",
+          "callee": "knowledgeDocumentMapper.selectCount",
+          "lineNumber": 125
+        },
+        {
+          "caller": "update",
+          "callee": "new LambdaQueryWrapper<KnowledgeDocumentDO>()\r\n                            .eq(KnowledgeDocumentDO::getKbId, requestParam.getId())\r\n                            .gt(KnowledgeDocumentDO::getChunkCount, 0).eq",
+          "lineNumber": 126
+        },
+        {
+          "caller": "update",
+          "callee": "new LambdaQueryWrapper<KnowledgeDocumentDO>()\r\n                            .eq(KnowledgeDocumentDO::getKbId, requestParam.getId()).gt",
+          "lineNumber": 126
+        },
+        {
+          "caller": "update",
+          "callee": "new LambdaQueryWrapper<KnowledgeDocumentDO>().eq",
+          "lineNumber": 126
+        },
+        {
+          "caller": "update",
+          "callee": "new LambdaQueryWrapper<KnowledgeDocumentDO>",
+          "lineNumber": 126
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getId",
+          "lineNumber": 127
+        },
+        {
+          "caller": "update",
+          "callee": "new ClientException",
+          "lineNumber": 132
+        },
+        {
+          "caller": "update",
+          "callee": "kb.setEmbeddingModel",
+          "lineNumber": 135
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getEmbeddingModel",
+          "lineNumber": 135
+        },
+        {
+          "caller": "update",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 138
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getName",
+          "lineNumber": 138
+        },
+        {
+          "caller": "update",
+          "callee": "kb.setName",
+          "lineNumber": 139
+        },
+        {
+          "caller": "update",
+          "callee": "requestParam.getName",
+          "lineNumber": 139
+        },
+        {
+          "caller": "update",
+          "callee": "kb.setUpdatedBy",
+          "lineNumber": 142
+        },
+        {
+          "caller": "update",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 142
+        },
+        {
+          "caller": "update",
+          "callee": "knowledgeBaseMapper.updateById",
+          "lineNumber": 143
+        },
+        {
+          "caller": "rename",
+          "callee": "knowledgeBaseMapper.selectById",
+          "lineNumber": 148
+        },
+        {
+          "caller": "rename",
+          "callee": "kb.getDeleted",
+          "lineNumber": 149
+        },
+        {
+          "caller": "rename",
+          "callee": "kb.getDeleted",
+          "lineNumber": 149
+        },
+        {
+          "caller": "rename",
+          "callee": "new ClientException",
+          "lineNumber": 150
+        },
+        {
+          "caller": "rename",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 153
+        },
+        {
+          "caller": "rename",
+          "callee": "requestParam.getName",
+          "lineNumber": 153
+        },
+        {
+          "caller": "rename",
+          "callee": "new ClientException",
+          "lineNumber": 154
+        },
+        {
+          "caller": "rename",
+          "callee": "requestParam.getName().replaceAll",
+          "lineNumber": 158
+        },
+        {
+          "caller": "rename",
+          "callee": "requestParam.getName",
+          "lineNumber": 158
+        },
+        {
+          "caller": "rename",
+          "callee": "knowledgeBaseMapper.selectCount",
+          "lineNumber": 159
+        },
+        {
+          "caller": "rename",
+          "callee": "Wrappers.lambdaQuery(KnowledgeBaseDO.class)\r\n                        .eq(KnowledgeBaseDO::getName, name)\r\n                        .ne(KnowledgeBaseDO::getId, kbId).eq",
+          "lineNumber": 160
+        },
+        {
+          "caller": "rename",
+          "callee": "Wrappers.lambdaQuery(KnowledgeBaseDO.class)\r\n                        .eq(KnowledgeBaseDO::getName, name).ne",
+          "lineNumber": 160
+        },
+        {
+          "caller": "rename",
+          "callee": "Wrappers.lambdaQuery(KnowledgeBaseDO.class).eq",
+          "lineNumber": 160
+        },
+        {
+          "caller": "rename",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 160
+        },
+        {
+          "caller": "rename",
+          "callee": "new ServiceException",
+          "lineNumber": 166
+        },
+        {
+          "caller": "rename",
+          "callee": "requestParam.getName",
+          "lineNumber": 166
+        },
+        {
+          "caller": "rename",
+          "callee": "kb.setName",
+          "lineNumber": 169
+        },
+        {
+          "caller": "rename",
+          "callee": "requestParam.getName",
+          "lineNumber": 169
+        },
+        {
+          "caller": "rename",
+          "callee": "kb.setUpdatedBy",
+          "lineNumber": 170
+        },
+        {
+          "caller": "rename",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 170
+        },
+        {
+          "caller": "rename",
+          "callee": "knowledgeBaseMapper.updateById",
+          "lineNumber": 171
+        },
+        {
+          "caller": "rename",
+          "callee": "log.info",
+          "lineNumber": 173
+        },
+        {
+          "caller": "rename",
+          "callee": "requestParam.getName",
+          "lineNumber": 173
+        },
+        {
+          "caller": "delete",
+          "callee": "knowledgeBaseMapper.selectById",
+          "lineNumber": 179
+        },
+        {
+          "caller": "delete",
+          "callee": "kbDO.getDeleted",
+          "lineNumber": 180
+        },
+        {
+          "caller": "delete",
+          "callee": "kbDO.getDeleted",
+          "lineNumber": 180
+        },
+        {
+          "caller": "delete",
+          "callee": "new ClientException",
+          "lineNumber": 181
+        },
+        {
+          "caller": "delete",
+          "callee": "knowledgeDocumentMapper.selectCount",
+          "lineNumber": 184
+        },
+        {
+          "caller": "delete",
+          "callee": "Wrappers.lambdaQuery(KnowledgeDocumentDO.class)\r\n                        .eq(KnowledgeDocumentDO::getKbId, kbId).eq",
+          "lineNumber": 185
+        },
+        {
+          "caller": "delete",
+          "callee": "Wrappers.lambdaQuery(KnowledgeDocumentDO.class).eq",
+          "lineNumber": 185
+        },
+        {
+          "caller": "delete",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 185
+        },
+        {
+          "caller": "delete",
+          "callee": "new ClientException",
+          "lineNumber": 190
+        },
+        {
+          "caller": "delete",
+          "callee": "kbDO.setDeleted",
+          "lineNumber": 193
+        },
+        {
+          "caller": "delete",
+          "callee": "kbDO.setUpdatedBy",
+          "lineNumber": 194
+        },
+        {
+          "caller": "delete",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 194
+        },
+        {
+          "caller": "delete",
+          "callee": "knowledgeBaseMapper.deleteById",
+          "lineNumber": 195
+        },
+        {
+          "caller": "queryById",
+          "callee": "knowledgeBaseMapper.selectById",
+          "lineNumber": 200
+        },
+        {
+          "caller": "queryById",
+          "callee": "kbDO.getDeleted",
+          "lineNumber": 201
+        },
+        {
+          "caller": "queryById",
+          "callee": "kbDO.getDeleted",
+          "lineNumber": 201
+        },
+        {
+          "caller": "queryById",
+          "callee": "new ClientException",
+          "lineNumber": 202
+        },
+        {
+          "caller": "queryById",
+          "callee": "BeanUtil.toBean",
+          "lineNumber": 204
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.lambdaQuery(KnowledgeBaseDO.class)\r\n                .like(StringUtils.hasText(requestParam.getName()), KnowledgeBaseDO::getName, requestParam.getName())\r\n                .eq(KnowledgeBaseDO::getDeleted, 0).orderByDesc",
+          "lineNumber": 209
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.lambdaQuery(KnowledgeBaseDO.class)\r\n                .like(StringUtils.hasText(requestParam.getName()), KnowledgeBaseDO::getName, requestParam.getName()).eq",
+          "lineNumber": 209
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.lambdaQuery(KnowledgeBaseDO.class).like",
+          "lineNumber": 209
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.lambdaQuery",
+          "lineNumber": 209
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 210
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "requestParam.getName",
+          "lineNumber": 210
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "requestParam.getName",
+          "lineNumber": 210
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "new Page<>",
+          "lineNumber": 214
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "requestParam.getCurrent",
+          "lineNumber": 214
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "requestParam.getSize",
+          "lineNumber": 214
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "knowledgeBaseMapper.selectPage",
+          "lineNumber": 215
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "new HashMap<>",
+          "lineNumber": 216
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "CollUtil.isNotEmpty",
+          "lineNumber": 217
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "result.getRecords",
+          "lineNumber": 217
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "result.getRecords().stream()\r\n                    .map(KnowledgeBaseDO::getId)\r\n                    .filter(Objects::nonNull).collect",
+          "lineNumber": 218
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "result.getRecords().stream()\r\n                    .map(KnowledgeBaseDO::getId).filter",
+          "lineNumber": 218
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "result.getRecords().stream().map",
+          "lineNumber": 218
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "result.getRecords().stream",
+          "lineNumber": 218
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "result.getRecords",
+          "lineNumber": 218
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Collectors.toList",
+          "lineNumber": 221
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "kbIds.isEmpty",
+          "lineNumber": 222
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "knowledgeDocumentMapper.selectMaps",
+          "lineNumber": 223
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.query(KnowledgeDocumentDO.class)\r\n                                .select(\"kb_id AS kbId\", \"COUNT(1) AS docCount\")\r\n                                .in(\"kb_id\", kbIds)\r\n                                .eq(\"deleted\", 0).groupBy",
+          "lineNumber": 224
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.query(KnowledgeDocumentDO.class)\r\n                                .select(\"kb_id AS kbId\", \"COUNT(1) AS docCount\")\r\n                                .in(\"kb_id\", kbIds).eq",
+          "lineNumber": 224
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.query(KnowledgeDocumentDO.class)\r\n                                .select(\"kb_id AS kbId\", \"COUNT(1) AS docCount\").in",
+          "lineNumber": 224
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.query(KnowledgeDocumentDO.class).select",
+          "lineNumber": 224
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Wrappers.query",
+          "lineNumber": 224
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "row.get",
+          "lineNumber": 231
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "row.get",
+          "lineNumber": 232
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "String.valueOf",
+          "lineNumber": 238
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "((Number) kbIdValue).longValue",
+          "lineNumber": 238
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "kbIdValue.toString",
+          "lineNumber": 239
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "((Number) countValue).longValue",
+          "lineNumber": 241
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "Long.parseLong",
+          "lineNumber": 242
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "countValue.toString",
+          "lineNumber": 242
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "docCountMap.put",
+          "lineNumber": 243
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "result.convert",
+          "lineNumber": 247
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "BeanUtil.toBean",
+          "lineNumber": 248
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "docCountMap.get",
+          "lineNumber": 249
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "each.getId",
+          "lineNumber": 249
+        },
+        {
+          "caller": "pageQuery",
+          "callee": "vo.setDocumentCount",
+          "lineNumber": 250
+        }
+      ],
+      "metrics": {
+        "importCount": 15,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/DemoModeInterceptor.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 94,
+      "nonEmptyLines": 84,
+      "functions": [
+        {
+          "name": "preHandle",
+          "startLine": 51,
+          "endLine": 73,
+          "params": [
+            "request",
+            "response",
+            "handler"
+          ]
+        },
+        {
+          "name": "writeSseReject",
+          "startLine": 75,
+          "endLine": 84,
+          "params": [
+            "response"
+          ]
+        },
+        {
+          "name": "writeJsonReject",
+          "startLine": 86,
+          "endLine": 93,
+          "params": [
+            "response"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DemoModeInterceptor",
+          "startLine": 37,
+          "endLine": 94,
+          "methods": [
+            "preHandle",
+            "writeSseReject",
+            "writeJsonReject"
+          ],
+          "properties": [
+            "demoModeProperties",
+            "objectMapper",
+            "DEMO_REJECT_MESSAGE",
+            "SSE_PATHS"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "preHandle",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "DemoModeInterceptor",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "preHandle",
+          "callee": "demoModeProperties.getDemoMode",
+          "lineNumber": 55
+        },
+        {
+          "caller": "preHandle",
+          "callee": "request.getMethod",
+          "lineNumber": 58
+        },
+        {
+          "caller": "preHandle",
+          "callee": "\"OPTIONS\".equalsIgnoreCase",
+          "lineNumber": 59
+        },
+        {
+          "caller": "preHandle",
+          "callee": "request.getRequestURI().substring",
+          "lineNumber": 62
+        },
+        {
+          "caller": "preHandle",
+          "callee": "request.getRequestURI",
+          "lineNumber": 62
+        },
+        {
+          "caller": "preHandle",
+          "callee": "request.getContextPath().length",
+          "lineNumber": 62
+        },
+        {
+          "caller": "preHandle",
+          "callee": "request.getContextPath",
+          "lineNumber": 62
+        },
+        {
+          "caller": "preHandle",
+          "callee": "SSE_PATHS.contains",
+          "lineNumber": 63
+        },
+        {
+          "caller": "preHandle",
+          "callee": "\"GET\".equalsIgnoreCase",
+          "lineNumber": 64
+        },
+        {
+          "caller": "preHandle",
+          "callee": "writeSseReject",
+          "lineNumber": 68
+        },
+        {
+          "caller": "preHandle",
+          "callee": "writeJsonReject",
+          "lineNumber": 70
+        },
+        {
+          "caller": "writeSseReject",
+          "callee": "response.setStatus",
+          "lineNumber": 76
+        },
+        {
+          "caller": "writeSseReject",
+          "callee": "response.setContentType",
+          "lineNumber": 77
+        },
+        {
+          "caller": "writeSseReject",
+          "callee": "response.setHeader",
+          "lineNumber": 78
+        },
+        {
+          "caller": "writeSseReject",
+          "callee": "response.setHeader",
+          "lineNumber": 79
+        },
+        {
+          "caller": "writeSseReject",
+          "callee": "response.getWriter",
+          "lineNumber": 80
+        },
+        {
+          "caller": "writeSseReject",
+          "callee": "writer.write",
+          "lineNumber": 81
+        },
+        {
+          "caller": "writeSseReject",
+          "callee": "objectMapper.writeValueAsString",
+          "lineNumber": 81
+        },
+        {
+          "caller": "writeSseReject",
+          "callee": "new MessageDelta",
+          "lineNumber": 81
+        },
+        {
+          "caller": "writeSseReject",
+          "callee": "writer.write",
+          "lineNumber": 82
+        },
+        {
+          "caller": "writeSseReject",
+          "callee": "writer.flush",
+          "lineNumber": 83
+        },
+        {
+          "caller": "writeJsonReject",
+          "callee": "response.setStatus",
+          "lineNumber": 87
+        },
+        {
+          "caller": "writeJsonReject",
+          "callee": "response.setContentType",
+          "lineNumber": 88
+        },
+        {
+          "caller": "writeJsonReject",
+          "callee": "new Result<Void>()\r\n                .setCode(BaseErrorCode.CLIENT_ERROR.code()).setMessage",
+          "lineNumber": 89
+        },
+        {
+          "caller": "writeJsonReject",
+          "callee": "new Result<Void>().setCode",
+          "lineNumber": 89
+        },
+        {
+          "caller": "writeJsonReject",
+          "callee": "new Result<Void>",
+          "lineNumber": 89
+        },
+        {
+          "caller": "writeJsonReject",
+          "callee": "BaseErrorCode.CLIENT_ERROR.code",
+          "lineNumber": 90
+        },
+        {
+          "caller": "writeJsonReject",
+          "callee": "response.getWriter().write",
+          "lineNumber": 92
+        },
+        {
+          "caller": "writeJsonReject",
+          "callee": "response.getWriter",
+          "lineNumber": 92
+        },
+        {
+          "caller": "writeJsonReject",
+          "callee": "objectMapper.writeValueAsString",
+          "lineNumber": 92
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 2,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGConfigProperties.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 51,
+      "nonEmptyLines": 47,
+      "classes": [
+        {
+          "name": "RAGConfigProperties",
+          "startLine": 39,
+          "endLine": 51,
+          "methods": [],
+          "properties": [
+            "queryRewriteEnabled"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RAGConfigProperties",
+          "line": 39,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGDefaultProperties.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 79,
+      "nonEmptyLines": 72,
+      "classes": [
+        {
+          "name": "RAGDefaultProperties",
+          "startLine": 41,
+          "endLine": 79,
+          "methods": [],
+          "properties": [
+            "collectionName",
+            "dimension",
+            "metricType",
+            "sseTimeoutMs"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RAGDefaultProperties",
+          "line": 41,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/config/RAGRateLimitProperties.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 60,
+      "nonEmptyLines": 52,
+      "classes": [
+        {
+          "name": "RAGRateLimitProperties",
+          "startLine": 27,
+          "endLine": 60,
+          "methods": [],
+          "properties": [
+            "globalEnabled",
+            "globalMaxConcurrent",
+            "globalMaxWaitSeconds",
+            "globalLeaseSeconds",
+            "globalPollIntervalMs"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RAGRateLimitProperties",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/RAGChatController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 68,
+      "nonEmptyLines": 62,
+      "functions": [
+        {
+          "name": "chat",
+          "startLine": 46,
+          "endLine": 57,
+          "params": [
+            "question",
+            "conversationId",
+            "deepThinking"
+          ]
+        },
+        {
+          "name": "stop",
+          "startLine": 62,
+          "endLine": 67,
+          "params": [
+            "taskId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RAGChatController",
+          "startLine": 36,
+          "endLine": 68,
+          "methods": [
+            "chat",
+            "stop"
+          ],
+          "properties": [
+            "ragChatService",
+            "ragDefaultProperties"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "chat",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "stop",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "RAGChatController",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "chat",
+          "callee": "new SseEmitter",
+          "lineNumber": 54
+        },
+        {
+          "caller": "chat",
+          "callee": "ragDefaultProperties.getSseTimeoutMs",
+          "lineNumber": 54
+        },
+        {
+          "caller": "chat",
+          "callee": "ragChatService.streamChat",
+          "lineNumber": 55
+        },
+        {
+          "caller": "stop",
+          "callee": "ragChatService.stopTask",
+          "lineNumber": 65
+        },
+        {
+          "caller": "stop",
+          "callee": "Results.success",
+          "lineNumber": 66
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/RAGSettingsController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 173,
+      "nonEmptyLines": 159,
+      "functions": [
+        {
+          "name": "settings",
+          "startLine": 64,
+          "endLine": 90,
+          "params": []
+        },
+        {
+          "name": "toDefaultSettings",
+          "startLine": 92,
+          "endLine": 98,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "toMemorySettings",
+          "startLine": 100,
+          "endLine": 108,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "toAISettings",
+          "startLine": 110,
+          "endLine": 137,
+          "params": [
+            "props"
+          ]
+        },
+        {
+          "name": "toModelGroup",
+          "startLine": 139,
+          "endLine": 161,
+          "params": [
+            "group"
+          ]
+        },
+        {
+          "name": "maskApiKey",
+          "startLine": 163,
+          "endLine": 172,
+          "params": [
+            "apiKey"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RAGSettingsController",
+          "startLine": 45,
+          "endLine": 173,
+          "methods": [
+            "settings",
+            "toDefaultSettings",
+            "toMemorySettings",
+            "toAISettings",
+            "toModelGroup",
+            "maskApiKey"
+          ],
+          "properties": [
+            "ragDefaultProperties",
+            "ragConfigProperties",
+            "ragRateLimitProperties",
+            "memoryProperties",
+            "aiModelProperties",
+            "maxFileSize",
+            "maxRequestSize"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "settings",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "RAGSettingsController",
+          "line": 45,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.builder()\r\n                .upload(SystemSettingsVO.UploadSettings.builder()\r\n                        .maxFileSize(maxFileSize.toBytes())\r\n                        .maxRequestSize(maxRequestSize.toBytes())\r\n                        .build())\r\n                .rag(SystemSettingsVO.RagSettings.builder()\r\n                        .defaultConfig(toDefaultSettings(ragDefaultProperties))\r\n                        .queryRewrite(SystemSettingsVO.QueryRewriteSettings.builder()\r\n                                .enabled(ragConfigProperties.getQueryRewriteEnabled())\r\n                                .build())\r\n                        .rateLimit(SystemSettingsVO.RateLimitSettings.builder()\r\n                                .global(SystemSettingsVO.GlobalRateLimit.builder()\r\n                                        .enabled(ragRateLimitProperties.getGlobalEnabled())\r\n                                        .maxConcurrent(ragRateLimitProperties.getGlobalMaxConcurrent())\r\n                                        .maxWaitSeconds(ragRateLimitProperties.getGlobalMaxWaitSeconds())\r\n                                        .leaseSeconds(ragRateLimitProperties.getGlobalLeaseSeconds())\r\n                                        .pollIntervalMs(ragRateLimitProperties.getGlobalPollIntervalMs())\r\n                                        .build())\r\n                                .build())\r\n                        .memory(toMemorySettings(memoryProperties))\r\n                        .build())\r\n                .ai(toAISettings(aiModelProperties)).build",
+          "lineNumber": 66
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.builder()\r\n                .upload(SystemSettingsVO.UploadSettings.builder()\r\n                        .maxFileSize(maxFileSize.toBytes())\r\n                        .maxRequestSize(maxRequestSize.toBytes())\r\n                        .build())\r\n                .rag(SystemSettingsVO.RagSettings.builder()\r\n                        .defaultConfig(toDefaultSettings(ragDefaultProperties))\r\n                        .queryRewrite(SystemSettingsVO.QueryRewriteSettings.builder()\r\n                                .enabled(ragConfigProperties.getQueryRewriteEnabled())\r\n                                .build())\r\n                        .rateLimit(SystemSettingsVO.RateLimitSettings.builder()\r\n                                .global(SystemSettingsVO.GlobalRateLimit.builder()\r\n                                        .enabled(ragRateLimitProperties.getGlobalEnabled())\r\n                                        .maxConcurrent(ragRateLimitProperties.getGlobalMaxConcurrent())\r\n                                        .maxWaitSeconds(ragRateLimitProperties.getGlobalMaxWaitSeconds())\r\n                                        .leaseSeconds(ragRateLimitProperties.getGlobalLeaseSeconds())\r\n                                        .pollIntervalMs(ragRateLimitProperties.getGlobalPollIntervalMs())\r\n                                        .build())\r\n                                .build())\r\n                        .memory(toMemorySettings(memoryProperties))\r\n                        .build()).ai",
+          "lineNumber": 66
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.builder()\r\n                .upload(SystemSettingsVO.UploadSettings.builder()\r\n                        .maxFileSize(maxFileSize.toBytes())\r\n                        .maxRequestSize(maxRequestSize.toBytes())\r\n                        .build()).rag",
+          "lineNumber": 66
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.builder().upload",
+          "lineNumber": 66
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.builder",
+          "lineNumber": 66
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.UploadSettings.builder()\r\n                        .maxFileSize(maxFileSize.toBytes())\r\n                        .maxRequestSize(maxRequestSize.toBytes()).build",
+          "lineNumber": 67
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.UploadSettings.builder()\r\n                        .maxFileSize(maxFileSize.toBytes()).maxRequestSize",
+          "lineNumber": 67
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.UploadSettings.builder().maxFileSize",
+          "lineNumber": 67
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.UploadSettings.builder",
+          "lineNumber": 67
+        },
+        {
+          "caller": "settings",
+          "callee": "maxFileSize.toBytes",
+          "lineNumber": 68
+        },
+        {
+          "caller": "settings",
+          "callee": "maxRequestSize.toBytes",
+          "lineNumber": 69
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.RagSettings.builder()\r\n                        .defaultConfig(toDefaultSettings(ragDefaultProperties))\r\n                        .queryRewrite(SystemSettingsVO.QueryRewriteSettings.builder()\r\n                                .enabled(ragConfigProperties.getQueryRewriteEnabled())\r\n                                .build())\r\n                        .rateLimit(SystemSettingsVO.RateLimitSettings.builder()\r\n                                .global(SystemSettingsVO.GlobalRateLimit.builder()\r\n                                        .enabled(ragRateLimitProperties.getGlobalEnabled())\r\n                                        .maxConcurrent(ragRateLimitProperties.getGlobalMaxConcurrent())\r\n                                        .maxWaitSeconds(ragRateLimitProperties.getGlobalMaxWaitSeconds())\r\n                                        .leaseSeconds(ragRateLimitProperties.getGlobalLeaseSeconds())\r\n                                        .pollIntervalMs(ragRateLimitProperties.getGlobalPollIntervalMs())\r\n                                        .build())\r\n                                .build())\r\n                        .memory(toMemorySettings(memoryProperties)).build",
+          "lineNumber": 71
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.RagSettings.builder()\r\n                        .defaultConfig(toDefaultSettings(ragDefaultProperties))\r\n                        .queryRewrite(SystemSettingsVO.QueryRewriteSettings.builder()\r\n                                .enabled(ragConfigProperties.getQueryRewriteEnabled())\r\n                                .build())\r\n                        .rateLimit(SystemSettingsVO.RateLimitSettings.builder()\r\n                                .global(SystemSettingsVO.GlobalRateLimit.builder()\r\n                                        .enabled(ragRateLimitProperties.getGlobalEnabled())\r\n                                        .maxConcurrent(ragRateLimitProperties.getGlobalMaxConcurrent())\r\n                                        .maxWaitSeconds(ragRateLimitProperties.getGlobalMaxWaitSeconds())\r\n                                        .leaseSeconds(ragRateLimitProperties.getGlobalLeaseSeconds())\r\n                                        .pollIntervalMs(ragRateLimitProperties.getGlobalPollIntervalMs())\r\n                                        .build())\r\n                                .build()).memory",
+          "lineNumber": 71
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.RagSettings.builder()\r\n                        .defaultConfig(toDefaultSettings(ragDefaultProperties))\r\n                        .queryRewrite(SystemSettingsVO.QueryRewriteSettings.builder()\r\n                                .enabled(ragConfigProperties.getQueryRewriteEnabled())\r\n                                .build()).rateLimit",
+          "lineNumber": 71
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.RagSettings.builder()\r\n                        .defaultConfig(toDefaultSettings(ragDefaultProperties)).queryRewrite",
+          "lineNumber": 71
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.RagSettings.builder().defaultConfig",
+          "lineNumber": 71
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.RagSettings.builder",
+          "lineNumber": 71
+        },
+        {
+          "caller": "settings",
+          "callee": "toDefaultSettings",
+          "lineNumber": 72
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.QueryRewriteSettings.builder()\r\n                                .enabled(ragConfigProperties.getQueryRewriteEnabled()).build",
+          "lineNumber": 73
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.QueryRewriteSettings.builder().enabled",
+          "lineNumber": 73
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.QueryRewriteSettings.builder",
+          "lineNumber": 73
+        },
+        {
+          "caller": "settings",
+          "callee": "ragConfigProperties.getQueryRewriteEnabled",
+          "lineNumber": 74
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.RateLimitSettings.builder()\r\n                                .global(SystemSettingsVO.GlobalRateLimit.builder()\r\n                                        .enabled(ragRateLimitProperties.getGlobalEnabled())\r\n                                        .maxConcurrent(ragRateLimitProperties.getGlobalMaxConcurrent())\r\n                                        .maxWaitSeconds(ragRateLimitProperties.getGlobalMaxWaitSeconds())\r\n                                        .leaseSeconds(ragRateLimitProperties.getGlobalLeaseSeconds())\r\n                                        .pollIntervalMs(ragRateLimitProperties.getGlobalPollIntervalMs())\r\n                                        .build()).build",
+          "lineNumber": 76
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.RateLimitSettings.builder().global",
+          "lineNumber": 76
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.RateLimitSettings.builder",
+          "lineNumber": 76
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.GlobalRateLimit.builder()\r\n                                        .enabled(ragRateLimitProperties.getGlobalEnabled())\r\n                                        .maxConcurrent(ragRateLimitProperties.getGlobalMaxConcurrent())\r\n                                        .maxWaitSeconds(ragRateLimitProperties.getGlobalMaxWaitSeconds())\r\n                                        .leaseSeconds(ragRateLimitProperties.getGlobalLeaseSeconds())\r\n                                        .pollIntervalMs(ragRateLimitProperties.getGlobalPollIntervalMs()).build",
+          "lineNumber": 77
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.GlobalRateLimit.builder()\r\n                                        .enabled(ragRateLimitProperties.getGlobalEnabled())\r\n                                        .maxConcurrent(ragRateLimitProperties.getGlobalMaxConcurrent())\r\n                                        .maxWaitSeconds(ragRateLimitProperties.getGlobalMaxWaitSeconds())\r\n                                        .leaseSeconds(ragRateLimitProperties.getGlobalLeaseSeconds()).pollIntervalMs",
+          "lineNumber": 77
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.GlobalRateLimit.builder()\r\n                                        .enabled(ragRateLimitProperties.getGlobalEnabled())\r\n                                        .maxConcurrent(ragRateLimitProperties.getGlobalMaxConcurrent())\r\n                                        .maxWaitSeconds(ragRateLimitProperties.getGlobalMaxWaitSeconds()).leaseSeconds",
+          "lineNumber": 77
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.GlobalRateLimit.builder()\r\n                                        .enabled(ragRateLimitProperties.getGlobalEnabled())\r\n                                        .maxConcurrent(ragRateLimitProperties.getGlobalMaxConcurrent()).maxWaitSeconds",
+          "lineNumber": 77
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.GlobalRateLimit.builder()\r\n                                        .enabled(ragRateLimitProperties.getGlobalEnabled()).maxConcurrent",
+          "lineNumber": 77
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.GlobalRateLimit.builder().enabled",
+          "lineNumber": 77
+        },
+        {
+          "caller": "settings",
+          "callee": "SystemSettingsVO.GlobalRateLimit.builder",
+          "lineNumber": 77
+        },
+        {
+          "caller": "settings",
+          "callee": "ragRateLimitProperties.getGlobalEnabled",
+          "lineNumber": 78
+        },
+        {
+          "caller": "settings",
+          "callee": "ragRateLimitProperties.getGlobalMaxConcurrent",
+          "lineNumber": 79
+        },
+        {
+          "caller": "settings",
+          "callee": "ragRateLimitProperties.getGlobalMaxWaitSeconds",
+          "lineNumber": 80
+        },
+        {
+          "caller": "settings",
+          "callee": "ragRateLimitProperties.getGlobalLeaseSeconds",
+          "lineNumber": 81
+        },
+        {
+          "caller": "settings",
+          "callee": "ragRateLimitProperties.getGlobalPollIntervalMs",
+          "lineNumber": 82
+        },
+        {
+          "caller": "settings",
+          "callee": "toMemorySettings",
+          "lineNumber": 85
+        },
+        {
+          "caller": "settings",
+          "callee": "toAISettings",
+          "lineNumber": 87
+        },
+        {
+          "caller": "settings",
+          "callee": "Results.success",
+          "lineNumber": 89
+        },
+        {
+          "caller": "toDefaultSettings",
+          "callee": "DefaultSettings.builder()\r\n                .collectionName(props.getCollectionName())\r\n                .dimension(props.getDimension())\r\n                .metricType(props.getMetricType()).build",
+          "lineNumber": 93
+        },
+        {
+          "caller": "toDefaultSettings",
+          "callee": "DefaultSettings.builder()\r\n                .collectionName(props.getCollectionName())\r\n                .dimension(props.getDimension()).metricType",
+          "lineNumber": 93
+        },
+        {
+          "caller": "toDefaultSettings",
+          "callee": "DefaultSettings.builder()\r\n                .collectionName(props.getCollectionName()).dimension",
+          "lineNumber": 93
+        },
+        {
+          "caller": "toDefaultSettings",
+          "callee": "DefaultSettings.builder().collectionName",
+          "lineNumber": 93
+        },
+        {
+          "caller": "toDefaultSettings",
+          "callee": "DefaultSettings.builder",
+          "lineNumber": 93
+        },
+        {
+          "caller": "toDefaultSettings",
+          "callee": "props.getCollectionName",
+          "lineNumber": 94
+        },
+        {
+          "caller": "toDefaultSettings",
+          "callee": "props.getDimension",
+          "lineNumber": 95
+        },
+        {
+          "caller": "toDefaultSettings",
+          "callee": "props.getMetricType",
+          "lineNumber": 96
+        },
+        {
+          "caller": "toMemorySettings",
+          "callee": "MemorySettings.builder()\r\n                .historyKeepTurns(props.getHistoryKeepTurns())\r\n                .summaryEnabled(props.getSummaryEnabled())\r\n                .summaryStartTurns(props.getSummaryStartTurns())\r\n                .summaryMaxChars(props.getSummaryMaxChars())\r\n                .titleMaxLength(props.getTitleMaxLength()).build",
+          "lineNumber": 101
+        },
+        {
+          "caller": "toMemorySettings",
+          "callee": "MemorySettings.builder()\r\n                .historyKeepTurns(props.getHistoryKeepTurns())\r\n                .summaryEnabled(props.getSummaryEnabled())\r\n                .summaryStartTurns(props.getSummaryStartTurns())\r\n                .summaryMaxChars(props.getSummaryMaxChars()).titleMaxLength",
+          "lineNumber": 101
+        },
+        {
+          "caller": "toMemorySettings",
+          "callee": "MemorySettings.builder()\r\n                .historyKeepTurns(props.getHistoryKeepTurns())\r\n                .summaryEnabled(props.getSummaryEnabled())\r\n                .summaryStartTurns(props.getSummaryStartTurns()).summaryMaxChars",
+          "lineNumber": 101
+        },
+        {
+          "caller": "toMemorySettings",
+          "callee": "MemorySettings.builder()\r\n                .historyKeepTurns(props.getHistoryKeepTurns())\r\n                .summaryEnabled(props.getSummaryEnabled()).summaryStartTurns",
+          "lineNumber": 101
+        },
+        {
+          "caller": "toMemorySettings",
+          "callee": "MemorySettings.builder()\r\n                .historyKeepTurns(props.getHistoryKeepTurns()).summaryEnabled",
+          "lineNumber": 101
+        },
+        {
+          "caller": "toMemorySettings",
+          "callee": "MemorySettings.builder().historyKeepTurns",
+          "lineNumber": 101
+        },
+        {
+          "caller": "toMemorySettings",
+          "callee": "MemorySettings.builder",
+          "lineNumber": 101
+        },
+        {
+          "caller": "toMemorySettings",
+          "callee": "props.getHistoryKeepTurns",
+          "lineNumber": 102
+        },
+        {
+          "caller": "toMemorySettings",
+          "callee": "props.getSummaryEnabled",
+          "lineNumber": 103
+        },
+        {
+          "caller": "toMemorySettings",
+          "callee": "props.getSummaryStartTurns",
+          "lineNumber": 104
+        },
+        {
+          "caller": "toMemorySettings",
+          "callee": "props.getSummaryMaxChars",
+          "lineNumber": 105
+        },
+        {
+          "caller": "toMemorySettings",
+          "callee": "props.getTitleMaxLength",
+          "lineNumber": 106
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "new HashMap<>",
+          "lineNumber": 111
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "props.getProviders",
+          "lineNumber": 112
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "props.getProviders().forEach",
+          "lineNumber": 113
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "props.getProviders",
+          "lineNumber": 113
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "providers.put",
+          "lineNumber": 113
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.ProviderConfig.builder()\r\n                    .url(v.getUrl())\r\n                    .apiKey(maskApiKey(v.getApiKey()))\r\n                    .endpoints(v.getEndpoints()).build",
+          "lineNumber": 113
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.ProviderConfig.builder()\r\n                    .url(v.getUrl())\r\n                    .apiKey(maskApiKey(v.getApiKey())).endpoints",
+          "lineNumber": 113
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.ProviderConfig.builder()\r\n                    .url(v.getUrl()).apiKey",
+          "lineNumber": 113
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.ProviderConfig.builder().url",
+          "lineNumber": 113
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.ProviderConfig.builder",
+          "lineNumber": 113
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "v.getUrl",
+          "lineNumber": 114
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "maskApiKey",
+          "lineNumber": 115
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "v.getApiKey",
+          "lineNumber": 115
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "v.getEndpoints",
+          "lineNumber": 116
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.builder()\r\n                .providers(providers)\r\n                .chat(toModelGroup(props.getChat()))\r\n                .embedding(toModelGroup(props.getEmbedding()))\r\n                .rerank(toModelGroup(props.getRerank()))\r\n                .selection(props.getSelection() == null\r\n                        ? null\r\n                        : AISettings.Selection.builder()\r\n                          .failureThreshold(props.getSelection().getFailureThreshold())\r\n                          .openDurationMs(props.getSelection().getOpenDurationMs())\r\n                          .build())\r\n                .stream(props.getStream() == null\r\n                        ? null\r\n                        : AISettings.Stream.builder()\r\n                          .messageChunkSize(props.getStream().getMessageChunkSize())\r\n                          .build()).build",
+          "lineNumber": 120
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.builder()\r\n                .providers(providers)\r\n                .chat(toModelGroup(props.getChat()))\r\n                .embedding(toModelGroup(props.getEmbedding()))\r\n                .rerank(toModelGroup(props.getRerank()))\r\n                .selection(props.getSelection() == null\r\n                        ? null\r\n                        : AISettings.Selection.builder()\r\n                          .failureThreshold(props.getSelection().getFailureThreshold())\r\n                          .openDurationMs(props.getSelection().getOpenDurationMs())\r\n                          .build()).stream",
+          "lineNumber": 120
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.builder()\r\n                .providers(providers)\r\n                .chat(toModelGroup(props.getChat()))\r\n                .embedding(toModelGroup(props.getEmbedding()))\r\n                .rerank(toModelGroup(props.getRerank())).selection",
+          "lineNumber": 120
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.builder()\r\n                .providers(providers)\r\n                .chat(toModelGroup(props.getChat()))\r\n                .embedding(toModelGroup(props.getEmbedding())).rerank",
+          "lineNumber": 120
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.builder()\r\n                .providers(providers)\r\n                .chat(toModelGroup(props.getChat())).embedding",
+          "lineNumber": 120
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.builder()\r\n                .providers(providers).chat",
+          "lineNumber": 120
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.builder().providers",
+          "lineNumber": 120
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.builder",
+          "lineNumber": 120
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "toModelGroup",
+          "lineNumber": 122
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "props.getChat",
+          "lineNumber": 122
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "toModelGroup",
+          "lineNumber": 123
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "props.getEmbedding",
+          "lineNumber": 123
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "toModelGroup",
+          "lineNumber": 124
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "props.getRerank",
+          "lineNumber": 124
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "props.getSelection",
+          "lineNumber": 125
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.Selection.builder()\r\n                          .failureThreshold(props.getSelection().getFailureThreshold())\r\n                          .openDurationMs(props.getSelection().getOpenDurationMs()).build",
+          "lineNumber": 127
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.Selection.builder()\r\n                          .failureThreshold(props.getSelection().getFailureThreshold()).openDurationMs",
+          "lineNumber": 127
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.Selection.builder().failureThreshold",
+          "lineNumber": 127
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.Selection.builder",
+          "lineNumber": 127
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "props.getSelection().getFailureThreshold",
+          "lineNumber": 128
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "props.getSelection",
+          "lineNumber": 128
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "props.getSelection().getOpenDurationMs",
+          "lineNumber": 129
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "props.getSelection",
+          "lineNumber": 129
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "props.getStream",
+          "lineNumber": 131
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.Stream.builder()\r\n                          .messageChunkSize(props.getStream().getMessageChunkSize()).build",
+          "lineNumber": 133
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.Stream.builder().messageChunkSize",
+          "lineNumber": 133
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "AISettings.Stream.builder",
+          "lineNumber": 133
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "props.getStream().getMessageChunkSize",
+          "lineNumber": 134
+        },
+        {
+          "caller": "toAISettings",
+          "callee": "props.getStream",
+          "lineNumber": 134
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "AISettings.ModelGroup.builder()\r\n                .defaultModel(group.getDefaultModel())\r\n                .deepThinkingModel(group.getDeepThinkingModel())\r\n                .candidates(group.getCandidates() == null\r\n                        ? null\r\n                        : group.getCandidates().stream()\r\n                          .map(c -> AISettings.ModelCandidate.builder()\r\n                                    .id(c.getId())\r\n                                    .provider(c.getProvider())\r\n                                    .model(c.getModel())\r\n                                    .url(c.getUrl())\r\n                                    .dimension(c.getDimension())\r\n                                    .priority(c.getPriority())\r\n                                    .enabled(c.getEnabled())\r\n                                    .supportsThinking(c.getSupportsThinking())\r\n                                    .build())\r\n                          .collect(Collectors.toList())).build",
+          "lineNumber": 143
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "AISettings.ModelGroup.builder()\r\n                .defaultModel(group.getDefaultModel())\r\n                .deepThinkingModel(group.getDeepThinkingModel()).candidates",
+          "lineNumber": 143
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "AISettings.ModelGroup.builder()\r\n                .defaultModel(group.getDefaultModel()).deepThinkingModel",
+          "lineNumber": 143
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "AISettings.ModelGroup.builder().defaultModel",
+          "lineNumber": 143
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "AISettings.ModelGroup.builder",
+          "lineNumber": 143
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "group.getDefaultModel",
+          "lineNumber": 144
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "group.getDeepThinkingModel",
+          "lineNumber": 145
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "group.getCandidates",
+          "lineNumber": 146
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "group.getCandidates().stream()\r\n                          .map(c -> AISettings.ModelCandidate.builder()\r\n                                    .id(c.getId())\r\n                                    .provider(c.getProvider())\r\n                                    .model(c.getModel())\r\n                                    .url(c.getUrl())\r\n                                    .dimension(c.getDimension())\r\n                                    .priority(c.getPriority())\r\n                                    .enabled(c.getEnabled())\r\n                                    .supportsThinking(c.getSupportsThinking())\r\n                                    .build()).collect",
+          "lineNumber": 148
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "group.getCandidates().stream().map",
+          "lineNumber": 148
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "group.getCandidates().stream",
+          "lineNumber": 148
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "group.getCandidates",
+          "lineNumber": 148
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "AISettings.ModelCandidate.builder()\r\n                                    .id(c.getId())\r\n                                    .provider(c.getProvider())\r\n                                    .model(c.getModel())\r\n                                    .url(c.getUrl())\r\n                                    .dimension(c.getDimension())\r\n                                    .priority(c.getPriority())\r\n                                    .enabled(c.getEnabled())\r\n                                    .supportsThinking(c.getSupportsThinking()).build",
+          "lineNumber": 149
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "AISettings.ModelCandidate.builder()\r\n                                    .id(c.getId())\r\n                                    .provider(c.getProvider())\r\n                                    .model(c.getModel())\r\n                                    .url(c.getUrl())\r\n                                    .dimension(c.getDimension())\r\n                                    .priority(c.getPriority())\r\n                                    .enabled(c.getEnabled()).supportsThinking",
+          "lineNumber": 149
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "AISettings.ModelCandidate.builder()\r\n                                    .id(c.getId())\r\n                                    .provider(c.getProvider())\r\n                                    .model(c.getModel())\r\n                                    .url(c.getUrl())\r\n                                    .dimension(c.getDimension())\r\n                                    .priority(c.getPriority()).enabled",
+          "lineNumber": 149
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "AISettings.ModelCandidate.builder()\r\n                                    .id(c.getId())\r\n                                    .provider(c.getProvider())\r\n                                    .model(c.getModel())\r\n                                    .url(c.getUrl())\r\n                                    .dimension(c.getDimension()).priority",
+          "lineNumber": 149
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "AISettings.ModelCandidate.builder()\r\n                                    .id(c.getId())\r\n                                    .provider(c.getProvider())\r\n                                    .model(c.getModel())\r\n                                    .url(c.getUrl()).dimension",
+          "lineNumber": 149
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "AISettings.ModelCandidate.builder()\r\n                                    .id(c.getId())\r\n                                    .provider(c.getProvider())\r\n                                    .model(c.getModel()).url",
+          "lineNumber": 149
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "AISettings.ModelCandidate.builder()\r\n                                    .id(c.getId())\r\n                                    .provider(c.getProvider()).model",
+          "lineNumber": 149
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "AISettings.ModelCandidate.builder()\r\n                                    .id(c.getId()).provider",
+          "lineNumber": 149
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "AISettings.ModelCandidate.builder().id",
+          "lineNumber": 149
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "AISettings.ModelCandidate.builder",
+          "lineNumber": 149
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "c.getId",
+          "lineNumber": 150
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "c.getProvider",
+          "lineNumber": 151
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "c.getModel",
+          "lineNumber": 152
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "c.getUrl",
+          "lineNumber": 153
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "c.getDimension",
+          "lineNumber": 154
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "c.getPriority",
+          "lineNumber": 155
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "c.getEnabled",
+          "lineNumber": 156
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "c.getSupportsThinking",
+          "lineNumber": 157
+        },
+        {
+          "caller": "toModelGroup",
+          "callee": "Collectors.toList",
+          "lineNumber": 159
+        },
+        {
+          "caller": "maskApiKey",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 164
+        },
+        {
+          "caller": "maskApiKey",
+          "callee": "apiKey.trim",
+          "lineNumber": 167
+        },
+        {
+          "caller": "maskApiKey",
+          "callee": "trimmed.length",
+          "lineNumber": 168
+        },
+        {
+          "caller": "maskApiKey",
+          "callee": "trimmed.substring",
+          "lineNumber": 171
+        },
+        {
+          "caller": "maskApiKey",
+          "callee": "trimmed.substring",
+          "lineNumber": 171
+        },
+        {
+          "caller": "maskApiKey",
+          "callee": "trimmed.length",
+          "lineNumber": 171
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 2,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/controller/vo/SystemSettingsVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 320,
+      "nonEmptyLines": 268,
+      "functions": [
+        {
+          "name": "SystemSettingsVO",
+          "startLine": 41,
+          "endLine": 45,
+          "params": [
+            "rag",
+            "ai",
+            "upload"
+          ]
+        },
+        {
+          "name": "builder",
+          "startLine": 47,
+          "endLine": 49,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SystemSettingsVO",
+          "startLine": 33,
+          "endLine": 320,
+          "methods": [
+            "SystemSettingsVO",
+            "builder"
+          ],
+          "properties": [
+            "rag",
+            "ai",
+            "upload"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SystemSettingsVO",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "builder",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "SystemSettingsVO",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "builder",
+          "callee": "new SystemSettingsVOBuilder",
+          "lineNumber": 48
+        },
+        {
+          "caller": "build",
+          "callee": "new SystemSettingsVO",
+          "lineNumber": 72
+        },
+        {
+          "caller": "builder",
+          "callee": "new RagSettingsBuilder",
+          "lineNumber": 172
+        },
+        {
+          "caller": "build",
+          "callee": "new RagSettings",
+          "lineNumber": 202
+        },
+        {
+          "caller": "builder",
+          "callee": "new QueryRewriteSettingsBuilder",
+          "lineNumber": 217
+        },
+        {
+          "caller": "build",
+          "callee": "new QueryRewriteSettings",
+          "lineNumber": 229
+        },
+        {
+          "caller": "builder",
+          "callee": "new RateLimitSettingsBuilder",
+          "lineNumber": 244
+        },
+        {
+          "caller": "build",
+          "callee": "new RateLimitSettings",
+          "lineNumber": 256
+        },
+        {
+          "caller": "builder",
+          "callee": "new GlobalRateLimitBuilder",
+          "lineNumber": 280
+        },
+        {
+          "caller": "build",
+          "callee": "new GlobalRateLimit",
+          "lineNumber": 316
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/MilvusVectorStoreAdmin.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 129,
+      "nonEmptyLines": 113,
+      "functions": [
+        {
+          "name": "ensureVectorSpace",
+          "startLine": 46,
+          "endLine": 120,
+          "params": [
+            "spec"
+          ]
+        },
+        {
+          "name": "vectorSpaceExists",
+          "startLine": 122,
+          "endLine": 128,
+          "params": [
+            "spaceId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MilvusVectorStoreAdmin",
+          "startLine": 37,
+          "endLine": 129,
+          "methods": [
+            "ensureVectorSpace",
+            "vectorSpaceExists"
+          ],
+          "properties": [
+            "milvusClient",
+            "ragDefaultProperties"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ensureVectorSpace",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "vectorSpaceExists",
+          "line": 122,
+          "isDefault": false
+        },
+        {
+          "name": "MilvusVectorStoreAdmin",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "spec.getSpaceId().getLogicalName",
+          "lineNumber": 48
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "spec.getSpaceId",
+          "lineNumber": 48
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "Boolean.TRUE.equals",
+          "lineNumber": 49
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "milvusClient.hasCollection",
+          "lineNumber": 49
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "HasCollectionReq.builder().collectionName(logicalName).build",
+          "lineNumber": 50
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "HasCollectionReq.builder().collectionName",
+          "lineNumber": 50
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "HasCollectionReq.builder",
+          "lineNumber": 50
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "new VectorCollectionAlreadyExistsException",
+          "lineNumber": 53
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "new ArrayList<>",
+          "lineNumber": 56
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "fieldSchemaList.add",
+          "lineNumber": 58
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"id\")\r\n                        .dataType(DataType.VarChar)\r\n                        .maxLength(36)\r\n                        .isPrimaryKey(true)\r\n                        .autoID(false).build",
+          "lineNumber": 59
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"id\")\r\n                        .dataType(DataType.VarChar)\r\n                        .maxLength(36)\r\n                        .isPrimaryKey(true).autoID",
+          "lineNumber": 59
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"id\")\r\n                        .dataType(DataType.VarChar)\r\n                        .maxLength(36).isPrimaryKey",
+          "lineNumber": 59
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"id\")\r\n                        .dataType(DataType.VarChar).maxLength",
+          "lineNumber": 59
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"id\").dataType",
+          "lineNumber": 59
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder().name",
+          "lineNumber": 59
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder",
+          "lineNumber": 59
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "fieldSchemaList.add",
+          "lineNumber": 68
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"content\")\r\n                        .dataType(DataType.VarChar)\r\n                        .maxLength(65535).build",
+          "lineNumber": 69
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"content\")\r\n                        .dataType(DataType.VarChar).maxLength",
+          "lineNumber": 69
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"content\").dataType",
+          "lineNumber": 69
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder().name",
+          "lineNumber": 69
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder",
+          "lineNumber": 69
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "fieldSchemaList.add",
+          "lineNumber": 76
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"metadata\")\r\n                        .dataType(DataType.JSON).build",
+          "lineNumber": 77
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"metadata\").dataType",
+          "lineNumber": 77
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder().name",
+          "lineNumber": 77
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder",
+          "lineNumber": 77
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "fieldSchemaList.add",
+          "lineNumber": 83
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"embedding\")\r\n                        .dataType(DataType.FloatVector)\r\n                        .dimension(ragDefaultProperties.getDimension()).build",
+          "lineNumber": 84
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"embedding\")\r\n                        .dataType(DataType.FloatVector).dimension",
+          "lineNumber": 84
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder()\r\n                        .name(\"embedding\").dataType",
+          "lineNumber": 84
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder().name",
+          "lineNumber": 84
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.FieldSchema.builder",
+          "lineNumber": 84
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "ragDefaultProperties.getDimension",
+          "lineNumber": 87
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.CollectionSchema\r\n                .builder()\r\n                .fieldSchemaList(fieldSchemaList).build",
+          "lineNumber": 91
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.CollectionSchema\r\n                .builder().fieldSchemaList",
+          "lineNumber": 91
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.CollectionSchema.builder",
+          "lineNumber": 91
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "IndexParam.builder()\r\n                .fieldName(\"embedding\")\r\n                .indexType(IndexParam.IndexType.HNSW)\r\n                .metricType(IndexParam.MetricType.COSINE)\r\n                .indexName(\"embedding\")\r\n                .extraParams(Map.of(\r\n                        \"M\", \"48\",\r\n                        \"efConstruction\", \"200\",\r\n                        \"mmap.enabled\", \"false\"\r\n                )).build",
+          "lineNumber": 96
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "IndexParam.builder()\r\n                .fieldName(\"embedding\")\r\n                .indexType(IndexParam.IndexType.HNSW)\r\n                .metricType(IndexParam.MetricType.COSINE)\r\n                .indexName(\"embedding\").extraParams",
+          "lineNumber": 96
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "IndexParam.builder()\r\n                .fieldName(\"embedding\")\r\n                .indexType(IndexParam.IndexType.HNSW)\r\n                .metricType(IndexParam.MetricType.COSINE).indexName",
+          "lineNumber": 96
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "IndexParam.builder()\r\n                .fieldName(\"embedding\")\r\n                .indexType(IndexParam.IndexType.HNSW).metricType",
+          "lineNumber": 96
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "IndexParam.builder()\r\n                .fieldName(\"embedding\").indexType",
+          "lineNumber": 96
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "IndexParam.builder().fieldName",
+          "lineNumber": 96
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "IndexParam.builder",
+          "lineNumber": 96
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "Map.of",
+          "lineNumber": 101
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.builder()\r\n                .collectionName(logicalName)\r\n                .collectionSchema(collectionSchema)\r\n                .primaryFieldName(\"id\")\r\n                .vectorFieldName(\"embedding\")\r\n                .metricType(ragDefaultProperties.getMetricType())\r\n                .consistencyLevel(ConsistencyLevel.BOUNDED)\r\n                .indexParams(List.of(hnswIndex))\r\n                .description(spec.getRemark()).build",
+          "lineNumber": 108
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.builder()\r\n                .collectionName(logicalName)\r\n                .collectionSchema(collectionSchema)\r\n                .primaryFieldName(\"id\")\r\n                .vectorFieldName(\"embedding\")\r\n                .metricType(ragDefaultProperties.getMetricType())\r\n                .consistencyLevel(ConsistencyLevel.BOUNDED)\r\n                .indexParams(List.of(hnswIndex)).description",
+          "lineNumber": 108
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.builder()\r\n                .collectionName(logicalName)\r\n                .collectionSchema(collectionSchema)\r\n                .primaryFieldName(\"id\")\r\n                .vectorFieldName(\"embedding\")\r\n                .metricType(ragDefaultProperties.getMetricType())\r\n                .consistencyLevel(ConsistencyLevel.BOUNDED).indexParams",
+          "lineNumber": 108
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.builder()\r\n                .collectionName(logicalName)\r\n                .collectionSchema(collectionSchema)\r\n                .primaryFieldName(\"id\")\r\n                .vectorFieldName(\"embedding\")\r\n                .metricType(ragDefaultProperties.getMetricType()).consistencyLevel",
+          "lineNumber": 108
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.builder()\r\n                .collectionName(logicalName)\r\n                .collectionSchema(collectionSchema)\r\n                .primaryFieldName(\"id\")\r\n                .vectorFieldName(\"embedding\").metricType",
+          "lineNumber": 108
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.builder()\r\n                .collectionName(logicalName)\r\n                .collectionSchema(collectionSchema)\r\n                .primaryFieldName(\"id\").vectorFieldName",
+          "lineNumber": 108
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.builder()\r\n                .collectionName(logicalName)\r\n                .collectionSchema(collectionSchema).primaryFieldName",
+          "lineNumber": 108
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.builder()\r\n                .collectionName(logicalName).collectionSchema",
+          "lineNumber": 108
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.builder().collectionName",
+          "lineNumber": 108
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "CreateCollectionReq.builder",
+          "lineNumber": 108
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "ragDefaultProperties.getMetricType",
+          "lineNumber": 113
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "List.of",
+          "lineNumber": 115
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "spec.getRemark",
+          "lineNumber": 116
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "milvusClient.createCollection",
+          "lineNumber": 119
+        },
+        {
+          "caller": "vectorSpaceExists",
+          "callee": "spaceId.getLogicalName",
+          "lineNumber": 124
+        },
+        {
+          "caller": "vectorSpaceExists",
+          "callee": "milvusClient.hasCollection",
+          "lineNumber": 125
+        },
+        {
+          "caller": "vectorSpaceExists",
+          "callee": "HasCollectionReq.builder().collectionName(logicalName).build",
+          "lineNumber": 126
+        },
+        {
+          "caller": "vectorSpaceExists",
+          "callee": "HasCollectionReq.builder().collectionName",
+          "lineNumber": 126
+        },
+        {
+          "caller": "vectorSpaceExists",
+          "callee": "HasCollectionReq.builder",
+          "lineNumber": 126
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/MilvusVectorStoreService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 210,
+      "nonEmptyLines": 173,
+      "functions": [
+        {
+          "name": "indexDocumentChunks",
+          "startLine": 54,
+          "endLine": 88,
+          "params": [
+            "collectionName",
+            "docId",
+            "chunks"
+          ]
+        },
+        {
+          "name": "updateChunk",
+          "startLine": 90,
+          "endLine": 120,
+          "params": [
+            "collectionName",
+            "docId",
+            "chunk"
+          ]
+        },
+        {
+          "name": "deleteDocumentVectors",
+          "startLine": 122,
+          "endLine": 135,
+          "params": [
+            "collectionName",
+            "docId"
+          ]
+        },
+        {
+          "name": "deleteChunkById",
+          "startLine": 137,
+          "endLine": 150,
+          "params": [
+            "collectionName",
+            "chunkId"
+          ]
+        },
+        {
+          "name": "deleteChunksByIds",
+          "startLine": 152,
+          "endLine": 170,
+          "params": [
+            "collectionName",
+            "chunkIds"
+          ]
+        },
+        {
+          "name": "extractVectors",
+          "startLine": 172,
+          "endLine": 178,
+          "params": [
+            "chunks",
+            "expectedDim"
+          ]
+        },
+        {
+          "name": "extractVector",
+          "startLine": 180,
+          "endLine": 189,
+          "params": [
+            "chunk",
+            "expectedDim"
+          ]
+        },
+        {
+          "name": "toJsonArray",
+          "startLine": 191,
+          "endLine": 197,
+          "params": [
+            "v"
+          ]
+        },
+        {
+          "name": "buildMetadata",
+          "startLine": 199,
+          "endLine": 209,
+          "params": [
+            "collectionName",
+            "docId",
+            "chunk"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MilvusVectorStoreService",
+          "startLine": 43,
+          "endLine": 210,
+          "methods": [
+            "indexDocumentChunks",
+            "updateChunk",
+            "deleteDocumentVectors",
+            "deleteChunkById",
+            "deleteChunksByIds",
+            "extractVectors",
+            "extractVector",
+            "toJsonArray",
+            "buildMetadata"
+          ],
+          "properties": [
+            "GSON",
+            "milvusClient",
+            "ragDefaultProperties"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "indexDocumentChunks",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "updateChunk",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "deleteDocumentVectors",
+          "line": 122,
+          "isDefault": false
+        },
+        {
+          "name": "deleteChunkById",
+          "line": 137,
+          "isDefault": false
+        },
+        {
+          "name": "deleteChunksByIds",
+          "line": 152,
+          "isDefault": false
+        },
+        {
+          "name": "MilvusVectorStoreService",
+          "line": 43,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "Assert.isFalse",
+          "lineNumber": 56
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "chunks.isEmpty",
+          "lineNumber": 56
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "new ClientException",
+          "lineNumber": 56
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "ragDefaultProperties.getDimension",
+          "lineNumber": 58
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "extractVectors",
+          "lineNumber": 59
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "new ArrayList<>",
+          "lineNumber": 61
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "chunks.size",
+          "lineNumber": 61
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "chunks.size",
+          "lineNumber": 62
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "chunks.get",
+          "lineNumber": 63
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "chunk.getContent",
+          "lineNumber": 65
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "chunk.getContent",
+          "lineNumber": 65
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "content.length",
+          "lineNumber": 66
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "content.substring",
+          "lineNumber": 67
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "buildMetadata",
+          "lineNumber": 70
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "new JsonObject",
+          "lineNumber": 72
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "row.addProperty",
+          "lineNumber": 73
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "chunk.getChunkId",
+          "lineNumber": 73
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "row.addProperty",
+          "lineNumber": 74
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "row.add",
+          "lineNumber": 75
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "row.add",
+          "lineNumber": 76
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "toJsonArray",
+          "lineNumber": 76
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "vectors.get",
+          "lineNumber": 76
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "rows.add",
+          "lineNumber": 78
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "InsertReq.builder()\r\n                .collectionName(collectionName)\r\n                .data(rows).build",
+          "lineNumber": 81
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "InsertReq.builder()\r\n                .collectionName(collectionName).data",
+          "lineNumber": 81
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "InsertReq.builder().collectionName",
+          "lineNumber": 81
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "InsertReq.builder",
+          "lineNumber": 81
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "milvusClient.insert",
+          "lineNumber": 86
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "log.info",
+          "lineNumber": 87
+        },
+        {
+          "caller": "indexDocumentChunks",
+          "callee": "resp.getInsertCnt",
+          "lineNumber": 87
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "Assert.isFalse",
+          "lineNumber": 92
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "new ClientException",
+          "lineNumber": 92
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "ragDefaultProperties.getDimension",
+          "lineNumber": 94
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "extractVector",
+          "lineNumber": 95
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "chunk.getChunkId",
+          "lineNumber": 97
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "chunk.getChunkId",
+          "lineNumber": 97
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "IdUtil.getSnowflakeNextIdStr",
+          "lineNumber": 97
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "chunk.getContent",
+          "lineNumber": 99
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "chunk.getContent",
+          "lineNumber": 99
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "content.length",
+          "lineNumber": 100
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "content.substring",
+          "lineNumber": 101
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "buildMetadata",
+          "lineNumber": 104
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "new JsonObject",
+          "lineNumber": 106
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "row.addProperty",
+          "lineNumber": 107
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "row.addProperty",
+          "lineNumber": 108
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "row.add",
+          "lineNumber": 109
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "row.add",
+          "lineNumber": 110
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "toJsonArray",
+          "lineNumber": 110
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "UpsertReq.builder()\r\n                .collectionName(collectionName)\r\n                .data(List.of(row)).build",
+          "lineNumber": 112
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "UpsertReq.builder()\r\n                .collectionName(collectionName).data",
+          "lineNumber": 112
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "UpsertReq.builder().collectionName",
+          "lineNumber": 112
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "UpsertReq.builder",
+          "lineNumber": 112
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "List.of",
+          "lineNumber": 114
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "milvusClient.upsert",
+          "lineNumber": 117
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "log.info",
+          "lineNumber": 118
+        },
+        {
+          "caller": "updateChunk",
+          "callee": "resp.getUpsertCnt",
+          "lineNumber": 119
+        },
+        {
+          "caller": "deleteDocumentVectors",
+          "callee": "DeleteReq.builder()\r\n                .collectionName(collectionName)\r\n                .filter(filter).build",
+          "lineNumber": 127
+        },
+        {
+          "caller": "deleteDocumentVectors",
+          "callee": "DeleteReq.builder()\r\n                .collectionName(collectionName).filter",
+          "lineNumber": 127
+        },
+        {
+          "caller": "deleteDocumentVectors",
+          "callee": "DeleteReq.builder().collectionName",
+          "lineNumber": 127
+        },
+        {
+          "caller": "deleteDocumentVectors",
+          "callee": "DeleteReq.builder",
+          "lineNumber": 127
+        },
+        {
+          "caller": "deleteDocumentVectors",
+          "callee": "milvusClient.delete",
+          "lineNumber": 132
+        },
+        {
+          "caller": "deleteDocumentVectors",
+          "callee": "log.info",
+          "lineNumber": 133
+        },
+        {
+          "caller": "deleteDocumentVectors",
+          "callee": "resp.getDeleteCnt",
+          "lineNumber": 134
+        },
+        {
+          "caller": "deleteChunkById",
+          "callee": "DeleteReq.builder()\r\n                .collectionName(collectionName)\r\n                .filter(filter).build",
+          "lineNumber": 142
+        },
+        {
+          "caller": "deleteChunkById",
+          "callee": "DeleteReq.builder()\r\n                .collectionName(collectionName).filter",
+          "lineNumber": 142
+        },
+        {
+          "caller": "deleteChunkById",
+          "callee": "DeleteReq.builder().collectionName",
+          "lineNumber": 142
+        },
+        {
+          "caller": "deleteChunkById",
+          "callee": "DeleteReq.builder",
+          "lineNumber": 142
+        },
+        {
+          "caller": "deleteChunkById",
+          "callee": "milvusClient.delete",
+          "lineNumber": 147
+        },
+        {
+          "caller": "deleteChunkById",
+          "callee": "log.info",
+          "lineNumber": 148
+        },
+        {
+          "caller": "deleteChunkById",
+          "callee": "resp.getDeleteCnt",
+          "lineNumber": 149
+        },
+        {
+          "caller": "deleteChunksByIds",
+          "callee": "chunkIds.isEmpty",
+          "lineNumber": 154
+        },
+        {
+          "caller": "deleteChunksByIds",
+          "callee": "chunkIds.stream()\r\n                .map(id -> \"\\\"\" + id + \"\\\"\").collect",
+          "lineNumber": 157
+        },
+        {
+          "caller": "deleteChunksByIds",
+          "callee": "chunkIds.stream().map",
+          "lineNumber": 157
+        },
+        {
+          "caller": "deleteChunksByIds",
+          "callee": "chunkIds.stream",
+          "lineNumber": 157
+        },
+        {
+          "caller": "deleteChunksByIds",
+          "callee": "java.util.stream.Collectors.joining",
+          "lineNumber": 159
+        },
+        {
+          "caller": "deleteChunksByIds",
+          "callee": "DeleteReq.builder()\r\n                .collectionName(collectionName)\r\n                .filter(filter).build",
+          "lineNumber": 162
+        },
+        {
+          "caller": "deleteChunksByIds",
+          "callee": "DeleteReq.builder()\r\n                .collectionName(collectionName).filter",
+          "lineNumber": 162
+        },
+        {
+          "caller": "deleteChunksByIds",
+          "callee": "DeleteReq.builder().collectionName",
+          "lineNumber": 162
+        },
+        {
+          "caller": "deleteChunksByIds",
+          "callee": "DeleteReq.builder",
+          "lineNumber": 162
+        },
+        {
+          "caller": "deleteChunksByIds",
+          "callee": "milvusClient.delete",
+          "lineNumber": 167
+        },
+        {
+          "caller": "deleteChunksByIds",
+          "callee": "log.info",
+          "lineNumber": 168
+        },
+        {
+          "caller": "deleteChunksByIds",
+          "callee": "chunkIds.size",
+          "lineNumber": 169
+        },
+        {
+          "caller": "deleteChunksByIds",
+          "callee": "resp.getDeleteCnt",
+          "lineNumber": 169
+        },
+        {
+          "caller": "extractVectors",
+          "callee": "new ArrayList<>",
+          "lineNumber": 173
+        },
+        {
+          "caller": "extractVectors",
+          "callee": "chunks.size",
+          "lineNumber": 173
+        },
+        {
+          "caller": "extractVectors",
+          "callee": "vectors.add",
+          "lineNumber": 175
+        },
+        {
+          "caller": "extractVectors",
+          "callee": "extractVector",
+          "lineNumber": 175
+        },
+        {
+          "caller": "extractVector",
+          "callee": "chunk.getEmbedding",
+          "lineNumber": 181
+        },
+        {
+          "caller": "extractVector",
+          "callee": "new ClientException",
+          "lineNumber": 183
+        },
+        {
+          "caller": "extractVector",
+          "callee": "new ClientException",
+          "lineNumber": 186
+        },
+        {
+          "caller": "toJsonArray",
+          "callee": "new JsonArray",
+          "lineNumber": 192
+        },
+        {
+          "caller": "toJsonArray",
+          "callee": "arr.add",
+          "lineNumber": 194
+        },
+        {
+          "caller": "buildMetadata",
+          "callee": "new JsonObject",
+          "lineNumber": 200
+        },
+        {
+          "caller": "buildMetadata",
+          "callee": "chunk.getMetadata",
+          "lineNumber": 201
+        },
+        {
+          "caller": "buildMetadata",
+          "callee": "chunk.getMetadata().forEach",
+          "lineNumber": 202
+        },
+        {
+          "caller": "buildMetadata",
+          "callee": "chunk.getMetadata",
+          "lineNumber": 202
+        },
+        {
+          "caller": "buildMetadata",
+          "callee": "metadata.add",
+          "lineNumber": 202
+        },
+        {
+          "caller": "buildMetadata",
+          "callee": "GSON.toJsonTree",
+          "lineNumber": 202
+        },
+        {
+          "caller": "buildMetadata",
+          "callee": "metadata.addProperty",
+          "lineNumber": 205
+        },
+        {
+          "caller": "buildMetadata",
+          "callee": "metadata.addProperty",
+          "lineNumber": 206
+        },
+        {
+          "caller": "buildMetadata",
+          "callee": "metadata.addProperty",
+          "lineNumber": 207
+        },
+        {
+          "caller": "buildMetadata",
+          "callee": "chunk.getIndex",
+          "lineNumber": 207
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 6,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/PgVectorStoreAdmin.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 64,
+      "nonEmptyLines": 54,
+      "functions": [
+        {
+          "name": "ensureVectorSpace",
+          "startLine": 37,
+          "endLine": 52,
+          "params": [
+            "spec"
+          ]
+        },
+        {
+          "name": "vectorSpaceExists",
+          "startLine": 54,
+          "endLine": 63,
+          "params": [
+            "spaceId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PgVectorStoreAdmin",
+          "startLine": 27,
+          "endLine": 64,
+          "methods": [
+            "ensureVectorSpace",
+            "vectorSpaceExists"
+          ],
+          "properties": [
+            "jdbcTemplate",
+            "ragDefaultProperties"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ensureVectorSpace",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "vectorSpaceExists",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "PgVectorStoreAdmin",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "jdbcTemplate.queryForObject",
+          "lineNumber": 42
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "log.debug",
+          "lineNumber": 45
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "ragDefaultProperties.getDimension",
+          "lineNumber": 49
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "log.info",
+          "lineNumber": 50
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "jdbcTemplate.execute",
+          "lineNumber": 51
+        },
+        {
+          "caller": "ensureVectorSpace",
+          "callee": "String.format",
+          "lineNumber": 51
+        },
+        {
+          "caller": "vectorSpaceExists",
+          "callee": "jdbcTemplate.queryForObject",
+          "lineNumber": 58
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorSpaceSpec.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 40,
+      "nonEmptyLines": 35,
+      "classes": [
+        {
+          "name": "VectorSpaceSpec",
+          "startLine": 25,
+          "endLine": 40,
+          "methods": [],
+          "properties": [
+            "spaceId",
+            "remark"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "VectorSpaceSpec",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/vector/VectorStoreAdmin.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 33,
+      "classes": [
+        {
+          "name": "VectorStoreAdmin",
+          "startLine": 24,
+          "endLine": 37,
+          "methods": [
+            "ensureVectorSpace",
+            "vectorSpaceExists"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "VectorStoreAdmin",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/service/RAGChatService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 44,
+      "nonEmptyLines": 39,
+      "classes": [
+        {
+          "name": "RAGChatService",
+          "startLine": 26,
+          "endLine": 44,
+          "methods": [
+            "streamChat",
+            "stopTask"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RAGChatService",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/user/config/SaTokenConfig.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 94,
+      "nonEmptyLines": 86,
+      "functions": [
+        {
+          "name": "addInterceptors",
+          "startLine": 55,
+          "endLine": 93,
+          "params": [
+            "registry"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SaTokenConfig",
+          "startLine": 36,
+          "endLine": 94,
+          "methods": [
+            "addInterceptors"
+          ],
+          "properties": [
+            "demoModeInterceptor",
+            "userContextInterceptor"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "addInterceptors",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "SaTokenConfig",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "addInterceptors",
+          "callee": "registry.addInterceptor(new SaInterceptor(handler -> {\r\n                    // 异步调度请求跳过登录检查（SSE 完成回调会触发 asyncDispatch，此时 SaToken 上下文已丢失）\r\n                    ServletRequestAttributes attrs = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();\r\n                    if (attrs != null) {\r\n                        HttpServletRequest request = attrs.getRequest();\r\n                        // 判断是否为异步调度请求，如果是则跳过登录检查\r\n                        if (request.getDispatcherType() == DispatcherType.ASYNC) {\r\n                            return;\r\n                        }\r\n                        // 预检请求直接放行，避免 CORS 被拦截\r\n                        if (\"OPTIONS\".equalsIgnoreCase(request.getMethod())) {\r\n                            return;\r\n                        }\r\n                    }\r\n                    // 执行登录检查\r\n                    StpUtil.checkLogin();\r\n                }))\r\n                // 拦截所有路径\r\n                .addPathPatterns(\"/**\").excludePathPatterns",
+          "lineNumber": 58
+        },
+        {
+          "caller": "addInterceptors",
+          "callee": "registry.addInterceptor(new SaInterceptor(handler -> {\r\n                    // 异步调度请求跳过登录检查（SSE 完成回调会触发 asyncDispatch，此时 SaToken 上下文已丢失）\r\n                    ServletRequestAttributes attrs = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();\r\n                    if (attrs != null) {\r\n                        HttpServletRequest request = attrs.getRequest();\r\n                        // 判断是否为异步调度请求，如果是则跳过登录检查\r\n                        if (request.getDispatcherType() == DispatcherType.ASYNC) {\r\n                            return;\r\n                        }\r\n                        // 预检请求直接放行，避免 CORS 被拦截\r\n                        if (\"OPTIONS\".equalsIgnoreCase(request.getMethod())) {\r\n                            return;\r\n                        }\r\n                    }\r\n                    // 执行登录检查\r\n                    StpUtil.checkLogin();\r\n                })).addPathPatterns",
+          "lineNumber": 58
+        },
+        {
+          "caller": "addInterceptors",
+          "callee": "registry.addInterceptor",
+          "lineNumber": 58
+        },
+        {
+          "caller": "addInterceptors",
+          "callee": "new SaInterceptor",
+          "lineNumber": 58
+        },
+        {
+          "caller": "addInterceptors",
+          "callee": "RequestContextHolder.getRequestAttributes",
+          "lineNumber": 60
+        },
+        {
+          "caller": "addInterceptors",
+          "callee": "attrs.getRequest",
+          "lineNumber": 62
+        },
+        {
+          "caller": "addInterceptors",
+          "callee": "request.getDispatcherType",
+          "lineNumber": 64
+        },
+        {
+          "caller": "addInterceptors",
+          "callee": "\"OPTIONS\".equalsIgnoreCase",
+          "lineNumber": 68
+        },
+        {
+          "caller": "addInterceptors",
+          "callee": "request.getMethod",
+          "lineNumber": 68
+        },
+        {
+          "caller": "addInterceptors",
+          "callee": "StpUtil.checkLogin",
+          "lineNumber": 73
+        },
+        {
+          "caller": "addInterceptors",
+          "callee": "registry.addInterceptor(demoModeInterceptor)\r\n                // 拦截所有路径\r\n                .addPathPatterns(\"/**\").excludePathPatterns",
+          "lineNumber": 81
+        },
+        {
+          "caller": "addInterceptors",
+          "callee": "registry.addInterceptor(demoModeInterceptor).addPathPatterns",
+          "lineNumber": 81
+        },
+        {
+          "caller": "addInterceptors",
+          "callee": "registry.addInterceptor",
+          "lineNumber": 81
+        },
+        {
+          "caller": "addInterceptors",
+          "callee": "registry.addInterceptor(userContextInterceptor)\r\n                // 拦截所有路径\r\n                .addPathPatterns(\"/**\").excludePathPatterns",
+          "lineNumber": 88
+        },
+        {
+          "caller": "addInterceptors",
+          "callee": "registry.addInterceptor(userContextInterceptor).addPathPatterns",
+          "lineNumber": 88
+        },
+        {
+          "caller": "addInterceptors",
+          "callee": "registry.addInterceptor",
+          "lineNumber": 88
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/config/WebAutoConfiguration.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 33,
+      "functions": [
+        {
+          "name": "globalExceptionHandler",
+          "startLine": 33,
+          "endLine": 36,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "WebAutoConfiguration",
+          "startLine": 27,
+          "endLine": 37,
+          "methods": [
+            "globalExceptionHandler"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "globalExceptionHandler",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "WebAutoConfiguration",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "globalExceptionHandler",
+          "callee": "new GlobalExceptionHandler",
+          "lineNumber": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/convention/Result.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 91,
+      "nonEmptyLines": 80,
+      "functions": [
+        {
+          "name": "isSuccess",
+          "startLine": 88,
+          "endLine": 90,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Result",
+          "startLine": 36,
+          "endLine": 91,
+          "methods": [
+            "isSuccess"
+          ],
+          "properties": [
+            "serialVersionUID",
+            "SUCCESS_CODE",
+            "code",
+            "message",
+            "data",
+            "requestId"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SUCCESS_CODE",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "isSuccess",
+          "line": 88,
+          "isDefault": false
+        },
+        {
+          "name": "Result",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "isSuccess",
+          "callee": "SUCCESS_CODE.equals",
+          "lineNumber": 89
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/errorcode/IErrorCode.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 31,
+      "classes": [
+        {
+          "name": "IErrorCode",
+          "startLine": 24,
+          "endLine": 35,
+          "methods": [
+            "code",
+            "message"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IErrorCode",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/AbstractException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 34,
+      "functions": [
+        {
+          "name": "AbstractException",
+          "startLine": 36,
+          "endLine": 40,
+          "params": [
+            "message",
+            "throwable",
+            "errorCode"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AbstractException",
+          "startLine": 29,
+          "endLine": 41,
+          "methods": [
+            "AbstractException"
+          ],
+          "properties": [
+            "errorCode",
+            "errorMessage"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "errorCode",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "errorMessage",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "AbstractException",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "AbstractException",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AbstractException",
+          "callee": "errorCode.code",
+          "lineNumber": 38
+        },
+        {
+          "caller": "AbstractException",
+          "callee": "Optional.ofNullable(StringUtils.hasLength(message) ? message : null).orElse",
+          "lineNumber": 39
+        },
+        {
+          "caller": "AbstractException",
+          "callee": "Optional.ofNullable",
+          "lineNumber": 39
+        },
+        {
+          "caller": "AbstractException",
+          "callee": "StringUtils.hasLength",
+          "lineNumber": 39
+        },
+        {
+          "caller": "AbstractException",
+          "callee": "errorCode.message",
+          "lineNumber": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 4,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/exception/kb/VectorCollectionAlreadyExistsException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 26,
+      "functions": [
+        {
+          "name": "VectorCollectionAlreadyExistsException",
+          "startLine": 27,
+          "endLine": 29,
+          "params": [
+            "collectionName"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "VectorCollectionAlreadyExistsException",
+          "startLine": 25,
+          "endLine": 30,
+          "methods": [
+            "VectorCollectionAlreadyExistsException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "VectorCollectionAlreadyExistsException",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "VectorCollectionAlreadyExistsException",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentSubmit.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 36,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/GlobalExceptionHandler.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 138,
+      "nonEmptyLines": 125,
+      "functions": [
+        {
+          "name": "validExceptionHandler",
+          "startLine": 58,
+          "endLine": 68,
+          "params": [
+            "request",
+            "ex"
+          ]
+        },
+        {
+          "name": "abstractException",
+          "startLine": 73,
+          "endLine": 87,
+          "params": [
+            "request",
+            "ex"
+          ]
+        },
+        {
+          "name": "notLoginException",
+          "startLine": 92,
+          "endLine": 96,
+          "params": [
+            "request",
+            "ex"
+          ]
+        },
+        {
+          "name": "notRoleException",
+          "startLine": 101,
+          "endLine": 105,
+          "params": [
+            "request",
+            "ex"
+          ]
+        },
+        {
+          "name": "maxUploadSizeExceededException",
+          "startLine": 110,
+          "endLine": 121,
+          "params": [
+            "request",
+            "ex"
+          ]
+        },
+        {
+          "name": "defaultErrorHandler",
+          "startLine": 126,
+          "endLine": 130,
+          "params": [
+            "request",
+            "throwable"
+          ]
+        },
+        {
+          "name": "getUrl",
+          "startLine": 132,
+          "endLine": 137,
+          "params": [
+            "request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "GlobalExceptionHandler",
+          "startLine": 45,
+          "endLine": 138,
+          "methods": [
+            "validExceptionHandler",
+            "abstractException",
+            "notLoginException",
+            "notRoleException",
+            "maxUploadSizeExceededException",
+            "defaultErrorHandler",
+            "getUrl"
+          ],
+          "properties": [
+            "maxFileSize",
+            "maxRequestSize"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "validExceptionHandler",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "abstractException",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "notLoginException",
+          "line": 92,
+          "isDefault": false
+        },
+        {
+          "name": "notRoleException",
+          "line": 101,
+          "isDefault": false
+        },
+        {
+          "name": "maxUploadSizeExceededException",
+          "line": 110,
+          "isDefault": false
+        },
+        {
+          "name": "defaultErrorHandler",
+          "line": 126,
+          "isDefault": false
+        },
+        {
+          "name": "GlobalExceptionHandler",
+          "line": 45,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "validExceptionHandler",
+          "callee": "ex.getBindingResult",
+          "lineNumber": 61
+        },
+        {
+          "caller": "validExceptionHandler",
+          "callee": "CollectionUtil.getFirst",
+          "lineNumber": 62
+        },
+        {
+          "caller": "validExceptionHandler",
+          "callee": "bindingResult.getFieldErrors",
+          "lineNumber": 62
+        },
+        {
+          "caller": "validExceptionHandler",
+          "callee": "Optional.ofNullable(firstFieldError)\r\n                .map(FieldError::getDefaultMessage).orElse",
+          "lineNumber": 63
+        },
+        {
+          "caller": "validExceptionHandler",
+          "callee": "Optional.ofNullable(firstFieldError).map",
+          "lineNumber": 63
+        },
+        {
+          "caller": "validExceptionHandler",
+          "callee": "Optional.ofNullable",
+          "lineNumber": 63
+        },
+        {
+          "caller": "validExceptionHandler",
+          "callee": "log.error",
+          "lineNumber": 66
+        },
+        {
+          "caller": "validExceptionHandler",
+          "callee": "request.getMethod",
+          "lineNumber": 66
+        },
+        {
+          "caller": "validExceptionHandler",
+          "callee": "getUrl",
+          "lineNumber": 66
+        },
+        {
+          "caller": "validExceptionHandler",
+          "callee": "Results.failure",
+          "lineNumber": 67
+        },
+        {
+          "caller": "validExceptionHandler",
+          "callee": "BaseErrorCode.CLIENT_ERROR.code",
+          "lineNumber": 67
+        },
+        {
+          "caller": "abstractException",
+          "callee": "ex.getCause",
+          "lineNumber": 75
+        },
+        {
+          "caller": "abstractException",
+          "callee": "log.error",
+          "lineNumber": 76
+        },
+        {
+          "caller": "abstractException",
+          "callee": "request.getMethod",
+          "lineNumber": 76
+        },
+        {
+          "caller": "abstractException",
+          "callee": "request.getRequestURL().toString",
+          "lineNumber": 76
+        },
+        {
+          "caller": "abstractException",
+          "callee": "request.getRequestURL",
+          "lineNumber": 76
+        },
+        {
+          "caller": "abstractException",
+          "callee": "ex.getCause",
+          "lineNumber": 76
+        },
+        {
+          "caller": "abstractException",
+          "callee": "Results.failure",
+          "lineNumber": 77
+        },
+        {
+          "caller": "abstractException",
+          "callee": "new StringBuilder",
+          "lineNumber": 79
+        },
+        {
+          "caller": "abstractException",
+          "callee": "stackTraceBuilder.append(ex.getClass().getName()).append(\": \").append(ex.getErrorMessage()).append",
+          "lineNumber": 80
+        },
+        {
+          "caller": "abstractException",
+          "callee": "stackTraceBuilder.append(ex.getClass().getName()).append(\": \").append",
+          "lineNumber": 80
+        },
+        {
+          "caller": "abstractException",
+          "callee": "stackTraceBuilder.append(ex.getClass().getName()).append",
+          "lineNumber": 80
+        },
+        {
+          "caller": "abstractException",
+          "callee": "stackTraceBuilder.append",
+          "lineNumber": 80
+        },
+        {
+          "caller": "abstractException",
+          "callee": "ex.getClass().getName",
+          "lineNumber": 80
+        },
+        {
+          "caller": "abstractException",
+          "callee": "ex.getClass",
+          "lineNumber": 80
+        },
+        {
+          "caller": "abstractException",
+          "callee": "ex.getErrorMessage",
+          "lineNumber": 80
+        },
+        {
+          "caller": "abstractException",
+          "callee": "ex.getStackTrace",
+          "lineNumber": 81
+        },
+        {
+          "caller": "abstractException",
+          "callee": "Math.min",
+          "lineNumber": 82
+        },
+        {
+          "caller": "abstractException",
+          "callee": "stackTraceBuilder.append(\"\\tat \").append(stackTrace[i]).append",
+          "lineNumber": 83
+        },
+        {
+          "caller": "abstractException",
+          "callee": "stackTraceBuilder.append(\"\\tat \").append",
+          "lineNumber": 83
+        },
+        {
+          "caller": "abstractException",
+          "callee": "stackTraceBuilder.append",
+          "lineNumber": 83
+        },
+        {
+          "caller": "abstractException",
+          "callee": "log.error",
+          "lineNumber": 85
+        },
+        {
+          "caller": "abstractException",
+          "callee": "request.getMethod",
+          "lineNumber": 85
+        },
+        {
+          "caller": "abstractException",
+          "callee": "request.getRequestURL().toString",
+          "lineNumber": 85
+        },
+        {
+          "caller": "abstractException",
+          "callee": "request.getRequestURL",
+          "lineNumber": 85
+        },
+        {
+          "caller": "abstractException",
+          "callee": "Results.failure",
+          "lineNumber": 86
+        },
+        {
+          "caller": "notLoginException",
+          "callee": "log.warn",
+          "lineNumber": 94
+        },
+        {
+          "caller": "notLoginException",
+          "callee": "request.getMethod",
+          "lineNumber": 94
+        },
+        {
+          "caller": "notLoginException",
+          "callee": "getUrl",
+          "lineNumber": 94
+        },
+        {
+          "caller": "notLoginException",
+          "callee": "ex.getMessage",
+          "lineNumber": 94
+        },
+        {
+          "caller": "notLoginException",
+          "callee": "Results.failure",
+          "lineNumber": 95
+        },
+        {
+          "caller": "notLoginException",
+          "callee": "BaseErrorCode.CLIENT_ERROR.code",
+          "lineNumber": 95
+        },
+        {
+          "caller": "notRoleException",
+          "callee": "log.warn",
+          "lineNumber": 103
+        },
+        {
+          "caller": "notRoleException",
+          "callee": "request.getMethod",
+          "lineNumber": 103
+        },
+        {
+          "caller": "notRoleException",
+          "callee": "getUrl",
+          "lineNumber": 103
+        },
+        {
+          "caller": "notRoleException",
+          "callee": "ex.getMessage",
+          "lineNumber": 103
+        },
+        {
+          "caller": "notRoleException",
+          "callee": "Results.failure",
+          "lineNumber": 104
+        },
+        {
+          "caller": "notRoleException",
+          "callee": "BaseErrorCode.CLIENT_ERROR.code",
+          "lineNumber": 104
+        },
+        {
+          "caller": "maxUploadSizeExceededException",
+          "callee": "log.warn",
+          "lineNumber": 112
+        },
+        {
+          "caller": "maxUploadSizeExceededException",
+          "callee": "request.getMethod",
+          "lineNumber": 112
+        },
+        {
+          "caller": "maxUploadSizeExceededException",
+          "callee": "getUrl",
+          "lineNumber": 112
+        },
+        {
+          "caller": "maxUploadSizeExceededException",
+          "callee": "ex.getMessage",
+          "lineNumber": 112
+        },
+        {
+          "caller": "maxUploadSizeExceededException",
+          "callee": "ex.getCause",
+          "lineNumber": 114
+        },
+        {
+          "caller": "maxUploadSizeExceededException",
+          "callee": "ex.getCause().getCause",
+          "lineNumber": 115
+        },
+        {
+          "caller": "maxUploadSizeExceededException",
+          "callee": "ex.getCause",
+          "lineNumber": 115
+        },
+        {
+          "caller": "maxUploadSizeExceededException",
+          "callee": "Results.failure",
+          "lineNumber": 120
+        },
+        {
+          "caller": "maxUploadSizeExceededException",
+          "callee": "BaseErrorCode.CLIENT_ERROR.code",
+          "lineNumber": 120
+        },
+        {
+          "caller": "defaultErrorHandler",
+          "callee": "log.error",
+          "lineNumber": 128
+        },
+        {
+          "caller": "defaultErrorHandler",
+          "callee": "request.getMethod",
+          "lineNumber": 128
+        },
+        {
+          "caller": "defaultErrorHandler",
+          "callee": "getUrl",
+          "lineNumber": 128
+        },
+        {
+          "caller": "defaultErrorHandler",
+          "callee": "Results.failure",
+          "lineNumber": 129
+        },
+        {
+          "caller": "getUrl",
+          "callee": "StrUtil.isBlank",
+          "lineNumber": 133
+        },
+        {
+          "caller": "getUrl",
+          "callee": "request.getQueryString",
+          "lineNumber": 133
+        },
+        {
+          "caller": "getUrl",
+          "callee": "request.getRequestURL().toString",
+          "lineNumber": 134
+        },
+        {
+          "caller": "getUrl",
+          "callee": "request.getRequestURL",
+          "lineNumber": 134
+        },
+        {
+          "caller": "getUrl",
+          "callee": "request.getRequestURL().toString",
+          "lineNumber": 136
+        },
+        {
+          "caller": "getUrl",
+          "callee": "request.getRequestURL",
+          "lineNumber": 136
+        },
+        {
+          "caller": "getUrl",
+          "callee": "request.getQueryString",
+          "lineNumber": 136
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 7,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/web/Results.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 78,
+      "nonEmptyLines": 69,
+      "functions": [
+        {
+          "name": "success",
+          "startLine": 34,
+          "endLine": 37,
+          "params": []
+        },
+        {
+          "name": "success",
+          "startLine": 42,
+          "endLine": 46,
+          "params": [
+            "data"
+          ]
+        },
+        {
+          "name": "failure",
+          "startLine": 51,
+          "endLine": 55,
+          "params": []
+        },
+        {
+          "name": "failure",
+          "startLine": 60,
+          "endLine": 68,
+          "params": [
+            "abstractException"
+          ]
+        },
+        {
+          "name": "failure",
+          "startLine": 73,
+          "endLine": 77,
+          "params": [
+            "errorCode",
+            "errorMessage"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Results",
+          "startLine": 29,
+          "endLine": 78,
+          "methods": [
+            "success",
+            "success",
+            "failure",
+            "failure",
+            "failure"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "success",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "success",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "failure",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "Results",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "success",
+          "callee": "new Result<Void>().setCode",
+          "lineNumber": 35
+        },
+        {
+          "caller": "success",
+          "callee": "new Result<Void>",
+          "lineNumber": 35
+        },
+        {
+          "caller": "success",
+          "callee": "new Result<T>()\r\n                .setCode(Result.SUCCESS_CODE).setData",
+          "lineNumber": 43
+        },
+        {
+          "caller": "success",
+          "callee": "new Result<T>().setCode",
+          "lineNumber": 43
+        },
+        {
+          "caller": "success",
+          "callee": "new Result<T>",
+          "lineNumber": 43
+        },
+        {
+          "caller": "failure",
+          "callee": "new Result<Void>()\r\n                .setCode(BaseErrorCode.SERVICE_ERROR.code()).setMessage",
+          "lineNumber": 52
+        },
+        {
+          "caller": "failure",
+          "callee": "new Result<Void>().setCode",
+          "lineNumber": 52
+        },
+        {
+          "caller": "failure",
+          "callee": "new Result<Void>",
+          "lineNumber": 52
+        },
+        {
+          "caller": "failure",
+          "callee": "BaseErrorCode.SERVICE_ERROR.code",
+          "lineNumber": 53
+        },
+        {
+          "caller": "failure",
+          "callee": "BaseErrorCode.SERVICE_ERROR.message",
+          "lineNumber": 54
+        },
+        {
+          "caller": "failure",
+          "callee": "Optional.ofNullable(abstractException.getErrorCode()).orElse",
+          "lineNumber": 61
+        },
+        {
+          "caller": "failure",
+          "callee": "Optional.ofNullable",
+          "lineNumber": 61
+        },
+        {
+          "caller": "failure",
+          "callee": "abstractException.getErrorCode",
+          "lineNumber": 61
+        },
+        {
+          "caller": "failure",
+          "callee": "BaseErrorCode.SERVICE_ERROR.code",
+          "lineNumber": 62
+        },
+        {
+          "caller": "failure",
+          "callee": "Optional.ofNullable(abstractException.getErrorMessage()).orElse",
+          "lineNumber": 63
+        },
+        {
+          "caller": "failure",
+          "callee": "Optional.ofNullable",
+          "lineNumber": 63
+        },
+        {
+          "caller": "failure",
+          "callee": "abstractException.getErrorMessage",
+          "lineNumber": 63
+        },
+        {
+          "caller": "failure",
+          "callee": "BaseErrorCode.SERVICE_ERROR.message",
+          "lineNumber": 64
+        },
+        {
+          "caller": "failure",
+          "callee": "new Result<Void>()\r\n                .setCode(errorCode).setMessage",
+          "lineNumber": 65
+        },
+        {
+          "caller": "failure",
+          "callee": "new Result<Void>().setCode",
+          "lineNumber": 65
+        },
+        {
+          "caller": "failure",
+          "callee": "new Result<Void>",
+          "lineNumber": 65
+        },
+        {
+          "caller": "failure",
+          "callee": "new Result<Void>()\r\n                .setCode(errorCode).setMessage",
+          "lineNumber": 74
+        },
+        {
+          "caller": "failure",
+          "callee": "new Result<Void>().setCode",
+          "lineNumber": 74
+        },
+        {
+          "caller": "failure",
+          "callee": "new Result<Void>",
+          "lineNumber": 74
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 4,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    }
+  ]
+}

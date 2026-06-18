@@ -1,0 +1,28 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 420,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "mvnw.cmd",
+      "language": "batch",
+      "sizeLines": 189,
+      "fileCategory": "script"
+    },
+    {
+      "path": "pom.xml",
+      "language": "xml",
+      "sizeLines": 248,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    "README.md": [],
+    "mvnw.cmd": [],
+    "pom.xml": []
+  }
+}

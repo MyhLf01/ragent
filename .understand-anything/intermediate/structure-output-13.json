@@ -1,0 +1,1716 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 14,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/IngestionPipelineController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 92,
+      "nonEmptyLines": 83,
+      "functions": [
+        {
+          "name": "create",
+          "startLine": 52,
+          "endLine": 55,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 60,
+          "endLine": 64,
+          "params": [
+            "id",
+            "request"
+          ]
+        },
+        {
+          "name": "get",
+          "startLine": 69,
+          "endLine": 72,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "page",
+          "startLine": 77,
+          "endLine": 82,
+          "params": [
+            "pageNo",
+            "pageSize",
+            "keyword"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 87,
+          "endLine": 91,
+          "params": [
+            "id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "IngestionPipelineController",
+          "startLine": 42,
+          "endLine": 92,
+          "methods": [
+            "create",
+            "update",
+            "get",
+            "page",
+            "delete"
+          ],
+          "properties": [
+            "pipelineService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "create",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "update",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "get",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "page",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "delete",
+          "line": 87,
+          "isDefault": false
+        },
+        {
+          "name": "IngestionPipelineController",
+          "line": 42,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "create",
+          "callee": "Results.success",
+          "lineNumber": 54
+        },
+        {
+          "caller": "create",
+          "callee": "pipelineService.create",
+          "lineNumber": 54
+        },
+        {
+          "caller": "update",
+          "callee": "Results.success",
+          "lineNumber": 63
+        },
+        {
+          "caller": "update",
+          "callee": "pipelineService.update",
+          "lineNumber": 63
+        },
+        {
+          "caller": "get",
+          "callee": "Results.success",
+          "lineNumber": 71
+        },
+        {
+          "caller": "get",
+          "callee": "pipelineService.get",
+          "lineNumber": 71
+        },
+        {
+          "caller": "page",
+          "callee": "Results.success",
+          "lineNumber": 81
+        },
+        {
+          "caller": "page",
+          "callee": "pipelineService.page",
+          "lineNumber": 81
+        },
+        {
+          "caller": "page",
+          "callee": "new Page<>",
+          "lineNumber": 81
+        },
+        {
+          "caller": "delete",
+          "callee": "pipelineService.delete",
+          "lineNumber": 89
+        },
+        {
+          "caller": "delete",
+          "callee": "Results.success",
+          "lineNumber": 90
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineCreateRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 38,
+      "classes": [
+        {
+          "name": "IngestionPipelineCreateRequest",
+          "startLine": 28,
+          "endLine": 45,
+          "methods": [],
+          "properties": [
+            "name",
+            "description",
+            "nodes"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IngestionPipelineCreateRequest",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineNodeRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 50,
+      "classes": [
+        {
+          "name": "IngestionPipelineNodeRequest",
+          "startLine": 27,
+          "endLine": 58,
+          "methods": [],
+          "properties": [
+            "nodeId",
+            "nodeType",
+            "settings",
+            "condition",
+            "nextNodeId"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IngestionPipelineNodeRequest",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/request/IngestionPipelineUpdateRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 38,
+      "classes": [
+        {
+          "name": "IngestionPipelineUpdateRequest",
+          "startLine": 28,
+          "endLine": 45,
+          "methods": [],
+          "properties": [
+            "name",
+            "description",
+            "nodes"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IngestionPipelineUpdateRequest",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionPipelineNodeVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 28,
+      "classes": [
+        {
+          "name": "IngestionPipelineNodeVO",
+          "startLine": 23,
+          "endLine": 37,
+          "methods": [],
+          "properties": [
+            "id",
+            "nodeId",
+            "nodeType",
+            "settings",
+            "condition",
+            "nextNodeId"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IngestionPipelineNodeVO",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/controller/vo/IngestionPipelineVO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 65,
+      "nonEmptyLines": 54,
+      "classes": [
+        {
+          "name": "IngestionPipelineVO",
+          "startLine": 28,
+          "endLine": 65,
+          "methods": [],
+          "properties": [
+            "id",
+            "name",
+            "description",
+            "createdBy",
+            "nodes",
+            "createTime",
+            "updateTime"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IngestionPipelineVO",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineDO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 86,
+      "nonEmptyLines": 74,
+      "classes": [
+        {
+          "name": "IngestionPipelineDO",
+          "startLine": 36,
+          "endLine": 86,
+          "methods": [],
+          "properties": [
+            "id",
+            "name",
+            "description",
+            "createdBy",
+            "updatedBy",
+            "createTime",
+            "updateTime",
+            "deleted"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IngestionPipelineDO",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/entity/IngestionPipelineNodeDO.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 109,
+      "nonEmptyLines": 93,
+      "classes": [
+        {
+          "name": "IngestionPipelineNodeDO",
+          "startLine": 37,
+          "endLine": 109,
+          "methods": [],
+          "properties": [
+            "id",
+            "pipelineId",
+            "nodeId",
+            "nodeType",
+            "nextNodeId",
+            "settingsJson",
+            "conditionJson",
+            "createdBy",
+            "updatedBy",
+            "createTime",
+            "updateTime",
+            "deleted"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IngestionPipelineNodeDO",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionPipelineMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "IngestionPipelineMapper",
+          "startLine": 23,
+          "endLine": 24,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IngestionPipelineMapper",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/dao/mapper/IngestionPipelineNodeMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "IngestionPipelineNodeMapper",
+          "startLine": 23,
+          "endLine": 24,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IngestionPipelineNodeMapper",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/domain/pipeline/PipelineDefinition.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 49,
+      "classes": [
+        {
+          "name": "PipelineDefinition",
+          "startLine": 31,
+          "endLine": 57,
+          "methods": [],
+          "properties": [
+            "id",
+            "name",
+            "description",
+            "nodes"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PipelineDefinition",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/IngestionPipelineService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 80,
+      "nonEmptyLines": 71,
+      "classes": [
+        {
+          "name": "IngestionPipelineService",
+          "startLine": 30,
+          "endLine": 80,
+          "methods": [
+            "create",
+            "update",
+            "get",
+            "page",
+            "delete",
+            "getDefinition"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IngestionPipelineService",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/ingestion/service/impl/IngestionPipelineServiceImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 248,
+      "nonEmptyLines": 224,
+      "functions": [
+        {
+          "name": "create",
+          "startLine": 61,
+          "endLine": 78,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 80,
+          "endLine": 99,
+          "params": [
+            "pipelineId",
+            "request"
+          ]
+        },
+        {
+          "name": "get",
+          "startLine": 101,
+          "endLine": 106,
+          "params": [
+            "pipelineId"
+          ]
+        },
+        {
+          "name": "page",
+          "startLine": 108,
+          "endLine": 121,
+          "params": [
+            "page",
+            "keyword"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 123,
+          "endLine": 135,
+          "params": [
+            "pipelineId"
+          ]
+        },
+        {
+          "name": "getDefinition",
+          "startLine": 137,
+          "endLine": 151,
+          "params": [
+            "pipelineId"
+          ]
+        },
+        {
+          "name": "upsertNodes",
+          "startLine": 153,
+          "endLine": 176,
+          "params": [
+            "pipelineId",
+            "nodes"
+          ]
+        },
+        {
+          "name": "fetchNodes",
+          "startLine": 178,
+          "endLine": 183,
+          "params": [
+            "pipelineId"
+          ]
+        },
+        {
+          "name": "toVO",
+          "startLine": 185,
+          "endLine": 189,
+          "params": [
+            "pipeline",
+            "nodes"
+          ]
+        },
+        {
+          "name": "toNodeVO",
+          "startLine": 191,
+          "endLine": 197,
+          "params": [
+            "node"
+          ]
+        },
+        {
+          "name": "toNodeConfig",
+          "startLine": 199,
+          "endLine": 207,
+          "params": [
+            "node"
+          ]
+        },
+        {
+          "name": "toJson",
+          "startLine": 209,
+          "endLine": 214,
+          "params": [
+            "node"
+          ]
+        },
+        {
+          "name": "parseJson",
+          "startLine": 216,
+          "endLine": 225,
+          "params": [
+            "raw"
+          ]
+        },
+        {
+          "name": "normalizeNodeType",
+          "startLine": 227,
+          "endLine": 236,
+          "params": [
+            "nodeType"
+          ]
+        },
+        {
+          "name": "normalizeNodeTypeForOutput",
+          "startLine": 238,
+          "endLine": 247,
+          "params": [
+            "nodeType"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "IngestionPipelineServiceImpl",
+          "startLine": 53,
+          "endLine": 248,
+          "methods": [
+            "create",
+            "update",
+            "get",
+            "page",
+            "delete",
+            "getDefinition",
+            "upsertNodes",
+            "fetchNodes",
+            "toVO",
+            "toNodeVO",
+            "toNodeConfig",
+            "toJson",
+            "parseJson",
+            "normalizeNodeType",
+            "normalizeNodeTypeForOutput"
+          ],
+          "properties": [
+            "pipelineMapper",
+            "nodeMapper",
+            "objectMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "create",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "update",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "get",
+          "line": 101,
+          "isDefault": false
+        },
+        {
+          "name": "page",
+          "line": 108,
+          "isDefault": false
+        },
+        {
+          "name": "delete",
+          "line": 123,
+          "isDefault": false
+        },
+        {
+          "name": "getDefinition",
+          "line": 137,
+          "isDefault": false
+        },
+        {
+          "name": "IngestionPipelineServiceImpl",
+          "line": 53,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "create",
+          "callee": "Assert.notNull",
+          "lineNumber": 64
+        },
+        {
+          "caller": "create",
+          "callee": "new ClientException",
+          "lineNumber": 64
+        },
+        {
+          "caller": "create",
+          "callee": "IngestionPipelineDO.builder()\r\n                .name(request.getName())\r\n                .description(request.getDescription())\r\n                .createdBy(UserContext.getUsername())\r\n                .updatedBy(UserContext.getUsername()).build",
+          "lineNumber": 65
+        },
+        {
+          "caller": "create",
+          "callee": "IngestionPipelineDO.builder()\r\n                .name(request.getName())\r\n                .description(request.getDescription())\r\n                .createdBy(UserContext.getUsername()).updatedBy",
+          "lineNumber": 65
+        },
+        {
+          "caller": "create",
+          "callee": "IngestionPipelineDO.builder()\r\n                .name(request.getName())\r\n                .description(request.getDescription()).createdBy",
+          "lineNumber": 65
+        },
+        {
+          "caller": "create",
+          "callee": "IngestionPipelineDO.builder()\r\n                .name(request.getName()).description",
+          "lineNumber": 65
+        },
+        {
+          "caller": "create",
+          "callee": "IngestionPipelineDO.builder().name",
+          "lineNumber": 65
+        },
+        {
+          "caller": "create",
+          "callee": "IngestionPipelineDO.builder",
+          "lineNumber": 65
+        },
+        {
+          "caller": "create",
+          "callee": "request.getName",
+          "lineNumber": 66
+        },
+        {
+          "caller": "create",
+          "callee": "request.getDescription",
+          "lineNumber": 67
+        },
+        {
+          "caller": "create",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 68
+        },
+        {
+          "caller": "create",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 69
+        },
+        {
+          "caller": "create",
+          "callee": "pipelineMapper.insert",
+          "lineNumber": 72
+        },
+        {
+          "caller": "create",
+          "callee": "new ClientException",
+          "lineNumber": 74
+        },
+        {
+          "caller": "create",
+          "callee": "upsertNodes",
+          "lineNumber": 76
+        },
+        {
+          "caller": "create",
+          "callee": "pipeline.getId",
+          "lineNumber": 76
+        },
+        {
+          "caller": "create",
+          "callee": "request.getNodes",
+          "lineNumber": 76
+        },
+        {
+          "caller": "create",
+          "callee": "toVO",
+          "lineNumber": 77
+        },
+        {
+          "caller": "create",
+          "callee": "fetchNodes",
+          "lineNumber": 77
+        },
+        {
+          "caller": "create",
+          "callee": "pipeline.getId",
+          "lineNumber": 77
+        },
+        {
+          "caller": "update",
+          "callee": "pipelineMapper.selectById",
+          "lineNumber": 83
+        },
+        {
+          "caller": "update",
+          "callee": "Assert.notNull",
+          "lineNumber": 84
+        },
+        {
+          "caller": "update",
+          "callee": "new ClientException",
+          "lineNumber": 84
+        },
+        {
+          "caller": "update",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 86
+        },
+        {
+          "caller": "update",
+          "callee": "request.getName",
+          "lineNumber": 86
+        },
+        {
+          "caller": "update",
+          "callee": "pipeline.setName",
+          "lineNumber": 87
+        },
+        {
+          "caller": "update",
+          "callee": "request.getName",
+          "lineNumber": 87
+        },
+        {
+          "caller": "update",
+          "callee": "request.getDescription",
+          "lineNumber": 89
+        },
+        {
+          "caller": "update",
+          "callee": "pipeline.setDescription",
+          "lineNumber": 90
+        },
+        {
+          "caller": "update",
+          "callee": "request.getDescription",
+          "lineNumber": 90
+        },
+        {
+          "caller": "update",
+          "callee": "pipeline.setUpdatedBy",
+          "lineNumber": 92
+        },
+        {
+          "caller": "update",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 92
+        },
+        {
+          "caller": "update",
+          "callee": "pipelineMapper.updateById",
+          "lineNumber": 93
+        },
+        {
+          "caller": "update",
+          "callee": "request.getNodes",
+          "lineNumber": 95
+        },
+        {
+          "caller": "update",
+          "callee": "upsertNodes",
+          "lineNumber": 96
+        },
+        {
+          "caller": "update",
+          "callee": "pipeline.getId",
+          "lineNumber": 96
+        },
+        {
+          "caller": "update",
+          "callee": "request.getNodes",
+          "lineNumber": 96
+        },
+        {
+          "caller": "update",
+          "callee": "toVO",
+          "lineNumber": 98
+        },
+        {
+          "caller": "update",
+          "callee": "fetchNodes",
+          "lineNumber": 98
+        },
+        {
+          "caller": "update",
+          "callee": "pipeline.getId",
+          "lineNumber": 98
+        },
+        {
+          "caller": "get",
+          "callee": "pipelineMapper.selectById",
+          "lineNumber": 103
+        },
+        {
+          "caller": "get",
+          "callee": "Assert.notNull",
+          "lineNumber": 104
+        },
+        {
+          "caller": "get",
+          "callee": "new ClientException",
+          "lineNumber": 104
+        },
+        {
+          "caller": "get",
+          "callee": "toVO",
+          "lineNumber": 105
+        },
+        {
+          "caller": "get",
+          "callee": "fetchNodes",
+          "lineNumber": 105
+        },
+        {
+          "caller": "get",
+          "callee": "pipeline.getId",
+          "lineNumber": 105
+        },
+        {
+          "caller": "page",
+          "callee": "new Page<>",
+          "lineNumber": 110
+        },
+        {
+          "caller": "page",
+          "callee": "page.getCurrent",
+          "lineNumber": 110
+        },
+        {
+          "caller": "page",
+          "callee": "page.getSize",
+          "lineNumber": 110
+        },
+        {
+          "caller": "page",
+          "callee": "new LambdaQueryWrapper<IngestionPipelineDO>()\r\n                .eq(IngestionPipelineDO::getDeleted, 0)\r\n                .like(StringUtils.hasText(keyword), IngestionPipelineDO::getName, keyword).orderByDesc",
+          "lineNumber": 111
+        },
+        {
+          "caller": "page",
+          "callee": "new LambdaQueryWrapper<IngestionPipelineDO>()\r\n                .eq(IngestionPipelineDO::getDeleted, 0).like",
+          "lineNumber": 111
+        },
+        {
+          "caller": "page",
+          "callee": "new LambdaQueryWrapper<IngestionPipelineDO>().eq",
+          "lineNumber": 111
+        },
+        {
+          "caller": "page",
+          "callee": "new LambdaQueryWrapper<IngestionPipelineDO>",
+          "lineNumber": 111
+        },
+        {
+          "caller": "page",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 113
+        },
+        {
+          "caller": "page",
+          "callee": "pipelineMapper.selectPage",
+          "lineNumber": 115
+        },
+        {
+          "caller": "page",
+          "callee": "new Page<>",
+          "lineNumber": 116
+        },
+        {
+          "caller": "page",
+          "callee": "result.getCurrent",
+          "lineNumber": 116
+        },
+        {
+          "caller": "page",
+          "callee": "result.getSize",
+          "lineNumber": 116
+        },
+        {
+          "caller": "page",
+          "callee": "result.getTotal",
+          "lineNumber": 116
+        },
+        {
+          "caller": "page",
+          "callee": "voPage.setRecords",
+          "lineNumber": 117
+        },
+        {
+          "caller": "page",
+          "callee": "result.getRecords().stream()\r\n                .map(each -> toVO(each, fetchNodes(each.getId()))).toList",
+          "lineNumber": 117
+        },
+        {
+          "caller": "page",
+          "callee": "result.getRecords().stream().map",
+          "lineNumber": 117
+        },
+        {
+          "caller": "page",
+          "callee": "result.getRecords().stream",
+          "lineNumber": 117
+        },
+        {
+          "caller": "page",
+          "callee": "result.getRecords",
+          "lineNumber": 117
+        },
+        {
+          "caller": "page",
+          "callee": "toVO",
+          "lineNumber": 118
+        },
+        {
+          "caller": "page",
+          "callee": "fetchNodes",
+          "lineNumber": 118
+        },
+        {
+          "caller": "page",
+          "callee": "each.getId",
+          "lineNumber": 118
+        },
+        {
+          "caller": "delete",
+          "callee": "pipelineMapper.selectById",
+          "lineNumber": 126
+        },
+        {
+          "caller": "delete",
+          "callee": "Assert.notNull",
+          "lineNumber": 127
+        },
+        {
+          "caller": "delete",
+          "callee": "new ClientException",
+          "lineNumber": 127
+        },
+        {
+          "caller": "delete",
+          "callee": "pipeline.setDeleted",
+          "lineNumber": 128
+        },
+        {
+          "caller": "delete",
+          "callee": "pipeline.setUpdatedBy",
+          "lineNumber": 129
+        },
+        {
+          "caller": "delete",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 129
+        },
+        {
+          "caller": "delete",
+          "callee": "pipelineMapper.deleteById",
+          "lineNumber": 130
+        },
+        {
+          "caller": "delete",
+          "callee": "new LambdaQueryWrapper<IngestionPipelineNodeDO>().eq",
+          "lineNumber": 132
+        },
+        {
+          "caller": "delete",
+          "callee": "new LambdaQueryWrapper<IngestionPipelineNodeDO>",
+          "lineNumber": 132
+        },
+        {
+          "caller": "delete",
+          "callee": "pipeline.getId",
+          "lineNumber": 133
+        },
+        {
+          "caller": "delete",
+          "callee": "nodeMapper.delete",
+          "lineNumber": 134
+        },
+        {
+          "caller": "getDefinition",
+          "callee": "pipelineMapper.selectById",
+          "lineNumber": 139
+        },
+        {
+          "caller": "getDefinition",
+          "callee": "Assert.notNull",
+          "lineNumber": 140
+        },
+        {
+          "caller": "getDefinition",
+          "callee": "new ClientException",
+          "lineNumber": 140
+        },
+        {
+          "caller": "getDefinition",
+          "callee": "fetchNodes(pipeline.getId()).stream()\r\n                .map(this::toNodeConfig).toList",
+          "lineNumber": 142
+        },
+        {
+          "caller": "getDefinition",
+          "callee": "fetchNodes(pipeline.getId()).stream().map",
+          "lineNumber": 142
+        },
+        {
+          "caller": "getDefinition",
+          "callee": "fetchNodes(pipeline.getId()).stream",
+          "lineNumber": 142
+        },
+        {
+          "caller": "getDefinition",
+          "callee": "fetchNodes",
+          "lineNumber": 142
+        },
+        {
+          "caller": "getDefinition",
+          "callee": "pipeline.getId",
+          "lineNumber": 142
+        },
+        {
+          "caller": "getDefinition",
+          "callee": "PipelineDefinition.builder()\r\n                .id(String.valueOf(pipeline.getId()))\r\n                .name(pipeline.getName())\r\n                .description(pipeline.getDescription())\r\n                .nodes(nodes).build",
+          "lineNumber": 145
+        },
+        {
+          "caller": "getDefinition",
+          "callee": "PipelineDefinition.builder()\r\n                .id(String.valueOf(pipeline.getId()))\r\n                .name(pipeline.getName())\r\n                .description(pipeline.getDescription()).nodes",
+          "lineNumber": 145
+        },
+        {
+          "caller": "getDefinition",
+          "callee": "PipelineDefinition.builder()\r\n                .id(String.valueOf(pipeline.getId()))\r\n                .name(pipeline.getName()).description",
+          "lineNumber": 145
+        },
+        {
+          "caller": "getDefinition",
+          "callee": "PipelineDefinition.builder()\r\n                .id(String.valueOf(pipeline.getId())).name",
+          "lineNumber": 145
+        },
+        {
+          "caller": "getDefinition",
+          "callee": "PipelineDefinition.builder().id",
+          "lineNumber": 145
+        },
+        {
+          "caller": "getDefinition",
+          "callee": "PipelineDefinition.builder",
+          "lineNumber": 145
+        },
+        {
+          "caller": "getDefinition",
+          "callee": "String.valueOf",
+          "lineNumber": 146
+        },
+        {
+          "caller": "getDefinition",
+          "callee": "pipeline.getId",
+          "lineNumber": 146
+        },
+        {
+          "caller": "getDefinition",
+          "callee": "pipeline.getName",
+          "lineNumber": 147
+        },
+        {
+          "caller": "getDefinition",
+          "callee": "pipeline.getDescription",
+          "lineNumber": 148
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "new LambdaQueryWrapper<IngestionPipelineNodeDO>().eq",
+          "lineNumber": 157
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "new LambdaQueryWrapper<IngestionPipelineNodeDO>",
+          "lineNumber": 157
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "nodeMapper.delete",
+          "lineNumber": 159
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "IngestionPipelineNodeDO.builder()\r\n                    .pipelineId(pipelineId)\r\n                    .nodeId(node.getNodeId())\r\n                    .nodeType(normalizeNodeType(node.getNodeType()))\r\n                    .nextNodeId(node.getNextNodeId())\r\n                    .settingsJson(toJson(node.getSettings()))\r\n                    .conditionJson(toJson(node.getCondition()))\r\n                    .createdBy(UserContext.getUsername())\r\n                    .updatedBy(UserContext.getUsername()).build",
+          "lineNumber": 164
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "IngestionPipelineNodeDO.builder()\r\n                    .pipelineId(pipelineId)\r\n                    .nodeId(node.getNodeId())\r\n                    .nodeType(normalizeNodeType(node.getNodeType()))\r\n                    .nextNodeId(node.getNextNodeId())\r\n                    .settingsJson(toJson(node.getSettings()))\r\n                    .conditionJson(toJson(node.getCondition()))\r\n                    .createdBy(UserContext.getUsername()).updatedBy",
+          "lineNumber": 164
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "IngestionPipelineNodeDO.builder()\r\n                    .pipelineId(pipelineId)\r\n                    .nodeId(node.getNodeId())\r\n                    .nodeType(normalizeNodeType(node.getNodeType()))\r\n                    .nextNodeId(node.getNextNodeId())\r\n                    .settingsJson(toJson(node.getSettings()))\r\n                    .conditionJson(toJson(node.getCondition())).createdBy",
+          "lineNumber": 164
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "IngestionPipelineNodeDO.builder()\r\n                    .pipelineId(pipelineId)\r\n                    .nodeId(node.getNodeId())\r\n                    .nodeType(normalizeNodeType(node.getNodeType()))\r\n                    .nextNodeId(node.getNextNodeId())\r\n                    .settingsJson(toJson(node.getSettings())).conditionJson",
+          "lineNumber": 164
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "IngestionPipelineNodeDO.builder()\r\n                    .pipelineId(pipelineId)\r\n                    .nodeId(node.getNodeId())\r\n                    .nodeType(normalizeNodeType(node.getNodeType()))\r\n                    .nextNodeId(node.getNextNodeId()).settingsJson",
+          "lineNumber": 164
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "IngestionPipelineNodeDO.builder()\r\n                    .pipelineId(pipelineId)\r\n                    .nodeId(node.getNodeId())\r\n                    .nodeType(normalizeNodeType(node.getNodeType())).nextNodeId",
+          "lineNumber": 164
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "IngestionPipelineNodeDO.builder()\r\n                    .pipelineId(pipelineId)\r\n                    .nodeId(node.getNodeId()).nodeType",
+          "lineNumber": 164
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "IngestionPipelineNodeDO.builder()\r\n                    .pipelineId(pipelineId).nodeId",
+          "lineNumber": 164
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "IngestionPipelineNodeDO.builder().pipelineId",
+          "lineNumber": 164
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "IngestionPipelineNodeDO.builder",
+          "lineNumber": 164
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "node.getNodeId",
+          "lineNumber": 166
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "normalizeNodeType",
+          "lineNumber": 167
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "node.getNodeType",
+          "lineNumber": 167
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "node.getNextNodeId",
+          "lineNumber": 168
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "toJson",
+          "lineNumber": 169
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "node.getSettings",
+          "lineNumber": 169
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "toJson",
+          "lineNumber": 170
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "node.getCondition",
+          "lineNumber": 170
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 171
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "UserContext.getUsername",
+          "lineNumber": 172
+        },
+        {
+          "caller": "upsertNodes",
+          "callee": "nodeMapper.insert",
+          "lineNumber": 174
+        },
+        {
+          "caller": "fetchNodes",
+          "callee": "new LambdaQueryWrapper<IngestionPipelineNodeDO>()\r\n                .eq(IngestionPipelineNodeDO::getPipelineId, pipelineId).eq",
+          "lineNumber": 179
+        },
+        {
+          "caller": "fetchNodes",
+          "callee": "new LambdaQueryWrapper<IngestionPipelineNodeDO>().eq",
+          "lineNumber": 179
+        },
+        {
+          "caller": "fetchNodes",
+          "callee": "new LambdaQueryWrapper<IngestionPipelineNodeDO>",
+          "lineNumber": 179
+        },
+        {
+          "caller": "fetchNodes",
+          "callee": "nodeMapper.selectList",
+          "lineNumber": 182
+        },
+        {
+          "caller": "toVO",
+          "callee": "BeanUtil.toBean",
+          "lineNumber": 186
+        },
+        {
+          "caller": "toVO",
+          "callee": "vo.setNodes",
+          "lineNumber": 187
+        },
+        {
+          "caller": "toVO",
+          "callee": "nodes.stream().map(this::toNodeVO).toList",
+          "lineNumber": 187
+        },
+        {
+          "caller": "toVO",
+          "callee": "nodes.stream().map",
+          "lineNumber": 187
+        },
+        {
+          "caller": "toVO",
+          "callee": "nodes.stream",
+          "lineNumber": 187
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "BeanUtil.toBean",
+          "lineNumber": 192
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "vo.setNodeType",
+          "lineNumber": 193
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "normalizeNodeTypeForOutput",
+          "lineNumber": 193
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "node.getNodeType",
+          "lineNumber": 193
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "vo.setSettings",
+          "lineNumber": 194
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "parseJson",
+          "lineNumber": 194
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "node.getSettingsJson",
+          "lineNumber": 194
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "vo.setCondition",
+          "lineNumber": 195
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "parseJson",
+          "lineNumber": 195
+        },
+        {
+          "caller": "toNodeVO",
+          "callee": "node.getConditionJson",
+          "lineNumber": 195
+        },
+        {
+          "caller": "toNodeConfig",
+          "callee": "NodeConfig.builder()\r\n                .nodeId(node.getNodeId())\r\n                .nodeType(normalizeNodeType(node.getNodeType()))\r\n                .settings(parseJson(node.getSettingsJson()))\r\n                .condition(parseJson(node.getConditionJson()))\r\n                .nextNodeId(node.getNextNodeId()).build",
+          "lineNumber": 200
+        },
+        {
+          "caller": "toNodeConfig",
+          "callee": "NodeConfig.builder()\r\n                .nodeId(node.getNodeId())\r\n                .nodeType(normalizeNodeType(node.getNodeType()))\r\n                .settings(parseJson(node.getSettingsJson()))\r\n                .condition(parseJson(node.getConditionJson())).nextNodeId",
+          "lineNumber": 200
+        },
+        {
+          "caller": "toNodeConfig",
+          "callee": "NodeConfig.builder()\r\n                .nodeId(node.getNodeId())\r\n                .nodeType(normalizeNodeType(node.getNodeType()))\r\n                .settings(parseJson(node.getSettingsJson())).condition",
+          "lineNumber": 200
+        },
+        {
+          "caller": "toNodeConfig",
+          "callee": "NodeConfig.builder()\r\n                .nodeId(node.getNodeId())\r\n                .nodeType(normalizeNodeType(node.getNodeType())).settings",
+          "lineNumber": 200
+        },
+        {
+          "caller": "toNodeConfig",
+          "callee": "NodeConfig.builder()\r\n                .nodeId(node.getNodeId()).nodeType",
+          "lineNumber": 200
+        },
+        {
+          "caller": "toNodeConfig",
+          "callee": "NodeConfig.builder().nodeId",
+          "lineNumber": 200
+        },
+        {
+          "caller": "toNodeConfig",
+          "callee": "NodeConfig.builder",
+          "lineNumber": 200
+        },
+        {
+          "caller": "toNodeConfig",
+          "callee": "node.getNodeId",
+          "lineNumber": 201
+        },
+        {
+          "caller": "toNodeConfig",
+          "callee": "normalizeNodeType",
+          "lineNumber": 202
+        },
+        {
+          "caller": "toNodeConfig",
+          "callee": "node.getNodeType",
+          "lineNumber": 202
+        },
+        {
+          "caller": "toNodeConfig",
+          "callee": "parseJson",
+          "lineNumber": 203
+        },
+        {
+          "caller": "toNodeConfig",
+          "callee": "node.getSettingsJson",
+          "lineNumber": 203
+        },
+        {
+          "caller": "toNodeConfig",
+          "callee": "parseJson",
+          "lineNumber": 204
+        },
+        {
+          "caller": "toNodeConfig",
+          "callee": "node.getConditionJson",
+          "lineNumber": 204
+        },
+        {
+          "caller": "toNodeConfig",
+          "callee": "node.getNextNodeId",
+          "lineNumber": 205
+        },
+        {
+          "caller": "toJson",
+          "callee": "node.isNull",
+          "lineNumber": 210
+        },
+        {
+          "caller": "toJson",
+          "callee": "node.toString",
+          "lineNumber": 213
+        },
+        {
+          "caller": "parseJson",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 217
+        },
+        {
+          "caller": "parseJson",
+          "callee": "objectMapper.readTree",
+          "lineNumber": 221
+        },
+        {
+          "caller": "normalizeNodeType",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 228
+        },
+        {
+          "caller": "normalizeNodeType",
+          "callee": "IngestionNodeType.fromValue(nodeType).getValue",
+          "lineNumber": 232
+        },
+        {
+          "caller": "normalizeNodeType",
+          "callee": "IngestionNodeType.fromValue",
+          "lineNumber": 232
+        },
+        {
+          "caller": "normalizeNodeType",
+          "callee": "new ClientException",
+          "lineNumber": 234
+        },
+        {
+          "caller": "normalizeNodeTypeForOutput",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 239
+        },
+        {
+          "caller": "normalizeNodeTypeForOutput",
+          "callee": "IngestionNodeType.fromValue(nodeType).getValue",
+          "lineNumber": 243
+        },
+        {
+          "caller": "normalizeNodeTypeForOutput",
+          "callee": "IngestionNodeType.fromValue",
+          "lineNumber": 243
+        }
+      ],
+      "metrics": {
+        "importCount": 15,
+        "exportCount": 7,
+        "functionCount": 15,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/knowledge/dao/handler/JsonbTypeHandler.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 45,
+      "functions": [
+        {
+          "name": "setNonNullParameter",
+          "startLine": 31,
+          "endLine": 37,
+          "params": [
+            "ps",
+            "i",
+            "parameter",
+            "jdbcType"
+          ]
+        },
+        {
+          "name": "getNullableResult",
+          "startLine": 39,
+          "endLine": 42,
+          "params": [
+            "rs",
+            "columnName"
+          ]
+        },
+        {
+          "name": "getNullableResult",
+          "startLine": 44,
+          "endLine": 47,
+          "params": [
+            "rs",
+            "columnIndex"
+          ]
+        },
+        {
+          "name": "getNullableResult",
+          "startLine": 49,
+          "endLine": 52,
+          "params": [
+            "cs",
+            "columnIndex"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "JsonbTypeHandler",
+          "startLine": 29,
+          "endLine": 53,
+          "methods": [
+            "setNonNullParameter",
+            "getNullableResult",
+            "getNullableResult",
+            "getNullableResult"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "setNonNullParameter",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "getNullableResult",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "getNullableResult",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "getNullableResult",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "JsonbTypeHandler",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "setNonNullParameter",
+          "callee": "new PGobject",
+          "lineNumber": 33
+        },
+        {
+          "caller": "setNonNullParameter",
+          "callee": "jsonObject.setType",
+          "lineNumber": 34
+        },
+        {
+          "caller": "setNonNullParameter",
+          "callee": "jsonObject.setValue",
+          "lineNumber": 35
+        },
+        {
+          "caller": "setNonNullParameter",
+          "callee": "ps.setObject",
+          "lineNumber": 36
+        },
+        {
+          "caller": "getNullableResult",
+          "callee": "rs.getString",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getNullableResult",
+          "callee": "rs.getString",
+          "lineNumber": 46
+        },
+        {
+          "caller": "getNullableResult",
+          "callee": "cs.getString",
+          "lineNumber": 51
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    }
+  ]
+}

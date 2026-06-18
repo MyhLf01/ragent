@@ -1,0 +1,455 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "docs/multi-channel-retrieval.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 378,
+      "nonEmptyLines": 306,
+      "sections": [
+        {
+          "heading": "多通道检索架构说明",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "概述",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "架构设计",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "核心组件",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "1. 检索通道（SearchChannel）",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "2. 后置处理器（SearchResultPostProcessor）",
+          "level": 3,
+          "line": 79
+        },
+        {
+          "heading": "3. 多通道检索引擎（MultiChannelRetrievalEngine）",
+          "level": 3,
+          "line": 128
+        },
+        {
+          "heading": "配置说明",
+          "level": 2,
+          "line": 148
+        },
+        {
+          "heading": "使用示例",
+          "level": 2,
+          "line": 173
+        },
+        {
+          "heading": "1. 基本使用",
+          "level": 3,
+          "line": 175
+        },
+        {
+          "heading": "2. 新增检索通道",
+          "level": 3,
+          "line": 196
+        },
+        {
+          "heading": "3. 新增后置处理器",
+          "level": 3,
+          "line": 237
+        },
+        {
+          "heading": "工作流程",
+          "level": 2,
+          "line": 272
+        },
+        {
+          "heading": "1. 检索通道执行",
+          "level": 3,
+          "line": 274
+        },
+        {
+          "heading": "2. 后置处理器链执行",
+          "level": 3,
+          "line": 290
+        },
+        {
+          "heading": "扩展点",
+          "level": 2,
+          "line": 306
+        },
+        {
+          "heading": "1. 新增检索通道类型",
+          "level": 3,
+          "line": 308
+        },
+        {
+          "heading": "2. 自定义通道启用条件",
+          "level": 3,
+          "line": 322
+        },
+        {
+          "heading": "3. 自定义后置处理逻辑",
+          "level": 3,
+          "line": 335
+        },
+        {
+          "heading": "优势",
+          "level": 2,
+          "line": 357
+        },
+        {
+          "heading": "注意事项",
+          "level": 2,
+          "line": 365
+        },
+        {
+          "heading": "未来扩展",
+          "level": 2,
+          "line": 372
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 22
+      }
+    },
+    {
+      "path": "docs/quick-start.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 348,
+      "nonEmptyLines": 269,
+      "sections": [
+        {
+          "heading": "快速开始指南",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "重构完成的内容",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "新增的文件",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "1. 核心接口（`channel` 包）",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "2. 检索通道实现（`channel/impl` 包）",
+          "level": 3,
+          "line": 18
+        },
+        {
+          "heading": "3. 后置处理器（`postprocessor` 包）",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "4. 多通道检索引擎",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "5. 配置和文档",
+          "level": 3,
+          "line": 40
+        },
+        {
+          "heading": "工作原理",
+          "level": 2,
+          "line": 51
+        },
+        {
+          "heading": "1. 检索流程",
+          "level": 3,
+          "line": 53
+        },
+        {
+          "heading": "2. 条件触发逻辑",
+          "level": 3,
+          "line": 71
+        },
+        {
+          "heading": "如何使用",
+          "level": 2,
+          "line": 79
+        },
+        {
+          "heading": "1. 现有代码无需修改",
+          "level": 3,
+          "line": 81
+        },
+        {
+          "heading": "2. 配置调整（可选）",
+          "level": 3,
+          "line": 90
+        },
+        {
+          "heading": "3. 查看日志",
+          "level": 3,
+          "line": 116
+        },
+        {
+          "heading": "扩展示例",
+          "level": 2,
+          "line": 133
+        },
+        {
+          "heading": "1. 新增 ES 关键词检索通道",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "2. 新增版本过滤处理器",
+          "level": 3,
+          "line": 194
+        },
+        {
+          "heading": "测试建议",
+          "level": 2,
+          "line": 263
+        },
+        {
+          "heading": "1. 测试意图识别成功的场景",
+          "level": 3,
+          "line": 265
+        },
+        {
+          "heading": "2. 测试意图识别失败的场景",
+          "level": 3,
+          "line": 272
+        },
+        {
+          "heading": "3. 测试去重效果",
+          "level": 3,
+          "line": 279
+        },
+        {
+          "heading": "4. 测试 Rerank 效果",
+          "level": 3,
+          "line": 285
+        },
+        {
+          "heading": "性能优化建议",
+          "level": 2,
+          "line": 291
+        },
+        {
+          "heading": "常见问题",
+          "level": 2,
+          "line": 298
+        },
+        {
+          "heading": "Q1: 为什么有时候会执行两次检索？",
+          "level": 3,
+          "line": 300
+        },
+        {
+          "heading": "Q2: 如何禁用全局检索？",
+          "level": 3,
+          "line": 304
+        },
+        {
+          "heading": "Q3: 如何调整意图识别的触发阈值？",
+          "level": 3,
+          "line": 315
+        },
+        {
+          "heading": "Q4: 如何新增自定义的检索通道？",
+          "level": 3,
+          "line": 326
+        },
+        {
+          "heading": "Q5: 如何新增自定义的后置处理器？",
+          "level": 3,
+          "line": 330
+        },
+        {
+          "heading": "下一步",
+          "level": 2,
+          "line": 334
+        },
+        {
+          "heading": "参考文档",
+          "level": 2,
+          "line": 341
+        },
+        {
+          "heading": "联系方式",
+          "level": 2,
+          "line": 346
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 33
+      }
+    },
+    {
+      "path": "docs/refactoring-summary.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 226,
+      "nonEmptyLines": 173,
+      "sections": [
+        {
+          "heading": "重构总结",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "重构目标",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "重构内容",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "1. 新增文件",
+          "level": 3,
+          "line": 12
+        },
+        {
+          "heading": "核心接口和类型",
+          "level": 4,
+          "line": 14
+        },
+        {
+          "heading": "检索通道实现",
+          "level": 4,
+          "line": 20
+        },
+        {
+          "heading": "后置处理器",
+          "level": 4,
+          "line": 24
+        },
+        {
+          "heading": "核心引擎",
+          "level": 4,
+          "line": 29
+        },
+        {
+          "heading": "配置和文档",
+          "level": 4,
+          "line": 32
+        },
+        {
+          "heading": "2. 修改文件",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "架构设计",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "核心思想",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "工作流程",
+          "level": 3,
+          "line": 48
+        },
+        {
+          "heading": "关键特性",
+          "level": 3,
+          "line": 64
+        },
+        {
+          "heading": "解决方案对比",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "新方案优势",
+          "level": 3,
+          "line": 89
+        },
+        {
+          "heading": "使用示例",
+          "level": 2,
+          "line": 96
+        },
+        {
+          "heading": "1. 基本使用",
+          "level": 3,
+          "line": 98
+        },
+        {
+          "heading": "2. 新增检索通道",
+          "level": 3,
+          "line": 114
+        },
+        {
+          "heading": "3. 新增后置处理器",
+          "level": 3,
+          "line": 138
+        },
+        {
+          "heading": "配置说明",
+          "level": 2,
+          "line": 161
+        },
+        {
+          "heading": "未来扩展",
+          "level": 2,
+          "line": 184
+        },
+        {
+          "heading": "测试建议",
+          "level": 2,
+          "line": 192
+        },
+        {
+          "heading": "注意事项",
+          "level": 2,
+          "line": 210
+        },
+        {
+          "heading": "总结",
+          "level": 2,
+          "line": 217
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 25
+      }
+    }
+  ]
+}

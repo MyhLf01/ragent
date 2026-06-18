@@ -1,0 +1,182 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptScene.java",
+      "language": "java",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptTemplateUtils.java",
+      "language": "java",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryTermMappingUtil.java",
+      "language": "java",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/java/com/nageoffer/ai/ragent/RagentApplication.java",
+      "language": "java",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/application.yaml",
+      "language": "yaml",
+      "sizeLines": 195,
+      "fileCategory": "config"
+    },
+    {
+      "path": "bootstrap/src/main/resources/lua/queue_claim_atomic.lua",
+      "language": "lua",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/META-INF/additional-spring-configuration-metadata.json",
+      "language": "json",
+      "sizeLines": 7,
+      "fileCategory": "config"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/answer-chat-kb.st",
+      "language": "st",
+      "sizeLines": 342,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/answer-chat-mcp-kb-mixed.st",
+      "language": "st",
+      "sizeLines": 212,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/answer-chat-mcp.st",
+      "language": "st",
+      "sizeLines": 175,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/answer-chat-system.st",
+      "language": "st",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/context-format.st",
+      "language": "st",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/conversation-summary.st",
+      "language": "st",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/conversation-title.st",
+      "language": "st",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/guidance-ambiguity-check.st",
+      "language": "st",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/guidance-prompt.st",
+      "language": "st",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/intent-classifier.st",
+      "language": "st",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/mcp-parameter-extract-user.st",
+      "language": "st",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/mcp-parameter-extract.st",
+      "language": "st",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/pdf-format-guard.st",
+      "language": "st",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/main/resources/prompt/user-question-rewrite.st",
+      "language": "st",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/core/vector/PgVectorStoreServiceTest.java",
+      "language": "java",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/RagentCoreApplicationTests.java",
+      "language": "java",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/java/com/nageoffer/ai/ragent/vector/MilvusCollectionTests.java",
+      "language": "java",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/src/test/resources/mockito-extensions/org.mockito.plugins.MockMaker",
+      "language": "mockmaker",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptScene.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/prompt/PromptTemplateUtils.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/rag/core/rewrite/QueryTermMappingUtil.java": [],
+    "bootstrap/src/main/java/com/nageoffer/ai/ragent/RagentApplication.java": [],
+    "bootstrap/src/main/resources/application.yaml": [],
+    "bootstrap/src/main/resources/lua/queue_claim_atomic.lua": [],
+    "bootstrap/src/main/resources/META-INF/additional-spring-configuration-metadata.json": [],
+    "bootstrap/src/main/resources/prompt/answer-chat-kb.st": [],
+    "bootstrap/src/main/resources/prompt/answer-chat-mcp-kb-mixed.st": [],
+    "bootstrap/src/main/resources/prompt/answer-chat-mcp.st": [],
+    "bootstrap/src/main/resources/prompt/answer-chat-system.st": [],
+    "bootstrap/src/main/resources/prompt/context-format.st": [],
+    "bootstrap/src/main/resources/prompt/conversation-summary.st": [],
+    "bootstrap/src/main/resources/prompt/conversation-title.st": [],
+    "bootstrap/src/main/resources/prompt/guidance-ambiguity-check.st": [],
+    "bootstrap/src/main/resources/prompt/guidance-prompt.st": [],
+    "bootstrap/src/main/resources/prompt/intent-classifier.st": [],
+    "bootstrap/src/main/resources/prompt/mcp-parameter-extract-user.st": [],
+    "bootstrap/src/main/resources/prompt/mcp-parameter-extract.st": [],
+    "bootstrap/src/main/resources/prompt/pdf-format-guard.st": [],
+    "bootstrap/src/main/resources/prompt/user-question-rewrite.st": [],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/rag/core/vector/PgVectorStoreServiceTest.java": [],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/RagentCoreApplicationTests.java": [],
+    "bootstrap/src/test/java/com/nageoffer/ai/ragent/vector/MilvusCollectionTests.java": [],
+    "bootstrap/src/test/resources/mockito-extensions/org.mockito.plugins.MockMaker": []
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "projectRoot": "D:/CodeRepo/Project/ragent",
+  "batchFiles": [
+    {
+      "path": "docs/examples/pdf-ingestion-example.md",
+      "language": "markdown",
+      "sizeLines": 287,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/examples/pdf-pipeline-request.json",
+      "language": "json",
+      "sizeLines": 59,
+      "fileCategory": "config"
+    },
+    {
+      "path": "framework/pom.xml",
+      "language": "xml",
+      "sizeLines": 79,
+      "fileCategory": "config"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/cache/RedisKeySerializer.java",
+      "language": "java",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/config/DataBaseConfiguration.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/ApplicationContextHolder.java",
+      "language": "java",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/database/MyMetaObjectHandler.java",
+      "language": "java",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/distributedid/CustomIdentifierGenerator.java",
+      "language": "java",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/distributedid/SnowflakeIdInitializer.java",
+      "language": "java",
+      "sizeLines": 74,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentConsume.java",
+      "language": "java",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentConsumeStatusEnum.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/SpELUtil.java",
+      "language": "java",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "framework/src/main/resources/lua/snowflake_init.lua",
+      "language": "lua",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/.prettierignore",
+      "language": "unknown",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/alert-dialog.tsx",
+      "language": "typescript",
+      "sizeLines": 141,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/badge.tsx",
+      "language": "typescript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/button.tsx",
+      "language": "typescript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/card.tsx",
+      "language": "typescript",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/form.tsx",
+      "language": "typescript",
+      "sizeLines": 176,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/input.tsx",
+      "language": "typescript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/label.tsx",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/progress.tsx",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/select.tsx",
+      "language": "typescript",
+      "sizeLines": 158,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/separator.tsx",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/@/components/ui/sheet.tsx",
+      "language": "typescript",
+      "sizeLines": 138,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "docs/examples/pdf-ingestion-example.md": [],
+    "docs/examples/pdf-pipeline-request.json": [],
+    "framework/pom.xml": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/cache/RedisKeySerializer.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/config/DataBaseConfiguration.java": [
+      "framework/src/main/java/com/nageoffer/ai/ragent/framework/database/MyMetaObjectHandler.java"
+    ],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/context/ApplicationContextHolder.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/database/MyMetaObjectHandler.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/distributedid/CustomIdentifierGenerator.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/distributedid/SnowflakeIdInitializer.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentConsume.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/IdempotentConsumeStatusEnum.java": [],
+    "framework/src/main/java/com/nageoffer/ai/ragent/framework/idempotent/SpELUtil.java": [],
+    "framework/src/main/resources/lua/snowflake_init.lua": [],
+    "frontend/.prettierignore": [],
+    "frontend/@/components/ui/alert-dialog.tsx": [],
+    "frontend/@/components/ui/badge.tsx": [],
+    "frontend/@/components/ui/button.tsx": [],
+    "frontend/@/components/ui/card.tsx": [],
+    "frontend/@/components/ui/form.tsx": [],
+    "frontend/@/components/ui/input.tsx": [],
+    "frontend/@/components/ui/label.tsx": [],
+    "frontend/@/components/ui/progress.tsx": [],
+    "frontend/@/components/ui/select.tsx": [],
+    "frontend/@/components/ui/separator.tsx": [],
+    "frontend/@/components/ui/sheet.tsx": []
+  }
+}
